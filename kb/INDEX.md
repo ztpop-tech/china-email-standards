@@ -1,0 +1,254 @@
+# ztpop.net 知识库镜像
+
+共 246 篇文章，按分类索引如下。
+
+- [评估AI驱动的邮件安全方案时，应重点关注其在对抗性环境中的鲁棒性（而不仅是静态测试数据的准确率），以及提供模型更新机制的频率（是否有持续的在线学习/反馈循环）。](https://ztpop.net/kb/ai-ml-email-security.html) → `kb/security/ai-ml-email-security.md`
+- [AI 驱动的垃圾邮件检测：从贝叶斯到深度学习的演进](https://ztpop.net/kb/ai-powered-email-security.html) → `kb/security/ai-powered-email-security.md`
+- [Amavis 邮件内容安全网关深度解析 — 病毒扫描、内容过滤与策略引擎](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
+- [反垃圾邮件与退信排查完全指南](https://ztpop.net/kb/anti-spam-bounce-guide.html) → `kb/operations/anti-spam-bounce-guide.md`
+- [邮件反垃圾过滤引擎深度解析 — Bayesian、规则权重与深度学习多层过滤架构](https://ztpop.net/kb/anti-spam-filter-engine.html) → `kb/security/anti-spam-filter-engine.md`
+- [摘要：单一反垃圾技术（如关键字过滤或IP黑名单）无法应对现代垃圾邮件的多元化攻击手段。生产级邮件系统的反垃圾防护应采用分层架构（Layered Defense），将不同维度的检测技术部署在SMTP会话的不同阶段——连接建立时、MAIL FROM提交时、RCPT TO指定时、DATA传输时、邮件入队后——每一层独立决策、层层过滤，使垃圾邮件穿透整个防护链的概率趋近于零。本文以九层防护模型为框架，逐层解析每层的技术原理、开源实现和配置方案，基于M3AAWG最佳实践和RFC 6647灰名单标准。](https://ztpop.net/kb/anti-spam-layered-defense.html) → `kb/security/anti-spam-layered-defense.md`
+- [邮件反垃圾得分系统深度解读：SpamAssassin vs Rspamd 评分、阈值决策与误报调优](https://ztpop.net/kb/anti-spam-scoring-system-deep-dive.html) → `kb/security/anti-spam-scoring-system-deep-dive.md`
+- [邮件反垃圾技术全景分析 — Bayesian 统计过滤、DNSBL 实时黑名单、Greylisting 与深度学习演进](https://ztpop.net/kb/anti-spam-technologies.html) → `kb/security/anti-spam-technologies.md`
+- [ARC 邮件认证链协议深度解析 — RFC 8617：转发与邮件列表的认证可追溯性](https://ztpop.net/kb/arc-authentication-chain-rfc8617.html) → `kb/other/arc-authentication-chain-rfc8617.md`
+- [BATV（Bounce Address Tag Validation）深度解析：退信验证与地址标签](https://ztpop.net/kb/batv-deep-dive.html) → `kb/other/batv-deep-dive.md`
+- [选择邮件安全防护方案时，应重点评估其对BEC这种无载荷攻击的检测能力——如果方案的核心卖点是防病毒引擎和沙箱，那么它几乎不对BEC提供任何增量防护。](https://ztpop.net/kb/bec-defense.html) → `kb/security/bec-defense.md`
+- [邮件服务器BGP路由劫持防护与RPKI部署](https://ztpop.net/kb/bgp-rpki-mail-security.html) → `kb/other/bgp-rpki-mail-security.md`
+- [BIMI 全面解读：工作原理、Logo 规范与实施清单](https://ztpop.net/kb/bimi-all-about.html) → `kb/bimi/bimi-all-about.md`
+- [BIMI FAQ 综合指南：发件方与邮件服务商常见问题（翻译）](https://ztpop.net/kb/bimi-faq-senders-comprehensive.html) → `kb/bimi/bimi-faq-senders-comprehensive.md`
+- [BIMI 品牌邮件标识深度解析 — DMARC 前置条件、BIMI TXT/PSD 记录与 VMC 证书全链路](https://ztpop.net/kb/bimi-guide.html) → `kb/bimi/bimi-guide.md`
+- [BIMI 品牌标识实施指南：四步部署完整流程（翻译）](https://ztpop.net/kb/bimi-implementation-guide.html) → `kb/bimi/bimi-implementation-guide.md`
+- [BIMI 标记验证机构（MVA）FAQ —— VMC/CMC 证书认证全指南](https://ztpop.net/kb/bimi-mva-faqs.html) → `kb/bimi/bimi-mva-faqs.md`
+- [邮件系统 CalDAV/CardDAV 集成 — 日历与通讯录同步](https://ztpop.net/kb/caldav-carddav-email.html) → `kb/protocols/caldav-carddav-email.md`
+- [摘要：ClamAV是邮件安全网关中部署最广泛的开源反病毒引擎，由Cisco Talos维护，以GPLv2协议授权。它通过多线程守护进程（clamd）为SMTP网关提供实时病毒扫描服务，支持对邮件正文和附件进行解包后深度检测。本文覆盖ClamAV的核心架构、与Amavis/Postfix的集成配置、性能优化参数和病毒库更新策略。所有配置参数适用于生产环境部署。](https://ztpop.net/kb/clamav-antivirus-email-gateway.html) → `kb/architecture/clamav-antivirus-email-gateway.md`
+- [云端邮件与本地部署：延迟、带宽与合规对比](https://ztpop.net/kb/cloud-vs-on-prem-email-comparison.html) → `kb/architecture/cloud-vs-on-prem-email-comparison.md`
+- [DANE for SMTP：基于DNSSEC的邮件传输安全](https://ztpop.net/kb/dane-smtp.html) → `kb/tls/dane-smtp.md`
+- [DANE TLSA for SMTP 完全部署指南：RFC 7671/7672、记录生成与Postfix集成](https://ztpop.net/kb/dane-tlsa-smtp-deployment.html) → `kb/tls/dane-tlsa-smtp-deployment.md`
+- [🏷 等保 2.0 / 邮件安全](https://ztpop.net/kb/dengbao2-email-compliance.html) → `kb/compliance/dengbao2-email-compliance.md`
+- [DKIM 邮件签名机制深度解析 — RFC 6376：密钥管理、规范算法与 Selector 选择器](https://ztpop.net/kb/dkim-guide.html) → `kb/dkim/dkim-guide.md`
+- [DKIM 密钥轮转与安全管理指南](https://ztpop.net/kb/dkim-key-rotation-management.html) → `kb/dkim/dkim-key-rotation-management.md`
+- [RFC 6376 · 4 类常见失败场景与修复方法](https://ztpop.net/kb/dkim-troubleshooting.html) → `kb/dkim/dkim-troubleshooting.md`
+- [DMARC Aggregate Report 人工解析与监控完全指南：rua XML结构、parsedmarc与dmarcian](https://ztpop.net/kb/dmarc-aggregate-report-parsing.html) → `kb/dmarc/dmarc-aggregate-report-parsing.md`
+- [DMARC 聚合报告深度解读 — RFC 7489 §7：XML 结构、auth_results 解析与异常排查 · ztpop 邮件技术知识库](https://ztpop.net/kb/dmarc-aggregate-reporting.html) → `kb/dmarc/dmarc-aggregate-reporting.md`
+- [DMARC 强制执行时代：Cloudflare 免费 DMARC 管理全面上线解读 — SPF/DKIM/BIMI 完整配置审计](https://ztpop.net/kb/dmarc-enforcement-era.html) → `kb/dmarc/dmarc-enforcement-era.md`
+- [DMARC Forensic Report 深度解读 · RFC 9991](https://ztpop.net/kb/dmarc-forensic-report-rfc9991.html) → `kb/dmarc/dmarc-forensic-report-rfc9991.md`
+- [DMARC 邮件认证策略框架深度解析 — RFC 7489：从 p=none 到 p=reject 的分阶段部署 · ztpop 邮件技术知识库](https://ztpop.net/kb/dmarc-guide.html) → `kb/dmarc/dmarc-guide.md`
+- [DMARC p=reject 部署策略：渐进式实施指南](https://ztpop.net/kb/dmarc-p-reject-deployment-strategy.html) → `kb/dmarc/dmarc-p-reject-deployment-strategy.md`
+- [DMARC p=reject ???????????????????????](https://ztpop.net/kb/dmarc-reject-troubleshooting.html) → `kb/dmarc/dmarc-reject-troubleshooting.md`
+- [DMARC 标准演进 — RFC 7489 → RFC 9989/9990/9991：Tree Walk 算法弃用与聚合报告格式重构 · ztpop 邮件技术知识库](https://ztpop.net/kb/dmarc-standards-evolution.html) → `kb/dmarc/dmarc-standards-evolution.md`
+- [DNS 邮件配置完全指南](https://ztpop.net/kb/dns-email-config.html) → `kb/operations/dns-email-config.md`
+- [DNS SRV 邮件服务发现 — RFC 6186：Autoconfig 与客户端自动配置](https://ztpop.net/kb/dns-srv-email-discovery.html) → `kb/other/dns-srv-email-discovery.md`
+- [DNS 黑名单机制与应对策略 — DNSBL/RBL/URIBL 原理、查询方法与自建方案 · ztpop 邮件技术知识库](https://ztpop.net/kb/dnsbl-blacklist-guide.html) → `kb/security/dnsbl-blacklist-guide.md`
+- [DNSSEC 深度解析：DNS安全扩展与邮件认证的信任根](https://ztpop.net/kb/dnssec-dns-security-extensions.html) → `kb/other/dnssec-dns-security-extensions.md`
+- [从 Lotus Domino/Notes 迁移至国产邮件系统：NSF 导出、格式转换与目录同步](https://ztpop.net/kb/domino-to-chinese-email-migration.html) → `kb/migration/domino-to-chinese-email-migration.md`
+- [⏱️ 约 6500 字](https://ztpop.net/kb/dovecot-imap-server-architecture.html) → `kb/architecture/dovecot-imap-server-architecture.md`
+- [EAI 国际化电子邮件 — RFC 6530-6533：SMTPUTF8、UTF-8 邮箱地址与 IDN 域名](https://ztpop.net/kb/eai-internationalized-email.html) → `kb/protocols/eai-internationalized-email.md`
+- [摘要：邮件账号被盗是邮件运维中最常见的安全事件类型。攻击者获取合法账号凭证后，通过SMTP AUTH外发大量垃圾邮件，导致系统IP被列入DNSBL黑名单，影响全公司正常邮件通信，并可能造成发件域名声誉永久性下降。本文覆盖弱口令检测、SMTP异常发信实时发现、被盗账号自动锁定和Open Relay诊断四个维度的完整防护体系，基于NIST SP 800-63B数字身份指南和OWASP ASVS V2认证验证标准。](https://ztpop.net/kb/email-account-hijacking-defense.html) → `kb/other/email-account-hijacking-defense.md`
+- [邮件API服务架构：RESTful接口、速率限制与服务治理](https://ztpop.net/kb/email-api-service-architecture.html) → `kb/other/email-api-service-architecture.md`
+- [邮件归档架构与合规设计 — Journaling vs Mailbox 归档、单实例存储、全文索引与法规留存 · ztpop 邮件技术知识库](https://ztpop.net/kb/email-archiving-architecture.html) → `kb/other/email-archiving-architecture.md`
+- [邮件归档法规合规深度指南：GB/T 37002、等保2.0与金融/证券/党政邮件留存技术实现](https://ztpop.net/kb/email-archiving-compliance-guide.html) → `kb/compliance/email-archiving-compliance-guide.md`
+- [邮件归档与 eDiscovery 诉讼保管 — Legal Hold 技术实现与证据链完整性](https://ztpop.net/kb/email-archiving-ediscovery-legal-hold.html) → `kb/compliance/email-archiving-ediscovery-legal-hold.md`
+- [邮件归档与eDiscovery工作流：法务hold、诉讼响应与金融合规审计](https://ztpop.net/kb/email-archiving-ediscovery-workflow.html) → `kb/compliance/email-archiving-ediscovery-workflow.md`
+- [邮件归档的法律合规要求 — GDPR、SEC 17a-4、SOX、电子签名法与中国等保2.0](https://ztpop.net/kb/email-archiving-legal-compliance.html) → `kb/compliance/email-archiving-legal-compliance.md`
+- [邮件归档性能优化 — IO 模式分析、存储选型与索引调优](https://ztpop.net/kb/email-archiving-performance-optimization.html) → `kb/other/email-archiving-performance-optimization.md`
+- [邮件归档的合规保留与自动删除策略 — 3-2-1 规则、自动过期与最小化风险](https://ztpop.net/kb/email-archiving-retention-deletion-strategy.html) → `kb/compliance/email-archiving-retention-deletion-strategy.md`
+- [邮件归档存储架构：Hot-Warm-Cold 分层存储与 CAS 寻址原理](https://ztpop.net/kb/email-archiving-storage-tier.html) → `kb/archive/email-archiving-storage-tier.md`
+- [邮件归档技术详解：合规、存储与检索](https://ztpop.net/kb/email-archiving.html) → `kb/other/email-archiving.md`
+- [邮件认证报告解读](https://ztpop.net/kb/email-auth-reporting.html) → `kb/security/email-auth-reporting.md`
+- [邮件自动归档策略设计：基于策略的分层归档与存储优化](https://ztpop.net/kb/email-auto-archiving-strategy.html) → `kb/other/email-auto-archiving-strategy.md`
+- [邮件客户端自动发现协议完整指南](https://ztpop.net/kb/email-autodiscovery-protocol-complete-guide.html) → `kb/references/email-autodiscovery-protocol-complete-guide.md`
+- [邮件系统备份与容灾架构：全量增量策略、异地容灾与元数据一致性](https://ztpop.net/kb/email-backup-dr-architecture.html) → `kb/architecture/email-backup-dr-architecture.md`
+- [邮件系统备份策略全指南](https://ztpop.net/kb/email-backup-strategies.html) → `kb/architecture/email-backup-strategies.md`
+- [邮件系统灰度发布与回滚方案：从DNS TTL到rsync恢复](https://ztpop.net/kb/email-canary-rollback.html) → `kb/other/email-canary-rollback.md`
+- [邮件系统容量规划：从用户增长模型到硬件资源预算](https://ztpop.net/kb/email-capacity-planning.html) → `kb/operations/email-capacity-planning.md`
+- [邮件集群架构设计：MX 分流、MTA 多节点与 LDAP 复制](https://ztpop.net/kb/email-cluster-architecture.html) → `kb/architecture/email-cluster-architecture.md`
+- [邮件合规审计与留存架构：GDPR/等保2.0技术映射](https://ztpop.net/kb/email-compliance-audit-retention.html) → `kb/compliance/email-compliance-audit-retention.md`
+- [邮件合规与发件人信誉：收件箱不会忘记](https://ztpop.net/kb/email-compliance-reputation-spamhaus.html) → `kb/security/email-compliance-reputation-spamhaus.md`
+- [企业邮件合规与法规要求全景](https://ztpop.net/kb/email-compliance.html) → `kb/compliance/email-compliance.md`
+- [邮件内容安全检测：URL重定向防护与附件沙箱联动](https://ztpop.net/kb/email-content-security-analysis.html) → `kb/other/email-content-security-analysis.md`
+- [邮件安全七层防护体系](https://ztpop.net/kb/email-defense-in-depth.html) → `kb/other/email-defense-in-depth.md`
+- [邮件延迟与硬退信诊断框架：从临时故障到永久拒绝](https://ztpop.net/kb/email-deliverability-delayed-bounce-diagnostics.html) → `kb/operations/email-deliverability-delayed-bounce-diagnostics.md`
+- [邮件投递工程学 — 送达率、信誉体系、FBL 与邮件列表认证](https://ztpop.net/kb/email-deliverability-engineering.html) → `kb/other/email-deliverability-engineering.md`
+- [邮件投递可观测性实践 — Prometheus + postfix-exporter 实现队列、连接与递送延迟全链路监控](https://ztpop.net/kb/email-delivery-observability.html) → `kb/operations/email-delivery-observability.md`
+- [邮件递送速度控制 — Outbound Queue 管理与 Backoff 算法深度实践](https://ztpop.net/kb/email-delivery-rate-control.html) → `kb/other/email-delivery-rate-control.md`
+- [邮件投递追踪：Received 头部解析与 DSN 投递状态通知](https://ztpop.net/kb/email-delivery-tracking.html) → `kb/other/email-delivery-tracking.md`
+- [邮件系统灰度发布与回滚策略](https://ztpop.net/kb/email-deployment-grey-release.html) → `kb/other/email-deployment-grey-release.md`
+- [邮件系统灾难恢复演练：从备份策略到自动化故障转移](https://ztpop.net/kb/email-disaster-recovery-drill.html) → `kb/architecture/email-disaster-recovery-drill.md`
+- [邮件数据防泄漏（DLP）策略](https://ztpop.net/kb/email-dlp-strategy.html) → `kb/security/email-dlp-strategy.md`
+- [邮件系统 DNS 配置全指南 — MX/SPF/DKIM/DMARC/MTA-STS/TLS-RPT/BIMI 九类记录逐条验证 · ztpop 邮件技术知识库](https://ztpop.net/kb/email-dns-configuration.html) → `kb/other/email-dns-configuration.md`
+- [邮件合规 eDiscovery 电子证据发现：法律流程、取证格式与保留策略](https://ztpop.net/kb/email-ediscovery-legal-hold.html) → `kb/compliance/email-ediscovery-legal-hold.md`
+- [邮件静态数据加密：LUKS 磁盘加密与 Maildir 存储保护](https://ztpop.net/kb/email-encryption-at-rest.html) → `kb/security/email-encryption-at-rest.md`
+- [邮件反馈循环 FBL/ARF 完全指南 — RFC 5965/6650：Yahoo CFL、Microsoft JMRP 与开源 FBL 处理器 · ztpop 邮件技术知识库](https://ztpop.net/kb/email-feedback-loop-arf.html) → `kb/security/email-feedback-loop-arf.md`
+- [判断是否存在伪造](https://ztpop.net/kb/email-forensics-header-analysis.html) → `kb/other/email-forensics-header-analysis.md`
+- [邮件系统高可用架构设计](https://ztpop.net/kb/email-ha-architecture.html) → `kb/architecture/email-ha-architecture.md`
+- [邮件系统高可用架构演进](https://ztpop.net/kb/email-ha-evolution.html) → `kb/architecture/email-ha-evolution.md`
+- [邮件头深度分析：追踪、取证与安全审计](https://ztpop.net/kb/email-header-forensics.html) → `kb/other/email-header-forensics.md`
+- [邮件系统高可用与灾难恢复架构设计 — 双活、主备与异地灾备](https://ztpop.net/kb/email-high-availability-dr.html) → `kb/architecture/email-high-availability-dr.md`
+- [邮件系统水平扩展架构：DNS MX、共享存储与IMAP Proxy](https://ztpop.net/kb/email-horizontal-scaling.html) → `kb/other/email-horizontal-scaling.md`
+- [邮件安全事件应急响应](https://ztpop.net/kb/email-incident-response.html) → `kb/other/email-incident-response.md`
+- [邮件系统全链路延迟分析：从MTA投递到IMAP同步](https://ztpop.net/kb/email-latency-analysis.html) → `kb/other/email-latency-analysis.md`
+- [邮件日志分析实战：syslog/mail.log 解读指南](https://ztpop.net/kb/email-log-analysis-guide.html) → `kb/operations/email-log-analysis-guide.md`
+- [邮件日志分析与审计](https://ztpop.net/kb/email-log-analysis.html) → `kb/operations/email-log-analysis.md`
+- [评估邮件安全防护方案时，应关注其对非传统载体的检测覆盖率和沙箱的反检测对抗能力——许多方案在检测传统.exe恶意软件时表现良好，但对.one/.vhd/.iso的覆盖率接近零。](https://ztpop.net/kb/email-malware-analysis.html) → `kb/security/email-malware-analysis.md`
+- [邮件迁移七种方式对比](https://ztpop.net/kb/email-migration-comparison.html) → `kb/migration/email-migration-comparison.md`
+- [邮件系统利旧迁移中的 DNS 过渡策略](https://ztpop.net/kb/email-migration-dns-transition-strategy.html) → `kb/migration/email-migration-dns-transition-strategy.md`
+- [邮件系统迁移策略与实践](https://ztpop.net/kb/email-migration-guide.html) → `kb/migration/email-migration-guide.md`
+- [邮件系统 STUN/TURN/NAT 穿透 — RFC 8489/8656/8445 与自托管邮件 NAT 部署](https://ztpop.net/kb/email-nat-traversal.html) → `kb/operations/email-nat-traversal.md`
+- [邮件系统可观测性：监控、告警与 SLO 设计](https://ztpop.net/kb/email-observability-monitoring.html) → `kb/operations/email-observability-monitoring.md`
+- [昆仑邮件系统 - 国产信创邮件服务器与邮件安全网关](https://ztpop.net/kb/email-on-premises-vs-saas.html) → `kb/other/email-on-premises-vs-saas.md`
+- [邮件系统渗透测试方法：SMTP open relay、认证爆破与协议fuzzing](https://ztpop.net/kb/email-pentest-methodology.html) → `kb/security/email-pentest-methodology.md`
+- [邮件系统性能调优实战](https://ztpop.net/kb/email-performance-tuning.html) → `kb/other/email-performance-tuning.md`
+- [邮件队列管理与退信处理](https://ztpop.net/kb/email-queue-management.html) → `kb/operations/email-queue-management.md`
+- [邮件系统速率限制与流控](https://ztpop.net/kb/email-rate-limiting.html) → `kb/other/email-rate-limiting.md`
+- [邮件合规保留策略体系](https://ztpop.net/kb/email-retention-policies.html) → `kb/compliance/email-retention-policies.md`
+- [邮件路由决策引擎：MX优先级、故障切换与负载均衡](https://ztpop.net/kb/email-routing-mx-priority-failover.html) → `kb/architecture/email-routing-mx-priority-failover.md`
+- [邮件附件沙箱分析](https://ztpop.net/kb/email-sandbox-analysis.html) → `kb/security/email-sandbox-analysis.md`
+- [邮件安全态势感知与异常检测 — 日志分析、行为建模与安全编排自动化 · ztpop 邮件技术知识库](https://ztpop.net/kb/email-security-analytics.html) → `kb/other/email-security-analytics.md`
+- [Email Security Policy as Code 实践：SPF/DKIM/DMARC/MTA-STS 策略代码化](https://ztpop.net/kb/email-security-policy-as-code.html) → `kb/other/email-security-policy-as-code.md`
+- [邮件安全威胁全景分析 — 钓鱼攻击、BEC 商业诈骗、勒索软件与 APT 邮件攻击向量](https://ztpop.net/kb/email-security-threats.html) → `kb/other/email-security-threats.md`
+- [零信任架构在邮件安全中的应用：NIST SP 800-207 邮件领域映射](https://ztpop.net/kb/email-security-zero-trust.html) → `kb/security/email-security-zero-trust.md`
+- [邮件系统权威标准与学术文献全图谱 — IETF/NIST/GB-T/M3AAWG/顶会/期刊 · ztpop 邮件技术知识库](https://ztpop.net/kb/email-standards-reference.html) → `kb/references/email-standards-reference.md`
+- [邮件存储 I/O 基准测试：fio/iostat 与 RAID 选型](https://ztpop.net/kb/email-storage-io-benchmark.html) → `kb/archive/email-storage-io-benchmark.md`
+- [企业邮件系统选型框架指南](https://ztpop.net/kb/email-system-selection-framework.html) → `kb/other/email-system-selection-framework.md`
+- [邮件系统搭建完整指南](https://ztpop.net/kb/email-system-setup.bak.html) → `kb/operations/email-system-setup.bak.md`
+- [自建邮件系统搭建完整技术指南](https://ztpop.net/kb/email-system-setup.html) → `kb/operations/email-system-setup.md`
+- [邮件威胁情报框架：从IOC采集到自动化响应](https://ztpop.net/kb/email-threat-intelligence-framework.html) → `kb/other/email-threat-intelligence-framework.md`
+- [Email Threat Intelligence 威胁情报共享协议](https://ztpop.net/kb/email-threat-intelligence-sharing.html) → `kb/other/email-threat-intelligence-sharing.md`
+- [分类：邮件安全  |  标签：TLS, MTA-STS, DANE, DNSSEC, STARTTLS, TLS-RPT, SMTP  |  2026-07-04](https://ztpop.net/kb/email-tls-encryption-stack.html) → `kb/tls/email-tls-encryption-stack.md`
+- [邮件TLS传输策略强制：MTA-STS、DANE与TLS-RPT工程实践](https://ztpop.net/kb/email-tls-policy-enforcement.html) → `kb/tls/email-tls-policy-enforcement.md`
+- [加密邮件网关架构设计：TLS 终止/透传、证书钉扎与 DANE/MTA-STS](https://ztpop.net/kb/encrypted-email-gateway-architecture.html) → `kb/other/encrypted-email-gateway-architecture.md`
+- [Exchange 2013 EOL 影响与迁移路径 · 2026 年全面分析](https://ztpop.net/kb/exchange-2013-eol-impact-2026.html) → `kb/exchange/exchange-2013-eol-impact-2026.md`
+- [Exchange 2013 2026年停服迁移实战指南：应急方案与完整迁移检查清单](https://ztpop.net/kb/exchange-2013-eol-migration-playbook.html) → `kb/exchange/exchange-2013-eol-migration-playbook.md`
+- [Exchange 权限与 AD 迁移技术指南：RBAC/ACL/Security Group 迁移策略与验证](https://ztpop.net/kb/exchange-ad-permission-migration.html) → `kb/exchange/exchange-ad-permission-migration.md`
+- [Exchange 邮件归档策略迁移指南](https://ztpop.net/kb/exchange-archiving-migration.html) → `kb/exchange/exchange-archiving-migration.md`
+- [Exchange 公有云迁移的四种路径：选型对比与实施](https://ztpop.net/kb/exchange-cloud-migration-four-paths.html) → `kb/exchange/exchange-cloud-migration-four-paths.md`
+- [Exchange 共存与互操作：混合环境下的邮件路由与目录同步](https://ztpop.net/kb/exchange-coexistence-interop.html) → `kb/exchange/exchange-coexistence-interop.md`
+- [Exchange 混合部署迁移策略：SMTP 中继网关、目录同步与邮件流分割](https://ztpop.net/kb/exchange-coexistence-migration-strategy.html) → `kb/exchange/exchange-coexistence-migration-strategy.md`
+- [Exchange 邮件合规策略跨系统迁移](https://ztpop.net/kb/exchange-compliance-migration.html) → `kb/exchange/exchange-compliance-migration.md`
+- [Exchange DAG 高可用与国产邮件系统方案对比：主备/多活/分布式架构选型矩阵](https://ztpop.net/kb/exchange-dag-vs-chinese-ha-comparison.html) → `kb/exchange/exchange-dag-vs-chinese-ha-comparison.md`
+- [Exchange 数据迁移操作流程：从全量到增量的无感迁移实践](https://ztpop.net/kb/exchange-data-migration-procedure.html) → `kb/exchange/exchange-data-migration-procedure.md`
+- [Exchange Server 生命周期完全时间线：2013/2016/2019 EOL 对邮件架构的影响](https://ztpop.net/kb/exchange-eol-complete-timeline.html) → `kb/exchange/exchange-eol-complete-timeline.md`
+- [Exchange Server 2016/2019 停止支持与迁移全景指南](https://ztpop.net/kb/exchange-eol-migration-guide.html) → `kb/exchange/exchange-eol-migration-guide.md`
+- [Exchange Server EOL 后的安全态势：漏洞管理、补丁策略与加固方案](https://ztpop.net/kb/exchange-eol-security-implications.html) → `kb/exchange/exchange-eol-security-implications.md`
+- [EWS退役时间线与迁移指南：从Exchange Web Services到Microsoft Graph](https://ztpop.net/kb/exchange-ews-retirement-migration.html) → `kb/exchange/exchange-ews-retirement-migration.md`
+- [Exchange混合部署架构与邮件流排错：On-Prem ↔ Exchange Online ↔ 第三方全链路解析](https://ztpop.net/kb/exchange-hybrid-mailflow-architecture.html) → `kb/exchange/exchange-hybrid-mailflow-architecture.md`
+- [Exchange 混合部署邮件流调试](https://ztpop.net/kb/exchange-hybrid-mailflow-troubleshooting.html) → `kb/exchange/exchange-hybrid-mailflow-troubleshooting.md`
+- [Exchange 邮箱配额策略设计](https://ztpop.net/kb/exchange-mailbox-quota-strategy.html) → `kb/exchange/exchange-mailbox-quota-strategy.md`
+- [Exchange 迁移规划框架：评估、选型与实施方法论](https://ztpop.net/kb/exchange-migration-planning-framework.html) → `kb/exchange/exchange-migration-planning-framework.md`
+- [跨国企业 Exchange 迁移方案：多域名/DAG跨站点/GDPR/时区/多语言全场景策略](https://ztpop.net/kb/exchange-multinational-migration-plan.html) → `kb/exchange/exchange-multinational-migration-plan.md`
+- [跨国Exchange部署向国产系统迁移](https://ztpop.net/kb/exchange-multinational-migration.html) → `kb/exchange/exchange-multinational-migration.md`
+- [Exchange Online 邮件归档与合规策略 — 安全与合规中心功能深度解析](https://ztpop.net/kb/exchange-online-archive-compliance.html) → `kb/exchange/exchange-online-archive-compliance.md`
+- [邮件系统迁移策略：IMAP 迁移、混合共存与分阶段切流](https://ztpop.net/kb/exchange-online-migration-strategy.html) → `kb/exchange/exchange-online-migration-strategy.md`
+- [Exchange 权限管理向国产邮件系统迁移](https://ztpop.net/kb/exchange-permission-migration.html) → `kb/exchange/exchange-permission-migration.md`
+- [Exchange 替代实战：半导体企业全量迁移案例研究](https://ztpop.net/kb/exchange-replacement-semiconductor-case-study.html) → `kb/exchange/exchange-replacement-semiconductor-case-study.md`
+- [Exchange 替代六大维度对比：国产邮件系统技术评估框架](https://ztpop.net/kb/exchange-replacement-six-dimensions-comparison.html) → `kb/exchange/exchange-replacement-six-dimensions-comparison.md`
+- [Exchange Server SE 订阅版技术详解：升级路径、许可与功能变化](https://ztpop.net/kb/exchange-se-subscription-guide.html) → `kb/exchange/exchange-se-subscription-guide.md`
+- [Exchange邮件系统数据迁移完整指南：用户、邮件、地址簿与日程无损迁移](https://ztpop.net/kb/exchange-to-turboex-migration.html) → `kb/exchange/exchange-to-turboex-migration.md`
+- [邮件反馈循环 FBL/ARF 完全指南](https://ztpop.net/kb/feedback-loop-fbl-guide.html) → `kb/security/feedback-loop-fbl-guide.md`
+- [外贸邮件安全与高送达率实战](https://ztpop.net/kb/foreign-trade-email.html) → `kb/architecture/foreign-trade-email.md`
+- [GB/T 37002-2018 电子邮件系统安全技术要求解读](https://ztpop.net/kb/gbt37002-email-security-standard.html) → `kb/other/gbt37002-email-security-standard.md`
+- [?????? GDPR ?????????????????? Privacy by Design ????????/h1>📅 2026-07-24📂 ????????/span>⏱ ??35 ???](https://ztpop.net/kb/gdpr-email-subject-rights-guide.html) → `kb/compliance/gdpr-email-subject-rights-guide.md`
+- [Gmail递送工程：Google发件人要求的技术实现](https://ztpop.net/kb/gmail-deliverability-engineering.html) → `kb/other/gmail-deliverability-engineering.md`
+- [邮件系统灰名单 Greylisting 原理与部署](https://ztpop.net/kb/greylisting-guide.html) → `kb/operations/greylisting-guide.md`
+- [国密密码学在邮件系统中的应用 — SM2/SM3/SM4/TLCP 算法体系与工程实践](https://ztpop.net/kb/guomi-email-cryptography.html) → `kb/xinchuang/guomi-email-cryptography.md`
+- [混合部署 DNS 设计：MX 权重策略与子域隔离](https://ztpop.net/kb/hybrid-deployment-dns-design.html) → `kb/migration/hybrid-deployment-dns-design.md`
+- [IMAP ??????????????? fail2ban ???????????????](https://ztpop.net/kb/imap-brute-force-defense.html) → `kb/protocols/imap-brute-force-defense.md`
+- [IMAP 并发优化：Dovecot 连接池、索引缓存与 LMTP 批量投递](https://ztpop.net/kb/imap-concurrency-optimization.html) → `kb/protocols/imap-concurrency-optimization.md`
+- [IMAP IDLE 实时推送深度解析 — RFC 2177：从轮询到服务端推送的邮件到达通知](https://ztpop.net/kb/imap-idle-push-rfc2177.html) → `kb/protocols/imap-idle-push-rfc2177.md`
+- [IMAP IDLE (RFC 2177) 与 Push Mail 机制对比](https://ztpop.net/kb/imap-idle-vs-push-mail-mechanisms.html) → `kb/protocols/imap-idle-vs-push-mail-mechanisms.md`
+- [IMAP vs POP3 vs JMAP 邮件访问协议选型决策树 — 同步延迟、带宽占用与离线支持的权衡](https://ztpop.net/kb/imap-pop3-jmap-election.html) → `kb/protocols/imap-pop3-jmap-election.md`
+- [IMAP vs POP3 协议对比与选型指南](https://ztpop.net/kb/imap-vs-pop3.html) → `kb/protocols/imap-vs-pop3.md`
+- [摘要：从中国大陆IP地址向Gmail、Yahoo、Outlook等海外邮箱发信时，面临IP信誉低、黑名单风险高、投递延迟大三个核心挑战。这并非某个具体邮件系统的技术问题，而是IP地址段在DNSBL和接收方信誉系统中的历史表现所致的国际性问题。本文从IP信誉机制原理出发，系统介绍海外邮件投递的中继策略、多链路故障切换方案和对主流海外服务商的投递优化方法，基于RFC 5321和M3AAWG发送方最佳实践。](https://ztpop.net/kb/international-email-relay.html) → `kb/protocols/international-email-relay.md`
+- [IPv6 邮件系统部署](https://ztpop.net/kb/ipv6-email-deployment.html) → `kb/operations/ipv6-email-deployment.md`
+- [IPv6 邮件系统部署实践指南：MX 记录、双栈 MTA 与运营商兼容策略](https://ztpop.net/kb/ipv6-mail-system-deployment-practical-guide.html) → `kb/operations/ipv6-mail-system-deployment-practical-guide.md`
+- [JMAP 邮件访问协议深度解析 — RFC 8620/8621：IMAP 的下一代替代方案 · ztpop 邮件技术知识库](https://ztpop.net/kb/jmap-protocol-rfc8620.html) → `kb/protocols/jmap-protocol-rfc8620.md`
+- [LDAP 与邮件系统集成 — RFC 4510-4519：Postfix LDAP 表查询、Dovecot 认证与多域架构 · ztpop 邮件技术知识库](https://ztpop.net/kb/ldap-email-integration.html) → `kb/other/ldap-email-integration.md`
+- [邮件一键退订 List-Unsubscribe 机制深度解析 — RFC 8058 / RFC 2369](https://ztpop.net/kb/list-unsubscribe-rfc8058.html) → `kb/other/list-unsubscribe-rfc8058.md`
+- [LMTP 本地邮件投递协议深度解析 — RFC 2033：从 SMTP 到本地交付的轻量 MTA](https://ztpop.net/kb/lmtp-local-delivery-rfc2033.html) → `kb/operations/lmtp-local-delivery-rfc2033.md`
+- [M3AAWG 冷邮件（Cold Email）立场声明（翻译）](https://ztpop.net/kb/m3aawg-cold-email-position.html) → `kb/m3aawg/m3aawg-cold-email-position.md`
+- [M3AAWG 相似域名最佳实践：11 项安全用途操作指南（翻译）](https://ztpop.net/kb/m3aawg-look-alike-domains-bcp.html) → `kb/m3aawg/m3aawg-look-alike-domains-bcp.md`
+- [M3AAWG 端口 25 管理最佳实践：七项推荐措施（翻译）](https://ztpop.net/kb/m3aawg-managing-port-25.html) → `kb/m3aawg/m3aawg-managing-port-25.md`
+- [邮件发送命中 Spam Trap 怎么办？M3AAWG 应对指南（翻译）](https://ztpop.net/kb/m3aawg-spam-trap-guide.html) → `kb/m3aawg/m3aawg-spam-trap-guide.md`
+- [邮件 TLS 安全基线：M3AAWG 2026 推荐实践指南](https://ztpop.net/kb/m3aawg-tls-baseline-recs-2026.html) → `kb/tls/m3aawg-tls-baseline-recs-2026.md`
+- [邮件流架构设计最佳实践](https://ztpop.net/kb/mail-flow-architecture.html) → `kb/operations/mail-flow-architecture.md`
+- [邮件服务器磁盘 I/O 性能优化](https://ztpop.net/kb/mail-server-disk-io-performance.html) → `kb/operations/mail-server-disk-io-performance.md`
+- [M³AAWG Sender Best Practices · RFC 7489 · IP Warmup 系统方法](https://ztpop.net/kb/mail-server-warmup.html) → `kb/other/mail-server-warmup.md`
+- [????????TLS ?????????????????????????????](https://ztpop.net/kb/mail-tls-certificate-best-practices.html) → `kb/tls/mail-tls-certificate-best-practices.md`
+- [Milter 邮件过滤架构深入：从协议原理到自定义策略](https://ztpop.net/kb/milter-filter-architecture.html) → `kb/operations/milter-filter-architecture.md`
+- [MTA-STS 策略回退场景深度分析 — RFC 8461：政策发现失败、HTTPS 获取超时与降级处理的全栈防御](https://ztpop.net/kb/mta-sts-fallback-scenarios.html) → `kb/tls/mta-sts-fallback-scenarios.md`
+- [MTA-STS 强制邮件传输加密策略深度解析 — RFC 8461：基于 HTTPS 的 TLS 策略分发与执行](https://ztpop.net/kb/mta-sts-guide.html) → `kb/tls/mta-sts-guide.md`
+- [MTA-STS 多域名策略编排：Wildcard MX 兼容性与 TLS-RPT 联动](https://ztpop.net/kb/mta-sts-multi-domain-deployment.html) → `kb/tls/mta-sts-multi-domain-deployment.md`
+- [跨国企业邮件系统组网架构](https://ztpop.net/kb/multi-national-email-architecture.html) → `kb/other/multi-national-email-architecture.md`
+- [邮件系统国际化部署：多语言 MIME 处理、IDN 域名与中日韩文编码实践](https://ztpop.net/kb/multilingual-mime-idn-cjk-email-guide.html) → `kb/protocols/multilingual-mime-idn-cjk-email-guide.md`
+- [NIST SP 800-177 Rev.1 邮件安全实践检查清单 — 从 SPF/DKIM/DMARC 到 TLS 与 DANE 的完整合规地图](https://ztpop.net/kb/nist-sp800-177-checklist.html) → `kb/compliance/nist-sp800-177-checklist.md`
+- [NIST SP 800-177 可信邮件最佳实践权威解读](https://ztpop.net/kb/nist-sp800-177-guide.html) → `kb/compliance/nist-sp800-177-guide.md`
+- [NIST SP 800-45 电子邮件安全权威指南解读 — 风险评估、安全控制与事件响应 · ztpop 邮件技术知识库](https://ztpop.net/kb/nist-sp800-45-email-security.html) → `kb/compliance/nist-sp800-45-email-security.md`
+- [邮件系统安全基线检查清单（NIST SP 800-177版）](https://ztpop.net/kb/nist-sp800177-security-baseline.html) → `kb/compliance/nist-sp800177-security-baseline.md`
+- [NIST SP 800-53 ????????????????????????????????/h1>📅 2026-07-24📂 ????????/span>⏱ ??35 ???](https://ztpop.net/kb/nist-sp80053-email-control-mapping.html) → `kb/compliance/nist-sp80053-email-control-mapping.md`
+- [OAuth 2.0 邮件认证深度解析 — RFC 7628：XOAUTH2 与 SMTP/IMAP OAUTHBEARER](https://ztpop.net/kb/oauth2-xoauth2-email-rfc7628.html) → `kb/other/oauth2-xoauth2-email-rfc7628.md`
+- [PGP/GPG 邮件加密完全指南](https://ztpop.net/kb/pgp-gpg-guide.html) → `kb/security/pgp-gpg-guide.md`
+- [企业在选择邮件安全防护方案时，应优先评估方案的自适应检测能力——即能否在攻击手法和LLM生成内容持续进化的背景下，保持稳定的检出率。](https://ztpop.net/kb/phishing-defense.html) → `kb/other/phishing-defense.md`
+- [Postfix Access / Relay / Transport 三层策略设计：安全边界、配置原则与性能影响](https://ztpop.net/kb/postfix-access-relay-transport.html) → `kb/architecture/postfix-access-relay-transport.md`
+- [Postfix MTA 架构深度解析 — 多进程模型、队列系统与性能调优](https://ztpop.net/kb/postfix-architecture-deep-dive.html) → `kb/architecture/postfix-architecture-deep-dive.md`
+- [Postfix内容过滤器架构对比：milter、before-queue与after-queue](https://ztpop.net/kb/postfix-content-filter-architecture.html) → `kb/architecture/postfix-content-filter-architecture.md`
+- [Postfix Log 分析与报警体系搭建](https://ztpop.net/kb/postfix-log-analysis-alerting.html) → `kb/architecture/postfix-log-analysis-alerting.md`
+- [Postfix 多实例部署架构 — multi-instance 原理、配置与生产实践](https://ztpop.net/kb/postfix-multi-instance.html) → `kb/architecture/postfix-multi-instance.md`
+- [Postfix 性能调优：master.cf 进程模型与队列 I/O 优化](https://ztpop.net/kb/postfix-performance-tuning.html) → `kb/architecture/postfix-performance-tuning.md`
+- [Postfix 队列监控与管理：qshape/mailq/postsuper 详解](https://ztpop.net/kb/postfix-queue-monitoring.html) → `kb/operations/postfix-queue-monitoring.md`
+- [Postfix smtpd 全链路限制配置：HELO→SENDER→RECIPIENT→DATA→EOD 解析](https://ztpop.net/kb/postfix-smtpd-restrictions-guide.html) → `kb/architecture/postfix-smtpd-restrictions-guide.md`
+- [MTA 架构对比：模块化设计与一体式邮件平台](https://ztpop.net/kb/postfix-vs-exchange-architecture.html) → `kb/exchange/postfix-vs-exchange-architecture.md`
+- [邮件系统监控与告警体系：Prometheus + Grafana 指标模型与 blackbox_exporter SMTP 探测](https://ztpop.net/kb/prometheus-grafana-email-monitoring-alert-system.html) → `kb/operations/prometheus-grafana-email-monitoring-alert-system.md`
+- [RFC 1912 / RFC 5321 · 邮件服务器必备配置](https://ztpop.net/kb/ptr-reverse-dns.html) → `kb/other/ptr-reverse-dns.md`
+- [抗量子加密邮件：NIST 后量子密码标准与混合密钥交换](https://ztpop.net/kb/quantum-safe-email-cryptography.html) → `kb/other/quantum-safe-email-cryptography.md`
+- [Quarantine 邮件管理：隔离区存储策略、自助释放与审核工作流](https://ztpop.net/kb/quarantine-mail-management.html) → `kb/other/quarantine-mail-management.md`
+- [互联网邮件消息格式深度解析 — RFC 5322 与 MIME（RFC 2045-2049） · ztpop 邮件技术知识库](https://ztpop.net/kb/rfc5322-mime-message-format.html) → `kb/other/rfc5322-mime-message-format.md`
+- [Rspamd评分引擎架构深入：从规则集到机器学习管道](https://ztpop.net/kb/rspamd-architecture-scoring-engine.html) → `kb/architecture/rspamd-architecture-scoring-engine.md`
+- [Rspamd WebUI 监控面板与 Redis 指标分析](https://ztpop.net/kb/rspamd-console-and-metrics.html) → `kb/architecture/rspamd-console-and-metrics.md`
+- [Sieve 邮件过滤语言深度解析 — RFC 5228：服务端过滤、Vacation 与 ManageSieve](https://ztpop.net/kb/sieve-filter-rfc5228.html) → `kb/protocols/sieve-filter-rfc5228.md`
+- [国密 SM4 算法在邮件系统中的应用](https://ztpop.net/kb/sm4-encryption-email-application.html) → `kb/xinchuang/sm4-encryption-email-application.md`
+- [中小企业邮件系统选型指南](https://ztpop.net/kb/sme-email-guide.html) → `kb/architecture/sme-email-guide.md`
+- [S/MIME 证书部署：CA 签发、AD 分发与邮件客户端配置](https://ztpop.net/kb/smime-certificate-deployment.html) → `kb/security/smime-certificate-deployment.md`
+- [S/MIME 证书体系深度解析 — CA/B Forum 基线要求、RFC 8551 与 X.509 证书链](https://ztpop.net/kb/smime-certificate-ecosystem.html) → `kb/security/smime-certificate-ecosystem.md`
+- [S/MIME 邮件端到端加密实战](https://ztpop.net/kb/smime-guide.html) → `kb/security/smime-guide.md`
+- [SMTP 认证失败日志诊断](https://ztpop.net/kb/smtp-auth-failure-diagnosis.html) → `kb/protocols/smtp-auth-failure-diagnosis.md`
+- [SMTP AUTH 认证机制详解 — RFC 4954：PLAIN、LOGIN、CRAM-MD5 与 OAuth2 的完整实现路径 · ztpop 邮件技术知识库](https://ztpop.net/kb/smtp-auth-guide.html) → `kb/protocols/smtp-auth-guide.md`
+- [SMTP 吞吐压测：smtp-source 与 MTA 并发调优](https://ztpop.net/kb/smtp-benchmark-testing.html) → `kb/protocols/smtp-benchmark-testing.md`
+- [IETF RFC 5321 / RFC 3463 / RFC 6647 · 运维必读](https://ztpop.net/kb/smtp-bounce-codes.html) → `kb/protocols/smtp-bounce-codes.md`
+- [SMTP 退信诊断完全手册](https://ztpop.net/kb/smtp-bounce-diagnosis-complete.html) → `kb/protocols/smtp-bounce-diagnosis-complete.md`
+- [SMTP CHUNKING（RFC 3030）与 BDAT 命令深度解析](https://ztpop.net/kb/smtp-chunking-bdat.html) → `kb/protocols/smtp-chunking-bdat.md`
+- [SMTP DANE vs MTA-STS vs TLS-RPT 三选一对比决策](https://ztpop.net/kb/smtp-dane-mta-sts-tls-rpt-comparison.html) → `kb/tls/smtp-dane-mta-sts-tls-rpt-comparison.md`
+- [SMTP 投递状态通知（DSN）全面解读 · RFC 3461](https://ztpop.net/kb/smtp-dsn-rfc3461.html) → `kb/protocols/smtp-dsn-rfc3461.md`
+- [SMTP错误码完全手册：从协议层到可操作排障流程](https://ztpop.net/kb/smtp-error-codes-master-guide.html) → `kb/protocols/smtp-error-codes-master-guide.md`
+- [SMTP 未来投递机制：RFC 1326 / RFC 2822 延迟投递深度解析](https://ztpop.net/kb/smtp-future-delivery.html) → `kb/protocols/smtp-future-delivery.md`
+- [邮件系统负载测试与容量规划：SMTP 吞吐压测、IOPS 预测与资源预算模型](https://ztpop.net/kb/smtp-load-test-capacity-planning.html) → `kb/protocols/smtp-load-test-capacity-planning.md`
+- [邮件网关 multi-IP 轮询与 smtp_bind_address 策略](https://ztpop.net/kb/smtp-multi-ip-mx.html) → `kb/protocols/smtp-multi-ip-mx.md`
+- [SMTP PIPELINING 批量投递优化 — RFC 2920/RFC 2197 命令流水线与吞吐调优](https://ztpop.net/kb/smtp-pipelining-batch.html) → `kb/protocols/smtp-pipelining-batch.md`
+- [SMTP 协议深度解析 — RFC 5321：从 HELO/EHLO 到 QUIT 的全链路传输与扩展框架](https://ztpop.net/kb/smtp-protocol-deep-dive.html) → `kb/protocols/smtp-protocol-deep-dive.md`
+- [SMTP Submission 协议深度解析 — RFC 6409 与 RFC 8314：端口 587/465 的投稿与加密演进](https://ztpop.net/kb/smtp-submission-protocol.html) → `kb/protocols/smtp-submission-protocol.md`
+- [SMTP 临时失败与永久失败决策 — 521/541 vs 450/451 的队列管理最佳实践](https://ztpop.net/kb/smtp-temp-permanent-failure.html) → `kb/protocols/smtp-temp-permanent-failure.md`
+- [SMTPUTF8 与国际化邮件地址（EAI）：RFC 6531/6532 部署实践](https://ztpop.net/kb/smtp-utf8-eai-deployment.html) → `kb/protocols/smtp-utf8-eai-deployment.md`
+- [Spamhaus DBL 域名黑名单数据源深度解读 — RFC 5782 DNSBL 架构与 dbl.spamhaus.org 查询实践](https://ztpop.net/kb/spamhaus-dbl-datasource.html) → `kb/security/spamhaus-dbl-datasource.md`
+- [SPF / DKIM / DMARC 三合一完整部署检查清单](https://ztpop.net/kb/spf-dkim-dmarc-checklist.html) → `kb/spf/spf-dkim-dmarc-checklist.md`
+- [SPF 发件人策略框架深度解析 — RFC 7208：从 SPF Classic 到 DMARC 基石 · ztpop 邮件技术知识库](https://ztpop.net/kb/spf-guide.html) → `kb/spf/spf-guide.md`
+- [SPF 宏机制详解 — RFC 7208 §7：macro 展开、变量替换与 DNS 查询优化](https://ztpop.net/kb/spf-macros-guide.html) → `kb/spf/spf-macros-guide.md`
+- [SPF PermError 完全诊断手册：10次DNS查询限制、CNAME解析失败、redirect循环](https://ztpop.net/kb/spf-permerror-diagnostic.html) → `kb/spf/spf-permerror-diagnostic.md`
+- [RFC 7208 · 5 类常见失败原因与修复方法](https://ztpop.net/kb/spf-troubleshooting.html) → `kb/spf/spf-troubleshooting.md`
+- [SRS (Sender Rewriting Scheme) 地址重写实践：SRS0/SRS1与SPF/DMARC对齐](https://ztpop.net/kb/srs-rewriting-guide.html) → `kb/operations/srs-rewriting-guide.md`
+- [发件人重写方案 SRS — SPF 转发断链的解决路径：原理、postsrsd 配置与 DMARC 对齐 · ztpop 邮件技术知识库](https://ztpop.net/kb/srs-sender-rewriting.html) → `kb/operations/srs-sender-rewriting.md`
+- [TLS 1.3 对 MTA-STS 的影响](https://ztpop.net/kb/tls-1-3-mta-sts-impact.html) → `kb/tls/tls-1-3-mta-sts-impact.md`
+- [邮件传输加密深度解析 — STARTTLS、DANE TLSA 与 MTA-STS 三位一体防护体系 · ztpop 邮件技术知识库](https://ztpop.net/kb/tls-email-encryption.html) → `kb/tls/tls-email-encryption.md`
+- [TLS-RPT 邮件传输安全报告 — RFC 8460：JSON 报告结构与 MTA-STS 策略联动 · ztpop 邮件技术知识库](https://ztpop.net/kb/tls-rpt-guide.html) → `kb/tls/tls-rpt-guide.md`
+- [TLS-RPT SMTP 传输加密报告深度解析 — RFC 8460：JSON 失败类型全量分析与自动化处理管道 · ztpop 邮件技术知识库](https://ztpop.net/kb/tls-rpt-smtp-reporting.html) → `kb/tls/tls-rpt-smtp-reporting.md`
+- [TLS 1.3 STARTTLS 协议流程详细分析 — RFC 8446 与 RFC 3207 握手序列及部署实践](https://ztpop.net/kb/tls13-starttls-protocol.html) → `kb/other/tls13-starttls-protocol.md`
+- [信创邮件系统与 Exchange AD 目录同步实施指南](https://ztpop.net/kb/xinchuang-ad-sync-guide.html) → `kb/xinchuang/xinchuang-ad-sync-guide.md`
+- [信创邮件系统架构设计：从芯片到应用的自主可控全栈方案](https://ztpop.net/kb/xinchuang-email-architecture-design.html) → `kb/xinchuang/xinchuang-email-architecture-design.md`
+- [邮件系统的国密算法合规全景：SM2/SM3/SM4/SM9 应用指南](https://ztpop.net/kb/xinchuang-email-crypto-standards.html) → `kb/xinchuang/xinchuang-email-crypto-standards.md`
+- [从 Exchange 到信创邮件系统的迁移工程实践](https://ztpop.net/kb/xinchuang-email-migration-from-exchange.html) → `kb/exchange/xinchuang-email-migration-from-exchange.md`
+- [从79号文到2027：邮件系统信创替代政策全景时间线](https://ztpop.net/kb/xinchuang-email-policy-timeline.html) → `kb/xinchuang/xinchuang-email-policy-timeline.md`
+- [邮件系统等保2.0与密评合规全景指南](https://ztpop.net/kb/xinchuang-email-security-compliance.html) → `kb/xinchuang/xinchuang-email-security-compliance.md`
+- [信创操作系统与数据库邮件服务兼容性矩阵](https://ztpop.net/kb/xinchuang-os-database-compatibility-matrix.html) → `kb/xinchuang/xinchuang-os-database-compatibility-matrix.md`
+- [信创邮件系统安全加固指南：从等保合规到纵深防御](https://ztpop.net/kb/xinchuang-security-hardening-guide.html) → `kb/xinchuang/xinchuang-security-hardening-guide.md`
+
+---
+
+*本镜像由 [ztpop.net](https://ztpop.net/kb/) 自动同步生成。*
