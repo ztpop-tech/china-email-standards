@@ -1,7 +1,6 @@
 ---
 title: "选择邮件安全防护方案时，应重点评估其对BEC这种无载荷攻击的检测能力——如果方案的核心卖点是防病毒引擎和沙箱，那么它几乎不对BEC提供任何增量防护。"
 source: "https://ztpop.net/kb/bec-defense.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
