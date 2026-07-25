@@ -1,7 +1,6 @@
 ---
 title: "EAI 国际化电子邮件 — RFC 6530-6533：SMTPUTF8、UTF-8 邮箱地址与 IDN 域名"
 source: "https://ztpop.net/kb/eai-internationalized-email.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
