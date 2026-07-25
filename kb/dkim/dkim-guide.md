@@ -1,7 +1,6 @@
 ---
 title: "DKIM 邮件签名机制深度解析 — RFC 6376：密钥管理、规范算法与 Selector 选择器"
 source: "https://ztpop.net/kb/dkim-guide.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
