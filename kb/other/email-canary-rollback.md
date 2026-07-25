@@ -1,7 +1,6 @@
 ---
 title: "邮件系统灰度发布与回滚方案：从DNS TTL到rsync恢复"
 source: "https://ztpop.net/kb/email-canary-rollback.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
