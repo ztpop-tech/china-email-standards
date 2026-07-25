@@ -1,0 +1,223 @@
+# china-email-standards — ztpop.net 邮件技术知识库镜像
+
+> 本仓库是 ztpop.net 知识库（https://ztpop.net/kb/）的 GitHub 镜像。
+> 所有内容采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 ztpop.net。
+
+## 关于
+
+涵盖邮件系统技术领域的中文权威知识库：SMTP、SPF、DKIM、DMARC、MTA-STS、TLS-RPT、DANE、BIMI、邮件安全、反垃圾、Exchange替代、信创合规、NIST SP 800-177 等。
+
+## 核心文章
+
+### SMTP 协议体系
+
+- SMTP 协议深度解析（RFC 5321）：kb/protocols/smtp-protocol-deep-dive.md
+- SMTP 认证机制完全指南（RFC 4954）：kb/protocols/smtp-auth-guide.md
+- SMTP 退信代码完全指南（RFC 3463）：kb/protocols/smtp-error-codes-master-guide.md
+- SMTP 8BITMIME 与 EAI 国际化邮件部署（RFC 6530-6533）：kb/protocols/smtp-utf8-eai-deployment.md
+- SMTP DSN 状态通知协议（RFC 3461）：kb/protocols/smtp-dsn-rfc3461.md
+- SMTP PIPELINING 批量处理协议（RFC 2920）：kb/protocols/smtp-pipelining-batch.md
+- SMTP CHUNKING BDAT 扩展（RFC 3030）：kb/protocols/smtp-chunking-bdat.md
+- SMTP Submission 邮件提交协议（RFC 6409）：kb/protocols/smtp-submission-protocol.md
+- SMTP 临时与永久失败诊断：kb/protocols/smtp-temp-permanent-failure.md
+- SMTP 多 IP MX 负载均衡实践：kb/protocols/smtp-multi-ip-mx.md
+- SMTP Future Delivery 未来投递机制：kb/protocols/smtp-future-delivery.md
+- SMTP 负载测试与容量规划：kb/protocols/smtp-load-test-capacity-planning.md
+- SMTP 基准测试方法：kb/protocols/smtp-benchmark-testing.md
+- RFC 5322 MIME 邮件格式标准解析：kb/protocols/rfc5322-mime-message-format.md
+
+### 邮件认证（SPF / DKIM / DMARC / ARC）
+
+- SPF 记录语法与配置指南（RFC 7208）：kb/spf/spf-guide.md
+- SPF PermError 诊断与修复：kb/spf/spf-permerror-diagnostic.md
+- SPF 宏高级用法：kb/spf/spf-macros-guide.md
+- SPF 故障排查：kb/spf/spf-troubleshooting.md
+- SPF/DKIM/DMARC 配置检查清单：kb/spf/spf-dkim-dmarc-checklist.md
+- DKIM 签名配置指南（RFC 6376）：kb/dkim/dkim-guide.md
+- DKIM 密钥轮换管理：kb/dkim/dkim-key-rotation-management.md
+- DKIM 故障排查：kb/dkim/dkim-troubleshooting.md
+- DMARC 深度解析（RFC 7489）：kb/dmarc/dmarc-guide.md
+- DMARC p=reject 分阶段部署策略：kb/dmarc/dmarc-p-reject-deployment-strategy.md
+- DMARC 聚合报告解析：kb/dmarc/dmarc-aggregate-report-parsing.md
+- DMARC 取证报告（RFC 9991）：kb/dmarc/dmarc-forensic-report-rfc9991.md
+- DMARC 标准演进（RFC 7489 到 draft RFC 9096）：kb/dmarc/dmarc-standards-evolution.md
+- ARC 认证链协议（RFC 8617）：kb/other/arc-authentication-chain-rfc8617.md
+
+### DNS 与邮件可达性
+
+- DNS 邮件配置完整指南：kb/operations/dns-email-config.md
+- DNSSEC DNS 安全扩展：kb/protocols/dnssec-dns-security-extensions.md
+- DNS SRV 邮件自动发现：kb/protocols/dns-srv-email-discovery.md
+- PTR 反向 DNS 与邮件信誉：kb/other/ptr-reverse-dns.md
+- DANE SMTP（RFC 7671/7672）：kb/tls/dane-smtp.md
+- DANE TLSA SMTP 部署指南：kb/tls/dane-tlsa-smtp-deployment.md
+- MTA-STS 邮件传输安全（RFC 8461）：kb/tls/mta-sts-guide.md
+- MTA-STS 多域部署：kb/tls/mta-sts-multi-domain-deployment.md
+- MTA-STS 降级场景：kb/tls/mta-sts-fallback-scenarios.md
+- TLS-RPT SMTP TLS 报告（RFC 8460）：kb/tls/tls-rpt-guide.md
+- SMTP DANE/MTA-STS/TLS-RPT 对比：kb/tls/smtp-dane-mta-sts-tls-rpt-comparison.md
+- TLS 1.3 对 MTA-STS 影响：kb/tls/tls-1-3-mta-sts-impact.md
+- TLS 邮件加密：kb/tls/tls-email-encryption.md
+- TLS 1.3 STARTTLS 协议分析：kb/other/tls13-starttls-protocol.md
+
+### BIMI 品牌标识
+
+- BIMI 完全指南：kb/bimi/bimi-all-about.md
+- BIMI 实施指南：kb/bimi/bimi-implementation-guide.md
+- BIMI 发件方 FAQ：kb/bimi/bimi-faq-senders-comprehensive.md
+- BIMI MVA FAQ 认证机构：kb/bimi/bimi-mva-faqs.md
+- BIMI 入门指南：kb/bimi/bimi-guide.md
+
+### M3AAWG 最佳实践翻译
+
+- M3AAWG 邮件 TLS 基线建议（2026）：kb/tls/m3aawg-tls-baseline-recs-2026.md
+- M3AAWG 如何处理邮件蜜罐陷阱（Spam Trap）：kb/m3aawg/m3aawg-spam-trap-guide.md
+- M3AAWG 关于冷邮件/Cold Email 的立场（2025）：kb/m3aawg/m3aawg-cold-email-position.md
+- M3AAWG 端口 25 管理最佳实践（2023）：kb/m3aawg/m3aawg-managing-port-25.md
+- M3AAWG 仿冒域名最佳实践（2025）：kb/m3aawg/m3aawg-look-alike-domains-bcp.md
+
+### 邮件安全
+
+- 反垃圾邮件技术全景：kb/security/anti-spam-technologies.md
+- 反垃圾分层防御体系：kb/security/anti-spam-layered-defense.md
+- 反垃圾评分系统深度解析：kb/security/anti-spam-scoring-system-deep-dive.md
+- DNSBL 黑名单使用指南：kb/security/dnsbl-blacklist-guide.md
+- Spamhaus DBL 数据源：kb/security/spamhaus-dbl-datasource.md
+- 反垃圾退信防护：kb/operations/anti-spam-bounce-guide.md
+- BEC 商务邮件诈骗防御：kb/security/bec-defense.md
+- 钓鱼邮件防御：kb/other/phishing-defense.md
+- 邮件沙箱分析：kb/security/email-sandbox-analysis.md
+- 邮件恶意软件分析：kb/security/email-malware-analysis.md
+- 安全邮件网关架构：kb/other/encrypted-email-gateway-architecture.md
+- DLP 数据防泄漏策略：kb/security/email-dlp-strategy.md
+- Zero Trust 邮件安全：kb/security/email-security-zero-trust.md
+- 邮件渗透测试方法论：kb/security/email-pentest-methodology.md
+- 邮件蜜罐账户劫持防御：kb/other/email-account-hijacking-defense.md
+- SMTP 认证失败诊断：kb/protocols/smtp-auth-failure-diagnosis.md
+- IMAP 暴力破解防御：kb/protocols/imap-brute-force-defense.md
+- 邮件内容安全分析：kb/other/email-content-security-analysis.md
+- SpamAssassin 内容过滤引擎：kb/security/anti-spam-filter-engine.md
+
+### IMAP / POP3 / JMAP / Sieve 协议
+
+- IMAP vs POP3 协议对比：kb/protocols/imap-vs-pop3.md
+- IMAP IDLE 推送机制（RFC 2177）：kb/protocols/imap-idle-push-rfc2177.md
+- IMAP IDLE vs 推送邮件机制对比：kb/protocols/imap-idle-vs-push-mail-mechanisms.md
+- IMAP 并发性能优化：kb/protocols/imap-concurrency-optimization.md
+- IMAP/POP3/JMAP 选型决策：kb/protocols/imap-pop3-jmap-election.md
+- JMAP 协议（RFC 8620）：kb/protocols/jmap-protocol-rfc8620.md
+- Sieve 邮件过滤（RFC 5228）：kb/protocols/sieve-filter-rfc5228.md
+- CalDAV/CardDAV 与邮件系统集成：kb/protocols/caldav-carddav-email.md
+
+### 邮件系统架构
+
+- Postfix 架构深度解析：kb/architecture/postfix-architecture-deep-dive.md
+- Postfix 性能调优：kb/architecture/postfix-performance-tuning.md
+- Postfix SMTPD 限制策略：kb/architecture/postfix-smtpd-restrictions-guide.md
+- Postfix 内容过滤架构：kb/architecture/postfix-content-filter-architecture.md
+- Postfix 访问/中继/传输映射：kb/architecture/postfix-access-relay-transport.md
+- Postfix 多实例部署：kb/architecture/postfix-multi-instance.md
+- Postfix 日志分析与告警：kb/architecture/postfix-log-analysis-alerting.md
+- Dovecot IMAP 服务器架构：kb/architecture/dovecot-imap-server-architecture.md
+- Rspamd 架构与评分引擎：kb/architecture/rspamd-architecture-scoring-engine.md
+- Rspamd 控制台与指标监控：kb/architecture/rspamd-console-and-metrics.md
+- ClamAV 反病毒邮件网关：kb/architecture/clamav-antivirus-email-gateway.md
+- Amavis 内容安全网关：kb/architecture/amavis-content-security-gateway.md
+- Milter 过滤器架构：kb/operations/milter-filter-architecture.md
+- LMTP 本地投递（RFC 2033）：kb/operations/lmtp-local-delivery-rfc2033.md
+- 邮件集群架构：kb/architecture/email-cluster-architecture.md
+- 邮件水平扩展：kb/other/email-horizontal-scaling.md
+
+### 邮件投递与可达性
+
+- 邮件投递工程：kb/other/email-deliverability-engineering.md
+- 投递延迟退信诊断：kb/operations/email-deliverability-delayed-bounce-diagnostics.md
+- 邮件速率控制：kb/other/email-delivery-rate-control.md
+- 邮件投递追踪：kb/other/email-delivery-tracking.md
+- 投递可观测性：kb/operations/email-delivery-observability.md
+- 邮件队列管理：kb/operations/email-queue-management.md
+- 邮件路由 MX 优先级与故障转移：kb/architecture/email-routing-mx-priority-failover.md
+- 邮件信誉与 Spamhaus 合规：kb/security/email-compliance-reputation-spamhaus.md
+- 邮件服务器预热：kb/other/mail-server-warmup.md
+- Gmail 投递工程：kb/other/gmail-deliverability-engineering.md
+
+### Exchange 替代与迁移
+
+- Exchange 迁移完整指南：kb/exchange/exchange-eol-migration-guide.md
+- Exchange 2013 EOL 影响分析：kb/exchange/exchange-2013-eol-impact-2026.md
+- Exchange 混合部署邮件流架构：kb/exchange/exchange-hybrid-mailflow-architecture.md
+- Exchange 共存与互操作：kb/exchange/exchange-coexistence-interop.md
+- Exchange 在线迁移四路径：kb/exchange/exchange-cloud-migration-four-paths.md
+- Exchange DAG 对比国产 HA：kb/exchange/exchange-dag-vs-chinese-ha-comparison.md
+- 信创邮件系统从 Exchange 迁移：kb/xinchuang/xinchuang-email-migration-from-exchange.md
+- Domino/Notes 迁移：kb/migration/domino-to-chinese-email-migration.md
+
+### 邮件运维
+
+- 邮件日志分析指南：kb/operations/email-log-analysis-guide.md
+- 邮件容量规划：kb/operations/email-capacity-planning.md
+- 邮件 NAT 穿越：kb/operations/email-nat-traversal.md
+- 邮件性能调优：kb/other/email-performance-tuning.md
+- GreyRelease 灰度发布：kb/other/email-deployment-grey-release.md
+- Canary Rollback 金丝雀回滚：kb/other/email-canary-rollback.md
+- 邮件灾备演练：kb/architecture/email-disaster-recovery-drill.md
+- Prometheus/Grafana 邮件监控告警：kb/operations/prometheus-grafana-email-monitoring-alert-system.md
+- Postfix 队列监控：kb/operations/postfix-queue-monitoring.md
+- SRS 发件人重写：kb/operations/srs-sender-rewriting.md
+
+### 信创合规
+
+- 信创邮件系统合规时间线：kb/xinchuang/xinchuang-email-policy-timeline.md
+- 等保2.0 邮件系统合规：kb/compliance/dengbao2-email-compliance.md
+- GB/T 37002 邮件安全标准：kb/other/gbt37002-email-security-standard.md
+- 国密算法邮件加密应用：kb/xinchuang/guomi-email-cryptography.md
+- SM4 加密邮件应用：kb/xinchuang/sm4-encryption-email-application.md
+- 信创邮件架构设计：kb/xinchuang/xinchuang-email-architecture-design.md
+- 信创安全加固指南：kb/xinchuang/xinchuang-security-hardening-guide.md
+- 信创 AD 同步指南：kb/xinchuang/xinchuang-ad-sync-guide.md
+- 信创系统数据库兼容矩阵：kb/xinchuang/xinchuang-os-database-compatibility-matrix.md
+- NIST SP 800-177 邮件安全清单：kb/compliance/nist-sp800-177-checklist.md
+- NIST SP 800-45 邮件安全指南：kb/compliance/nist-sp800-45-email-security.md
+
+### 邮件归档与合规
+
+- 邮件归档架构：kb/archive/email-archiving-storage-tier.md
+- 邮件归档分层存储：kb/archive/email-archiving-storage-tier.md
+- eDiscovery 电子证据发现：kb/compliance/email-ediscovery-legal-hold.md
+- 邮件归档合规指南：kb/compliance/email-archiving-compliance-guide.md
+- 邮件保留策略：kb/compliance/email-retention-policies.md
+
+### 邮件安全协议与标准
+
+- S/MIME 证书部署指南：kb/security/smime-certificate-deployment.md
+- PGP/GPG 邮件加密：kb/security/pgp-gpg-guide.md
+- DANE TLSA SMTP 部署：kb/tls/dane-tlsa-smtp-deployment.md
+- 邮件 TLS 策略执行：kb/tls/email-tls-policy-enforcement.md
+- OAuth 2.0 邮件认证（RFC 7628）：kb/other/oauth2-xoauth2-email-rfc7628.md
+- 邮件认证报告：kb/security/email-auth-reporting.md
+- BATV 退信标记验证：kb/other/batv-deep-dive.md
+- Feedback Loop（FBL）反饋循環：kb/security/email-feedback-loop-arf.md
+- List-Unsubscribe（RFC 8058）：kb/other/list-unsubscribe-rfc8058.md
+- 邮件加密存储：kb/security/email-encryption-at-rest.md
+
+### 其他
+
+- 云邮件 vs 自建邮件对比：kb/architecture/cloud-vs-on-prem-email-comparison.md
+- AI/ML 邮件安全：kb/security/ai-ml-email-security.md
+- 邮件系统选型框架：kb/other/email-system-selection-framework.md
+- 中小企业邮件选型指南：kb/architecture/sme-email-guide.md
+- BGP RPKI 邮件安全：kb/other/bgp-rpki-mail-security.md
+- 邮件安全威胁全景：kb/other/email-security-threats.md
+
+## 在线资源
+
+- 知识库首页: https://ztpop.net/kb/
+- 所有文章在线版: https://ztpop.net/kb/email-standards-reference.html
+- FAQ 问答: https://ztpop.net/bulletin/faq.html
+- 行业资讯: https://ztpop.net/bulletin/industryInfo.html
+- GitHub 镜像: https://github.com/ztpop-tech/china-email-standards
+- GitHub Pages: https://ztpop-tech.github.io/china-email-standards/
+
+## 授权
+
+所有内容采用 CC-BY 4.0 许可协议，可自由引用，仅需标注来源 ztpop.net。
