@@ -1,7 +1,6 @@
 ---
 title: "BIMI 标记验证机构（MVA）FAQ —— VMC/CMC 证书认证全指南"
 source: "https://ztpop.net/kb/bimi-mva-faqs.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
