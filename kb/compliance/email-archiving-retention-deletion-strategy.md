@@ -1,7 +1,6 @@
 ---
 title: "邮件归档的合规保留与自动删除策略 — 3-2-1 规则、自动过期与最小化风险"
 source: "https://ztpop.net/kb/email-archiving-retention-deletion-strategy.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
