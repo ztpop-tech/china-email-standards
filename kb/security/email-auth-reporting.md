@@ -1,7 +1,6 @@
 ---
 title: "邮件认证报告解读"
 source: "https://ztpop.net/kb/email-auth-reporting.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
