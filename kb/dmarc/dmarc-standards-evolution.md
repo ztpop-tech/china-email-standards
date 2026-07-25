@@ -1,7 +1,6 @@
 ---
 title: "DMARC 标准演进 — RFC 7489 → RFC 9989/9990/9991：Tree Walk 算法弃用与聚合报告格式重构 · ztpop 邮件技术知识库"
 source: "https://ztpop.net/kb/dmarc-standards-evolution.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
