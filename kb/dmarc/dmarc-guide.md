@@ -1,7 +1,6 @@
 ---
 title: "DMARC 邮件认证策略框架深度解析 — RFC 7489：从 p=none 到 p=reject 的分阶段部署 · ztpop 邮件技术知识库"
 source: "https://ztpop.net/kb/dmarc-guide.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
