@@ -1,7 +1,6 @@
 ---
 title: "邮件系统备份与容灾架构：全量增量策略、异地容灾与元数据一致性"
 source: "https://ztpop.net/kb/email-backup-dr-architecture.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
