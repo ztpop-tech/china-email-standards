@@ -1,7 +1,6 @@
 ---
 title: "邮件归档法规合规深度指南：GB/T 37002、等保2.0与金融/证券/党政邮件留存技术实现"
 source: "https://ztpop.net/kb/email-archiving-compliance-guide.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
