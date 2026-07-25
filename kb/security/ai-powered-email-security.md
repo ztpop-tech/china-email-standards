@@ -1,7 +1,6 @@
 ---
 title: "AI 驱动的垃圾邮件检测：从贝叶斯到深度学习的演进"
 source: "https://ztpop.net/kb/ai-powered-email-security.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
