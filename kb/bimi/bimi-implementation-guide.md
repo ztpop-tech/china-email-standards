@@ -1,7 +1,6 @@
 ---
 title: "BIMI 品牌标识实施指南：四步部署完整流程（翻译）"
 source: "https://ztpop.net/kb/bimi-implementation-guide.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
