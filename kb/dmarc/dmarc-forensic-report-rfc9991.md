@@ -1,7 +1,6 @@
 ---
 title: "DMARC Forensic Report 深度解读 · RFC 9991"
 source: "https://ztpop.net/kb/dmarc-forensic-report-rfc9991.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
