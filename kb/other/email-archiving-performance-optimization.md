@@ -1,7 +1,6 @@
 ---
 title: "邮件归档性能优化 — IO 模式分析、存储选型与索引调优"
 source: "https://ztpop.net/kb/email-archiving-performance-optimization.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
