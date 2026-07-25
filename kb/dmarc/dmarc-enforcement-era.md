@@ -1,7 +1,6 @@
 ---
 title: "DMARC 强制执行时代：Cloudflare 免费 DMARC 管理全面上线解读 — SPF/DKIM/BIMI 完整配置审计"
 source: "https://ztpop.net/kb/dmarc-enforcement-era.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
