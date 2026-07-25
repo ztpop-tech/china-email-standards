@@ -1,7 +1,6 @@
 ---
 title: "🏷 等保 2.0 / 邮件安全"
 source: "https://ztpop.net/kb/dengbao2-email-compliance.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
