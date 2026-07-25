@@ -1,7 +1,6 @@
 ---
 title: "反垃圾邮件与退信排查完全指南"
 source: "https://ztpop.net/kb/anti-spam-bounce-guide.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
