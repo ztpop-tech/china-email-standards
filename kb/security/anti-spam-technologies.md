@@ -1,7 +1,6 @@
 ---
 title: "邮件反垃圾技术全景分析 — Bayesian 统计过滤、DNSBL 实时黑名单、Greylisting 与深度学习演进"
 source: "https://ztpop.net/kb/anti-spam-technologies.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
