@@ -1,7 +1,6 @@
 ---
 title: "邮件反垃圾过滤引擎深度解析 — Bayesian、规则权重与深度学习多层过滤架构"
 source: "https://ztpop.net/kb/anti-spam-filter-engine.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
