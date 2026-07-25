@@ -1,7 +1,6 @@
 ---
 title: "邮件反垃圾得分系统深度解读：SpamAssassin vs Rspamd 评分、阈值决策与误报调优"
 source: "https://ztpop.net/kb/anti-spam-scoring-system-deep-dive.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
