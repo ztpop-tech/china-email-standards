@@ -1,7 +1,6 @@
 ---
 title: "DNS 黑名单机制与应对策略 — DNSBL/RBL/URIBL 原理、查询方法与自建方案 · ztpop 邮件技术知识库"
 source: "https://ztpop.net/kb/dnsbl-blacklist-guide.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
