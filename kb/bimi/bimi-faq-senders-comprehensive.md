@@ -1,7 +1,6 @@
 ---
 title: "BIMI FAQ 综合指南：发件方与邮件服务商常见问题（翻译）"
 source: "https://ztpop.net/kb/bimi-faq-senders-comprehensive.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
