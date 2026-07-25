@@ -1,7 +1,6 @@
 ---
 title: "邮件安全七层防护体系"
 source: "https://ztpop.net/kb/email-defense-in-depth.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
