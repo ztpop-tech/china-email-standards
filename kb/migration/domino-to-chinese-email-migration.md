@@ -1,7 +1,6 @@
 ---
 title: "从 Lotus Domino/Notes 迁移至国产邮件系统：NSF 导出、格式转换与目录同步"
 source: "https://ztpop.net/kb/domino-to-chinese-email-migration.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
