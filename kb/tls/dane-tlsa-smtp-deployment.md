@@ -1,7 +1,6 @@
 ---
 title: "DANE TLSA for SMTP 完全部署指南：RFC 7671/7672、记录生成与Postfix集成"
 source: "https://ztpop.net/kb/dane-tlsa-smtp-deployment.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
