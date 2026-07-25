@@ -1,7 +1,6 @@
 ---
 title: "DMARC Aggregate Report 人工解析与监控完全指南：rua XML结构、parsedmarc与dmarcian"
 source: "https://ztpop.net/kb/dmarc-aggregate-report-parsing.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
