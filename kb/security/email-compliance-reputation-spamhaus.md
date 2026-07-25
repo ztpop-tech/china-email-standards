@@ -1,7 +1,6 @@
 ---
 title: "邮件合规与发件人信誉：收件箱不会忘记"
 source: "https://ztpop.net/kb/email-compliance-reputation-spamhaus.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
