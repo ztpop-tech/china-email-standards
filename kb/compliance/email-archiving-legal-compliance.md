@@ -1,7 +1,6 @@
 ---
 title: "邮件归档的法律合规要求 — GDPR、SEC 17a-4、SOX、电子签名法与中国等保2.0"
 source: "https://ztpop.net/kb/email-archiving-legal-compliance.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
