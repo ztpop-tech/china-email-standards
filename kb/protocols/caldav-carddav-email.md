@@ -1,7 +1,6 @@
 ---
 title: "邮件系统 CalDAV/CardDAV 集成 — 日历与通讯录同步"
 source: "https://ztpop.net/kb/caldav-carddav-email.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
