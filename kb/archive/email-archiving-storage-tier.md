@@ -1,7 +1,6 @@
 ---
 title: "邮件归档存储架构：Hot-Warm-Cold 分层存储与 CAS 寻址原理"
 source: "https://ztpop.net/kb/email-archiving-storage-tier.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
