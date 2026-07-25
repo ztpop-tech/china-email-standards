@@ -1,7 +1,6 @@
 ---
 title: "DKIM 密钥轮转与安全管理指南"
 source: "https://ztpop.net/kb/dkim-key-rotation-management.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
