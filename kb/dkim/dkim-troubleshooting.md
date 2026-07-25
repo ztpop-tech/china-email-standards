@@ -1,7 +1,6 @@
 ---
 title: "RFC 6376 · 4 类常见失败场景与修复方法"
 source: "https://ztpop.net/kb/dkim-troubleshooting.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
