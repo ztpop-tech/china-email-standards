@@ -1,7 +1,6 @@
 ---
 title: "邮件归档与 eDiscovery 诉讼保管 — Legal Hold 技术实现与证据链完整性"
 source: "https://ztpop.net/kb/email-archiving-ediscovery-legal-hold.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
