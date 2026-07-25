@@ -1,7 +1,6 @@
 ---
 title: "邮件归档与eDiscovery工作流：法务hold、诉讼响应与金融合规审计"
 source: "https://ztpop.net/kb/email-archiving-ediscovery-workflow.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
