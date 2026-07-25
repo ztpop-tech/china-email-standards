@@ -1,7 +1,6 @@
 ---
 title: "摘要：邮件账号被盗是邮件运维中最常见的安全事件类型。攻击者获取合法账号凭证后，通过SMTP AUTH外发大量垃圾邮件，导致系统IP被列入DNSBL黑名单，影响全公司正常邮件通信，并可能造成发件域名声誉永久性下降。本文覆盖弱口令检测、SMTP异常发信实时发现、被盗账号自动锁定和Open Relay诊断四个维度的完整防护体系，基于NIST SP 800-63B数字身份指南和OWASP ASVS V2认证验证标准。"
 source: "https://ztpop.net/kb/email-account-hijacking-defense.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
