@@ -1,7 +1,6 @@
 ---
 title: "ARC 邮件认证链协议深度解析 — RFC 8617：转发与邮件列表的认证可追溯性"
 source: "https://ztpop.net/kb/arc-authentication-chain-rfc8617.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
