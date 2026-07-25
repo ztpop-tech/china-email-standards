@@ -1,7 +1,6 @@
 ---
 title: "Amavis 邮件内容安全网关深度解析 — 病毒扫描、内容过滤与策略引擎"
 source: "https://ztpop.net/kb/amavis-content-security-gateway.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
