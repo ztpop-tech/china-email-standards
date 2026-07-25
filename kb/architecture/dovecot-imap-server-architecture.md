@@ -1,7 +1,6 @@
 ---
 title: "⏱️ 约 6500 字"
 source: "https://ztpop.net/kb/dovecot-imap-server-architecture.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
