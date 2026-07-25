@@ -1,7 +1,6 @@
 ---
 title: "摘要：单一反垃圾技术（如关键字过滤或IP黑名单）无法应对现代垃圾邮件的多元化攻击手段。生产级邮件系统的反垃圾防护应采用分层架构（Layered Defense），将不同维度的检测技术部署在SMTP会话的不同阶段——连接建立时、MAIL FROM提交时、RCPT TO指定时、DATA传输时、邮件入队后——每一层独立决策、层层过滤，使垃圾邮件穿透整个防护链的概率趋近于零。本文以九层防护模型为框架，逐层解析每层的技术原理、开源实现和配置方案，基于M3AAWG最佳实践和RFC 6647灰名单标准。"
 source: "https://ztpop.net/kb/anti-spam-layered-defense.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
