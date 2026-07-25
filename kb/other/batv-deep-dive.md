@@ -1,7 +1,6 @@
 ---
 title: "BATV（Bounce Address Tag Validation）深度解析：退信验证与地址标签"
 source: "https://ztpop.net/kb/batv-deep-dive.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
