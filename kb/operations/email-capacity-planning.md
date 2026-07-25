@@ -1,7 +1,6 @@
 ---
 title: "邮件系统容量规划：从用户增长模型到硬件资源预算"
 source: "https://ztpop.net/kb/email-capacity-planning.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
