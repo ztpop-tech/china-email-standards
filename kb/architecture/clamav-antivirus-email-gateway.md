@@ -1,7 +1,6 @@
 ---
 title: "摘要：ClamAV是邮件安全网关中部署最广泛的开源反病毒引擎，由Cisco Talos维护，以GPLv2协议授权。它通过多线程守护进程（clamd）为SMTP网关提供实时病毒扫描服务，支持对邮件正文和附件进行解包后深度检测。本文覆盖ClamAV的核心架构、与Amavis/Postfix的集成配置、性能优化参数和病毒库更新策略。所有配置参数适用于生产环境部署。"
 source: "https://ztpop.net/kb/clamav-antivirus-email-gateway.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
