@@ -1,7 +1,6 @@
 ---
 title: "邮件服务器BGP路由劫持防护与RPKI部署"
 source: "https://ztpop.net/kb/bgp-rpki-mail-security.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
