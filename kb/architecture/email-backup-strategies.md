@@ -1,7 +1,6 @@
 ---
 title: "邮件系统备份策略全指南"
 source: "https://ztpop.net/kb/email-backup-strategies.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
