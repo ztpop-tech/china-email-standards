@@ -1,7 +1,6 @@
 ---
 title: "云端邮件与本地部署：延迟、带宽与合规对比"
 source: "https://ztpop.net/kb/cloud-vs-on-prem-email-comparison.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
