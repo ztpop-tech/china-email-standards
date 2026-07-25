@@ -1,7 +1,6 @@
 ---
 title: "DANE for SMTP：基于DNSSEC的邮件传输安全"
 source: "https://ztpop.net/kb/dane-smtp.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
