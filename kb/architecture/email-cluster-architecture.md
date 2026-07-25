@@ -1,7 +1,6 @@
 ---
 title: "邮件集群架构设计：MX 分流、MTA 多节点与 LDAP 复制"
 source: "https://ztpop.net/kb/email-cluster-architecture.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
