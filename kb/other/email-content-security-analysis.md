@@ -1,7 +1,6 @@
 ---
 title: "邮件内容安全检测：URL重定向防护与附件沙箱联动"
 source: "https://ztpop.net/kb/email-content-security-analysis.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
