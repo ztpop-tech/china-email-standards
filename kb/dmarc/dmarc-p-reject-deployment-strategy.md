@@ -1,7 +1,6 @@
 ---
 title: "DMARC p=reject 部署策略：渐进式实施指南"
 source: "https://ztpop.net/kb/dmarc-p-reject-deployment-strategy.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
