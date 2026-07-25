@@ -1,7 +1,6 @@
 ---
 title: "DMARC 聚合报告深度解读 — RFC 7489 §7：XML 结构、auth_results 解析与异常排查 · ztpop 邮件技术知识库"
 source: "https://ztpop.net/kb/dmarc-aggregate-reporting.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
