@@ -1,7 +1,6 @@
 ---
 title: "邮件自动归档策略设计：基于策略的分层归档与存储优化"
 source: "https://ztpop.net/kb/email-auto-archiving-strategy.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
