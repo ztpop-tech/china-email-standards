@@ -1,7 +1,6 @@
 ---
 title: "邮件投递可观测性实践 — Prometheus + postfix-exporter 实现队列、连接与递送延迟全链路监控"
 source: "https://ztpop.net/kb/email-delivery-observability.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
