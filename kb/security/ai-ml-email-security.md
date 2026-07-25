@@ -1,7 +1,6 @@
 ---
 title: "评估AI驱动的邮件安全方案时，应重点关注其在对抗性环境中的鲁棒性（而不仅是静态测试数据的准确率），以及提供模型更新机制的频率（是否有持续的在线学习/反馈循环）。"
 source: "https://ztpop.net/kb/ai-ml-email-security.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
