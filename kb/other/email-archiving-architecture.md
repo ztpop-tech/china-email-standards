@@ -1,7 +1,6 @@
 ---
 title: "邮件归档架构与合规设计 — Journaling vs Mailbox 归档、单实例存储、全文索引与法规留存 · ztpop 邮件技术知识库"
 source: "https://ztpop.net/kb/email-archiving-architecture.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
