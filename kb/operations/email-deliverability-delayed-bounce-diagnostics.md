@@ -1,7 +1,6 @@
 ---
 title: "邮件延迟与硬退信诊断框架：从临时故障到永久拒绝"
 source: "https://ztpop.net/kb/email-deliverability-delayed-bounce-diagnostics.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
