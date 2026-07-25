@@ -1,7 +1,6 @@
 ---
 title: "BIMI 品牌邮件标识深度解析 — DMARC 前置条件、BIMI TXT/PSD 记录与 VMC 证书全链路"
 source: "https://ztpop.net/kb/bimi-guide.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
