@@ -1,7 +1,6 @@
 ---
 title: "企业邮件合规与法规要求全景"
 source: "https://ztpop.net/kb/email-compliance.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
