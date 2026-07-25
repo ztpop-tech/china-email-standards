@@ -1,7 +1,6 @@
 ---
 title: "邮件投递工程学 — 送达率、信誉体系、FBL 与邮件列表认证"
 source: "https://ztpop.net/kb/email-deliverability-engineering.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
