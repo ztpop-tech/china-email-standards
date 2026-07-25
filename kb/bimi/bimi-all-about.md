@@ -1,7 +1,6 @@
 ---
 title: "BIMI 全面解读：工作原理、Logo 规范与实施清单"
 source: "https://ztpop.net/kb/bimi-all-about.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
