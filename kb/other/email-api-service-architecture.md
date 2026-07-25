@@ -1,7 +1,6 @@
 ---
 title: "邮件API服务架构：RESTful接口、速率限制与服务治理"
 source: "https://ztpop.net/kb/email-api-service-architecture.html"
-mirror_date: 2026-07-25
 license: CC-BY 4.0
 ---
 
