@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 266 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 271 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## 评估AI驱动的邮件安全方案时，应重点关注其在对抗性环境中的鲁棒性（而不仅是静态测试数据的准确率），以及提供模型更新机制的频率（是否有持续的在线学习/反馈循环）。
@@ -121,6 +121,11 @@
 - 分类：other
 - 来源：https://ztpop.net/kb/caldav-carddav-email.html
 - 摘要：摘要：企业邮件系统不仅是信息交换通道，更是团队协作的中枢——日历共享、会议邀请、通讯录同步是企业日常协作的刚需。CalDAV（RFC 4791）和 CardDAV（RFC 6352）是基于 WebDAV 协议的日历和通讯录同步开放标准，可与邮件系统认证体系（IMAP/LDAP）深度集成，实现与 Thunderbird、Outlook、iOS/macOS 等主流客户端的双向同步。本文完整讲解协议原理、Radicale 开源服务器部署、DNS SRV 自动发现（RFC 6764）、客户端配置以及统一认证桥接方案。
+
+## CISA《增强电子邮件与 Web 安全》指南：DMARC、STARTTLS 与 HTTPS 落地实践
+- 分类：architecture
+- 来源：https://ztpop.net/kb/cisa-enhance-email-web-security.html
+- 摘要：译自 CISA Insights「Enhance Email & Web Security」· 源自 Binding Operational Directive 18-01
 
 ## 摘要：ClamAV是邮件安全网关中部署最广泛的开源反病毒引擎，由Cisco Talos维护，以GPLv2协议授权。它通过多线程守护进程（clamd）为SMTP网关提供实时病毒扫描服务，支持对邮件正文和附件进行解包后深度检测。本文覆盖ClamAV的核心架构、与Amavis/Postfix的集成配置、性能优化参数和病毒库更新策略。所有配置参数适用于生产环境部署。
 - 分类：architecture
@@ -908,10 +913,15 @@
 - 来源：https://ztpop.net/kb/m3aawg-dns-abuse-prevention.html
 - 摘要：原文：M3AAWG DNS Abuse Prevention, Remediation, and Mitigation Practices for Registrars and Registries (January 2024) · 翻译：ztpop.net 知识库
 
-## M3AAWG 电子邮件认证推荐最佳实践——SPF/DKIM/DMARC/ARC 配置检查清单
+## M3AAWG《邮件认证推荐最佳实践》：SPF/DKIM/DMARC/ARC 落地清单
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-email-auth-best-practices.html
-- 摘要：本文档基于 M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group）电子邮件认证推荐最佳实践（M3AAWG-134，2020 年 9 月发布），系统性地梳理了使用安全协议进行电子邮件认证的配置要求与操作指南。涵盖以下四大协议：
+- 摘要：译自 M3AAWG「Email Authentication Recommended Best Practices」(2020) · 行业最佳实践 (BCP)
+
+## M3AAWG《面向 Gmail/Yahoo 批量发件新规》：2024「无认证不进入」时代
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-gmail-yahoo-bulk-requirements.html
+- 摘要：译自 M3AAWG 博客「New Minimum Requirements for Sending Bulk Mail to Gmail and Yahoo」(2023-10-03)
 
 ## M3AAWG 相似域名最佳实践：11 项安全用途操作指南（翻译）
 - 分类：m3aawg
@@ -1018,6 +1028,11 @@
 - 来源：https://ztpop.net/kb/nist-sp800-177-guide.html
 - 摘要：摘要：NIST SP 800-177 Rev.1《Trustworthy Email》（可信邮件）是美国国家标准与技术研究院（National Institute of Standards and Technology）发布的邮件安全领域权威指南。该文档系统性地定义了邮件安全防护的五大技术领域，涵盖管理、运营、技术和标准要求。本文从出台背景入手，深入解读其核心框架和各领域实施要点，梳理NIST建议的分阶段实施路径，并与CISA/NSA联合发布的“深度防护邮件安全指南”进行对比分析，为企业的邮件安全策略制定和合规差距评估提供参考。
 
+## NIST SP 800-177r1《可信电子邮件》：SPF/DKIM/DMARC 与传输加密部署基准
+- 分类：compliance
+- 来源：https://ztpop.net/kb/nist-sp800-177r1-trustworthy-email.html
+- 摘要：译自/综合 NIST SP 800-177 Revision 1「Trustworthy Email」· 面向企业邮件管理员与安全专家
+
 ## NIST SP 800-45 电子邮件安全权威指南解读 — 风险评估、安全控制与事件响应 · ztpop 邮件技术知识库
 - 分类：compliance
 - 来源：https://ztpop.net/kb/nist-sp800-45-email-security.html
@@ -1117,6 +1132,16 @@
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc5322-mime-message-format.html
 - 摘要：互联网邮件消息（Internet Message）由两部分组成：头部（Header）和正文（Body），两者之间以一个空行（CRLF）分隔。RFC 5322 第 2.1 节定义了这条规则，RFC 2045 在此基础上通过 MIME 头部字段扩展了正文内容的表达能力。
+
+## RFC 8460 TLS-RPT：SMTP TLS 连接失败报告机制
+- 分类：tls
+- 来源：https://ztpop.net/kb/rfc8460-tls-rpt.html
+- 摘要：IETF Standards Track RFC 8460 · SMTP TLS Reporting · 译自标准核心机制
+
+## RFC 8461 MTA-STS：用 DNS 与 HTTPS 强制 SMTP 传输层加密
+- 分类：tls
+- 来源：https://ztpop.net/kb/rfc8461-mta-sts.html
+- 摘要：IETF Standards Track RFC 8461 · SMTP MTA Strict Transport Security · 译自标准核心机制
 
 ## Rspamd评分引擎架构深入：从规则集到机器学习管道
 - 分类：architecture
@@ -1350,4 +1375,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 266 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 271 篇文章。采用 CC-BY 4.0 许可。*
