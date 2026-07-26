@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 255 篇文章。
+共 266 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Clamav Antivirus Email Gateway](https://ztpop.net/kb/clamav-antivirus-email-gateway.html) → `kb/architecture/clamav-antivirus-email-gateway.md`
@@ -28,11 +28,16 @@
 - [Email Archiving Storage Tier](https://ztpop.net/kb/email-archiving-storage-tier.html) → `kb/archive/email-archiving-storage-tier.md`
 - [Email Storage Io Benchmark](https://ztpop.net/kb/email-storage-io-benchmark.html) → `kb/archive/email-storage-io-benchmark.md`
 - [Bimi All About](https://ztpop.net/kb/bimi-all-about.html) → `kb/bimi/bimi-all-about.md`
+- [Bimi Avp Tag Guide](https://ztpop.net/kb/bimi-avp-tag-guide.html) → `kb/bimi/bimi-avp-tag-guide.md`
+- [Bimi Certificate Types](https://ztpop.net/kb/bimi-certificate-types.html) → `kb/bimi/bimi-certificate-types.md`
+- [Bimi Cmc Announcement](https://ztpop.net/kb/bimi-cmc-announcement.html) → `kb/bimi/bimi-cmc-announcement.md`
 - [Bimi Faq Senders Comprehensive](https://ztpop.net/kb/bimi-faq-senders-comprehensive.html) → `kb/bimi/bimi-faq-senders-comprehensive.md`
 - [Bimi Guide](https://ztpop.net/kb/bimi-guide.html) → `kb/bimi/bimi-guide.md`
 - [Bimi Implementation Guide](https://ztpop.net/kb/bimi-implementation-guide.html) → `kb/bimi/bimi-implementation-guide.md`
+- [Bimi Logo Update Guide](https://ztpop.net/kb/bimi-logo-update-guide.html) → `kb/bimi/bimi-logo-update-guide.md`
 - [Bimi Lps Tag Guide](https://ztpop.net/kb/bimi-lps-tag-guide.html) → `kb/bimi/bimi-lps-tag-guide.md`
 - [Bimi Mva Faqs](https://ztpop.net/kb/bimi-mva-faqs.html) → `kb/bimi/bimi-mva-faqs.md`
+- [Bimi Svg Issues Guide](https://ztpop.net/kb/bimi-svg-issues-guide.html) → `kb/bimi/bimi-svg-issues-guide.md`
 - [Dengbao2 Email Compliance](https://ztpop.net/kb/dengbao2-email-compliance.html) → `kb/compliance/dengbao2-email-compliance.md`
 - [Email Archiving Compliance Guide](https://ztpop.net/kb/email-archiving-compliance-guide.html) → `kb/compliance/email-archiving-compliance-guide.md`
 - [Email Archiving Ediscovery Legal Hold](https://ztpop.net/kb/email-archiving-ediscovery-legal-hold.html) → `kb/compliance/email-archiving-ediscovery-legal-hold.md`
@@ -61,6 +66,7 @@
 - [Dmarc P Reject Deployment Strategy](https://ztpop.net/kb/dmarc-p-reject-deployment-strategy.html) → `kb/dmarc/dmarc-p-reject-deployment-strategy.md`
 - [Dmarc Reject Troubleshooting](https://ztpop.net/kb/dmarc-reject-troubleshooting.html) → `kb/dmarc/dmarc-reject-troubleshooting.md`
 - [Dmarc Standards Evolution](https://ztpop.net/kb/dmarc-standards-evolution.html) → `kb/dmarc/dmarc-standards-evolution.md`
+- [Ietf Publishes Updated Dmarc Specification](https://ztpop.net/kb/ietf-publishes-updated-dmarc-specification.html) → `kb/dmarc/ietf-publishes-updated-dmarc-specification.md`
 - [Exchange 2013 Eol Impact 2026](https://ztpop.net/kb/exchange-2013-eol-impact-2026.html) → `kb/exchange/exchange-2013-eol-impact-2026.md`
 - [Exchange 2013 Eol Migration Playbook](https://ztpop.net/kb/exchange-2013-eol-migration-playbook.html) → `kb/exchange/exchange-2013-eol-migration-playbook.md`
 - [Exchange Ad Permission Migration](https://ztpop.net/kb/exchange-ad-permission-migration.html) → `kb/exchange/exchange-ad-permission-migration.md`
@@ -91,14 +97,18 @@
 - [Postfix Vs Exchange Architecture](https://ztpop.net/kb/postfix-vs-exchange-architecture.html) → `kb/exchange/postfix-vs-exchange-architecture.md`
 - [Xinchuang Email Migration From Exchange](https://ztpop.net/kb/xinchuang-email-migration-from-exchange.html) → `kb/exchange/xinchuang-email-migration-from-exchange.md`
 - [M3Aawg Ai Lifecycle Security Bcp](https://ztpop.net/kb/m3aawg-ai-lifecycle-security-bcp.html) → `kb/m3aawg/m3aawg-ai-lifecycle-security-bcp.md`
+- [M3Aawg Blocklist Help Guide](https://ztpop.net/kb/m3aawg-blocklist-help-guide.html) → `kb/m3aawg/m3aawg-blocklist-help-guide.md`
 - [M3Aawg Brand Protection Domain Management](https://ztpop.net/kb/m3aawg-brand-protection-domain-management.html) → `kb/m3aawg/m3aawg-brand-protection-domain-management.md`
+- [M3Aawg Brand Protection Kit](https://ztpop.net/kb/m3aawg-brand-protection-kit.html) → `kb/m3aawg/m3aawg-brand-protection-kit.md`
 - [M3Aawg Cold Email Position](https://ztpop.net/kb/m3aawg-cold-email-position.html) → `kb/m3aawg/m3aawg-cold-email-position.md`
+- [M3Aawg Dns Abuse Prevention](https://ztpop.net/kb/m3aawg-dns-abuse-prevention.html) → `kb/m3aawg/m3aawg-dns-abuse-prevention.md`
 - [M3Aawg Email Auth Best Practices](https://ztpop.net/kb/m3aawg-email-auth-best-practices.html) → `kb/m3aawg/m3aawg-email-auth-best-practices.md`
 - [M3Aawg Look Alike Domains Bcp](https://ztpop.net/kb/m3aawg-look-alike-domains-bcp.html) → `kb/m3aawg/m3aawg-look-alike-domains-bcp.md`
 - [M3Aawg Managing Port 25](https://ztpop.net/kb/m3aawg-managing-port-25.html) → `kb/m3aawg/m3aawg-managing-port-25.md`
 - [M3Aawg Nhi Impact Guide](https://ztpop.net/kb/m3aawg-nhi-impact-guide.html) → `kb/m3aawg/m3aawg-nhi-impact-guide.md`
 - [M3Aawg Parked Domains Bcp](https://ztpop.net/kb/m3aawg-parked-domains-bcp.html) → `kb/m3aawg/m3aawg-parked-domains-bcp.md`
 - [M3Aawg Psl Guide](https://ztpop.net/kb/m3aawg-psl-guide.html) → `kb/m3aawg/m3aawg-psl-guide.md`
+- [M3Aawg Ransomware Bcp](https://ztpop.net/kb/m3aawg-ransomware-bcp.html) → `kb/m3aawg/m3aawg-ransomware-bcp.md`
 - [M3Aawg Sending Domains Bcp](https://ztpop.net/kb/m3aawg-sending-domains-bcp.html) → `kb/m3aawg/m3aawg-sending-domains-bcp.md`
 - [M3Aawg Spam Trap Guide](https://ztpop.net/kb/m3aawg-spam-trap-guide.html) → `kb/m3aawg/m3aawg-spam-trap-guide.md`
 - [Domino To Chinese Email Migration](https://ztpop.net/kb/domino-to-chinese-email-migration.html) → `kb/migration/domino-to-chinese-email-migration.md`
@@ -132,6 +142,7 @@
 - [Arc Authentication Chain Rfc8617](https://ztpop.net/kb/arc-authentication-chain-rfc8617.html) → `kb/other/arc-authentication-chain-rfc8617.md`
 - [Batv Deep Dive](https://ztpop.net/kb/batv-deep-dive.html) → `kb/other/batv-deep-dive.md`
 - [Bgp Rpki Mail Security](https://ztpop.net/kb/bgp-rpki-mail-security.html) → `kb/other/bgp-rpki-mail-security.md`
+- [Dmarcbis Changes Summary](https://ztpop.net/kb/dmarcbis-changes-summary.html) → `kb/other/dmarcbis-changes-summary.md`
 - [Dns Srv Email Discovery](https://ztpop.net/kb/dns-srv-email-discovery.html) → `kb/other/dns-srv-email-discovery.md`
 - [Dnssec Dns Security Extensions](https://ztpop.net/kb/dnssec-dns-security-extensions.html) → `kb/other/dnssec-dns-security-extensions.md`
 - [Email Account Hijacking Defense](https://ztpop.net/kb/email-account-hijacking-defense.html) → `kb/other/email-account-hijacking-defense.md`
