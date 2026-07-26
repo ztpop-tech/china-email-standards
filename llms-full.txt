@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 255 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 266 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## 评估AI驱动的邮件安全方案时，应重点关注其在对抗性环境中的鲁棒性（而不仅是静态测试数据的准确率），以及提供模型更新机制的频率（是否有持续的在线学习/反馈循环）。
@@ -67,6 +67,21 @@
 - 来源：https://ztpop.net/kb/bimi-all-about.html
 - 摘要：品牌邮件标识（Brand Indicators for Message Identification，BIMI）是一项邮件认证标准，使品牌能够在其经过认证的邮件旁显示经过验证的品牌 Logo。BIMI 依托于DMARC（基于域的消息认证）等技术，确保只有通过认证的邮件才能展示品牌标识，从而帮助收件人快速识别真实的品牌邮件。
 
+## BIMI avp 标签详解：控制邮件中显示个人头像还是品牌 Logo
+- 分类：bimi
+- 来源：https://ztpop.net/kb/bimi-avp-tag-guide.html
+- 摘要：谈到 BIMI，大多数营销人员都了解基础知识：v=BIMI1版本标签、指向 Logo 位置的l=标签，以及指向标识证书（Mark Certificate, MC）的可选a=证据标签。但有一个较新的特性常常被忽视——avp标签，它在 BIMI 标准 v09 版本中引入。
+
+## BIMI 证书类型详解：自声明、公共标识证书与验证标识证书
+- 分类：bimi
+- 来源：https://ztpop.net/kb/bimi-certificate-types.html
+- 摘要：在实施 BIMI（Brand Indicators for Message Identification，品牌标识消息识别）时，使用 BIMI 证书验证品牌 Logo 可以为全球邮箱提供商处的收件人带来额外收益。品牌 Logo 的声明方式共有三种类型：自声明（Self-assertion）、公共标识证书（CMC, Common Mark Certificate）和验证标识证书（VMC, Verified Mark Certificate）。理解这些区别，才能确保 BIMI 实施带来预期的效果。
+
+## BIMI Group 宣布推出公共标识证书（CMC），Google 正式支持
+- 分类：bimi
+- 来源：https://ztpop.net/kb/bimi-cmc-announcement.html
+- 摘要：2024 年 9 月 26 日，AuthIndicators Working Group（BIMI Group）宣布为品牌标识消息识别（Brand Indicators for Message Identification, BIMI）引入一项新能力，Google 已在 Gmail 中正式支持。此次更新在原有的已验证标识证书（Verified Mark Certificate, VMC）——需持有注册商标或政府注册标记——之外，推出了公共标识证书（Common Mark Certificate, CMC）。品牌现在有了更多灵活性，可以通过新型 CMC 在已认证邮件旁展示其标识。
+
 ## BIMI FAQ 综合指南：发件方与邮件服务商常见问题（翻译）
 - 分类：bimi
 - 来源：https://ztpop.net/kb/bimi-faq-senders-comprehensive.html
@@ -82,15 +97,25 @@
 - 来源：https://ztpop.net/kb/bimi-implementation-guide.html
 - 摘要：BIMI（Brand Indicators for Message Identification，品牌消息标识符）是一项新兴的邮件规范，允许发送域名通过 DNS 发布一个品牌 Logo，支持该规范的邮箱提供商可在已通过认证的邮件旁显示该 Logo。BIMI 不改变邮件的投递行为，它是在强认证基础上层的一个显示信号。
 
-## BIMI lps 标签详解：同一域名显示不同品牌 Logo
+## 品牌焕新后如何更新 BIMI Logo——完整操作指南
+- 分类：bimi
+- 来源：https://ztpop.net/kb/bimi-logo-update-guide.html
+- 摘要：原文：BIMI Group Blog "How to Update Your BIMI Logo" (March 3, 2026) · 翻译：ztpop.net 知识库
+
+## BIMI lps 标签解析：如何为一个域名使用多个不同 Logo
 - 分类：bimi
 - 来源：https://ztpop.net/kb/bimi-lps-tag-guide.html
-- 摘要：然而，有些组织会发送不同类型的邮件，代表不同的品牌或业务职能。营销邮件可能使用一个 Logo，客户支持邮件使用另一个，而员工个人邮件可能根本不需要显示 BIMI Logo。
+- 摘要：原文：BIMI Group Blog "How the BIMI lps Tag Lets You Display Different Logos" (July 23, 2026) · 翻译：ztpop.net 知识库
 
 ## BIMI 标记验证机构（MVA）FAQ —— VMC/CMC 证书认证全指南
 - 分类：bimi
 - 来源：https://ztpop.net/kb/bimi-mva-faqs.html
 - 摘要：验证标记证书（VMC）和通用标记证书（CMC）的采用率稳步增长，首批认证机构（CA）已作为标记验证机构（MVA）投入运营。这些先行者在建立 BIMI 采用的基础设施方面发挥了关键作用。然而，要让更多 CA 参与进来，对于扩大生态规模和提升品牌 BIMI 采用率至关重要。
+
+## BIMI SVG 问题排查：确保 Tiny-PS 合规
+- 分类：bimi
+- 来源：https://ztpop.net/kb/bimi-svg-issues-guide.html
+- 摘要：原文：BIMI Group Blog "SVG Issues: Solutions for Ensuring Tiny-PS Compliance" (June 19, 2024) · 翻译：ztpop.net 知识库
 
 ## 邮件系统 CalDAV/CardDAV 集成 — 日历与通讯录同步
 - 分类：other
@@ -176,6 +201,11 @@
 - 分类：dmarc
 - 来源：https://ztpop.net/kb/dmarc-standards-evolution.html
 - 摘要：DMARC 标准演进 — RFC 7489 → RFC 9989/9990/9991：Tree Walk 算法弃用与聚合报告格式重构
+
+## DMARCbis 变更总结：DMARC 协议升级为 IETF 标准轨道
+- 分类：dmarc
+- 来源：https://ztpop.net/kb/dmarcbis-changes-summary.html
+- 摘要：IETF 的DMARC 工作组已向 RFC Editor 提交了更新 DMARC 协议的文档。本文对此次更新引入的变更进行高层概述，供技术社区参考。
 
 ## DNS 邮件配置完全指南
 - 分类：other
@@ -773,6 +803,11 @@
 - 来源：https://ztpop.net/kb/hybrid-deployment-dns-design.html
 - 摘要：混合邮件部署——部分用户在本地邮件服务器、部分用户在云端——需要精心设计的 DNS 架构来路由邮件流量并维护认证链的完整性。DNS 层面的决策包括：MX 记录的优先级和权重如何将入站邮件分流到不同环境，哪些子域托管在哪个系统上，SPF/DKIM/DMARC 的签名策略如何覆盖所有出站路径。一个设计良好的混合 DNS 方案应让外部发件方感知不到内部双环境的存在，所有认证检查无差别通过。
 
+## IETF 正式发布更新版 DMARC 规范：RFC 9989/9990/9991
+- 分类：dmarc
+- 来源：https://ztpop.net/kb/ietf-publishes-updated-dmarc-specification.html
+- 摘要：2026 年 5 月 20 日，IETF（互联网工程任务组）的 RFC 编辑正式发布了三份更新 DMARC（基于域的消息认证、报告与一致性）协议的文档，将此前称为「DMARCbis」的变更与增强写入正式标准，并将更新后的 DMARC 协议提升至 IETF 的Standards Track（标准轨道）[1]。
+
 ## IMAP 暴力破解防御实战指南：fail2ban 规则配置、速率限制与多因子认证
 - 分类：other
 - 来源：https://ztpop.net/kb/imap-brute-force-defense.html
@@ -843,10 +878,20 @@
 - 来源：https://ztpop.net/kb/m3aawg-ai-lifecycle-security-bcp.html
 - 摘要：本文为 M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group）于 2025 年 5 月发布的AI Model Lifecycle Security Best Common Practices的中文译本。原文参考 URL：http://www.m3aawg.org/AIModelLifecycleSecurityBCP。本译本仅用于技术交流，不构成法律建议；具体合规事宜请咨询所在机构的法律顾问。
 
+## M3AAWG 被列入黑名单应对指南——邮件 IP/域名黑名单发现、评估与取消全流程
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-blocklist-help-guide.html
+- 摘要：几乎每一个运营邮件系统的组织，都会在某一天发现自己的 IP 或域名被列入了某个黑名单。无论你的邮件服务器配置多么完善、发信策略多么审慎，黑名单问题几乎不可避免。真正决定邮件运营组织能力的，不是"会不会被列入"——而是"被列入后能否快速、正确地恢复"。
+
 ## M3AAWG 品牌保护域名管理最佳实践——域名安全防御清单与攻击应对指南
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-brand-protection-domain-management.html
 - 摘要：域名是品牌在互联网上最重要的数字资产之一。攻击者通过注册与品牌域名高度相似的仿冒域名（如使用corn代替com、字母替换、增加连字符等手法），可以实施钓鱼攻击、品牌欺诈、声誉损害等破坏行为。
+
+## M3AAWG 品牌保护工具包：域名管理最佳实践
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-brand-protection-kit.html
+- 摘要：原文：M3AAWG Brand Protection Kit: Domain Management (February 2022) · 翻译：ztpop.net 知识库
 
 ## M3AAWG 冷邮件（Cold Email）立场声明（翻译）
 - 分类：m3aawg
@@ -857,6 +902,11 @@
 - 分类：dkim
 - 来源：https://ztpop.net/kb/m3aawg-dkim-key-rotation-bcp.html
 - 摘要：DKIM（DomainKeys Identified Mail，RFC 6376）通过数字签名机制验证邮件在传输过程中是否被篡改。发件方使用私钥对邮件进行签名，收件方通过 DNS 查询公钥来验证签名。由于 DKIM 公钥在 DNS 中以 TXT 记录形式对外公开，任何能够获取该公钥的人都可以将其作为攻击面加以利用。为降低活跃 DKIM 密钥被破解或泄露的风险，密钥应定期更换——这一过程称为密钥轮换（Key Rotation）。
+
+## M3AAWG DNS 滥用防治、补救与缓解实践：面向注册商与注册局
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-dns-abuse-prevention.html
+- 摘要：原文：M3AAWG DNS Abuse Prevention, Remediation, and Mitigation Practices for Registrars and Registries (January 2024) · 翻译：ztpop.net 知识库
 
 ## M3AAWG 电子邮件认证推荐最佳实践——SPF/DKIM/DMARC/ARC 配置检查清单
 - 分类：m3aawg
@@ -887,6 +937,11 @@
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-psl-guide.html
 - 摘要：公共后缀列表（Public Suffix List，以下简称 PSL）是一份手工维护的域名后缀清单，列举了所有可以在其下直接注册新域名（即私有域名）的顶级域（TLD）和有效顶级域（eTLD）。截至 2023 年 4 月，PSL 共收录 9,087 条记录。
+
+## M3AAWG 勒索软件主动攻击响应最佳通用实践
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-ransomware-bcp.html
+- 摘要：本文翻译自 M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group，消息、恶意软件和移动反滥用工作组）于 2025 年 8 月更新的Ransomware Active Attack Response Best Common Practices（勒索软件主动攻击响应最佳通用实践）。原文可在http://www.m3aawg.org/ransomware_bcp_2025获取。本文为完整中文翻译，仅供学习参考，如有歧义请以英文原版为准。
 
 ## M3AAWG 发送域名最佳常见实践——子域 vs 表亲域：邮件发送域名的正确选择方法
 - 分类：m3aawg
@@ -1295,4 +1350,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 255 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 266 篇文章。采用 CC-BY 4.0 许可。*
