@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 331 篇文章。
+共 333 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Clamav Antivirus Email Gateway](https://ztpop.net/kb/clamav-antivirus-email-gateway.html) → `kb/architecture/clamav-antivirus-email-gateway.md`
@@ -115,6 +115,7 @@
 - [M3Aawg Dns Abuse Prevention](https://ztpop.net/kb/m3aawg-dns-abuse-prevention.html) → `kb/m3aawg/m3aawg-dns-abuse-prevention.md`
 - [M3Aawg Domain Reputation Bcp](https://ztpop.net/kb/m3aawg-domain-reputation-bcp.html) → `kb/m3aawg/m3aawg-domain-reputation-bcp.md`
 - [M3Aawg Email Auth Best Practices](https://ztpop.net/kb/m3aawg-email-auth-best-practices.html) → `kb/m3aawg/m3aawg-email-auth-best-practices.md`
+- [M3Aawg Email Forwarding Bcp](https://ztpop.net/kb/m3aawg-email-forwarding-bcp.html) → `kb/m3aawg/m3aawg-email-forwarding-bcp.md`
 - [M3Aawg Gmail Yahoo Bulk Requirements](https://ztpop.net/kb/m3aawg-gmail-yahoo-bulk-requirements.html) → `kb/m3aawg/m3aawg-gmail-yahoo-bulk-requirements.md`
 - [M3Aawg Look Alike Domains Bcp](https://ztpop.net/kb/m3aawg-look-alike-domains-bcp.html) → `kb/m3aawg/m3aawg-look-alike-domains-bcp.md`
 - [M3Aawg Managing Port 25](https://ztpop.net/kb/m3aawg-managing-port-25.html) → `kb/m3aawg/m3aawg-managing-port-25.md`
@@ -125,6 +126,7 @@
 - [M3Aawg Ransomware Bcp](https://ztpop.net/kb/m3aawg-ransomware-bcp.html) → `kb/m3aawg/m3aawg-ransomware-bcp.md`
 - [M3Aawg Sending Domains Bcp](https://ztpop.net/kb/m3aawg-sending-domains-bcp.html) → `kb/m3aawg/m3aawg-sending-domains-bcp.md`
 - [M3Aawg Spam Trap Guide](https://ztpop.net/kb/m3aawg-spam-trap-guide.html) → `kb/m3aawg/m3aawg-spam-trap-guide.md`
+- [M3Aawg Trust Email Authentication](https://ztpop.net/kb/m3aawg-trust-email-authentication.html) → `kb/m3aawg/m3aawg-trust-email-authentication.md`
 - [M3Aawg Web Form Signup Attacks](https://ztpop.net/kb/m3aawg-web-form-signup-attacks.html) → `kb/m3aawg/m3aawg-web-form-signup-attacks.md`
 - [Domino To Chinese Email Migration](https://ztpop.net/kb/domino-to-chinese-email-migration.html) → `kb/migration/domino-to-chinese-email-migration.md`
 - [Email Migration Comparison](https://ztpop.net/kb/email-migration-comparison.html) → `kb/migration/email-migration-comparison.md`
