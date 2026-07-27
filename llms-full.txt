@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 311 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 330 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## 澳大利亚 ACSC 邮件系统加固指南：Essential Eight 视角下的邮件防护基线
@@ -56,6 +56,21 @@
 - 分类：security
 - 来源：https://ztpop.net/kb/apwg-phishing-trends-2025q1.html
 - 摘要：译自 APWG《Phishing Activity Trends Report》（2025 年第一季度）· 面向邮件安全从业者与品牌保护团队
+
+## APWG 2025 年第二季度钓鱼趋势报告解读：钓鱼攻击破 113 万起，BEC 单笔索要金额暴涨 97%
+- 分类：security
+- 来源：https://ztpop.net/kb/apwg-phishing-trends-2025q2.html
+- 摘要：译介 APWG《Phishing Activity Trends Report · 2nd Quarter 2025》· 面向邮件安全从业者与政企安全运营
+
+## APWG 2025 年第三季度钓鱼趋势报告解读：攻击回落至 89 万起，BEC 电线转账逆势 +57%
+- 分类：security
+- 来源：https://ztpop.net/kb/apwg-phishing-trends-2025q3.html
+- 摘要：译介 APWG《Phishing Activity Trends Report · 3rd Quarter 2025》· 面向邮件安全从业者与政企安全运营
+
+## APWG 2025 年第四季度与全年钓鱼趋势报告解读：全年 380 万起，BEC 电线转账环比 +136%
+- 分类：security
+- 来源：https://ztpop.net/kb/apwg-phishing-trends-2025q4.html
+- 摘要：译介 APWG《Phishing Activity Trends Report · 4th Quarter 2025》（年度回顾）· 面向邮件安全从业者与政企安全运营
 
 ## ARC 邮件认证链协议深度解析 — RFC 8617：转发与邮件列表的认证可追溯性
 - 分类：protocols
@@ -122,10 +137,10 @@
 - 来源：https://ztpop.net/kb/bimi-lps-tag-guide.html
 - 摘要：原文：BIMI Group Blog "How the BIMI lps Tag Lets You Display Different Logos" (July 23, 2026) · 翻译：ztpop.net 知识库
 
-## BIMI 标记验证机构（MVA）FAQ —— VMC/CMC 证书认证全指南
+## BIMI Mark Verifying Authority (MVA) 参与指南 — AuthIndicators 工作组扩展方案与 FAQ（翻译）
 - 分类：bimi
 - 来源：https://ztpop.net/kb/bimi-mva-faqs.html
-- 摘要：验证标记证书（VMC）和通用标记证书（CMC）的采用率稳步增长，首批认证机构（CA）已作为标记验证机构（MVA）投入运营。这些先行者在建立 BIMI 采用的基础设施方面发挥了关键作用。然而，要让更多 CA 参与进来，对于扩大生态规模和提升品牌 BIMI 采用率至关重要。
+- 摘要：BIMI（Brand Indicators for Message Identification）的采纳正在稳步增长，签发 VMC（Verified Mark Certificate）和 CMC（Common Mark Certificate）的认证机构（CA）作为 Mark Verifying Authority（MVA）构成了 BIMI 信任链的基础层。然而，目前仅有少数 CA 作为 MVA 参与其中——扩大 MVA 参与范围是 BIMI 生态规模化的关键瓶颈。
 
 ## BIMI SVG 问题排查：确保 Tiny-PS 合规
 - 分类：bimi
@@ -515,7 +530,7 @@
 ## 邮件迁移七种方式对比
 - 分类：migration
 - 来源：https://ztpop.net/kb/email-migration-comparison.html
-- 摘要：摘要：邮件系统迁移是企业 IT 基础设施转型中最具风险的项目之一。迁移方式的选择直接影响用户体验、数据完整性和项目周期。本文系统对比七种邮件迁移方式——Cutover（一次性切换）、Staged（分批切换）、Hybrid（混合共存）、IMAP（协议级迁移）、PST（文件导入）、第三方工具及 Cross-tenant（跨租户）——从适用场景、技术限制、数据覆盖范围和运维复杂度四个维度提供决策框架。
+- 摘要：[migration] 邮件迁移七种方式对比（见原文）
 
 ## 邮件系统利旧迁移中的 DNS 过渡策略
 - 分类：migration
@@ -628,11 +643,6 @@
 - 来源：https://ztpop.net/kb/email-system-selection-framework.html
 - 摘要：邮件系统的选型直接决定了企业的通信效率、数据安全与合规成本。本框架从技术架构、安全能力、合规支撑和总拥有成本（TCO）四个维度，建立系统化的评估体系。
 
-## 邮件系统搭建完整指南
-- 分类：architecture
-- 来源：https://ztpop.net/kb/email-system-setup.bak.html
-- 摘要：搭建邮件系统的第一步，是决定自建还是使用 SaaS 服务。两者的核心差异不在于技术门槛，而在于数据主权、合规要求和长期成本。
-
 ## 自建邮件系统搭建完整技术指南
 - 分类：architecture
 - 来源：https://ztpop.net/kb/email-system-setup.html
@@ -676,7 +686,7 @@
 ## Exchange 2013 2026年停服迁移实战指南：应急方案与完整迁移检查清单
 - 分类：exchange
 - 来源：https://ztpop.net/kb/exchange-2013-eol-migration-playbook.html
-- 摘要：Exchange 2013 的 Mainstream Support 已于 2018 年 4 月结束，Extended Support 于 2023 年 4 月到期，微软随后提供了为期三年的 Extended Security Updates（ESU）作为付费扩展安全覆盖。根据 Microsoft 产品生命周期公告，Exchange 2013 ESU 的最后支付年度将于 2026 年 8 月截止 [1]。这意味着：
+- 摘要：[exchange] Exchange 2013 2026年停服迁移实战指南：应急方案与完整迁移检查清单（见原文）
 
 ## Exchange 权限与 AD 迁移技术指南：RBAC/ACL/Security Group 迁移策略与验证
 - 分类：exchange
@@ -741,7 +751,7 @@
 ## Exchange混合部署架构与邮件流排错：On-Prem ↔ Exchange Online ↔ 第三方全链路解析
 - 分类：exchange
 - 来源：https://ztpop.net/kb/exchange-hybrid-mailflow-architecture.html
-- 摘要：Exchange Hybrid 部署的核心成果是「统一命名空间」（unified namespace）和「统一目录」（GAL synchronization）。这两者的实现依赖以下组件：
+- 摘要：[exchange] Exchange混合部署架构与邮件流排错：On-Prem ↔ Exchange Online ↔ 第三方全链路解析（见原文）
 
 ## Exchange 混合部署邮件流调试
 - 分类：exchange
@@ -761,7 +771,7 @@
 ## 跨国企业 Exchange 迁移方案：多域名/DAG跨站点/GDPR/时区/多语言全场景策略
 - 分类：exchange
 - 来源：https://ztpop.net/kb/exchange-multinational-migration-plan.html
-- 摘要：将所有参与迁移的 SMTP 域的 MX 记录、TXT 记录的 TTL 值从默认的 3600~86400 秒降低至 300 秒（5 分钟）。此举保证 MX 切换时的 DNS 传播高度可控。
+- 摘要：[exchange] 跨国企业 Exchange 迁移方案：多域名/DAG跨站点/GDPR/时区/多语言全场景策略（见原文）
 
 ## 跨国Exchange部署向国产系统迁移
 - 分类：exchange
@@ -807,6 +817,16 @@
 - 分类：security
 - 来源：https://ztpop.net/kb/fbi-ic3-bec-annual-report.html
 - 摘要：美国联邦调查局互联网犯罪投诉中心（IC3）每年发布《互联网犯罪报告》，汇总全美公众自愿举报的网络犯罪数据。2023 年报告记录了 880,418 起投诉、潜在损失超过 125 亿美元。其中商业邮件诈骗（Business Email Compromise, BEC）以 21,489 起投诉、29 亿美元损失，成为继投资诈骗之后损失金额第二高的犯罪类型。本文译介该报告与 BEC 相关的核心发现，并落到企业邮件安全防护的可执行建议。
+
+## FBI IC3 2020 互联网犯罪报告解读：投诉首破 79 万起、损失超 41 亿美元，COVID-19 诈骗涌现
+- 分类：other
+- 来源：https://ztpop.net/kb/fbi-ic3-internet-crime-report-2020.html
+- 摘要：译介 FBI 互联网犯罪投诉中心（IC3）《Internet Crime Report 2020》· 面向邮件安全从业者与政企安全运营
+
+## FBI IC3 2021 互联网犯罪报告解读：投诉 84.7 万起、损失 69 亿美元，BEC 逼近 24 亿美元
+- 分类：other
+- 来源：https://ztpop.net/kb/fbi-ic3-internet-crime-report-2021.html
+- 摘要：译介 FBI 互联网犯罪投诉中心（IC3）《Internet Crime Report 2021》· 面向邮件安全从业者与政企安全运营
 
 ## FBI IC3 2022 互联网犯罪报告解读：BEC 损失 27 亿美元，投资诈骗登顶
 - 分类：other
@@ -903,20 +923,70 @@
 - 来源：https://ztpop.net/kb/international-email-relay.html
 - 摘要：大型邮件服务商（Google、Microsoft、Yahoo）的垃圾邮件过滤系统不完全依赖IP黑名单的动态查询——它们维护着大规模的IP信誉数据库，对全球每一个发件IP进行长期的行为评分。评分维度包括：该IP的历史垃圾邮件比例、用户投诉率、发信频率稳定性、是否被列入Spamhaus/FortiGuard等主流DNSBL、IP段所属AS的总体信誉等。
 
-## IPv6 邮件系统部署
+## IPv6邮件系统部署
 - 分类：other
 - 来源：https://ztpop.net/kb/ipv6-email-deployment.html
-- 摘要：摘要：互联网从 IPv4 向 IPv6 的过渡已进入加速阶段。邮件系统作为互联网最基础的应用协议之一，其 IPv6 支持直接关系到企业在 IPv6-only 网络环境中的邮件可达性。IPv6 在邮件生态中的部署面临独特的挑战：巨大的地址空间部分削弱了 IP 声誉机制的有效性、SPF/DKIM/DMARC 认证需要适配 IPv6 地址格式、反向 DNS 从 in-addr.arpa 变为 ip6.arpa、以及双栈部署中的路由优先级问题。本文从这些核心议题出发，系统讲解邮件系统 IPv6 部署的完整技术方案。
+- 摘要：[other] IPv6邮件系统部署（见原文）
 
-## IPv6 邮件系统部署实践指南：MX 记录、双栈 MTA 与运营商兼容策略
+## IPv6邮件系统部署实践指南：MX 记录、双栈 MTA 与运营商兼容策略
 - 分类：architecture
 - 来源：https://ztpop.net/kb/ipv6-mail-system-deployment-practical-guide.html
-- 摘要：面向邮件运维工程师的 IPv6 部署实操指南，涵盖 IPv6 MX 记录配置、MTA 双栈 Postfix 设置、IPv6 PTR 记录反向 DNS 配置、RFC 6724 地址选择与 Happy Eyeballs 算法、以及国内外运营商 IPv6 支持情况对比与问题排查方法。
+- 摘要：[architecture] IPv6邮件系统部署实践指南：MX 记录、双栈 MTA 与运营商兼容策略（见原文）
 
 ## JMAP 邮件访问协议深度解析 — RFC 8620/8621：IMAP 的下一代替代方案 · ztpop 邮件技术知识库
 - 分类：protocols
 - 来源：https://ztpop.net/kb/jmap-protocol-rfc8620.html
 - 摘要：IMAP（RFC 3501，2003 年发布）在其诞生后的二十余年间始终是邮件客户端与服务器之间的主流协议。但它的设计植根于 1990 年代的计算模型：单设备、持久 TCP 长连接、简单的文件夹层级。进入多设备同步时代后，IMAP 的短板集中暴露在三个层面。
+
+## Exchange 公有云迁移的四种路径：选型对比与实施
+- 分类：exchange
+- 来源：https://ztpop.net/kb/kb-art1-exchange-cloud-migration.html
+- 摘要：组织在 Exchange Server 终止支持后面临向公有云邮件服务迁移的决策需求。根据源环境版本、用户规模、网络带宽和业务连续性要求的不同，存在四种主流迁移路径：混合迁移（Hybrid Cutover）、IMAP 迁移、分段迁移（Staged Migration）以及本地归档先行迁移。每种路径在数据迁移完整性、停机窗口、用户体验和技术复杂度上存在显著差异。本文系统梳理四种路径的技术原理、适用场景、实施要点和约束条件，为 IT 管理员提供选型决策依据。全文引用 RFC 3501（IMAP）、RFC 6857（EWS）、NIST SP 800-34 及 Microsoft 官方迁移指南。
+
+## 信创邮件系统与 Exchange AD 目录同步实施指南
+- 分类：xinchuang
+- 来源：https://ztpop.net/kb/kb-art2-xinchuang-ad-sync.html
+- 摘要：信创邮件系统在替代 Exchange 的过程中，与现有的 Active Directory（AD）目录服务保持用户、密码和组结构的同步是核心工程环节。AD 作为多数企业的基础身份源，其用户属性（UserPrincipalName、mail、proxyAddresses）和组成员关系必须实时或准实时地反映到目标邮件系统。本文系统梳理基于 LDAPv3（RFC 4511）[1] 的目录同步协议选型、属性映射表设计、密码同步策略、组同步机制和增量/全量同步调度策略，并给出常见故障排查方法。全文引用 RFC 4510-4525（LDAPv3 核心协议）、RFC 2307（NIS Schema）及公安部
+
+## Exchange 邮箱配额策略设计
+- 分类：other
+- 来源：https://ztpop.net/kb/kb-art3-mailbox-quota.html
+- 摘要：mailbox quota / archive quota / custom overrides、DB 级 vs 用户级策略与超标自动处理
+
+## 跨国企业邮件系统组网架构
+- 分类：other
+- 来源：https://ztpop.net/kb/kb-art4-multi-national-email-arch.html
+- 摘要：跨国企业因其地域跨度大、合规要求多、域结构复杂，邮件系统组网架构的设计直接影响通信可用性和运营成本。本文从多域部署拓扑、地域分布式 SMTP relay 架构、邮件流跨国路由优化、GDPR 合规路由限制、全球 Autodiscover 解析等维度入手，提出面向跨国企业的邮件系统组网方案。全文引用 RFC 5321（SMTP 基础）、RFC 5322（邮件格式）、RFC 2821 延伸条款及 GDPR 第 44-49 条（国际传输规则）。
+
+## 邮件系统利旧迁移中的 DNS 过渡策略
+- 分类：other
+- 来源：https://ztpop.net/kb/kb-art5-dns-transition.html
+- 摘要：邮件系统迁移过程中，DNS 配置的平滑过渡是决定切换成败的关键环节。MX 记录的缓存生存期（TTL）、SPF include 与 DMARC 策略的同步更新、混合场景下的双向路由配置，任何一项处理不当都可能导致邮件投递延迟、退信或触发反垃圾策略。本文系统阐述 DNS 过渡策略的三个核心阶段——预发布期、并行期和切换期，涵盖 MX 记录 TTL 的逐步递降方法、DNS 记录变更的原子化发布顺序、混合场景下 SPF include 的渐进式控制以及迁移完成后的 DMARC 策略调整。全文引用 RFC 5321（SMTP）、RFC 7208（SPF）[2]、RFC 7489（DMARC）[3] 及 
+
+## Email Threat Intelligence 威胁情报共享协议
+- 分类：architecture
+- 来源：https://ztpop.net/kb/kb-email-threat-intelligence-sharing.html
+- 摘要：邮件安全威胁情报（Email Threat Intelligence）是指将邮件系统产生的安全事件特征（恶意域名、钓鱼 IP、恶意附件哈希、BEC 发件人模式等）以标准化的数据结构描述，并在组织间共享的能力。STIX（Structured Threat Information Expression）[1] 和 TAXII（Trusted Automated Exchange of Intelligence Information）[2] 是实现这一能力的 IETF 标准协议；MISP（Malware Information Sharing Platform）是目前最广泛部署的开源情报平台。
+
+## 加密邮件网关架构设计：TLS 终止/透传、证书钉扎与 DANE/MTA-STS
+- 分类：security
+- 来源：https://ztpop.net/kb/kb-encrypted-email-gateway-architecture.html
+- 摘要：RFC 6698 (DANE) / RFC 8461 (MTA-STS) / RFC 7671 (DANE Operations) / RFC 5246 (TLS 1.2) / RFC 8446 (TLS 1.3)
+
+## SMTP CHUNKING（RFC 3030）与 BDAT 命令深度解析
+- 分类：protocols
+- 来源：https://ztpop.net/kb/kb-smtp-chunking-bdat.html
+- 摘要：RFC 3030 / RFC 2920 / RFC 5321 §4.5 / Postfix smtpd_discard_ehlo_keywords
+
+## SMTP 未来投递机制：RFC 1326 / RFC 2822 延迟投递深度解析
+- 分类：protocols
+- 来源：https://ztpop.net/kb/kb-smtp-future-delivery.html
+- 摘要：RFC 1326 / RFC 2822 §3.6.4 / RFC 5321 §4.5 / Postfix future_delivery
+
+## 邮件网关 multi-IP 轮询与 smtp_bind_address 策略
+- 分类：protocols
+- 来源：https://ztpop.net/kb/kb-smtp-multi-ip-mx.html
+- 摘要：RFC 5321 §5.1 / RFC 2181 / RFC 1035 §2.3 / Postfix smtp_bind_address_per_policy
 
 ## LDAP 与邮件系统集成 — RFC 4510-4519：Postfix LDAP 表查询、Dovecot 认证与多域架构 · ztpop 邮件技术知识库
 - 分类：other
@@ -973,6 +1043,16 @@
 - 来源：https://ztpop.net/kb/m3aawg-cold-email-position.html
 - 摘要：冷邮件（Cold Email）指发送方与收件人之间此前不存在已知业务关系或订阅关系的商业推广邮件。M3AAWG 于 2025 年 11 月发布立场声明，明确了冷邮件在邮件生态系统中的位置及其对反滥用工作的影响。本文基于该声明翻译整理。
 
+## M3AAWG 发件人投诉处理最佳实践
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-complaint-handling.html
+- 摘要：邮件滥用投诉率是衡量发件人行为健康程度的核心指标之一。当收件人将邮件标记为垃圾邮件时，邮箱提供商通过 Feedback Loop（FBL）向发件人反馈此信息。投诉率持续偏高，会触发邮箱提供商的自动过滤乃至完全拦截。本文将围绕 M3AAWG 的建议框架，逐层解析投诉管理的完整链路。
+
+## M3AAWG 账号泄露处理最佳实践
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-compromised-user-id-bp.html
+- 摘要：本文翻译自 M3AAWG Compromised User ID Best Practices, Version 1.0.1, March 2018，© M3AAWG。中文版由 ztpop.net 知识库编译发布。本文遵循CC-BY 4.0许可协议。
+
 ## M3AAWG DKIM 密钥轮换最佳实践——为什么每 6 个月必须换一次 DKIM 密钥
 - 分类：dkim
 - 来源：https://ztpop.net/kb/m3aawg-dkim-key-rotation-bcp.html
@@ -988,7 +1068,7 @@
 - 来源：https://ztpop.net/kb/m3aawg-domain-reputation-bcp.html
 - 摘要：即便 SPF/DKIM/DMARC 全配齐，邮件仍可能进垃圾箱——因为接收方还看"声誉"。M3AAWG 域名声誉管理 BCP 说明：声誉是接收方基于历史行为对发信域/IP 的信任评分，由认证状态、投诉率、列表卫生、内容质量、发送规律共同决定。维护声誉是投递率工程的核心。
 
-## M3AAWG《邮件认证推荐最佳实践》：SPF/DKIM/DMARC/ARC 落地清单
+## M3AAWG 邮件认证推荐最佳实践
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-email-auth-best-practices.html
 - 摘要：译自 M3AAWG「Email Authentication Recommended Best Practices」(2020) · 行业最佳实践 (BCP)
@@ -1007,6 +1087,16 @@
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-managing-port-25.html
 - 摘要：垃圾邮件发送者和其他滥用者常利用病毒和间谍软件控制大量计算机（"僵尸网络"），通过这些受控设备直接发送垃圾邮件。管理网络中设备的邮件发送行为，可以帮助提供商降低运营成本、提升客户满意度，并减少与自身网络相关的互联网滥用行为。
+
+## M3AAWG SPF 记录管理最佳实践
+- 分类：spf
+- 来源：https://ztpop.net/kb/m3aawg-managing-spf-records.html
+- 摘要：译自 M3AAWG「Best Practices for Managing SPF Records」(August 2017) · 行业最佳实践 (BCP)
+
+## M3AAWG 强制邮件批量发送最佳实践
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-mandated-emails-bcp.html
+- 摘要：在某些场景下，邮件发送方可能被要求或强制向大批量受众发送邮件——即便这些邮件极大概率会表现出糟糕的投递指标（如退信率和投诉率飙升）。这类邮件并非用于常规营销或事务通知，而是常规规则之外的例外情况。高风险发送的典型例子包括：数据泄露通知、产品召回通知、健康与安全公告，以及其他可能需要发送给此前已被屏蔽或退订的人员的通知。
 
 ## M3AAWG 非人为互动（NHI）对邮件发送指标的影响与应对指南
 - 分类：m3aawg
@@ -1038,10 +1128,15 @@
 - 来源：https://ztpop.net/kb/m3aawg-spam-trap-guide.html
 - 摘要：Spam Trap（垃圾邮件陷阱）是由反滥用组织、邮箱提供商和安全公司部署的专门邮件地址，用于识别和拦截垃圾邮件发送者。当 Spam Trap 收到邮件时，通常意味着发送者的邮件列表清洗不充分或存在非许可式发送行为。
 
-## 邮件 TLS 安全基线：M3AAWG 2026 推荐实践指南
+## M3Aawg Tls Baseline Recs 2026
 - 分类：tls
 - 来源：https://ztpop.net/kb/m3aawg-tls-baseline-recs-2026.html
 - 摘要：2010 年代的全球监控披露事件以及后续对邮件流量全面监控的持续报道，使公众愈加关注邮件提供商可部署的隐私保护技术措施。本文中，M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group）推荐了三项邮件服务提供商可相对快速实施的基础措施，用以增强用户邮件的安全性和隐私保护。
+
+## M3AAWG 网络表单注册攻击防护建议
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-web-form-signup-attacks.html
+- 摘要：译自 M3AAWG Recommendation on Web Form Signup Attacks（2017年10月）· 面向邮件运维与安全运营团队
 
 ## 邮件流架构设计最佳实践
 - 分类：operations
@@ -1575,4 +1670,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 311 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 330 篇文章。采用 CC-BY 4.0 许可。*
