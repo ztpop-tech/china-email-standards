@@ -476,7 +476,7 @@ echo "0 9 * * * /usr/local/bin/cert-expiry-warning.sh" > /etc/cron.d/cert-expiry
 
 ## 多MX节点证书同步
 
-当邮件系统部署多个 MX 节点时，所有节点需共享相同的 TLS 证书配置。推荐使用 **主从同步**或**集中管理**方案。
+当[邮件系统部署](/kb/category/ops-architecture.html)多个 MX 节点时，所有节点需共享相同的 TLS 证书配置。推荐使用 **主从同步**或**集中管理**方案。
 
 ### 7.1 主从同步方案
 
