@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 330 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 332 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## 澳大利亚 ACSC 邮件系统加固指南：Essential Eight 视角下的邮件防护基线
@@ -1073,6 +1073,11 @@
 - 来源：https://ztpop.net/kb/m3aawg-email-auth-best-practices.html
 - 摘要：译自 M3AAWG「Email Authentication Recommended Best Practices」(2020) · 行业最佳实践 (BCP)
 
+## M3AAWG 邮件转发最佳实践
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-email-forwarding-bcp.html
+- 摘要：本 M3AAWG 最佳实践文档提出了邮件转发服务商（Email Volume Forwarders）及接收方（Receivers of Forwarded Email）可采纳的若干措施。这些实践旨在减少转发方与接收方之间的交互摩擦，帮助确保邮件顺利投递，同时避免因转发垃圾邮件和滥用邮件引发的问题。
+
 ## M3AAWG《面向 Gmail/Yahoo 批量发件新规》：2024「无认证不进入」时代
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-gmail-yahoo-bulk-requirements.html
@@ -1132,6 +1137,11 @@
 - 分类：tls
 - 来源：https://ztpop.net/kb/m3aawg-tls-baseline-recs-2026.html
 - 摘要：2010 年代的全球监控披露事件以及后续对邮件流量全面监控的持续报道，使公众愈加关注邮件提供商可部署的隐私保护技术措施。本文中，M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group）推荐了三项邮件服务提供商可相对快速实施的基础措施，用以增强用户邮件的安全性和隐私保护。
+
+## 邮件信任始于认证
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-trust-email-authentication.html
+- 摘要：M3AAWG 经典白皮书中文版 · Trust in Email Begins with Authentication, Updated February 2015 · Dave Crocker & Terry Zink 执笔
 
 ## M3AAWG 网络表单注册攻击防护建议
 - 分类：m3aawg
@@ -1670,4 +1680,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 330 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 332 篇文章。采用 CC-BY 4.0 许可。*
