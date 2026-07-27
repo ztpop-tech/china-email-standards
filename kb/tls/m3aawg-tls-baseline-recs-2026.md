@@ -1,10 +1,10 @@
 ---
-title: "邮件 TLS 安全基线：M3AAWG 2026 推荐实践指南"
+title: "M3Aawg Tls Baseline Recs 2026"
 source: "https://ztpop.net/kb/m3aawg-tls-baseline-recs-2026.html"
 license: CC-BY 4.0
 ---
 
-# 邮件 TLS 安全基线：M3AAWG 2026 推荐实践指南
+# M3Aawg Tls Baseline Recs 2026
 
 ## 执行摘要
 
@@ -56,7 +56,7 @@ M3AAWG 建议邮件行业服务提供商在外部和内部邮件流量以及用�
 
 ## 补充说明
 
-对于国内邮件系统运营者，上述三项基础措施同样适用于国产化环境。在信创邮件系统部署中，TLS 1.3 配合国密 SM2/SM4 证书的应用正逐步成为合规要求。建议邮件系统管理员在 [邮件服务器搭建](/mail-server.html) 阶段就将 TLS 基线纳入安全策略配置模板。
+对于国内邮件系统运营者，上述三项基础措施同样适用于国产化环境。在信创[邮件系统部署](/kb/category/ops-architecture.html)中，TLS 1.3 配合国密 SM2/SM4 证书的应用正逐步成为合规要求。建议邮件系统管理员在 [邮件服务器搭建](/mail-server.html) 阶段就将 TLS 基线纳入安全策略配置模板。
 
 ---
 
