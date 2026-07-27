@@ -247,7 +247,7 @@ echo "校验完成。结果见 ${LOG_FILE}"
 
 ### 7.1 阶段一：并行运行期（7-14 天）
 
-将信创邮件系统部署完成并通过基础验证后，配置 SMTP 中继，使 Exchange 将所有外发邮件通过信创 MTA 代理发送。此阶段的关键配置是在 Exchange 上设置发送连接器指向信创 MTA：
+将信创[邮件系统部署](/kb/category/ops-architecture.html)完成并通过基础验证后，配置 SMTP 中继，使 Exchange 将所有外发邮件通过信创 MTA 代理发送。此阶段的关键配置是在 Exchange 上设置发送连接器指向信创 MTA：
 
 ```
 # Exchange Management Shell - 创建到信创 MTA 的发送连接器
