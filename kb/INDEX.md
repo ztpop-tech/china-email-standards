@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 324 篇文章。
+共 325 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Clamav Antivirus Email Gateway](https://ztpop.net/kb/clamav-antivirus-email-gateway.html) → `kb/architecture/clamav-antivirus-email-gateway.md`
@@ -153,7 +153,6 @@
 - [Srs Sender Rewriting](https://ztpop.net/kb/srs-sender-rewriting.html) → `kb/operations/srs-sender-rewriting.md`
 - [Apple Mail Privacy Protection](https://ztpop.net/kb/apple-mail-privacy-protection.html) → `kb/other/apple-mail-privacy-protection.md`
 - [Apwg Phishing Trends 2025Q1](https://ztpop.net/kb/apwg-phishing-trends-2025q1.html) → `kb/other/apwg-phishing-trends-2025q1.md`
-- [Apwg Phishing Trends 2025Q2](https://ztpop.net/kb/apwg-phishing-trends-2025q2.html) → `kb/other/apwg-phishing-trends-2025q2.md`
 - [Apwg Phishing Trends 2025Q3](https://ztpop.net/kb/apwg-phishing-trends-2025q3.html) → `kb/other/apwg-phishing-trends-2025q3.md`
 - [Apwg Phishing Trends 2025Q4](https://ztpop.net/kb/apwg-phishing-trends-2025q4.html) → `kb/other/apwg-phishing-trends-2025q4.md`
 - [Arc Authentication Chain Rfc8617](https://ztpop.net/kb/arc-authentication-chain-rfc8617.html) → `kb/other/arc-authentication-chain-rfc8617.md`
@@ -205,6 +204,7 @@
 - [Kb Art4 Multi National Email Arch](https://ztpop.net/kb/kb-art4-multi-national-email-arch.html) → `kb/other/kb-art4-multi-national-email-arch.md`
 - [Kb Art5 Dns Transition](https://ztpop.net/kb/kb-art5-dns-transition.html) → `kb/other/kb-art5-dns-transition.md`
 - [Kb Email Threat Intelligence Sharing](https://ztpop.net/kb/kb-email-threat-intelligence-sharing.html) → `kb/other/kb-email-threat-intelligence-sharing.md`
+- [Kb Encrypted Email Gateway Architecture](https://ztpop.net/kb/kb-encrypted-email-gateway-architecture.html) → `kb/other/kb-encrypted-email-gateway-architecture.md`
 - [Ldap Email Integration](https://ztpop.net/kb/ldap-email-integration.html) → `kb/other/ldap-email-integration.md`
 - [List Unsubscribe Rfc8058](https://ztpop.net/kb/list-unsubscribe-rfc8058.html) → `kb/other/list-unsubscribe-rfc8058.md`
 - [Mail Server Warmup](https://ztpop.net/kb/mail-server-warmup.html) → `kb/other/mail-server-warmup.md`
@@ -242,6 +242,7 @@
 - [Imap Vs Pop3](https://ztpop.net/kb/imap-vs-pop3.html) → `kb/protocols/imap-vs-pop3.md`
 - [International Email Relay](https://ztpop.net/kb/international-email-relay.html) → `kb/protocols/international-email-relay.md`
 - [Jmap Protocol Rfc8620](https://ztpop.net/kb/jmap-protocol-rfc8620.html) → `kb/protocols/jmap-protocol-rfc8620.md`
+- [Kb Smtp Chunking Bdat](https://ztpop.net/kb/kb-smtp-chunking-bdat.html) → `kb/protocols/kb-smtp-chunking-bdat.md`
 - [Kb Smtp Future Delivery](https://ztpop.net/kb/kb-smtp-future-delivery.html) → `kb/protocols/kb-smtp-future-delivery.md`
 - [Kb Smtp Multi Ip Mx](https://ztpop.net/kb/kb-smtp-multi-ip-mx.html) → `kb/protocols/kb-smtp-multi-ip-mx.md`
 - [Multilingual Mime Idn Cjk Email Guide](https://ztpop.net/kb/multilingual-mime-idn-cjk-email-guide.html) → `kb/protocols/multilingual-mime-idn-cjk-email-guide.md`
