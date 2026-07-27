@@ -27,7 +27,7 @@ _carddavs._tcp.example.com. 86400 IN SRV 10 0 443 carddav.example.com.
 
 SRV 记录的各个字段含义：\_caldavs.\_tcp 为服务名称（\_caldavs 为 HTTPS 加密的 CalDAV，\_caldav 为 HTTP 非加密版本；CardDAV 同理）；优先级（Priority）为 10，值越小优先级越高；权重（Weight）为 0，在相同优先级下按权重比例分配流量；端口为 443；目标主机名为实际提供 CalDAV/CardDAV 服务的服务器。域名部分应使用用户邮件地址中 @ 后面的域名部分（即 example.com）。客户端从用户的邮件地址中提取域名，构造 SRV 查询名称，然后向该名称发起 DNS SRV 查询以获取实际服务地址。
 
-如 CalDAV/CardDAV 服务与邮件系统部署在同一域名下（如 mail.example.com），可将 SRV 目标指向同一台服务器。需要在 DNS 提供商的面板中添加对应的 SRV 记录条数（TXT 记录区域不支持 SRV 格式）。对于反向代理部署场景（Nginx/Traefik 前置 HTTPS），SRV 记录中的端口应为反向代理的 HTTPS 端口（通常为 443），后续代理将请求路由到后端 CalDAV/CardDAV 服务。
+如 CalDAV/CardDAV 服务与[邮件系统部署](/kb/category/ops-architecture.html)在同一域名下（如 mail.example.com），可将 SRV 目标指向同一台服务器。需要在 DNS 提供商的面板中添加对应的 SRV 记录条数（TXT 记录区域不支持 SRV 格式）。对于反向代理部署场景（Nginx/Traefik 前置 HTTPS），SRV 记录中的端口应为反向代理的 HTTPS 端口（通常为 443），后续代理将请求路由到后端 CalDAV/CardDAV 服务。
 
 **三、Radicale 开源 CalDAV/CardDAV 服务器部署**
 
