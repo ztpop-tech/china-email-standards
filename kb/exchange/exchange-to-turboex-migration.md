@@ -84,7 +84,7 @@ Microsoft官方将Exchange邮箱迁移划分为三种主要模式：直切迁移
 
 #### 3.2.1 TurboEx内置迁移工具的工作机制
 
-TurboEx在Web运维后台内置Exchange邮件迁移工具，其工作流程如下：
+TurboEx在Web运维后台内置Exchange[邮件迁移](/kb/category/migration-ecosystem.html)工具，其工作流程如下：
 
 1. **连接源Exchange服务器**：通过EWS或IMAP协议（管理员可在运维后台界面中选择）建立与源Exchange的认证连接。EWS路径通过管理员凭据获取 `Impersonation`（模拟）权限，以每个用户身份遍历其邮箱——此设计的核心价值在于**迁移过程无需用户提供邮箱密码**，对最终用户完全透明。
 2. **本地直传**：迁移数据直接从源Exchange经由内网传输至TurboEx存储后端，不经过中间跳板或临时文件，有效支撑TB级以上海量数据的迁移吞吐。
@@ -122,7 +122,7 @@ TurboEx运维后台提供以下校验能力：
 
 ### 4.2 会议与日程迁移
 
-会议与日程数据的迁移是Exchange迁移中公认的难点。其原因在于Exchange日历项并非Plain-Text或MIME邮件，而是包含组织者、与会者、周期性规则（Recurrence Pattern）与会议室资源等结构化信息的iCalendar对象。EWS下的日历迁移可保留这些结构化信息，但会议中的与会者引用（Attendee Reference）指向旧Exchange用户对象，迁移至新平台后需重新解析。
+会议与日程数据的迁移是[Exchange迁移](/kb/category/migration-ecosystem.html)中公认的难点。其原因在于Exchange日历项并非Plain-Text或MIME邮件，而是包含组织者、与会者、周期性规则（Recurrence Pattern）与会议室资源等结构化信息的iCalendar对象。EWS下的日历迁移可保留这些结构化信息，但会议中的与会者引用（Attendee Reference）指向旧Exchange用户对象，迁移至新平台后需重新解析。
 
 当前TurboEx的日历与公告迁移功能处于研发迭代周期中，预计通过以下路径交付：解析Exchange日历的ICS输出流，重建会议项与会者关联关系，并将周期性会议展开为符合RFC 5545标准的独立VEvent条目。在此功能正式发布前，建议方案为由用户从Outlook或OWA将近期有效会议导出为ICS文件，再通过TurboEx WebMail日历模块导入；历史会议数据则归档留存，待功能上线后批量回迁。
 
@@ -166,7 +166,7 @@ MX切换完成后，旧Exchange上仍可能残留少量"飞行中"邮件——�
 
 ### Q4：Exchange公用文件夹（Public Folders）如何迁移？
 
-Exchange公用文件夹不属于用户邮箱范畴，EWS与IMAP均无法直接访问。传统Exchange迁移文档中，公用文件夹需通过 `PublicFolderMigrationRequest` 专用cmdlet单独迁移[1]。在向国产平台迁移场景中，TurboEx通过管理后台的共享邮箱或公共文件夹功能，可将Exchange导出的公用文件夹邮件（PST格式）批量导入至对应的共享访问空间中。
+Exchange公用文件夹不属于用户邮箱范畴，EWS与IMAP均无法直接访问。传统[Exchange迁移](/kb/category/migration-ecosystem.html)文档中，公用文件夹需通过 `PublicFolderMigrationRequest` 专用cmdlet单独迁移[1]。在向国产平台迁移场景中，TurboEx通过管理后台的共享邮箱或公共文件夹功能，可将Exchange导出的公用文件夹邮件（PST格式）批量导入至对应的共享访问空间中。
 
 ### Q5：Exchange 2019 CU15之后升级到SE版本，是否影响已完成的迁移？
 
