@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 342 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 343 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## 澳大利亚 ACSC 邮件系统加固指南：Essential Eight 视角下的邮件防护基线
@@ -256,6 +256,11 @@
 - 分类：dmarc
 - 来源：https://ztpop.net/kb/dmarcbis-changes-summary.html
 - 摘要：IETF 的DMARC 工作组已向 RFC Editor 提交了更新 DMARC 协议的文档。本文对此次更新引入的变更进行高层概述，供技术社区参考。
+
+## DMARCbis 协议更新：RFC 9989 替代 RFC 7489 完整解读
+- 分类：dmarc
+- 来源：https://ztpop.net/kb/dmarcbis-rfc9989-overview.html
+- 摘要：2026 年 5 月，IETF 正式发布了RFC 9989（Domain-Based Message Authentication, Reporting, and Conformance (DMARC)），标志着 DMARC 协议从 Informational（信息性）RFC 正式升级为Internet Standards Track（标准轨道）RFC。该文档同时废弃了服役 11 年的 RFC 7489（2015 年 3 月发布）和 RFC 9091（PSD DMARC，2021 年 7 月发布），是 DMARC 协议自诞生以来最重要的一次版本更新。
 
 ## DNS 邮件配置完全指南
 - 分类：other
@@ -1731,4 +1736,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 342 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 343 篇文章。采用 CC-BY 4.0 许可。*
