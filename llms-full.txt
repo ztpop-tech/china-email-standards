@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 332 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 342 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## 澳大利亚 ACSC 邮件系统加固指南：Essential Eight 视角下的邮件防护基线
@@ -1018,10 +1018,10 @@
 - 来源：https://ztpop.net/kb/m3aawg-ai-lifecycle-security-bcp.html
 - 摘要：本文为 M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group）于 2025 年 5 月发布的AI Model Lifecycle Security Best Common Practices的中文译本。原文参考 URL：http://www.m3aawg.org/AIModelLifecycleSecurityBCP。本译本仅用于技术交流，不构成法律建议；具体合规事宜请咨询所在机构的法律顾问。
 
-## M3AAWG 反钓鱼最佳实践（BCP）：从域名防护到用户教育的全链路
+## ISP 和邮箱服务商反钓鱼最佳实践——M3AAWG 与 APWG 联合指南
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-anti-phishing-bcp.html
-- 摘要：M3AAWG（消息、恶意软件与移动反滥用工作组）汇集了全球主要邮件服务商与品牌方，其反钓鱼 BCP 是业界协作的权威基线。钓鱼（phishing）是 BEC 与凭据窃取的主要入口，单靠接收方过滤不够——必须发件方、接收方、品牌方、用户四侧联动才能系统性压低成功率。
+- 摘要：译介 M3AAWG & APWG《Anti-Phishing Best Practices for ISPs and Mailbox Providers Version 2.01》（June 2015）· 面向邮件安全运维与 ISP 安全团队
 
 ## M3AAWG 被列入黑名单应对指南——邮件 IP/域名黑名单发现、评估与取消全流程
 - 分类：m3aawg
@@ -1078,10 +1078,26 @@
 - 来源：https://ztpop.net/kb/m3aawg-email-forwarding-bcp.html
 - 摘要：本 M3AAWG 最佳实践文档提出了邮件转发服务商（Email Volume Forwarders）及接收方（Receivers of Forwarded Email）可采纳的若干措施。这些实践旨在减少转发方与接收方之间的交互摩擦，帮助确保邮件顺利投递，同时避免因转发垃圾邮件和滥用邮件引发的问题。
 
+## M3AAWG 滥用反馈报告推荐实践
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-feedback-reporting-recs.html
+- 摘要：在互联网的反滥用斗争中，将滥用行为举报给行为的源头，长期以来都是主要手段。向网络或域名的所有者出示证据，证明其网络中可能存在被攻陷的主机或账号正在发送滥用流量（如垃圾邮件、钓鱼邮件、病毒等），使所有者能够采取必要措施阻断问题流量。如同使用共同的语言能让两人有效沟通一样，既定义滥用报告格式、又定义报告目标地址的标准，能够有效提升网络所有者对抗滥用流量的能力。
+
+## M3AAWG 邮件传输前向保密（Forward Secrecy）建议
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-forward-secrecy-recs.html
+- 摘要：原文：M3AAWG Initial Recommendations for Using Forward Secrecy to Secure Data（January 2016）
+翻译：ztpop.net 知识库
+
 ## M3AAWG《面向 Gmail/Yahoo 批量发件新规》：2024「无认证不进入」时代
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-gmail-yahoo-bulk-requirements.html
 - 摘要：译自 M3AAWG 博客「New Minimum Requirements for Sending Bulk Mail to Gmail and Yahoo」(2023-10-03)
+
+## M3AAWG 托管与云服务商反滥用最佳实践
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-hosting-abuse-bcp.html
+- 摘要：原文：Messaging, Malware and Mobile Anti-Abuse Working Group (M3AAWG) 与 Internet Infrastructure Coalition (i2C) 联合发布，2015 年 3 月。
 
 ## M3AAWG 相似域名最佳实践：11 项安全用途操作指南（翻译）
 - 分类：m3aawg
@@ -1103,6 +1119,11 @@
 - 来源：https://ztpop.net/kb/m3aawg-mandated-emails-bcp.html
 - 摘要：在某些场景下，邮件发送方可能被要求或强制向大批量受众发送邮件——即便这些邮件极大概率会表现出糟糕的投递指标（如退信率和投诉率飙升）。这类邮件并非用于常规营销或事务通知，而是常规规则之外的例外情况。高风险发送的典型例子包括：数据泄露通知、产品召回通知、健康与安全公告，以及其他可能需要发送给此前已被屏蔽或退订的人员的通知。
 
+## M3AAWG 邮件中间人（MITM）攻击防御建议
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-mitm-recommendations.html
+- 摘要：消息社区在推动邮件流量机会性（尽力而为）加密部署方面取得了令人瞩目的进展。然而，正如《TLS for Mail: M3AAWG Initial Recommendations》与 IETF《Opportunistic Security: Some Protection Most of the Time》文档所述，机会性加密并不足以抵御中间人（MITM）攻击。
+
 ## M3AAWG 非人为互动（NHI）对邮件发送指标的影响与应对指南
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-nhi-impact-guide.html
@@ -1123,6 +1144,11 @@
 - 来源：https://ztpop.net/kb/m3aawg-ransomware-bcp.html
 - 摘要：本文翻译自 M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group，消息、恶意软件和移动反滥用工作组）于 2025 年 8 月更新的Ransomware Active Attack Response Best Common Practices（勒索软件主动攻击响应最佳通用实践）。原文可在http://www.m3aawg.org/ransomware_bcp_2025获取。本文为完整中文翻译，仅供学习参考，如有歧义请以英文原版为准。
 
+## M3AAWG 发件人最佳通用实践 v3.0
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-sender-bcp-v3.html
+- 摘要：译介 M3AAWG《Sender Best Common Practices Version 3.0》（Updated February 2015）· 面向 ESP（邮件服务商）、大量发件人、营销管理及合规团队
+
 ## M3AAWG 发送域名最佳常见实践——子域 vs 表亲域：邮件发送域名的正确选择方法
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-sending-domains-bcp.html
@@ -1133,20 +1159,45 @@
 - 来源：https://ztpop.net/kb/m3aawg-spam-trap-guide.html
 - 摘要：Spam Trap（垃圾邮件陷阱）是由反滥用组织、邮箱提供商和安全公司部署的专门邮件地址，用于识别和拦截垃圾邮件发送者。当 Spam Trap 收到邮件时，通常意味着发送者的邮件列表清洗不充分或存在非许可式发送行为。
 
+## M3AAWG 蜜罐地址（Spamtrap）建设与运营最佳实践
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-spamtrap-bcp.html
+- 摘要：Spamtrap（蜜罐地址、垃圾邮件陷阱）是一种用于检测和拦截垃圾邮件的技术手段。其本质是由反垃圾邮件运营者专门设立的电子邮件地址，这些地址不应收到任何正常的、合法的邮件。因此，任何发送到 Spamtrap 地址的邮件都可以被高度确信为垃圾邮件。
+
 ## M3Aawg Tls Baseline Recs 2026
 - 分类：tls
 - 来源：https://ztpop.net/kb/m3aawg-tls-baseline-recs-2026.html
 - 摘要：2010 年代的全球监控披露事件以及后续对邮件流量全面监控的持续报道，使公众愈加关注邮件提供商可部署的隐私保护技术措施。本文中，M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group）推荐了三项邮件服务提供商可相对快速实施的基础措施，用以增强用户邮件的安全性和隐私保护。
+
+## M3AAWG 邮件流量分析导论
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-traffic-analysis-intro.html
+- 摘要：译介 M3AAWG《Introduction to Traffic Analysis》（June 2016）· 涵盖流量数据收集方法、统计方法、异常检测、基线建立、与 spamtrap 数据结合、可视化工具，并补充国内大邮件系统流量分析实践
 
 ## 邮件信任始于认证
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-trust-email-authentication.html
 - 摘要：M3AAWG 经典白皮书中文版 · Trust in Email Begins with Authentication, Updated February 2015 · Dave Crocker & Terry Zink 执笔
 
+## M3AAWG Unicode 滥用防御最佳实践
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-unicode-abuse-prevention.html
+- 摘要：Unicode 标准极大增强了互联网的国际化能力，使得全球用户可以使用本地语言文字访问互联网服务。然而，这份包容性也被滥用于钓鱼攻击与社会工程——攻击者利用视觉上难以区分的 Unicode 字符（即"同形字"）来伪造合法的域名与邮箱地址。
+
+## M3AAWG 围墙花园（Walled Garden）最佳实践 v2.0
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-walled-garden-bcp.html
+- 摘要：译自 M3AAWG Best Common Practices for the Use of a Walled Garden v2.0 · 面向运营商的设备感染隔离与用户教育
+
 ## M3AAWG 网络表单注册攻击防护建议
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-web-form-signup-attacks.html
 - 摘要：译自 M3AAWG Recommendation on Web Form Signup Attacks（2017年10月）· 面向邮件运维与安全运营团队
+
+## M3AAWG WHOIS/RDAP 数据使用建议
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-whois-data-usage.html
+- 摘要：域名注册信息（WHOIS 数据）提供了查询域名注册者所提供信息的能力，这些信息由注册商或注册局采集并公开。无论滥用投诉应提交给注册商还是域名注册者，特定域名的联系方式都会在 WHOIS 数据中呈现。
 
 ## 邮件流架构设计最佳实践
 - 分类：operations
@@ -1680,4 +1731,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 332 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 342 篇文章。采用 CC-BY 4.0 许可。*
