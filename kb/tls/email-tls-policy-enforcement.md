@@ -192,6 +192,8 @@ Phase 2→3 切换前自检清单：
 
 Brand Indicators for Message Identification（BIMI，RFC 8686）通过 DMARC 策略成功验证后附加品牌 Logo 展示。BIMI 不直接参与传输安全强化，但其生态要求发件域满足 DMARC p=quarantine/reject 且通过 VMC（Verified Mark Certificate）证明商标权——VMC 由公认知识产权局颁发的注册商标作为背书。这一间接效力推动了域所有者完成 SPF → DKIM → DMARC → DANE → MTA-STS 的完整认证栈部署。BIMI 在 2024–2025 年间由 Gmail、Apple Mail、Yahoo Mail 和 Fastmail 等多平台同时支持后进入主流采纳。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/email-tls-policy-enforcement.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
