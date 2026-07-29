@@ -142,6 +142,8 @@ BGP 防护与邮件安全协议的互补关系
 * 多线 BGP 冗余 + STRIPLS 防御（DANE/MTA-STS）构成邮件路径的完整防护
 * RFC 7908、RFC 8210 是 BGP 安全和 RPKI-RTR 的核心协议参考
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/bgp-rpki-mail-security.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
