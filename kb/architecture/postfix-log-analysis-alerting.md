@@ -183,6 +183,8 @@ pflogsumm -d today --verbose-deliveries /var/log/mail.log |     awk 'NR>6 {if($7
 * 报警阈值应基于历史基线而非绝对数值——建议运行 30 天确定基线后再设定 3σ 阈值
 * 参考标准：RFC 5321（SMTP 状态码）、RFC 3463（增强状态码）、RFC 3461（DSN）
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/postfix-log-analysis-alerting.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
