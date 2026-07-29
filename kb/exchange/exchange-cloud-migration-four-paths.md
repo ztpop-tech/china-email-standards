@@ -222,6 +222,8 @@ Exchange → 公有云迁移选型决策树
 4. **发信测试：** 从云端邮箱发送测试邮件至内部/外部地址，确认 SPF/DKIM/DMARC 通过
 5. **收信测试：** 外部发送至云端新邮箱，确认投递路径正常
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/exchange-cloud-migration-four-paths.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
