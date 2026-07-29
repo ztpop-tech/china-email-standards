@@ -157,6 +157,8 @@ Exchange Server Subscription Edition（SE）于 2025 年下半年正式发布[4]
 
 2025年10月14日 Exchange 2016/2019 扩展支持终止是一个不可延后的硬性截止日期[1][2]。对于已过该日期仍在使用旧版本的组织，安全风险已从"理论威胁"转变为"确定性暴露"[9]。决策者需要基于数据主权要求、预算约束、技术能力、合规要求四个维度，在三条路径中做出选择。无论选择哪条路径，迁移启动的时间窗口已经关闭——组织应尽早进入执行阶段，以最短的暴露时间完成邮件基础设施的现代化。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/exchange-eol-migration-guide.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
