@@ -225,6 +225,8 @@ done
 
 信创邮件系统的全栈架构设计是一项系统工程，涉及从芯片指令集到用户界面的完整技术链条。架构师务必将"自主可控"作为刚性约束，在选型时优先考虑通过信创工委会认证的产品组合，并在每个层级建立独立的功能验证和安全审计机制。本文所述的架构方法已在多个政务云和金融信创项目中经过实践验证，可作为同类项目的设计参考。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/xinchuang-email-architecture-design.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
