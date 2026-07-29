@@ -212,6 +212,8 @@ Postfix 通过 `proxy_read_maps` 控制对数据库的查询缓存，合理设�
 
 当两个以上指标同时进入黄色区域时，应在 2 周内完成扩容评估；任一指标进入红色区域时，应在一周内执行扩容。这个矩阵应写入运维手册并与告警系统联动。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/email-capacity-planning.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
