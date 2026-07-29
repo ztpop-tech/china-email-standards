@@ -193,6 +193,8 @@ Exchange Online 和 Exchange Server 的不可送达报告（NDR）在 HTML 正�
 * `##[Action and details]##` — NDR 生成原因和内部路由决策日志。
 * `##[Reporting server]##` — 生成此 NDR 的 Exchange 服务器 FQDN。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/email-deliverability-delayed-bounce-diagnostics.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
