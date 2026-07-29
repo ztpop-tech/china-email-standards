@@ -156,6 +156,8 @@ smtp_tls_dane_usage_requested = 3  # DANE-EE
 * 最安全组合 = DANE Enforce + MTA-STS Enforce + TLS-RPT
 * 中国大陆场景推荐优先 MTA-STS + TLS-RPT，择机部署 DNSSEC 后再叠加 DANE
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/smtp-dane-mta-sts-tls-rpt-comparison.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
