@@ -104,6 +104,8 @@ F 类检查项
 * 渗透测试应周期性执行，重点关注 TLS 降级和认证绕过
 * 参考标准：NIST SP 800-177、SP 800-45、SP 800-53、SP 800-115、RFC 5321/7208/6376/7489
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/nist-sp800177-security-baseline.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
