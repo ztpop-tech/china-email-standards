@@ -237,6 +237,8 @@ $ curl -s -H "Accept: application/taxii+json;version=2.1" \
 
 邮件威胁情报框架的构建是一个从"单封检测"到"知识积累"再到"主动防御"的三阶段演进过程。第一阶段是 IOC 提取的标准化——在每个 SMTP 会话中将检测结果转化为结构化的 STIX 2.1 对象；第二阶段是情报汇聚与富化——利用 MISP 平台将各节点 IOC 进行关联分析和威胁聚类；第三阶段是自动化响应编排——通过 SOAR 工作流将经确认的 IOC 在分钟内分发至全网邮件网关并触发回溯扫描。对于日常处理海量邮件的大型组织，任何一个环节的手工操作都会使威胁响应速度远低于攻击者的行动速度，自动化是唯一可行的工程路径。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/email-threat-intelligence-framework.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
