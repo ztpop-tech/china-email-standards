@@ -134,6 +134,8 @@ GM/T 0028-2014 将密码模块安全要求划分为四个等级，等级递增�
 * **定期自查**：每季度对照密评 FAQ 最新版本的自查清单进行合规差距分析 [8]；
 * **安全事件审计**：记录所有密码操作日志（密钥生成、证书签发、加密会话建立），审计日志以 SM3 进行完整性保护，满足密评关于安全审计数据完整性的要求。
 
+本站技术文章采用 **CC-BY 4.0** 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/xinchuang-email-crypto-standards.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
