@@ -206,6 +206,8 @@ AD 默认启用墓碑（Tombstone）机制，删除的对象默认保留 180 天
 6. **密码哈希不可读：** AD 默认不允许非域控制器读取 `unicodePwd` 属性
 7. **同步冲突：** 目标端已在但 AD 不存在的账号，需设置冲突策略（覆盖/跳过/告警）
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/xinchuang-ad-sync-guide.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
