@@ -341,6 +341,8 @@ SLO（Service Level Objective）是监控体系从"阈值触发"到"服务质量
 
 告警疲劳控制推荐：设置告警冷却时间（`repeat_interval: 4h`），同一高优先级告警 4 小时内不再重复发送。同时配合 `Alertmanager` 的 `inhibit_rules` 抑制机制——当 PostfixQueueCritical 告警触发时，自动抑制同一实例上由 PostfixQueueDeep 触发的所有 warning 级告警。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/prometheus-grafana-email-monitoring-alert-system.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
