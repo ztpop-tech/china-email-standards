@@ -310,6 +310,8 @@ $ rspamadm control reload
 
 对于需要导出统计数据进行分析的场景，Rspamd的API提供了JSON格式的统计数据端点，可以集成到Grafana等监控平台中实现可视化的垃圾邮件拦截趋势图。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rspamd-architecture-scoring-engine.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
