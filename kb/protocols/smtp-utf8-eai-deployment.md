@@ -162,6 +162,8 @@ RFC 6857 定义了 POP3 协议中处理国际化的降级机制。与 IMAP 的 R
 
 EAI 标准体系的工程落地是一个分阶段的生态系统演进过程，而非单一产品的功能切换。MTA（Postfix）层面的 SMTPUTF8 支持是基础，IMAP/POP3 服务器（Dovecot）的 UTF8 扩展是中间层，邮件客户端（MUA）的原生 EAI 支持是面向最终用户的交付层。三层缺一不可——任一层的缺口都会导致用户体验打折扣。中文邮箱地址从 RFC 标准到生产环境的道路仍然处在渐进推进中，但 Postfix 3.0+ 和 Dovecot 2.3+ 的组合已经为管理员提供了可行的实验和试点部署基础。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/smtp-utf8-eai-deployment.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
