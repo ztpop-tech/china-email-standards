@@ -211,6 +211,8 @@ EWS 的退役不仅是 Microsoft 365/Exchange Online 用户面临的问题，对
 
 对于计划从 Exchange 迁移至国产邮件系统的组织而言，当前是审视应用架构的良机：将邮件集成层从 EWS 私有协议解耦，转而使用跨平台标准协议（IMAP/SMTP）或目标邮件系统提供的标准化 REST API，可以从根本上消除单一厂商的 API 锁定风险。在国产邮件系统的选型中，是否提供完善的 RESTful API 以及是否基于标准协议（而非私有封装）进行集成，应作为重要的评估维度。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/exchange-ews-retirement-migration.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
