@@ -215,6 +215,8 @@ vm.dirty_background_ratio = 5
 * Postfix 队列 I/O 优化可从减少扫描频率、降低写入频次、利用内核缓存三方面入手
 * 参考标准：RFC 5321（MTA 架构）、Dovecot Wiki（Maildir/mbox/dbox 对比）
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/mail-server-disk-io-performance.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
