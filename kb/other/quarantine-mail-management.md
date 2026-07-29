@@ -212,6 +212,8 @@ worker {
 * **误报统计分析**：建立误报报告仪表盘，按"被拦截发件人"、"拦截原因（DNSBL/Bayesian/RBL 规则等）"、"用户组"三个维度聚合，定位过滤引擎权重偏差
 * **熔断机制**：当某个拦截原因在 1 小时内导致的误报数超过历史基线 3 倍标准差时，自动暂停该规则的生效并通知管理员
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/quarantine-mail-management.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
