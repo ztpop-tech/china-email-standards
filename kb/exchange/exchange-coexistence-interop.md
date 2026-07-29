@@ -231,6 +231,8 @@ grep "status=bounced\|status=deferred" /var/log/maillog | tail -20
 
 建议在共存期部署邮件流监控探针——每天自动发送测试邮件至两个系统的测试邮箱，验证路由路径与延迟。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/exchange-coexistence-interop.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
