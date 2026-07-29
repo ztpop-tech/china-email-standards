@@ -22,7 +22,7 @@ license: CC-BY 4.0
 * [8. 结论](#sec8)
 * [国内场景补充](#sec-cn)
 
-本文翻译自 M3AAWG Compromised User ID Best Practices, Version 1.0.1, March 2018，© M3AAWG。中文版由 ztpop.net 知识库编译发布。本文遵循 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可协议。
+本文翻译自 M3AAWG Compromised User ID Best Practices, Version 1.0.1, March 2018，© M3AAWG。中文版由 ztpop.net 知识库编译发布。
 
 ## 1. 引言
 
