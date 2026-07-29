@@ -117,7 +117,7 @@ C: [邮件内容]
 S: 250 2.6.0 Message accepted (queued)
 ```
 
-通过流水线，DSN 参数的 ORCPT（原收件�地址）在单个 IP 连接中为每个收件人独立指定，而不会引入额外 RTT 开销。
+通过流水线，DSN 参数的 ORCPT（原收件人地址）在单个 IP 连接中为每个收件人独立指定，而不会引入额外 RTT 开销。
 
 ## 3. Postfix 中的 PIPELINING 配置
 
