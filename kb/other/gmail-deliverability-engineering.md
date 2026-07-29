@@ -176,6 +176,8 @@ Google 的 Feedback Loop（FBL）将 Gmail 用户标记为垃圾邮件的投诉�
 
 预热期三不可：(a) 不可突然切换邮件内容类型——预热期发送的邮件在主题、发件人、内容模板上须与正式期完全一致；(b) 不可在投诉率超过 0.1% 时继续增加日发送量——应暂停增长而非削减已计划的量以保持基数稳定；(c) 不可在单个预热周期内变更 SPF/DKIM/DMARC 配置——DNS 变更引起的暂时认证波动会错误触发反垃圾引擎的负面评分。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/gmail-deliverability-engineering.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
