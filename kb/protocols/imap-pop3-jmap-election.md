@@ -21,7 +21,7 @@ POP3 的设计假设是用户只有一台设备且网络连接不可靠 [1]。�
 
 ### 1.2 IMAP（RFC 3501 / RFC 9051）：服务器为中心，同步为王
 
-IMAP 的全称 Internet Message Access Protocol 准确描述了其设计目标——不是传输消息，而是访问消息 [3]。服务器存储永久的消息数据库，客户端通过命��操作消息和邮箱状态。RFC 3501 定义了 30+ 条命令（SELECT、FETCH、STORE、SEARCH、COPY、EXPUNGE 等），RFC 9051 (IMAP4rev2) 简化了规范并强制要求 TLS [4]。
+IMAP 的全称 Internet Message Access Protocol 准确描述了其设计目标——不是传输消息，而是访问消息 [3]。服务器存储永久的消息数据库，客户端通过命令操作消息和邮箱状态。RFC 3501 定义了 30+ 条命令（SELECT、FETCH、STORE、SEARCH、COPY、EXPUNGE 等），RFC 9051 (IMAP4rev2) 简化了规范并强制要求 TLS [4]。
 
 关键特性：
 
