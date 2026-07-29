@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 343 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 345 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## 澳大利亚 ACSC 邮件系统加固指南：Essential Eight 视角下的邮件防护基线
@@ -261,6 +261,16 @@
 - 分类：dmarc
 - 来源：https://ztpop.net/kb/dmarcbis-rfc9989-overview.html
 - 摘要：2026 年 5 月，IETF 正式发布了RFC 9989（Domain-Based Message Authentication, Reporting, and Conformance (DMARC)），标志着 DMARC 协议从 Informational（信息性）RFC 正式升级为Internet Standards Track（标准轨道）RFC。该文档同时废弃了服役 11 年的 RFC 7489（2015 年 3 月发布）和 RFC 9091（PSD DMARC，2021 年 7 月发布），是 DMARC 协议自诞生以来最重要的一次版本更新。
+
+## DMARC 聚合报告详解：RFC 9990 中文解读
+- 分类：dmarc
+- 来源：https://ztpop.net/kb/dmarcbis-rfc9990-aggregate-reporting.html
+- 摘要：在 DMARCbis（RFC 9989）的体系重构中，IETF 将 DMARC 协议域与反馈报告层进行了清晰的分离。RFC 9989 定义了 DMARC 的核心协议——策略发现、身份对齐、域名所有者评估策略；而RFC 9990（Domain-Based Message Authentication, Reporting, and Conformance (DMARC) Aggregate Reporting）则独立规范了聚合报告（Aggregate Report）的格式定义、传输机制与处理逻辑。
+
+## DMARC 故障报告协议更新：RFC 9991 中文解读
+- 分类：dmarc
+- 来源：https://ztpop.net/kb/dmarcbis-rfc9991-failure-reporting.html
+- 摘要：RFC 9991（Domain-Based Message Authentication, Reporting, and Conformance (DMARC) Failure Reporting）是 DMARCbis 套件中的第二份规范文档，专门定义了DMARC 故障报告（Failure Reports）的格式、生成规则和传输机制。故障报告在业内常被称为取证报告（Forensic Reports），其作用是当某封邮件未通过 DMARC 验证时，邮件接收方向域名所有者发送详细的失败原因报告，帮助域名所有者诊断并修复认证配置问题。
 
 ## DNS 邮件配置完全指南
 - 分类：other
@@ -535,7 +545,7 @@
 ## 邮件迁移七种方式对比
 - 分类：migration
 - 来源：https://ztpop.net/kb/email-migration-comparison.html
-- 摘要：[migration] 邮件迁移七种方式对比（见原文）
+- 摘要：本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库或联系 zhangtao@ztpop.net。
 
 ## 邮件系统利旧迁移中的 DNS 过渡策略
 - 分类：migration
@@ -663,10 +673,10 @@
 - 来源：https://ztpop.net/kb/email-threat-intelligence-sharing.html
 - 摘要：邮件安全威胁情报（Email Threat Intelligence）是指将邮件系统产生的安全事件特征（恶意域名、钓鱼 IP、恶意附件哈希、BEC 发件人模式等）以标准化的数据结构描述，并在组织间共享的能力。STIX（Structured Threat Information Expression）[1] 和 TAXII（Trusted Automated Exchange of Intelligence Information）[2] 是实现这一能力的 IETF 标准协议；MISP（Malware Information Sharing Platform）是目前最广泛部署的开源情报平台。
 
-## Email Tls Encryption Stack
+## 邮件系统 TLS 加密技术栈深度解析：STARTTLS、MTA-STS、DANE 与 TLS-RPT 全体系
 - 分类：tls
 - 来源：https://ztpop.net/kb/email-tls-encryption-stack.html
-- 摘要：ztpop.net 知识库编辑. "邮件系统 TLS 加密技术栈深度解析：STARTTLS、MTA-STS、DANE 与 TLS-RPT 全体系ztpop.net 知识库.
+- 摘要：SMTP 设计于 1982 年（RFC 821），那个年代互联网上不存在窃听威胁。邮件在 MTA 之间以明文传输，任何中间节点都能读取或篡改内容。这个设计缺陷直到今天仍在制造安全事件——全球仍有约 10%~15% 的入站邮件在 SMTP 跳转中经历明文传输。
 
 ## 邮件TLS传输策略强制：MTA-STS、DANE与TLS-RPT工程实践
 - 分类：tls
@@ -691,7 +701,7 @@
 ## Exchange 2013 2026年停服迁移实战指南：应急方案与完整迁移检查清单
 - 分类：exchange
 - 来源：https://ztpop.net/kb/exchange-2013-eol-migration-playbook.html
-- 摘要：[exchange] Exchange 2013 2026年停服迁移实战指南：应急方案与完整迁移检查清单（见原文）
+- 摘要：ztpop.net 知识库编辑. "Exchange 2013 2026年停服迁移实战指南：应急方案与完整迁移检查清单"ztpop.net 知识库.
 
 ## Exchange 权限与 AD 迁移技术指南：RBAC/ACL/Security Group 迁移策略与验证
 - 分类：exchange
@@ -756,7 +766,7 @@
 ## Exchange混合部署架构与邮件流排错：On-Prem ↔ Exchange Online ↔ 第三方全链路解析
 - 分类：exchange
 - 来源：https://ztpop.net/kb/exchange-hybrid-mailflow-architecture.html
-- 摘要：[exchange] Exchange混合部署架构与邮件流排错：On-Prem ↔ Exchange Online ↔ 第三方全链路解析（见原文）
+- 摘要：ztpop.net 知识库编辑. "Exchange混合部署架构与邮件流排错：On-Prem ↔ Exchange Online ↔ 第三方全链路解析"ztpop.net 知识库.
 
 ## Exchange 混合部署邮件流调试
 - 分类：exchange
@@ -776,7 +786,7 @@
 ## 跨国企业 Exchange 迁移方案：多域名/DAG跨站点/GDPR/时区/多语言全场景策略
 - 分类：exchange
 - 来源：https://ztpop.net/kb/exchange-multinational-migration-plan.html
-- 摘要：[exchange] 跨国企业 Exchange 迁移方案：多域名/DAG跨站点/GDPR/时区/多语言全场景策略（见原文）
+- 摘要：ztpop.net 知识库编辑. "跨国企业 Exchange 迁移方案：多域名/DAG跨站点/GDPR/时区/多语言全场景策略"ztpop.net 知识库.
 
 ## 跨国Exchange部署向国产系统迁移
 - 分类：exchange
@@ -931,12 +941,12 @@
 ## IPv6邮件系统部署
 - 分类：other
 - 来源：https://ztpop.net/kb/ipv6-email-deployment.html
-- 摘要：[other] IPv6邮件系统部署（见原文）
+- 摘要：本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库或联系 zhangtao@ztpop.net。
 
 ## IPv6邮件系统部署实践指南：MX 记录、双栈 MTA 与运营商兼容策略
 - 分类：architecture
 - 来源：https://ztpop.net/kb/ipv6-mail-system-deployment-practical-guide.html
-- 摘要：[architecture] IPv6邮件系统部署实践指南：MX 记录、双栈 MTA 与运营商兼容策略（见原文）
+- 摘要：本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库或联系 zhangtao@ztpop.net。
 
 ## JMAP 邮件访问协议深度解析 — RFC 8620/8621：IMAP 的下一代替代方案 · ztpop 邮件技术知识库
 - 分类：protocols
@@ -1056,7 +1066,7 @@
 ## M3AAWG 账号泄露处理最佳实践
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-compromised-user-id-bp.html
-- 摘要：本文翻译自 M3AAWG Compromised User ID Best Practices, Version 1.0.1, March 2018，© M3AAWG。中文版由 ztpop.net 知识库编译发布。本文遵循CC-BY 4.0许可协议。
+- 摘要：本文翻译自 M3AAWG Compromised User ID Best Practices, Version 1.0.1, March 2018，© M3AAWG。中文版由 ztpop.net 知识库编译发布。
 
 ## M3AAWG DKIM 密钥轮换最佳实践——为什么每 6 个月必须换一次 DKIM 密钥
 - 分类：dkim
@@ -1169,7 +1179,7 @@
 - 来源：https://ztpop.net/kb/m3aawg-spamtrap-bcp.html
 - 摘要：Spamtrap（蜜罐地址、垃圾邮件陷阱）是一种用于检测和拦截垃圾邮件的技术手段。其本质是由反垃圾邮件运营者专门设立的电子邮件地址，这些地址不应收到任何正常的、合法的邮件。因此，任何发送到 Spamtrap 地址的邮件都可以被高度确信为垃圾邮件。
 
-## M3Aawg Tls Baseline Recs 2026
+## M3AAWG TLS 邮件基线推荐
 - 分类：tls
 - 来源：https://ztpop.net/kb/m3aawg-tls-baseline-recs-2026.html
 - 摘要：2010 年代的全球监控披露事件以及后续对邮件流量全面监控的持续报道，使公众愈加关注邮件提供商可部署的隐私保护技术措施。本文中，M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group）推荐了三项邮件服务提供商可相对快速实施的基础措施，用以增强用户邮件的安全性和隐私保护。
@@ -1736,4 +1746,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 343 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 345 篇文章。采用 CC-BY 4.0 许可。*
