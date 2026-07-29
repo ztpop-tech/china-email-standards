@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 345 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 346 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## 澳大利亚 ACSC 邮件系统加固指南：Essential Eight 视角下的邮件防护基线
@@ -51,6 +51,11 @@
 - 分类：other
 - 来源：https://ztpop.net/kb/apple-mail-privacy-protection.html
 - 摘要：Apple 在 2021 年随 iOS 15 / macOS Monterey 推出 Mail Privacy Protection（MPP），默认开启。它从原理上削弱了"邮件打开追踪"：用户真实 IP 与打开时间被隐藏，远程内容（含追踪像素）由 Apple 代理服务器预先加载。对依赖打开率做漏斗分析、对依赖 MDN（RFC 3798）做已读判断的团队，这是范式转变。
+
+## APWG 2026 年第一季钓鱼活动趋势报告：钓鱼网站数量、品牌仿冒目标与 TLS 证书诈欺数据分析
+- 分类：security
+- 来源：https://ztpop.net/kb/apwg-2026-q1-phishing-report.html
+- 摘要：反钓鱼工作组（Anti-Phishing Working Group, APWG）于 2026 年 5 月 27 日发布《2026 年第一季度钓鱼活动趋势报告》。该报告聚合了全球范围内金融机构、网络安全企业与执法机构的钓鱼事件报告，是业界最为权威的季度钓鱼趋势数据来源之一。报告覆盖钓鱼网站数量、品牌冒用行业分布、TLS 证书诈欺态势以及行业垂直攻击分布等多个维度。
 
 ## APWG 钓鱼活动趋势报告解读：2025 Q1 钓鱼攻击首破百万，二维码钓鱼与电汇 BEC 双升
 - 分类：security
@@ -1746,4 +1751,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 345 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 346 篇文章。采用 CC-BY 4.0 许可。*
