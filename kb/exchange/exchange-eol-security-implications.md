@@ -132,6 +132,8 @@ NIST SP 800-53 控制项 SI-2（缺陷修复）要求组织在合理时间窗口
 * 与云原生安全工具链（SIEM、SOAR）的原生集成
 * 更细粒度的 RBAC 与租户隔离
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/exchange-eol-security-implications.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
