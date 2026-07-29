@@ -273,6 +273,8 @@ if __name__ == "__main__":
 * **DNS 缓存策略**：DKIM 密钥检索、DNSBL 查询、SPF 策略拉取等操作均依赖 DNS 查询，这是 Milter 处理延迟的头号来源。推荐部署本地 DNS 递归解析器（如 unbound）并配置积极的缓存策略；OpenDKIM 内部也具备密钥缓存机制（KeyTable 的 refile 格式本质上也是预加载式缓存）。
 * **Milter 宏剪裁**：Postfix 的 milter\_macro\_\* 配置参数决定了 MTA 向 Milter 传递的上下文数据量。仅传递每个 Milter 实际需要的宏变量，避免在 MTA 和 Milter 之间传输冗余的、不会被使用的数据——这些数据虽体积不大，但在高并发场景下的累积效应不容忽视。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/milter-filter-architecture.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
