@@ -365,6 +365,8 @@ def verify_signature(payload: bytes, signature: str, secret: str) -> bool:
 
 API 文档推荐使用 OpenAPI Specification 3.x 格式，配合 Swagger UI 或 Redoc 生成交互式文档。OpenAPI 在行业采纳度、工具支持与代码生成能力上显著优于 RAML 和 API Blueprint 等替代方案。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/email-api-service-architecture.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
