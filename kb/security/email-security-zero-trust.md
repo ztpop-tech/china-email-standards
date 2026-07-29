@@ -128,6 +128,8 @@ S(x) = max(0, min(100, Σ(w_i × f_i(x)) - Σ(p_j)))
 
 将零信任架构映射到邮件安全领域不是一个概念性的类比，而是一个有明确工程实现路径的安全架构转型。它以 SPF/DKIM/DMARC 身份三元组为基础信号层，以邮件流微分段为执行层，以动态信任评分引擎为决策层，以持续监控和 DMARC/TLS 报告为反馈层，构成了一个从信令到执行、从评分到响应的完整闭环。在 BEC 攻击已超越传统垃圾邮件成为组织最大邮件威胁来源的现实下，从边界信任到持续验证的转型已从可选方案变为必要措施。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/email-security-zero-trust.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
