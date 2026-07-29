@@ -208,6 +208,8 @@ CPU 核数 = max(MPS × 0.15, UC × 0.05)
 * **叠加场景测试**：SMTP 接收 + 内容扫描 + IMAP 读取三者同时进行才是真实负载，单一维度测试会高估 2-3 倍的实际容量
 * **季度复测**：用户量和服务器特性随版本更新而变化，容量规划不是一次性活动
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/smtp-load-test-capacity-planning.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
