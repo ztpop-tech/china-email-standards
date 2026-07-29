@@ -8,7 +8,7 @@ license: CC-BY 4.0
 
 邮件滥用投诉率是衡量发件人行为健康程度的核心指标之一。当收件人将邮件标记为垃圾邮件时，邮箱提供商通过 Feedback Loop（FBL）向发件人反馈此信息。投诉率持续偏高，会触发邮箱提供商的自动过滤乃至完全拦截。本文将围绕 M3AAWG 的建议框架，逐层解析投诉管理的完整链路。
 
-**本文引用来源：**M3AAWG Recommendations for Handling Senders Complaint Issues, December 2017, © Messaging, Malware and Mobile Anti-Abuse Working Group (M3AAWG)。本站技术文章采用 **CC-BY 4.0** 许可，可自由引用，仅需标注来源 ztpop.net。
+**本文引用来源：**M3AAWG Recommendations for Handling Senders Complaint Issues, December 2017, © Messaging, Malware and Mobile Anti-Abuse Working Group (M3AAWG)。
 
 ## 一、理解投诉
 
