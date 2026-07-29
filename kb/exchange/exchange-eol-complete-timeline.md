@@ -125,6 +125,8 @@ NGINX 反向代理/SMTP 网关层的配置无需因后端 Exchange 版本变更�
 
 详细安全分析见本系列文章《Exchange Server EOL 后的安全态势：漏洞管理、补丁策略与加固方案》。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/exchange-eol-complete-timeline.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
