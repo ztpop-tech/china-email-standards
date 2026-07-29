@@ -229,6 +229,8 @@ QUIT
 
 关键观察点：(a) 220 问候行中的 MTA 标识——Postfix/Sendmail/Exchange/Cisco ESA 使用不同的默认问候字符串；(b) `ENHANCEDSTATUSCODES` 广告位存在性决定后续错误是否携带 X.Y.Z 编码；(c) `STARTTLS` 广告位指示有机会性加密能力；(d) SIZE 参数公布接收方接受的最大邮件字节数——发送超过此值将触发 552 5.3.4。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/smtp-error-codes-master-guide.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
