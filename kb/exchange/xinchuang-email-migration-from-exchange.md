@@ -271,6 +271,8 @@ New-SendConnector -Name "XinchuangRelay" -AddressSpaces "*" \
 3. **邮件文件夹层级超过 IMAP 路径限制**：Exchange 允许任意深度的文件夹嵌套，某些邮件服务器对文件夹路径长度有限制。迁移前应执行路径长度审计。
 4. **S/MIME 签名邮件**：IMAP FETCH BODY[] 返回原始 MIME，S/MIME 签名原样保留，在信创邮件系统的 WebMail 中只要正确实现 MIME 解析即可正常显示。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/xinchuang-email-migration-from-exchange.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
