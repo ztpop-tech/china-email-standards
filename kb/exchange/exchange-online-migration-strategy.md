@@ -63,6 +63,8 @@ tail -f /var/log/mail.log | grep -E "relay=exchange|delivered via lmtp"
 
 IMAP 迁移中邮件过大（>50MB附件）可能导致 imapsync 超时——需设置 --maxsize 参数跳过大邮件并在切换后通过其他方式迁移。迁移时间窗口内用户在旧系统发送的邮件可能不会自动同步到新系统，需要在 IMAP 迁移之外通过 SMTP 转发收件箱归档。切换后立即检查 DNS 缓存中仍指向旧 MX 的外部发件方——至少维护一周的旧 MX 转发。
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 class="article-footer">
 
 本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库或联系 zhangtao@ztpop.net。
