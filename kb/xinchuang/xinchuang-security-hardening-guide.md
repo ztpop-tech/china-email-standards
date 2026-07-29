@@ -379,6 +379,8 @@ echo "请提交至安全分析团队进行后续处理。"
 4. **每季度应急演练**：模拟邮件数据泄露、DDoS 攻击和配置错误恢复等场景
 5. **每年等保复测**：委托具备资质的测评机构对邮件系统进行等保三级年度复测
 
+本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/xinchuang-security-hardening-guide.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
