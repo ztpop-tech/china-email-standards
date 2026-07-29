@@ -1,10 +1,10 @@
 ---
-title: "M3Aawg Tls Baseline Recs 2026"
+title: "M3AAWG TLS 邮件基线推荐"
 source: "https://ztpop.net/kb/m3aawg-tls-baseline-recs-2026.html"
 license: CC-BY 4.0
 ---
 
-# M3Aawg Tls Baseline Recs 2026
+# M3AAWG TLS 邮件基线推荐
 
 ## 执行摘要
 
