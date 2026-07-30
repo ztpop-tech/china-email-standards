@@ -1,12 +1,12 @@
 ---
-title: "跨国企业 Exchange 迁移方案：多域名/DAG跨站点/GDPR/时区/多语言全场景策略"
+title: "跨国企业 Exchange 迁移方案：多域名/DAG跨站点/GDPR/时区/多语言全场景策略 - 知识库 · ztpop 邮件技术知识库"
 source: "https://ztpop.net/kb/exchange-multinational-migration-plan.html"
 license: CC-BY 4.0
 ---
 
-# 跨国企业 Exchange 迁移方案：多域名/DAG跨站点/GDPR/时区/多语言全场景策略
+# 跨国企业 Exchange 迁移方案：多域名/DAG跨站点/GDPR/时区/多语言全场景策略 - 知识库 · ztpop 邮件技术知识库
 
-
+本页内容正在整理中，即将上线。如需优先获取该主题资料，请联系 [zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)。
 
 ---
 
