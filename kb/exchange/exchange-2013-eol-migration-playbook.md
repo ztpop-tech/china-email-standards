@@ -1,12 +1,12 @@
 ---
-title: "Exchange 2013 2026年停服迁移实战指南：应急方案与完整迁移检查清单"
+title: "Exchange 2013 2026年停服迁移实战指南：应急方案与完整迁移检查清单 - 知识库 · ztpop 邮件技术知识库"
 source: "https://ztpop.net/kb/exchange-2013-eol-migration-playbook.html"
 license: CC-BY 4.0
 ---
 
-# Exchange 2013 2026年停服迁移实战指南：应急方案与完整迁移检查清单
+# Exchange 2013 2026年停服迁移实战指南：应急方案与完整迁移检查清单 - 知识库 · ztpop 邮件技术知识库
 
-
+本页内容正在整理中，即将上线。如需优先获取该主题资料，请联系 [zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)。
 
 ---
 
