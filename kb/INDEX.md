@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 381 篇文章。
+共 383 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Clamav Antivirus Email Gateway](https://ztpop.net/kb/clamav-antivirus-email-gateway.html) → `kb/architecture/clamav-antivirus-email-gateway.md`
@@ -158,6 +158,7 @@
 - [Hybrid Deployment Dns Design](https://ztpop.net/kb/hybrid-deployment-dns-design.html) → `kb/migration/hybrid-deployment-dns-design.md`
 - [Acsc Email Hosting Hardening](https://ztpop.net/kb/acsc-email-hosting-hardening.html) → `kb/operations/acsc-email-hosting-hardening.md`
 - [Anti Spam Bounce Guide](https://ztpop.net/kb/anti-spam-bounce-guide.html) → `kb/operations/anti-spam-bounce-guide.md`
+- [Dkim2 Async Bounce Verp](https://ztpop.net/kb/dkim2-async-bounce-verp.html) → `kb/operations/dkim2-async-bounce-verp.md`
 - [Dns Email Config](https://ztpop.net/kb/dns-email-config.html) → `kb/operations/dns-email-config.md`
 - [Email Bounce Analysis System](https://ztpop.net/kb/email-bounce-analysis-system.html) → `kb/operations/email-bounce-analysis-system.md`
 - [Email Capacity Planning](https://ztpop.net/kb/email-capacity-planning.html) → `kb/operations/email-capacity-planning.md`
@@ -195,6 +196,7 @@
 - [Cisa Enhance Email Web Security](https://ztpop.net/kb/cisa-enhance-email-web-security.html) → `kb/other/cisa-enhance-email-web-security.md`
 - [Cisa Phishing Resistant Mfa Email Deployment](https://ztpop.net/kb/cisa-phishing-resistant-mfa-email-deployment.html) → `kb/other/cisa-phishing-resistant-mfa-email-deployment.md`
 - [Cisa Phishing Resistant Mfa](https://ztpop.net/kb/cisa-phishing-resistant-mfa.html) → `kb/other/cisa-phishing-resistant-mfa.md`
+- [Dkim2 Main](https://ztpop.net/kb/dkim2-main.html) → `kb/other/dkim2-main.md`
 - [Dmarcbis Changes Summary](https://ztpop.net/kb/dmarcbis-changes-summary.html) → `kb/other/dmarcbis-changes-summary.md`
 - [Dmarcbis Rfc9989 Overview](https://ztpop.net/kb/dmarcbis-rfc9989-overview.html) → `kb/other/dmarcbis-rfc9989-overview.md`
 - [Dmarcbis Rfc9990 Aggregate Reporting](https://ztpop.net/kb/dmarcbis-rfc9990-aggregate-reporting.html) → `kb/other/dmarcbis-rfc9990-aggregate-reporting.md`
