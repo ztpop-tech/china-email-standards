@@ -1,11 +1,16 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 382 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 426 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## 澳大利亚 ACSC 邮件系统加固指南：Essential Eight 视角下的邮件防护基线
 - 分类：architecture
 - 来源：https://ztpop.net/kb/acsc-email-hosting-hardening.html
 - 摘要：澳大利亚网络安全中心（ACSC）是澳政府网络安全技术权威，其Essential Eight是一套被广泛采用的优先缓解策略。邮件系统作为最易被利用的入口，几乎贯穿 Essential Eight 的多条策略。以下以邮件视角精译 ACSC 的加固基线，可直接作为国产/信创邮件系统的配置清单。
+
+## AI/ML在邮件安全中的实际应用场景
+- 分类：other
+- 来源：https://ztpop.net/kb/ai-ml-email-security-practice.html
+- 摘要：AI在邮件安全中的部署并非新鲜事物——1998年经典的反垃圾邮件算法SpamAssassin就已经内置了基于朴素贝叶斯分类的评分机制。但过去五年，随着深度学习和NLP技术的成熟，邮件安全AI的能力边界从简单的关键词匹配扩展到了语义层面的威胁检测。NIST AI 100-1《Artificial Intelligence Risk Management Framework》建议在部署AI安全系统时建立可解释性（explainability）和鲁棒性（robustness）的评估机制——这一建议对邮件安全尤为重要，因为误判一封合法邮件（假阳性）和漏放一封钓鱼邮件（假阴性）都会产生显著的业务影响。目
 
 ## 评估AI驱动的邮件安全方案时，应重点关注其在对抗性环境中的鲁棒性（而不仅是静态测试数据的准确率），以及提供模型更新机制的频率（是否有持续的在线学习/反馈循环）。
 - 分类：other
@@ -86,6 +91,11 @@
 - 分类：protocols
 - 来源：https://ztpop.net/kb/arc-authentication-chain-rfc8617.html
 - 摘要：SPF（RFC 7208）、DKIM（RFC 6376）和 DMARC（RFC 7489）三者共同构成现代邮件认证的基石。然而这套体系依赖一个隐含前提：邮件从发件方到收件方的传输路径上，所有中间跳转都不会修改邮件内容。一旦邮件经过邮件列表（mailing list）或者自动转发（auto-forwarding），这个前提就会崩塌。邮件列表会在邮件末尾追加退订说明，转发服务可能修改 Return-Path——任何对邮件正文或 header 的修改，都会使原始 DKIM 签名失效。当 DKIM 签名断裂、SPF 因为转发路径的 IP 不属于原始域而 fail 时，DMARC 评估结果就是 fail
+
+## ARC部署与故障排除完全指南
+- 分类：references
+- 来源：https://ztpop.net/kb/arc-setup-guide.html
+- 摘要：Authenticated Received Chain（ARC）协议由RFC 8617定义，旨在解决邮件转发场景中DKIM签名失效导致的DMARC误判问题。当邮件经过邮件列表、自动转发等中间环节时，原始发件域的DKIM签名可能因内容修改而失效。ARC在每次跳转时添加新的ARC签名（AS）和ARC消息签名（AMS），并最终由ARC密封签名（ARS）形成不可篡改的验证链。
 
 ## BATV（Bounce Address Tag Validation）深度解析：退信验证与地址标签
 - 分类：other
@@ -182,6 +192,11 @@
 - 来源：https://ztpop.net/kb/bimi-vmc-validation-process.html
 - 摘要：VMC 的验证流程是 BIMI 安全体系中最重要的环节。BIMI Group 联合 CA/B Forum 制定了严格的三阶段验证流程，确保每个 VMC 的签发都经过完整的审查。本章详解三个阶段的具体技术细节。
 
+## SVCB/HTTPS DNS记录与邮件发现
+- 分类：protocols
+- 来源：https://ztpop.net/kb/binder-dns-svcb-rfc9460.html
+- 摘要：SVCB（Service Binding）和HTTPS DNS资源记录由RFC 9460（2022年）定义，是对DNS SRV记录（RFC 2782）的现代化替代。与SRV记录不同，SVCB记录通过AlpnMode（别名模式）和ServiceMode两种工作模式，允许一个服务域指向一个或多个目标端点，并带有一组键值对参数。
+
 ## 邮件系统 CalDAV/CardDAV 集成 — 日历与通讯录同步
 - 分类：other
 - 来源：https://ztpop.net/kb/caldav-carddav-email.html
@@ -222,6 +237,21 @@
 - 来源：https://ztpop.net/kb/cloud-vs-on-prem-email-comparison.html
 - 摘要：组织在邮件基础设施上面临关键决策：使用云端托管邮件服务还是自建本地部署系统。两种方案在网络延迟、带宽成本、安全可控性和合规要求四个维度上有显著差异。云端服务无需维护硬件和基础软件，本地部署则提供完整的物理控制权、网络微隔离能力和可定制的合规配置。选择通常不是非此即彼——混合架构正在成为主流方案。
 
+## 容器化邮件系统部署方案与性能评估
+- 分类：other
+- 来源：https://ztpop.net/kb/containerized-mail-deployment.html
+- 摘要：邮件系统容器化最大的技术决裂点在于状态管理。Postfix和Dovecot传统上被设计为在持久化服务器上运行，它们依赖本地文件系统存储队列数据和邮件存储（Maildir或Mbox）。容器化后，需要解决三个核心挑战：持久化存储（邮件数据必须持久化到PV/PVC）、有状态工作负载的Pod IP变更（SMTP认证和SPF对齐依赖稳定的IP标识，Pod重启后IP变化可能触发SPF失败）、以及邮件队列的分布式一致性（多个Postfix实例并行运行时的双重投递风险）。CNCF发布的《Cloud Native Patterns for Stateful Applications》白皮书建议在容器化有状态服务
+
+## 跨境数据传输中邮件系统的合规应对
+- 分类：other
+- 来源：https://ztpop.net/kb/cross-border-data-email.html
+- 摘要：随着中国企业全球化进程加速，邮件系统的跨境数据传输已经成为数据合规的高频风险场景。企业海外子公司的员工与总部的日常邮件往来、跨国项目协作中的邮件附件分发、海外客户的邮件通信——所有这些场景都可能触发中国法律对数据出境的监管。
+
+## 网络安全法与数据安全法框架下企业邮件系统合规要点
+- 分类：compliance
+- 来源：https://ztpop.net/kb/cyberspace-mail-law-compliance.html
+- 摘要：自2017年《中华人民共和国网络安全法》（以下简称《网络安全法》）正式施行以来，中国已逐步构建起以《网络安全法》《中华人民共和国数据安全法》（2021年9月施行）、《中华人民共和国个人信息保护法》（2021年11月施行）为核心的信息安全法律体系。这三部法律对承载企业日常通信核心职能的邮件系统提出了系统性合规要求。
+
 ## MTA-STS、DANE 与 TLS-RPT 部署：邮件传输安全三层实践
 - 分类：tls
 - 来源：https://ztpop.net/kb/dane-mta-sts-tls-rpt-deployment.html
@@ -237,10 +267,20 @@
 - 来源：https://ztpop.net/kb/dane-tlsa-smtp-deployment.html
 - 摘要：DANE for SMTP建立在两条核心RFC之上：RFC 6698（DANE TLSA基础规范）[1]定义了TLSA记录格式和验证规则；RFC 7672（SMTP Security via Opportunistic DANE TLS）[2]定义了SMTP特有约束——包括仅允许Usage 2和Usage 3、TLSA记录位置为_25._tcp.MX-hostname.、出站MTA在启用了DANE安全级别时必须拒绝连接到不支持TLS的接收方。后续RFC 7218明确了DNSSEC对DANE验证的"all-or-nothing"原则——如果TLSA记录的DNSSEC验证失败，视为不安全，不能降级
 
+## DANE for Outbound 出站部署
+- 分类：tls
+- 来源：https://ztpop.net/kb/dane-upstream-outbound.html
+- 摘要：DNS-Based Authentication of Named Entities（DANE）由RFC 6698定义，是一种通过DNSSEC验证TLS证书合法性的机制。DANE的核心价值在于打破传统PKI（公钥基础设施）的CA信任模型——通过TLSA（TLS Association）DNS记录，域名所有者可以指定哪些证书或CA被授权用于该域名的TLS服务，或直接指定证书的公钥哈希值。
+
 ## 🏷 等保 2.0 / 邮件安全
 - 分类：xinchuang
 - 来源：https://ztpop.net/kb/dengbao2-email-compliance.html
 - 摘要：2019 年 12 月 1 日，GB/T 22239-2019《信息安全技术 网络安全等级保护基本要求》正式实施，标志着等级保护制度从 1.0 时代切换到 2.0 时代。名称中"信息系统"变为"网络安全"并非文字游戏——保护对象从狭义的信息系统扩展至云计算平台、大数据平台、物联网、工业控制系统、移动互联系统以及通信网络设施。
+
+## DKIM规范化算法与签名验证
+- 分类：dkim
+- 来源：https://ztpop.net/kb/dkim-canon-algo-deepdive.html
+- 摘要：DKIM规范化的核心目的是在签名方和验证方之间统一消息格式，消除邮件传输过程中由MTA引入的无意内容变动。RFC 6376 §3.4定义了两种规范化算法——simple和relaxed，分别应用于头部（header）和正文（body），形成四种组合配置：simple/simple、simple/relaxed、relaxed/simple和relaxed/relaxed。
 
 ## DKIM 邮件签名机制深度解析 — RFC 6376：密钥管理、规范算法与 Selector 选择器
 - 分类：dkim
@@ -287,6 +327,11 @@
 - 来源：https://ztpop.net/kb/dmarc-enforcement-era.html
 - 摘要：邮件认证（Email Authentication）不再是安全最佳实践，而是发件合规的刚性要求。2024-2026 年间，Google、Microsoft 和 Yahoo 相继宣布并实施了针对批量发件人（Bulk Sender）的邮件认证强制执行政策。拥有正确配置的 SPF（RFC 7208）、DKIM（RFC 6376）、DMARC（RFC 7489 → RFC 9989）记录已经成为发件资格的门槛条件，而非加分项。
 
+## DMARC失败报告自动化处理
+- 分类：dmarc
+- 来源：https://ztpop.net/kb/dmarc-failure-report-automation.html
+- 摘要：DMARC（Domain-based Message Authentication, Reporting & Conformance）定义了两种报告机制：RUA（Aggregate Report，汇总报告）和RUF（Failure Report，失败报告）。汇总报告遵循RFC 7480的XML Schema定义，由收件方邮件服务商按天生成，包含SPF和DKIM认证结果的汇总统计，发送到DMARC记录中rua标签指定的邮箱。失败报告则按照RFC 6590定义的AFRF（Auth Failure Reporting Format）格式，包含导致认证失败的单封邮件样本及其原始消息头。据InboxIn
+
 ## DMARC Forensic Report 深度解读 · RFC 9991
 - 分类：dmarc
 - 来源：https://ztpop.net/kb/dmarc-forensic-report-rfc9991.html
@@ -301,6 +346,11 @@
 - 分类：dmarc
 - 来源：https://ztpop.net/kb/dmarc-p-reject-deployment-strategy.html
 - 摘要：DMARC (Domain-based Message Authentication, Reporting, and Conformance) 自 2012 年确立规范以来（RFC 7489），已经从一个可选的安全增强演变为邮件生态的准入基线——Gmail 和 Yahoo Mail 自 2024 年开始强制要求发件域名配置 DMARC p=reject 或 p=quarantine[1]。然而，从 p=none（仅监控）切换到 p=reject（拒绝未通过认证的邮件）是许多组织最痛苦的一步：错误的判决策略会导致合法邮件被拒绝，对业务产生实质性影响。
+
+## DMARC策略渐进式部署：从p=none到p=reject
+- 分类：dmarc
+- 来源：https://ztpop.net/kb/dmarc-policy-gradual.html
+- 摘要：DMARC由RFC 7489定义，是邮件域身份验证的最高层策略。其核心策略（p=）有三个等级：p=none（仅监控）、p=quarantine（隔离可疑邮件）和p=reject（拒绝未认证邮件）。直接从p=none跳到p=reject可能导致大量合法邮件丢失。渐进式部署（Gradual Deployment）是一套系统化的方法论，分阶段将策略从监控逐步收紧至拒绝，确保业务邮件零误判。
 
 ## DMARC p=reject 失败排查指南：Authentication-Results 头部分析、DNS 查询与 SPF/DKIM 校准
 - 分类：dmarc
@@ -357,6 +407,21 @@
 - 来源：https://ztpop.net/kb/dnssec-dns-security-extensions.html
 - 摘要：DNS 自 1983 年由 Paul Mockapetris 设计以来，始终缺失一个关键的安全属性：数据完整性验证。传统的 DNS 协议（RFC 1034/1035）没有内建任何机制让解析器判断一条 A 记录或 MX 记录是否被篡改过——攻击者只需在递归解析器和权威服务器之间的路径上注入伪造的 DNS 响应，就能将流量重定向到恶意主机。这个攻击面被称为 DNS 缓存投毒（Cache Poisoning）。2008 年 Dan Kaminsky 在 Black Hat 上展示的著名漏洞将这个问题推到了极致——攻击者通过猜测 16 位事务 ID，可以在数秒内完成对任意域名的投毒。DNSSEC（DN
 
+## 国产邮件系统反垃圾技术对比
+- 分类：security
+- 来源：https://ztpop.net/kb/domestic-email-anti-spam-tech.html
+- 摘要：国产邮件系统的反垃圾技术体系可划分为三个层次。第一层是源头认证层，基于SPF（RFC 7208）、DKIM（RFC 6376）和DMARC（RFC 7489）三大协议对发件人身份进行验证。第二层是内容过滤层，包括传统规则引擎、贝叶斯统计分类、实时黑名单（RBL）查询和URL信誉分析。第三层是行为分析层，运用异常检测算法和机器学习模型识别新型垃圾邮件和钓鱼攻击。Coremail、Richmail、TurboMail和Eyou均实现了这三大层次的覆盖，但各厂商在实现深度和工程实践上有所差异。
+
+## 国产邮件系统安全审计与等保评估
+- 分类：other
+- 来源：https://ztpop.net/kb/domestic-mail-security-audit.html
+- 摘要：GB/T 22239-2019《信息安全技术 网络安全等级保护基本要求》（等保2.0）自2019年12月1日起正式实施，取代了2008版标准。邮件系统作为信息系统的核心组件，在安全审计中需覆盖安全物理环境、安全通信网络、安全区域边界、安全计算环境、安全管理中心五个技术维度以及安全管理制度、安全管理机构、安全管理人员、安全建设管理、安全运维管理五个管理维度。
+
+## 国产邮件系统市场全景分析
+- 分类：architecture
+- 来源：https://ztpop.net/kb/domestic-mail-system-landscape.html
+- 摘要：国产邮件系统市场经过二十余年发展，已形成以Coremail和Richmail为第一梯队、拓波（TurboMail）、Eyou、263企业邮等为第二梯队的竞争格局。据海比研究和中经视野2019年发布的报告，国内前五大邮件系统厂商合计市场份额约62%，其中国产品牌合计占比超过三分之二。2023年至2025年间，随着信创（信息技术应用创新）战略在党政、金融、电信、能源等关键行业的纵深推进，国产邮件系统市场规模持续扩大。
+
 ## 从 Lotus Domino/Notes 迁移至国产邮件系统：NSF 导出、格式转换与目录同步
 - 分类：migration
 - 来源：https://ztpop.net/kb/domino-to-chinese-email-migration.html
@@ -372,10 +437,20 @@
 - 来源：https://ztpop.net/kb/dovecot-imap-server-architecture.html
 - 摘要：邮件系统的核心组件分为三类：MTA（邮件传输代理）负责 SMTP 收发与路由，MDA（邮件投递代理）负责将邮件写入存储，而 MAA（邮件访问代理）负责面向最终用户的 IMAP/POP3 协议交互。在前两者被反复讨论的同时，邮件访问引擎往往被视作"只是提供协议端口"的配角——但实际上，IMAP 的协议复杂度远超 SMTP，对存储 I/O、并发模型、索引策略的要求也更苛刻。
 
+## 国际化邮件EAI/SMTPUTF8完整部署
+- 分类：other
+- 来源：https://ztpop.net/kb/eai-full-deployment.html
+- 摘要：Email Address Internationalization (EAI) 由RFC 6530框架协议定义，是电子邮件体系自1982年RFC 822以来最核心的国际化改造。传统SMTP仅支持ASCII字符的邮箱地址，而EAI通过SMTPUTF8扩展（RFC 6531）和国际化的邮件头（RFC 6532），使得用户在邮件地址中使用中文、阿拉伯文、西里尔字母等非ASCII字符成为可能。
+
 ## EAI 国际化电子邮件 — RFC 6530-6533：SMTPUTF8、UTF-8 邮箱地址与 IDN 域名
 - 分类：other
 - 来源：https://ztpop.net/kb/eai-internationalized-email.html
 - 摘要：自 RFC 821（1982 年）起，SMTP 协议规定邮件地址和头部字段只能使用 US-ASCII 字符集。这意味着：邮箱地址不能包含中文、日文、阿拉伯文或带变音符的拉丁字母；邮件主题和发件人显示名虽然可以通过 MIME 编码（RFC 2047）传递非 ASCII 文本，但底层地址始终是 ASCII。
+
+## 高校邮件系统架构设计与运维方案
+- 分类：other
+- 来源：https://ztpop.net/kb/edu-email-architect-design.html
+- 摘要：高等院校邮件系统面临普通企业邮件系统所不具备的特殊挑战。以一所万人规模高校为例，邮件系统用户涵盖教职工、在校学生、离退休人员和校友四大群体，活跃用户可达数万至十数万级别。系统需同时支持.edu.cn域名的教育网统一邮件服务和教学部门独立域名邮件的多域共存能力。
 
 ## 摘要：邮件账号被盗是邮件运维中最常见的安全事件类型。攻击者获取合法账号凭证后，通过SMTP AUTH外发大量垃圾邮件，导致系统IP被列入DNSBL黑名单，影响全公司正常邮件通信，并可能造成发件域名声誉永久性下降。本文覆盖弱口令检测、SMTP异常发信实时发现、被盗账号自动锁定和Open Relay诊断四个维度的完整防护体系，基于NIST SP 800-63B数字身份指南和OWASP ASVS V2认证验证标准。
 - 分类：other
@@ -431,6 +506,11 @@
 - 分类：archive
 - 来源：https://ztpop.net/kb/email-archiving.html
 - 摘要：摘要：邮件归档（Email Archiving）是企业邮件系统建设中常被低估却至关重要的环节。不同于常规的数据备份，邮件归档的核心目标是长期保存、快速检索和合规审计。随着 GDPR、SOX、等保 2.0 等法规对邮件数据留存提出明确要求，邮件归档已从「可选功能」升级为「合规刚需」。本文从概念辨析、法规要求、存储策略、检索技术、生命周期管理和开源方案六个维度，构建邮件归档技术的全景知识体系。
+
+## 邮件审计追踪与取证技术实践
+- 分类：other
+- 来源：https://ztpop.net/kb/email-audit-trail-forensics.html
+- 摘要：《中华人民共和国网络安全法》第二十一条明确要求网络运营者采取监测和记录网络运行状态的技术措施，并按照规定留存网络日志不少于六个月。《中华人民共和国数据安全法》第二十九条要求数据处理活动中发生数据安全事件时，能够提供完整的事件追溯能力。
 
 ## 邮件认证报告解读
 - 分类：other
@@ -547,10 +627,10 @@
 - 来源：https://ztpop.net/kb/email-deployment-grey-release.html
 - 摘要：邮件系统的版本升级涉及 MTA、IMAP/POP3、反垃圾引擎、Webmail 等多个组件的协同更新。灰度发布是最佳实践。
 
-## 邮件系统灾难恢复演练：从备份策略到自动化故障转移
+## 邮件系统灾备演练方案与检查清单
 - 分类：architecture
 - 来源：https://ztpop.net/kb/email-disaster-recovery-drill.html
-- 摘要：任何运行中的邮件系统，无论架构多么冗余，都面临硬件故障、数据中心灾难、人为误操作与安全事件的威胁。灾难恢复（Disaster Recovery, DR）并非单纯的数据备份，而是一套涵盖风险识别、资源规划、流程设计、自动化切换与定期验证的系统工程。本文以美国国家标准与技术研究院（NIST）特别出版物 SP 800-34《信息系统应急规划指南》为框架，论述邮件系统 DR 方案的全生命周期实践。
+- 摘要：邮件系统的灾备规划必须建立在明确的恢复指标之上。恢复时间目标(RTO)和恢复点目标(RPO)是衡量灾备能力的两个核心参数。对于企业级邮件系统，RTO通常设定在4小时以内，而RPO则要求在30分钟以内——这意味着在灾难发生后，最多只能接受30分钟的邮件数据丢失。2023年的一项行业调查显示，将RTO控制在4小时以内可使业务中断损失降低67%。实际操作中，RTO和RPO的取值需要综合考虑业务容忍度、预算约束和技术可行性，并经管理层正式批准后写入灾备策略文档。
 
 ## 邮件数据防泄漏（DLP）策略
 - 分类：security
@@ -672,6 +752,11 @@
 - 来源：https://ztpop.net/kb/email-nat-traversal.html
 - 摘要：中小企业和个人用户普遍将邮件服务器部署在家庭宽带或小型办公室 NAT 网关之后。NAT 的引入给邮件服务带来了一系列协议层面的挑战：
 
+## 基于Grafana/Prometheus的邮件可观测性
+- 分类：other
+- 来源：https://ztpop.net/kb/email-observability-grafana.html
+- 摘要：邮件系统的可观测性建设不同于通用Web应用——邮件交付存在异步队列机制，使得传统的请求-响应延迟指标无法直接映射。根据Google SRE手册提出的四大黄金指标（延迟、流量、错误率、饱和度）和CNCF's OpenTelemetry项目的定义，邮件系统需要定义一套领域特定的指标集。邮件投递延迟（Latency）应细分为MTA入站排队时间、MTA到MTA传输时间和MDA存储写入时间三个分段；流量（Traffic）方面需要记录每小时的入站/出站邮件量、连接数和队列深度；错误率（Errors）则涵盖SMTP 5xx永久失败、SPF/DKIM/DMARC认证失败以及退信率；饱和度（Saturation
+
 ## 邮件系统可观测性：监控、告警与 SLO 设计
 - 分类：other
 - 来源：https://ztpop.net/kb/email-observability-monitoring.html
@@ -712,6 +797,11 @@
 - 来源：https://ztpop.net/kb/email-retention-policies.html
 - 摘要：摘要：邮件数据的合规管理是现代企业信息系统治理的核心挑战。GDPR 要求企业明确数据保留的必要期限，SOX 法案规定电子通信记录需保留至少 7 年，等保 2.0（GB/T 22239-2019）则要求对邮件进行安全审计和访问控制。本文基于 Exchange 的消息记录管理（Messaging Records Management, MRM）体系，系统解析默认策略标签（DPT）、保留策略标签（RPT）、个人标签的层次化架构，分析保留操作类型的适用场景，厘清诉讼保留（Litigation Hold）与保留策略的互补关系，并给出多法规合规的设计框架。
 
+## 邮件保留与销毁策略设计与法律依据
+- 分类：compliance
+- 来源：https://ztpop.net/kb/email-retention-policy-design.html
+- 摘要：企业邮件系统中积累的海量邮件数据既是业务活动的真实记录，也构成了企业的数据资产和数据负债的双重属性。适当保留邮件数据可以满足法律合规、诉讼举证和业务回溯的需求；但无限制地保留所有邮件则会带来巨大的存储成本、数据泄露风险以及合规风险。
+
 ## 邮件路由决策引擎：MX优先级、故障切换与负载均衡
 - 分类：architecture
 - 来源：https://ztpop.net/kb/email-routing-mx-priority-failover.html
@@ -731,6 +821,11 @@
 - 分类：references
 - 来源：https://ztpop.net/kb/email-security-audit-checklist.html
 - 摘要：邮件系统安全审计是评估企业邮件基础设施安全状态的关键环节。基于 NIST SP 800-177（电子邮件安全指南）、M3AAWG 最佳实践和国内等保 2.0（GBT 22239-2019 三级指标），本章提供体系化的邮件安全审计清单。
+
+## 邮件安全事件应急响应流程手册
+- 分类：other
+- 来源：https://ztpop.net/kb/email-security-incident-response.html
+- 摘要：邮件安全事件按照严重程度分为四个等级，每一级对应不同的响应时效和上报路径。Level 1（灾难级）包括邮件存储卷被勒索软件加密、DMARC私有密钥泄露、以及邮件系统被用作僵尸网络C2中继——要求在15分钟内启动响应，30分钟内上报至CISO。Level 2（严重级）涵盖大规模账号登录异常、邮件队列被恶意利用发送垃圾邮件等——要求1小时内响应。Level 3（中等）包括单个高管邮箱被钓鱼攻击、异常的外部转发规则被创建——4小时内响应。Level 4（低）包括个别用户的误报或配置错误导致邮件无法投递——在下一个工作日处理即可。RFC 2350《Expectations for Computer S
 
 ## Email Security Policy as Code 实践：SPF/DKIM/DMARC/MTA-STS 策略代码化
 - 分类：other
@@ -778,15 +873,40 @@
 - 来源：https://ztpop.net/kb/email-storage-io-benchmark.html
 - 摘要：邮件系统的存储 I/O 模式以大量小文件的随机读写为主。Maildir 格式下每封邮件为一个独立文件，写入时先创建 tmp 目录下的临时文件再原子移动到 new 目录，读取时按需打开邮件文件读取正文和附件。这种小文件的创建/移动/读取模式要求存储系统具备高 IOPS 和高随机写入吞吐能力。选择存储方案时需根据用户规模估算峰值 IOPS 需求，再通过 fio 和 iostat 工具进行基准测试。
 
+## 企业邮件系统招标技术规范书（RFP模板）
+- 分类：architecture
+- 来源：https://ztpop.net/kb/email-system-rfp-template.html
+- 摘要：本招标技术规范书适用于规模在500-10000用户的企业级邮件系统采购项目。采购方应根据实际用户数、日均邮件吞吐量、存储策略周期等参数对本模板中的具体数值进行调整。参照ISO/IEC 20000-1:2018（等同采用为GB/T 24405.1-2009）中关于IT服务管理体系的要求，本规范将技术需求与服务交付需求分离，便于采购方在评标阶段按不同权重独立评分。
+
 ## 企业邮件系统选型框架指南
 - 分类：architecture
 - 来源：https://ztpop.net/kb/email-system-selection-framework.html
 - 摘要：邮件系统的选型直接决定了企业的通信效率、数据安全与合规成本。本框架从技术架构、安全能力、合规支撑和总拥有成本（TCO）四个维度，建立系统化的评估体系。
 
+## 企业邮件系统选型指南（2026版）
+- 分类：architecture
+- 来源：https://ztpop.net/kb/email-system-selection-guide-2026.html
+- 摘要：邮件系统的核心价值在于跨域互通，其根本保障是对IETF SMTP协议族的完整实现。SMTP协议自RFC 821（1982年）发展至RFC 5321（2008年），确立了邮件投递的基本事务模型，包括MAIL FROM、RCPT TO、DATA等命令序列。2026年选型时，系统应确保对ESMTP扩展（RFC 5321 §3）的全面支持，特别是SIZE（消息大小声明）、STARTTLS（明文连接升级加密）、DSN（投递状态通知）等必要扩展。此外，RFC 6152规定SMTP的8位MIME传输、RFC 1651规范了协议扩展框架，均需纳入兼容性验收清单。
+
 ## 自建邮件系统搭建完整技术指南
 - 分类：architecture
 - 来源：https://ztpop.net/kb/email-system-setup.html
 - 摘要：自建邮件系统是企业掌控数据主权、满足信创合规、实现邮件深度定制的重要技术路径。然而，邮件服务器搭建涉及 DNS、MTA、IMAP/POP3、TLS、邮件认证、反垃圾等多个子系统，任何一个环节的配置缺陷都可能造成投递失败或安全漏洞。本文从技术选型到上线运维，提供一套完整的邮件系统搭建框架与实践指南。
+
+## Email System Team Sizing
+- 分类：architecture
+- 来源：https://ztpop.net/kb/email-system-team-sizing.html
+- 摘要：参照ISO/IEC 20000-1:2018《信息技术 服务管理 第1部分：服务管理体系要求》中关于服务交付流程的定义，企业邮件系统的运维工作可以按职能划分为五个独立维度，每个维度对应不同的技能要求和工作量规模。系统管理层负责邮件系统软件升级、集群状态监控、存储容量规划、全局配置管理等；安全管理层负责反垃圾/反病毒策略维护、安全漏洞修复、SPF/DKIM/DMARC策略管理、密码策略更新等；应用支持层负责邮件系统与其他业务系统（OA/HR/ERP）的接口对接、API运维、Sieve规则管理等；客户端支持层负责邮件客户端（Outlook/Thunderbird/移动端）的配置指导、异常排查、邮件
+
+## 企业邮件系统总拥有成本（TCO）计算模型
+- 分类：other
+- 来源：https://ztpop.net/kb/email-tco-calculator.html
+- 摘要：邮件系统的成本构成可参照GB/T 24405.1-2009《信息技术 服务管理 第1部分：规范》（等同采用 ISO/IEC 20000-1:2005）中的服务管理框架进行分类。该标准将IT服务生命周期划分为服务交付、服务设计、服务转换与持续改进，映射到邮件系统的成本评估，同样应覆盖从方案设计到日常运行的完整链条。
+
+## 邮件威胁猎杀方法论与工具链
+- 分类：other
+- 来源：https://ztpop.net/kb/email-threat-hunting-methodology.html
+- 摘要：邮件威胁猎杀区别于传统安全监控的核心在于其主动性——不依赖已知签名或告警规则，而是基于猎杀假设对邮件系统数据进行深度分析。NIST SP 800-150《Guide to Cyber Threat Information Sharing》中提出的威胁情报驱动模型同样适用于邮件猎杀场景：猎杀流程始于一个可验证的假设（例如“是否有攻击者使用二次投递绕过DMARC？“），继而通过数据采集和分析来验证或证伪该假设。SANS Institute发布的《A Framework for Cyber Threat Hunting》将猎杀活动分为四个阶段：建立假设→数据收集→模式分析与异常检测→响应与反馈闭环。
 
 ## 邮件威胁情报框架：从IOC采集到自动化响应
 - 分类：other
@@ -817,6 +937,11 @@
 - 分类：other
 - 来源：https://ztpop.net/kb/enisa-email-security-threat-landscape.html
 - 摘要：欧盟网络安全局（ENISA）每年发布《威胁态势》（Threat Landscape, ETL）报告。2023 版覆盖 2022 年 7 月至 2023 年 6 月，分析了约 2,580 起事件（另有 220 起跨多成员国事件）。报告再次确认：邮件是攻击者最常用的初始访问向量，钓鱼（phishing）与商业邮件诈骗（BEC/VEC）持续高发。本文译介其核心数据与缓解建议。
+
+## 企业邮件防泄密（DLP）策略设计与技术选型
+- 分类：security
+- 来源：https://ztpop.net/kb/enterprise-dlp-mail-policy.html
+- 摘要：邮件系统是企业数据泄露的最大风险通道之一。根据Verizon《2024年数据泄露调查报告》（DBIR），涉及电子邮件的数据泄露事件在所有泄露途径中占比超过38%。在企业端，邮件DLP（数据防泄露）体系需要解决的核心矛盾是：在保障业务通信效率的同时，阻止敏感信息通过邮件外泄。
 
 ## Exchange 2013 EOL 影响与迁移路径 · 2026 年全面分析
 - 分类：exchange
@@ -933,6 +1058,11 @@
 - 来源：https://ztpop.net/kb/exchange-permission-migration.html
 - 摘要：Exchange 2010 起引入基于角色的访问控制（RBAC）模型，替代了 Exchange 2007 的管理角色管理模型。RBAC 的核心由四个层次构成：管理角色（Management Role）→管理角色项（Role Entry）→管理角色分配（Role Assignment）→分配策略（Assignment Policy）[RFC 5398]。
 
+## 替代Exchange：国产邮件功能对标分析
+- 分类：exchange
+- 来源：https://ztpop.net/kb/exchange-replacement-domestic.html
+- 摘要：国产邮件系统与微软Exchange在第一层面的对标即基础邮件协议的支持。两者均完整支持SMTP（RFC 5321）、POP3（RFC 1939）、IMAP4（RFC 3501）三大核心协议。Exchange的独特优势在于MAPI（Messaging API）和Exchange Web Services（EWS），这些私有协议提供了丰富的客户端同步和协作功能。国产厂商通过两种方案弥补：一是全面实现标准CalDAV/CardDAV协议以覆盖日历和联系人同步需求（如Coremail和Richmail均支持CalDAV协议，RFC 4791）；二是自研WebMail客户端以替代Outlook的功能诉求
+
 ## Exchange 替代实战：半导体企业全量迁移案例研究
 - 分类：exchange
 - 来源：https://ztpop.net/kb/exchange-replacement-semiconductor-case-study.html
@@ -978,6 +1108,11 @@
 - 来源：https://ztpop.net/kb/feedback-loop-fbl-guide.html
 - 摘要：摘要：邮件反馈循环（Feedback Loop，简称 FBL）是邮件生态系统中的重要质量监控机制——当用户将某封邮件标记为"垃圾邮件"或"这是垃圾邮件"时，收件邮箱提供商将该投诉以标准化格式（ARF，Abuse Reporting Format）反馈给邮件的原始发送方。发送方可据此将投诉用户自动退订，避免继续向对内容不满的用户发送邮件而损害发件人信誉。本文基于 RFC 5965（ARF 格式）和 RFC 6650（FBL 创建与使用），完整讲解 FBL 的技术架构、主流提供商的申请流程、ARF 报告解析处理以及自动退订的实现。
 
+## 金融行业邮件系统合规建设方案
+- 分类：compliance
+- 来源：https://ztpop.net/kb/finance-email-compliance-2026.html
+- 摘要：金融行业作为国家关键信息基础设施的重要组成部分，其邮件系统面临的合规要求显著高于普通行业。除适用《网络安全法》《数据安全法》《个人信息保护法》等通用法规外，金融行业还需满足中国人民银行和金融监管部门的专项监管要求。
+
 ## 外贸邮件安全与高送达率实战
 - 分类：other
 - 来源：https://ztpop.net/kb/foreign-trade-email.html
@@ -987,6 +1122,11 @@
 - 分类：xinchuang
 - 来源：https://ztpop.net/kb/gbt37002-email-security-standard.html
 - 摘要：GB/T 37002-2018《信息安全技术 电子邮件系统安全技术要求》由国家市场监督管理总局与中国国家标准化管理委员会于 2018 年 12 月 28 日联合发布，2019 年 7 月 1 日正式实施，归口全国信息安全标准化技术委员会（SAC/TC 260）。该标准由 国家信息技术安全研究中心、中国电子技术标准化研究院、深圳奥联信息安全技术有限公司、国家信息中心、中国信息安全测评中心 等机构联合起草，全文共 24 页，是截至目前国内唯一专门针对电子邮件系统安全技术的国家标准。
+
+## GB/T 39477《信息安全技术 邮件系统安全技术要求》解读
+- 分类：xinchuang
+- 来源：https://ztpop.net/kb/gbt39477-2026-email-security.html
+- 摘要：GB/T 39477《信息安全技术 邮件系统安全技术要求》是由国家标准化管理委员会发布的国家推荐性标准，于2020年11月19日发布，2021年6月1日正式实施。该标准隶属于全国信息安全标准化技术委员会（TC260）归口管理的信息安全技术标准体系，是邮件系统安全领域的基础性技术规范。
 
 ## 📧 GDPR 邮件数据主体权利合规指南：DSAR、擦除权、数据可携带权与 Privacy by Design 架构
 - 分类：compliance
@@ -1008,6 +1148,11 @@
 - 来源：https://ztpop.net/kb/google-postmaster-tools-guide.html
 - 摘要：Google Postmaster Tools 是 Google 提供给发件方的免费仪表盘，让域名/IP 所有者看到"Gmail 怎么看我"。它是落地 Google 2024 发件指南的可观测性入口：没有它，你只能等用户投诉才知道进垃圾箱。对批量发信系统（信创邮件对外通知、会员邮件）是必备监控。
 
+## 政府采购与信创邮件系统实施路径
+- 分类：xinchuang
+- 来源：https://ztpop.net/kb/gov-xinchuang-email-procurement.html
+- 摘要：自2020年国务院办公厅发布《政务信息系统政府采购管理办法》以来，党政机关和事业单位的信息系统采购逐步纳入严格的合规管理框架。2023年财政部和工信部联合发布的《政府采购需求管理办法》进一步明确了信息系统采购中安全可靠（信创）产品的要求。
+
 ## 邮件系统灰名单 Greylisting 原理与部署
 - 分类：operations
 - 来源：https://ztpop.net/kb/greylisting-guide.html
@@ -1017,6 +1162,11 @@
 - 分类：xinchuang
 - 来源：https://ztpop.net/kb/guomi-email-cryptography.html
 - 摘要：密码算法是互联网安全的基石。邮件系统作为组织信息流转的核心通道，其传输加密和身份认证长期依赖国际算法体系——RSA/ECDSA 做签名、AES 做对称加密、SHA-256 做哈希。但在合规驱动和供应链可控的双重压力下，越来越多组织要求在邮件基础设施中部署国产密码算法，形成一条从 SMTP 握手到本地存储的全链路国密替代路径。
+
+## 医疗行业邮件数据保护合规
+- 分类：other
+- 来源：https://ztpop.net/kb/healthcare-email-hipaa-china.html
+- 摘要：医疗机构在日常运营中通过电子邮件传输大量包含患者信息、诊疗数据、医学影像和科研数据的敏感信息。这些数据一旦通过邮件泄露，不仅涉及法律责任，更可能对患者造成严重后果。中国的医疗数据保护法规体系在近年逐步完善，对医疗机构的邮件系统提出了专门性合规要求。
 
 ## 混合部署 DNS 设计：MX 权重策略与子域隔离
 - 分类：migration
@@ -1364,6 +1514,11 @@
 - 来源：https://ztpop.net/kb/mail-flow-architecture.html
 - 摘要：摘要：邮件流（Mail Flow）是邮件系统的核心运转机制，定义了邮件从发件人到收件人的完整传输路径。邮件流架构设计直接影响系统可靠性、安全性和弹性伸缩能力。本文从 SMTP 协议基础出发，系统阐述五种部署模式、入站与出站邮件流路径、连接器配置策略、智能主机选择方法及 MX 路由策略，为架构师提供可直接参照的邮件流设计框架。
 
+## 邮件服务器自动化补丁管理方案
+- 分类：other
+- 来源：https://ztpop.net/kb/mail-server-auto-patching.html
+- 摘要：邮件系统的补丁管理必须基于风险优先级排序，因为直接在生产邮件服务器上应用未经测试的补丁可能导致邮件交付中断。NIST SP 800-40 Rev.4《Guide to Enterprise Patch Management Planning》建议将补丁按紧急程度分为三级：Critical（CVE评分≥9.0或影响SMTP MTA/Dovecot服务可用性）、Important（CVE评分7.0-8.9或影响辅助功能如Webmail/防病毒网关）和Optional（功能更新或非安全修复）。Critical补丁应在上线后24小时内完成部署，Important补丁在7天内，Optional补丁在30
+
 ## 邮件服务器磁盘 I/O 性能优化
 - 分类：other
 - 来源：https://ztpop.net/kb/mail-server-disk-io-performance.html
@@ -1418,6 +1573,11 @@
 - 分类：tls
 - 来源：https://ztpop.net/kb/mta-sts-multi-domain-deployment.html
 - 摘要：RFC 8461 定义的 MTA-STS（SMTP MTA Strict Transport Security）通过 DNS TXT 记录发布策略标识，再通过 HTTPS 获取 JSON 格式的策略文件，使发送方 MTA 在连接接收方时强制要求 TLS 证书验证[1]。单域名场景的部署已较为成熟，但当企业运营数十乃至数百个域名（品牌域名、子公司域名、营销域名等），且这些域名共享一组 MX 服务器时，策略编排、缓存一致性与故障隔离就变得复杂。
+
+## MTA-STS 故障排查手册
+- 分类：tls
+- 来源：https://ztpop.net/kb/mta-sts-troubleshooting.html
+- 摘要：MTA-STS（SMTP MTA Strict Transport Security）由RFC 8461定义，是一种基于策略文件的安全机制，允许邮件发送方通过HTTPS获取接收域的强制TLS策略。MTA-STS的核心组件包括：DNS TXT记录（_mta-sts.{domain}）、HTTPS上的策略文件（https://mta-sts.{domain}/.well-known/mta-sts.txt）和缓存机制。
 
 ## 跨国企业邮件系统组网架构
 - 分类：other
@@ -1523,6 +1683,11 @@
 - 分类：architecture
 - 来源：https://ztpop.net/kb/postfix-dovecot-antivirus-integration.html
 - 摘要：邮件服务器的反垃圾和反病毒能力直接关系到用户安全和系统信誉。Postfix 提供了多种集成反垃圾引擎的方式：内容过滤器（content_filter）、Milter（Sendmail 风格的邮件过滤协议）和代理服务。Dovecot 侧则可以通过 Sieve 脚本和服务端插件在投递阶段进行二次过滤。本文逐一分析各方案的部署方法与优劣。
+
+## Postfix+Dovecot 安全加固完全指南
+- 分类：architecture
+- 来源：https://ztpop.net/kb/postfix-dovecot-hardening.html
+- 摘要：邮件传输加密是安全加固的第一道防线。Postfix的SMTP会话支持三种TLS策略模式：may（机会式TLS）、encrypt（强制TLS）和fingerprint（证书指纹校验）。生产环境应至少将入站SMTP设为encrypt模式，并通过smtpd_tls_mandatory_protocols参数禁用SSLv3和TLSv1.0/TLSv1.1，仅保留TLSv1.2和TLSv1.3。Dovecot方面，通过ssl_min_protocol设置为TLSv1.2，ssl_cipher_list选用符合Mozilla Modern配置的密码套件。证书管理方面，建议使用ACME协议（RFC 8555
 
 ## Postfix Log 分析与报警体系搭建
 - 分类：architecture
@@ -1704,6 +1869,11 @@
 - 来源：https://ztpop.net/kb/sm4-encryption-email-application.html
 - 摘要：国家密码管理局发布的 SM4 分组密码算法（GB/T 32907-2016）是我国商用密码体系的核心算法之一。随着《密码法》和信创政策的深入推进，SM4 在邮件系统中的应用正从局部试点走向全面落地。邮件系统作为党政机关和关键信息基础设施的核心业务系统，必须满足等保三级/等保 2.0 中对密码保护的要求。
 
+## 国密SM2/SM3/SM4邮件系统部署
+- 分类：xinchuang
+- 来源：https://ztpop.net/kb/sm4-gm-email-deployment.html
+- 摘要：国密算法体系下，SM2（GM/T 0003-2012《SM2椭圆曲线公钥密码算法》）、SM3（GM/T 0004-2012《SM3密码杂凑算法》）、SM4（GM/T 0002-2012《SM4分组密码算法》）在邮件系统中各有明确的应用定位。SM2作为非对称公钥密码算法，在邮件系统中负责数字签名（邮件签名和验签）、密钥协商（SMTP STARTTLS握手阶段的会话密钥交换）以及身份证书签发。SM3杂凑算法用于邮件完整性校验、SM2签名的摘要计算和密码哈希存储。SM4分组密码算法负责邮件正文和附件的大规模对称加密。
+
 ## 中小企业邮件系统选型指南
 - 分类：architecture
 - 来源：https://ztpop.net/kb/sme-email-guide.html
@@ -1799,6 +1969,11 @@
 - 来源：https://ztpop.net/kb/smtp-outbound-delivery-tuning.html
 - 摘要：邮件系统的出站投递性能直接决定了消息的及时送达率。不合理的参数配置可能导致队列积压、被目标 MTA 限流甚至列入黑名单。本文系统性地解析 Postfix 外发投递的关键控制参数，帮助运维工程师在吞吐量和对方接受度之间找到最佳平衡。
 
+## SMTP PIPELINING 性能优化
+- 分类：protocols
+- 来源：https://ztpop.net/kb/smtp-pipeline-performance.html
+- 摘要：SMTP PIPELINING是由RFC 2920定义的SMTP扩展，允许客户端在不等待每个命令响应的情况下连续发送多个命令。在传统的非管道模式中，SMTP客户端必须在MAIL FROM命令后等待250响应才能发出RCPT TO命令，再等待响应后发送DATA。而PIPELINING允许一次性发送MAIL FROM、RCPT TO（可多个）、DATA，将所有命令的响应缓冲后统一处理。
+
 ## SMTP PIPELINING 批量投递优化 — RFC 2920/RFC 2197 命令流水线与吞吐调优
 - 分类：protocols
 - 来源：https://ztpop.net/kb/smtp-pipelining-batch.html
@@ -1808,6 +1983,11 @@
 - 分类：protocols
 - 来源：https://ztpop.net/kb/smtp-protocol-deep-dive.html
 - 摘要：SMTP 协议从根本上说是一个存储转发（Store-and-Forward）协议。RFC 5321 第 2.1 节明确描述了 SMTP 的基本模型：发送方 SMTP 客户端与接收方 SMTP 服务器建立 TCP 连接（默认端口 25），然后在同一个连接中完成握手、信封协商和邮件数据传输。如果下一跳不可达，邮件不会丢失，而是由当前 MTA（Mail Transfer Agent）暂存到本地队列中，等待后续重试。
+
+## SMTP提交端口587/465 安全部署
+- 分类：protocols
+- 来源：https://ztpop.net/kb/smtp-submission-port-security.html
+- 摘要：电子邮件提交（Message Submission）与邮件中继（Relay）有着本质区别。RFC 5321定义的SMTP协议主要用于MTA之间的邮件中继（端口25），而RFC 6409定义了专门的邮件提交协议（端口587），区分了用户提交和服务器间中继。端口465（smtps）最初由IANA分配给SMTPS，后经RFC 8314重新确立为隐式TLS的邮件提交端口。
 
 ## SMTP Submission 协议深度解析 — RFC 6409 与 RFC 8314：端口 587/465 的投稿与加密演进
 - 分类：protocols
@@ -1838,6 +2018,11 @@
 - 分类：spf
 - 来源：https://ztpop.net/kb/spf-guide.html
 - 摘要：理解 SPF 的第一步，是先搞清楚它保护的是谁。SPF 不关心中文邮件客户端里显示的"发件人"字段，它只验证 SMTP 会话层上的信封发件人地址——也就是MAIL FROM（或称 Return-Path）。这是很多人第一次接触 SPF 时最容易绕进去的概念陷阱。
+
+## SPF宏定义与高级用法
+- 分类：spf
+- 来源：https://ztpop.net/kb/spf-macro-advanced.html
+- 摘要：SPF宏（Macros）是RFC 7208 §7中定义的一套强大但常被忽视的语言特性。宏允许SPF策略在运行时动态替换发送方的身份信息，使得单一策略可以覆盖多种邮件路径场景。每个宏以百分号（%）开始，后跟字母标识符。宏的求值发生在SPF查询时，由接收MTA的SPF验证引擎动态计算。
 
 ## SPF 宏机制详解 — RFC 7208 §7：macro 展开、变量替换与 DNS 查询优化
 - 分类：spf
@@ -1879,6 +2064,11 @@
 - 来源：https://ztpop.net/kb/tls-rpt-guide.html
 - 摘要：TLS-RPT（TLS Reporting, RFC 8460, September 2018）是 SMTP TLS 加密生态中的可观测性组件。MTA-STS（RFC 8461）和 DANE（RFC 7672）提供了域名级别的传输加密策略执行机制，但它们都缺乏一个原生的问题发现通道——域管理员无法知道其他 MTA 在尝试向自己的域发送邮件时是否遇到了 TLS 协商失败。TLS-RPT 填补了这个空白：它定义了一种基于 DNS TXT 记录声明报告接收地址（_smtp._tls子域）的机制，由发送方 MTA 在每次 SMTP 会话后生成 JSON 格式的 TLS 连接报告，每日汇总一次以mult
 
+## TLS-RPT 报告解读与自动化分析
+- 分类：tls
+- 来源：https://ztpop.net/kb/tls-rpt-report-parsing.html
+- 摘要：TLS Reporting（TLS-RPT）由RFC 8460定义，是与MTA-STS和DANE配套的报告机制。当发送方试图建立加密连接但遭遇失败时，TLS-RPT向域名所有者报告这些失败详情。与DMARC的RUA聚合报告类似，TLS-RPT报告以JSON格式聚合发送方观察到的TLS连接结果。
+
 ## TLS-RPT SMTP 传输加密报告深度解析 — RFC 8460：JSON 失败类型全量分析与自动化处理管道 · ztpop 邮件技术知识库
 - 分类：tls
 - 来源：https://ztpop.net/kb/tls-rpt-smtp-reporting.html
@@ -1889,10 +2079,25 @@
 - 来源：https://ztpop.net/kb/tls13-starttls-protocol.html
 - 摘要：RFC 3207（2015 年由 RFC 7817 更新）定义了一种在 SMTP 会话内部升级至 TLS 加密通道的机制，称为 STARTTLS [1]。它的核心设计约束是：不改变端口号，通过在明文会话中发送一条命令触发加密升级。
 
+## DKIM Ed25519/SHA-256加密升级
+- 分类：dkim
+- 来源：https://ztpop.net/kb/utf8-dkim-hash-crypto.html
+- 摘要：DomainKeys Identified Mail（DKIM）自RFC 4871（2007年）和后续的RFC 6376（2011年）标准化以来，RSA-SHA256一直是邮件签名的首选算法。随着时间推移，RSA算法的局限性逐渐显现：2048位密钥的计算开销大、签名体积膨胀，且量子计算威胁正在逼近。RFC 8301率先禁止了SHA-1和512位以下RSA密钥的使用，而RFC 8463则正式引入了Ed25519-SHA256椭圆曲线签名算法。
+
 ## 信创邮件系统与 Exchange AD 目录同步实施指南
 - 分类：xinchuang
 - 来源：https://ztpop.net/kb/xinchuang-ad-sync-guide.html
 - 摘要：信创邮件系统在替代 Exchange 的过程中，与现有的 Active Directory（AD）目录服务保持用户、密码和组结构的同步是核心工程环节。AD 作为多数企业的基础身份源，其用户属性（UserPrincipalName、mail、proxyAddresses）和组成员关系必须实时或准实时地反映到目标邮件系统。本文系统梳理基于 LDAPv3（RFC 4511）[1] 的目录同步协议选型、属性映射表设计、密码同步策略、组同步机制和增量/全量同步调度策略，并给出常见故障排查方法。全文引用 RFC 4510-4525（LDAPv3 核心协议）、RFC 2307（NIS Schema）及公安部
+
+## 信创一体机vs纯软件方案分析
+- 分类：xinchuang
+- 来源：https://ztpop.net/kb/xinchuang-appliance-vs-software.html
+- 摘要：信创邮件系统的部署方案可归纳为两大类别：一体机方案和纯软件方案。一体机方案由邮件系统厂商将软件与硬件服务器（含CPU、内存、存储、网络）、操作系统、数据库和安全组件进行预集成与调优，以整机形式交付客户。纯软件方案则由客户自备硬件和底层平台，仅采购邮件软件License后自行部署。
+
+## 从x86到ARM信创迁移实战
+- 分类：xinchuang
+- 来源：https://ztpop.net/kb/xinchuang-arm-migration-guide.html
+- 摘要：随着信创战略的深入推进，邮件系统从x86架构向ARM架构（华为鲲鹏、飞腾FT）的迁移已成为党政、金融、电信等行业信息化建设中的关键环节。ARM架构与x86在指令集体系上的根本差异决定了迁移不可能通过简单的二进制移植完成。鲲鹏920处理器采用ARMv8-A架构，与Intel Xeon所采用的x86-64指令集在内存模型、原子操作、字节序（尽管AArch64与x86同为小端）、SIMD指令和TLB管理等方面存在系统性差异。
 
 ## 信创邮件系统架构设计：从芯片到应用的自主可控全栈方案
 - 分类：xinchuang
@@ -1914,6 +2119,11 @@
 - 来源：https://ztpop.net/kb/xinchuang-email-policy-timeline.html
 - 摘要：邮件系统在信创替代工程中被列为「全面替换」类目，与操作系统、数据库并列最高优先级 [1]。本文以国资委79号文为起点，沿财政部采购标准、国测目录演进至「2+8+N」体系落地节奏，为企业邮件系统国产化提供合规时间线参考。
 
+## 信创环境下邮件系统采购实施指南
+- 分类：xinchuang
+- 来源：https://ztpop.net/kb/xinchuang-email-procurement-guide.html
+- 摘要：《中华人民共和国网络安全法》（2017年施行）第三章第二节明确要求关键信息基础设施运营者应“优先采购安全可信的网络产品和服务“，第三十五条进一步规定“可能影响国家安全的，应当通过国家安全审查“。在此基础上，《关键信息基础设施安全保护条例》（国务院令第745号，2021年）第十九条细化了安全审查的触发条件。这两项法规构成信创采购的核心法律依据，邮件系统作为政企单位核心沟通基础设施，天然落入审查范围。
+
 ## 邮件系统等保2.0与密评合规全景指南
 - 分类：xinchuang
 - 来源：https://ztpop.net/kb/xinchuang-email-security-compliance.html
@@ -1929,6 +2139,16 @@
 - 来源：https://ztpop.net/kb/xinchuang-security-hardening-guide.html
 - 摘要：信创邮件系统在承担党政机关和关键基础设施的日常通信职能时，其安全等级保护水平直接关系到国家信息安全。本文对照 GB/T 22239-2019《网络安全等级保护基本要求》的三级安全控制点，结合 GM/T 系列国密算法标准，系统阐述信创邮件系统的安全加固工程实践。内容覆盖等保三级控制点的邮件系统映射、国密 SM2/SM3/SM4 算法的邮件加密部署、审计日志体系构建、入侵检测规则制定、备份加密策略以及应急响应流程设计。
 
+## 信创邮件系统技术栈对比
+- 分类：xinchuang
+- 来源：https://ztpop.net/kb/xinchuang-tech-stack-comparison.html
+- 摘要：信创邮件系统的核心技术栈差异主要体现在编程语言选型上。Coremail以C/C++为核心构建MTA和存储引擎，强调运行效率和内存控制能力，在处理日均亿级邮件吞吐量的运营商场景中表现出色。Richmail则采用Java为主的技术路线，依托JVM生态的跨平台特性和丰富的企业级框架，在功能迭代速度和多系统集成方面具有优势。拓波TurboMail采用C语言实现核心MTA模块，Web管理端使用Java/PHP混合架构。Eyou同样以C开发底层引擎，Web部分使用PHP。263企业邮作为SaaS化产品，后端混合使用C和Java。
+
+## 零信任架构下的邮件安全设计
+- 分类：security
+- 来源：https://ztpop.net/kb/zero-trust-email-architecture.html
+- 摘要：传统邮件安全架构基于城堡-护城河模型：内网被假设为可信区域，员工在内网访问IMAP/POP3时几乎不经过任何验证。这种假设在移动办公普及和混合云部署场景下已经失效——VPN并非零信任的等价物。NIST SP 800-207《Zero Trust Architecture》明确定义了零信任的三大核心原则：所有资源访问都必须经过身份验证和授权、访问决策基于动态的信任评分而非静态网络位置、以及所有通信链路都应提供机密性和完整性保护。将这三大原则映射到邮件系统意味着：IMAP和SMTP的访问决策不能仅依赖源IP地址，而必须结合用户身份、设备健康状态、行为基线和地理位置进行实时评估。
+
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 382 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 426 篇文章。采用 CC-BY 4.0 许可。*
