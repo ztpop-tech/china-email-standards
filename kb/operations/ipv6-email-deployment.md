@@ -1,12 +1,12 @@
 ---
-title: "IPv6邮件系统部署"
+title: "IPv6 邮件系统部署 - 知识库 · ztpop 邮件技术知识库"
 source: "https://ztpop.net/kb/ipv6-email-deployment.html"
 license: CC-BY 4.0
 ---
 
-# IPv6邮件系统部署
+# IPv6 邮件系统部署 - 知识库 · ztpop 邮件技术知识库
 
-
+本页内容正在整理中，即将上线。如需优先获取该主题资料，请联系 [zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)。
 
 ---
 
