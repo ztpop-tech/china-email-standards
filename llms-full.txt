@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 346 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 382 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## 澳大利亚 ACSC 邮件系统加固指南：Essential Eight 视角下的邮件防护基线
@@ -57,6 +57,11 @@
 - 来源：https://ztpop.net/kb/apwg-2026-q1-phishing-report.html
 - 摘要：反钓鱼工作组（Anti-Phishing Working Group, APWG）于 2026 年 5 月 27 日发布《2026 年第一季度钓鱼活动趋势报告》。该报告聚合了全球范围内金融机构、网络安全企业与执法机构的钓鱼事件报告，是业界最为权威的季度钓鱼趋势数据来源之一。报告覆盖钓鱼网站数量、品牌冒用行业分布、TLS 证书诈欺态势以及行业垂直攻击分布等多个维度。
 
+## APWG 2026 Q1 钓鱼攻击技术分析：AI 生成钓鱼邮件、Deepfake 语音与 BEC 变种
+- 分类：security
+- 来源：https://ztpop.net/kb/apwg-2026-q1-phishing-techniques.html
+- 摘要：APWG（Anti-Phishing Working Group）发布的 2026 年第一季度钓鱼活动趋势报告揭示了钓鱼攻击在 AI 驱动下的新一轮进化。本报告基于对全球数百万级钓鱼样本的分析，总结出 2026 Q1 最具威胁性的攻击技术趋势。
+
 ## APWG 钓鱼活动趋势报告解读：2025 Q1 钓鱼攻击首破百万，二维码钓鱼与电汇 BEC 双升
 - 分类：security
 - 来源：https://ztpop.net/kb/apwg-phishing-trends-2025q1.html
@@ -87,6 +92,11 @@
 - 来源：https://ztpop.net/kb/batv-deep-dive.html
 - 摘要：SPF（RFC 7208）验证的是MAIL FROM域名的授权发送源IP，DKIM（RFC 6376）验证的是邮件内容的完整性和关联域名。二者均无法有效检测退信伪造：当接收MTA投递失败后生成的NDR（Non-Delivery Report）被攻击者批量伪造时，这些伪造退信中的MAIL FROM使用受害者域（使SPF通过），邮件体模仿合法退信格式（使DKIM无意义），但实际RCIP TO指向无辜第三方形成退信风暴（Backscatter）。BATV填补了这一空白 [1]。
 
+## BEC 商业邮件欺诈高级防御：2025-2026 最新手法与多层防御体系
+- 分类：security
+- 来源：https://ztpop.net/kb/bec-defense-advanced.html
+- 摘要：BEC（Business Email Compromise，商业邮件欺诈）是企业面临的最昂贵的网络安全威胁之一。FBI IC3 2025 年度报告显示，BEC 在 2025 年造成的全球损失超过 36 亿美元，连续五年保持增长。本章介绍 2025-2026 年 BEC 最新手法及多层防御体系。
+
 ## 选择邮件安全防护方案时，应重点评估其对BEC这种无载荷攻击的检测能力——如果方案的核心卖点是防病毒引擎和沙箱，那么它几乎不对BEC提供任何增量防护。
 - 分类：security
 - 来源：https://ztpop.net/kb/bec-defense.html
@@ -116,6 +126,11 @@
 - 分类：bimi
 - 来源：https://ztpop.net/kb/bimi-cmc-announcement.html
 - 摘要：2024 年 9 月 26 日，AuthIndicators Working Group（BIMI Group）宣布为品牌标识消息识别（Brand Indicators for Message Identification, BIMI）引入一项新能力，Google 已在 Gmail 中正式支持。此次更新在原有的已验证标识证书（Verified Mark Certificate, VMC）——需持有注册商标或政府注册标记——之外，推出了公共标识证书（Common Mark Certificate, CMC）。品牌现在有了更多灵活性，可以通过新型 CMC 在已认证邮件旁展示其标识。
+
+## CMC 与 VMC 对比分析：颁发机构、适用范围、成本对比与应用场景
+- 分类：bimi
+- 来源：https://ztpop.net/kb/bimi-cmc-vs-vmc-comparison.html
+- 摘要：CMC（Common Mark Certificate，通用标志证书）是 BIMI Group 在 2025-2026 年引入的新证书类型，与传统的 VMC（Verified Mark Certificate）形成互补。两张证书的对比直接影响企业选择 BIMI 部署路径的决策。
 
 ## BIMI FAQ 综合指南：发件方与邮件服务商常见问题（翻译）
 - 分类：bimi
@@ -152,6 +167,21 @@
 - 来源：https://ztpop.net/kb/bimi-svg-issues-guide.html
 - 摘要：原文：BIMI Group Blog "SVG Issues: Solutions for Ensuring Tiny-PS Compliance" (June 19, 2024) · 翻译：ztpop.net 知识库
 
+## BIMI Guidelines v1.1 更新要点：SVG 格式要求、VMC 策略变化与 BMP 标签
+- 分类：bimi
+- 来源：https://ztpop.net/kb/bimi-vmc-guidelines-v1.1.html
+- 摘要：BIMI Group 在 v1.1 版本中对多项规范进行了重大更新，涵盖了 SVG 格式要求、VMC 策略变化、CMC 引入以及 LPS 标签更新。
+
+## BIMI VMC 认证要求详解：证书类型、颁发条件与申请流程
+- 分类：bimi
+- 来源：https://ztpop.net/kb/bimi-vmc-requirements-overview.html
+- 摘要：VMC（Verified Mark Certificate，验证标志证书）是 BIMI（品牌标识消息识别）体系中的核心组件。VMC 由受信任的 CA（证书颁发机构）签发，向接收邮箱系统证明邮件发件方对其品牌标志拥有合法权益。本章节介绍 VMC 的基本要求和申请流程。
+
+## BIMI VMC 验证流程详解：三阶段验证指南
+- 分类：bimi
+- 来源：https://ztpop.net/kb/bimi-vmc-validation-process.html
+- 摘要：VMC 的验证流程是 BIMI 安全体系中最重要的环节。BIMI Group 联合 CA/B Forum 制定了严格的三阶段验证流程，确保每个 VMC 的签发都经过完整的审查。本章详解三个阶段的具体技术细节。
+
 ## 邮件系统 CalDAV/CardDAV 集成 — 日历与通讯录同步
 - 分类：other
 - 来源：https://ztpop.net/kb/caldav-carddav-email.html
@@ -172,6 +202,11 @@
 - 来源：https://ztpop.net/kb/cisa-mfa-implementation-guide.html
 - 摘要：CISA 反复强调"MFA 是性价比最高的单点安全控制"，并将其列为 Shields Up 等告警的核心动作。其实施指引进一步区分 MFA 的强弱：基于 SMS/语音的 OTP 可被 SIM 交换、拦截绕过，而基于公钥密码的 FIDO2/WebAuthn、PIV 智能卡属于抗钓鱼（phishing-resistant）MFA，应作为高价值系统的首选。
 
+## 邮件系统中部署反钓鱼 MFA：FIDO2/WebAuthn、OAuth 2.0 与传统认证
+- 分类：security
+- 来源：https://ztpop.net/kb/cisa-phishing-resistant-mfa-email-deployment.html
+- 摘要：CISA（美国网络安全和基础设施安全局）持续发布关于反钓鱼认证的指导意见。邮件系统中部署防钓鱼的 MFA 方案，是阻止 90% 以上的账号接管攻击的有效手段。
+
 ## CISA 防钓鱼 MFA 实施指南：FIDO/WebAuthn 是金标准，SMS 仅作最后手段
 - 分类：security
 - 来源：https://ztpop.net/kb/cisa-phishing-resistant-mfa.html
@@ -186,6 +221,11 @@
 - 分类：architecture
 - 来源：https://ztpop.net/kb/cloud-vs-on-prem-email-comparison.html
 - 摘要：组织在邮件基础设施上面临关键决策：使用云端托管邮件服务还是自建本地部署系统。两种方案在网络延迟、带宽成本、安全可控性和合规要求四个维度上有显著差异。云端服务无需维护硬件和基础软件，本地部署则提供完整的物理控制权、网络微隔离能力和可定制的合规配置。选择通常不是非此即彼——混合架构正在成为主流方案。
+
+## MTA-STS、DANE 与 TLS-RPT 部署：邮件传输安全三层实践
+- 分类：tls
+- 来源：https://ztpop.net/kb/dane-mta-sts-tls-rpt-deployment.html
+- 摘要：MTA-STS（RFC 8461）、DANE（RFC 7672）和 TLS-RPT（RFC 8460）共同构成了现代邮件传输安全的三大支柱。本文提供三者的实际部署指南，以及通过 TLS-RPT 报告监控传输问题的方法。
 
 ## DANE for SMTP：基于DNSSEC的邮件传输安全
 - 分类：tls
@@ -207,6 +247,11 @@
 - 来源：https://ztpop.net/kb/dkim-guide.html
 - 摘要：SPF（RFC 7208）问世后，运维圈一度以为邮件伪造问题即将终结。现实是 SPF 在纯直连场景下工作良好，但遇到邮件转发和邮件列表（mailing list）时几乎全线崩溃。原因很简单：SPF 校验的是 SMTP 信封中的 MAIL FROM 域与发送方 IP 的授权关系，而转发服务器会改写 MAIL FROM 域（例如变成转发服务自己的域），此时收件方查的已不是原始发件域的 SPF 记录。RFC 6376 第 1.1 节将这个问题概括为 SPF "无法跨越信任边界" —— 中间 MTA 在转发时可能修改邮件头部（添加 Received 头、Subject 重写），但 DKIM 的密码学签
 
+## DKIM 密钥轮转完整指南：选择器策略、自动化方案与最佳实践
+- 分类：dkim
+- 来源：https://ztpop.net/kb/dkim-key-rotation-management-complete.html
+- 摘要：DKIM 密钥是邮件认证体系中最容易被忽视的安全组件之一。长期不更换的 DKIM 密钥是企业的重大安全隐患——一旦私钥泄露，攻击者可以使用该密钥为任何伪装域发出的邮件签名，从而使所有收件方信任该邮件。
+
 ## DKIM 密钥轮转与安全管理指南
 - 分类：dkim
 - 来源：https://ztpop.net/kb/dkim-key-rotation-management.html
@@ -216,6 +261,16 @@
 - 分类：dkim
 - 来源：https://ztpop.net/kb/dkim-troubleshooting.html
 - 摘要：DKIM 签名验证失败分为 signature 失败（permfail）和 body hash 失败（permfail）两类。本文覆盖 DKIM 验证失败最常见的 4 种场景，分别阐述其根本原因、诊断方法和修复步骤。
+
+## DKIM2、异步退信与VERP：ESP需要做好的准备
+- 分类：dkim
+- 来源：https://ztpop.net/kb/dkim2-async-bounce-verp.html
+- 摘要：原文：Word to the Wise / steve · 2026-04-27 | 翻译：ztpop.net 邮件技术知识库 · 2026-07-30
+
+## DKIM2：它对邮件的未来意味着什么？
+- 分类：dkim
+- 来源：https://ztpop.net/kb/dkim2-main.html
+- 摘要：原文：Word to the Wise / Laura Atkins · 2026-04-23 | 翻译：ztpop.net 邮件技术知识库 · 2026-07-30
 
 ## DMARC Aggregate Report 人工解析与监控完全指南：rua XML结构、parsedmarc与dmarcian
 - 分类：dmarc
@@ -282,10 +337,15 @@
 - 来源：https://ztpop.net/kb/dns-email-config.html
 - 摘要：摘要：DNS（域名系统）是邮件系统的「指挥中心」——从邮件路由（MX 记录）到身份认证（SPF/DKIM/DMARC），从反垃圾邮件信誉（PTR 反向解析）到传输层安全（MTA-STS/DANE），几乎所有邮件系统的基础功能都依赖于正确配置的 DNS 记录。一条错误的 DNS 记录可能导致邮件拒收、投递延迟或安全机制失效。本文以实操为导向，一站式讲解与邮件相关的九类 DNS 记录配置方法、验证工具和最佳实践。
 
-## DNS SRV 邮件服务发现 — RFC 6186：Autoconfig 与客户端自动配置
+## DNS 安全在邮件系统中的部署
+- 分类：other
+- 来源：https://ztpop.net/kb/dns-security-email-deployment.html
+- 摘要：邮件传输依赖 DNS 解析来找到目标服务的服务器。但如果 DNS 本身被篡改或欺骗，整个邮件安全体系将形同虚设。DNSSEC、DANE 和 MTA-STS 构成了"DNS 安全层"的核心技术栈，保障邮件从发出到接收的全链路安全。
+
+## DNS SRV 邮件服务发现 — RFC 6186：Autoconfig 与客户端自动配置 - 知识库 · ztpop 邮件技术知识库
 - 分类：other
 - 来源：https://ztpop.net/kb/dns-srv-email-discovery.html
-- 摘要：部署邮件服务器后，管理员面临一个被长期低估的问题：终端用户如何正确配置邮件客户端？IMAP 服务器地址、SMTP 服务器地址、端口号、安全协议（SSL/TLS/STARTTLS）、用户名格式——六七个参数，任何一个填错都会导致连接失败。
+- 摘要：[other] DNS SRV 邮件服务发现 — RFC 6186：Autoconfig 与客户端自动配置 - 知识库 · ztpop 邮件技术知识库（见原文）
 
 ## DNS 黑名单机制与应对策略 — DNSBL/RBL/URIBL 原理、查询方法与自建方案 · ztpop 邮件技术知识库
 - 分类：security
@@ -301,6 +361,11 @@
 - 分类：migration
 - 来源：https://ztpop.net/kb/domino-to-chinese-email-migration.html
 - 摘要：Domino/Notes 迁移全链路技术方案 — NSF 数据库解析、RTF→MIME 格式转换、LDAP 桥接与日历任务迁移
+
+## Dovecot 高级配置指南
+- 分类：architecture
+- 来源：https://ztpop.net/kb/dovecot-imap-advanced-config.html
+- 摘要：Dovecot 是 Linux 平台上最流行的开源 IMAP/POP3 服务器之一。本文面向有 Dovecot 基础运维经验的工程师，深入讲解 dsync 高可用、FTS 全文搜索、Push 通知、压缩存储、配额管理和性能调优等高级话题。
 
 ## ⏱️ 约 6500 字
 - 分类：architecture
@@ -352,10 +417,10 @@
 - 来源：https://ztpop.net/kb/email-archiving-performance-optimization.html
 - 摘要：邮件归档系统的性能瓶颈与事务性邮件系统（如 IMAP/POP3 邮件服务器）完全不同。对于一个标准的邮件系统，用户每天执行数千次"小 IO"操作——读取邮件头、下载附件、同步文件夹——IO 模型极度碎片化。而归档系统的 IO 模式是"两极化"的：一端是 Journaling 写入的持续高吞吐顺序流，另一端是 eDiscovery 查询的间歇性大量随机扫描。理解这个两极化模式，是性能优化所有决策的起点。
 
-## 邮件归档的合规保留与自动删除策略 — 3-2-1 规则、自动过期与最小化风险
+## 邮件归档的合规保留与自动删除策略 — 3-2-1 规则、自动过期与最小化风险 - 知识库 · ztpop 邮件技术知识库
 - 分类：compliance
 - 来源：https://ztpop.net/kb/email-archiving-retention-deletion-strategy.html
-- 摘要：邮件归档的保留策略不是"设置一个保留天数"这么简单。企业面临的是多条并行、相互之间存在冲突的保留要求：GB/T 37002 要求至少 6-12 个月，GDPR 要求"目的达成后删除"，SEC 17a-4 要求 6 年且前 2 年可快速访问，同时企业法务部门因诉讼保留可能要求某些邮件无限期保留。在这样一个交织的合规网络中，保留策略设计的第一步是建立一个策略矩阵，将每条法规的保留要求映射到邮件分类的维度上，然后通过自动删除引擎在时间和分类两个轴上精确执行——既不能过度保留（GDPR 风险），也不能过早删除（SEC/等保风险）。
+- 摘要：[compliance] 邮件归档的合规保留与自动删除策略 — 3-2-1 规则、自动过期与最小化风险 - 知识库 · ztpop 邮件技术知识库（见原文）
 
 ## 邮件归档存储架构：Hot-Warm-Cold 分层存储与 CAS 寻址原理
 - 分类：archive
@@ -392,6 +457,11 @@
 - 来源：https://ztpop.net/kb/email-backup-strategies.html
 - 摘要：摘要：邮件系统的备份策略是企业 IT 基础设施中最基础也最容易被忽视的环节之一。备份不同于归档——备份面向灾难恢复，归档面向合规留存（详见本站邮件归档技术详解）。本文系统梳理邮件系统备份的核心方法论、Maildir 与 mbox 格式对备份策略的影响、数据库与配置文件的备份方案、自动化脚本设计与异地容灾架构，最后给出可操作的恢复测试验证流程。
 
+## 退信分析系统架构与实践
+- 分类：operations
+- 来源：https://ztpop.net/kb/email-bounce-analysis-system.html
+- 摘要：退信（Bounce）是邮件投递过程中最常见的异常现象。一个日均发送百万级的邮件系统会收到数万甚至数十万条退信通知。如何高效分类、归因并采取自动化措施，是邮件运营团队的核心挑战。本文从退信分类体系出发，逐步深入到 DSN 协议解析和自动化诊断链设计。
+
 ## 邮件系统灰度发布与回滚方案：从DNS TTL到rsync恢复
 - 分类：other
 - 来源：https://ztpop.net/kb/email-canary-rollback.html
@@ -407,10 +477,20 @@
 - 来源：https://ztpop.net/kb/email-cluster-architecture.html
 - 摘要：邮件系统集群化是提升可用性和扩展性的关键手段。从 DNS 层面的 MX 记录配置到 MTA 节点间的邮件路由，再到后端用户目录和存储的同步复制，集群各层需协同设计。典型的邮件集群拓扑分为三层：接入层（MX/SMTP 网关）负责接收外部邮件并进行垃圾过滤；处理层（MTA 集群）负责邮件路由和投递；存储层（Maildir + LDAP）负责邮件数据和用户目录的持久化。
 
+## 邮件 IP 预热与信誉管理完整策略：30 天标准模型、分箱策略与关键指标
+- 分类：other
+- 来源：https://ztpop.net/kb/email-cold-warm-complete-strategy.html
+- 摘要：所有主要邮箱服务商（Gmail、Outlook.com、Yahoo! Mail、QQ 邮箱、163 邮箱）都维护着各自的 IP 和域信誉评分系统。信誉为"绿色"的发件方邮件通常直接进入收件箱。信誉"黄色"或"红色"的发件方面临高概率被投递到垃圾邮件文件夹或被完全拒绝。
+
 ## 邮件合规审计与留存架构：GDPR/等保2.0技术映射
 - 分类：compliance
 - 来源：https://ztpop.net/kb/email-compliance-audit-retention.html
 - 摘要：电子邮件系统承载着企业日常运营中大量的关键信息资产——合同确认、审批流程、财务凭证和客户沟通记录。在全球数据保护法规趋严的背景下，邮件系统的合规能力已经从“可选功能”转变为法定的技术要求。中国的网络安全等级保护制度(等保2.0)明确要求三级以上信息系统必须具备全面的审计日志记录和不少于6个月的审计记录保存期，而欧盟GDPR第32条则要求数据控制者实施与风险相称的加密、完整性和恢复力措施。
+
+## 邮件系统合规与隐私：个保法、数据安全法、GDPR、CAN-SPAM 完整指南
+- 分类：compliance
+- 来源：https://ztpop.net/kb/email-compliance-privacy-guide.html
+- 摘要：邮件系统的合规要求涉及多个法律管辖区域。对于国内企业，《个人信息保护法》和《数据安全法》对邮件数据的存储、处理和跨境传输提出了严格的合规要求。对于涉及境外用户的企业，GDPR 和 CAN-SPAM Act 也需纳入合规范围。
 
 ## 邮件合规与发件人信誉：收件箱不会忘记
 - 分类：security
@@ -456,6 +536,11 @@
 - 分类：operations
 - 来源：https://ztpop.net/kb/email-delivery-tracking.html
 - 摘要：邮件在互联网上传输时经过多个 MTA 中转，每次中转都会在邮件头部追加一个 Received 字段。从最顶端的目标 MTA 向下读取到最底端的发件源 MTA，即完整还原了邮件的投递路径。每个 Received 头部包含 from（上一跳主机名/IP）、by（本跳主机名）、for（收件地址）和分号后时间戳，构成可审计的端到端传输日志。配合 DSN 机制，发件方可获取投递成功、延迟或失败的结构化通知。
+
+## 邮件投递故障排查：认证检查、内容分析、发送行为与诊断工具
+- 分类：operations
+- 来源：https://ztpop.net/kb/email-delivery-troubleshooting.html
+- 摘要：邮件投递问题的排查是一个系统工程，涉及发件方基础设施、收件方策略、网络路径、内容质量等多维度。本文提供标准化的邮件投递故障排查流程。
 
 ## 邮件系统灰度发布与回滚策略
 - 分类：other
@@ -507,6 +592,11 @@
 - 来源：https://ztpop.net/kb/email-ha-evolution.html
 - 摘要：摘要：邮件系统的高可用架构经历了从单机冗余到数据库级自动故障转移、从同机房集群到跨地域分布式的持续演进。Microsoft Exchange 的数据库可用性组（Database Availability Group, DAG）代表了现代化邮件系统 HA 的范式——将数据冗余从存储层提升到应用层，以邮箱数据库为最小故障转移单元。本文系统解析 DAG 的仲裁模型、副本机制、异地部署模式及 Managed Availability 健康监控框架，覆盖从设计原则到运维实践的全链路。
 
+## 邮件头分析与取证：Received 链、SPF/DKIM/DMARC 认证结果解析与伪造识别
+- 分类：references
+- 来源：https://ztpop.net/kb/email-header-analysis-full-guide.html
+- 摘要：邮件头（Email Header）是邮件取证的基础数据源。每封邮件从发件人终端到收件人服务器，经过的每一跳 MTA 都会在邮件头中添加 Received 字段，形成完整的投递路径。通过分析邮件头，可以追溯邮件的真实来源、识别伪造邮件的异常特征。
+
 ## 邮件头深度分析：追踪、取证与安全审计
 - 分类：other
 - 来源：https://ztpop.net/kb/email-header-forensics.html
@@ -522,6 +612,11 @@
 - 来源：https://ztpop.net/kb/email-horizontal-scaling.html
 - 摘要：邮件系统的水平扩展（Horizontal Scaling）通过增加服务器节点来提升容量和可用性，而非升级单机硬件（垂直扩展）。RFC 5321 Section 5 定义了多 MX 主机的优先级投递机制，这是邮件系统最原始也是最有效的水平扩展入口。
 
+## 邮件仿冒检测实战指南
+- 分类：references
+- 来源：https://ztpop.net/kb/email-impersonation-detection-guide.html
+- 摘要：邮件仿冒（Email Impersonation）是当前最危险的网络攻击入口之一。攻击者不费吹灰之力就能伪装成你的 CEO、供应商或客户，发送看似合法的诈骗邮件。本文整合了邮件头分析、显示名欺骗检测、相似域识别等多项检测技术，提供一套可在实际邮件安全系统中落地的检测方法论。
+
 ## 邮件安全事件应急响应
 - 分类：other
 - 来源：https://ztpop.net/kb/email-incident-response.html
@@ -531,6 +626,11 @@
 - 分类：other
 - 来源：https://ztpop.net/kb/email-latency-analysis.html
 - 摘要：邮件系统的端到端延迟（End-to-End Latency）定义为发件人点击"发送"到收件人在邮件客户端（MUA）中看到新邮件的总耗时。这一时间跨度跨越多个子系统：MUA→MTA（提交）、MTA 预处理（过滤/扫描）、MTA 队列调度、MTA→MTA（投递）、收件 MTA 投递到收件人 IMAP/POP3 存储、IMAP 同步推送到 MUA。
+
+## 企业邮件发送平台选型：SendGrid、Amazon SES、Mailgun 与自建方案对比
+- 分类：other
+- 来源：https://ztpop.net/kb/email-list-manager-enterprise.html
+- 摘要：企业级邮件列表管理是邮件营销和通知发送的基础设施。选择正确的邮件发送平台直接影响投递率、可维护性和合规性。本章从技术选型、架构设计和运维角度分析主流方案。
 
 ## 邮件日志分析实战：syslog/mail.log 解读指南
 - 分类：references
@@ -542,15 +642,20 @@
 - 来源：https://ztpop.net/kb/email-log-analysis.html
 - 摘要：邮件日志是安全运维的"黑匣子"——从 SMTP 握手到邮件投递完成，每一次交互都被忠实地记录在 maillog 中。但许多运维团队仅将日志视为故障排查的"最后手段"，而非主动防御的"前线哨兵"。事实上，通过系统化的日志分析和异常检测，可以在攻击发生的早期阶段（甚至攻击尝试阶段）就发现威胁信号。本文将深入解析 Postfix maillog 的字段结构、构建多维度异常检测规则，并介绍将邮件日志接入 SIEM/SOAR 平台的实战方案，帮助团队实现从"被动查日志"到"主动防御"的转变。
 
+## 邮件日志分析与取证：Postfix 日志解析、pflogsumm 分析与 SIEM 集成
+- 分类：other
+- 来源：https://ztpop.net/kb/email-log-forensics-toolkit.html
+- 摘要：邮件日志是诊断投递问题、追踪安全事件的核心数据源。现代邮件系统的日志分析已从纯手动 grep 演进为使用结构化日志和 SIEM 集成的自动化方案。
+
 ## 评估邮件安全防护方案时，应关注其对非传统载体的检测覆盖率和沙箱的反检测对抗能力——许多方案在检测传统.exe恶意软件时表现良好，但对.one/.vhd/.iso的覆盖率接近零。
 - 分类：security
 - 来源：https://ztpop.net/kb/email-malware-analysis.html
 - 摘要：邮件渠道仍是恶意软件投递的首要载体。MITRE ATT&CK框架将钓鱼式附件投递归类为T1566.001技术，其攻击面已从传统的PE可执行文件（.exe/.dll）扩展到OneNote笔记本（.one）、虚拟硬盘镜像（.vhd/.vhdx）、光盘镜像（.iso）、压缩归档（.zip/.rar/.7z）及密码保护文档。本文从附件类型的攻击面分析、静态检测方法、动态沙箱分析技术及反沙箱对抗四个维度，构建邮件恶意软件检测的纵深体系。
 
-## 邮件迁移七种方式对比
+## 邮件迁移七种方式对比 - 知识库 · ztpop 邮件技术知识库
 - 分类：migration
 - 来源：https://ztpop.net/kb/email-migration-comparison.html
-- 摘要：本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库或联系 zhangtao@ztpop.net。
+- 摘要：[migration] 邮件迁移七种方式对比 - 知识库 · ztpop 邮件技术知识库（见原文）
 
 ## 邮件系统利旧迁移中的 DNS 过渡策略
 - 分类：migration
@@ -597,6 +702,11 @@
 - 来源：https://ztpop.net/kb/email-rate-limiting.html
 - 摘要：摘要：邮件系统的速率限制（Rate Limiting）与流控（Traffic Shaping）是保障服务质量和防止滥用的关键技术。无论是应对内部用户的批量群发、防范被入侵账户的垃圾邮件爆发，还是遵守 Google/Yahoo 等大型邮箱服务商的发送频率限制，都需要在邮件基础设施的多个层面部署速率控制策略。本文从连接层、消息层和收件人层三个维度，系统讲解 Postfix、Policyd 和 postscreen 的速率限制配置方案。
 
+## 邮件信誉监测与黑名单申诉：Spamhaus、Postmaster Tools、SNDS 监测与修复
+- 分类：other
+- 来源：https://ztpop.net/kb/email-reputation-monitoring-diagnosis.html
+- 摘要：邮件信誉是发件方的生命线。一旦 IP 或域被列入黑名单，或邮箱服务商降低了信誉权重，恢复过程可能需要数周甚至数月。建立主动的信誉监测体系是防止投递事故的关键。
+
 ## 邮件合规保留策略体系
 - 分类：compliance
 - 来源：https://ztpop.net/kb/email-retention-policies.html
@@ -617,6 +727,11 @@
 - 来源：https://ztpop.net/kb/email-security-analytics.html
 - 摘要：邮件系统的安全分析能力，起点永远是日志的可读性与结构化程度。Postfix 默认写 /var/log/maillog，格式为传统 syslog 文本行：
 
+## 邮件系统安全审计清单：认证层、传输层、反垃圾/反钓鱼、合规层 4 层级检查
+- 分类：references
+- 来源：https://ztpop.net/kb/email-security-audit-checklist.html
+- 摘要：邮件系统安全审计是评估企业邮件基础设施安全状态的关键环节。基于 NIST SP 800-177（电子邮件安全指南）、M3AAWG 最佳实践和国内等保 2.0（GBT 22239-2019 三级指标），本章提供体系化的邮件安全审计清单。
+
 ## Email Security Policy as Code 实践：SPF/DKIM/DMARC/MTA-STS 策略代码化
 - 分类：other
 - 来源：https://ztpop.net/kb/email-security-policy-as-code.html
@@ -631,6 +746,11 @@
 - 分类：security
 - 来源：https://ztpop.net/kb/email-security-zero-trust.html
 - 摘要：传统邮件安全模型依赖于边界防御（perimeter defense）——通过在网络入口部署反垃圾网关、反病毒引擎和内容过滤器构建单层防护。该模型的隐含假设是：一旦邮件通过边界检查进入内网，即可安全地投递至用户邮箱。这种"城堡-护城河"思维在互联网早期阶段确有合理性：当时的主要威胁是来自外部互联网的批量垃圾邮件和蠕虫病毒，企业内部网络被假定为受信任区域。
+
+## 邮件投递优化：避免进入垃圾邮件文件夹的策略 — 内容优化、发送行为与基础设施
+- 分类：other
+- 来源：https://ztpop.net/kb/email-spam-folder-avoidance.html
+- 摘要：邮件被投递到垃圾邮件文件夹是发件方最常见的问题之一。即使通过了 SPF/DKIM/DMARC 认证，邮件仍可能被接收方的反垃圾引擎判定为垃圾。本章梳理邮件避免被归类为垃圾邮件的完整策略。
 
 ## 邮件系统权威标准与学术文献全图谱 — IETF/NIST/GB-T/M3AAWG/顶会/期刊 · ztpop 邮件技术知识库
 - 分类：references
@@ -703,10 +823,10 @@
 - 来源：https://ztpop.net/kb/exchange-2013-eol-impact-2026.html
 - 摘要：Microsoft Exchange Server 2013 于 2013 年 1 月发布，其主流支持于 2018 年 4 月结束，扩展支持（Extended Support）于2023 年 4 月 11 日正式终止。到 2026 年 7 月，Exchange 2013 已经结束所有官方安全更新超过 3 年（三年 EOL）。这意味着运行 Exchange 2013 的组织自 2023 年 4 月起就不再收到安全补丁——包括关键级别的远程代码执行漏洞。
 
-## Exchange 2013 2026年停服迁移实战指南：应急方案与完整迁移检查清单
+## Exchange 2013 2026年停服迁移实战指南：应急方案与完整迁移检查清单 - 知识库 · ztpop 邮件技术知识库
 - 分类：exchange
 - 来源：https://ztpop.net/kb/exchange-2013-eol-migration-playbook.html
-- 摘要：ztpop.net 知识库编辑. "Exchange 2013 2026年停服迁移实战指南：应急方案与完整迁移检查清单"ztpop.net 知识库.
+- 摘要：[exchange] Exchange 2013 2026年停服迁移实战指南：应急方案与完整迁移检查清单 - 知识库 · ztpop 邮件技术知识库（见原文）
 
 ## Exchange 权限与 AD 迁移技术指南：RBAC/ACL/Security Group 迁移策略与验证
 - 分类：exchange
@@ -768,10 +888,10 @@
 - 来源：https://ztpop.net/kb/exchange-ews-retirement-migration.html
 - 摘要：Exchange Web Services（EWS）作为 Exchange Online 的核心 API 层已服役近二十年。Microsoft 已于 2025 年 9 月正式宣布 EWS 的分阶段退役计划[1]：2026年10月1日起，所有未经显式注册的 EWS 请求将被阻止；至 2027 年 4 月，EWS 将完全关闭，所有请求一律拒绝。本文基于 Microsoft 官方公告与迁移文档[1][2][4]，系统阐述退役时间线与影响范围，并提供从 EWS 到 Microsoft Graph API 的完整迁移路线图，帮助依赖 EWS 的组织在截止日期前完成应用重构与过渡。
 
-## Exchange混合部署架构与邮件流排错：On-Prem ↔ Exchange Online ↔ 第三方全链路解析
+## Exchange混合部署架构与邮件流排错：On-Prem ↔ Exchange Online ↔ 第三方全链路解析 - 知识库 · ztpop 邮件技术知识库
 - 分类：exchange
 - 来源：https://ztpop.net/kb/exchange-hybrid-mailflow-architecture.html
-- 摘要：ztpop.net 知识库编辑. "Exchange混合部署架构与邮件流排错：On-Prem ↔ Exchange Online ↔ 第三方全链路解析"ztpop.net 知识库.
+- 摘要：[exchange] Exchange混合部署架构与邮件流排错：On-Prem ↔ Exchange Online ↔ 第三方全链路解析 - 知识库 · ztpop 邮件技术知识库（见原文）
 
 ## Exchange 混合部署邮件流调试
 - 分类：exchange
@@ -788,10 +908,10 @@
 - 来源：https://ztpop.net/kb/exchange-migration-planning-framework.html
 - 摘要：Exchange Server 系列版本的陆续终止支持催生了大规模的邮件系统迁移需求。从 Exchange 向替代邮件系统迁移是一个多维度工程决策，涉及技术评估、数据搬迁、业务连续性与合规性。本文提出一套系统化的迁移规划框架，涵盖决策树模型、基础设施兼容性评估矩阵、数据迁移策略分类和回滚方案设计。全文引用 RFC 3501（IMAP）、NIST SP 800-34（应急规划）及 Microsoft 官方迁移文档。
 
-## 跨国企业 Exchange 迁移方案：多域名/DAG跨站点/GDPR/时区/多语言全场景策略
+## 跨国企业 Exchange 迁移方案：多域名/DAG跨站点/GDPR/时区/多语言全场景策略 - 知识库 · ztpop 邮件技术知识库
 - 分类：exchange
 - 来源：https://ztpop.net/kb/exchange-multinational-migration-plan.html
-- 摘要：ztpop.net 知识库编辑. "跨国企业 Exchange 迁移方案：多域名/DAG跨站点/GDPR/时区/多语言全场景策略"ztpop.net 知识库.
+- 摘要：[exchange] 跨国企业 Exchange 迁移方案：多域名/DAG跨站点/GDPR/时区/多语言全场景策略 - 知识库 · ztpop 邮件技术知识库（见原文）
 
 ## 跨国Exchange部署向国产系统迁移
 - 分类：exchange
@@ -943,15 +1063,20 @@
 - 来源：https://ztpop.net/kb/international-email-relay.html
 - 摘要：大型邮件服务商（Google、Microsoft、Yahoo）的垃圾邮件过滤系统不完全依赖IP黑名单的动态查询——它们维护着大规模的IP信誉数据库，对全球每一个发件IP进行长期的行为评分。评分维度包括：该IP的历史垃圾邮件比例、用户投诉率、发信频率稳定性、是否被列入Spamhaus/FortiGuard等主流DNSBL、IP段所属AS的总体信誉等。
 
-## IPv6邮件系统部署
+## IP 预热完整指南
+- 分类：references
+- 来源：https://ztpop.net/kb/ip-warmup-complete-guide.html
+- 摘要：新分配的 IP 地址在邮箱服务商眼中是"零信誉"的陌生人。IP 预热就是通过受控的、渐进的发送节奏，向邮箱服务商证明你是一个负责任的发件方，从而建立正面发送声誉。
+
+## IPv6 邮件系统部署 - 知识库 · ztpop 邮件技术知识库
 - 分类：other
 - 来源：https://ztpop.net/kb/ipv6-email-deployment.html
-- 摘要：本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库或联系 zhangtao@ztpop.net。
+- 摘要：[other] IPv6 邮件系统部署 - 知识库 · ztpop 邮件技术知识库（见原文）
 
-## IPv6邮件系统部署实践指南：MX 记录、双栈 MTA 与运营商兼容策略
+## IPv6 邮件系统部署实践指南：MX 记录、双栈 MTA 与运营商兼容策略 - 知识库 · ztpop 邮件技术知识库
 - 分类：architecture
 - 来源：https://ztpop.net/kb/ipv6-mail-system-deployment-practical-guide.html
-- 摘要：本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库或联系 zhangtao@ztpop.net。
+- 摘要：[architecture] IPv6 邮件系统部署实践指南：MX 记录、双栈 MTA 与运营商兼容策略 - 知识库 · ztpop 邮件技术知识库（见原文）
 
 ## JMAP 邮件访问协议深度解析 — RFC 8620/8621：IMAP 的下一代替代方案 · ztpop 邮件技术知识库
 - 分类：protocols
@@ -1038,6 +1163,11 @@
 - 来源：https://ztpop.net/kb/m3aawg-ai-lifecycle-security-bcp.html
 - 摘要：本文为 M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group）于 2025 年 5 月发布的AI Model Lifecycle Security Best Common Practices的中文译本。原文参考 URL：http://www.m3aawg.org/AIModelLifecycleSecurityBCP。本译本仅用于技术交流，不构成法律建议；具体合规事宜请咨询所在机构的法律顾问。
 
+## M3AAWG 关于 AI 时代邮件安全的立场
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-ai-phishing-position.html
+- 摘要：M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group，消息、恶意软件和移动反滥用工作组）是全球邮件安全领域最具影响力的行业组织之一，成员包括 Google、Microsoft、Yahoo、Cisco、Cloudflare 等头部企业。其每年发布的立场文件为全球邮件安全政策提供技术基准。本文对 M3AAWG 2025-2026 年度关于 AI 时代邮件安全的立场文件进行中文深度解读。
+
 ## ISP 和邮箱服务商反钓鱼最佳实践——M3AAWG 与 APWG 联合指南
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-anti-phishing-bcp.html
@@ -1114,10 +1244,15 @@
 - 来源：https://ztpop.net/kb/m3aawg-gmail-yahoo-bulk-requirements.html
 - 摘要：译自 M3AAWG 博客「New Minimum Requirements for Sending Bulk Mail to Gmail and Yahoo」(2023-10-03)
 
-## M3AAWG 托管与云服务商反滥用最佳实践
+## M3AAWG 主机托管与云服务商反滥用 BCP
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-hosting-abuse-bcp.html
-- 摘要：原文：Messaging, Malware and Mobile Anti-Abuse Working Group (M3AAWG) 与 Internet Infrastructure Coalition (i2C) 联合发布，2015 年 3 月。
+- 摘要：翻译自 M3AAWG Anti-Abuse Best Common Practices for Hosting and Cloud Service Providers (Mar 2015)
+
+## M3AAWG IPv6 邮件接收策略：地址聚合与信誉评估
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-ipv6-email-policy.html
+- 摘要：翻译自 M3AAWG Policy Issues for Receiving Email in a World with IPv6 Hosts (Sept 2014)
 
 ## M3AAWG 相似域名最佳实践：11 项安全用途操作指南（翻译）
 - 分类：m3aawg
@@ -1189,10 +1324,10 @@
 - 来源：https://ztpop.net/kb/m3aawg-tls-baseline-recs-2026.html
 - 摘要：2010 年代的全球监控披露事件以及后续对邮件流量全面监控的持续报道，使公众愈加关注邮件提供商可部署的隐私保护技术措施。本文中，M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group）推荐了三项邮件服务提供商可相对快速实施的基础措施，用以增强用户邮件的安全性和隐私保护。
 
-## M3AAWG 邮件流量分析导论
+## M3AAWG 流量分析导论：加密之外的邮件元数据威胁
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-traffic-analysis-intro.html
-- 摘要：译介 M3AAWG《Introduction to Traffic Analysis》（June 2016）· 涵盖流量数据收集方法、统计方法、异常检测、基线建立、与 spamtrap 数据结合、可视化工具，并补充国内大邮件系统流量分析实践
+- 摘要：M3AAWG 于 2016 年 6 月发布的《流量分析导论》揭示了邮件通信中一个常被忽视的安全威胁：即使邮件内容被端到端加密（如 PGP/GPG 或 S/MIME），邮件头部的元数据仍然完全暴露在流量分析攻击之下。
 
 ## 邮件信任始于认证
 - 分类：m3aawg
@@ -1203,6 +1338,11 @@
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-unicode-abuse-prevention.html
 - 摘要：Unicode 标准极大增强了互联网的国际化能力，使得全球用户可以使用本地语言文字访问互联网服务。然而，这份包容性也被滥用于钓鱼攻击与社会工程——攻击者利用视觉上难以区分的 Unicode 字符（即"同形字"）来伪造合法的域名与邮箱地址。
+
+## M3AAWG Unicode 滥用教程：同形字符攻击与防御
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-unicode-tutorial.html
+- 摘要：Unicode 字符集包含超过 100,000 个字符，其中大量字符在视觉上完全相同（homoglyph，同形字）。M3AAWG 的 Unicode 滥用教程详细阐述了 Unicode 字符被用于网络钓鱼和身份冒充的工作原理，以及与现有反滥用措施（M3AAWG Unicode 滥用预防最佳实践）的协作方式。
 
 ## M3AAWG 围墙花园（Walled Garden）最佳实践 v2.0
 - 分类：m3aawg
@@ -1238,6 +1378,11 @@
 - 分类：tls
 - 来源：https://ztpop.net/kb/mail-tls-certificate-best-practices.html
 - 摘要：RFC 3207 定义了 SMTP STARTTLS 扩展，邮件服务器间的加密传输依赖 X.509 PKI 体系。RFC 7817 更新了邮件协议的 TLS 服务器身份验证规则，强调 SAN（Subject Alternative Name）匹配逻辑。邮件服务应优先选择由受信任公共 CA 签发的证书，内网环境可使用私有 CA，但需在所有客户端正确部署根证书。
+
+## Microsoft 2026 Q1 邮件威胁态势报告：AI 钓鱼、BEC Deepfake 与新型安全产品
+- 分类：other
+- 来源：https://ztpop.net/kb/microsoft-2026-q1-threat-landscape.html
+- 摘要：Microsoft 在 2026 年第一季度发布的邮件威胁态势报告揭示了当前邮件安全领域的最新趋势。基于 Microsoft 365 覆盖全球数十亿邮箱的海量遥测数据，该报告提供了关于钓鱼攻击、BEC、恶意软件传播的权威分析。
 
 ## Microsoft Defender for Office 365 反钓鱼：冒充保护与欺骗智能
 - 分类：security
@@ -1288,6 +1433,11 @@
 - 分类：other
 - 来源：https://ztpop.net/kb/ncsc-uk-email-security-guidance.html
 - 摘要：英国国家网络安全中心（NCSC）是英国政府下属的技术权威机构，其发布的邮件安全指南被公共部门与关键基础设施广泛采用。NCSC 的立场以"减少可被利用的攻击面"为主轴，对钓鱼、凭据窃取与数据外泄给出明确、可执行的基线。以下为其邮件安全核心建议的精译与落地映射。
+
+## NIST 反钓鱼认证指南翻译
+- 分类：security
+- 来源：https://ztpop.net/kb/nist-phishing-resistance-guidance.html
+- 摘要：NIST（美国国家标准与技术研究院）SP 800-63 系列是数字身份认证领域最具权威性的技术标准。其中 SP 800-63B 明确提出了"钓鱼抵抗认证器"的概念，并给出了严格的技术定义。本文对该标准进行中文翻译和深度解读，并探讨其在邮件安全领域的应用。
 
 ## NIST SP 800-177 Rev.1 邮件安全实践检查清单 — 从 SPF/DKIM/DMARC 到 TLS 与 DANE 的完整合规地图
 - 分类：compliance
@@ -1349,6 +1499,11 @@
 - 来源：https://ztpop.net/kb/phishing-defense.html
 - 摘要：钓鱼攻击正经历两个维度的加速进化：攻击技术层面的URL伪装与重定向方法日益精密，以及内容生成层面的大语言模型（LLM）大幅降低了高质量拟真钓鱼邮件的生产成本。APWG 2024年度报告显示，月均检测到的钓鱼站点已突破50万，且基于HTTPS的钓鱼站点占比超过85%。本文从邮件认证协议链、URL特征工程、多模态语义检测和用户层防御四个层面，构建应对持续进化威胁的钓鱼邮件自适应防御体系。
 
+## Postfix 3.10 新特性详解
+- 分类：architecture
+- 来源：https://ztpop.net/kb/postfix-3-10-new-features.html
+- 摘要：Postfix 3.10 于 2026 年初正式发布，是继 3.9 之后的一个重要功能版本。本次更新在安全性、协议兼容性和运维便利性方面均有显著提升，尤其是对 TLS 报告（TLSRPT）的原生支持和 Post-Quantum 加密算法的引入，标志着 Postfix 在应对未来安全挑战方面迈出了关键一步。
+
 ## Postfix Access / Relay / Transport 三层策略设计：安全边界、配置原则与性能影响
 - 分类：architecture
 - 来源：https://ztpop.net/kb/postfix-access-relay-transport.html
@@ -1363,6 +1518,11 @@
 - 分类：architecture
 - 来源：https://ztpop.net/kb/postfix-content-filter-architecture.html
 - 摘要：Postfix 提供了四种内容过滤器（Content Filter）接入方式，分别对应邮件在 MTA 流水线中不同的处理时机。RFC 5321 定义的 SMTP 会话协议（EHLO/MAIL/RCPT/DATA/BDAT）在 Postfix 中被拆解为多个独立模块（cleanup、trivial-rewrite、qmgr、smtpd），过滤器可以插入在不同模块之间。
+
+## Postfix + Dovecot 反病毒与反垃圾集成
+- 分类：architecture
+- 来源：https://ztpop.net/kb/postfix-dovecot-antivirus-integration.html
+- 摘要：邮件服务器的反垃圾和反病毒能力直接关系到用户安全和系统信誉。Postfix 提供了多种集成反垃圾引擎的方式：内容过滤器（content_filter）、Milter（Sendmail 风格的邮件过滤协议）和代理服务。Dovecot 侧则可以通过 Sieve 脚本和服务端插件在投递阶段进行二次过滤。本文逐一分析各方案的部署方法与优劣。
 
 ## Postfix Log 分析与报警体系搭建
 - 分类：architecture
@@ -1437,7 +1597,7 @@
 ## 互联网邮件消息格式深度解析 — RFC 5322 与 MIME（RFC 2045-2049） · ztpop 邮件技术知识库
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc5322-mime-message-format.html
-- 摘要：互联网邮件消息（Internet Message）由两部分组成：头部（Header）和正文（Body），两者之间以一个空行（CRLF）分隔。RFC 5322 第 2.1 节定义了这条规则，RFC 2045 在此基础上通过 MIME 头部字段扩展了正文内容的表达能力。
+- 摘要：[protocols] 互联网邮件消息格式深度解析 — RFC 5322 与 MIME（RFC 2045-2049） · ztpop 邮件技术知识库（见原文）
 
 ## RFC 5598 互联网邮件架构：从发件方到收件方的端到端组件视图
 - 分类：protocols
@@ -1529,6 +1689,11 @@
 - 来源：https://ztpop.net/kb/rspamd-console-and-metrics.html
 - 摘要：Rspamd 是一个高性能垃圾邮件过滤系统，内置 WebUI 监控界面和 Redis 后端双重指标体系。WebUI 在 11334 端口提供实时吞吐率、历史扫描趋势、Top 符号命中频率和连接池状态等面板。Redis 后端则存储所有统计计数器的持久化数据，包括每符号命中次数、Bayesian 分类器词频和模糊哈希缓存。二者配合可帮助运维人员了解过滤系统的运行态势：当日已扫描邮件总量、各动作分布比例、CPU 与内存使用率。
 
+## 发件方信誉体系详解
+- 分类：other
+- 来源：https://ztpop.net/kb/sender-reputation-framework.html
+- 摘要：你的邮件能否进入收件箱，很大程度上取决于邮箱服务商对你"人品"的打分。这个隐形的评分系统——发件方信誉体系——是邮件投递领域最关键也最不透明的机制。本文为你拆解全球主流邮箱服务商的信誉评估逻辑。
+
 ## Sieve 邮件过滤语言深度解析 — RFC 5228：服务端过滤、Vacation 与 ManageSieve
 - 分类：protocols
 - 来源：https://ztpop.net/kb/sieve-filter-rfc5228.html
@@ -1574,6 +1739,11 @@
 - 来源：https://ztpop.net/kb/smtp-benchmark-testing.html
 - 摘要：SMTP 吞吐压测是邮件系统容量规划的核心环节。Postfix 内置的 smtp-source 工具可从单个节点发起数千封测试邮件的并发投递，模拟真实邮件流量场景。压测目标是通过调节并发连接数（-c）、并行会话数（-s）和投递总数（-m），找出 MTA 在当前硬件配置下的最大稳定投递速率。关键观测指标包括 smtpd 进程 CPU 占用率、队列放入速率、磁盘 I/O 等待时间和网络带宽利用率。
 
+## SMTP 退信码全面解读：DSN 状态码体系与各邮箱服务商自定义代码
+- 分类：protocols
+- 来源：https://ztpop.net/kb/smtp-bounce-codes-comprehensive.html
+- 摘要：SMTP 退信是邮件投递失败的正式通知。准确解读退信码可以快速定位问题根因。RFC 3463 定义了标准的 DSN（Delivery Status Notification）状态码体系，各邮箱服务商在此基础上增加增强型状态码。
+
 ## IETF RFC 5321 / RFC 3463 / RFC 6647 · 运维必读
 - 分类：protocols
 - 来源：https://ztpop.net/kb/smtp-bounce-codes.html
@@ -1593,6 +1763,11 @@
 - 分类：tls
 - 来源：https://ztpop.net/kb/smtp-dane-mta-sts-tls-rpt-comparison.html
 - 摘要：ztpop.net 知识库编辑. "SMTP DANE vs MTA-STS vs TLS-RPT 三选一对比决策"ztpop.net 知识库.
+
+## 邮件投递延迟排查与调优：Postfix 延迟分析与网络诊断
+- 分类：protocols
+- 来源：https://ztpop.net/kb/smtp-delay-troubleshooting.html
+- 摘要：邮件投递延迟是运维中最常见的用户体验问题。收件方在发送邮件后迟迟未收到，可能的原因涉及网络、认证、收件方策略和发送方队列管理等多个方面。
 
 ## SMTP 投递状态通知（DSN）全面解读 · RFC 3461
 - 分类：protocols
@@ -1618,6 +1793,11 @@
 - 分类：protocols
 - 来源：https://ztpop.net/kb/smtp-multi-ip-mx.html
 - 摘要：RFC 5321 §5.1 / RFC 2181 / RFC 1035 §2.3 / Postfix smtp_bind_address_per_policy
+
+## SMTP 外发投递性能调优
+- 分类：protocols
+- 来源：https://ztpop.net/kb/smtp-outbound-delivery-tuning.html
+- 摘要：邮件系统的出站投递性能直接决定了消息的及时送达率。不合理的参数配置可能导致队列积压、被目标 MTA 限流甚至列入黑名单。本文系统性地解析 Postfix 外发投递的关键控制参数，帮助运维工程师在吞吐量和对方接受度之间找到最佳平衡。
 
 ## SMTP PIPELINING 批量投递优化 — RFC 2920/RFC 2197 命令流水线与吞吐调优
 - 分类：protocols
@@ -1751,4 +1931,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 346 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 382 篇文章。采用 CC-BY 4.0 许可。*
