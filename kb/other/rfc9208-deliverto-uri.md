@@ -30,6 +30,13 @@ RFC 9208 明确 DELIVRTO 不得用于隐蔽追踪用户：回调内容应最小�
 
 在信创邮件系统与 Exchange 互通或跨域公文流转中，DELIVRTO 可作为"已送达"的强证据，用于合规审计与 SLA 考核；但必须配套隐私开关，且令牌短期有效。它补充而非替代 DSN/MDN，构成多层投递可观测性。
 
+### 相关主题
+
+* [SMTP 投递状态通知（DSN）](/kb/smtp-dsn-rfc3461.html)：退信与延迟报告
+* [RFC 3798 邮件处置通知（MDN）](/kb/rfc3798-message-disposition-notification.html)：已读回执机制
+* [邮件送达追踪](/kb/email-delivery-tracking.html)：投递可观测性实践
+* [邮件送达率工程](/kb/email-deliverability-engineering.html)：提升抵达率的系统方法
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc9208-deliverto-uri.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
