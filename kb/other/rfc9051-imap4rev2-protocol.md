@@ -35,6 +35,14 @@ IMAP 把"邮件状态"留在服务器：已读/未读、文件夹、标志都多
 
 信创邮件系统替换 Exchange 时，客户端兼容是验收关键：必须完整实现 IMAP4rev2 的 SELECT/FETCH/STORE/SEARCH 与 UID 语义，并支持 IDLE 推送，否则 Outlook、手机邮件 App 会出现"已读不同步""收不到新邮件"。Dovecot 等开源实现可作为参考基线。
 
+### 相关主题
+
+* [IMAP 与 POP3 对比](/kb/imap-vs-pop3.html)：选型与同步模型差异
+* [RFC 3501 IMAP4rev1 协议](/kb/rfc3501-imap-protocol.html)：命令级详解
+* [RFC 2177 IMAP IDLE 推送](/kb/imap-idle-push-rfc2177.html)：新邮件实时通知
+* [Dovecot IMAP 服务架构](/kb/dovecot-imap-server-architecture.html)：高并发实现参考
+* [IMAP 并发优化](/kb/imap-concurrency-optimization.html)：多端同步性能
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc9051-imap4rev2-protocol.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
