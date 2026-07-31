@@ -35,6 +35,14 @@ OWASP ASVS 是应用安全的"验收标准"，分 V1-V14 与三个验证级（L1
 
 信创邮件系统替换 Exchange 时，身份模块应以 ASVS V2/V3 做自测：口令、MFA、会话、找回逐项核对验证级；把"找回链路防钓鱼""会话异常重认证"写入安全设计。这与 800-63B、CISA MFA 构成完整的身份安全闭环。
 
+### 相关主题
+
+* [OWASP 电子邮件安全速查表](/kb/owasp-email-security-cheat-sheet.html)：开发安全清单
+* [NIST SP 800-63B 数字身份](/kb/nist-sp800-63b-digital-identity.html)：该怎么做
+* [CISA MFA 实施指引](/kb/cisa-mfa-implementation-guide.html)：抗钓鱼 MFA
+* [邮件账号防盗](/kb/email-account-hijacking-defense.html)：找回与异常发现
+* [等保 2.0 邮件合规](/kb/dengbao2-email-compliance.html)：身份鉴别对标
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/owasp-asvs-email-auth-controls.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
