@@ -34,6 +34,14 @@ OWASP 的 Email Security Cheat Sheet 面向"写代码发邮件"与"运维邮件�
 
 政企在信创邮件系统上开发业务邮件（通知、账单、验证码）时，应以本速查表做安全评审清单；把头部注入防护、TLS 强制、DKIM 轮换、退订合规写入代码规范，避免"功能对了但安全漏了"。
 
+### 相关主题
+
+* [OWASP ASVS 邮件认证控制](/kb/owasp-asvs-email-auth-controls.html)：V2/V3 映射
+* [DKIM 密钥轮换管理](/kb/dkim-key-rotation-management.html)：私钥安全
+* [RFC 8058 一键退订](/kb/list-unsubscribe-rfc8058.html)：合规退订
+* [邮件账号防盗](/kb/email-account-hijacking-defense.html)：凭据与注入
+* [SMTP 认证指南](/kb/smtp-auth-guide.html)：TLS 与 OAuth2
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/owasp-email-security-cheat-sheet.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
