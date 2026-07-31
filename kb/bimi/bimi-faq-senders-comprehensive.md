@@ -147,6 +147,14 @@ TXT
 * 证书签发机构列表：bimigroup.org/vmc-issuers/
 * 邮箱提供商支持状态信息图：bimigroup.org/bimi-infographic/
 
+### 相关主题
+
+* [DMARC 实施指南](/kb/dmarc-guide.html)
+* [BIMI 品牌标识消息识别标准解读](/kb/bimi-guide.html)
+* [邮件 DNS 一键诊断](/tools/dns-check.html)：检测 BIMI 及 SPF/DKIM/DMARC/MX/PTR/MTA-STS/TLS-RPT 等十项记录
+
+本文涉及的关键技术领域：邮件认证、DMARC、邮件安全
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/bimi-faq-senders-comprehensive.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
