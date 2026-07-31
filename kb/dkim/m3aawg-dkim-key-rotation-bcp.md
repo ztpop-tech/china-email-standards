@@ -359,6 +359,14 @@ DMARC 聚合报告（DMARC Aggregate Reports，rua）是监测 DKIM 认证状态
 
 ## 八、参考文献与延伸阅读
 
+### 📚 相关阅读
+
+* [M3AAWG 电子邮件认证推荐最佳实践——SPF/DKIM/DMARC/ARC 配置检查清单](https://ztpop.net/kb/m3aawg-email-auth-best-practices.html)
+* [邮件认证生态全景：SPF/DKIM/DMARC/ARC/BIMI 协议链全解析](https://ztpop.net/kb/email-authentication-ecosystem.html)
+* [DMARC p=reject 后邮件排错流程](https://ztpop.net/kb/dmarc-reject-troubleshooting.html)
+* [SPF 全面指南——原理、配置与运维](https://ztpop.net/kb/spf-guide.html)
+* [MTA-STS TLS 强制实施指南](https://ztpop.net/kb/mta-sts-tls-enforcement-guide.html)
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/m3aawg-dkim-key-rotation-bcp.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
