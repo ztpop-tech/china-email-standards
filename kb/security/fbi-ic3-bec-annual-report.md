@@ -54,6 +54,13 @@ IC3 将 BEC 定义为"针对企业与个人资金转账的精密骗局，通常�
 
 正在推进信创邮件替换或 Exchange 迁移的政企，应将上述四层控制写入邮件安全网关的上线验收清单：MFA 作为账号基线、DMARC 强制作为域信任基线、带外核验作为财务流程基线。邮件安全网关在 RFC 7208 / RFC 6376 / RFC 7489 之上叠加内容级检测，可进一步压缩 BEC 的生存空间。
 
+### 相关主题
+
+* [商业邮件诈骗防御实战](/kb/bec-defense.html)：从检测到止损的端到端闭环
+* [邮件账号防盗与 SMTP 劫持检测](/kb/email-account-hijacking-defense.html)：凭据窃取后的实时发现
+* [DMARC 完全指南](/kb/dmarc-guide.html)：从 p=none 到 p=reject 的部署路径
+* [钓鱼邮件防御体系](/kb/phishing-defense.html)：网关 + 意识 + 认证的纵深组合
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/fbi-ic3-bec-annual-report.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
