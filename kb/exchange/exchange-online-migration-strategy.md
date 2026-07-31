@@ -65,6 +65,11 @@ IMAP 迁移中邮件过大（>50MB附件）可能导致 imapsync 超时——需
 
 本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
 
+### 相关主题
+
+* [邮件迁移完全指南](/email-migration.html)：从评估到上线的邮件迁移全流程
+* [Exchange 邮件迁移规划框架](/kb/exchange-migration-planning-framework.html)
+
 class="article-footer">
 
 本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库或联系 zhangtao@ztpop.net。
