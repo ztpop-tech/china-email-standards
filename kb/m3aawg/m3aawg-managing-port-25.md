@@ -76,6 +76,13 @@ M3AAWG 推荐行业自律是最有效的措施，并列出了七项具体实践�
 
 国内运营商和 IDC 通常已经实施了端口 25 封锁。但在企业自建邮件服务器场景下，合法的端口 25 访问仍需开通。建议在 [邮件服务器搭建与选型指南](/mail-server.html) 中将端口管理策略纳入网络架构设计阶段。
 
+### 相关主题
+
+* [邮件服务器搭建与选型指南](/mail-server.html)
+* [邮件安全网关：端口管理与安全防护](/mailgate.html)
+
+本文涉及的关键技术领域：邮件服务器、邮件服务器搭建、邮件安全
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/m3aawg-managing-port-25.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
