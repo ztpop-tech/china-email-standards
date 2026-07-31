@@ -33,6 +33,14 @@ license: CC-BY 4.0
 
 政企信创邮件系统做会员/客户群发前，应建"地址验证+退信处理"流水线：注册确认式 opt-in、群发前 MX/可接受性清洗、硬退信自动剔除以保护 IP 声誉。这与域名声誉管理、投递率工程构成完整闭环。
 
+### 相关主题
+
+* [M3AAWG 域名声誉管理](/kb/m3aawg-domain-reputation-bcp.html)：退信对声誉的影响
+* [退信诊断完全手册](/kb/smtp-bounce-diagnosis-complete.html)：5xx/4xx 分类
+* [RFC 8689 RRVS](/kb/rfc8689-rrvs-require-recipient-valid-since.html)：接收方有效性声明
+* [邮件送达率工程](/kb/email-deliverability-engineering.html)：列表卫生
+* [M3AAWG 垃圾陷阱指南](/kb/m3aawg-spam-trap-guide.html)：避免踩中陷阱
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/m3aawg-address-validation-bcp.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
