@@ -104,6 +104,16 @@ SPF 是邮件认证体系的三大支柱之一（与 DKIM、DMARC 并列），�
 
 M3AAWG 的核心建议可以用一句话概括：**只授权你信任的，拒绝你之外的。**
 
+### 相关文章
+
+* [SPF 发件人策略框架深度解析 — RFC 7208](/kb/spf-guide.html)：从语法到运维的完整指南
+* [SPF PermError 诊断指南](/kb/spf-permerror-diagnostic.html)：超出 10 次 DNS 查询限制的解决方案
+* [SPF 排错指南](/kb/spf-troubleshooting.html)：常见 SPF 问题与排查步骤
+* [SPF/DKIM/DMARC 部署检查清单](/kb/spf-dkim-dmarc-checklist.html)
+* [DMARC 聚合报告解析完全指南](/kb/dmarc-aggregate-reporting.html)
+* [M3AAWG 邮件认证推荐最佳实践：SPF/DKIM/DMARC/ARC 落地清单](/kb/m3aawg-email-auth-best-practices.html)
+* [M3AAWG 停放域名最佳实践](/kb/m3aawg-parked-domains-bcp.html)
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/m3aawg-managing-spf-records.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
