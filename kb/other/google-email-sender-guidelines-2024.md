@@ -44,6 +44,14 @@ List-Unsubscribe: <https://example.com/u?token=xyz>
 
 政企用信创邮件系统向客户/会员群发通知时，应将上述要求写入发信规范：独立子域、DMARC p=quarantine/reject、RFC 8058 退订、Postmaster 监控投诉率。未达标会直接损害对外沟通效果。
 
+### 相关主题
+
+* [DMARC 完全指南](/kb/dmarc-guide.html)：对齐与策略渐进
+* [RFC 8058 一键退订](/kb/list-unsubscribe-rfc8058.html)：One-Click 实现
+* [Google Postmaster Tools 指南](/kb/google-postmaster-tools-guide.html)：投诉率监控
+* [M3AAWG Gmail/Yahoo 批量要求](/kb/m3aawg-gmail-yahoo-bulk-requirements.html)：双巨头协同
+* [邮件送达率工程](/kb/email-deliverability-engineering.html)：投递率系统方法
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/google-email-sender-guidelines-2024.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
