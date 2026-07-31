@@ -52,6 +52,13 @@ DMARC（RFC 7489）要求 SPF 或 DKIM 标识符与 RFC 5322 的 From 域**对�
 
 NIST 的整体建议是分阶段推进：先以 `p=none` + 报告开启监控，确认无合法流量被误拦后，逐步强制到 `p=reject`；组合使用 SPF+DKIM+DMARC 与 STARTTLS/DANE/MTA-STS；持续度量报告，提升域信任成熟度。对正在进行信创邮件替换或 Exchange 迁移的政企，这套分层基准可直接作为邮件安全网关的上线验收清单。
 
+### 相关主题
+
+* [DMARC 完全指南](/kb/dmarc-guide.html)：从 p=none 到 p=reject 的部署路径
+* [RFC 8461 MTA-STS](/kb/rfc8461-mta-sts.html)：用 DNS 与 HTTPS 强制 SMTP 传输层加密
+* [CISA《增强电子邮件与 Web 安全》](/kb/cisa-enhance-email-web-security.html)：DMARC/STARTTLS/HTTPS 落地实践
+* [M3AAWG 邮件认证最佳实践](/kb/m3aawg-email-auth-best-practices.html)：SPF/DKIM/DMARC/ARC 落地清单
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/nist-sp800-177r1-trustworthy-email.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
