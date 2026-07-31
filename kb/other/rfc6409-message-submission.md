@@ -38,6 +38,14 @@ RFC 6409 引用 RFC 4954（SMTP AUTH）。常见机制：`PLAIN`/`LOGIN` 明文�
 
 对政企信创邮件，MSA 是"第一道身份闸门"：开启强制 MFA（见 CISA MFA 指引）、对异常提交速率告警、对被盗账号（SMTP 劫持）实时锁定，都能在 MSA 段完成。把发信认证收敛到 587，是降低账号被盗外发垃圾邮件、避免 IP 被列入 DNSBL 的最有效手段。
 
+### 相关主题
+
+* [RFC 5321 SMTP 协议](/kb/rfc5321-smtp-protocol.html)：邮件在服务器间的传输模型
+* [RFC 8314 隐式 TLS](/kb/rfc8314-implicit-tls-submission.html)：用 465 取代明文 110/143 端口
+* [RFC 8689 RRVS](/kb/rfc8689-rrvs-require-recipient-valid-since.html)：拦截僵尸账号投递
+* [RFC 5598 互联网邮件架构](/kb/rfc5598-internet-email-architecture.html)：四段式组件视图
+* [CISA MFA 实施指引](/kb/cisa-mfa-implementation-guide.html)：抗钓鱼 MFA 与高风险账号保护
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc6409-message-submission.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
