@@ -48,6 +48,15 @@ RFC 8616 本身不引入新的威胁，其目标是让 SPF/DKIM/DMARC 在国际�
 
 信创邮件系统常需服务含中文域、中文邮箱名的多语言环境。实现时必须：在写入 DNS 的 SPF/DKIM/DMARC 记录中一律使用 A-label（xn--）；在信头展示与哈希计算时保持与 RFC 8616 一致的 U/A-label 处理；邮件安全网关与认证组件需能正确转换并比对两种标签，避免"同一域名因表示形式不同被判为不匹配"的误拦或漏放。这与 MTA-STS、TLS-RPT 等同样依赖 DNS 的机制的标签处理需一并纳入联调。
 
+### 相关主题
+
+* [SPF 部署与排错](/kb/spf-guide.html)：10 次 DNS 查询上限与 soft/hard fail
+* [DKIM 密钥管理与轮换](/kb/dkim-guide.html)：2048 位密钥与多选择器平滑切换
+* [DMARC 完全指南](/kb/dmarc-guide.html)：从 p=none 到 p=reject 的部署路径
+* [SMTPUTF8 与 EAI 部署](/kb/smtp-utf8-eai-deployment.html)：UTF-8 邮件的端到端落地
+* [国际化邮件（EAI）概述](/kb/eai-internationalized-email.html)：U-label 与 A-label 的基础
+* [MTA-STS 部署指南](/kb/mta-sts-guide.html)：同样依赖 DNS 的标签一致性
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc8616-eai-email-authentication.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
