@@ -33,6 +33,13 @@ SMTPUTF8 是"木桶效应"——只要 MUA、MTA、MDA 任意一环不支持，�
 
 信创邮件强调自主可控与本土化体验。支持 SMTPUTF8 的昆仑邮件系统可直接承载中文域名邮箱（如 `@辰童.中国`）、中文账号名，贴合政务与国企的本地化诉求；但同时要在架构上保证全链路（含认证、归档、审计）对 UTF-8 地址的一致性处理，避免"能发不能收"或"能收不能检索"。
 
+### 相关主题
+
+* [RFC 8616 国际化邮件认证](/kb/rfc8616-eai-email-authentication.html)：EAI 下的 SPF/DKIM/DMARC 表示规则
+* [RFC 5321 SMTP 协议](/kb/rfc5321-smtp-protocol.html)：传统 ASCII 传输模型
+* [RFC 5598 互联网邮件架构](/kb/rfc5598-internet-email-architecture.html)：端到端组件视图
+* [RFC 9460 SVCB/HTTPS 记录](/kb/rfc9460-svcb-dns-email.html)：邮件服务的 DNS 发现
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc6531-smtputf8-internationalized.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
