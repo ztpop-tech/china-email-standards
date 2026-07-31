@@ -46,6 +46,7 @@ v=BIMI1; l=https://example.com/logo.svg; a=https://example.com/vmc.pem; avp=bran
 * [BIMI lps 标签详解：同一域名显示不同品牌 Logo（翻译）](/kb/bimi-lps-tag-guide.html)
 * [BIMI 品牌标识实施指南：四步部署完整流程（翻译）](/kb/bimi-implementation-guide.html)
 * [BIMI 品牌标识消息识别标准解读](/kb/bimi-guide.html)
+* [邮件 DNS 一键诊断](/tools/dns-check.html)（含 BIMI 记录检查）
 
 本文涉及的关键技术领域：邮件认证、BIMI、DMARC
 
