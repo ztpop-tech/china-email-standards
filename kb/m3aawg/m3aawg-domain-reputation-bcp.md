@@ -32,6 +32,14 @@ license: CC-BY 4.0
 
 政企对外发通知/账单时，应把"声誉"纳入邮件运维：独立子域发不同性质邮件（事务 vs 营销）、保持列表卫生、监控 Postmaster/SNDS、对 DMARC 报告做周度复盘。这直接决定重要邮件能否抵达用户。
 
+### 相关主题
+
+* [邮件送达率工程](/kb/email-deliverability-engineering.html)：声誉与认证协同
+* [Gmail 送达率工程](/kb/gmail-deliverability-engineering.html)：Postmaster Tools 实战
+* [Google Postmaster Tools 指南](/kb/google-postmaster-tools-guide.html)：声誉监控
+* [Microsoft SNDS 发件人声誉](/kb/microsoft-snds-sender-reputation.html)：IP 信誉查询
+* [DMARC 聚合报告](/kb/dmarc-aggregate-reporting.html)：rua 报告解读
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/m3aawg-domain-reputation-bcp.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
