@@ -36,6 +36,13 @@ POP3（Post Office Protocol v3）是最早广泛部署的邮件读取协议，�
 
 信创邮件系统上线验收时，IMAP 是必选项，POP3 作为兼容项保留即可。若必须支持 POP3，需明确告知用户其"下载即删"的同步短板，并在网关层强制隐式 TLS，避免明文口令泄露。
 
+### 相关主题
+
+* [IMAP 与 POP3 对比](/kb/imap-vs-pop3.html)：选型与同步模型差异
+* [RFC 9051 IMAP4rev2](/kb/rfc9051-imap4rev2-protocol.html)：现代邮件访问协议
+* [RFC 8314 隐式 TLS](/kb/rfc8314-implicit-tls-submission.html)：关闭明文 110/143 端口
+* [信创邮件系统架构设计](/kb/xinchuang-email-architecture-design.html)：协议兼容矩阵
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc1939-pop3-protocol.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
