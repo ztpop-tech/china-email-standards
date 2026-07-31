@@ -38,6 +38,7 @@ BOD 18-01 同时要求联邦 Web 全量 HTTPS、邮件传输启用 STARTTLS，�
 * [等保 2.0 邮件合规](/kb/dengbao2-email-compliance.html)：政务对标
 * [RFC 8461 MTA-STS](/kb/rfc8461-mta-sts.html)：传输层强制 TLS
 * [NIST SP 800-177r1 可信电子邮件](/kb/nist-sp800-177r1-trustworthy-email.html)：联邦基线同源
+* [DMARC 记录检查器](/tools/dmarc-checker.html)（在线检查 DMARC 策略）
 
 ---
 
