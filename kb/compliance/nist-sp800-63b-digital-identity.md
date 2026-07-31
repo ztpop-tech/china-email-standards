@@ -29,6 +29,14 @@ NIST 把 MFA 分为层级，强调**抗钓鱼（phishing-resistant）**：基于
 
 信创邮件替换 Exchange 时，身份模块应直接对齐 800-63B：口令长度与黑名单校验、MFA 默认开启且优先 FIDO2、登录限流与异常告警。这与等保 2.0 身份鉴别要求、以及 DMARC/MFA 联动的纵深防御共同构成账号安全基线。
 
+### 相关主题
+
+* [邮件账号防盗与 SMTP 劫持检测](/kb/email-account-hijacking-defense.html)：凭据窃取后的实时发现
+* [SMTP 认证指南](/kb/smtp-auth-guide.html)：AUTH 机制与限流
+* [商业邮件诈骗防御实战](/kb/bec-defense.html)：MFA 阻断凭据窃取型 BEC
+* [等保 2.0 邮件合规](/kb/dengbao2-email-compliance.html)：身份鉴别要求
+* [OWASP ASVS 邮件认证控制](/kb/owasp-asvs-email-auth-controls.html)：V2/V3 映射
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/nist-sp800-63b-digital-identity.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
