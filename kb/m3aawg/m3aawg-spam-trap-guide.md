@@ -58,6 +58,13 @@ grep -i "spam trap\|spamtrap\|honeypot" /var/log/maillog
 
 SPF/DKIM/DMARC 的正确配置虽然无法直接避免 Spam Trap 命中，但可以减少因认证问题导致的额外误判。建议配合 NIST SP 800-177 Rev.1 邮件安全指南中的列表管理实践协同运作。
 
+### 相关主题
+
+* [邮件服务器搭建与选型指南](/mail-server.html)
+* [邮件安全网关：反垃圾防护策略](/mailgate.html)
+
+本文涉及的关键技术领域：邮件服务器、邮件安全、DMARC
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/m3aawg-spam-trap-guide.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
