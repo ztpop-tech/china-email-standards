@@ -32,6 +32,14 @@ CISA 要求对一切暴露面强制 MFA：邮件 Web 登录、VPN/远程访问�
 
 信创邮件系统替换 Exchange 时，身份模块应默认开启 MFA、优先 FIDO2/国密 USBKey，并将"管理员+财务+高管"列为强制范围。这与邮件账号防盗体系、等保身份鉴别要求叠加，构成 BEC 防护的基石。
 
+### 相关主题
+
+* [NIST SP 800-63B 数字身份](/kb/nist-sp800-63b-digital-identity.html)：抗钓鱼 MFA 分级
+* [邮件账号防盗与 SMTP 劫持检测](/kb/email-account-hijacking-defense.html)：MFA 阻断凭据窃取
+* [商业邮件诈骗防御实战](/kb/bec-defense.html)：MFA 是第一道闸
+* [OWASP ASVS 邮件认证控制](/kb/owasp-asvs-email-auth-controls.html)：V2 映射
+* [等保 2.0 邮件合规](/kb/dengbao2-email-compliance.html)：身份鉴别要求
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/cisa-mfa-implementation-guide.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
