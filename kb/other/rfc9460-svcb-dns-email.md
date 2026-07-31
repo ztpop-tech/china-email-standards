@@ -44,6 +44,7 @@ SVCB 把原先靠 HTTP/MX 探测的 autoconfig 流程标准化到 DNS，更可�
 * [邮件自动发现协议完全指南](/kb/email-autodiscovery-protocol-complete-guide.html)：客户端自动配置
 * [邮件 DNS 配置](/kb/dns-email-config.html)：MX/SPF/DKIM/DMARC 协同
 * [DNSSEC 安全扩展](/kb/dnssec-dns-security-extensions.html)：防 DNS 篡改
+* [邮件 DNS 一键诊断](/tools/dns-check.html)（10 项记录一次检测）
 
 ---
 
