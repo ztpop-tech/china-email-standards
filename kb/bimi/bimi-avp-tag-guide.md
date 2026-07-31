@@ -41,6 +41,14 @@ v=BIMI1; l=https://example.com/logo.svg; a=https://example.com/vmc.pem; avp=bran
 
 虽然 `avp` 标签是可选的，但它是一个将显示效果与品牌策略对齐的巧妙工具。
 
+### 相关主题
+
+* [BIMI lps 标签详解：同一域名显示不同品牌 Logo（翻译）](/kb/bimi-lps-tag-guide.html)
+* [BIMI 品牌标识实施指南：四步部署完整流程（翻译）](/kb/bimi-implementation-guide.html)
+* [BIMI 品牌标识消息识别标准解读](/kb/bimi-guide.html)
+
+本文涉及的关键技术领域：邮件认证、BIMI、DMARC
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/bimi-avp-tag-guide.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
