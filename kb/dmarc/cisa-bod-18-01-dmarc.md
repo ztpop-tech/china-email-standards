@@ -31,6 +31,14 @@ BOD 18-01 同时要求联邦 Web 全量 HTTPS、邮件传输启用 STARTTLS，�
 
 国内政务信创邮件替换可对标 BOD 18-01：将 DMARC p=reject、SPF/DKIM、STARTTLS/MTA-STS、HTTPS 管理后台写入验收清单；对gov.cn 类域名的欺骗防护，DMARC reject 是硬性达标项。这也与等保 2.0 身份鉴别、通信保密要求同频。
 
+### 相关主题
+
+* [DMARC 完全指南](/kb/dmarc-guide.html)：none→quarantine→reject 路径
+* [CISA《增强电子邮件与 Web 安全》](/kb/cisa-enhance-email-web-security.html)：落地实践
+* [等保 2.0 邮件合规](/kb/dengbao2-email-compliance.html)：政务对标
+* [RFC 8461 MTA-STS](/kb/rfc8461-mta-sts.html)：传输层强制 TLS
+* [NIST SP 800-177r1 可信电子邮件](/kb/nist-sp800-177r1-trustworthy-email.html)：联邦基线同源
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/cisa-bod-18-01-dmarc.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
