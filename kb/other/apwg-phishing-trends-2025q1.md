@@ -45,6 +45,14 @@ BEC 仍是钓鱼链条上"离钱最近"的一环。2025 Q1 电汇类 BEC 攻击�
 
 正在推进信创邮件替换或 Exchange 迁移的政企，应将"二维码解析 + 沙箱"纳入邮件安全网关的上线验收项；同时把 DMARC 强制与抗钓鱼 MFA 作为域信任与账号的双重基线。APWG 的季度数据也说明：邮件认证（SPF/DKIM/DMARC）压低的是"伪造发件域"类钓鱼，而二维码/凭据钓鱼仍需靠网关内容检测与 MFA 补位，二者缺一不可。
 
+### 相关主题
+
+* [钓鱼邮件防御体系](/kb/phishing-defense.html)：网关 + 意识 + 认证的纵深组合
+* [DMARC 完全指南](/kb/dmarc-guide.html)：从 p=none 到 p=reject 的部署路径
+* [FBI IC3 年度报告解读](/kb/fbi-ic3-bec-annual-report.html)：BEC 仍是损失最高的邮件威胁
+* [SPF 部署与排错](/kb/spf-guide.html)：10 次 DNS 查询上限与 soft/hard fail
+* [M3AAWG 邮件认证最佳实践](/kb/m3aawg-email-auth-best-practices.html)：SPF/DKIM/DMARC/ARC 落地清单
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/apwg-phishing-trends-2025q1.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
