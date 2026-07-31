@@ -37,6 +37,14 @@ SVCB 把原先靠 HTTP/MX 探测的 autoconfig 流程标准化到 DNS，更可�
 
 信创邮件系统对外提供服务时，应在 DNS 发布 submission/imap/pop3 的 SVCB 记录，声明 465/993/995 隐式 TLS 端点，并启用 DNSSEC 防篡改；客户端支持 SVCB 后，用户配置成本降到最低，且默认走加密通道。
 
+### 相关主题
+
+* [RFC 8314 隐式 TLS](/kb/rfc8314-implicit-tls-submission.html)：465/993/995 取代明文端口
+* [RFC 8461 MTA-STS](/kb/rfc8461-mta-sts.html)：服务器间强制 TLS
+* [邮件自动发现协议完全指南](/kb/email-autodiscovery-protocol-complete-guide.html)：客户端自动配置
+* [邮件 DNS 配置](/kb/dns-email-config.html)：MX/SPF/DKIM/DMARC 协同
+* [DNSSEC 安全扩展](/kb/dnssec-dns-security-extensions.html)：防 DNS 篡改
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc9460-svcb-dns-email.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
