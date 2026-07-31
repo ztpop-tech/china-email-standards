@@ -30,6 +30,13 @@ Apple 在 2021 年随 iOS 15 / macOS Monterey 推出 Mail Privacy Protection（M
 
 政企用信创邮件系统对外发信时，不应再把"打开率"当成重要通知的触达证明；应结合 DSN/DELIVRTO 做送达确认，并默认尊重收件方隐私设置。这既符合个人信息保护趋势，也避免被 Apple 生态用户标记为"过度追踪"。
 
+### 相关主题
+
+* [RFC 3798 邮件处置通知](/kb/rfc3798-message-disposition-notification.html)：已读回执机制
+* [RFC 9208 DELIVRTO URI](/kb/rfc9208-deliverto-uri.html)：令牌回调式状态
+* [SMTP 投递状态通知（DSN）](/kb/smtp-dsn-rfc3461.html)：送达而非已读
+* [邮件送达追踪](/kb/email-delivery-tracking.html)：多层可观测性
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/apple-mail-privacy-protection.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
