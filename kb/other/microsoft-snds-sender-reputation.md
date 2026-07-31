@@ -30,6 +30,14 @@ SNDS 看"IP 信誉"，而 Microsoft 365 的入站认证（SPF/DKIM/DMARC + compa
 
 政企信创邮件系统对外发信 Microsoft 用户时，应注册 SNDS 并接入监控，把"投诉率突增/信誉转红"设为告警；配合 Postmaster Tools 形成双巨头覆盖，把投递率 SLA 落到数据。
 
+### 相关主题
+
+* [Microsoft 365 邮件身份验证机制](/kb/microsoft-email-authentication.html)：compauth 复合认证
+* [Google Postmaster Tools 指南](/kb/google-postmaster-tools-guide.html)：双巨头覆盖
+* [邮件送达率工程](/kb/email-deliverability-engineering.html)：声誉驱动投递
+* [DMARC 聚合报告](/kb/dmarc-aggregate-reporting.html)：rua 报告解读
+* [M3AAWG 域名声誉管理](/kb/m3aawg-domain-reputation-bcp.html)：声誉构成信号
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/microsoft-snds-sender-reputation.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
