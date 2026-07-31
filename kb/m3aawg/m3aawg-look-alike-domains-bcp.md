@@ -73,6 +73,13 @@ Typosquatting 指注册品牌所有者域名的拼写错误变体。用户输入
 10. **为封锁做好准备：**预期安全厂商会封锁相似域名，培训前确保邮件能通过例外规则正常投递
 11. **清理工作：**临时用途完成后，移除网站和 DNS 解析，避免持续被投诉或封锁
 
+### 相关主题
+
+* [邮件服务器搭建与选型指南](/mail-server.html)
+* [DMARC 实施指南——域伪造防护](/kb/dmarc-guide.html)
+
+本文涉及的关键技术领域：邮件服务器、邮件安全、DMARC
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/m3aawg-look-alike-domains-bcp.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
