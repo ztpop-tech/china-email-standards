@@ -37,6 +37,7 @@ SHA-1 已被实际攻破（碰撞攻击），攻击者理论上可构造不同�
 * [NIST SP 800-177r1 可信电子邮件](/kb/nist-sp800-177r1-trustworthy-email.html)：DKIM ≥2048 位建议
 * [DMARC 完全指南](/kb/dmarc-guide.html)：对齐依赖 DKIM 结论
 * [M3AAWG DKIM 密钥轮换 BCP](/kb/m3aawg-dkim-key-rotation-bcp.html)：轮换最佳实践
+* [DKIM 记录检查器](/tools/dkim-checker.html)（在线验证 DKIM 公钥）
 
 ---
 
