@@ -30,6 +30,14 @@ SHA-1 已被实际攻破（碰撞攻击），攻击者理论上可构造不同�
 
 邮件安全网关签发 DKIM 时，应：禁用 SHA-1、RSA 默认 2048、启用选择器轮换；入站验证拒绝 SHA-1 与弱密钥签名。这直接对齐 NIST SP 800-177r1 对 DKIM ≥2048 位的建议，是 DMARC 对齐成功的前提。
 
+### 相关主题
+
+* [DKIM 完全指南](/kb/dkim-guide.html)：签名与验证原理
+* [DKIM 密钥轮换管理](/kb/dkim-key-rotation-management.html)：多选择器平滑切换
+* [NIST SP 800-177r1 可信电子邮件](/kb/nist-sp800-177r1-trustworthy-email.html)：DKIM ≥2048 位建议
+* [DMARC 完全指南](/kb/dmarc-guide.html)：对齐依赖 DKIM 结论
+* [M3AAWG DKIM 密钥轮换 BCP](/kb/m3aawg-dkim-key-rotation-bcp.html)：轮换最佳实践
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc8301-dkim-crypto-update.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
