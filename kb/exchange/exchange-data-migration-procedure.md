@@ -446,6 +446,28 @@ Message-ID 去重是标准的、可靠的，但需注意以下边界情况：
 * 确保迁移工具在导入时使用源邮件的 `INTERNALDATE` 而非导入时的当前时间
 * 对于已按错误日期导入的邮件，批量更新内部日期（根据 `Date:` 邮件头更正）
 
+### 📖 推荐阅读
+
+[🔄 Exchange 替代方案全流程指南
+[🔄 Exchange替代方案指南
+
+从 Exchange 到国产邮件系统的完整替代路径](/exchange-replacement.html)
+
+Exchange 2016/2019 EOL 背景下的三大替代路径对比、技术评估维度与六阶段迁移框架](/exchange-replacement.html)
+[📧 邮件迁移技术指南
+
+IMAP 迁移、PST 导入、DNS 切换与回退预案 — 邮件系统迁移的完整操作手册](/email-migration.html)
+[🛠️ 邮件服务器搭建与选型指南
+
+从域名到DKIM：自建邮件服务器7步搭建教程与配置优化](/mail-server.html)
+[🏗️ 自建邮件系统技术选型
+
+自建邮件系统的架构选择：Postfix vs Exim vs 商业方案全面对比](/mail-server.html)
+
+📦 邮件归档技术与合规指南
+
+邮件归档策略、不可变存储与合规审计实践（专题建设中）
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/exchange-data-migration-procedure.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
