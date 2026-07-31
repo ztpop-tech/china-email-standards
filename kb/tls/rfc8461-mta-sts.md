@@ -63,6 +63,13 @@ max_age: 604800
 
 MTA-STS 设计上需与 TLS-RPT（RFC 8460）配合：当策略 `mode` 非 `none` 时，下列事件应作为可报告失败上报——存在有效 TXT 但 HTTPS 策略获取失败、联系到的 MX 不支持 STARTTLS 或证书未按策略验证。`testing` 模式正是为了在影响投递前，通过 TLS-RPT 收集部署问题报告。
 
+### 相关主题
+
+* [RFC 8460 TLS-RPT 报告机制](/kb/rfc8460-tls-rpt.html)：MTA-STS 的失败可观测性配套规范
+* [DANE TLSA 在 SMTP 的部署](/kb/dane-tlsa-smtp-deployment.html)：另一种基于 DNSSEC 的传输身份校验路径
+* [邮件 TLS 加密技术栈](/kb/email-tls-encryption-stack.html)：从 STARTTLS 到 MTA-STS 的演进
+* [MTA-STS 记录生成器](/tools/mta-sts-generator.html)：一键生成 \_mta-sts TXT 记录与策略文件，支持 testing/enforce 模式
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc8461-mta-sts.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
