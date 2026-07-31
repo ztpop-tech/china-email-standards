@@ -38,6 +38,13 @@ BEC 不靠技术漏洞，而靠社会工程与邮箱入侵：冒充高管/供应
 3. **带外二次确认**：对"改收款账户""紧急付款"设电话/当面核验；
 4. **邮箱规则审计**：定期核查被植入的转发/隐藏规则（BEC 常用跳板）。
 
+### 相关主题
+
+* [FBI IC3 2023 年度报告](/kb/fbi-ic3-bec-annual-report.html)：BEC 损失 29 亿美元
+* [CISA 防钓鱼 MFA](/kb/cisa-phishing-resistant-mfa.html)：FIDO/WebAuthn 是金标准
+* [CISA BOD 18-01](/kb/cisa-bod-18-01-dmarc.html)：联邦 DMARC p=reject 时间表
+* [M3AAWG 反钓鱼 BCP](/kb/m3aawg-anti-phishing-bcp.html)：全链路防护
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/fbi-ic3-internet-crime-report-2022.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
