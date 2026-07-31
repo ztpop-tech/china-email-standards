@@ -67,6 +67,14 @@ default._bimi.example.com. IN TXT "v=BIMI1; l=https://cdn.example.com/logo.svg; 
 
 BIMI 建立在 DMARC 之上，激励正确的认证对齐和可信任的品牌可视化。由于 Logo 只在邮件通过认证时显示（在某些提供商处还需通过证书验证），视觉伪造变得更加困难，提高了冒充者的攻击门槛。
 
+### 相关主题
+
+* [DMARC 实施指南：从监控到强制执行的完整路径](/kb/dmarc-guide.html)
+* [BIMI 品牌标识消息识别标准解读](/kb/bimi-guide.html)
+* [邮件 DNS 一键诊断](/tools/dns-check.html)：检测 BIMI 及 SPF/DKIM/DMARC/MX/PTR/MTA-STS/TLS-RPT 等十项记录
+
+本文涉及的关键技术领域：邮件认证、DMARC
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/bimi-implementation-guide.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
