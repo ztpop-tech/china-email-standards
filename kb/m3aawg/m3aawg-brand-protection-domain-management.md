@@ -443,6 +443,15 @@ whois -h whois.cnnic.cn example.cn
 
 域名安全管理不是一劳永逸的项目，而是一个持续迭代的过程。随着新 gTLD 的不断开放、攻击手法的演进，品牌的域名保护策略也需要定期审视和更新。将 M3AAWG 推荐的框架落地为具体的管理流程和操作手册，是保护品牌数字资产最有效的方法。
 
+### 📚 相关阅读
+
+* [M3AAWG 停放域名最佳实践——注册商与注册局的域名安全运营](https://ztpop.net/kb/m3aawg-parked-domains-bcp.html)
+* [M3AAWG 疑似域名最佳实践——品牌仿冒域名的识别与处置](https://ztpop.net/kb/m3aawg-look-alike-domains-bcp.html)
+* [M3AAWG Spam Trap 指南——蜜罐邮箱与发送声誉管理](https://ztpop.net/kb/m3aawg-spam-trap-guide.html)
+* [M3AAWG 电子邮件认证推荐最佳实践——SPF/DKIM/DMARC/ARC 配置检查清单](https://ztpop.net/kb/m3aawg-email-auth-best-practices.html)
+* [M3AAWG DKIM 密钥轮换最佳实践](https://ztpop.net/kb/m3aawg-dkim-key-rotation-bcp.html)
+* [域名仿冒深度分析：从邮件欺骗到品牌保护](https://ztpop.net/kb/domain-spoofing-depth-analysis.html)
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/m3aawg-brand-protection-domain-management.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
