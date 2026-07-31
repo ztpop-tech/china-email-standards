@@ -35,6 +35,14 @@ DMARC（RFC 7489）的 `p=reject` 是收件域的**政策意图**，但 RFC 8616
 
 网关在 SMTP 拒收逻辑中应区分"确定性伪造"与"可疑失败"：前者直接 5xx，后者 4xx 延迟并重试计数；同时把认证结论写入 Authentication-Results（RFC 8601）供策略引擎消费。这既压制了 BEC 与钓鱼，又守住合法邮件的送达率。
 
+### 相关主题
+
+* [DMARC 完全指南](/kb/dmarc-guide.html)：p=none / quarantine / reject 渐进路径
+* [SMTP 错误码完全手册](/kb/smtp-error-codes-master-guide.html)：4xx 与 5xx 语义对照
+* [DMARC p=reject 排错](/kb/dmarc-reject-troubleshooting.html)：误拦定位与放行策略
+* [邮件纵深防御](/kb/email-defense-in-depth.html)：多层检测与响应体系
+* [RFC 8601 认证结果头](/kb/rfc8601-authentication-results.html)：认证结论的标准载体
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc8616-email-auth-status-codes.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
