@@ -34,6 +34,14 @@ RFC 8314 解决的是"客户端到服务器"的提交/读取加密；而服务�
 
 信创邮件系统上线验收时，应默认开启 465/993/995 隐式 TLS，并将明文 110/143 端口关闭或仅保留用于内部兼容；证书统一由内部 CA 或受信公有 CA 签发，配合 TLS 1.2+ 与强密码套件。这直接满足等保与信创邮件安全合规中对"传输加密"的硬性要求。
 
+### 相关主题
+
+* [邮件传输层 TLS 加密](/kb/tls-email-encryption.html)：STARTTLS 与隐式 TLS 对比
+* [RFC 8461 MTA-STS](/kb/rfc8461-mta-sts.html)：服务器间强制 TLS
+* [DANE for SMTP](/kb/dane-smtp.html)：基于 DNSSEC 的证书绑定
+* [邮件提交协议（MSA）](/kb/smtp-submission-protocol.html)：587 与 465 的选择
+* [信创邮件安全合规](/kb/xinchuang-email-security-compliance.html)：等保对传输加密的要求
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc8314-implicit-tls-submission.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
