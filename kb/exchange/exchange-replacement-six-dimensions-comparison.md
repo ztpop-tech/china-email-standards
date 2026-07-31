@@ -244,6 +244,24 @@ Exchange 替代不是一个"非此即彼"的二元决策，而是一个需要结
 3. **涉密信息系统（机密级及以上）：**国产邮件系统 + 国密全栈加密 + WORM 归档是基本要求。需重点评估密级管理、私有加密协议和安全审计能力。
 4. **有强 AI 集成需求的创新组织：**国产邮件系统的大模型原生集成能力是 Exchange 当前无法匹配的差异化优势。对于需要智能回复、多语言翻译、涉密内容自动检测的场景，这是选型的决定性加分项。
 
+### 🔗 推荐阅读
+
+[📦 Exchange 替代方案：从评估到实施的全流程指南
+[🔄 Exchange替代全流程指南
+
+Exchange EOL 时间线与信创替代路径选择](/exchange-replacement.html)
+
+覆盖三大替代路径对比、技术评估维度、六阶段迁移框架与常见坑对策的完整选型手册](/exchange-replacement.html)
+[📬 邮件迁移技术指南
+
+IMAP 迁移、PST 导入、DNS 切换与回退预案 — 邮件系统迁移的完整操作手册](/email-migration.html)
+[🛠️ 邮件服务器搭建与选型指南
+
+从域名到DKIM：自建邮件服务器7步搭建教程与配置优化](/mail-server.html)
+[🏗️ 自建邮件系统技术选型
+
+自建邮件系统的架构选择：Postfix vs Exim vs 商业方案全面对比](/mail-server.html)
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/exchange-replacement-six-dimensions-comparison.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
