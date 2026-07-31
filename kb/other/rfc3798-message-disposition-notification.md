@@ -33,6 +33,13 @@ MDN 本就依赖收件方"是否真的打开"。但 Apple Mail Privacy Protectio
 
 信创邮件系统若提供回执，应：① 默认关闭自动 MDN、改为用户确认；② 在隐私开关中允许完全禁用；③ 区分"已送达（DSN）"与"已读（MDN）"，避免把投递成功误报为阅读。这与等保对个人信息保护的要求一致。
 
+### 相关主题
+
+* [SMTP 投递状态通知（DSN）](/kb/smtp-dsn-rfc3461.html)：送达而非已读
+* [RFC 9208 DELIVRTO URI](/kb/rfc9208-deliverto-uri.html)：令牌回调式状态回填
+* [Apple 邮件隐私保护（MPP）](/kb/apple-mail-privacy-protection.html)：打开追踪为何失效
+* [邮件送达追踪](/kb/email-delivery-tracking.html)：多层可观测性
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc3798-message-disposition-notification.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
