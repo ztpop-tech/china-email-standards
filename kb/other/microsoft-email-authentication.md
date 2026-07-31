@@ -53,6 +53,14 @@ Authentication-Results: compauth=fail reason=001
 
 当政企进行信创邮件替换或 Exchange 迁移时，新邮件系统发往 Microsoft 365 的邮件必须满足上述认证要求，否则将被标记为欺骗或进垃圾箱。在 RFC 7208 / RFC 6376 / RFC 7489 / RFC 8617 之上部署邮件安全网关，可统一签发 DKIM、发布 DMARC 策略，并向 EOP 呈现一致的可信身份。
 
+### 相关主题
+
+* [DMARC 完全指南](/kb/dmarc-guide.html)：从 p=none 到 p=reject 的部署路径
+* [SPF 部署与排错](/kb/spf-guide.html)：10 次 DNS 查询上限与 soft/hard fail
+* [DKIM 密钥管理与轮换](/kb/dkim-guide.html)：2048 位密钥与多选择器平滑切换
+* [ARC 认证链 RFC 8617](/kb/arc-authentication-chain-rfc8617.html)：中转场景下的验证继承
+* [M3AAWG 邮件认证最佳实践](/kb/m3aawg-email-auth-best-practices.html)：SPF/DKIM/DMARC/ARC 落地清单
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/microsoft-email-authentication.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
