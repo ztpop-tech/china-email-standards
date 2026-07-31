@@ -36,6 +36,14 @@ RFC 5598 把分散在 SMTP、MIME、IMAP、POP 等文档中的概念整合为一
 
 迁移时按 RFC 5598 的组件逐层对账：MSA 的 587 提交与认证、MTA 的 MX 路由与队列、MDA 的投递与过滤、Message Store 的 IMAP 兼容。任何一层不兼容都会表现为"能发不能收"或"客户端连不上"。以架构视图驱动迁移，比逐个排错高效得多。
 
+### 相关主题
+
+* [企业邮件迁移完全指南](/kb/email-migration-guide.html)：从评估到割接的步骤
+* [SMTP 协议深度解析](/kb/smtp-protocol-deep-dive.html)：MTA 路由与队列机制
+* [邮件提交协议（MSA）](/kb/smtp-submission-protocol.html)：587 端口与认证
+* [信创邮件系统架构设计](/kb/xinchuang-email-architecture-design.html)：国产替代的组件映射
+* [Exchange 到昆仑邮件迁移](/kb/exchange-to-turboex-migration.html)：组件级对照
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc5598-internet-email-architecture.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
