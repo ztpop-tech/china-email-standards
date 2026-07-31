@@ -557,6 +557,14 @@ marketing.example.com.  IN  MX  10 mx.sendcloud.org.
 
 ## 十一、参考文献与延伸阅读
 
+### 📚 相关阅读
+
+* [M3AAWG 电子邮件认证推荐最佳实践——SPF/DKIM/DMARC/ARC 配置检查清单](https://ztpop.net/kb/m3aawg-email-auth-best-practices.html)
+* [M3AAWG DKIM 密钥轮转最佳常见实践——密钥生命周期管理指南](https://ztpop.net/kb/m3aawg-dkim-key-rotation-bcp.html)
+* [DMARC p=reject 后邮件排错流程：从拒收到可送达](https://ztpop.net/kb/dmarc-reject-troubleshooting.html)
+* [邮件认证生态全景：SPF/DKIM/DMARC/ARC/BIMI 协议链全解析](https://ztpop.net/kb/email-authentication-ecosystem.html)
+* [M3AAWG 公共后缀列表（PSL）使用最佳实践](https://ztpop.net/kb/m3aawg-psl-guide.html)
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/m3aawg-sending-domains-bcp.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
