@@ -44,6 +44,14 @@ DANE 的安全完全依赖 DNSSEC：若 DNS 响应可被伪造，攻击者改 TL
 
 受限于 DNSSEC 普及率，DANE for SMTP 在欧美政府邮件中采用较多，商业领域仍在爬坡。对高安全等级的信创邮件（金融、军工、政务），DANE + DNSSEC 是值得投入的"传输层零信任"能力。
 
+### 相关主题
+
+* [DANE for SMTP 概览](/kb/dane-smtp.html)：用 DNS 钉住证书
+* [DANE/TLSA 部署实战](/kb/dane-tlsa-smtp-deployment.html)：记录生成与排错
+* [DANE vs MTA-STS vs TLS-RPT](/kb/smtp-dane-mta-sts-tls-rpt-comparison.html)：三者如何互补
+* [RFC 8461 MTA-STS](/kb/rfc8461-mta-sts.html)：强制加密传输策略
+* [RFC 8460 TLS-RPT](/kb/rfc8460-tls-rpt.html)：加密失败的可视化报告
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc7672-dane-for-smtp.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
