@@ -35,6 +35,14 @@ DMARC（RFC 7489）依赖 SPF 或 DKIM 的对齐结论，而这些结论正来�
 
 在信创邮件替换与 Exchange 迁移中，新邮件系统向外投递时，入站网关应：① 在边界剥离不可信的 Authentication-Results；② 基于本地 SPF/DKIM/DMARC 结论重新写入；③ 将结果暴露给反钓鱼与内容策略引擎。RFC 8601 是这套"认证结论总线"的骨架。
 
+### 相关主题
+
+* [DMARC 完全指南](/kb/dmarc-guide.html)：从 p=none 到 p=reject 的部署路径
+* [SPF 部署与排错](/kb/spf-guide.html)：信封发件人验证与 10 次 DNS 查询上限
+* [DKIM 密钥管理与轮换](/kb/dkim-guide.html)：2048 位密钥与多选择器切换
+* [ARC 认证链 RFC 8617](/kb/arc-authentication-chain-rfc8617.html)：中转场景下的验证继承
+* [Microsoft 365 邮件身份验证机制解析](/kb/microsoft-email-authentication.html)：compauth 复合认证头
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc8601-authentication-results.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
