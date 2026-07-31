@@ -38,6 +38,13 @@ license: CC-BY 4.0
 5. 商业邮件实现 RFC 8058 一键退订；
 6. 持续监控用户举报垃圾率，控制在 0.3% 以下。
 
+### 相关主题
+
+* [M3AAWG 邮件认证最佳实践](/kb/m3aawg-email-auth-best-practices.html)：SPF/DKIM/DMARC/ARC 落地清单
+* [DMARC 完全指南](/kb/dmarc-guide.html)：从 p=none 到 p=reject 的部署路径
+* [NIST SP 800-177r1](/kb/nist-sp800-177r1-trustworthy-email.html)：可信电子邮件分层部署基准
+* [DMARC 聚合报告解析](/kb/dmarc-aggregate-reporting.html)：用 rua 报告持续优化送达
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/m3aawg-gmail-yahoo-bulk-requirements.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
