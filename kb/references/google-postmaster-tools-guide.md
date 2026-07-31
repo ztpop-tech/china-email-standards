@@ -31,6 +31,14 @@ Postmaster Tools 的 DMARC 视图与你自己 rua 聚合报告互补：前者看
 
 政企信创邮件系统上线对外发信后，应第一时间注册 Postmaster Tools 并接入监控，把"投诉率突增""声誉转差"设为告警；配合 Microsoft SNDS 形成双巨头覆盖。这是投递率 SLA 的数据底座。
 
+### 相关主题
+
+* [Google 批量发件方指南 2024](/kb/google-email-sender-guidelines-2024.html)：0.30% 投诉红线
+* [Microsoft SNDS 发件人声誉](/kb/microsoft-snds-sender-reputation.html)：双巨头覆盖
+* [邮件送达率工程](/kb/email-deliverability-engineering.html)：声誉驱动投递
+* [DMARC 聚合报告](/kb/dmarc-aggregate-reporting.html)：rua 报告解读
+* [M3AAWG 域名声誉管理](/kb/m3aawg-domain-reputation-bcp.html)：声誉构成信号
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/google-postmaster-tools-guide.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
