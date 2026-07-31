@@ -34,6 +34,13 @@ RRVS 需要发件方维护"每个联系人首次确认的时间"，并在提交�
 
 在信创邮件替换中，账号同步（如 AD/LDAP 同步）应一并导出"账号创建时间"，供 RRVS 判断；同时建议在邮件安全网关对出站敏感邮件默认附加 RRVS，降低离职/回收账号引发的横向风险。这与 MFA、异常发信监测共同构成账号防盗体系。
 
+### 相关主题
+
+* [邮件账号防盗与 SMTP 劫持检测](/kb/email-account-hijacking-defense.html)：凭据窃取后的实时发现
+* [信创 AD 账号同步指南](/kb/xinchuang-ad-sync-guide.html)：账号生命周期同步
+* [邮件安全威胁全景](/kb/email-security-threats.html)：账号接管与 BEC 分类
+* [DMARC 完全指南](/kb/dmarc-guide.html)：域信任基线
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc8689-rrvs-require-recipient-valid-since.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
