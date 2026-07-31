@@ -30,6 +30,14 @@ Defender 提供攻击模拟训练（Attack Simulation Training），向员工发
 
 信创邮件安全网关的能力规划应覆盖上述维度：VIP 冒充库、look-alike 域识别、基于通信图的异常检测、隔离与警示、以及配套的员工钓鱼演练。以 Defender 为对标，可系统化补齐 BEC 防护短板。
 
+### 相关主题
+
+* [Microsoft 365 邮件身份验证机制](/kb/microsoft-email-authentication.html)：SPF/DKIM/DMARC + compauth
+* [钓鱼邮件防御体系](/kb/phishing-defense.html)：网关 + 意识 + 认证
+* [商业邮件诈骗防御实战](/kb/bec-defense.html)：冒充高管是主战场
+* [M3AAWG 反钓鱼 BCP](/kb/m3aawg-anti-phishing-bcp.html)：全链路协作
+* [邮件纵深防御](/kb/email-defense-in-depth.html)：多层检测体系
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/microsoft-defender-anti-phishing.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
