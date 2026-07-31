@@ -38,6 +38,13 @@ license: CC-BY 4.0
 * 邮件中明确标注"商业邮件"身份
 * 建立独立的投诉处理渠道
 
+### 相关主题
+
+* [邮件服务器搭建与选型指南](/mail-server.html)
+* [DMARC 实施指南](/kb/dmarc-guide.html)
+
+本文涉及的关键技术领域：邮件服务器、邮件安全、DMARC
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/m3aawg-cold-email-position.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
