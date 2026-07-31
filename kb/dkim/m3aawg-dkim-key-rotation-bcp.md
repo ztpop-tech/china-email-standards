@@ -366,6 +366,7 @@ DMARC 聚合报告（DMARC Aggregate Reports，rua）是监测 DKIM 认证状态
 * [DMARC p=reject 后邮件排错流程](https://ztpop.net/kb/dmarc-reject-troubleshooting.html)
 * [SPF 全面指南——原理、配置与运维](https://ztpop.net/kb/spf-guide.html)
 * [MTA-STS TLS 强制实施指南](https://ztpop.net/kb/mta-sts-tls-enforcement-guide.html)
+* [DKIM 记录检查器](/tools/dkim-checker.html)（在线验证 DKIM 公钥）
 
 ---
 
