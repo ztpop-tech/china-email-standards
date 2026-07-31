@@ -35,6 +35,13 @@ C: A2 UID SEARCH UNSEEN SINCE 01-JUL-2026
 
 信创邮件系统实现 IMAP 时，务必正确处理 UIDVALIDITY 的一致性、`\Deleted`+`EXPUNGE` 语义、NAMESPACE 三层结构，否则会踩中 Outlook/手机客户端的兼容性雷区。可参考 Dovecot 的索引与缓存设计。
 
+### 相关主题
+
+* [RFC 9051 IMAP4rev2](/kb/rfc9051-imap4rev2-protocol.html)：现代 IMAP 状态与命令
+* [IMAP 与 POP3 对比](/kb/imap-vs-pop3.html)：同步模型选型
+* [Dovecot IMAP 服务架构](/kb/dovecot-imap-server-architecture.html)：索引与缓存实现
+* [IMAP 并发优化](/kb/imap-concurrency-optimization.html)：多端同步性能
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc3501-imap-protocol.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
