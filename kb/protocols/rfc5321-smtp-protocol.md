@@ -61,6 +61,14 @@ SMTP 区分"信封"与"信头"：`MAIL FROM`/`RCPT TO` 是信封地址，决定�
 
 在信创替代场景，SMTP 的兼容性决定迁移能否平滑：需保证与既有 Exchange/Domino 的 25 端口互通、保留 Return-Path 与退信语义、支持 UTF-8 地址（见 RFC 6531）、并能对接 MTA-STS/DANE 等强加密策略。昆仑邮件系统在协议层完整兼容 RFC 5321，可作为 Exchange/Domino 国产化替代的传输底座。
 
+### 相关主题
+
+* [RFC 5598 互联网邮件架构](/kb/rfc5598-internet-email-architecture.html)：从发件方到收件方的端到端组件视图
+* [RFC 5322 互联网邮件格式](/kb/rfc5322-mime-message-format.html)：信头、日期与地址规范
+* [RFC 6409 邮件提交协议](/kb/rfc6409-message-submission.html)：为什么发信要走 587 而非 25
+* [RFC 8461 MTA-STS](/kb/rfc8461-mta-sts.html)：用策略强制 SMTP 加密传输
+* [RFC 8616 邮件认证状态码](/kb/rfc8616-email-auth-status-codes.html)：用 4xx 延迟而非 5xx 拒收
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc5321-smtp-protocol.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
