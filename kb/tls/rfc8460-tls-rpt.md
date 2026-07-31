@@ -72,6 +72,13 @@ _smtp._tls.example.com. IN TXT "v=TLSRPTv1; rua=https://report.example.com/v1; r
 
 TLS-RPT 是 MTA-STS（RFC 8461）的伴随规范。`policy-type: "sts"` 表示应用了 MTA-STS 策略，`policy-string` 直接携带接收站点的 STS 策略文本；若既无 DANE 也无 MTA-STS 策略，则标记 `no-policy-found`，仅作为连通性心跳。
 
+### 相关主题
+
+* [RFC 8461 MTA-STS](/kb/rfc8461-mta-sts.html)：强制 SMTP 传输加密的策略发布机制
+* [DANE TLSA 在 SMTP 的部署](/kb/dane-tlsa-smtp-deployment.html)：基于 DNSSEC 的传输身份校验
+* [DMARC 聚合报告解析](/kb/dmarc-aggregate-reporting.html)：邮件认证层的可观测性对照
+* [TLS-RPT 记录生成器](/tools/tls-rpt-generator.html)：生成 \_smtp.\_tls 报告记录，配置 rua 报告地址监控 TLS 投递
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/rfc8460-tls-rpt.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
