@@ -52,6 +52,14 @@ VMC 和 CMC 之间的区别直接影响品牌 Logo 在收件箱中的展示方�
 
 如需全面了解，请从第 1.1 节开始查阅 MC Guidelines（标识证书指南），并深入了解第 3.2.16 节和第 3.2.17 节中验证方法的详细信息。
 
+### 相关主题
+
+* [BIMI Logo 更新完整指南：品牌换标后如何保持邮件身份认证](/kb/bimi-logo-update-guide.html)
+* [BIMI lps 标签详解：同一域名显示不同品牌 Logo](/kb/bimi-lps-tag-guide.html)
+* [邮件身份认证生态体系全景解读](/kb/email-authentication-ecosystem.html)
+
+本文涉及的关键技术领域：邮件认证、BIMI、DMARC
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/bimi-certificate-types.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
