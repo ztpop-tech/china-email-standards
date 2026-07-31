@@ -44,6 +44,14 @@ license: CC-BY 4.0
 
 凭据钓鱼 → 邮箱被盗 → BEC 资金诈骗，是邮件威胁链的经典路径。抗钓鱼 MFA 正是掐断"邮箱被盗"这一环性价比最高的单点控制：即便攻击者骗到密码，没有 FIDO 密钥也无法登录。这与 FBI IC3、ENISA 将 MFA 列为账号基线的结论完全一致。在信创邮件替换与 Exchange 迁移中，应把防钓鱼 MFA 作为邮件系统的强制准入条件。
 
+### 相关主题
+
+* [FBI IC3 年度报告解读](/kb/fbi-ic3-bec-annual-report.html)：BEC 仍是损失最高的邮件威胁
+* [邮件账号防盗与 SMTP 劫持检测](/kb/email-account-hijacking-defense.html)：凭据窃取后的实时发现
+* [钓鱼邮件防御体系](/kb/phishing-defense.html)：网关 + 意识 + 认证的纵深组合
+* [DMARC 完全指南](/kb/dmarc-guide.html)：从 p=none 到 p=reject 的部署路径
+* [Microsoft 365 邮件身份验证机制](/kb/microsoft-email-authentication.html)：SPF/DKIM/DMARC 与 compauth
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/cisa-phishing-resistant-mfa.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
