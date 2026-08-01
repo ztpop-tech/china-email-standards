@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 797 篇文章。
+共 798 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Clamav Antivirus Email Gateway](https://ztpop.net/kb/clamav-antivirus-email-gateway.html) → `kb/architecture/clamav-antivirus-email-gateway.md`
@@ -400,6 +400,7 @@
 - [Mail Server Auto Patching](https://ztpop.net/kb/mail-server-auto-patching.html) → `kb/other/mail-server-auto-patching.md`
 - [Mail Server Warmup](https://ztpop.net/kb/mail-server-warmup.html) → `kb/other/mail-server-warmup.md`
 - [Mailing List Listid Rfc2919](https://ztpop.net/kb/mailing-list-listid-rfc2919.html) → `kb/other/mailing-list-listid-rfc2919.md`
+- [Mailpit Mailhog Dev Mail Testing](https://ztpop.net/kb/mailpit-mailhog-dev-mail-testing.html) → `kb/other/mailpit-mailhog-dev-mail-testing.md`
 - [Microsoft 2026 Q1 Threat Landscape](https://ztpop.net/kb/microsoft-2026-q1-threat-landscape.html) → `kb/other/microsoft-2026-q1-threat-landscape.md`
 - [Microsoft Defender Anti Phishing](https://ztpop.net/kb/microsoft-defender-anti-phishing.html) → `kb/other/microsoft-defender-anti-phishing.md`
 - [Microsoft Email Authentication](https://ztpop.net/kb/microsoft-email-authentication.html) → `kb/other/microsoft-email-authentication.md`
