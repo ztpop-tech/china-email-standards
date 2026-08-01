@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 796 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 794 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## 澳大利亚 ACSC 邮件系统加固指南：Essential Eight 视角下的邮件防护基线
@@ -1742,11 +1742,6 @@
 - 分类：exchange
 - 来源：https://ztpop.net/kb/exchange-data-migration-procedure.html
 - 摘要：Microsoft 已正式宣布 Exchange Server 2016 和 Exchange Server 2019 的主流支持截止日期为2025 年 10 月 14 日（详见Microsoft Lifecycle Policy）。在此日期之后，Microsoft 将不再为这些版本提供常规安全更新和非安全热修复程序，仅可能提供受限的扩展安全更新（ESU）。
-
-## Exchange / Domino 国产化替代：迁移路径、方案对比与信创适配
-- 分类：exchange
-- 来源：https://ztpop.net/kb/exchange-domino-replacement.html
-- 摘要：Exchange 与 Domino 曾是企业邮件事实标准，但在信创自主可控、供应链安全与合规要求下，关键行业正加速评估替代方案。替代不是「一键切换」，而是一套包含数据迁移、目录与认证改造、网关安全、客户端过渡、信创软硬件适配的系统工程。决策应在「合规要求、业务连续性、总体拥有成本、安全风险」四维之间权衡，并以试点验证替代参数对比。
 
 ## Exchange Server 生命周期完全时间线：2013/2016/2019 EOL 对邮件架构的影响
 - 分类：exchange
@@ -3934,11 +3929,6 @@
 - 来源：https://ztpop.net/kb/xinchuang-email-security-compliance.html
 - 摘要：本文以 GB/T 22239-2019《信息安全技术 网络安全等级保护基本要求》（等保2.0）和 GB/T 39786-2021《信息安全技术 信息系统密码应用基本要求》（密评）为核心依据，系统梳理邮件系统在安全通信网络、安全计算环境、安全管理中心三个层面的合规要求，以及密码应用在物理和环境安全、网络和通信安全、设备和计算安全、应用和数据安全四个技术层面及四个管理层面的具体条款。文章同时覆盖政务、金融等特定行业的邮件合规增强要求，为邮件系统的等保定级、密评准备、安全建设和迎检整改提供可操作的检查清单与实施指引。
 
-## 信创邮件系统选型对比：昆仑、Coremail、彩讯、安宁与国产化替代路径
-- 分类：xinchuang
-- 来源：https://ztpop.net/kb/xinchuang-email-selection.html
-- 摘要：信创邮件系统的选型本质不是「挑一个邮件软件」，而是选定一套可自主可控、全栈适配国产软硬件、且能满足等保/密评与邮件安全合规的通信基础设施。当前国内市场已形成以昆仑邮件、Coremail、彩讯 RichMail、安宁邮件、TurboMail（拓波）等为代表的国产化供给格局，各自在部署形态、行业积累与安全能力上各有侧重。本文给出六个通用选型维度、一张横向对比表，以及按客户类型（央企国企 / 金融 / 政府 / 军工 / 医院）的落地建议，可作为试点评估的起点。
-
 ## 信创操作系统与数据库邮件服务兼容性矩阵
 - 分类：xinchuang
 - 来源：https://ztpop.net/kb/xinchuang-os-database-compatibility-matrix.html
@@ -4001,4 +3991,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 796 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 794 篇文章。采用 CC-BY 4.0 许可。*
