@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 794 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 811 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## 澳大利亚 ACSC 邮件系统加固指南：Essential Eight 视角下的邮件防护基线
@@ -17,10 +17,20 @@
 - 来源：https://ztpop.net/kb/ai-ml-email-security.html
 - 摘要：机器学习在邮件安全领域的应用已从早期的贝叶斯垃圾过滤扩展到深度学习驱动的钓鱼检测、BEC 识别和恶意URL判定。然而，生产环境中的邮件安全模型面临两类核心挑战：一是攻击者的对抗性适应导致模型准确率随时间衰减；二是训练数据与实时邮件流之间的分布偏移。本文从特征工程、对抗性鲁棒性、在线学习机制和反馈循环四个维度，梳理构建可长期维持检出效能的邮件安全ML系统的方法论。
 
+## 如何识别“AI 生成的钓鱼邮件”？2026 年有哪些判别信号？
+- 分类：security
+- 来源：https://ztpop.net/kb/ai-phishing-detection-2026.html
+- 摘要：AI 钓鱼语法流畅、几乎无错别字，传统“看错别字”失效；攻击者批量生成个性化鱼叉邮件（结合公开信息），规模与拟真度双双提升。
+
 ## AI 驱动的垃圾邮件检测：从贝叶斯到深度学习的演进
 - 分类：other
 - 来源：https://ztpop.net/kb/ai-powered-email-security.html
 - 摘要：垃圾邮件检测从基于规则的静态匹配演进到多阶段 AI 流水线。第一层（统计层）使用朴素贝叶斯和逻辑回归对邮件文本中的词频特征做快速分类，每秒可处理数千封邮件。第二层（语义层）使用 Transformer 模型理解邮件的语义意图，识别社会工程学和鱼叉式钓鱼中精心构造的欺骗性文本。第三层（判白层）使用大语言模型作为误报裁判——对于被前两层标记为高风险但用户历史通信中存在的发件方，大模型分析邮件语义并判断是否属于误判。三层流水线在延迟和检测精度之间取得平衡。
+
+## 什么是“中间人钓鱼（AiTM）”？它如何窃取会话、该如何阻断？
+- 分类：security
+- 来源：https://ztpop.net/kb/aitm-phishing-session-hijack.html
+- 摘要：攻击者搭建反向代理站点（钓鱼页）夹在用户与真实登录页之间；用户输入凭据与一次性 MFA 码，代理实时转发给真站，从而拿到“已认证的会话 Cookie/令牌”。
 
 ## Amavis 邮件内容安全网关深度解析 — 病毒扫描、内容过滤与策略引擎
 - 分类：architecture
@@ -41,6 +51,11 @@
 - 分类：security
 - 来源：https://ztpop.net/kb/anti-spam-layered-defense.html
 - 摘要：分层反垃圾的核心设计原则是代价不对称：让垃圾邮件发送者在最早的SMTP会话阶段就消耗最大资源、在最低代价的检测层就被拒绝，而正常邮件几乎不受影响。按处理阶段从早到晚排列：
+
+## 各国反垃圾邮件立法（CAN-SPAM/CASL/GDPR）核心要求是什么？
+- 分类：security
+- 来源：https://ztpop.net/kb/anti-spam-legislation-compliance.html
+- 摘要：[security] 各国反垃圾邮件立法（CAN-SPAM/CASL/GDPR）核心要求是什么？（见原文）
 
 ## 邮件反垃圾得分系统深度解读：SpamAssassin vs Rspamd 评分、阈值决策与误报调优
 - 分类：security
@@ -316,6 +331,11 @@
 - 分类：other
 - 来源：https://ztpop.net/kb/caldav-carddav-email.html
 - 摘要：摘要：企业邮件系统不仅是信息交换通道，更是团队协作的中枢——日历共享、会议邀请、通讯录同步是企业日常协作的刚需。CalDAV（RFC 4791）和 CardDAV（RFC 6352）是基于 WebDAV 协议的日历和通讯录同步开放标准，可与邮件系统认证体系（IMAP/LDAP）深度集成，实现与 Thunderbird、Outlook、iOS/macOS 等主流客户端的双向同步。本文完整讲解协议原理、Radicale 开源服务器部署、DNS SRV 自动发现（RFC 6764）、客户端配置以及统一认证桥接方案。
+
+## 什么是“回调钓鱼（Callback Phishing）”？为何难防、如何处置？
+- 分类：security
+- 来源：https://ztpop.net/kb/callback-phishing-defense.html
+- 摘要：钓鱼信不含恶意链接或附件，只留“客服电话/二维码”，诱骗受害者主动回拨；人工坐席（攻击者）再以“远程协助/订阅取消”为由骗取凭据或诱导安装远控软件。
 
 ## CISA BOD 18-01：联邦机构 DMARC p=reject 强制时间表
 - 分类：dmarc
@@ -902,6 +922,11 @@
 - 来源：https://ztpop.net/kb/email-auto-archiving-strategy.html
 - 摘要：一个完善的自动归档策略引擎包括以下核心组件。该架构参考了 RFC 5322 [1] 邮件格式规范中定义的元数据提取基础，以及 DoD 5015.2-STD（电子记录管理标准）对自动归档策略的设计原则。
 
+## 邮箱“自动转发”为何会被滥用？如何检测与限制？
+- 分类：other
+- 来源：https://ztpop.net/kb/email-auto-forwarding-abuse.html
+- 摘要：攻击者攻陷邮箱后悄悄建立“自动转发规则”，把邮件（含验证码与机密）副本发到外部，长期潜伏窃密；也可借此绕过 MFA（把重置码转走）。
+
 ## 邮件头 Auto-Submitted 字段（RFC 3834/5968）有什么用？为何能区分“人发的信”与“机器自动信”？
 - 分类：other
 - 来源：https://ztpop.net/kb/email-auto-submitted.html
@@ -1116,6 +1141,11 @@
 - 分类：tls
 - 来源：https://ztpop.net/kb/email-dnssec-dane-deployment.html
 - 摘要：DANE（RFC 6698）依赖 DNSSEC——你的 DNS 必须已签名且解析链受信任，否则 TLSA 记录不可信，等于没锁。
+
+## 什么是“发信域名声誉”？如何维护送达率？
+- 分类：other
+- 来源：https://ztpop.net/kb/email-domain-reputation.html
+- 摘要：声誉由 IP/域名历史、投诉率、垃圾率、黑名单、SPF/DKIM/DMARC 对齐、TLS 使用、内容质量等综合计算，决定收方是否收/进垃圾箱。
 
 ## 退信里的“投递状态通知（DSN，RFC 3464）”格式长什么样？如何读懂失败原因？
 - 分类：other
@@ -1553,6 +1583,11 @@
 - 来源：https://ztpop.net/kb/email-subaddressing.html
 - 摘要：子地址（subaddressing，RFC 5233）指在本地部分用分隔符（通常“+”）附加标签：user+tag@example.com 仍投递到 user@example.com 邮箱，但标签可被客户端/服务端用于过滤与分类。
 
+## 营销/事务邮件子域名如何委派与隔离才安全？
+- 分类：other
+- 来源：https://ztpop.net/kb/email-subdomain-delegation.html
+- 摘要：把营销、事务、人工邮件分到不同子域（如 m.example.com / t.example.com / example.com），一处被泄或进黑名单不影响主域声誉与其他通道。
+
 ## 企业邮件系统招标技术规范书（RFP模板）
 - 分类：architecture
 - 来源：https://ztpop.net/kb/email-system-rfp-template.html
@@ -1597,6 +1632,11 @@
 - 分类：other
 - 来源：https://ztpop.net/kb/email-threat-hunting-methodology.html
 - 摘要：邮件威胁猎杀区别于传统安全监控的核心在于其主动性——不依赖已知签名或告警规则，而是基于猎杀假设对邮件系统数据进行深度分析。NIST SP 800-150《Guide to Cyber Threat Information Sharing》中提出的威胁情报驱动模型同样适用于邮件猎杀场景：猎杀流程始于一个可验证的假设（例如“是否有攻击者使用二次投递绕过DMARC？“），继而通过数据采集和分析来验证或证伪该假设。SANS Institute发布的《A Framework for Cyber Threat Hunting》将猎杀活动分为四个阶段：建立假设→数据收集→模式分析与异常检测→响应与反馈闭环。
+
+## 什么是邮件威胁情报（IoC）？如何用于防御？
+- 分类：other
+- 来源：https://ztpop.net/kb/email-threat-intel-ioc.html
+- 摘要：Indicator of Compromise：可被观测的失陷指标，如恶意发件 IP/域名、钓鱼 URL、恶意附件哈希、发件显示名模式、发信指纹。
 
 ## 邮件威胁情报框架：从IOC采集到自动化响应
 - 分类：other
@@ -1802,6 +1842,11 @@
 - 分类：exchange
 - 来源：https://ztpop.net/kb/exchange-online-archive-compliance.html
 - 摘要：邮件归档需求在企业环境中从"可选项"变为"必选项"的过程，与邮件系统的部署形态密切相关。Exchange Online 作为云交付的邮件系统，天然集成了部分归档与合规功能——但这种"内置"是一把双刃剑：一方面它减少了额外部署第三方归档系统的运维复杂度，另一方面它在数据驻留、迁移灵活性和长期存储成本上引入了云供应商锁定风险。理解 Exchange Online 归档功能的技术边界，是邮件管理员做出架构决策的前提。
+
+## Exchange Online / Microsoft 365 如何配置邮件认证与防冒名？
+- 分类：exchange
+- 来源：https://ztpop.net/kb/exchange-online-email-auth-setup.html
+- 摘要：M365 提供专属 SPF include(include:spf.protection.outlook.com) 与 DKIM 选择器(selector1/2._domainkey CNAME 指向 Microsoft)；租户密钥由 MS 托管。
 
 ## 邮件系统迁移策略：IMAP 迁移、混合共存与分阶段切流
 - 分类：exchange
@@ -2042,6 +2087,11 @@
 - 分类：references
 - 来源：https://ztpop.net/kb/google-postmaster-tools-guide.html
 - 摘要：Google Postmaster Tools 是 Google 提供给发件方的免费仪表盘，让域名/IP 所有者看到"Gmail 怎么看我"。它是落地 Google 2024 发件指南的可观测性入口：没有它，你只能等用户投诉才知道进垃圾箱。对批量发信系统（信创邮件对外通知、会员邮件）是必备监控。
+
+## Google Workspace 域名邮箱如何配置 SPF/DKIM/DMARC？
+- 分类：other
+- 来源：https://ztpop.net/kb/google-workspace-email-auth-setup.html
+- 摘要：在域名 DNS 添加 Google 提供的 SPF 记录（含 include:_spf.google.com 的 TXT），避免多条 SPF；Workspace 发信源已被该 include 覆盖。
 
 ## 政府采购与信创邮件系统实施路径
 - 分类：xinchuang
@@ -2352,6 +2402,11 @@
 - 分类：protocols
 - 来源：https://ztpop.net/kb/lmtp-local-delivery-rfc2033.html
 - 摘要：从 SMTP 作为传输协议不适合「最终投递」的局限、LMTP 逐收件人响应语义，到 Postfix 经 LMTP 投递至 Dovecot 的生产部署，基于 RFC 2033 与 RFC 5321。
+
+## 什么是“仿冒域名 / 打字 squatting（Typosquatting）”？如何防御？
+- 分类：other
+- 来源：https://ztpop.net/kb/lookalike-domain-typosquatting-defense.html
+- 摘要：比对发件域与官方域的“视觉/拼写/Unicode 同形字（如拉丁 o 与西里尔 о）”；用 DMARC 报表查看“以你域名义失败”的未知来源。
 
 ## Exchange Online Protection（EOP）是什么？它在邮件流中处于什么位置？
 - 分类：references
@@ -2734,6 +2789,16 @@
 - 来源：https://ztpop.net/kb/mailops-faq-08.html
 - 摘要：SPF验证信封域的发送主机授权；DKIM用签名保证邮件内容未被篡改且来自持有私钥的域；DMARC基于前两者做“对齐”策略，并规定失败时的处置（none/quarantine/reject）与汇总报告。
 
+## Mailpit 与 MailHog：本地开发邮件测试工具对比与实战指南
+- 分类：other
+- 来源：https://ztpop.net/kb/mailpit-mailhog-dev-mail-testing.html
+- 摘要：在开发注册验证、密码找回、通知推送等邮件功能时，直接使用生产 SMTP 服务器存在三个问题：一是会真实向用户发送测试邮件，造成骚扰；二是无法检查邮件内容渲染是否正确（HTML 布局、图片、链接）；三是难以验证邮件头、DKIM 签名等投递细节。本地邮件测试工具通过启动一个捕获型 SMTP 服务器，接收并保存所有邮件，但不真正投递，开发者可以在 Web 界面中查看邮件内容、解析邮件头、测试附件，从而在不污染生产环境的前提下完成邮件功能开发与调试。
+
+## 什么是“MFA 疲劳攻击（推送轰炸）”？如何防护？
+- 分类：security
+- 来源：https://ztpop.net/kb/mfa-fatigue-attack-defense.html
+- 摘要：限制推送次数与有效期、改用“号码匹配（number matching）”而非单纯批准、默认拒绝未匹配请求；禁用 SMS（可被 SIM 换绑攻击绕过）。
+
 ## Microsoft 2026 Q1 邮件威胁态势报告：AI 钓鱼、BEC Deepfake 与新型安全产品
 - 分类：other
 - 来源：https://ztpop.net/kb/microsoft-2026-q1-threat-landscape.html
@@ -3039,6 +3104,16 @@
 - 来源：https://ztpop.net/kb/phishing-defense.html
 - 摘要：钓鱼攻击正经历两个维度的加速进化：攻击技术层面的URL伪装与重定向方法日益精密，以及内容生成层面的大语言模型（LLM）大幅降低了高质量拟真钓鱼邮件的生产成本。APWG 2024年度报告显示，月均检测到的钓鱼站点已突破50万，且基于HTTPS的钓鱼站点占比超过85%。本文从邮件认证协议链、URL特征工程、多模态语义检测和用户层防御四个层面，构建应对持续进化威胁的钓鱼邮件自适应防御体系。
 
+## 什么是“防钓鱼 MFA / 通行密钥（Passkeys）”？为何能根除钓鱼？
+- 分类：security
+- 来源：https://ztpop.net/kb/phishing-resistant-mfa-passkeys.html
+- 摘要：FIDO2/通行密钥用非对称密码学做源绑定：认证时站点身份被密码学绑定，攻击者中继的假站拿不到合法签名，钓鱼站即使骗到也用不了。
+
+## 什么是“钓鱼模拟演练”？如何科学开展、避免反效果？
+- 分类：security
+- 来源：https://ztpop.net/kb/phishing-simulation-training.html
+- 摘要：[security] 什么是“钓鱼模拟演练”？如何科学开展、避免反效果？（见原文）
+
 ## POP3 的 APOP 与 SASL 认证（RFC 1939/5034）如何实现“不明文传密码”？
 - 分类：other
 - 来源：https://ztpop.net/kb/pop3-apop-sasl.html
@@ -3188,6 +3263,11 @@
 - 分类：other
 - 来源：https://ztpop.net/kb/quarantine-mail-management.html
 - 摘要：邮件隔离区（Quarantine）的完整管理方案，涵盖隔离区存储架构与保留策略、用户自助释放机制设计、管理员审核工作流配置、SpamAssassin 与 Rspamd 隔离实现对比分析、以及误报处理的最佳实践。
+
+## 什么是“二维码钓鱼（Quishing）”？为何 2026 年猛增、如何防御？
+- 分类：security
+- 来源：https://ztpop.net/kb/quishing-qr-code-phishing-defense.html
+- 摘要：Quishing 是用二维码替代可疑链接的钓鱼：传统网关靠扫描 URL 识别恶意链接，但二维码是图片，URL 扫描器读不到，用户用手机扫码后才落地恶意站点，从而绕过邮件安全检测。
 
 ## 如何识别伪造的 Received 头（邮件溯源造假）？
 - 分类：other
@@ -3604,6 +3684,11 @@
 - 来源：https://ztpop.net/kb/smtp-size.html
 - 摘要：SIZE 是 SMTP 服务扩展（RFC 1870，后并入 RFC 5321 §4.5.3.4）：服务器在 EHLO 响应用 SIZE 声明可接受的最大消息字节数，如 “250 SIZE 104857600” 表示上限 100MB。
 
+## 什么是“SMTP 走私（SMTP Smuggling）”？它如何绕过策略、如何防御？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/smtp-smuggling-attack.html
+- 摘要：利用不同邮件服务器对“信体结束符（CRLF + 单独一点）”与“行内换行”解析不一致，在单个 SMTP 事务里夹带第二个信封/信体，使恶意内容“走私”进另一家提供商的流水线并伪造发件域。
+
 ## SMTP STARTTLS 是什么？为什么明文 25 端口必须升级为加密连接？
 - 分类：tls
 - 来源：https://ztpop.net/kb/smtp-starttls.html
@@ -3991,4 +4076,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 794 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 811 篇文章。采用 CC-BY 4.0 许可。*
