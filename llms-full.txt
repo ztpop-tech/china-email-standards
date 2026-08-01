@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 811 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 819 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## 澳大利亚 ACSC 邮件系统加固指南：Essential Eight 视角下的邮件防护基线
@@ -742,6 +742,11 @@
 - 来源：https://ztpop.net/kb/dnsbl-realtime-blacklist.html
 - 摘要：DNSBL（DNS-based Blackhole List，RFC 5782 定义查询协议，RFC 6471 述运维考量）把已知垃圾源 IP/域名编入 DNS 区域，邮件系统通过对 *.dnsbl.example 做 A 查询实时判黑；返回 127.0.0.x 即命中。
 
+## DNSBL / 实时黑名单（如 Spamhaus）是怎么判定的，误列后如何申诉解封？
+- 分类：security
+- 来源：https://ztpop.net/kb/dnsbl-realtime-blocklist-spamhaus.html
+- 摘要：接收方在 SMTP 阶段把对端 IP 反转后拼到 DNSBL 域名下做 A 记录查询（如 1.2.3.4 → 4.3.2.1.zen.spamhaus.org）。若返回命中 IP，则该发信 IP 被列入。列表由运营方基于退信、陷阱邮箱、僵尸网络观测等信号动态维护，是反垃圾的第一道快速过滤器。
+
 ## MX 记录如何决定入站邮件路由？优先级数值怎么算？
 - 分类：references
 - 来源：https://ztpop.net/kb/dnsmail-faq-01.html
@@ -1186,6 +1191,11 @@
 - 分类：other
 - 来源：https://ztpop.net/kb/email-forensics-header-analysis.html
 - 摘要：路由追踪类字段（Received）的可信度最高，因为它们是在传输过程中由第三方 MTA 写入的。内容声明类字段可被 MUA 任意构造，必须通过路由追踪字段交叉验证。
+
+## 邮件安全网关爆出远程代码执行（RCE）类 CVE 时，应如何应急缓解？
+- 分类：other
+- 来源：https://ztpop.net/kb/email-gateway-rce-cve-mitigation.html
+- 摘要：确认 CVE 影响版本与触发面（是否需要特制附件/特定协议）。若漏洞由附件解析触发，可临时在网关层强制拦截该类型附件或启用沙箱先隔离再投递；若为管理端口暴露，立即在网络层限制来源 IP 并关闭公网访问。同时订阅厂商安全公告获取正式补丁时间。
 
 ## 邮件系统高可用架构设计
 - 分类：architecture
@@ -1848,6 +1858,11 @@
 - 来源：https://ztpop.net/kb/exchange-online-email-auth-setup.html
 - 摘要：M365 提供专属 SPF include(include:spf.protection.outlook.com) 与 DKIM 选择器(selector1/2._domainkey CNAME 指向 Microsoft)；租户密钥由 MS 托管。
 
+## Exchange Online 的邮件信头里哪些字段最能帮助追溯来源与防钓鱼？
+- 分类：exchange
+- 来源：https://ztpop.net/kb/exchange-online-header-trace.html
+- 摘要：Authentication-Results 由 Exchange 写入，列出 SPF/DKIM/DMARC 的 pass/fail 与对齐结果；compauth 与 reason 进一步标注复合认证结论。钓鱼邮件常在此呈现 dmarc=fail 或 spf=softfail，是优先排查信号。
+
 ## 邮件系统迁移策略：IMAP 迁移、混合共存与分阶段切流
 - 分类：exchange
 - 来源：https://ztpop.net/kb/exchange-online-migration-strategy.html
@@ -2202,6 +2217,11 @@
 - 分类：protocols
 - 来源：https://ztpop.net/kb/imap-id-rfc2971.html
 - 摘要：ID 命令让客户端向服务器自报一组“键值”身份（name、version、os、vendor 等），服务器据以识别“哪个客户端版本”在连。
+
+## IMAP IDLE 如何实现新邮件实时推送，相比轮询有什么优势？
+- 分类：other
+- 来源：https://ztpop.net/kb/imap-idle-push-notify.html
+- 摘要：客户端在选中邮箱后发送IDLE命令并保持连接打开；当服务器有新邮件、过期或标志变化时，主动下发EXISTS/RECENT/FETCH等未经请求的响应，客户端无需反复发 NOOP 或轮询。客户端可用DONE结束 IDLE。
 
 ## IMAP IDLE 实时推送深度解析 — RFC 2177：从轮询到服务端推送的邮件到达通知
 - 分类：protocols
@@ -2714,6 +2734,11 @@
 - 来源：https://ztpop.net/kb/mail-flow-architecture.html
 - 摘要：摘要：邮件流（Mail Flow）是邮件系统的核心运转机制，定义了邮件从发件人到收件人的完整传输路径。邮件流架构设计直接影响系统可靠性、安全性和弹性伸缩能力。本文从 SMTP 协议基础出发，系统阐述五种部署模式、入站与出站邮件流路径、连接器配置策略、智能主机选择方法及 MX 路由策略，为架构师提供可直接参照的邮件流设计框架。
 
+## 如何对邮件流（mail flow）做可观测性监控，及时发现投递异常与丢信？
+- 分类：operations
+- 来源：https://ztpop.net/kb/mail-flow-monitoring-observability.html
+- 摘要：①投递延迟（从提交到远端 MX 接受的中位/尾延迟）；②队列积压（待发/重试队列长度与停留时长）；③退信率与退信类别分布（硬退/软退、按 SMTP 状态码归类）；④认证失败率（SPF/DKIM/DMARC 失败占比）。这四类指标共同构成邮件流健康度基线。
+
 ## 邮件安全网关（Mail Gateway）如何部署？它处在邮件流的什么位置？
 - 分类：other
 - 来源：https://ztpop.net/kb/mail-gateway-deploy.html
@@ -3019,6 +3044,11 @@
 - 来源：https://ztpop.net/kb/nist-sp80053-email-control-mapping.html
 - 摘要：NIST SP 800-53（Security and Privacy Controls for Information Systems and Organizations，Rev. 5，2020年发布）是美国国家标准与技术研究院制定的信息系统安全与隐私控制标准。该标准依据FISMA（Federal Information Security Modernization Act of 2014）的要求，为联邦信息系统提供了一套全面的安全控制目录，同时也被全球各行业广泛采纳作为安全合规的参考框架。
 
+## 邮件 API 发送为什么推荐使用 OAuth 2.0 客户端凭据（Client Credentials）而非 SMTP 基本认证？
+- 分类：security
+- 来源：https://ztpop.net/kb/oauth2-client-credential-email-api.html
+- 摘要：SMTP 基本认证（用户名+密码明文或 Base64）长期是凭证泄露、密码喷洒与自动转发滥用的重灾区。Microsoft 365 已于 2022-10 起默认关闭所有租户的 SMTP 基本认证；Google 自 2024-09 起对新应用强制 OAuth。基本认证的口令一旦泄漏即等同于账户完全接管，且无设备/应用绑定与可吊销的细粒度授权。
+
 ## SMTP/IMAP 的 OAuth 2.0 认证（RFC 7628，XOAUTH2）如何替代明文密码？
 - 分类：protocols
 - 来源：https://ztpop.net/kb/oauth2-smtp-imap-auth.html
@@ -3223,6 +3253,11 @@
 - 分类：architecture
 - 来源：https://ztpop.net/kb/postfix-performance-tuning.html
 - 摘要：Postfix 采用事件驱动的多进程架构，master 进程按 master.cf 配置派生子进程处理各类邮件任务。smtpd 守护进程负责接收入站 SMTP 连接，cleanup 进程将邮件写入队列，qmgr 进程从队列中取出邮件并调度投递，smtp 进程执行出站投递。这种职责分离的设计使每个组件可独立扩展：增加 smtpd 的 maxproc 提升入站接收能力，增加 smtp 的 maxproc 提升出站并发投递能力。性能调优的核心目标是平衡各环节的处理能力。
+
+## Postfix 队列积压时如何安全排查与清理，而不误删正常邮件？
+- 分类：operations
+- 来源：https://ztpop.net/kb/postfix-queue-management.html
+- 摘要：用mailq或postqueue -p查看待发队列与延迟原因；postsuper -h QID可将可疑邮件移入 hold 队列暂停投递以便人工审查，postsuper -H QID释放。切忌一上来就清空队列。
 
 ## Postfix 队列监控与管理：qshape/mailq/postsuper 详解
 - 分类：operations
@@ -3664,6 +3699,11 @@
 - 来源：https://ztpop.net/kb/smtp-rate-limiting.html
 - 摘要：速率限制指 MTA 对“单位时间内的连接数、每连接邮件数、每发件域出信量”设上限，避免单点瞬间海量发信触发对方限流或黑名单。
 
+## SMTP 中继（relay）与邮件网关（gateway）有什么区别，该怎么选？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/smtp-relay-vs-gateway.html
+- 摘要：SMTP 中继的核心职责是把邮件「可靠地转发到下一跳」，专注队列、重试、路由与投递保证，通常不含深度安全检测。邮件安全网关则在流量路径上做反垃圾、反病毒、DLP、防钓鱼与认证校验，是安全策略的执行点，往往串接在中继之前或作为边界 MTA。
+
 ## REQUIRETLS（RFC 8689）是什么？它如何强制端到端邮件加密、防止降级？
 - 分类：tls
 - 来源：https://ztpop.net/kb/smtp-requiretls.html
@@ -4076,4 +4116,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 811 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 819 篇文章。采用 CC-BY 4.0 许可。*
