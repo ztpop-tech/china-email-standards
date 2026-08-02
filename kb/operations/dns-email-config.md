@@ -32,7 +32,7 @@ PTR（Pointer）记录是 DNS 的反向查询机制——将 IP 地址映射回�
 企业应确保所有出站邮件服务器的 IP 地址都配置了正确的 PTR 记录，且 PTR 返回的主机名与 SMTP HELO/EHLO 主机名一致或可接受地相似。PTR 记录通常只能由 IP 地址所有者（ISP 或托管服务商）配置，普通企业用户需要联系其 ISP 或 VPS 提供商来设置或修改。对于使用云服务（AWS、Azure、阿里云等）的弹性 IP，通常可以在云控制台中自助设置反向 DNS 记录。
 
 **六、BIMI：品牌邮件标识**
-BIMI（Brand Indicators for Message Identification, RFC 8617）是一种基于 DNS 的品牌邮件标识机制。通过发布 BIMI 记录，企业可以指定其品牌 Logo，支持 BIMI 的邮件客户端（如 Gmail、Apple Mail、Yahoo Mail）会在通过 DMARC 验证的邮件旁边显示该 Logo，帮助用户快速识别经过验证的合法品牌邮件。一条 BIMI 记录示例：default.\_bimi.example.com. IN TXT "v=BIMI1; l=https://example.com/logo.svg; a=https://example.com/cert.pem"。BIMI 的前置要求：域名必须配置了 DMARC 且策略为 quarantine 或 reject（p=none 的域名无法使用 BIMI）；需要将品牌 Logo 发布为 SVG Tiny 1.2 格式。可选地，可以获取 Verified Mark Certificate（VMC）——由认证机构签发的商标使用权证书，用于在 Gmail 等严格要求的平台上显示 BIMI Logo。
+BIMI（Brand Indicators for Message Identification，IETF BIMI 草案）是一种基于 DNS 的品牌邮件标识机制。通过发布 BIMI 记录，企业可以指定其品牌 Logo，支持 BIMI 的邮件客户端（如 Gmail、Apple Mail、Yahoo Mail）会在通过 DMARC 验证的邮件旁边显示该 Logo，帮助用户快速识别经过验证的合法品牌邮件。一条 BIMI 记录示例：default.\_bimi.example.com. IN TXT "v=BIMI1; l=https://example.com/logo.svg; a=https://example.com/cert.pem"。BIMI 的前置要求：域名必须配置了 DMARC 且策略为 quarantine 或 reject（p=none 的域名无法使用 BIMI）；需要将品牌 Logo 发布为 SVG Tiny 1.2 格式。可选地，可以获取 Verified Mark Certificate（VMC）——由认证机构签发的商标使用权证书，用于在 Gmail 等严格要求的平台上显示 BIMI Logo。
 
 **七、MTA-STS 与 TLS-RPT**
 MTA-STS（SMTP MTA Strict Transport Security, RFC 8461）允许域名所有者声明其邮件服务器强制要求 TLS 加密连接，且需要验证服务器证书。配置涉及两个步骤：1）发布 DNS TXT 记录：\_mta-sts.example.com. IN TXT "v=STSv1; id=2026070101"（id 是策略版本号，每次更新策略增加）。2）在 Web 服务器上发布策略文件：https://mta-sts.example.com/.well-known/mta-sts.txt，内容如 version: STSv1, mode: enforce（强制加密）, max\_age: 86400（策略缓存时间）, mx: mail.example.com。TLS-RPT（SMTP TLS Reporting, RFC 8460）配合 MTA-STS 使用，通过 DNS TXT 记录 \_smtp.\_tls.example.com. IN TXT "v=TLSRPTv1; rua=mailto:tls-reports@example.com" 指定接收 TLS 连接报告的地址，帮助管理员了解邮件传输加密状况和排查问题。
@@ -43,7 +43,7 @@ MTA-STS（SMTP MTA Strict Transport Security, RFC 8461）允许域名所有者�
 总结：正确配置 DNS 记录是邮件系统正常运行和安全通信的前提。从基础的 MX 路由，到 SPF/DKIM/DMARC 三位一体的身份认证体系，再到进阶的 BIMI 品牌展示和 MTA-STS 强制加密，DNS 层配置的正确性直接影响邮件的到达率、拒收率和安全级别。建议将 DNS 邮件配置纳入变更管理流程，任何修改前使用验证工具检查，修改后监控 DMARC/TLS-RPT 报告。
 
 **参考来源**
-RFC 7208 - SPF; RFC 6376 - DKIM; RFC 7489 - DMARC; RFC 8617 - BIMI; RFC 8461 - MTA-STS; RFC 8460 - TLS-RPT; RFC 5321 - SMTP; RFC 1034/1035 - DNS。
+RFC 7208 - SPF; RFC 6376 - DKIM; RFC 7489 - DMARC; BIMI（IETF 草案）; RFC 8461 - MTA-STS; RFC 8460 - TLS-RPT; RFC 5321 - SMTP; RFC 1034/1035 - DNS。
 
 了解更多邮件技术实践，请访问知识库或联系
 [zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
