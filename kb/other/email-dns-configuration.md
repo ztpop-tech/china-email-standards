@@ -228,7 +228,7 @@ _smtp._tls.example.com.  3600  IN  TXT  "v=TLSRPTv1; rua=mailto:tls-reports@exam
 dig TXT _smtp._tls.example.com +short
 ```
 
-## 9. BIMI — 品牌邮件标识（RFC 8617）
+## 9. BIMI — 品牌邮件标识（IETF BIMI 草案）
 
 BIMI 记录发布在
 `default._bimi.`
@@ -395,7 +395,7 @@ $ python3 dns-mail-check.py example.com
 6. RFC 7489 — Domain-based Message Authentication, Reporting, and Conformance (DMARC) (IETF, March 2015). Historic. 第 6.3 节 \_dmarc DNS TXT 记录语法，第 7.2 节聚合报告 rua 地址.
 7. RFC 8461 — SMTP MTA Strict Transport Security (MTA-STS) (IETF, September 2018). 第 5 节 \_mta-sts DNS TXT 记录，第 3.2 节 .well-known/mta-sts.txt Policy 文件.
 8. RFC 8460 — SMTP TLS Reporting (IETF, September 2018). 第 3.1 节 \_smtp.\_tls DNS TXT 记录声明.
-9. RFC 8617 — The Authenticated Received Chain (ARC) Protocol & BIMI (IETF, July 2019). BIMI 第 4 节 default.\_bimi TXT 记录语法及 l= / a= 标签定义.
+9. IETF BIMI 草案（draft-brand-indicators-for-message-identification）— BIMI 第 4 节 default.\_bimi TXT 记录语法及 l= / a= 标签定义.
 10. GB/T 37002-2018 — 信息安全技术 电子邮件系统安全技术要求. 第 6.2.1 节网络架构安全要求引用 DNS 配置为邮件系统安全基线的组成部分.
 
 ---
