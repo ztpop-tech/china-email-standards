@@ -41,7 +41,7 @@ license: CC-BY 4.0
 | Submission | RFC 6409 | 邮件提交协议 |
 | SPF | RFC 7208 | Sender Policy Framework |
 | DKIM | RFC 6376 | DomainKeys Identified Mail |
-| DMARC | RFC 7489 | 域名消息认证、报告与一致性 |
+| DMARC | RFC 9989 | 域名消息认证、报告与一致性（RFC 9989 于 2026-05 发布，替代 RFC 7489/9091；报告拆分为 RFC 9990 聚合报告、RFC 9991 失败报告） |
 | ARC | RFC 8617 | 认证接收链 |
 | BIMI | RFC 草案（IETF BIMI WG） | 邮件品牌标识 |
 | S/MIME 3.2 | RFC 5751/8551 | 安全 MIME |
