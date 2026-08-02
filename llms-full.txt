@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 819 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 822 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## 澳大利亚 ACSC 邮件系统加固指南：Essential Eight 视角下的邮件防护基线
@@ -275,7 +275,7 @@
 ## BIMI 品牌邮件标识深度解析 — DMARC 前置条件、BIMI TXT/PSD 记录与 VMC 证书全链路
 - 分类：bimi
 - 来源：https://ztpop.net/kb/bimi-guide.html
-- 摘要：BIMI（Brand Indicators for Message Identification）是 IETF RFC 8617 定义的一套协议标准，目标是让邮件发送方在经过认证后，其品牌 Logo 能够显示在收件人的邮件客户端界面中。BIMI 不是一套孤立的协议——它建立在一整套邮件身份认证基础设施之上：发送域必须先通过 DMARC 的严格策略（p=quarantine或p=reject），再通过 DNS 发布 BIMI TXT 记录和可选的 VMC（Verified Mark Certificate）证书，MUA（Mail User Agent）在验证全部通过后，最终在收件箱中展示品牌标识
+- 摘要：BIMI（Brand Indicators for Message Identification）是 IETF 草案 draft-brand-indicators-for-message-identification 定义的协议规范，目标是让邮件发送方在经过认证后，其品牌 Logo 能够显示在收件人的邮件客户端界面中。BIMI 不是一套孤立的协议——它建立在一整套邮件身份认证基础设施之上：发送域必须先通过 DMARC 的严格策略（p=quarantine或p=reject），再通过 DNS 发布 BIMI TXT 记录和可选的 VMC（Verified Mark Certificate）证书，
 
 ## BIMI 品牌标识实施指南：四步部署完整流程（翻译）
 - 分类：bimi
@@ -287,10 +287,10 @@
 - 来源：https://ztpop.net/kb/bimi-logo-update-guide.html
 - 摘要：原文：BIMI Group Blog "How to Update Your BIMI Logo" (March 3, 2026) · 翻译：ztpop.net 知识库
 
-## BIMI（RFC 8617）是什么？品牌徽标如何随已认证邮件显示？
+## BIMI（IETF 草案 draft-brand-indicators-for-message-identification）是什么？品牌徽标如何随已认证邮件显示？
 - 分类：bimi
 - 来源：https://ztpop.net/kb/bimi-logo.html
-- 摘要：BIMI（Brand Indicators for Message Identification，RFC 8617）让通过严格 DMARC（p=quarantine/reject 且对齐通过）的发件方，在支持的邮箱客户端中于发件人旁展示品牌徽标（logo），增强可信度与品牌识别。
+- 摘要：BIMI（Brand Indicators for Message Identification（IETF BIMI 草案））让通过严格 DMARC（p=quarantine/reject 且对齐通过）的发件方，在支持的邮箱客户端中于发件人旁展示品牌徽标（logo），增强可信度与品牌识别。
 
 ## BIMI lps 标签解析：如何为一个域名使用多个不同 Logo
 - 分类：bimi
@@ -576,6 +576,11 @@
 - 分类：dkim
 - 来源：https://ztpop.net/kb/dkim2-async-bounce-verp.html
 - 摘要：原文：Word to the Wise / steve · 2026-04-27 | 翻译：ztpop.net 邮件技术知识库 · 2026-07-30
+
+## DKIM2 监管链签名机制深度解读：链式托管、重放防护与 DSN 安全
+- 分类：dkim
+- 来源：https://ztpop.net/kb/dkim2-chain-of-custody.html
+- 摘要：DKIM2 是邮件认证协议十余年来最重要的一次变革。它的设计目标不是修补 DKIM1（RFC 6376）的局部缺陷，而是重构「谁处理过这封邮件、各自做了什么修改」的证明体系。在 DKIM1 体系下，邮件列表追加退订尾注、安全网关改写链接、转发服务修改 Return-Path，都会破坏原始 DKIM 签名，进而导致 DMARC（RFC 7489）评估失败——这是 2010 年代以来邮件投递领域最棘手的结构性问题。ARC（RFC 8617）曾试图用「中间人声明认证快照」的方式缓解，但其信任模型要求收件方信任中间人的声明，实际部署效果不佳，IETF DMARC 工作组已在起草废弃 ARC 的文档。D
 
 ## DKIM2：它对邮件的未来意味着什么？
 - 分类：dkim
@@ -962,7 +967,7 @@
 - 来源：https://ztpop.net/kb/email-backup-strategies.html
 - 摘要：摘要：邮件系统的备份策略是企业 IT 基础设施中最基础也最容易被忽视的环节之一。备份不同于归档——备份面向灾难恢复，归档面向合规留存（详见本站邮件归档技术详解）。本文系统梳理邮件系统备份的核心方法论、Maildir 与 mbox 格式对备份策略的影响、数据库与配置文件的备份方案、自动化脚本设计与异地容灾架构，最后给出可操作的恢复测试验证流程。
 
-## BIMI（品牌标识邮件标识，RFC 7489 引用）如何让收件箱显示“品牌 Logo”？它依赖什么前提？
+## BIMI（品牌标识邮件标识，IETF BIMI 草案）如何让收件箱显示“品牌 Logo”？它依赖什么前提？
 - 分类：bimi
 - 来源：https://ztpop.net/kb/email-bimi-brand.html
 - 摘要：BIMI（Brand Indicators for Message Identification）让通过 DMARC 验证的邮件在收件箱显示发件方品牌 Logo，提升可信度与识别度。
@@ -1631,7 +1636,7 @@
 ## 企业邮件系统总拥有成本（TCO）计算模型
 - 分类：other
 - 来源：https://ztpop.net/kb/email-tco-calculator.html
-- 摘要：邮件系统的成本构成可参照GB/T 24405.1-2009《信息技术 服务管理 第1部分：规范》（等同采用 ISO/IEC 20000-1:2005）中的服务管理框架进行分类。该标准将IT服务生命周期划分为服务交付、服务设计、服务转换与持续改进，映射到邮件系统的成本评估，同样应覆盖从方案设计到日常运行的完整链条。
+- 摘要：邮件系统的成本构成可参照GB/T 24405.1-2009《信息技术 服务管理 第1部分：规范》（等同采用 ISO/IEC 20000-1:2005，国际最新版为 ISO/IEC 20000-1:2018）中的服务管理框架进行分类。该标准将IT服务生命周期划分为服务交付、服务设计、服务转换与持续改进，映射到邮件系统的成本评估，同样应覆盖从方案设计到日常运行的完整链条。
 
 ## 邮件客户端是如何把多封往来邮件归并为“对话线程（Thread）”的？References 与 In-Reply-To 有什么区别？
 - 分类：references
@@ -1742,6 +1747,11 @@
 - 分类：protocols
 - 来源：https://ztpop.net/kb/esmtp-extension.html
 - 摘要：ESMTP（Extended SMTP，RFC 1869）是 SMTP 的扩展框架：客户端连上后用 EHLO 代替 HELO，服务器返回一系列“服务扩展”行（如 250-STARTTLS、250-SIZE、250-8BITMIME），声明自己支持哪些扩展。
+
+## 邮件伪造攻击与防护：espoofer 测试与 SPF/DKIM/DMARC 组合加固
+- 分类：other
+- 来源：https://ztpop.net/kb/espoofer-email-spoofing-protection.html
+- 摘要：espoofer 是安全研究员 Chen Ji（陈吉）于 2020 年发布的开源邮件伪造检测工具（GitHub: chenjj/espoofer，Python 实现）。它的定位是「邮件伪造攻击测试框架」：自动探测目标域名的 SPF、DKIM、DMARC 配置状态，判断该域名是否存在可被利用的伪造漏洞，并实际构造攻击邮件演示漏洞利用路径。工具核心价值在于帮助安全团队和企业邮件管理员在攻击者利用之前，发现自己的域名是否可以被冒充。
 
 ## Exchange 2013 EOL 影响与迁移路径 · 2026 年全面分析
 - 分类：exchange
@@ -3059,6 +3069,11 @@
 - 来源：https://ztpop.net/kb/oauth2-xoauth2-email-rfc7628.html
 - 摘要：从明文密码认证的缺陷、RFC 7628 SASL OAUTHBEARER 标准形式，到 XOAUTH2 私有机制及其与 SMTP AUTH / IMAP 的集成，基于 RFC 7628 与 RFC 6749。
 
+## 新一代开源邮件基础设施盘点：KumoMTA、Stalwart 与 mail-auth（2026）
+- 分类：other
+- 来源：https://ztpop.net/kb/open-source-mail-infrastructure-2026.html
+- 摘要：开源邮件服务器领域在 2020 年代后半段出现了显著的技术代际变化。传统栈以 Postfix（RFC 5321 传输代理）、Dovecot（IMAP/POP3 投递）、OpenDKIM/OpenDMARC（认证）、Rspamd（过滤）多组件拼装为主；新一代项目则普遍采用 Rust 编写，追求单一二进制、内置认证与过滤、以及对 JMAP（RFC 8620/8621）等现代协议的原生支持。本文盘点的三个项目分别代表外发性能、一体化服务器、认证库三个细分方向，均以官方 GitHub 仓库数据为准（截至 2026-07-31）。
+
 ## OpenDKIM 是什么？它如何为邮件做 DKIM 签名与验证？
 - 分类：dkim
 - 来源：https://ztpop.net/kb/opendkim-faq-01.html
@@ -4116,4 +4131,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 819 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 822 篇文章。采用 CC-BY 4.0 许可。*
