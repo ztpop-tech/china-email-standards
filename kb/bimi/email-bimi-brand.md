@@ -1,13 +1,13 @@
 ---
-title: "BIMI（品牌标识邮件标识，RFC 7489 引用）如何让收件箱显示“品牌 Logo”？它依赖什么前提？"
+title: "BIMI（品牌标识邮件标识，IETF BIMI 草案）如何让收件箱显示“品牌 Logo”？它依赖什么前提？"
 source: "https://ztpop.net/kb/email-bimi-brand.html"
 license: CC-BY 4.0
 ---
 
-# BIMI（品牌标识邮件标识，RFC 7489 引用）如何让收件箱显示“品牌 Logo”？它依赖什么前提？
+# BIMI（品牌标识邮件标识，IETF BIMI 草案）如何让收件箱显示“品牌 Logo”？它依赖什么前提？
 
 1
-BIMI（品牌标识邮件标识，RFC 7489 引用）如何让收件箱显示“品牌 Logo”？它依赖什么前提？
+BIMI（品牌标识邮件标识，IETF BIMI 草案）如何让收件箱显示“品牌 Logo”？它依赖什么前提？
 ▼
 
 **定义**
@@ -26,7 +26,7 @@ BIMI 强依赖 DMARC 已生效（p=quarantine 或 reject 且对齐通过）；�
 
 先确保 SPF/DKIM/DMARC 对齐与 p=reject，再发布 BIMI 记录与合规 SVG；主流厂商（Yahoo/Google 等）逐步支持。
 
-参考：BIMI 规范（RFC 7489 引用，authindicators 草案）；RFC 7489（DMARC）
+参考：BIMI 规范（IETF 草案 draft-brand-indicators-for-message-identification）；RFC 7489（DMARC）
 
 ---
 
