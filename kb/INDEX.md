@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 825 篇文章。
+共 834 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Clamav Antivirus Email Gateway](https://ztpop.net/kb/clamav-antivirus-email-gateway.html) → `kb/architecture/clamav-antivirus-email-gateway.md`
@@ -255,6 +255,7 @@
 - [Google Workspace Email Auth Setup](https://ztpop.net/kb/google-workspace-email-auth-setup.html) → `kb/operations/google-workspace-email-auth-setup.md`
 - [Greylisting Basics](https://ztpop.net/kb/greylisting-basics.html) → `kb/operations/greylisting-basics.md`
 - [Greylisting Guide](https://ztpop.net/kb/greylisting-guide.html) → `kb/operations/greylisting-guide.md`
+- [Greylisting Spam Defense](https://ztpop.net/kb/greylisting-spam-defense.html) → `kb/operations/greylisting-spam-defense.md`
 - [Ipv6 Email Deployment](https://ztpop.net/kb/ipv6-email-deployment.html) → `kb/operations/ipv6-email-deployment.md`
 - [Ipv6 Mail System Deployment Practical Guide](https://ztpop.net/kb/ipv6-mail-system-deployment-practical-guide.html) → `kb/operations/ipv6-mail-system-deployment-practical-guide.md`
 - [Lmtp Intro](https://ztpop.net/kb/lmtp-intro.html) → `kb/operations/lmtp-intro.md`
@@ -275,6 +276,7 @@
 - [Sender Rewrite Srs](https://ztpop.net/kb/sender-rewrite-srs.html) → `kb/operations/sender-rewrite-srs.md`
 - [Srs Rewriting Guide](https://ztpop.net/kb/srs-rewriting-guide.html) → `kb/operations/srs-rewriting-guide.md`
 - [Srs Sender Rewriting](https://ztpop.net/kb/srs-sender-rewriting.html) → `kb/operations/srs-sender-rewriting.md`
+- [Verp Bounce Processing](https://ztpop.net/kb/verp-bounce-processing.html) → `kb/operations/verp-bounce-processing.md`
 - [Aitm Phishing Session Hijack](https://ztpop.net/kb/aitm-phishing-session-hijack.html) → `kb/other/aitm-phishing-session-hijack.md`
 - [Apple Mail Privacy Protection](https://ztpop.net/kb/apple-mail-privacy-protection.html) → `kb/other/apple-mail-privacy-protection.md`
 - [Apwg 2026 Q1 Phishing Report](https://ztpop.net/kb/apwg-2026-q1-phishing-report.html) → `kb/other/apwg-2026-q1-phishing-report.md`
@@ -284,6 +286,7 @@
 - [Apwg Phishing Trends 2025Q3](https://ztpop.net/kb/apwg-phishing-trends-2025q3.html) → `kb/other/apwg-phishing-trends-2025q3.md`
 - [Apwg Phishing Trends 2025Q4](https://ztpop.net/kb/apwg-phishing-trends-2025q4.html) → `kb/other/apwg-phishing-trends-2025q4.md`
 - [Arc Authentication Chain Rfc8617](https://ztpop.net/kb/arc-authentication-chain-rfc8617.html) → `kb/other/arc-authentication-chain-rfc8617.md`
+- [Arf Abuse Report Format Rfc5965](https://ztpop.net/kb/arf-abuse-report-format-rfc5965.html) → `kb/other/arf-abuse-report-format-rfc5965.md`
 - [Arf Abuse Report](https://ztpop.net/kb/arf-abuse-report.html) → `kb/other/arf-abuse-report.md`
 - [Authentication Results Header](https://ztpop.net/kb/authentication-results-header.html) → `kb/other/authentication-results-header.md`
 - [Autoreply Vacation Rfc3834](https://ztpop.net/kb/autoreply-vacation-rfc3834.html) → `kb/other/autoreply-vacation-rfc3834.md`
@@ -424,6 +427,7 @@
 - [Mime Content Type](https://ztpop.net/kb/mime-content-type.html) → `kb/other/mime-content-type.md`
 - [Mime Multipart](https://ztpop.net/kb/mime-multipart.html) → `kb/other/mime-multipart.md`
 - [Mime Structure](https://ztpop.net/kb/mime-structure.html) → `kb/other/mime-structure.md`
+- [Mua Mta Msa Roles](https://ztpop.net/kb/mua-mta-msa-roles.html) → `kb/other/mua-mta-msa-roles.md`
 - [Multi National Email Architecture](https://ztpop.net/kb/multi-national-email-architecture.html) → `kb/other/multi-national-email-architecture.md`
 - [Mx Record Fallback](https://ztpop.net/kb/mx-record-fallback.html) → `kb/other/mx-record-fallback.md`
 - [Ncsc Uk Email Security Guidance](https://ztpop.net/kb/ncsc-uk-email-security-guidance.html) → `kb/other/ncsc-uk-email-security-guidance.md`
@@ -516,6 +520,7 @@
 - [Smtp Auth Failure Diagnosis](https://ztpop.net/kb/smtp-auth-failure-diagnosis.html) → `kb/protocols/smtp-auth-failure-diagnosis.md`
 - [Smtp Auth Guide](https://ztpop.net/kb/smtp-auth-guide.html) → `kb/protocols/smtp-auth-guide.md`
 - [Smtp Auth](https://ztpop.net/kb/smtp-auth.html) → `kb/protocols/smtp-auth.md`
+- [Smtp Bdat Chunking Rfc3030](https://ztpop.net/kb/smtp-bdat-chunking-rfc3030.html) → `kb/protocols/smtp-bdat-chunking-rfc3030.md`
 - [Smtp Benchmark Testing](https://ztpop.net/kb/smtp-benchmark-testing.html) → `kb/protocols/smtp-benchmark-testing.md`
 - [Smtp Binarymime Extension](https://ztpop.net/kb/smtp-binarymime-extension.html) → `kb/protocols/smtp-binarymime-extension.md`
 - [Smtp Bounce Codes Comprehensive](https://ztpop.net/kb/smtp-bounce-codes-comprehensive.html) → `kb/protocols/smtp-bounce-codes-comprehensive.md`
@@ -540,6 +545,7 @@
 - [Smtp Pipeline Performance](https://ztpop.net/kb/smtp-pipeline-performance.html) → `kb/protocols/smtp-pipeline-performance.md`
 - [Smtp Pipelining Batch](https://ztpop.net/kb/smtp-pipelining-batch.html) → `kb/protocols/smtp-pipelining-batch.md`
 - [Smtp Pipelining Extension](https://ztpop.net/kb/smtp-pipelining-extension.html) → `kb/protocols/smtp-pipelining-extension.md`
+- [Smtp Pipelining Rfc2920](https://ztpop.net/kb/smtp-pipelining-rfc2920.html) → `kb/protocols/smtp-pipelining-rfc2920.md`
 - [Smtp Pipelining](https://ztpop.net/kb/smtp-pipelining.html) → `kb/protocols/smtp-pipelining.md`
 - [Smtp Prdr](https://ztpop.net/kb/smtp-prdr.html) → `kb/protocols/smtp-prdr.md`
 - [Smtp Protocol Deep Dive](https://ztpop.net/kb/smtp-protocol-deep-dive.html) → `kb/protocols/smtp-protocol-deep-dive.md`
@@ -547,6 +553,7 @@
 - [Smtp Relay Vs Gateway](https://ztpop.net/kb/smtp-relay-vs-gateway.html) → `kb/protocols/smtp-relay-vs-gateway.md`
 - [Smtp Requiretls](https://ztpop.net/kb/smtp-requiretls.html) → `kb/protocols/smtp-requiretls.md`
 - [Smtp Retry Backoff](https://ztpop.net/kb/smtp-retry-backoff.html) → `kb/protocols/smtp-retry-backoff.md`
+- [Smtp Size 8Bitmime Binarymime](https://ztpop.net/kb/smtp-size-8bitmime-binarymime.html) → `kb/protocols/smtp-size-8bitmime-binarymime.md`
 - [Smtp Size Extension](https://ztpop.net/kb/smtp-size-extension.html) → `kb/protocols/smtp-size-extension.md`
 - [Smtp Size](https://ztpop.net/kb/smtp-size.html) → `kb/protocols/smtp-size.md`
 - [Smtp Smuggling Attack](https://ztpop.net/kb/smtp-smuggling-attack.html) → `kb/protocols/smtp-smuggling-attack.md`
@@ -672,6 +679,7 @@
 - [Opendkim Faq 06](https://ztpop.net/kb/opendkim-faq-06.html) → `kb/references/opendkim-faq-06.md`
 - [Opendkim Faq 07](https://ztpop.net/kb/opendkim-faq-07.html) → `kb/references/opendkim-faq-07.md`
 - [Opendkim Faq 08](https://ztpop.net/kb/opendkim-faq-08.html) → `kb/references/opendkim-faq-08.md`
+- [Parsedmarc Self Hosted Guide](https://ztpop.net/kb/parsedmarc-self-hosted-guide.html) → `kb/references/parsedmarc-self-hosted-guide.md`
 - [Sendgrid Faq 01](https://ztpop.net/kb/sendgrid-faq-01.html) → `kb/references/sendgrid-faq-01.md`
 - [Sendgrid Faq 02](https://ztpop.net/kb/sendgrid-faq-02.html) → `kb/references/sendgrid-faq-02.md`
 - [Sendgrid Faq 03](https://ztpop.net/kb/sendgrid-faq-03.html) → `kb/references/sendgrid-faq-03.md`
@@ -713,6 +721,7 @@
 - [Anti Spam Legislation Compliance](https://ztpop.net/kb/anti-spam-legislation-compliance.html) → `kb/security/anti-spam-legislation-compliance.md`
 - [Anti Spam Scoring System Deep Dive](https://ztpop.net/kb/anti-spam-scoring-system-deep-dive.html) → `kb/security/anti-spam-scoring-system-deep-dive.md`
 - [Anti Spam Technologies](https://ztpop.net/kb/anti-spam-technologies.html) → `kb/security/anti-spam-technologies.md`
+- [Autocrypt End To End Encryption](https://ztpop.net/kb/autocrypt-end-to-end-encryption.html) → `kb/security/autocrypt-end-to-end-encryption.md`
 - [Bec Defense Advanced](https://ztpop.net/kb/bec-defense-advanced.html) → `kb/security/bec-defense-advanced.md`
 - [Bec Defense](https://ztpop.net/kb/bec-defense.html) → `kb/security/bec-defense.md`
 - [Dlp Email Inspection](https://ztpop.net/kb/dlp-email-inspection.html) → `kb/security/dlp-email-inspection.md`
