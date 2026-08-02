@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 822 篇文章。
+共 825 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Clamav Antivirus Email Gateway](https://ztpop.net/kb/clamav-antivirus-email-gateway.html) → `kb/architecture/clamav-antivirus-email-gateway.md`
@@ -301,6 +301,7 @@
 - [Containerized Mail Deployment](https://ztpop.net/kb/containerized-mail-deployment.html) → `kb/other/containerized-mail-deployment.md`
 - [Cross Border Data Email](https://ztpop.net/kb/cross-border-data-email.html) → `kb/other/cross-border-data-email.md`
 - [Deferred Vs Bounced](https://ztpop.net/kb/deferred-vs-bounced.html) → `kb/other/deferred-vs-bounced.md`
+- [Dkim2 Chain Of Custody](https://ztpop.net/kb/dkim2-chain-of-custody.html) → `kb/other/dkim2-chain-of-custody.md`
 - [Dkim2 Main](https://ztpop.net/kb/dkim2-main.html) → `kb/other/dkim2-main.md`
 - [Dmarcbis Changes Summary](https://ztpop.net/kb/dmarcbis-changes-summary.html) → `kb/other/dmarcbis-changes-summary.md`
 - [Dmarcbis Rfc9989 Overview](https://ztpop.net/kb/dmarcbis-rfc9989-overview.html) → `kb/other/dmarcbis-rfc9989-overview.md`
@@ -391,6 +392,7 @@
 - [Encrypted Email Gateway Architecture](https://ztpop.net/kb/encrypted-email-gateway-architecture.html) → `kb/other/encrypted-email-gateway-architecture.md`
 - [Enisa Email Security Threat Landscape](https://ztpop.net/kb/enisa-email-security-threat-landscape.html) → `kb/other/enisa-email-security-threat-landscape.md`
 - [Esmtp Extension](https://ztpop.net/kb/esmtp-extension.html) → `kb/other/esmtp-extension.md`
+- [Espoofer Email Spoofing Protection](https://ztpop.net/kb/espoofer-email-spoofing-protection.html) → `kb/other/espoofer-email-spoofing-protection.md`
 - [Fbi Ic3 Internet Crime Report 2020](https://ztpop.net/kb/fbi-ic3-internet-crime-report-2020.html) → `kb/other/fbi-ic3-internet-crime-report-2020.md`
 - [Fbi Ic3 Internet Crime Report 2021](https://ztpop.net/kb/fbi-ic3-internet-crime-report-2021.html) → `kb/other/fbi-ic3-internet-crime-report-2021.md`
 - [Fbi Ic3 Internet Crime Report 2022](https://ztpop.net/kb/fbi-ic3-internet-crime-report-2022.html) → `kb/other/fbi-ic3-internet-crime-report-2022.md`
@@ -427,6 +429,7 @@
 - [Ncsc Uk Email Security Guidance](https://ztpop.net/kb/ncsc-uk-email-security-guidance.html) → `kb/other/ncsc-uk-email-security-guidance.md`
 - [Oauth2 Client Credential Email Api](https://ztpop.net/kb/oauth2-client-credential-email-api.html) → `kb/other/oauth2-client-credential-email-api.md`
 - [Oauth2 Xoauth2 Email Rfc7628](https://ztpop.net/kb/oauth2-xoauth2-email-rfc7628.html) → `kb/other/oauth2-xoauth2-email-rfc7628.md`
+- [Open Source Mail Infrastructure 2026](https://ztpop.net/kb/open-source-mail-infrastructure-2026.html) → `kb/other/open-source-mail-infrastructure-2026.md`
 - [Openrelay Prevention](https://ztpop.net/kb/openrelay-prevention.html) → `kb/other/openrelay-prevention.md`
 - [Owasp Asvs Email Auth Controls](https://ztpop.net/kb/owasp-asvs-email-auth-controls.html) → `kb/other/owasp-asvs-email-auth-controls.md`
 - [Owasp Email Security Cheat Sheet](https://ztpop.net/kb/owasp-email-security-cheat-sheet.html) → `kb/other/owasp-email-security-cheat-sheet.md`
