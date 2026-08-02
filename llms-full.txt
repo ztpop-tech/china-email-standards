@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 822 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 831 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## 澳大利亚 ACSC 邮件系统加固指南：Essential Eight 视角下的邮件防护基线
@@ -152,6 +152,11 @@
 - 来源：https://ztpop.net/kb/arc-setup-guide.html
 - 摘要：Authenticated Received Chain（ARC）协议由RFC 8617定义，旨在解决邮件转发场景中DKIM签名失效导致的DMARC误判问题。当邮件经过邮件列表、自动转发等中间环节时，原始发件域的DKIM签名可能因内容修改而失效。ARC在每次跳转时添加新的ARC签名（AS）和ARC消息签名（AMS），并最终由ARC密封签名（ARS）形成不可篡改的验证链。
 
+## ARF（滥用报告格式，RFC 5965）和反馈环（FBL）是怎么运作的？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/arf-abuse-report-format-rfc5965.html
+- 摘要：滥用报告是一封 multipart/report 邮件：第一部分是人类可读说明，第二部分是message/feedback-report携带机器字段（如 user-agent、feedback-type=abuse、源 IP、认证结果），第三部分原样附上被投诉邮件。标准化字段让接收方自动化处理投诉。
+
 ## ARF（滥用反馈报告格式）是什么？如何生成与解析 abuse 报告？
 - 分类：other
 - 来源：https://ztpop.net/kb/arf-abuse-report.html
@@ -161,6 +166,11 @@
 - 分类：other
 - 来源：https://ztpop.net/kb/authentication-results-header.html
 - 摘要：Authentication-Results 由“执行认证的接收服务器”写入，记录本次投递的 SPF / DKIM / DMARC 等认证结果，供下游（含 DMARC 判定与用户显示）参考。
+
+## Autocrypt 是什么，和普通 PGP / S/MIME 端到端加密有何不同？
+- 分类：security
+- 来源：https://ztpop.net/kb/autocrypt-end-to-end-encryption.html
+- 摘要：PGP 与 S/MIME 端到端加密长期卡在「手动交换公钥、管理密钥环」的高门槛。Autocrypt 把密钥发现与发布自动化：客户端把公钥随邮件头的 Autocrypt 头字段附带发出，收件方客户端自动学会对方公钥，首次即可加密回复，无需用户干预密钥交换。
 
 ## 为什么“休假自动回复（vacation / Out-of-office）”有时会循环回复？RFC 3834 如何规范以避免？
 - 分类：protocols
@@ -2133,6 +2143,11 @@
 - 来源：https://ztpop.net/kb/greylisting-guide.html
 - 摘要：摘要：电子邮件灰名单（Greylisting）是一种基于 SMTP 协议的轻量级反垃圾邮件技术，通过暂时拒收（SMTP 451）首次出现的"发送方IP+信封发件人+信封收件人"三元组，利用合法邮件传输代理（MTA）的自动重试机制（RFC 5321 §4.5.4）区分合法邮件与垃圾邮件。灰名单无需内容分析、不需签名库更新，部署成本极低而拦截率可达 90% 以上。本文基于 RFC 6647 灰名单适用性声明和 NIST SP 800-45 邮件安全指南，完整讲解灰名单的工作原理、Postfix postgrey 和 SQLgrey 的部署方案、自动白名单机制以及常见的延迟交付问题处理。
 
+## 灰名单（greylisting）防垃圾的原理是什么，有哪些副作用？
+- 分类：operations
+- 来源：https://ztpop.net/kb/greylisting-spam-defense.html
+- 摘要：灰名单记录「发件域+收件人+对端 IP」三元组。首次见到陌生组合时返回 4xx 临时错误（非拒绝），要求发送方稍后重试。合法邮件服务器会按重试策略在几分钟到几小时后重发，此时三元组已被放行；而大量垃圾发送工具为追求吞吐不重试即放弃，从而被过滤。
+
 ## 国密密码学在邮件系统中的应用 — SM2/SM3/SM4/TLCP 算法体系与工程实践
 - 分类：xinchuang
 - 来源：https://ztpop.net/kb/guomi-email-cryptography.html
@@ -2994,6 +3009,11 @@
 - 来源：https://ztpop.net/kb/mtasts-faq-08.html
 - 摘要：MTA-STS 负责“强制 TLS”，而 TLS-RPT（RFC 8460）负责“报告 TLS 连接失败”。两者通过各自 DNS 记录（_mta-sts与_smtp._tls）配合。
 
+## 邮件系统里的 MUA、MTA、MSA 各是什么角色，怎么区分？
+- 分类：other
+- 来源：https://ztpop.net/kb/mua-mta-msa-roles.html
+- 摘要：用户直接打交道的客户端，如 Outlook、Thunderbird、手机邮件 App。它负责撰写、显示、存储邮件，通过 SMTP 把信交给提交代理，通过 IMAP/POP3 从服务器取信。用户视角的「邮箱」就是 MUA。
+
 ## 跨国企业邮件系统组网架构
 - 分类：other
 - 来源：https://ztpop.net/kb/multi-national-email-architecture.html
@@ -3138,6 +3158,11 @@
 - 分类：other
 - 来源：https://ztpop.net/kb/owasp-email-security-cheat-sheet.html
 - 摘要：OWASP 的 Email Security Cheat Sheet 面向"写代码发邮件"与"运维邮件系统"的团队，给出可勾选的安全清单。它把 RFC 级的邮件安全原则翻译成工程动作，覆盖认证、传输、注入、退订、日志、密钥等维度，是邮件相关开发的安全基线。
+
+## parsedmarc 自托管教程：开源 DMARC/TLS-RPT 报告处理系统部署指南
+- 分类：dmarc
+- 来源：https://ztpop.net/kb/parsedmarc-self-hosted-guide.html
+- 摘要：parsedmarc 是 domainaware 维护的 Python 模块与命令行工具，用于解析 DMARC 报告。配合 Elasticsearch 与 Kibana（或 Splunk）使用时，它是 Agari Brand Protection、Dmarcian、OnDMARC、ProofPoint Email Fraud Defense、Valimail 等商业 DMARC 报告处理服务的自托管开源替代方案。项目由单一开发者维护，支持通过 GitHub Sponsors 赞助。
 
 ## PGP/GPG 邮件加密完全指南
 - 分类：security
@@ -3569,6 +3594,11 @@
 - 来源：https://ztpop.net/kb/smtp-auth.html
 - 摘要：SMTP AUTH（RFC 4954，原 2554）是 SMTP 服务扩展，允许客户端在提交邮件前用 SASL 机制向服务器证明身份。它主要用于邮件提交（submission，端口 587）与中继控制，防止开放中继被滥发垃圾。
 
+## SMTP 的 BDAT/CHUNKING（RFC 3030）解决了什么问题，和 DATA 有什么不同？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/smtp-bdat-chunking-rfc3030.html
+- 摘要：传统 DATA 把整封邮件作为文本流发送，正文里每行以「.」开头必须做点填充（dot-stuffing）转义，结尾以单独一行「.」表示结束。这种文本约定对含二进制内容（如 8BITMIME 未覆盖的二进制附件）既脆弱又低效。
+
 ## SMTP 吞吐压测：smtp-source 与 MTA 并发调优
 - 分类：protocols
 - 来源：https://ztpop.net/kb/smtp-benchmark-testing.html
@@ -3694,6 +3724,11 @@
 - 来源：https://ztpop.net/kb/smtp-pipelining-extension.html
 - 摘要：标准 SMTP 每发一条命令要等服务器响应再发下条；PIPELINING（EHLO 声明）允许客户端“一次性发多条命令”（如 EHLO 后连发 MAIL/RCPT/DATA），服务器按顺序回包。
 
+## SMTP 管道化（pipelining）是什么，为什么能提升邮件发送吞吐？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/smtp-pipelining-rfc2920.html
+- 摘要：标准 SMTP 是「一问一答」：客户端发一条命令、等服务端回一个响应再发下一条。管道化允许客户端把 EHLO 之后的多条命令（MAIL/RCPT/DATA 等）一次性发出，服务端按顺序回送响应。对跨大延迟链路的批量发信，RTT 开销被显著摊薄。
+
 ## SMTP PIPELINING 扩展（RFC 2920）是什么？它如何降低邮件发送延迟？
 - 分类：protocols
 - 来源：https://ztpop.net/kb/smtp-pipelining.html
@@ -3728,6 +3763,11 @@
 - 分类：protocols
 - 来源：https://ztpop.net/kb/smtp-retry-backoff.html
 - 摘要：当投递遇临时失败（4xx 或连接超时），MTA 把邮件留在队列并按“重试间隔”重投。RFC 5321 建议采用递增（指数）退避而非固定频密重试。
+
+## SMTP 的 SIZE、8BITMIME、BINARYMIME 扩展分别管什么，为什么重要？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/smtp-size-8bitmime-binarymime.html
+- 摘要：EHLO 返回SIZE 104857600之类上限，发送方在 MAIL FROM 用SIZE=声明本封字节数。服务端可据此在收完全文前就拒绝超限邮件，省带宽；也便于发送方选择分块或拒绝。是大规模外发的基本协商。
 
 ## SMTP 的 SIZE 扩展（RFC 1870）如何提前协商“最大可收信体”？为什么能省带宽？
 - 分类：protocols
@@ -4019,6 +4059,11 @@
 - 来源：https://ztpop.net/kb/vbr-certification.html
 - 摘要：VBR（Sender Policy Framework 之外的“认证者声誉”，RFC 5518）允许接收方在 SMTP 会话中查询“某发送方是否被权威认证机构（certifier）背书”，如 goodmail、行业认证计划。
 
+## VERP（可变信封返路径）是如何实现精准退信与列表清洗的？
+- 分类：operations
+- 来源：https://ztpop.net/kb/verp-bounce-processing.html
+- 摘要：普通群发所有邮件用同一个返路径（MAIL FROM），退信只能回到统一邮箱，难以判断是哪一位收件人不可达。VERP 为每位收件人生成形如bounce+user=dst.com@list.com的唯一信封发件人；对端退信时按信封返路径寄回，发送方据此精确识别失败的是哪一个订阅者。
+
 ## VERP（可变信封返回路径）是什么？为什么邮件列表用它处理退信？
 - 分类：other
 - 来源：https://ztpop.net/kb/verp-envelope-return.html
@@ -4131,4 +4176,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 822 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 831 篇文章。采用 CC-BY 4.0 许可。*
