@@ -1,18 +1,18 @@
 ---
-title: "BIMI（RFC 8617）是什么？品牌徽标如何随已认证邮件显示？"
+title: "BIMI（IETF 草案 draft-brand-indicators-for-message-identification）是什么？品牌徽标如何随已认证邮件显示？"
 source: "https://ztpop.net/kb/bimi-logo.html"
 license: CC-BY 4.0
 ---
 
-# BIMI（RFC 8617）是什么？品牌徽标如何随已认证邮件显示？
+# BIMI（IETF 草案 draft-brand-indicators-for-message-identification）是什么？品牌徽标如何随已认证邮件显示？
 
 1
-BIMI（RFC 8617）是什么？品牌徽标如何随已认证邮件显示？
+BIMI（IETF 草案 draft-brand-indicators-for-message-identification）是什么？品牌徽标如何随已认证邮件显示？
 ▼
 
 **定义**
 
-BIMI（Brand Indicators for Message Identification，RFC 8617）让通过严格 DMARC（p=quarantine/reject 且对齐通过）的发件方，在支持的邮箱客户端中于发件人旁展示品牌徽标（logo），增强可信度与品牌识别。
+BIMI（Brand Indicators for Message Identification（IETF BIMI 草案））让通过严格 DMARC（p=quarantine/reject 且对齐通过）的发件方，在支持的邮箱客户端中于发件人旁展示品牌徽标（logo），增强可信度与品牌识别。
 
 **机制**
 
@@ -26,7 +26,7 @@ BIMI（Brand Indicators for Message Identification，RFC 8617）让通过严格 
 
 面向消费者的品牌邮件（银行、电商）用 BIMI 提升打开率与防钓鱼辨识；需先打好 DMARC 基础再部署。
 
-参考：RFC 8617（BIMI 品牌指标）
+参考：IETF BIMI 草案（draft-brand-indicators-for-message-identification）
 
 ---
 
