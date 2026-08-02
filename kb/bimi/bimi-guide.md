@@ -6,7 +6,7 @@ license: CC-BY 4.0
 
 # BIMI 品牌邮件标识深度解析 — DMARC 前置条件、BIMI TXT/PSD 记录与 VMC 证书全链路
 
-BIMI（Brand Indicators for Message Identification）是 IETF RFC 8617 定义的一套协议标准，目标是让邮件发送方在经过认证后，其品牌 Logo 能够显示在收件人的邮件客户端界面中。BIMI 不是一套孤立的协议——它建立在一整套邮件身份认证基础设施之上：发送域必须先通过 DMARC 的严格策略（
+BIMI（Brand Indicators for Message Identification）是 IETF 草案 draft-brand-indicators-for-message-identification 定义的协议规范，目标是让邮件发送方在经过认证后，其品牌 Logo 能够显示在收件人的邮件客户端界面中。BIMI 不是一套孤立的协议——它建立在一整套邮件身份认证基础设施之上：发送域必须先通过 DMARC 的严格策略（
 `p=quarantine`
 或
 `p=reject`
@@ -54,7 +54,7 @@ BIMI 工作组草案（Brand Indicators for Message Identification）明确规�
 `p=quarantine`
 。背后的逻辑并不难理解——BIMI 的核心价值是「品牌担保」：MUA 在邮件旁展示一个 Logo，本质上是在向用户断言「这封邮件确实来自该品牌」。如果发送域只处于
 `p=none`
-的纯监控模式，说明域所有者尚未建立起对自身邮件流的充分控制，此时展示品牌 Logo 反而可能被欺骗者利用，放大钓鱼邮件的危害面。RFC 8617 在设计上就内置了对 DMARC（RFC 7489）的强依赖，确保只有认证基础设施成熟的域才有资格触发 BIMI 显示。
+的纯监控模式，说明域所有者尚未建立起对自身邮件流的充分控制，此时展示品牌 Logo 反而可能被欺骗者利用，放大钓鱼邮件的危害面。BIMI 草案在设计上就内置了对 DMARC（RFC 7489）的强依赖，确保只有认证基础设施成熟的域才有资格触发 BIMI 显示。
 
 **DMARC 前置条件清单：**
 
