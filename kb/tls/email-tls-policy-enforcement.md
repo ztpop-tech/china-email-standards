@@ -190,7 +190,7 @@ Phase 2→3 切换前自检清单：
 
 ## 7. BIMI 附带的品牌验证链
 
-Brand Indicators for Message Identification（BIMI，RFC 8686）通过 DMARC 策略成功验证后附加品牌 Logo 展示。BIMI 不直接参与传输安全强化，但其生态要求发件域满足 DMARC p=quarantine/reject 且通过 VMC（Verified Mark Certificate）证明商标权——VMC 由公认知识产权局颁发的注册商标作为背书。这一间接效力推动了域所有者完成 SPF → DKIM → DMARC → DANE → MTA-STS 的完整认证栈部署。BIMI 在 2024–2025 年间由 Gmail、Apple Mail、Yahoo Mail 和 Fastmail 等多平台同时支持后进入主流采纳。
+Brand Indicators for Message Identification（BIMI，IETF 草案 draft-brand-indicators-for-message-identification）通过 DMARC 策略成功验证后附加品牌 Logo 展示。BIMI 不直接参与传输安全强化，但其生态要求发件域满足 DMARC p=quarantine/reject 且通过 VMC（Verified Mark Certificate）证明商标权——VMC 由公认知识产权局颁发的注册商标作为背书。这一间接效力推动了域所有者完成 SPF → DKIM → DMARC → DANE → MTA-STS 的完整认证栈部署。BIMI 在 2024–2025 年间由 Gmail、Apple Mail、Yahoo Mail 和 Fastmail 等多平台同时支持后进入主流采纳。
 
 本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
 
