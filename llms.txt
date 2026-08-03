@@ -96,6 +96,7 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [DKIM2 监管链签名机制深度解读：链式托管、重放防护与 DSN 安全](https://www.ztpop.net/kb/dkim2-chain-of-custody.html)
 - [新一代开源邮件基础设施盘点：KumoMTA、Stalwart 与 mail-auth（2026）](https://www.ztpop.net/kb/open-source-mail-infrastructure-2026.html): 盘点 2026 年 Rust 化新一代开源邮件栈：KumoMTA（高性能外发 MTA）、Stalwart（一体化邮件+协作服务器，内置 SPF/DKIM/DKIM2/DMARC/ARC）、mail-auth（DKIM/SPF/DMARC Rust 库），含定位对照与选型建议。: 基于 IETF 草案 draft-clayton-dkim2-spec 深度解读 DKIM2 双头部体系（Message-Instance/DKIM2-Signature）、监管链（chain of custody）算法、Recipe 修改代数、重放防护标志与 DSN 退信安全。: DKIM2 是 IETF 正在积极推进的新一代邮件认证协议。本文深入解读 DKIM2 的核心原理、对邮件认证失败/DKIM重放/背散射...
 - [Stalwart 邮件服务器部署实操指南：从安装到生产级配置（2026）](https://www.ztpop.net/kb/stalwart-mail-server-deployment-guide.html): Stalwart v0.16.x 生产部署全流程：二进制脚本安装（Linux/macOS/FreeBSD）、Docker 部署、Bootstrap 引导配置、DNS 记录、内置认证体系（DMARC/DKIM2/DMARCbis/ARC）、存储后端选型、Postfix+Dovecot 迁移对照与信创环境注意事项。
+- [Apache James 3.9.0 新特性解读：Java 21 迁移与 Postgres 高性能实现（2026）](https://www.ztpop.net/kb/apache-james-390-release-notes.html): Apache James 3.9.0 深度解读：Java 11→21 迁移、javax→jakarta、JAMES-2586 高性能 Postgres 实现、IMAP PARTIAL（RFC 9394）、SMTP Require TLS、JMAP SearchSnippets、Crowdsec 集成、SSE-C S3 加密与升级注意事项。
 - [邮件信任始于认证——M3AAWG 经典白皮书中文版](https://www.ztpop.net/kb/m3aawg-trust-email-authentication.html): 译自 M3AAWG 经典白皮书《Trust in Email Begins with Authentication》(Updated ...
 - [BIMI 证书类型详解：自声明、公共标识证书与验证标识证书](https://www.ztpop.net/kb/bimi-certificate-types.html): BIMI Group 官方博客翻译：详解 BIMI 的三种证书类型——自声明、公共标识证书（CMC）与验证标识证书（VMC），帮助品牌...
 - [RFC 8463 DKIM 的 ed25519 签名：更短密钥、更强抗量子前景](https://www.ztpop.net/kb/rfc8463-dkim-ed25519.html): RFC 8463 为 DKIM 增加 Ed25519 签名算法，作为 RSA 的补充。本文介绍其优势、与 RFC 8301 的关系、双...
@@ -1502,11 +1503,17 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [RFC 5321《SMTP》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5321-zh.html
 - [RFC 3501《IMAP4rev1》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3501-zh.html
 - [RFC 8461《MTA-STS》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8461-zh.html
+- [RFC 4616《PLAIN SASL》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4616-zh.html
 - [RFC 8617《ARC》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8617-zh.html
 - [RFC 1939《POP3》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-1939-zh.html
 - [RFC 6409《邮件提交》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6409-zh.html
 - [RFC 8460《TLS 报告》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8460-zh.html
 - [RFC 7489《DMARC》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7489-zh.html
+- [RFC 5802《SCRAM SASL》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5802-zh.html
+- [RFC 6531《国际化 SMTP》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6531-zh.html
+- [RFC 8620《JMAP》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8620-zh.html
+- [RFC 8551《S/MIME v4 证书》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8551-zh.html
 - [RFC 8314《邮件 TLS》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8314-zh.html
 - [RFC 7672《SMTP TLS》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7672-zh.html
+- [RFC 6186《邮件 SRV》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6186-zh.html
 - [RFC 4422《SASL》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4422-zh.html
