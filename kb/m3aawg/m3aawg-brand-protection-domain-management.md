@@ -114,7 +114,7 @@ WHOIS 联系信息必须保持准确和最新。这是注册商和 ICANN 的合�
 注册商的所有通知（续费提醒、账号安全警告、域名过期等）应发送到角色邮箱地址。推荐建立以下角色别名体系：
 
 ```
-建议建立的域名相关角色邮箱：
+建议建立的域名相关角色
 
 domainregistrar@example.com    → 注册商管理（续费、转移通知）
 domains@example.com             → 域名相关通用联系
@@ -281,7 +281,7 @@ Step 3: 联系注册商
 
 Step 4: 如涉及中国站点
   通过中国反钓鱼网站联盟(www.apac.org.cn)举报
-  或联系 CNCERT (www.cert.org.cn) 进行处置
+  或扫码联系我们CNCERT (www.cert.org.cn) 进行处置
 
 Step 5: 持续监测
   即使域名被处置，攻击者可能注册新的变体继续攻击
