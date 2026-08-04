@@ -75,7 +75,6 @@ NIST SP 800-177 Rev.1 - Trustworthy Email (2020); NIST SP 800-45 Version 2 - Gui
 [TLS邮件传输加密详解](/kb/tls-email-encryption.html)
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ### 📦 相关产品与方案
 
