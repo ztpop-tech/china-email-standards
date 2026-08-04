@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 1073 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 1074 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## AiTM 钓鱼平台如何绕过 MFA 实现 Microsoft 365 邮箱接管？
@@ -2317,6 +2317,11 @@
 - 分类：exchange
 - 来源：https://ztpop.net/kb/exchange-online-migration-strategy.html
 - 摘要：邮件系统迁移是 IT 基础设施中最复杂的操作——涉及大量历史数据、不停机要求和严格的数据一致性保障。迁移到基于 Postfix/Dovecot 的开源邮件系统需考虑三个关键环节：历史邮件数据的完整迁移（通过 IMAP 协议逐用户拷贝）、SMTP 流量在迁移期间的路由共存，以及 DNS 切换的分阶段执行策略。每封邮件的 UID、标记状态和文件夹结构需完整保留，用户不应感知切换过程。
+
+## Exchange OWA 存储型 XSS 零日 CVE-2026-42897：\u201cToast 攻击\u201d应急防护指南
+- 分类：exchange
+- 来源：https://ztpop.net/kb/exchange-owa-xss-cve-2026-42897.html
+- 摘要：2026 年 5 月 14 日，微软紧急披露 Exchange Server 高危零日漏洞 CVE-2026-42897：Outlook Web Access（OWA）网页生成过程中存在存储型跨站脚本（Stored XSS）漏洞，攻击者仅需向目标邮箱发送一封恶意邮件，在特定交互条件下即可在受害者浏览器上下文中执行任意 JavaScript。该漏洞披露时已被确认在野利用，俄罗斯 APT 组织 TA488（Laundry Bear）将此前针对 Zimbra 的“半点击邮件攻击”技术扩展到了 Outlook OWA，无需受害者点击链接或下载文件即可触发。
 
 ## Exchange 权限管理向国产邮件系统迁移
 - 分类：exchange
@@ -5386,4 +5391,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 1073 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 1074 篇文章。采用 CC-BY 4.0 许可。*
