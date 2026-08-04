@@ -99,7 +99,6 @@ log "Backup complete."
 [1] NIST SP 800-34 Rev.1, Contingency Planning Guide for Federal Information Systems; [2] NIST SP 800-88 Rev.1, Guidelines for Media Sanitization; [3] RFC 5321, Simple Mail Transfer Protocol; [4] Dovecot Wiki - MailboxFormat/Maildir; [5] BorgBackup Documentation - Encryption & Deduplication; [6] GB/T 20988-2007, 信息安全技术 信息系统灾难恢复规范。
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ## 📦 相关产品与方案
 
