@@ -42,7 +42,6 @@ DNS 切换策略：对于双数据中心架构，每个数据中心分别部署�
 Postfix 架构文档; Dovecot 集群文档 (https://doc.dovecot.org/); Keepalived/LVS 文档; DRBD 用户指南 (https://linbit.com/drbd/); GlusterFS 文档; MySQL Group Replication 文档; RFC 5321 - Simple Mail Transfer Protocol。
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ## 📦 相关产品与方案
 
