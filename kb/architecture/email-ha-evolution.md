@@ -186,7 +186,6 @@ NIST SP 800-34 [1] 定义的 RTO 和 RPO 是衡量 HA 设计的两大核心指�
 [5] National Institute of Standards and Technology, "NIST SP 800-177 Rev.1: Trustworthy Email," Section 5 (Email Infrastructure), February 2019.
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ### 📦 相关产品与方案
 
