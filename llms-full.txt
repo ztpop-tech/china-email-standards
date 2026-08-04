@@ -1,5 +1,5 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 1049 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 1073 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
 
 ## AiTM 钓鱼平台如何绕过 MFA 实现 Microsoft 365 邮箱接管？
@@ -457,6 +457,11 @@
 - 来源：https://ztpop.net/kb/callback-phishing-defense.html
 - 摘要：钓鱼信不含恶意链接或附件，只留“客服电话/二维码”，诱骗受害者主动回拨；人工坐席（攻击者）再以“远程协助/订阅取消”为由骗取凭据或诱导安装远控软件。
 
+## 如何利用证书透明度日志提前发现仿冒本单位的域名？
+- 分类：security
+- 来源：https://ztpop.net/kb/certificate-transparency-lookalike-domain-monitoring.html
+- 摘要：证书透明度（Certificate Transparency，CT）最初由 RFC 6962（2013 年 6 月）提出，2.0 版本由 RFC 9162（2021 年 12 月）给出。其设计目标是让证书签发行为变得公开可审计：证书被提交到公开的、仅可追加（append-only）的日志中，日志以 Merkle 哈希树结构组织，任何人都可以验证日志没有被回溯篡改，也可以验证某张证书确实被包含在日志中。
+
 ## 慈善与灾难募捐诈骗邮件有哪些识别要点？
 - 分类：architecture
 - 来源：https://ztpop.net/kb/charity-disaster-donation-scam-email.html
@@ -807,6 +812,11 @@
 - 来源：https://ztpop.net/kb/dkim-signature-process.html
 - 摘要：RFC 6376 定义两种规范化（simple/relaxed）分别作用于 header 与 body；body 先按算法（sha256）哈希，头部按选定头字段列表哈希，二者组合成待签数据。
 
+## DKIM 签名被重放（replay）盗用信誉，该怎么发现和缓解？
+- 分类：dkim
+- 来源：https://ztpop.net/kb/dkim-signature-replay-attack-detection.html
+- 摘要：RFC 6376 §8.6 直接描述了这类攻击的形态：攻击者通过一个会为其签名的 MTA 发出一封垃圾邮件，借用签名域（例如某个大型知名邮箱服务商）的信誉而非自己的信誉，随后把这封已带有效签名的邮件重新发送给大量目标收件人。
+
 ## SPF/DKIM/DMARC 标准配置模板是什么？
 - 分类：spf
 - 来源：https://ztpop.net/kb/dkim-spf-dmarc-config-template.html
@@ -996,6 +1006,11 @@
 - 分类：other
 - 来源：https://ztpop.net/kb/dns-srv-email-discovery.html
 - 摘要：[other] DNS SRV 邮件服务发现 — RFC 6186：Autoconfig 与客户端自动配置 - 知识库 · ztpop 邮件技术知识库（见原文）
+
+## SPF 或 DKIM 的 TXT 记录太长发布失败，应该怎么正确切分？
+- 分类：spf
+- 来源：https://ztpop.net/kb/dns-txt-character-string-chunking-spf-dkim.html
+- 摘要：按 RFC 1035 §3.3 的定义，character-string 由一个长度字节，后跟该数量的字符构成；它被当作二进制信息处理。既然长度用单个字节表达，单个 character-string 能容纳的内容长度就有一个硬性上限，无法通过任何配置绕开。
 
 ## DNS 黑名单机制与应对策略 — DNSBL/RBL/URIBL 原理、查询方法与自建方案 · ztpop 邮件技术知识库
 - 分类：security
@@ -1266,6 +1281,11 @@
 - 分类：architecture
 - 来源：https://ztpop.net/kb/email-backup-strategies.html
 - 摘要：摘要：邮件系统的备份策略是企业 IT 基础设施中最基础也最容易被忽视的环节之一。备份不同于归档——备份面向灾难恢复，归档面向合规留存（详见本站邮件归档技术详解）。本文系统梳理邮件系统备份的核心方法论、Maildir 与 mbox 格式对备份策略的影响、数据库与配置文件的备份方案、自动化脚本设计与异地容灾架构，最后给出可操作的恢复测试验证流程。
+
+## 邮件客户端从基本认证迁移到 OAuth 2.0 该怎么规划？
+- 分类：security
+- 来源：https://ztpop.net/kb/email-basic-auth-to-oauth2-migration.html
+- 摘要：基本认证（在 SASL 中通常是 PLAIN 或 LOGIN 机制）的模型是：把用户的长期口令原样交给每一个客户端，客户端每次连接都重放这个口令。由此产生四个无法通过加固缓解的结构性缺陷：
 
 ## BIMI（品牌标识邮件标识，IETF BIMI 草案）如何让收件箱显示“品牌 Logo”？它依赖什么前提？
 - 分类：bimi
@@ -1647,6 +1667,11 @@
 - 来源：https://ztpop.net/kb/email-log-forensics-toolkit.html
 - 摘要：邮件日志是诊断投递问题、追踪安全事件的核心数据源。现代邮件系统的日志分析已从纯手动 grep 演进为使用结构化日志和 SIEM 集成的自动化方案。
 
+## 邮件系统的日志要留多久？合规上有哪些硬性要求和边界？
+- 分类：compliance
+- 来源：https://ztpop.net/kb/email-log-retention-cybersecurity-law-compliance.html
+- 摘要：邮件系统的日志留存首先要满足网络安全法的等级保护义务。这里有一个必须先说清楚的变化：该法在 2025 年经过修正，条文顺序作了调整。
+
 ## 邮件的“信封发件人(Mail From)”和“信头 From”是一回事吗？为何常不一致？
 - 分类：other
 - 来源：https://ztpop.net/kb/email-mail-from-vs-from.html
@@ -2027,6 +2052,11 @@
 - 分类：other
 - 来源：https://ztpop.net/kb/email-tco-calculator.html
 - 摘要：邮件系统的成本构成可参照GB/T 24405.1-2009《信息技术 服务管理 第1部分：规范》（等同采用 ISO/IEC 20000-1:2005，国际最新版为 ISO/IEC 20000-1:2018）中的服务管理框架进行分类。该标准将IT服务生命周期划分为服务交付、服务设计、服务转换与持续改进，映射到邮件系统的成本评估，同样应覆盖从方案设计到日常运行的完整链条。
+
+## 回复链劫持（thread hijacking）邮件如何识别与防御？
+- 分类：architecture
+- 来源：https://ztpop.net/kb/email-thread-hijacking-reply-chain-defense.html
+- 摘要：回复链劫持的前提通常是某一方的邮箱已经失陷——攻击者读到了真实的历史会话，然后以其中一封邮件为锚点发出「回复」，把恶意链接或附件挂在一段确实发生过的业务对话之后。也有一种变体是攻击者窃取了会话内容，再用一个形近域名冒充其中一方续接对话。
 
 ## 邮件客户端是如何把多封往来邮件归并为“对话线程（Thread）”的？References 与 In-Reply-To 有什么区别？
 - 分类：references
@@ -2467,6 +2497,11 @@
 - 分类：xinchuang
 - 来源：https://ztpop.net/kb/gbt22239-email-control-points-level3.html
 - 摘要：GB/T 22239-2019 于 2019-05-10 发布、2019-12-01 实施，替代 GB/T 22239-2008，是网络安全等级保护制度的基本要求标准。其正文按保护等级分章：第三级安全要求集中在第 8 章，其中 8.1 为安全通用要求，下设安全物理环境（8.1.1）、安全通信网络（8.1.2）、安全区域边界（8.1.3）、安全计算环境（8.1.4）、安全管理中心（8.1.5），以及安全管理制度、安全管理机构、安全管理人员、安全建设管理、安全运维管理等管理类要求；8.2 起为云计算、移动互联、物联网、工业控制系统等安全扩展要求。
+
+## 邮件系统处理个人信息时，国内合规的基本要求有哪些？
+- 分类：xinchuang
+- 来源：https://ztpop.net/kb/gbt35273-pipl-email-personal-information-compliance.html
+- 摘要：GB/T 35273-2020《信息安全技术 个人信息安全规范》对个人信息与个人敏感信息给出了定义与判定思路，并附有个人信息示例与敏感信息判定的资料性附录，可作为分类分级工作的起点。
 
 ## GB/T 37002 电子邮件系统安全国家标准换版：2018 版与 2026 版有什么区别，何时切换？
 - 分类：xinchuang
@@ -3514,6 +3549,11 @@
 - 来源：https://ztpop.net/kb/mime-content-type.html
 - 摘要：Content-Type（RFC 2045）声明主体的媒体类型 type/subtype（如 text/plain、text/html、image/png、application/pdf）与参数（charset 字符集、boundary 多部分边界、name 文件名）。它告诉客户端“这是什么、怎么渲染”。
 
+## 附件文件名的 MIME 参数写法为什么会造成网关与客户端判断不一致？
+- 分类：other
+- 来源：https://ztpop.net/kb/mime-filename-parser-differential-evasion.html
+- 摘要：附件文件名主要由 RFC 2183 定义的 Content-Disposition 字段中的filename参数承载（Content-Type 中的name参数是另一种历史写法）。问题的根源在于：MIME 参数值原本只能是受限的 ASCII，无法表达非英文文件名，也无法承载很长的值。
+
 ## MIME multipart（RFC 2046）是什么？multipart/alternative、mixed、related 有何区别？
 - 分类：other
 - 来源：https://ztpop.net/kb/mime-multipart.html
@@ -4114,6 +4154,11 @@
 - 来源：https://ztpop.net/kb/proofpoint-email-fraud-defense-2026.html
 - 摘要：Proofpoint 官方文档把 BEC 的常见战术归为两类：域名欺骗（直接冒用可信域，如Company <person@company.com>）与近似域名欺骗（注册形似域，如把 m 拆成 rn 的Company <person@c0rnpany.com>）。前者可由 DMARC 强制解决，后者则完全绕开 DMARC——因为攻击者用的是自己合法拥有的域，认证会正常通过。此外，邮件欺诈（impostor email）通常不携带恶意附件或恶意 URL，因而对以载荷检测为核心的防御是「隐形」的。这三点共同决定了单一手段不足，需要认证、域名情报与内容/关系分析叠加。
 
+## 公共后缀域（如某些多级顶级域）下的子域被冒用，能统一加策略吗？
+- 分类：dmarc
+- 来源：https://ztpop.net/kb/psd-dmarc-public-suffix-domain-rfc9091.html
+- 摘要：RFC 9091 的类别是Experimental（实验性），文档本身即声明它定义的是互联网实验协议。这一点必须先讲明白，因为它直接决定了该如何对待这套机制。
+
 ## RFC 1912 / RFC 5321 · 邮件服务器必备配置
 - 分类：other
 - 来源：https://ztpop.net/kb/ptr-reverse-dns.html
@@ -4189,6 +4234,11 @@
 - 来源：https://ztpop.net/kb/rfc2047-encoded-word-header-rules.html
 - 摘要：单个 encoded-word 的总长（含 charset、encoding、encoded-text 与各分隔符）不得超过 75 个字符。若需编码的文本超出这一长度，可使用多个 encoded-word，彼此以CRLF SPACE分隔。虽然多行头字段的总长度不受限制，但含有 encoded-word 的头字段每一行限制在 76 个字符以内。
 
+## postmaster 和 abuse 邮箱必须要有吗？没有会带来什么后果？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc2142-role-mailboxes-abuse-postmaster.html
+- 摘要：角色邮箱常被当作「老派惯例」而在新建域名时被跳过，这是一个代价被严重低估的决定。RFC 2142 是 Standards Track 文档，它对这些名字提出的是规范性要求。
+
 ## RFC 2231 如何解决 MIME 参数过长与非 ASCII 文件名问题？
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc2231-mime-parameter-continuation.html
@@ -4203,6 +4253,11 @@
 - 分类：tls
 - 来源：https://ztpop.net/kb/rfc2595-imap-pop3-starttls.html
 - 摘要：TLS 为应用层协议提供防篡改与防窃听能力。由于 IMAP、POP 与 ACAP 普遍面临连接窃听与劫持攻击，采用这类保护十分必要。规范指出：许多站点在认证基础设施上投入巨大（例如已存储了大量口令单向函数值的数据库），因此需要一个不与用户认证紧耦合的隐私层，使站点无需新建认证体系、也不必强制所有用户改口令，即可抵御网络窃听。IETF 有强烈意愿消除在未加密通道上传输明文口令，TLS 正是与 SASL 并行的另一条可部署路径。
+
+## STARTTLS 被中间人剥离导致明文传输，怎么发现和防住？
+- 分类：tls
+- 来源：https://ztpop.net/kb/rfc3207-starttls-downgrade-stripping-detection.html
+- 摘要：RFC 3207 定义的 STARTTLS 是一个 SMTP 服务扩展：连接先以明文建立，服务端在 EHLO 响应中通告 STARTTLS 关键字，客户端发出 STARTTLS 命令，服务端以 220 应答后双方开始 TLS 握手。
 
 ## 邮件安全事件的证据保全应满足哪些技术与法律要求？
 - 分类：protocols
@@ -4229,10 +4284,30 @@
 - 来源：https://ztpop.net/kb/rfc4021-mail-header-field-registry.html
 - 摘要：RFC 4021 的作用是：按「消息头字段注册流程」为一批邮件消息头字段与 MIME 头字段建立 IANA 注册。它本身不发明新字段，而是把散落在 RFC 822/2822、MIME 系列等文档中的既有字段统一登记造册，使 IANA 注册表成为查询头字段权威定义的单一入口。文档结构上，§2.1 收录邮件消息头字段的初始注册模板，§2.2 收录 MIME 头字段的初始注册模板。值得一提的是，正文主体是由 RDF/N3 数据自动生成的。
 
+## 通配符 DNS 记录会对邮件路由和反垃圾造成什么影响？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc4592-wildcard-dns-email-routing-risk.html
+- 摘要：通配符记录（形如*.example.com）的行为比多数人以为的复杂。RFC 4592（2006 年 7 月）正是为澄清这些语义而制定，它更新了 RFC 1034 中关于通配符的描述。几条最常被误解的规则：
+
 ## RFC 4978 的 IMAP COMPRESS 扩展如何工作，与 TLS 的层序为何重要？
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc4978-imap-compress-deflate.html
 - 摘要：RFC 4978 的标题是「The IMAP COMPRESS Extension」，摘要一句话概括其目的：COMPRESS 扩展让 IMAP 连接得以有效且高效地压缩。需要特别澄清的是，这份 RFC 与「二进制 ESMTP」无关——SMTP 侧传输大体量与二进制 MIME 消息的扩展（BDAT / CHUNKING / BINARYMIME）由另一份文档定义。查阅 rfc-editor.org 原文可直接核实这一点，本文按 RFC 4978 的真实主题撰写。
+
+## SMTP 的点号填充（dot-stuffing）与行结束规则是怎样的？为什么解析不当会出问题？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc5321-dot-stuffing-transparency-parsing.html
+- 摘要：SMTP 的 DATA 命令没有长度字段。发送方发出 DATA、收到中间响应后开始传输报文，报文的结束靠一个带内标记来表示：一个只包含单个点号的行，即 CRLF、点号、CRLF 这一序列。
+
+## 邮件地址过长、行过长、收件人过多被拒，协议规定的上限到底是多少？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc5321-protocol-size-limits-troubleshooting.html
+- 摘要：RFC 5321 §4.5.3.1 在给出具体数字前先立了一条原则，这条原则决定了如何正确解读后面的每一个值：每一个实现都必须能够接收至少这些尺寸的对象；超过这些尺寸的对象在可能的情况下应当避免。规范同时指出，某些互联网邮件构造往往需要更大的对象，客户端可以尝试传输，但必须准备好被服务端拒绝。
+
+## SMTP 各命令的超时应该设成多少？投递卡住怎么按超时定位？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc5321-smtp-per-command-timeout-tuning.html
+- 摘要：RFC 5321 §4.5.3.2 对客户端提出了强制要求：SMTP 客户端必须提供超时机制，并且必须使用逐命令超时，而不是设法给整个邮件事务计时。实现方式是为每一条 SMTP 命令、以及数据传输的每一个缓冲区分别设置定时器。
 
 ## RFC 5321 简单邮件传输协议（SMTP）：邮件如何在服务器之间路由与投递
 - 分类：protocols
@@ -4244,6 +4319,11 @@
 - 来源：https://ztpop.net/kb/rfc5321-smtp-reply-codes-relay.html
 - 摘要：SMTP 回复码三位数字各有分工：第一位表明响应是好、坏还是不完整——实现简单的客户端仅凭首位即可决定下一步（照常推进、重做、退避等）；第二位供想知道错误大类（如邮件系统错误、命令语法错误）的客户端参考；第三位及任何补充信息则保留给最细粒度的区分。文档亦指出 SMTP 的码值架构借鉴自 FTP，但SMTP 是「一命令一响应」的同步模型，且 FTP 的 1yz 码不属于 SMTP 模型。
 
+## 邮件信头折行（folding）为什么会导致解析不一致和安全绕过？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc5322-header-folding-unfolding-parser-pitfalls.html
+- 摘要：按 RFC 5322 §2.2，每一个信头字段在逻辑上都是单独一行字符，由字段名、冒号与字段体组成，以 CRLF 结束。但为了方便，也为了应对每行 998 / 78 字符的长度限制，字段体部分可以拆成多行表示，这种做法称为折行（folding）。
+
 ## 互联网邮件消息格式深度解析 — RFC 5322 与 MIME（RFC 2045-2049） · ztpop 邮件技术知识库
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc5322-mime-message-format.html
@@ -4253,6 +4333,11 @@
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc5598-internet-email-architecture.html
 - 摘要：RFC 5598 把分散在 SMTP、MIME、IMAP、POP 等文档中的概念整合为一幅"互联网邮件架构"全景图。它定义了一套通用术语与功能组件，使不同实现（Postfix、Exchange、信创邮件系统）能在同一坐标系下被比较。对正在做 Exchange 迁移或信创邮件替换的团队，这是架构设计的权威基线。
+
+## DNSBL / DNSWL 的查询机制是怎样的？如何正确接入并做健康自检？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc5782-dnsbl-query-mechanics-testpoints.html
+- 摘要：DNSBL（DNS-based Blacklist）与 DNSWL（whitelist）的设计巧思在于复用 DNS 作为分布式查询协议：列表运营方把数据发布为一个 DNS 区，查询方发起一次普通的 A 记录查询即可完成判定，天然获得缓存、任播分发与高可用能力，无需任何专用协议。RFC 5782 于 2010 年 2 月发布，把这一广泛存在的既有实践形式化为规范文档（Informational）。
 
 ## RFC 6186 如何用 SRV 记录实现邮件服务自动发现？
 - 分类：protocols
@@ -4279,6 +4364,11 @@
 - 来源：https://ztpop.net/kb/rfc6449-complaint-feedback-loop-operations.html
 - 摘要：RFC 6449 是 Informational 类别文档，2011 年 11 月发布，由 J. Falk 担任编辑，内容出自 MAAWG（今 M3AAWG）协作委员会的集体工作，术语体系沿用 RFC 5598 的邮件架构。它不定义线格式（线格式是 RFC 5965 的 ARF），而是专门讲运营。
 
+## 退信和投诉报告的 multipart/report 结构是怎样的？如何正确解析？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc6522-multipart-report-structure-parsing.html
+- 摘要：邮件系统会产生多种「关于另一封邮件」的管理性报告：投递失败通知、垃圾投诉、阅读处置通知。这些报告如果各用各的格式，接收方就需要为每一种单独写解析逻辑，而且无法可靠地把报告与被报告的原始邮件关联起来。
+
 ## RFC 6531 SMTPUTF8 扩展如何支持国际化邮件地址？回复码怎么处理？
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc6531-smtputf8-downgrade-handling.html
@@ -4299,6 +4389,11 @@
 - 来源：https://ztpop.net/kb/rfc7208-spf-mechanism-edge.html
 - 摘要：RFC 7208 §4.6.2 规定机制前的限定符决定check_host()返回值：+为 pass、-为 fail、~为 softfail、?为 neutral；限定符可省略，默认值为+（即未写限定符匹配即 pass）。
 
+## 邮箱地址被回收再分配给新用户后，如何避免把敏感邮件投给新主人？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc7293-rrvs-address-reassignment-protection.html
+- 摘要：邮箱地址在现实中并不是永久绑定到某个自然人的标识符。运营商会回收长期不活跃的免费邮箱并重新开放注册；企业会在员工离职后把工号邮箱或姓名邮箱分配给新入职者；域名易主后，原有的全部本地部分也随之落入新持有者手中。
+
 ## RFC 7293 RRVS：用 Require-Recipient-Valid-Since 拦截僵尸账号投递
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc7293-rrvs-require-recipient-valid-since.html
@@ -4308,6 +4403,11 @@
 - 分类：dmarc
 - 来源：https://ztpop.net/kb/rfc7489-dmarc-subdomain-policy.html
 - 摘要：§6.3：p为策略记录必选项，作用于被查询域及其所有子域；sp为可选项，仅作用于子域、不影响域名本身，若缺失则子域继承 p 的策略。注意 §6.6.3：sp在“发布于组织域子域”的记录中被忽略——即子域自己的 DMARC 记录里的 sp 不生效。因此组织域设p=reject且不发 sp 时，所有子域已等效 reject。
+
+## 不收邮件的域名应该怎么配置？Null MX 的作用与部署要点是什么？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc7505-null-mx-nonmail-domain-hardening.html
+- 摘要：按 SMTP 的收件人域解析规则，发送方先查目标域的 MX 记录；若不存在 MX，则回退使用该域的 A/AAAA 记录，把该地址当作邮件服务器。这一回退规则带来一个长期困扰：一个从未打算收邮件的域名，只要它有 A/AAAA 记录（例如只跑网站、只做跳转、只用于 SPF 声明），就会被发送方当成可投递目标。
 
 ## RFC 7672 DANE for SMTP：用 DNS 公钥钉住杜绝 STARTTLS 降级攻击
 - 分类：tls
@@ -4369,6 +4469,11 @@
 - 来源：https://ztpop.net/kb/rfc8551-smime-certificate-trust-chain.html
 - 摘要：底层的密码消息封装并非由 S/MIME 自行定义，而是复用CMS（Cryptographic Message Syntax，RFC 5652）。可以理解为：CMS 提供 SignedData、EnvelopedData 等信封结构，S/MIME 负责把这些结构塞进 MIME 邮件并约定互操作规则，X.509/PKIX 则提供身份与信任的来源。
 
+## _dmarc、_domainkey 这类下划线名字是怎么回事？配置时有哪些坑？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc8552-underscored-dns-node-names-email-scoping.html
+- 摘要：邮件相关的 DNS 配置里到处是下划线开头的名字：DKIM 用_domainkey，DMARC 用_dmarc，MTA-STS 与 TLS 报告各有自己的前缀。这些名字不是随意约定的风格，而是有正式规范的机制。
+
 ## RFC 8601 认证结果头（Authentication-Results）：邮件认证结论的标准载体
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc8601-authentication-results.html
@@ -4423,6 +4528,11 @@
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc9208-imap-quota.html
 - 摘要：§1：RFC 9208 定义对 IMAP（RFC 3501/9051）的若干扩展，用于查询与操纵管理性资源使用上限（配额），取代 RFC 2087。§3.1.1：支持的资源名须以QUOTA=RES-前缀作为能力通告（如QUOTA=RES-STORAGE）；设置能力为QUOTASET——SETQUOTA 命令要求服务器通告该能力。
+
+## 邮件传输的 TLS 版本与密码套件应该怎么配置？
+- 分类：tls
+- 来源：https://ztpop.net/kb/rfc9325-smtp-tls-version-cipher-hardening.html
+- 摘要：把这三类混为一谈是最常见的配置错误来源：在 25 端口上强制要求高版本 TLS 会直接造成对部分外部域投递失败，而在提交端口上沿用机会式的宽松策略则等于把用户凭据暴露在可降级的通道上。
 
 ## RFC 9460 SVCB/HTTPS 记录：邮件服务的 DNS 发现与加密指示
 - 分类：protocols
@@ -4829,6 +4939,11 @@
 - 来源：https://ztpop.net/kb/smtp-tls-rpt.html
 - 摘要：TLS-RPT（SMTP TLS Reporting，RFC 8460）是一种报告机制：接收域在 DNS 中发布 _smtp._tls 记录，声明报告接收地址；发送方把每次 TLS 协商的结果（成功或失败及原因）按日汇总发送给接收方，使后者能发现被降级或中间人攻击。
 
+## 攻击者如何通过 SMTP 探测有效邮箱地址？该怎么防护？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/smtp-user-enumeration-rcpt-probing-defense.html
+- 摘要：有效邮箱清单是后续攻击的输入：它决定了钓鱼投递的命中率、密码喷洒的目标集合、以及社工时可引用的组织结构信息。相比撞库或漏洞利用，邮箱枚举成本极低且往往不产生任何认证失败日志——它利用的是协议的正常功能，而非缺陷。
+
 ## SMTPUTF8 与国际化邮件地址（EAI）：RFC 6531/6532 部署实践
 - 分类：protocols
 - 来源：https://ztpop.net/kb/smtp-utf8-eai-deployment.html
@@ -5114,6 +5229,11 @@
 - 来源：https://ztpop.net/kb/trendmicro-tonresolver-phishing-2026.html
 - 摘要：Trend Micro 研究团队于 2026 年 5 月下旬起观测到一批投向日本 Booking.com 合作住宿企业的可疑邮件，遥测显示 2026 年 5 月 17 日至 6 月 8 日期间来自日本地区的访问最为集中。报告将该恶意载荷命名为 TONResolver，检测名为TrojanSpy.JS.TONRESOLVER.A，其定位为初始访问与命令执行立足点，后续活动指向凭据窃取与进一步渗透。
 
+## 如何用可复现的算法判定邮件里的域名是否为同形异义仿冒？
+- 分类：other
+- 来源：https://ztpop.net/kb/unicode-uts39-confusable-domain-skeleton-detection.html
+- 摘要：仿冒域名依赖的是渲染结果相同或极为接近，而码点不同。收件人看到的字形与真实域名一致，字符串本身却是另一个域。这类判定如果交给人工目视，既不可复现，也无法规模化——同一个域名在不同字体、不同字号、不同终端下的可辨识度差异极大。
+
 ## Unit 42 2026 事件响应报告如何描述勒索软件与邮件初始访问的关系？
 - 分类：other
 - 来源：https://ztpop.net/kb/unit42-ransomware-email-vector-2026.html
@@ -5266,4 +5386,4 @@
 
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 1049 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 1073 篇文章。采用 CC-BY 4.0 许可。*
