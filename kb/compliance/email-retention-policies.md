@@ -175,7 +175,6 @@ MFA 执行 DeleteAndAllowRecovery 操作时，将邮件移动到"可恢复项目
 [6] J. Klensin, "Simple Mail Transfer Protocol," IETF RFC 5321, October 2008.
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ### 📦 相关产品与方案
 
