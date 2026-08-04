@@ -37,7 +37,7 @@ license: CC-BY 4.0
 
 * [M3AAWG 域名声誉管理](/kb/m3aawg-domain-reputation-bcp.html)：退信对声誉的影响
 * [退信诊断完全手册](/kb/smtp-bounce-diagnosis-complete.html)：5xx/4xx 分类
-* [RFC 8689 RRVS](/kb/rfc8689-rrvs-require-recipient-valid-since.html)：接收方有效性声明
+* [RFC 7293 RRVS](/kb/rfc7293-rrvs-require-recipient-valid-since.html)：接收方有效性声明
 * [邮件送达率工程](/kb/email-deliverability-engineering.html)：列表卫生
 * [M3AAWG 垃圾陷阱指南](/kb/m3aawg-spam-trap-guide.html)：避免踩中陷阱
 
