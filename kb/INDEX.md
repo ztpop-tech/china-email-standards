@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 1065 篇文章。
+共 1049 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Apache James 390 Release Notes](https://ztpop.net/kb/apache-james-390-release-notes.html) → `kb/architecture/apache-james-390-release-notes.md`
@@ -193,7 +193,6 @@
 - [Exchange Compliance Migration](https://ztpop.net/kb/exchange-compliance-migration.html) → `kb/exchange/exchange-compliance-migration.md`
 - [Exchange Dag Vs Chinese Ha Comparison](https://ztpop.net/kb/exchange-dag-vs-chinese-ha-comparison.html) → `kb/exchange/exchange-dag-vs-chinese-ha-comparison.md`
 - [Exchange Data Migration Procedure](https://ztpop.net/kb/exchange-data-migration-procedure.html) → `kb/exchange/exchange-data-migration-procedure.md`
-- [Exchange Domino Replacement](https://ztpop.net/kb/exchange-domino-replacement.html) → `kb/exchange/exchange-domino-replacement.md`
 - [Exchange Eol Complete Timeline](https://ztpop.net/kb/exchange-eol-complete-timeline.html) → `kb/exchange/exchange-eol-complete-timeline.md`
 - [Exchange Eol Migration Guide](https://ztpop.net/kb/exchange-eol-migration-guide.html) → `kb/exchange/exchange-eol-migration-guide.md`
 - [Exchange Eol Security Implications](https://ztpop.net/kb/exchange-eol-security-implications.html) → `kb/exchange/exchange-eol-security-implications.md`
@@ -205,7 +204,6 @@
 - [Exchange Migration Planning Framework](https://ztpop.net/kb/exchange-migration-planning-framework.html) → `kb/exchange/exchange-migration-planning-framework.md`
 - [Exchange Multinational Migration Plan](https://ztpop.net/kb/exchange-multinational-migration-plan.html) → `kb/exchange/exchange-multinational-migration-plan.md`
 - [Exchange Multinational Migration](https://ztpop.net/kb/exchange-multinational-migration.html) → `kb/exchange/exchange-multinational-migration.md`
-- [Exchange Online Archive Compliance](https://ztpop.net/kb/exchange-online-archive-compliance.html) → `kb/exchange/exchange-online-archive-compliance.md`
 - [Exchange Online Email Auth Setup](https://ztpop.net/kb/exchange-online-email-auth-setup.html) → `kb/exchange/exchange-online-email-auth-setup.md`
 - [Exchange Online Header Trace](https://ztpop.net/kb/exchange-online-header-trace.html) → `kb/exchange/exchange-online-header-trace.md`
 - [Exchange Online Hybrid Mailflow Config](https://ztpop.net/kb/exchange-online-hybrid-mailflow-config.html) → `kb/exchange/exchange-online-hybrid-mailflow-config.md`
@@ -217,7 +215,6 @@
 - [Exchange Replacement Six Dimensions Comparison](https://ztpop.net/kb/exchange-replacement-six-dimensions-comparison.html) → `kb/exchange/exchange-replacement-six-dimensions-comparison.md`
 - [Exchange Se Subscription Guide](https://ztpop.net/kb/exchange-se-subscription-guide.html) → `kb/exchange/exchange-se-subscription-guide.md`
 - [Exchange To Turboex Migration](https://ztpop.net/kb/exchange-to-turboex-migration.html) → `kb/exchange/exchange-to-turboex-migration.md`
-- [Kb Art1 Exchange Cloud Migration](https://ztpop.net/kb/kb-art1-exchange-cloud-migration.html) → `kb/exchange/kb-art1-exchange-cloud-migration.md`
 - [Postfix Vs Exchange Architecture](https://ztpop.net/kb/postfix-vs-exchange-architecture.html) → `kb/exchange/postfix-vs-exchange-architecture.md`
 - [Xinchuang Email Migration From Exchange](https://ztpop.net/kb/xinchuang-email-migration-from-exchange.html) → `kb/exchange/xinchuang-email-migration-from-exchange.md`
 - [Email Spam Trap Honeypot](https://ztpop.net/kb/email-spam-trap-honeypot.html) → `kb/m3aawg/email-spam-trap-honeypot.md`
@@ -298,7 +295,6 @@
 - [Email Queue Management](https://ztpop.net/kb/email-queue-management.html) → `kb/operations/email-queue-management.md`
 - [Email Security Benchmark Cis](https://ztpop.net/kb/email-security-benchmark-cis.html) → `kb/operations/email-security-benchmark-cis.md`
 - [Email Security Hardening Checklist](https://ztpop.net/kb/email-security-hardening-checklist.html) → `kb/operations/email-security-hardening-checklist.md`
-- [Email System Setup.Bak](https://ztpop.net/kb/email-system-setup.bak.html) → `kb/operations/email-system-setup.bak.md`
 - [Email System Setup](https://ztpop.net/kb/email-system-setup.html) → `kb/operations/email-system-setup.md`
 - [Email Tarpit Ratelimit](https://ztpop.net/kb/email-tarpit-ratelimit.html) → `kb/operations/email-tarpit-ratelimit.md`
 - [Exim Config Security](https://ztpop.net/kb/exim-config-security.html) → `kb/operations/exim-config-security.md`
@@ -526,11 +522,6 @@
 - [Iso 27001 2022 Email Controls](https://ztpop.net/kb/iso-27001-2022-email-controls.html) → `kb/other/iso-27001-2022-email-controls.md`
 - [Iso 27002 2022 Email Control Guidance](https://ztpop.net/kb/iso-27002-2022-email-control-guidance.html) → `kb/other/iso-27002-2022-email-control-guidance.md`
 - [Job Recruitment Scam Email](https://ztpop.net/kb/job-recruitment-scam-email.html) → `kb/other/job-recruitment-scam-email.md`
-- [Kb Art3 Mailbox Quota](https://ztpop.net/kb/kb-art3-mailbox-quota.html) → `kb/other/kb-art3-mailbox-quota.md`
-- [Kb Art4 Multi National Email Arch](https://ztpop.net/kb/kb-art4-multi-national-email-arch.html) → `kb/other/kb-art4-multi-national-email-arch.md`
-- [Kb Art5 Dns Transition](https://ztpop.net/kb/kb-art5-dns-transition.html) → `kb/other/kb-art5-dns-transition.md`
-- [Kb Email Threat Intelligence Sharing](https://ztpop.net/kb/kb-email-threat-intelligence-sharing.html) → `kb/other/kb-email-threat-intelligence-sharing.md`
-- [Kb Encrypted Email Gateway Architecture](https://ztpop.net/kb/kb-encrypted-email-gateway-architecture.html) → `kb/other/kb-encrypted-email-gateway-architecture.md`
 - [Ldap Email Integration](https://ztpop.net/kb/ldap-email-integration.html) → `kb/other/ldap-email-integration.md`
 - [List Unsubscribe Post](https://ztpop.net/kb/list-unsubscribe-post.html) → `kb/other/list-unsubscribe-post.md`
 - [List Unsubscribe Rfc8058](https://ztpop.net/kb/list-unsubscribe-rfc8058.html) → `kb/other/list-unsubscribe-rfc8058.md`
@@ -615,11 +606,9 @@
 - [Rfc8616 Email Auth Status Codes](https://ztpop.net/kb/rfc8616-email-auth-status-codes.html) → `kb/other/rfc8616-email-auth-status-codes.md`
 - [Rfc8617 Arc Chain Validation](https://ztpop.net/kb/rfc8617-arc-chain-validation.html) → `kb/other/rfc8617-arc-chain-validation.md`
 - [Rfc8624 Dnssec Algorithm](https://ztpop.net/kb/rfc8624-dnssec-algorithm.html) → `kb/other/rfc8624-dnssec-algorithm.md`
-- [Rfc8689 Rrvs Require Recipient Valid Since](https://ztpop.net/kb/rfc8689-rrvs-require-recipient-valid-since.html) → `kb/other/rfc8689-rrvs-require-recipient-valid-since.md`
 - [Rfc9051 Imap4Rev2 New](https://ztpop.net/kb/rfc9051-imap4rev2-new.html) → `kb/other/rfc9051-imap4rev2-new.md`
 - [Rfc9051 Imap4Rev2 Protocol](https://ztpop.net/kb/rfc9051-imap4rev2-protocol.html) → `kb/other/rfc9051-imap4rev2-protocol.md`
 - [Rfc9156 Dns Qname Minimisation](https://ztpop.net/kb/rfc9156-dns-qname-minimisation.html) → `kb/other/rfc9156-dns-qname-minimisation.md`
-- [Rfc9208 Deliverto Uri](https://ztpop.net/kb/rfc9208-deliverto-uri.html) → `kb/other/rfc9208-deliverto-uri.md`
 - [Rfc9460 Svcb Dns Email](https://ztpop.net/kb/rfc9460-svcb-dns-email.html) → `kb/other/rfc9460-svcb-dns-email.md`
 - [Sender Reputation Framework](https://ztpop.net/kb/sender-reputation-framework.html) → `kb/other/sender-reputation-framework.md`
 - [Sextortion Email Scam](https://ztpop.net/kb/sextortion-email-scam.html) → `kb/other/sextortion-email-scam.md`
@@ -675,9 +664,6 @@
 - [Imap Vs Pop3](https://ztpop.net/kb/imap-vs-pop3.html) → `kb/protocols/imap-vs-pop3.md`
 - [International Email Relay](https://ztpop.net/kb/international-email-relay.html) → `kb/protocols/international-email-relay.md`
 - [Jmap Protocol Rfc8620](https://ztpop.net/kb/jmap-protocol-rfc8620.html) → `kb/protocols/jmap-protocol-rfc8620.md`
-- [Kb Smtp Chunking Bdat](https://ztpop.net/kb/kb-smtp-chunking-bdat.html) → `kb/protocols/kb-smtp-chunking-bdat.md`
-- [Kb Smtp Future Delivery](https://ztpop.net/kb/kb-smtp-future-delivery.html) → `kb/protocols/kb-smtp-future-delivery.md`
-- [Kb Smtp Multi Ip Mx](https://ztpop.net/kb/kb-smtp-multi-ip-mx.html) → `kb/protocols/kb-smtp-multi-ip-mx.md`
 - [Multilingual Mime Idn Cjk Email Guide](https://ztpop.net/kb/multilingual-mime-idn-cjk-email-guide.html) → `kb/protocols/multilingual-mime-idn-cjk-email-guide.md`
 - [Nist Sp800 177 Smtp Transport Security](https://ztpop.net/kb/nist-sp800-177-smtp-transport-security.html) → `kb/protocols/nist-sp800-177-smtp-transport-security.md`
 - [Oauth2 Smtp Imap Auth](https://ztpop.net/kb/oauth2-smtp-imap-auth.html) → `kb/protocols/oauth2-smtp-imap-auth.md`
@@ -1050,7 +1036,6 @@
 - [Tls Rpt Smtp Reporting](https://ztpop.net/kb/tls-rpt-smtp-reporting.html) → `kb/tls/tls-rpt-smtp-reporting.md`
 - [Gov Xinchuang Email Procurement](https://ztpop.net/kb/gov-xinchuang-email-procurement.html) → `kb/xinchuang/gov-xinchuang-email-procurement.md`
 - [Guomi Email Cryptography](https://ztpop.net/kb/guomi-email-cryptography.html) → `kb/xinchuang/guomi-email-cryptography.md`
-- [Kb Art2 Xinchuang Ad Sync](https://ztpop.net/kb/kb-art2-xinchuang-ad-sync.html) → `kb/xinchuang/kb-art2-xinchuang-ad-sync.md`
 - [Sm2 Sm3 Sm4 Email Standards Mapping](https://ztpop.net/kb/sm2-sm3-sm4-email-standards-mapping.html) → `kb/xinchuang/sm2-sm3-sm4-email-standards-mapping.md`
 - [Sm4 Encryption Email Application](https://ztpop.net/kb/sm4-encryption-email-application.html) → `kb/xinchuang/sm4-encryption-email-application.md`
 - [Sm4 Gm Email Deployment](https://ztpop.net/kb/sm4-gm-email-deployment.html) → `kb/xinchuang/sm4-gm-email-deployment.md`
@@ -1063,7 +1048,6 @@
 - [Xinchuang Email Policy Timeline](https://ztpop.net/kb/xinchuang-email-policy-timeline.html) → `kb/xinchuang/xinchuang-email-policy-timeline.md`
 - [Xinchuang Email Procurement Guide](https://ztpop.net/kb/xinchuang-email-procurement-guide.html) → `kb/xinchuang/xinchuang-email-procurement-guide.md`
 - [Xinchuang Email Security Compliance](https://ztpop.net/kb/xinchuang-email-security-compliance.html) → `kb/xinchuang/xinchuang-email-security-compliance.md`
-- [Xinchuang Email Selection](https://ztpop.net/kb/xinchuang-email-selection.html) → `kb/xinchuang/xinchuang-email-selection.md`
 - [Xinchuang Os Database Compatibility Matrix](https://ztpop.net/kb/xinchuang-os-database-compatibility-matrix.html) → `kb/xinchuang/xinchuang-os-database-compatibility-matrix.md`
 - [Xinchuang Security Hardening Guide](https://ztpop.net/kb/xinchuang-security-hardening-guide.html) → `kb/xinchuang/xinchuang-security-hardening-guide.md`
 - [Xinchuang Tech Stack Comparison](https://ztpop.net/kb/xinchuang-tech-stack-comparison.html) → `kb/xinchuang/xinchuang-tech-stack-comparison.md`
