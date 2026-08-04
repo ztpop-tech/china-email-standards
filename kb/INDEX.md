@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 1061 篇文章。
+共 1073 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Apache James 390 Release Notes](https://ztpop.net/kb/apache-james-390-release-notes.html) → `kb/architecture/apache-james-390-release-notes.md`
@@ -92,6 +92,7 @@
 - [Email Compliance](https://ztpop.net/kb/email-compliance.html) → `kb/compliance/email-compliance.md`
 - [Email Ediscovery Legal Hold](https://ztpop.net/kb/email-ediscovery-legal-hold.html) → `kb/compliance/email-ediscovery-legal-hold.md`
 - [Email Forensics Legal Evidence](https://ztpop.net/kb/email-forensics-legal-evidence.html) → `kb/compliance/email-forensics-legal-evidence.md`
+- [Email Log Retention Cybersecurity Law Compliance](https://ztpop.net/kb/email-log-retention-cybersecurity-law-compliance.html) → `kb/compliance/email-log-retention-cybersecurity-law-compliance.md`
 - [Email Retention Archive Compliance](https://ztpop.net/kb/email-retention-archive-compliance.html) → `kb/compliance/email-retention-archive-compliance.md`
 - [Email Retention Policies](https://ztpop.net/kb/email-retention-policies.html) → `kb/compliance/email-retention-policies.md`
 - [Email Retention Policy Design](https://ztpop.net/kb/email-retention-policy-design.html) → `kb/compliance/email-retention-policy-design.md`
@@ -140,6 +141,7 @@
 - [Dkim Key Rotation](https://ztpop.net/kb/dkim-key-rotation.html) → `kb/dkim/dkim-key-rotation.md`
 - [Dkim Selector Migration](https://ztpop.net/kb/dkim-selector-migration.html) → `kb/dkim/dkim-selector-migration.md`
 - [Dkim Signature Process](https://ztpop.net/kb/dkim-signature-process.html) → `kb/dkim/dkim-signature-process.md`
+- [Dkim Signature Replay Attack Detection](https://ztpop.net/kb/dkim-signature-replay-attack-detection.html) → `kb/dkim/dkim-signature-replay-attack-detection.md`
 - [Dkim Troubleshooting](https://ztpop.net/kb/dkim-troubleshooting.html) → `kb/dkim/dkim-troubleshooting.md`
 - [Email Dkim Atps](https://ztpop.net/kb/email-dkim-atps.html) → `kb/dkim/email-dkim-atps.md`
 - [Email Dkim Multiple Signatures](https://ztpop.net/kb/email-dkim-multiple-signatures.html) → `kb/dkim/email-dkim-multiple-signatures.md`
@@ -182,6 +184,7 @@
 - [Email Dmarc Rua Analysis](https://ztpop.net/kb/email-dmarc-rua-analysis.html) → `kb/dmarc/email-dmarc-rua-analysis.md`
 - [Ietf Publishes Updated Dmarc Specification](https://ztpop.net/kb/ietf-publishes-updated-dmarc-specification.html) → `kb/dmarc/ietf-publishes-updated-dmarc-specification.md`
 - [Mailing List Dmarc](https://ztpop.net/kb/mailing-list-dmarc.html) → `kb/dmarc/mailing-list-dmarc.md`
+- [Psd Dmarc Public Suffix Domain Rfc9091](https://ztpop.net/kb/psd-dmarc-public-suffix-domain-rfc9091.html) → `kb/dmarc/psd-dmarc-public-suffix-domain-rfc9091.md`
 - [Rfc7489 Dmarc Subdomain Policy](https://ztpop.net/kb/rfc7489-dmarc-subdomain-policy.html) → `kb/dmarc/rfc7489-dmarc-subdomain-policy.md`
 - [Valimail Dmarc Adoption 2026](https://ztpop.net/kb/valimail-dmarc-adoption-2026.html) → `kb/dmarc/valimail-dmarc-adoption-2026.md`
 - [Exchange 2013 Eol Impact 2026](https://ztpop.net/kb/exchange-2013-eol-impact-2026.html) → `kb/exchange/exchange-2013-eol-impact-2026.md`
@@ -593,23 +596,30 @@
 - [Requiretls Policy Enforcement](https://ztpop.net/kb/requiretls-policy-enforcement.html) → `kb/other/requiretls-policy-enforcement.md`
 - [Rfc2045 Mime Content Transfer Encoding](https://ztpop.net/kb/rfc2045-mime-content-transfer-encoding.html) → `kb/other/rfc2045-mime-content-transfer-encoding.md`
 - [Rfc2047 Encoded Word Header Rules](https://ztpop.net/kb/rfc2047-encoded-word-header-rules.html) → `kb/other/rfc2047-encoded-word-header-rules.md`
+- [Rfc2142 Role Mailboxes Abuse Postmaster](https://ztpop.net/kb/rfc2142-role-mailboxes-abuse-postmaster.html) → `kb/other/rfc2142-role-mailboxes-abuse-postmaster.md`
 - [Rfc2231 Mime Parameter Continuation](https://ztpop.net/kb/rfc2231-mime-parameter-continuation.html) → `kb/other/rfc2231-mime-parameter-continuation.md`
 - [Rfc2369 List Unsubscribe Header Fields](https://ztpop.net/kb/rfc2369-list-unsubscribe-header-fields.html) → `kb/other/rfc2369-list-unsubscribe-header-fields.md`
+- [Rfc3207 Starttls Downgrade Stripping Detection](https://ztpop.net/kb/rfc3207-starttls-downgrade-stripping-detection.html) → `kb/other/rfc3207-starttls-downgrade-stripping-detection.md`
 - [Rfc3227 Email Evidence Collection Chain Of Custody](https://ztpop.net/kb/rfc3227-email-evidence-collection-chain-of-custody.html) → `kb/other/rfc3227-email-evidence-collection-chain-of-custody.md`
 - [Rfc3798 Message Disposition Notification](https://ztpop.net/kb/rfc3798-message-disposition-notification.html) → `kb/other/rfc3798-message-disposition-notification.md`
 - [Rfc4021 Mail Header Field Registry](https://ztpop.net/kb/rfc4021-mail-header-field-registry.html) → `kb/other/rfc4021-mail-header-field-registry.md`
 - [Rfc4592 Wildcard Dns Email Routing Risk](https://ztpop.net/kb/rfc4592-wildcard-dns-email-routing-risk.html) → `kb/other/rfc4592-wildcard-dns-email-routing-risk.md`
 - [Rfc5321 Dot Stuffing Transparency Parsing](https://ztpop.net/kb/rfc5321-dot-stuffing-transparency-parsing.html) → `kb/other/rfc5321-dot-stuffing-transparency-parsing.md`
+- [Rfc5321 Protocol Size Limits Troubleshooting](https://ztpop.net/kb/rfc5321-protocol-size-limits-troubleshooting.html) → `kb/other/rfc5321-protocol-size-limits-troubleshooting.md`
+- [Rfc5322 Header Folding Unfolding Parser Pitfalls](https://ztpop.net/kb/rfc5322-header-folding-unfolding-parser-pitfalls.html) → `kb/other/rfc5322-header-folding-unfolding-parser-pitfalls.md`
 - [Rfc5322 Mime Message Format](https://ztpop.net/kb/rfc5322-mime-message-format.html) → `kb/other/rfc5322-mime-message-format.md`
 - [Rfc5598 Internet Email Architecture](https://ztpop.net/kb/rfc5598-internet-email-architecture.html) → `kb/other/rfc5598-internet-email-architecture.md`
 - [Rfc6186 Srv Email Service Location](https://ztpop.net/kb/rfc6186-srv-email-service-location.html) → `kb/other/rfc6186-srv-email-service-location.md`
 - [Rfc6409 Message Submission](https://ztpop.net/kb/rfc6409-message-submission.html) → `kb/other/rfc6409-message-submission.md`
 - [Rfc6409 Msa Mandatory Actions](https://ztpop.net/kb/rfc6409-msa-mandatory-actions.html) → `kb/other/rfc6409-msa-mandatory-actions.md`
+- [Rfc6522 Multipart Report Structure Parsing](https://ztpop.net/kb/rfc6522-multipart-report-structure-parsing.html) → `kb/other/rfc6522-multipart-report-structure-parsing.md`
 - [Rfc6531 Smtputf8 Downgrade Handling](https://ztpop.net/kb/rfc6531-smtputf8-downgrade-handling.html) → `kb/other/rfc6531-smtputf8-downgrade-handling.md`
 - [Rfc6531 Smtputf8 Internationalized](https://ztpop.net/kb/rfc6531-smtputf8-internationalized.html) → `kb/other/rfc6531-smtputf8-internationalized.md`
 - [Rfc6960 Ocsp Crl Email Revocation](https://ztpop.net/kb/rfc6960-ocsp-crl-email-revocation.html) → `kb/other/rfc6960-ocsp-crl-email-revocation.md`
+- [Rfc7293 Rrvs Address Reassignment Protection](https://ztpop.net/kb/rfc7293-rrvs-address-reassignment-protection.html) → `kb/other/rfc7293-rrvs-address-reassignment-protection.md`
 - [Rfc7293 Rrvs Require Recipient Valid Since](https://ztpop.net/kb/rfc7293-rrvs-require-recipient-valid-since.html) → `kb/other/rfc7293-rrvs-require-recipient-valid-since.md`
 - [Rfc8460 Tlsrpt Report Schema](https://ztpop.net/kb/rfc8460-tlsrpt-report-schema.html) → `kb/other/rfc8460-tlsrpt-report-schema.md`
+- [Rfc8552 Underscored Dns Node Names Email Scoping](https://ztpop.net/kb/rfc8552-underscored-dns-node-names-email-scoping.html) → `kb/other/rfc8552-underscored-dns-node-names-email-scoping.md`
 - [Rfc8601 Authentication Results](https://ztpop.net/kb/rfc8601-authentication-results.html) → `kb/other/rfc8601-authentication-results.md`
 - [Rfc8616 Email Auth Status Codes](https://ztpop.net/kb/rfc8616-email-auth-status-codes.html) → `kb/other/rfc8616-email-auth-status-codes.md`
 - [Rfc8617 Arc Chain Validation](https://ztpop.net/kb/rfc8617-arc-chain-validation.html) → `kb/other/rfc8617-arc-chain-validation.md`
@@ -683,6 +693,7 @@
 - [Rfc2595 Imap Pop3 Starttls](https://ztpop.net/kb/rfc2595-imap-pop3-starttls.html) → `kb/protocols/rfc2595-imap-pop3-starttls.md`
 - [Rfc3501 Imap Protocol](https://ztpop.net/kb/rfc3501-imap-protocol.html) → `kb/protocols/rfc3501-imap-protocol.md`
 - [Rfc4978 Imap Compress Deflate](https://ztpop.net/kb/rfc4978-imap-compress-deflate.html) → `kb/protocols/rfc4978-imap-compress-deflate.md`
+- [Rfc5321 Smtp Per Command Timeout Tuning](https://ztpop.net/kb/rfc5321-smtp-per-command-timeout-tuning.html) → `kb/protocols/rfc5321-smtp-per-command-timeout-tuning.md`
 - [Rfc5321 Smtp Protocol](https://ztpop.net/kb/rfc5321-smtp-protocol.html) → `kb/protocols/rfc5321-smtp-protocol.md`
 - [Rfc5321 Smtp Reply Codes Relay](https://ztpop.net/kb/rfc5321-smtp-reply-codes-relay.html) → `kb/protocols/rfc5321-smtp-reply-codes-relay.md`
 - [Rfc8446 Tls13 Smtp Impact](https://ztpop.net/kb/rfc8446-tls13-smtp-impact.html) → `kb/protocols/rfc8446-tls13-smtp-impact.md`
@@ -978,6 +989,7 @@
 - [Zero Trust Email Architecture](https://ztpop.net/kb/zero-trust-email-architecture.html) → `kb/security/zero-trust-email-architecture.md`
 - [Zscaler Email Attack Trends 2026](https://ztpop.net/kb/zscaler-email-attack-trends-2026.html) → `kb/security/zscaler-email-attack-trends-2026.md`
 - [Dkim Spf Dmarc Config Template](https://ztpop.net/kb/dkim-spf-dmarc-config-template.html) → `kb/spf/dkim-spf-dmarc-config-template.md`
+- [Dns Txt Character String Chunking Spf Dkim](https://ztpop.net/kb/dns-txt-character-string-chunking-spf-dkim.html) → `kb/spf/dns-txt-character-string-chunking-spf-dkim.md`
 - [Email Spf Helo Check](https://ztpop.net/kb/email-spf-helo-check.html) → `kb/spf/email-spf-helo-check.md`
 - [Email Spf Include Flattening](https://ztpop.net/kb/email-spf-include-flattening.html) → `kb/spf/email-spf-include-flattening.md`
 - [Email Spf Record Howto](https://ztpop.net/kb/email-spf-record-howto.html) → `kb/spf/email-spf-record-howto.md`
