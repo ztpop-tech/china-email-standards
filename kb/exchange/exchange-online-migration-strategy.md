@@ -72,7 +72,7 @@ IMAP 迁移中邮件过大（>50MB附件）可能导致 imapsync 超时——需
 
 class="article-footer">
 
-本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库或联系 zhangtao@ztpop.net。
+本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库或扫码联系我们。
 
 ---
 
