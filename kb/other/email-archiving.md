@@ -46,7 +46,6 @@ WORM（Write Once Read Many）是邮件归档存储的核心技术。通过硬�
 NIST SP 800-45 邮件安全指南; SEC Rule 17a-4; ISO 15489 记录管理标准; Mailpiler 开源项目文档 (https://www.mailpiler.org/); Apache Solr 文档; Elasticsearch 文档; GB/T 22239-2019 信息安全技术 网络安全等级保护基本要求。
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ## 📦 相关产品与方案
 
