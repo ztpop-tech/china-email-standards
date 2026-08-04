@@ -6,7 +6,7 @@ license: CC-BY 4.0
 
 # 互联网邮件消息格式深度解析 — RFC 5322 与 MIME（RFC 2045-2049） · ztpop 邮件技术知识库
 
-本页内容正在整理中，即将上线。如需优先获取该主题资料，请联系 [zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)。
+本页内容正在整理中，即将上线。如需优先获取该主题资料，请扫码联系我们。。
 
 ---
 
