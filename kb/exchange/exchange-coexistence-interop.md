@@ -180,7 +180,7 @@ dig _caldav._tcp.newmail.example.com SRV
 
 ### 5.1 共享邮箱
 
-Exchange 共享邮箱（Shared Mailbox）通过 Full Access / Send As 权限管理。迁移到目标系统后，需转换为 IMAP 共享文件夹或组邮箱：
+Exchange 共享邮箱（Shared Mailbox）通过 Full Access / Send As 权限管理。迁移到目标系统后，需转换为 IMAP 共享文件夹或组
 
 * **方案 A：** 将共享邮箱作为独立 IMAP 账户迁移，目标系统创建对应的共享访问权限。
 * **方案 B：** 通过 ACL（Access Control List）在 IMAP 层实现共享文件夹。RFC 4314（IMAP ACL）定义了相关标准，Dovecot 等 IMAP 服务器完整支持。
