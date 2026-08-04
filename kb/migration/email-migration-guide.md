@@ -59,7 +59,6 @@ DNS 切换的常见错误：忘记降低 SPF 记录 TTL（如果接入新 IP 需
 imapsync 官方文档 (https://imapsync.lamiral.info/); Dovecot dsync 文档 (https://doc.dovecot.org/admin\_manual/migrating/); RFC 5321 - SMTP; RFC 3501 - IMAP4rev1; RFC 4155 - mbox Format; maildir 规范 (https://cr.yp.to/proto/maildir.html)。
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ## 📦 相关产品与方案
 
