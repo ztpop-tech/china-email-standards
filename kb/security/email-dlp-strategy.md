@@ -137,7 +137,6 @@ NIST SP 800-88 Rev.1 Guidelines for Media Sanitization; ISO/IEC 27001 Annex A.8 
 [反垃圾邮件技术全景](/kb/anti-spam-technologies.html)
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ### 📦 相关产品与方案
 
