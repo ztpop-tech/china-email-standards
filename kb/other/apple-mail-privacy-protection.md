@@ -22,18 +22,16 @@ Apple 在 2021 年随 iOS 15 / macOS Monterey 推出 Mail Privacy Protection（M
 ## 发件方应对策略
 
 * **放弃打开率作为核心 KPI**：改看点击、转化、回复等用户主动动作。
-* **用令牌回调替代像素**：RFC 9208 DELIVRTO 的 HTTPS 回调比隐蔽像素更合规、更可信。
 * **尊重隐私**：在隐私开关中允许完全禁用追踪，符合监管要求。
 * **区分投递与打开**：用 DSN（RFC 3461）确认送达，不把"送达"误报为"阅读"。
 
 ## 对信创邮件与政企的启示
 
-政企用信创邮件系统对外发信时，不应再把"打开率"当成重要通知的触达证明；应结合 DSN/DELIVRTO 做送达确认，并默认尊重收件方隐私设置。这既符合个人信息保护趋势，也避免被 Apple 生态用户标记为"过度追踪"。
+政企用信创邮件系统对外发信时，不应再把"打开率"当成重要通知的触达证明；应结合 DSN 做送达确认，并默认尊重收件方隐私设置。这既符合个人信息保护趋势，也避免被 Apple 生态用户标记为"过度追踪"。
 
 ### 相关主题
 
 * [RFC 3798 邮件处置通知](/kb/rfc3798-message-disposition-notification.html)：已读回执机制
-* [RFC 9208 DELIVRTO URI](/kb/rfc9208-deliverto-uri.html)：令牌回调式状态
 * [SMTP 投递状态通知（DSN）](/kb/smtp-dsn-rfc3461.html)：送达而非已读
 * [邮件送达追踪](/kb/email-delivery-tracking.html)：多层可观测性
 
