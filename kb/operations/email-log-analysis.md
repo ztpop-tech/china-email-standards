@@ -168,7 +168,6 @@ Postfix Official Documentation - Logging; Syslog RFC 5424; NIST SP 800-92 Guide 
 [邮件系统性能调优实战](/kb/email-performance-tuning.html)
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ### 📦 相关产品与方案
 
