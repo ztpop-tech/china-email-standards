@@ -42,7 +42,6 @@ RAID 配置建议：对于 SSD 阵列，RAID-1（镜像）或 RAID-10（镜像+�
 Postfix Performance Tuning (http://www.postfix.org/TUNING\_README.html); Dovecot Performance Tuning (https://doc.dovecot.org/admin\_manual/performance/); Linux Performance (Brendan Gregg); NIST SP 800-45 Version 2。
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ## 📦 相关产品与方案
 
