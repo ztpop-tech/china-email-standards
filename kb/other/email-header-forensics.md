@@ -52,7 +52,6 @@ RFC 5321 - SMTP; RFC 5322 - Internet Message Format; RFC 8601 - Message Header F
 [邮件安全态势感知与威胁情报](/kb/email-threat-intel.html)
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ### 📦 相关产品与方案
 
