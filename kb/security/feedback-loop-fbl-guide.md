@@ -122,7 +122,6 @@ M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group）是全球邮�
 [7] Microsoft Smart Network Data Service (SNDS/JMRP). https://sendersupport.olc.protection.outlook.com/snds/
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ## 📦 相关产品与方案
 
