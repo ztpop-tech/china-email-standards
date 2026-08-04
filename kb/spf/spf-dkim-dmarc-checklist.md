@@ -125,7 +125,6 @@ IETF RFC 7208 SPF；IETF RFC 6376 DKIM；IETF RFC 7489 DMARC；RFC 8616国际化
 [MTA-STS与TLS-RPT](/kb/mta-sts-guide.html)
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ### 📦 相关产品与方案
 
