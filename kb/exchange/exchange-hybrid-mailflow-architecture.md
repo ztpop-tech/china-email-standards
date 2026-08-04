@@ -6,7 +6,7 @@ license: CC-BY 4.0
 
 # Exchange混合部署架构与邮件流排错：On-Prem ↔ Exchange Online ↔ 第三方全链路解析 - 知识库 · ztpop 邮件技术知识库
 
-本页内容正在整理中，即将上线。如需优先获取该主题资料，请联系 [zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)。
+本页内容正在整理中，即将上线。如需优先获取该主题资料，请扫码联系我们。。
 
 ---
 
