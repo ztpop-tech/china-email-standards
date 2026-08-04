@@ -42,7 +42,6 @@ Postfix 的退信模板定义在 /etc/postfix/bounce.cf（默认）中，管理�
 Postfix 官方文档 - Queue Management (http://www.postfix.org/QSHAPE\_README.html); Postfix 官方文档 - Bottleneck Analysis; RFC 5321 - SMTP; RFC 3464 - Delivery Status Notifications; RFC 1893/5248 - Enhanced Mail System Status Codes。
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ## 📦 相关产品与方案
 
