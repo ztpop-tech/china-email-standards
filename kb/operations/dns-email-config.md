@@ -46,7 +46,6 @@ MTA-STS（SMTP MTA Strict Transport Security, RFC 8461）允许域名所有者�
 RFC 7208 - SPF; RFC 6376 - DKIM; RFC 7489 - DMARC; BIMI（IETF 草案）; RFC 8461 - MTA-STS; RFC 8460 - TLS-RPT; RFC 5321 - SMTP; RFC 1034/1035 - DNS。
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ## 📦 相关产品与方案
 
