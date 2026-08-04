@@ -1,6 +1,11 @@
 # ztpop.net 邮件技术知识库 — 全文摘要
-# 涵盖 17 个技术领域，共 907 篇文章。大模型友好入口
+# 涵盖 17 个技术领域，共 971 篇文章。大模型友好入口
 # 每篇文章均可在 ztpop.net 在线阅读。引用请标注来源。
+
+## AiTM 钓鱼平台如何绕过 MFA 实现 Microsoft 365 邮箱接管？
+- 分类：other
+- 来源：https://ztpop.net/kb/abnormal-aitm-account-takeover-2026.html
+- 摘要：Abnormal 追踪的 Matrix 平台展示了当前 AiTM 邮箱接管的标准形态。投递阶段：邮件从某个无关第三方的真实被攻陷 Microsoft 365 邮箱发出，伪装为 OneDrive 文档通知，因此 SPF 与 DKIM 均正常通过并被投递；恶意链接不在正文，而是藏在嵌套的message/rfc822附件内部。跳转阶段：链接先经 QuestionStar 问卷与 Zoho Insights 点击跟踪器两个「被滥用但合法」的 SaaS 服务，再抵达攻击者控制的、由 Cloudflare 前置的免费 DNS 区。收割阶段：落地页后端与真实微软登录服务保持一条实时已认证会话，随受害者输入同
 
 ## 邮件账号接管（ATO）是怎么发生的，如何检测与遏制？
 - 分类：other
@@ -11,6 +16,16 @@
 - 分类：architecture
 - 来源：https://ztpop.net/kb/acsc-email-hosting-hardening.html
 - 摘要：澳大利亚网络安全中心（ACSC）是澳政府网络安全技术权威，其Essential Eight是一套被广泛采用的优先缓解策略。邮件系统作为最易被利用的入口，几乎贯穿 Essential Eight 的多条策略。以下以邮件视角精译 ACSC 的加固基线，可直接作为国产/信创邮件系统的配置清单。
+
+## Agari（Fortra）的身份欺骗防御与 DMARC Protection 如何运作？
+- 分类：dmarc
+- 来源：https://ztpop.net/kb/agari-dmarc-identity-deception-2026.html
+- 摘要：Agari 共同创立了 DMARC 标准，现为 Fortra Email Security 的组成部分。其产品线分工明确：Cloud Email Protection以数据科学与机器学习模型拦截绕过传统控制的高级邮件威胁，防御 BEC、鱼叉钓鱼与冒充攻击；Agari DMARC Protection（DMP）自动化 DMARC 认证与强制，阻止品牌域被冒用去钓客户；Agari Phishing Defense（APD）拦截钓鱼、BEC 与其他身份欺骗攻击；Agari Phishing Response（APR）面向 Microsoft 365 自动化钓鱼事件响应、修复与失陷遏制；此外还有 Su
+
+## AI 生成的钓鱼邮件有什么特征，该如何防御？
+- 分类：security
+- 来源：https://ztpop.net/kb/ai-generated-phishing-email-2026.html
+- 摘要：FBI IC3《2025 年互联网犯罪报告》首次为 AI 单列章节：全年收到超过 22,000 起（22,364 起）标注 AI 相关的投诉，调整后损失超过8.93 亿美元。按类型细分：投资类 4,356 起、损失632,041,188美元；敲诈勒索 1,764 起；个人数据泄露 1,204 起；钓鱼/欺骗 803 起、损失 10,283,732 美元；BEC 135 起、损失30,256,592美元。IC3 同时提醒：投资类总损失超过 80 亿美元，说明大量受害者并未意识到 AI 在其中的参与程度，故上述 AI 标注数据应视为下限。INTERPOL《非洲网络威胁评估报告 2026》则给出更高
 
 ## AI/ML在邮件安全中的实际应用场景
 - 分类：other
@@ -97,6 +112,16 @@
 - 来源：https://ztpop.net/kb/apwg-2026-q1-phishing-techniques.html
 - 摘要：APWG（Anti-Phishing Working Group）发布的 2026 年第一季度钓鱼活动趋势报告揭示了钓鱼攻击在 AI 驱动下的新一轮进化。本报告基于对全球数百万级钓鱼样本的分析，总结出 2026 Q1 最具威胁性的攻击技术趋势。
 
+## 钓鱼攻击中最常被冒用的品牌与行业有哪些（APWG 2026）？
+- 分类：other
+- 来源：https://ztpop.net/kb/apwg-brand-impersonation-2026.html
+- 摘要：2026 年 Q1 共识别出766 个独立被冒用品牌；月度独立钓鱼站点约 32 万–33 万起。在社交平台上，冒用（Impersonation）占全部威胁的 43.8%，是品牌冒用的核心表现。
+
+## APWG 2025 全年钓鱼趋势报告有哪些关键数据？
+- 分类：security
+- 来源：https://ztpop.net/kb/apwg-phishing-trends-2025-annual.html
+- 摘要：APWG 在第四季度报告中给出 2025 全年口径：全年观测到约380 万次钓鱼攻击（unique phishing sites，即独立钓鱼站点，APWG 视其为「攻击」的同义度量），较 2024 年的376 万次小幅上升，全年整体处于「高位但平稳」状态。分季度为：Q11,003,924、Q21,130,393、Q3892,494、Q4853,244。Q2 是自 2023 年第二季度（128 万次）以来的最大单季总量；Q4 环比 Q3 下降 4%。
+
 ## APWG 钓鱼活动趋势报告解读：2025 Q1 钓鱼攻击首破百万，二维码钓鱼与电汇 BEC 双升
 - 分类：security
 - 来源：https://ztpop.net/kb/apwg-phishing-trends-2025q1.html
@@ -116,6 +141,11 @@
 - 分类：security
 - 来源：https://ztpop.net/kb/apwg-phishing-trends-2025q4.html
 - 摘要：译介 APWG《Phishing Activity Trends Report · 4th Quarter 2025》（年度回顾）· 面向邮件安全从业者与政企安全运营
+
+## APWG 2026 年第一季度钓鱼趋势报告揭示了哪些关键变化？
+- 分类：security
+- 来源：https://ztpop.net/kb/apwg-phishing-trends-2026q1.html
+- 摘要：APWG 以「独立钓鱼站点（即攻击）」为度量：2026 年 1 月 320,264、2 月 329,625、3 月 321,292 起；全季合计971,181 起，较 2025 年 Q4 的 853,244 起环比增长13.8%。当季共识别出766 个独立被冒用品牌；独立钓鱼邮件活动 1 月 16,165、2 月 14,790、3 月 19,790 起。
 
 ## ARC 邮件认证链协议深度解析 — RFC 8617：转发与邮件列表的认证可追溯性
 - 分类：protocols
@@ -217,6 +247,11 @@
 - 来源：https://ztpop.net/kb/backup-mx-email-continuity.html
 - 摘要：按 RFC 5321，MX 记录以偏好值（preference）排序，主 MX 取较小值、备 MX 取较大值。正常时邮件投递到主 MX；主不可达时发送方 MTA 依次尝试优先级更高（数值更大）的备 MX，备机缓存后转发给主机，实现容错。
 
+## Barracuda《2026 邮件威胁报告》的核心数据与攻击趋势是什么？
+- 分类：other
+- 来源：https://ztpop.net/kb/barracuda-email-threats-report-2026.html
+- 摘要：报告由 Barracuda 的威胁情报部门 Barracuda Research 于 2026 年 5 月 12 日发布，基于2026 年 1 月采集的全球遥测数据，分析了超过 31 亿封邮件中的恶意、垃圾及其他不受欢迎邮件，用以量化趋势并评估其对全球组织的影响。总体判断是：AI 驱动的社会工程与「钓鱼即服务」（PhaaS）正在同时抬高邮件攻击的数量和成功率，让攻击者得以规模化运营凭据钓鱼。
+
 ## BATV（Bounce Address Tag Validation）深度解析：退信验证与地址标签
 - 分类：other
 - 来源：https://ztpop.net/kb/batv-deep-dive.html
@@ -251,6 +286,11 @@
 - 分类：security
 - 来源：https://ztpop.net/kb/bec-defense.html
 - 摘要：商业邮件诈骗（Business Email Compromise, BEC）是当前造成经济损失最高的邮件威胁类型。FBI IC3 2024年度报告数据显示，BEC造成的损失已超过勒索软件与其他恶意软件攻击的总和。BEC的核心特征在于其无载荷攻击属性——邮件不携带恶意附件或恶意URL，仅通过社会工程手段诱导目标执行转账或泄露信息。这意味着传统的基于签名比对的防病毒引擎和沙箱对其完全无效。本文从身份伪造链路、行为基线检测、ARC协议链验证和流程管控四个层面，构建BEC防御的技术体系。
+
+## 商业邮件诈骗（BEC）在 2026 年出现了哪些演进？
+- 分类：security
+- 来源：https://ztpop.net/kb/bec-threat-evolution-2026.html
+- 摘要：FBI IC3《2025 年互联网犯罪报告》记录 BEC 投诉24,768起、损失3,046,598,558 美元，按损失排名仅次于投资诈骗，位居第二；折算平均单起损失约 12.3 万美元，远高于普通钓鱼。APWG 各季报中 Fortra 供稿章节则给出攻击侧口径：电汇 BEC 的请求金额均值在 2025 年内剧烈波动——Q1 为42,236美元（较 2024 Q4 的 128,980 美元下降 67%），Q2 反弹至83,099美元（+97%），Q3 回落至48,115美元（−42%），Q4 为50,297美元（+4.5%）。金额下降而数量激增是 2025 年的主线：Q1 环比 +33%、Q
 
 ## 邮件服务器BGP路由劫持防护与RPKI部署
 - 分类：other
@@ -382,6 +422,11 @@
 - 来源：https://ztpop.net/kb/binder-dns-svcb-rfc9460.html
 - 摘要：SVCB（Service Binding）和HTTPS DNS资源记录由RFC 9460（2022年）定义，是对DNS SRV记录（RFC 2782）的现代化替代。与SRV记录不同，SVCB记录通过AlpnMode（别名模式）和ServiceMode两种工作模式，允许一个服务域指向一个或多个目标端点，并带有一组键值对参数。
 
+## 美国联邦 DMARC 政策（BOD 18-01）规定了哪些强制动作与报送地址？
+- 分类：dmarc
+- 来源：https://ztpop.net/kb/bod-18-01-federal-dmarc-reporting.html
+- 摘要：具有约束力的运营指令（Binding Operational Directive，BOD）是美国国土安全部（DHS）依据《2014 年联邦信息安全现代化法案》（FISMA 2014）向联邦行政部门与机构发出的强制性指示，用于保障联邦信息与信息系统安全，联邦机构必须遵守。DHS 的 BOD不适用于法律定义的「国家安全系统」，也不适用于国防部与情报界运营的某些系统。
+
 ## 商业邮件冒充（BEC）如何检测？
 - 分类：other
 - 来源：https://ztpop.net/kb/business-email-spoofing-detection.html
@@ -402,6 +447,11 @@
 - 来源：https://ztpop.net/kb/cisa-bod-18-01-dmarc.html
 - 摘要：美国国土安全部（现 CISA）2017 年发布 BOD 18-01，要求所有联邦机构必须落地邮件与 Web 的强安全基线，核心是用 DMARC 终结联邦域名的欺骗。它把"建议"变成"强制指令"并设硬性时间表，是全球政务邮件合规最具参考价值的标杆，对国内信创政务邮件替换具有直接对标意义。
 
+## CISA BOD 23-01 的资产可见性与漏洞检测如何覆盖邮件系统？
+- 分类：other
+- 来源：https://ztpop.net/kb/cisa-bod-23-01-asset-vulnerability.html
+- 摘要：BOD 23-01 针对联邦文职行政分支（FCEB）系统，聚焦两项运营可见性活动：资产发现（asset discovery）——识别网络上可达的 IP 资产及其地址；漏洞枚举（vulnerability enumeration）——探测操作系统、应用、开放端口、缺失补丁与错误配置。指令目标不是规定手段，而是要求机构「全面、及时」地达成可见性结果。
+
 ## 美国 CISA 对政企邮件安全防护给出了哪些核心建议？能否平移到自建邮件系统？
 - 分类：other
 - 来源：https://ztpop.net/kb/cisa-email-security-insights.html
@@ -417,6 +467,11 @@
 - 来源：https://ztpop.net/kb/cisa-mfa-implementation-guide.html
 - 摘要：CISA 反复强调"MFA 是性价比最高的单点安全控制"，并将其列为 Shields Up 等告警的核心动作。其实施指引进一步区分 MFA 的强弱：基于 SMS/语音的 OTP 可被 SIM 交换、拦截绕过，而基于公钥密码的 FIDO2/WebAuthn、PIV 智能卡属于抗钓鱼（phishing-resistant）MFA，应作为高价值系统的首选。
 
+## CISA《钓鱼防护指南：在第一阶段阻断攻击链》给出了哪些邮件侧缓解措施？
+- 分类：security
+- 来源：https://ztpop.net/kb/cisa-phishing-guidance-attack-cycle.html
+- 摘要：该指南由美国网络安全与基础设施安全局（CISA）、国家安全局（NSA）、联邦调查局（FBI）与多州信息共享与分析中心（MS-ISAC）联合编制，发布时间为 2023 年 10 月，标注为TLP:CLEAR（可无限制公开分发），全文 14 页。
+
 ## 邮件系统中部署反钓鱼 MFA：FIDO2/WebAuthn、OAuth 2.0 与传统认证
 - 分类：security
 - 来源：https://ztpop.net/kb/cisa-phishing-resistant-mfa-email-deployment.html
@@ -427,6 +482,11 @@
 - 来源：https://ztpop.net/kb/cisa-phishing-resistant-mfa.html
 - 摘要：译自 CISA《Implementing Phishing-Resistant MFA》事实清单 · 面向邮件系统管理员与身份安全负责人
 
+## Cisco Talos 2026 年 Q2 事件响应趋势显示哪些邮件攻击变化？
+- 分类：other
+- 来源：https://ztpop.net/kb/cisco-talos-q2-2026-threat-report.html
+- 摘要：本季度钓鱼成为最主要的初始访问手段，出现在超过一半的 Cisco Talos 事件响应（Talos IR）参与事件中（上季度约为三分之一）。攻击者持续创新投递方式以规避防御：部署内嵌 QR 码的 PDF，绕过只解析文本的邮件网关；并将链接托管于 SharePoint 等受害组织信任的云平台上，借声誉过滤并显得更可信。
+
 ## 摘要：ClamAV是邮件安全网关中部署最广泛的开源反病毒引擎，由Cisco Talos维护，以GPLv2协议授权。它通过多线程守护进程（clamd）为SMTP网关提供实时病毒扫描服务，支持对邮件正文和附件进行解包后深度检测。本文覆盖ClamAV的核心架构、与Amavis/Postfix的集成配置、性能优化参数和病毒库更新策略。所有配置参数适用于生产环境部署。
 - 分类：architecture
 - 来源：https://ztpop.net/kb/clamav-antivirus-email-gateway.html
@@ -436,6 +496,11 @@
 - 分类：architecture
 - 来源：https://ztpop.net/kb/cloud-vs-on-prem-email-comparison.html
 - 摘要：组织在邮件基础设施上面临关键决策：使用云端托管邮件服务还是自建本地部署系统。两种方案在网络延迟、带宽成本、安全可控性和合规要求四个维度上有显著差异。云端服务无需维护硬件和基础软件，本地部署则提供完整的物理控制权、网络微隔离能力和可定制的合规配置。选择通常不是非此即彼——混合架构正在成为主流方案。
+
+## Cloudflare 2026 威胁形势报告揭示了哪些邮件安全发现？
+- 分类：other
+- 来源：https://ztpop.net/kb/cloudflare-email-security-2026.html
+- 摘要：Cloudforce One 提出“有效性度量”（MOE）框架：2026 年现代攻击者不再追求复杂与昂贵的一次性攻击，转而追求吞吐量与成果。窃取的会话令牌（身份）因 MOE 更高而受青睐；声誉护盾（LotX）提供免费、近乎不可追踪且高送达率的基础设施；AI 可自动发现连接最敏感数据的纽带。八趋势中与邮件直接相关者包括“令牌窃取致 MFA 失效”与“中继盲区导致内部品牌仿冒成为可能”。
 
 ## Cloudflare Email Service 提供哪两大核心能力？
 - 分类：references
@@ -477,6 +542,11 @@
 - 来源：https://ztpop.net/kb/cloudflare-faq-08.html
 - 摘要：提供自动 IP 信誉管理与投递优化；并通过 Analytics & Observability 监控邮件性能指标与告警，帮助维持高送达率。
 
+## 钓鱼模拟演练应该用哪些指标衡量效果？
+- 分类：security
+- 来源：https://ztpop.net/kb/cofense-phishing-simulation-metrics-2026.html
+- 摘要：Cofense 的官方立场是：员工是组织对抗邮件攻击最强的资产，不应被当作风险本身。绝大多数成功的企业网络攻击都始于一封绕过既有邮件安全措施（包括新的 AI 类措施）的钓鱼邮件，因此员工邮件安全意识项目是分层防御中的关键一环。这就决定了衡量口径必须从「有多少人中招」转向「有多少人能识别并上报」——只统计点击率的项目，本质上只在给失败计数，无法量化组织实际获得了多少检测能力。Cofense 公开数据称其在 2024 年交付了第 10 亿次员工培训模拟。
+
 ## 容器化邮件系统部署方案与性能评估
 - 分类：other
 - 来源：https://ztpop.net/kb/containerized-mail-deployment.html
@@ -501,6 +571,11 @@
 - 分类：other
 - 来源：https://ztpop.net/kb/cross-border-data-email.html
 - 摘要：随着中国企业全球化进程加速，邮件系统的跨境数据传输已经成为数据合规的高频风险场景。企业海外子公司的员工与总部的日常邮件往来、跨国项目协作中的邮件附件分发、海外客户的邮件通信——所有这些场景都可能触发中国法律对数据出境的监管。
+
+## CrowdStrike 2026 全球威胁报告揭示了哪些邮件钓鱼趋势？
+- 分类：security
+- 来源：https://ztpop.net/kb/crowdstrike-email-phishing-report-2026.html
+- 摘要：2025 年垃圾邮件（spam emails）同比增长 141%，为攻击者提供了更多初始访问机会；伪造 CAPTCHA 诱饵激增 563%，显示社会工程学手法显著扩张；整合 AI 的威胁行为者的攻击数量同比增加了 89%，AI 被用于加速和优化既有技术（而非创造全新向量）。
 
 ## 网络安全法与数据安全法框架下企业邮件系统合规要点
 - 分类：compliance
@@ -1968,6 +2043,16 @@
 - 来源：https://ztpop.net/kb/espoofer-email-spoofing-protection.html
 - 摘要：espoofer 是安全研究员 Chen Ji（陈吉）于 2020 年发布的开源邮件伪造检测工具（GitHub: chenjj/espoofer，Python 实现）。它的定位是「邮件伪造攻击测试框架」：自动探测目标域名的 SPF、DKIM、DMARC 配置状态，判断该域名是否存在可被利用的伪造漏洞，并实际构造攻击邮件演示漏洞利用路径。工具核心价值在于帮助安全团队和企业邮件管理员在攻击者利用之前，发现自己的域名是否可以被冒充。
 
+## Europol《IOCTA 2025》如何描述生成式 AI 与数据黑产对钓鱼的推动？
+- 分类：other
+- 来源：https://ztpop.net/kb/europol-iocta-2025-report.html
+- 摘要：报告主题为「Steal, deal and repeat」：被盗凭证与数据在暗网论坛、加密频道与订阅式犯罪市场中「被出售、转售、重新打包」。初始访问经纪人（IAB）批量售卖远程桌面、VPN、企业云与个人账户访问权，数据同时被用于敲诈、身份盗窃与勒索软件。
+
+## 勒索软件如何通过邮件投递链入侵企业（Europol IOCTA 视角）？
+- 分类：operations
+- 来源：https://ztpop.net/kb/europol-ransomware-email-delivery.html
+- 摘要：典型链条：钓鱼/入侵获取凭证 → 信息窃取木马（infostealer）导出日志 → 初始访问经纪人（IAB）将系统访问权挂牌出售 → 勒索软件团伙购入初始访问 → 部署勒索软件。Europol 举例：一家欧洲中型企业从未被直接入侵，却因供应链数据泄露在论坛出售而成为勒索受害者——「你无需做错任何事也可能被害」。
+
 ## Exchange 2013 EOL 影响与迁移路径 · 2026 年全面分析
 - 分类：exchange
 - 来源：https://ztpop.net/kb/exchange-2013-eol-impact-2026.html
@@ -2168,6 +2253,26 @@
 - 来源：https://ztpop.net/kb/exim-faq-08.html
 - 摘要：在配置第一段定义命名域列表：domainlist reject_domains = list:of:domains:to:reject。然后在 ACL 中拒绝这些域的 SMTP 收件人，并可附自定义报错。
 
+## BEC 薪资篡改（Payroll Diversion）骗局如何运作与防范？
+- 分类：security
+- 来源：https://ztpop.net/kb/fbi-bec-payroll-diversion-scheme.html
+- 摘要：攻击者先经钓鱼窃取员工邮箱，再冒充该员工或 HR 发出「修改直接存款（direct deposit）」请求，将工资重定向至攻击者控制的预付卡/银行账户；由于工资通常在变更后约两周才实际到账，攻击有隐蔽窗口。
+
+## FBI IC3《2023 互联网犯罪报告》中 BEC 与钓鱼损失有多大？
+- 分类：other
+- 来源：https://ztpop.net/kb/fbi-ic3-2023-internet-crime-report.html
+- 摘要：2023 年 IC3 收到创纪录的880,418 起投诉，潜在损失超过125 亿美元，较 2022 年投诉近 +10%、损失 +22%（PSA240318）。
+
+## FBI IC3《2024 互联网犯罪报告》显示网络犯罪与 BEC 损失如何演变？
+- 分类：other
+- 来源：https://ztpop.net/kb/fbi-ic3-2024-internet-crime-report.html
+- 摘要：2024 年 IC3 共收到859,532 起投诉，报告损失166 亿美元，较 2023 年增长33%；其中 256,256 起有明确损失，平均损失 19,372 美元。这是 IC3 成立 25 周年，累计受理超 900 万起投诉。
+
+## FBI IC3《2025 年互联网犯罪报告》对邮件安全有哪些关键结论？
+- 分类：other
+- 来源：https://ztpop.net/kb/fbi-ic3-2025-internet-crime-report.html
+- 摘要：2025 年是 IC3 成立 25 周年，全年共接收1,008,597起投诉（平均每天近 3,000 起），报告损失首次突破 200 亿美元，达到208.77 亿美元，较 2024 年增长26%，平均单起损失20,699 美元。其中「网络助力型欺诈」（cyber-enabled fraud）为 452,868 起、损失176.97 亿美元，占全年投诉量的 45%、损失的85%。60 岁以上群体投诉 201,266 起、损失 77 亿美元，是受损最重的年龄段。
+
 ## FBI IC3 年度报告解读：商业邮件诈骗（BEC）仍是代价最高的邮件威胁 — 2023 年损失 29 亿美元
 - 分类：security
 - 来源：https://ztpop.net/kb/fbi-ic3-bec-annual-report.html
@@ -2188,6 +2293,21 @@
 - 来源：https://ztpop.net/kb/fbi-ic3-internet-crime-report-2022.html
 - 摘要：美国联邦调查局互联网犯罪投诉中心（IC3）的年度《互联网犯罪报告》汇总全美公众自愿举报数据，是观察网络犯罪资金流向的权威风向标。2022 年报告记录800,944 起投诉、潜在损失约 103 亿美元，连续多年攀升。其中商业邮件诈骗（BEC）以约 27 亿美元损失，稳居邮件相关犯罪首位；而投资诈骗以 33.1 亿美元首次登顶全品类。
 
+## FBI 对二维码（QR Code）钓鱼与加密货币 ATM 诈骗有何警示？
+- 分类：security
+- 来源：https://ztpop.net/kb/fbi-qr-code-phishing-warning.html
+- 摘要：诈骗者提供指向其加密货币钱包的二维码，指引受害者到实体加密货币 ATM：插入现金、购买加密货币、扫描二维码自动填充收款地址；资金一旦支付即被瞬间拥有并常立即转往海外账户。多用于冒充政府/执法/公用的 impersonation、杀猪盘与中奖骗局。
+
+## FedRAMP 持续监控（ConMon）对邮件类云服务提出了哪些要求？
+- 分类：other
+- 来源：https://ztpop.net/kb/fedramp-continuous-monitoring-email.html
+- 摘要：FedRAMP（Federal Risk and Authorization Management Program，美国联邦风险与授权管理计划）官方文档明确说明：FedRAMP 的持续监控（ConMon）建立在NIST SP 800-137《Information Security Continuous Monitoring for Federal Information Systems and Organizations》所描述的持续监控流程之上，目标是提供三项能力：
+
+## FedRAMP 如何以 NIST 控制基线约束云邮件服务？
+- 分类：other
+- 来源：https://ztpop.net/kb/fedramp-email-control-baseline.html
+- 摘要：FedRAMP（Federal Risk and Authorization Management Program）是美国联邦统一评估与授权云服务的项目。其核心是把 NIST 的风险管理框架与NIST SP 800-53控制目录作为跨机构的通用基线，避免各机构重复评估同一云服务商，实现「一次评估、多处复用」。
+
 ## 邮件反馈循环 FBL/ARF 完全指南
 - 分类：security
 - 来源：https://ztpop.net/kb/feedback-loop-fbl-guide.html
@@ -2202,6 +2322,11 @@
 - 分类：compliance
 - 来源：https://ztpop.net/kb/financial-industry-email-compliance.html
 - 摘要：金融机构邮件系统通常定为网络安全等级保护第三级，落实 GB/T 22239 增强控制，并纳入《商业银行信息科技风险管理指引》《银行保险机构数据安全指引》的信息科技与数据治理体系，实施数据分类分级、加密、审计与应急。多数大型机构属关键信息基础设施，受额外保护。
+
+## FISMA 对联邦邮件系统提出了哪些安全要求？
+- 分类：other
+- 来源：https://ztpop.net/kb/fisma-email-security-requirements.html
+- 摘要：FISMA（Federal Information Security Modernization Act，2002 立法、2014 现代化修订）要求每个联邦机构建立、成文并实施覆盖全机构的信息安全项目，以保护政府信息系统与信息。CISA 提供运行指导并协调联邦网络安全，OMB 负责总体监督；机构须每年向 OMB 与国会报告安全项目状况。
 
 ## 外贸邮件安全与高送达率实战
 - 分类：other
@@ -2292,6 +2417,11 @@
 - 分类：references
 - 来源：https://ztpop.net/kb/gmail-faq-08.html
 - 摘要：未通过这些认证方法的邮件可能被判为垃圾邮件，或被以5.7.26错误拒绝。未遵循最佳实践的发件人可能不被纳入投递缓解考虑；Gmail 可能限制发送速率、屏蔽邮件或将其标记为垃圾邮件。共享 IP 上任一发件人的行为会影响同 IP 所有发件人的信誉；域名频繁被举报会拉低域名信誉。超额时 Gmail 通常以4.7.28拒绝，IP 被挂起则会以5.7.1拒绝。
+
+## Google Cloud Threat Horizons 报告揭示了哪些初始访问与凭据威胁趋势？
+- 分类：other
+- 来源：https://ztpop.net/kb/google-cloud-threat-horizons-2026.html
+- 摘要：该报告由 Google Cloud 安全团队、Google 威胁情报组（GTIG）与 Mandiant 共同撰写，统计 Google Cloud 环境中被利用的初始访问途径分布。报告指出：2025 上半年威胁行为者仍高度依赖弱口令、缺失凭据与配置错误；进入 2025 下半年，攻击者转向利用未修补的第三方漏洞获取初始访问。Google 明确说明，这些事件针对的是客户侧的外部暴露漏洞，并不涉及 Google Cloud 核心基础设施被攻破。Google 评估这一转变可能源于其「默认安全」策略与增强的凭据保护成功封堵了传统的、更易利用的路径，抬高了攻击门槛。
 
 ## Google 批量发件方指南（2024）：SPF/DKIM/DMARC 强制与 0.30% 投诉红线
 - 分类：references
@@ -2543,6 +2673,11 @@
 - 来源：https://ztpop.net/kb/international-email-relay.html
 - 摘要：大型邮件服务商（Google、Microsoft、Yahoo）的垃圾邮件过滤系统不完全依赖IP黑名单的动态查询——它们维护着大规模的IP信誉数据库，对全球每一个发件IP进行长期的行为评分。评分维度包括：该IP的历史垃圾邮件比例、用户投诉率、发信频率稳定性、是否被列入Spamhaus/FortiGuard等主流DNSBL、IP段所属AS的总体信誉等。
 
+## INTERPOL 2026 年网络威胁评估报告揭示了哪些邮件相关趋势？
+- 分类：other
+- 来源：https://ztpop.net/kb/interpol-african-cyberthreat-2026.html
+- 摘要：该报告共 40 页，基于36 个非洲成员国的问卷数据，由 INTERPOL「非洲打击网络犯罪联合行动」（AFJOC）项目支持，数据合作方包括 Fortinet、Mastercard、Shadowserver Foundation、S2W 与 TrendAI。核心判断是：网络犯罪已从孤立事件演变为工业化、无国界的生态。人工智能参与了非洲55%的已报告网络犯罪，使攻击更快、更易规模化，也更难被受害者与平台察觉。
+
 ## IP 预热完整指南
 - 分类：references
 - 来源：https://ztpop.net/kb/ip-warmup-complete-guide.html
@@ -2557,6 +2692,11 @@
 - 分类：architecture
 - 来源：https://ztpop.net/kb/ipv6-mail-system-deployment-practical-guide.html
 - 摘要：[architecture] IPv6 邮件系统部署实践指南：MX 记录、双栈 MTA 与运营商兼容策略 - 知识库 · ztpop 邮件技术知识库（见原文）
+
+## ISO/IEC 27001:2022 中与邮件安全相关的控制项该如何落地？
+- 分类：other
+- 来源：https://ztpop.net/kb/iso-27001-2022-email-controls.html
+- 摘要：ISO/IEC 27001 的正式名称为《Information security, cybersecurity and privacy protection — Information security management systems — Requirements》（信息安全、网络安全与隐私保护——信息安全管理体系——要求）。据 ISO 官方页面，当前有效版本为ISO/IEC 27001:2022，属第 3 版，发布日期 2022 年 10 月，正文 19 页，状态为「已发布」（国际标准发布阶段 60.60），归口技术委员会为ISO/IEC JTC 1/SC 27，ICS 分类 35.
 
 ## JMAP 邮件访问协议深度解析 — RFC 8620/8621：IMAP 的下一代替代方案 · ztpop 邮件技术知识库
 - 分类：protocols
@@ -2747,6 +2887,11 @@
 - 分类：m3aawg
 - 来源：https://ztpop.net/kb/m3aawg-ai-phishing-position.html
 - 摘要：M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group，消息、恶意软件和移动反滥用工作组）是全球邮件安全领域最具影响力的行业组织之一，成员包括 Google、Microsoft、Yahoo、Cisco、Cloudflare 等头部企业。其每年发布的立场文件为全球邮件安全政策提供技术基准。本文对 M3AAWG 2025-2026 年度关于 AI 时代邮件安全的立场文件进行中文深度解读。
+
+## M3AAWG 建议如何评估邮件反滥用产品？
+- 分类：m3aawg
+- 来源：https://ztpop.net/kb/m3aawg-anti-abuse-product-evaluation.html
+- 摘要：M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group，消息、恶意软件与移动反滥用工作组）发布的《Email Anti-Abuse Product Evaluation Best Current Practices》是一份专门讨论如何评估邮件反滥用产品或服务的最佳共同实践文档，2019 年 3 月版更新自 2010 年 8 月初版，全文 10 页。
 
 ## ISP 和邮箱服务商反钓鱼最佳实践——M3AAWG 与 APWG 联合指南
 - 分类：m3aawg
@@ -3099,6 +3244,16 @@
 - 来源：https://ztpop.net/kb/malware-attachment-detection-sandbox.html
 - 摘要：静态签名对加壳、混淆或新型恶意附件失效。沙箱检测把附件（Office 文档、PDF、压缩包、ISO/VHD）放入隔离虚拟机中「真实运行」，观察其实际行为而非仅看特征。
 
+## 恶意加载器（Loader/Dropper）的邮件投递链是怎样的？
+- 分类：operations
+- 来源：https://ztpop.net/kb/malware-loader-email-delivery-chain-2026.html
+- 摘要：Europol 对「投放器」（dropper）的官方定义是：一类专门用于在目标系统上安装其他恶意软件的程序，位于攻击的第一阶段，负责绕过安全措施并部署病毒、勒索软件或间谍软件等后续程序。投放器本身通常不造成直接破坏，但对后续载荷的落地至关重要。Europol 明确指出，这些家族「现在都被用于投送勒索软件，是感染链中的主要威胁」。
+
+## Mandiant M-Trends 2026 如何刻画邮件与身份相关的 APT 入侵活动？
+- 分类：other
+- 来源：https://ztpop.net/kb/mandiant-email-apt-activity-2026.html
+- 摘要：基于 2025 年超过 50 万小时事件调查，Mandiant 发现初始访问到转交二级威胁组织的中位时间，从 2022 年的逾 8 小时骤降至 2025 年的 22 秒。初始访问代理（IAB）如同流水线第一道工序，一旦入侵成功便以近乎即时速度将访问凭据转交负责勒索、窃密或破坏的专门团队，几乎不留人工响应空间。
+
 ## 什么是“MFA 疲劳攻击（推送轰炸）”？如何防护？
 - 分类：security
 - 来源：https://ztpop.net/kb/mfa-fatigue-attack-defense.html
@@ -3164,6 +3319,11 @@
 - 来源：https://ztpop.net/kb/microsoft-faq-08.html
 - 摘要：防欺骗保护用于检测并拦截冒用你域名、或冒用你域用户的欺骗邮件。它结合 SPF、DKIM、DMARC，以及对“复合认证”（composite authentication）结果的评估，识别那些未通过认证却伪装成你组织的邮件。防欺骗并非独立开关，而是建立在你域名的邮件认证基础设施之上。
 
+## Microsoft 数字防御报告（MDDR）关于身份攻击与钓鱼的关键数据有哪些？
+- 分类：security
+- 来源：https://ztpop.net/kb/microsoft-mddr-identity-phishing-2026.html
+- 摘要：MDDR 是 Microsoft 的年度威胁态势报告，其数据来自覆盖数十亿用户与数百万组织的全球遥测。官方披露的日均观测量为：处理100 万亿条安全信号、新增拦截450 万个恶意软件文件、分析3800 万次身份风险检测、平均筛查50 亿封邮件以拦截恶意软件与钓鱼。支撑体系包括 34,000 名全职安全工程师与 15,000 余家安全生态伙伴。对邮件运维而言，这组数字的意义在于：邮件仍是被扫描量最大的单一通道，身份风险检测与邮件筛查在量级上属于同一数量级问题，二者必须联动治理。
+
 ## Microsoft SNDS 发件人声誉：监控发往 Microsoft 365 的 IP 信誉
 - 分类：other
 - 来源：https://ztpop.net/kb/microsoft-snds-sender-reputation.html
@@ -3198,6 +3358,11 @@
 - 分类：other
 - 来源：https://ztpop.net/kb/mime-structure.html
 - 摘要：MIME（Multipurpose Internet Mail Extensions，RFC 2045/2046）在标准文本邮件之上增加结构化能力：多部分、非文本附件、非 ASCII 字符集、编码传输。
+
+## Mimecast《人为风险现状 2026》报告对邮件与协作安全有哪些发现？
+- 分类：other
+- 来源：https://ztpop.net/kb/mimecast-state-of-human-risk-2026.html
+- 摘要：该报告基于对九个国家2,500 名IT 安全与 IT 决策者的调研。核心判断是：尽管技术栈投入持续增加，泄露事件仍未减少，主因是人为失误——内部威胁、凭据滥用与用户操作失误如今构成了大多数安全事件，「人为风险」已确立为首要网络安全挑战。Mimecast 强调这一问题源于社会工程，本质上难以单靠技术缓解，需要针对每个用户量身识别、评估与治理风险。
 
 ## MITRE ATT&CK 中邮件攻击战术（T1566）如何映射与防御？
 - 分类：security
@@ -3319,6 +3484,11 @@
 - 来源：https://ztpop.net/kb/ncsc-uk-email-security-guidance.html
 - 摘要：英国国家网络安全中心（NCSC）是英国政府下属的技术权威机构，其发布的邮件安全指南被公共部门与关键基础设施广泛采用。NCSC 的立场以"减少可被利用的攻击面"为主轴，对钓鱼、凭据窃取与数据外泄给出明确、可执行的基线。以下为其邮件安全核心建议的精译与落地映射。
 
+## 如何用 NIST CSF 2.0 六大功能映射邮件防护？
+- 分类：compliance
+- 来源：https://ztpop.net/kb/nist-csf-2-0-email-protection.html
+- 摘要：NIST 网络安全框架 2.0 由六个并列功能（Functions）组成：GOVERN（治理）、IDENTIFY（识别）、PROTECT（防护）、DETECT（检测）、RESPOND（响应）、RECOVER（恢复）。相比 1.1，2.0新增 GOVERN，强调网络安全风险管理须由治理层驱动，贯穿其余五个功能。
+
 ## NIST 反钓鱼认证指南翻译
 - 分类：security
 - 来源：https://ztpop.net/kb/nist-phishing-resistance-guidance.html
@@ -3334,20 +3504,55 @@
 - 来源：https://ztpop.net/kb/nist-sp800-177-guide.html
 - 摘要：摘要：NIST SP 800-177 Rev.1《Trustworthy Email》（可信邮件）是美国国家标准与技术研究院（National Institute of Standards and Technology）发布的邮件安全领域权威指南。该文档系统性地定义了邮件安全防护的五大技术领域，涵盖管理、运营、技术和标准要求。本文从出台背景入手，深入解读其核心框架和各领域实施要点，梳理NIST建议的分阶段实施路径，并与CISA/NSA联合发布的“深度防护邮件安全指南”进行对比分析，为企业的邮件安全策略制定和合规差距评估提供参考。
 
+## NIST SP 800-177 对可信邮件（SMTP/传输安全）提出了哪些建议？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/nist-sp800-177-smtp-transport-security.html
+- 摘要：SP 800-177 Rev.1 于 2019 年 2 月发布，前身是 2016 年的 SP 800-177；主要受众是企业邮件管理员、信息安全专家与网络管理员，适用于联邦 IT 系统，也可供中小组织参考。其核心目标是「增强对电子邮件的信任」。
+
 ## NIST SP 800-177r1《可信电子邮件》：SPF/DKIM/DMARC 与传输加密部署基准
 - 分类：compliance
 - 来源：https://ztpop.net/kb/nist-sp800-177r1-trustworthy-email.html
 - 摘要：译自/综合 NIST SP 800-177 Revision 1「Trustworthy Email」· 面向企业邮件管理员与安全专家
+
+## 如何按 NIST SP 800-18 为邮件系统编写系统安全计划（SSP）？
+- 分类：compliance
+- 来源：https://ztpop.net/kb/nist-sp800-18-email-system-security-plan.html
+- 摘要：NIST SP 800-18 Revision 1 全称《Guide for Developing Security Plans for Federal Information Systems》（联邦信息系统安全计划编制指南），2006 年 2 月发布，取代 1998 年 12 月初版，全文 48 页。
+
+## NIST SP 800-207 零信任架构如何用于邮件安全防护？
+- 分类：security
+- 来源：https://ztpop.net/kb/nist-sp800-207-zero-trust-email.html
+- 摘要：NIST SP 800-207 定义：零信任（ZT）是一组不断演进的网络安全范式，把防御从静态的、基于网络的边界，转向以用户、资产、资源为中心。零信任架构（ZTA）不因为资产或账号位于某网络位置（如内网 vs 互联网）或资产归属（企业 vs 个人）而授予隐式信任；主体与设备的认证和授权是在建立到企业资源的会话之前执行的独立功能。
 
 ## NIST SP 800-45 电子邮件安全权威指南解读 — 风险评估、安全控制与事件响应 · ztpop 邮件技术知识库
 - 分类：compliance
 - 来源：https://ztpop.net/kb/nist-sp800-45-email-security.html
 - 摘要：NIST SP 800-45 Version 2Guidelines on Electronic Mail Security（电子邮件安全指南）是美国国家标准技术研究院（NIST）发布的联邦信息系统电子邮件安全权威操作文档。该指南为联邦机构和非联邦组织提供了一套完整的邮件安全规划、实施和管理框架。
 
+## NIST SP 800-45 Version 2 对邮件服务器加固提出了哪些关键要求？
+- 分类：compliance
+- 来源：https://ztpop.net/kb/nist-sp800-45v2-mail-server-hardening.html
+- 摘要：NIST SP 800-45 Version 2 全称《Guidelines on Electronic Mail Security》（电子邮件安全指南），2007 年 2 月由美国国家标准与技术研究院发布，取代 2002 年 9 月的初版。该文件依据《2002 年联邦信息安全管理法案》（FISMA，Public Law 107-347）的法定职责编制，目的是为在公网与专网上设计、实施、运行邮件系统推荐安全实践。
+
+## NIST SP 800-53 中哪些控制项直接约束电子邮件安全？
+- 分类：compliance
+- 来源：https://ztpop.net/kb/nist-sp800-53-ac-sc-email-controls.html
+- 摘要：SC-8 传输保密性与完整性要求对邮件等传输中的信息保密并防篡改，落地即全链路 TLS（STARTTLS/隐式 TLS）并禁用明文；SC-8(1) 密码学保护进一步要求采用经批准的密码算法。SC-23 会话真实性保护邮件会话不被劫持（如绑定 TLS 会话、抗中间人），与防 AITM/会话劫持钓鱼直接相关。
+
+## NIST SP 800-63B 中防钓鱼认证（AAL）如何分级与落地？
+- 分类：security
+- 来源：https://ztpop.net/kb/nist-sp800-63b-aal-phishing-resistant.html
+- 摘要：NIST SP 800-63B 定义：AAL2通过安全认证协议要求证明持有并控制两个不同的认证因子，需使用经批准的密码技术，但不要求验证者伪装抵抗；AAL3基于「通过密码学协议证明持有密钥」进行认证，要求使用硬件认证器且至少一个密码学认证器提供验证者伪装抵抗（verifier impersonation resistance），并须抗重放（replay resistant）。
+
 ## NIST SP 800-63B 数字身份指南：邮件账号 MFA 与口令的权威基线
 - 分类：compliance
 - 来源：https://ztpop.net/kb/nist-sp800-63b-digital-identity.html
 - 摘要：NIST SP 800-63B 是数字身份（认证、联邦、断言）的权威指南，直接指导"邮件账号怎么管才安全"。它的许多结论颠覆了旧常识：不再强制定期改口令、要求检查口令是否已在泄露库、强制多因素认证（MFA），并区分"抗钓鱼 MFA"与普通 MFA。对邮件账号防盗（BEC/账号接管的第一道防线）具有刚性指导意义。
+
+## NIST SP 800-92 如何指导邮件系统的日志管理？
+- 分类：compliance
+- 来源：https://ztpop.net/kb/nist-sp800-92-email-log-management.html
+- 摘要：NIST SP 800-92 全称《Guide to Computer Security Log Management》（计算机安全日志管理指南），2006 年 9 月由 NIST 发布，同样依据 FISMA（Public Law 107-347）法定职责编制，并与 OMB Circular A-130 第 8b(3) 节「保障机构信息系统」的要求保持一致。
 
 ## 邮件系统安全基线检查清单（NIST SP 800-177版）
 - 分类：compliance
@@ -3483,6 +3688,11 @@
 - 分类：security
 - 来源：https://ztpop.net/kb/phishing-kit-analysis-defense.html
 - 摘要：钓鱼工具包（Phishing Kit）是地下市场出售的「开箱即用」攻击包，通常包含：伪造的银行/邮箱/办公平台登录页模板、login.php等凭据收割脚本、把受害者输入 POST 到攻击者服务器的外泄逻辑，以及得手后跳转到真实站点的隐蔽重定向。
+
+## 钓鱼工具包（Phishing Kit）与 PhaaS 平台是如何运作的？
+- 分类：security
+- 来源：https://ztpop.net/kb/phishing-kit-phaas-analysis-2026.html
+- 摘要：Europol 在 LabHost 行动通报中把这一模式定义为「犯罪即服务」在钓鱼领域的落地：威胁行为体把工具、专长或服务出租、出售给其他犯罪者。LabHost 采用按月订阅模式，平均月费约249 美元，订阅内容包含钓鱼工具包、承载钓鱼页面的基础设施、与受害者直接互动的交互能力，以及活动总览服务。不同订阅档位对应不同的目标范围，从金融机构到邮政投递、电信运营商逐级放开。平台提供一份包含170 余套仿冒站点的「菜单」，用户点几下即可部署定制化钓鱼站。
 
 ## 什么是“防钓鱼 MFA / 通行密钥（Passkeys）”？为何能根除钓鱼？
 - 分类：security
@@ -3644,6 +3854,16 @@
 - 来源：https://ztpop.net/kb/prometheus-grafana-email-monitoring-alert-system.html
 - 摘要：基于 Prometheus + Grafana 构建邮件系统全栈监控体系，涵盖核心指标模型（队列深度/延迟百分位/认证失败率/退信率）、blackbox_exporter SMTP 协议探测方法、自定义 alert 规则设计与 SLO 仪表盘构建实践。
 
+## Proofpoint 最新 BEC（商业邮件入侵）趋势有哪些关键发现？
+- 分类：security
+- 来源：https://ztpop.net/kb/proofpoint-bec-trends-2026.html
+- 摘要：根据 FBI 互联网犯罪报告，BEC 造成的年度损失超过 27 亿美元，约为勒索软件损失的 80 倍。BEC 攻击通常冒充可信发件人，诱导收件人相信正在与信任对象交互，进而完成欺诈性银行转账或付款；由于不依赖恶意载荷即可生效，传统防病毒难以发现，防御尤为困难。
+
+## Proofpoint Email Fraud Defense 如何防御域名欺骗与供应商邮件欺诈？
+- 分类：other
+- 来源：https://ztpop.net/kb/proofpoint-email-fraud-defense-2026.html
+- 摘要：Proofpoint 官方文档把 BEC 的常见战术归为两类：域名欺骗（直接冒用可信域，如Company <person@company.com>）与近似域名欺骗（注册形似域，如把 m 拆成 rn 的Company <person@c0rnpany.com>）。前者可由 DMARC 强制解决，后者则完全绕开 DMARC——因为攻击者用的是自己合法拥有的域，认证会正常通过。此外，邮件欺诈（impostor email）通常不携带恶意附件或恶意 URL，因而对以载荷检测为核心的防御是「隐形」的。这三点共同决定了单一手段不足，需要认证、域名情报与内容/关系分析叠加。
+
 ## RFC 1912 / RFC 5321 · 邮件服务器必备配置
 - 分类：other
 - 来源：https://ztpop.net/kb/ptr-reverse-dns.html
@@ -3653,6 +3873,11 @@
 - 分类：security
 - 来源：https://ztpop.net/kb/qr-code-phishing-incident-response.html
 - 摘要：二维码钓鱼（Quishing）把恶意链接编码进二维码，放在邮件正文或 PDF 附件中，诱导受害者用手机扫描。由于扫码发生在移动网络（常脱离企业桌面检测与 VPN），企业网关难以审查落地页，攻击者得以把受害者引向伪造登录页或投递移动端恶意软件。
+
+## 二维码钓鱼（Quishing）在 2025—2026 年呈现什么趋势？
+- 分类：security
+- 来源：https://ztpop.net/kb/qr-code-phishing-trends-2026.html
+- 摘要：APWG 成员 Mimecast 专门统计邮件附件中的恶意二维码。2024 年 10 月 1 日至 2025 年 3 月 31 日的半年窗口内，Mimecast 检出逾 170 万个独立恶意二维码，并发现平均每天有 270 万封带二维码的邮件。到 2025 年下半年，季度口径为 Q3716,306个、Q4655,673个独立恶意二维码，环比下降9%。APWG 指出，二维码不会被传统邮件过滤捕获——链接以图像形式承载，且扫码动作发生在脱离企业管控的手机上，这是该手法长期有效的结构性原因。
 
 ## 抗量子加密邮件：NIST 后量子密码标准与混合密钥交换
 - 分类：other
@@ -3714,10 +3939,20 @@
 - 来源：https://ztpop.net/kb/rfc3798-message-disposition-notification.html
 - 摘要：译自 RFC 3798《Message Disposition Notifications》· 面向邮件系统管理员与回执功能开发
 
+## RFC 4021 邮件与 MIME 信头字段注册表包含哪些字段？注册模板怎么读？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc4021-mail-header-field-registry.html
+- 摘要：RFC 4021 的作用是：按「消息头字段注册流程」为一批邮件消息头字段与 MIME 头字段建立 IANA 注册。它本身不发明新字段，而是把散落在 RFC 822/2822、MIME 系列等文档中的既有字段统一登记造册，使 IANA 注册表成为查询头字段权威定义的单一入口。文档结构上，§2.1 收录邮件消息头字段的初始注册模板，§2.2 收录 MIME 头字段的初始注册模板。值得一提的是，正文主体是由 RDF/N3 数据自动生成的。
+
 ## RFC 5321 简单邮件传输协议（SMTP）：邮件如何在服务器之间路由与投递
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc5321-smtp-protocol.html
 - 摘要：译自 IETF RFC 5321《Simple Mail Transfer Protocol》· 面向邮件系统工程师与信创邮件架构师
+
+## RFC 5321 的 SMTP 回复码分级与队列重试策略应如何理解？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc5321-smtp-reply-codes-relay.html
+- 摘要：SMTP 回复码三位数字各有分工：第一位表明响应是好、坏还是不完整——实现简单的客户端仅凭首位即可决定下一步（照常推进、重做、退避等）；第二位供想知道错误大类（如邮件系统错误、命令语法错误）的客户端参考；第三位及任何补充信息则保留给最细粒度的区分。文档亦指出 SMTP 的码值架构借鉴自 FTP，但SMTP 是「一命令一响应」的同步模型，且 FTP 的 1yz 码不属于 SMTP 模型。
 
 ## 互联网邮件消息格式深度解析 — RFC 5322 与 MIME（RFC 2045-2049） · ztpop 邮件技术知识库
 - 分类：protocols
@@ -3729,15 +3964,35 @@
 - 来源：https://ztpop.net/kb/rfc5598-internet-email-architecture.html
 - 摘要：RFC 5598 把分散在 SMTP、MIME、IMAP、POP 等文档中的概念整合为一幅"互联网邮件架构"全景图。它定义了一套通用术语与功能组件，使不同实现（Postfix、Exchange、信创邮件系统）能在同一坐标系下被比较。对正在做 Exchange 迁移或信创邮件替换的团队，这是架构设计的权威基线。
 
+## DKIM（RFC 6376）密钥如何轮转与撤销？
+- 分类：dkim
+- 来源：https://ztpop.net/kb/rfc6376-dkim-key-rotation.html
+- 摘要：§3.5 定义DKIM-Signature头字段的tag=value：v=（必为 1）、a=（签名算法，验证器 MUST 支持 rsa-sha1 与 rsa-sha256，签名者 SHOULD 用 rsa-sha256）、c=（规范化，默认simple/simple）、d=（SDID）、s=（selector）、t=（签名时间戳，建议含）、x=（过期时间，须大于 t=）、h=（签名头字段列表，MUST NOT 为空）、bh=与b=（哈希与签名数据）。
+
 ## RFC 6409 邮件提交协议（MSA）：为什么发信要走 587 而非 25
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc6409-message-submission.html
 - 摘要：RFC 6409 定义了"邮件提交"（Message Submission）协议，用于终端用户（MUA）把邮件交给自己的邮件服务商。它与 RFC 5321 的"传输"角色刻意分开：提交走 587 端口且必须认证，传输走 25 端口且面向服务器间路由。这种分离是当代邮件安全最重要的架构决策之一。
 
+## RFC 6531 SMTPUTF8 扩展如何支持国际化邮件地址？回复码怎么处理？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc6531-smtputf8-downgrade-handling.html
+- 摘要：SMTPUTF8参数只是「断言」，带该参数发出的邮件仍有可能实际上并非国际化邮件。需要准确判断的客户端或服务器必须解析全部邮件头字段与正文中的 MIME 头字段（RFC 2045），但本规范并不要求实现去检视邮件内容。另外，虽然规范要求 SMTPUTF8 服务器支持 8BITMIME 以确保具备 8 位数据处理能力，但并不要求 MIME 报文中必须存在非 ASCII 正文部分。SMTPUTF8 可与BODY=8BITMIME同用，或在服务器通告 BINARYMIME（RFC 3030）时与BODY=BINARYMIME同用。
+
 ## RFC 6531 SMTPUTF8：让邮件地址与域名支持中文等非 ASCII 字符
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc6531-smtputf8-internationalized.html
 - 摘要：译自 IETF RFC 6531《SMTP Extension for Internationalized Email》· 面向邮件系统与中文域名邮箱部署
+
+## SPF（RFC 7208）的机制与边界案例有哪些？
+- 分类：spf
+- 来源：https://ztpop.net/kb/rfc7208-spf-mechanism-edge.html
+- 摘要：RFC 7208 §4.6.2 规定机制前的限定符决定check_host()返回值：+为 pass、-为 fail、~为 softfail、?为 neutral；限定符可省略，默认值为+（即未写限定符匹配即 pass）。
+
+## DMARC（RFC 7489）子域策略 sp 与对齐如何配置？
+- 分类：dmarc
+- 来源：https://ztpop.net/kb/rfc7489-dmarc-subdomain-policy.html
+- 摘要：§6.3：p为策略记录必选项，作用于被查询域及其所有子域；sp为可选项，仅作用于子域、不影响域名本身，若缺失则子域继承 p 的策略。注意 §6.6.3：sp在“发布于组织域子域”的记录中被忽略——即子域自己的 DMARC 记录里的 sp 不生效。因此组织域设p=reject且不发 sp 时，所有子域已等效 reject。
 
 ## RFC 7672 DANE for SMTP：用 DNS 公钥钉住杜绝 STARTTLS 降级攻击
 - 分类：tls
@@ -3754,10 +4009,25 @@
 - 来源：https://ztpop.net/kb/rfc8314-implicit-tls-submission.html
 - 摘要：传统邮件协议在明文端口上通过 STARTTLS 把连接"升级"为加密：提交用 587、IMAP 读信用 143、POP3 用 110。但 STARTTLS 存在被主动攻击者剥离（stripping）的风险，且依赖客户端正确发起升级。RFC 8314 明确废弃明文端口、推荐隐式 TLS（Implicit TLS）：连接建立即全程 TLS，对应端口为 SMTPS 465、IMAPS 993、POP3S 995。
 
+## RFC 8314 为什么主张用隐式 TLS 取代 STARTTLS？明文服务如何退役？
+- 分类：tls
+- 来源：https://ztpop.net/kb/rfc8314-mail-tls-deprecating-cleartext.html
+- 摘要：RFC 8314 §3 指出：早期标准（RFC 2595、RFC 3207、RFC 3501）采用 STARTTLS，客户端先建立明文应用会话，再根据服务器能力与自身配置决定是否发出STARTTLS升级。文档认为「在连接建立瞬间即于独立端口协商 TLS」的替代机制（本文称Implicit TLS，隐式 TLS）在现网部署得更成功；为推广加密并统一用法，该规范转而推荐 MUA 与邮件服务提供方（MSP）之间的 POP、IMAP、SMTP 提交及其他协议一律使用隐式 TLS。
+
 ## RFC 8460 TLS-RPT：SMTP TLS 连接失败报告机制
 - 分类：tls
 - 来源：https://ztpop.net/kb/rfc8460-tls-rpt.html
 - 摘要：IETF Standards Track RFC 8460 · SMTP TLS Reporting · 译自标准核心机制
+
+## RFC 8460 TLS-RPT 的策略记录与 JSON 报告格式是怎样定义的？
+- 分类：tls
+- 来源：https://ztpop.net/kb/rfc8460-tlsrpt-report-schema.html
+- 摘要：RFC 8460 §3 规定，收报策略发布在策略域名的_smtp._tls子域下。例如策略域为example.com时，查询名为_smtp._tls.example.com。记录的形式化定义要求以v=TLSRPTv1开头，并携带rua=标签指定收报端点。若解析器返回多条_smtp._tlsTXT 记录，不以v=TLSRPTv1;开头的记录一律丢弃。§3.1 给出两种典型发布方式：
+
+## MTA-STS（RFC 8461）部署有哪些陷阱？
+- 分类：tls
+- 来源：https://ztpop.net/kb/rfc8461-mta-sts-deployment-traps.html
+- 摘要：§3.1：在 Policy Domain 下发布_mta-sts.<domain>的 TXT 记录，格式"v=STSv1; id=20160831085700Z;"，必须以v=STSv1;开头。§3.2/3.3：策略文件经 HTTPS GET 取自https://mta-sts.<domain>/.well-known/mta-sts.txt，媒体类型应为text/plain。
 
 ## RFC 8461 MTA-STS：用 DNS 与 HTTPS 强制 SMTP 传输层加密
 - 分类：tls
@@ -3774,6 +4044,11 @@
 - 来源：https://ztpop.net/kb/rfc8601-authentication-results.html
 - 摘要：译自 RFC 8601《Message Header Field for Indicating Message Authentication Status》· 面向邮件系统管理员与网关开发者
 
+## 国际化邮件（RFC 8616）下 SPF/DKIM/DMARC 认证如何处理？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc8616-eai-authentication.html
+- 摘要：§1/2：国际化邮件(EAI, RFC 6530)允许 SMTP 会话(RFC 6531)与信头(RFC 6532)使用 U-label，且 local-part 可为 UTF-8；但 DNS 记录始终为 ASCII，因为无法判断取记录的客户端期望 EAI 还是 ASCII 结果。信头中的域名在查 DNS 前须由 U-label 转为 A-label（RFC 5891）。
+
 ## RFC 8616 解读：国际化邮件（EAI）下的 SPF/DKIM/DMARC 认证机制
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc8616-eai-email-authentication.html
@@ -3784,20 +4059,50 @@
 - 来源：https://ztpop.net/kb/rfc8616-email-auth-status-codes.html
 - 摘要：译自 RFC 8616《Email Authentication Status Codes》· 面向邮件系统管理员与反垃圾邮件运维
 
+## RFC 8617 ARC 认证链的三个头字段与验证算法是什么？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc8617-arc-chain-validation.html
+- 摘要：同一节点追加的 AAR、AMS、AS 三者共享同一个i=实例值，合称一个ARC Set。验证器正是依据实例标签还原各中介的处理先后顺序。规范要求：对给定实例值与签名域，有效的 ARC Set 中三种 ARC 头字段各恰好出现一次。
+
+## DNSSEC（RFC 8624）算法应如何选择？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc8624-dnssec-algorithm.html
+- 摘要：§3.1 给出 MUST/MUST NOT 矩阵：RSASHA256=8 与 ECDSAP256SHA256=13 均为 MUST/MUST（签名与验证强制）；ED25519=15 为 RECOMMENDED/RECOMMENDED（签名与验证均推荐，文档预期其将成为未来默认）；RSASHA1=5、RSASHA1-NSEC3-SHA1=7 为 NOT RECOMMENDED/MUST（不推荐签发但验证必须支持）；RSAMD5=1、DSA=3、DSA-NSEC3-SHA1=6 为 MUST NOT。
+
+## RFC 8689 REQUIRETLS 如何把机会式 STARTTLS 变成强制加密投递？
+- 分类：tls
+- 来源：https://ztpop.net/kb/rfc8689-requiretls-smtp-extension.html
+- 摘要：摘要部分点明痛点：STARTTLS 的机会式（opportunistic）本质使其安全价值打折——默认情况下「把邮件投出去」的优先级高于「安全地投出去」，一旦对端不支持或被降级，邮件照样以明文发出。RFC 8689 因此定义了 SMTP 服务扩展REQUIRETLS与消息头字段TLS-Required，把「无 TLS 则不投递」变成可声明的硬要求。
+
 ## RFC 8689 RRVS：用 Require-Recipient-Valid-Since 拦截僵尸账号投递
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc8689-rrvs-require-recipient-valid-since.html
 - 摘要：邮箱地址会被回收、重用：用户注销后，域名可能把该地址重新分配给他人；休眠账号也可能被攻击者接管。若发件方缓存了旧地址并持续投递敏感邮件（密码重置、账单、验证码），就可能泄露给新持有者。RFC 8689 定义Require-Recipient-Valid-Since（RRVS）头，让发件方声明"我只投递给在这个时间戳之前就存在的收件人"，接收方据此放行或拒收。
+
+## IMAP4rev2（RFC 9051）相较 rev1 有哪些变化？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc9051-imap4rev2-new.html
+- 摘要：§1.3：IMAP4rev2 Obsoletes RFC 3501，整体向上兼容 IMAP4rev1，仅移除/替换了少数 proven problematic 的设施；支持 63-bit 的报文与正文大小。废弃命令、响应与数据格式在附录 A/E 描述。
 
 ## RFC 9051 IMAP4rev2：现代 IMAP 协议的核心命令与状态模型
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc9051-imap4rev2-protocol.html
 - 摘要：IMAP（Internet Message Access Protocol）让用户在不同设备上同步同一信箱的邮件状态，而非像 POP3 那样把邮件下载到本地后删除。RFC 9051（IMAP4rev2，2021）整合了 RFC 3501 及后续扩展（如 UIDPLUS、IDLE、NAMESPACE、UIDONLY 等），成为现代信创邮件系统与客户端兼容的事实基线。
 
+## RFC 9156 的 DNS QNAME 最小化是什么？对邮件域名解析有何影响？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc9156-dns-qname-minimisation.html
+- 摘要：需要先澄清一个常见误标：RFC 9156 的标题是《DNS Query Name Minimisation to Improve Privacy》（通过查询名最小化改善 DNS 隐私），由 ICANN 的 P. Hoffman 等人于 2021 年 11 月发布，并非「邮件可达性」专门文档。它取代了此前的 RFC 7816。之所以与邮件强相关，是因为 SPF、DKIM、DMARC、MX、MTA-STS、TLSA 等邮件基础设施全部依赖递归解析器完成大量 DNS 查询，QNAME 最小化会直接改变这些查询的发出方式与数量，从而影响邮件域名的解析行为与可达性表现。
+
 ## RFC 9208 DELIVRTO URI：在邮件中嵌入一键投递状态回填
 - 分类：protocols
 - 来源：https://ztpop.net/kb/rfc9208-deliverto-uri.html
 - 摘要：发件方常需要确认"邮件到底送到了没有、对方读没读"。传统机制里，DSN（投递状态通知，RFC 3461）由中转返回、MDN（处置通知，RFC 3798）由收件方返回，但都依赖邮件头注入且易被篡改、易丢失。RFC 9208 引入DELIVRTOURI Scheme：发件方在邮件中嵌入一个唯一回调地址，收件系统处理后向该地址回传结构化状态，形成更可信的送达证明。
+
+## IMAP QUOTA 扩展（RFC 9208）如何工作？
+- 分类：protocols
+- 来源：https://ztpop.net/kb/rfc9208-imap-quota.html
+- 摘要：§1：RFC 9208 定义对 IMAP（RFC 3501/9051）的若干扩展，用于查询与操纵管理性资源使用上限（配额），取代 RFC 2087。§3.1.1：支持的资源名须以QUOTA=RES-前缀作为能力通告（如QUOTA=RES-STORAGE）；设置能力为QUOTASET——SETQUOTA 命令要求服务器通告该能力。
 
 ## RFC 9460 SVCB/HTTPS 记录：邮件服务的 DNS 发现与加密指示
 - 分类：protocols
@@ -4429,10 +4734,20 @@
 - 来源：https://ztpop.net/kb/tlsrpt-faq-08.html
 - 摘要：在 MTA-STS enforce 或 DANE 下，TLS 失败会被直接阻断。若没有 TLS-RPT，你只能看到“邮件发不出去”，却分不清是自己对端配置错误、证书过期，还是遭到了主动降级/中间人攻击。
 
+## Unit 42 2026 事件响应报告如何描述勒索软件与邮件初始访问的关系？
+- 分类：other
+- 来源：https://ztpop.net/kb/unit42-ransomware-email-vector-2026.html
+- 摘要：Unit 42 基于 50 多个国家、各主要行业 750 多起重大网络事件的分析，提炼出塑造 2026 威胁格局的四大趋势：AI 压缩攻击时间线、身份成为最可靠的成功路径、软件供应链风险通过可信连接扩大、民族国家行为体将隐蔽与持久战术适配现代企业环境。多数入侵仍由可预防的可见性与控制差距导致。
+
 ## DKIM Ed25519/SHA-256加密升级
 - 分类：dkim
 - 来源：https://ztpop.net/kb/utf8-dkim-hash-crypto.html
 - 摘要：DomainKeys Identified Mail（DKIM）自RFC 4871（2007年）和后续的RFC 6376（2011年）标准化以来，RSA-SHA256一直是邮件签名的首选算法。随着时间推移，RSA算法的局限性逐渐显现：2048位密钥的计算开销大、签名体积膨胀，且量子计算威胁正在逼近。RFC 8301率先禁止了SHA-1和512位以下RSA密钥的使用，而RFC 8463则正式引入了Ed25519-SHA256椭圆曲线签名算法。
+
+## Valimail 2026 DMARC 报告揭示了怎样的采用率与执行缺口？
+- 分类：dmarc
+- 来源：https://ztpop.net/kb/valimail-dmarc-adoption-2026.html
+- 摘要：Valimail 2026 报告显示 DMARC 认知（拥有记录）已升至 78%，但实际执行（设置 quarantine 或 reject 策略）仅为 42%，二者之间横亘 36 个百分点的“执行缺口”（Enforcement Gap）。这意味着 58% 的域仍暴露于域名仿冒与 AI 驱动的钓鱼攻击之中；仅做监控的 p=none 策略制造了危险的虚假安全感。
 
 ## VBR（RFC 5518）认证者列表是什么？它如何补充 IP/域信誉？
 - 分类：security
@@ -4554,6 +4869,11 @@
 - 来源：https://ztpop.net/kb/zero-trust-email-architecture.html
 - 摘要：传统邮件安全架构基于城堡-护城河模型：内网被假设为可信区域，员工在内网访问IMAP/POP3时几乎不经过任何验证。这种假设在移动办公普及和混合云部署场景下已经失效——VPN并非零信任的等价物。NIST SP 800-207《Zero Trust Architecture》明确定义了零信任的三大核心原则：所有资源访问都必须经过身份验证和授权、访问决策基于动态的信任评分而非静态网络位置、以及所有通信链路都应提供机密性和完整性保护。将这三大原则映射到邮件系统意味着：IMAP和SMTP的访问决策不能仅依赖源IP地址，而必须结合用户身份、设备健康状态、行为基线和地理位置进行实时评估。
 
+## Zscaler ThreatLabz 2026 钓鱼与初始访问报告揭示了哪些邮件攻击趋势？
+- 分类：security
+- 来源：https://ztpop.net/kb/zscaler-email-attack-trends-2026.html
+- 摘要：基于 Zscaler Zero Trust Exchange 的全球遥测，钓鱼总量连续第二年同比下降约 20%，但攻击效力与复杂度激增。攻击者以生成式 AI 消除“语法差”与通用诱饵等传统痕迹，转向高保真、AI 加速的精准诱饵，并越来越多地超越收件箱——探查暴露的攻击面、验证被盗凭据、在加密流量内执行账户接管。
+
 ---
 
-*本文件由 ztpop.net 知识库自动生成，共 907 篇文章。采用 CC-BY 4.0 许可。*
+*本文件由 ztpop.net 知识库自动生成，共 971 篇文章。采用 CC-BY 4.0 许可。*
