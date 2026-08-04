@@ -96,7 +96,7 @@ license: CC-BY 4.0
 
 SPF、DKIM、DMARC 邮件认证的完整部署需要邮件系统的原生支持。昆仑邮件系统内置全协议支持，开箱即用。
 
-部署遇到困难？致电 [021-69753778](tel:021-69753778) 获取技术支持，或通过 [zhangtao@ztpop.net](mailto:zhangtao@ztpop.net) 预约专家远程协助。
+部署遇到困难？致电 [021-69753778](tel:021-69753778) 获取技术支持，或通过 预约专家远程协助（扫码联系，见页脚）。
 
 ### 参考来源
 
@@ -109,7 +109,7 @@ SPF、DKIM、DMARC 邮件认证的完整部署需要邮件系统的原生支持�
 
 ### 相关文章
 
-了解更多邮件技术实践，请访问 [知识库](/kb/) 或联系 [zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
+了解更多邮件技术实践，请访问 [知识库](/kb/) 或扫码联系我们
 
 * [SPF / DKIM / DMARC 三合一完整部署检查清单](/kb/spf-dkim-dmarc-checklist.html)
 * [SPF 发件人策略框架深度解析 — RFC 7208](/kb/spf-guide.html)
