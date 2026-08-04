@@ -44,7 +44,6 @@ DANE 的未来发展受到 DNSSEC 推广的直接影响。随着 ICANN 和各国
 RFC 7672 - SMTP Security via Opportunistic DANE TLS; RFC 6698 - The DNS-Based Authentication of Named Entities (DANE) Transport Layer Security (TLS) Protocol: TLSA; RFC 8461 - SMTP MTA Strict Transport Security (MTA-STS); Postfix TLS 文档 (http://www.postfix.org/TLS\_README.html); Internetstiftelsen DANE 统计数据 (https://stats.dns.se/dane/)。
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ## 📦 相关产品与方案
 
