@@ -42,7 +42,7 @@ RFC 6409 引用 RFC 4954（SMTP AUTH）。常见机制：`PLAIN`/`LOGIN` 明文�
 
 * [RFC 5321 SMTP 协议](/kb/rfc5321-smtp-protocol.html)：邮件在服务器间的传输模型
 * [RFC 8314 隐式 TLS](/kb/rfc8314-implicit-tls-submission.html)：用 465 取代明文 110/143 端口
-* [RFC 8689 RRVS](/kb/rfc8689-rrvs-require-recipient-valid-since.html)：拦截僵尸账号投递
+* [RFC 7293 RRVS](/kb/rfc7293-rrvs-require-recipient-valid-since.html)：拦截僵尸账号投递
 * [RFC 5598 互联网邮件架构](/kb/rfc5598-internet-email-architecture.html)：四段式组件视图
 * [CISA MFA 实施指引](/kb/cisa-mfa-implementation-guide.html)：抗钓鱼 MFA 与高风险账号保护
 
