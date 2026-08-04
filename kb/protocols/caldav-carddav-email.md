@@ -144,7 +144,6 @@ CalDAV 支持两个关键的企业协作功能：会议邀请（iTIP/iMIP）和�
 [7] Radicale 项目文档. https://radicale.org/
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ## 📦 相关产品与方案
 
