@@ -44,7 +44,6 @@ HIPAA（Health Insurance Portability and Accountability Act）对医疗行业的
 GB/T 22239-2019 信息安全技术 网络安全等级保护基本要求; 《中华人民共和国网络安全法》; 《中华人民共和国数据安全法》; 《中华人民共和国个人信息保护法》; GDPR (Regulation (EU) 2016/679); Sarbanes-Oxley Act of 2002; HIPAA Security Rule (45 CFR Part 164); NIST SP 800-45 Version 2 - Email Security Guidelines; ENISA 邮件安全指南。
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ## 📦 相关产品与方案
 
