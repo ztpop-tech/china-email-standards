@@ -40,7 +40,6 @@ Thunderbird 78 及以上版本内置了 OpenPGP 支持，无需额外安装插�
 RFC 4880 - OpenPGP Message Format; RFC 3156 - MIME Security with OpenPGP; GnuPG 官方文档 (https://gnupg.org/documentation/); RFC 6637 - ECC in OpenPGP; NIST SP 800-57 - Key Management Recommendations。
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ## 📦 相关产品与方案
 
