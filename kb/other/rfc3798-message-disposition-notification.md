@@ -27,7 +27,7 @@ MDN 本就依赖收件方"是否真的打开"。但 Apple Mail Privacy Protectio
 
 ## 企业与合规用途
 
-在政企与信创邮件场景，MDN 可用于重要通知（如公文、合同）的"已阅"留痕，但应作为可选功能并明确告知用户。更可信的送达证明可结合 DSN（RFC 3461）与 DELIVRTO（RFC 9208）令牌回调。
+在政企与信创邮件场景，MDN 可用于重要通知（如公文、合同）的"已阅"留痕，但应作为可选功能并明确告知用户。更可信的送达证明可结合 DSN（RFC 3461）做送达确认。
 
 ## 对信创邮件的启示
 
@@ -36,7 +36,6 @@ MDN 本就依赖收件方"是否真的打开"。但 Apple Mail Privacy Protectio
 ### 相关主题
 
 * [SMTP 投递状态通知（DSN）](/kb/smtp-dsn-rfc3461.html)：送达而非已读
-* [RFC 9208 DELIVRTO URI](/kb/rfc9208-deliverto-uri.html)：令牌回调式状态回填
 * [Apple 邮件隐私保护（MPP）](/kb/apple-mail-privacy-protection.html)：打开追踪为何失效
 * [邮件送达追踪](/kb/email-delivery-tracking.html)：多层可观测性
 
