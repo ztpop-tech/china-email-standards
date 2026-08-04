@@ -155,7 +155,7 @@ Prometheus + postfix-exporter 适合实时告警和趋势分析，但保留 pflo
 
 昆仑邮件系统内置基于 Prometheus 的可观测性接入，支持对接 postfix-exporter 指标体系和 Grafana 仪表板。如您的企业需要邮件系统监控与可观测性方案，请联系我们获取系统集成与技术咨询。
 
-电话：[021-69753778](tel:021-69753778) | 邮箱：[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
+电话：[021-69753778](tel:021-69753778) |
 
 ### 相关文章
 
