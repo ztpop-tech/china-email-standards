@@ -12,7 +12,7 @@ license: CC-BY 4.0
 
 ## 邮件系统核心数据源
 
-成功的威胁猎杀依赖于高质量、结构化的数据源。邮件系统中最有价值的数据源包括SMTP会话日志（Postfix的maillog）、IMAP/POP3访问日志（Dovecot的auth.log和mail.log）、邮件队列元数据（postqueue -p输出）、以及MIME消息头中的认证结果（Authentication-Results字段）。这些日志中的关键字段包括：源IP和TLS版本、SPF/DKIM/DMARC的认证结果（RFC 8601定义的Auth-Results字段格式）、消息ID（RFC 5322中的Message-ID）以及邮件代理链（Received链）。为了有效猎杀，这些日志必须以结构化格式（如JSON）集中存储于日志平台（Elasticsearch或Splunk），且保留期限不应少于365天。RFC 8222《Using Long-term Archiving of Email Records》对邮件元数据的长期归档提出了具体的建议。
+成功的威胁猎杀依赖于高质量、结构化的数据源。邮件系统中最有价值的数据源包括SMTP会话日志（Postfix的maillog）、IMAP/POP3访问日志（Dovecot的auth.log和mail.log）、邮件队列元数据（postqueue -p输出）、以及MIME消息头中的认证结果（Authentication-Results字段）。这些日志中的关键字段包括：源IP和TLS版本、SPF/DKIM/DMARC的认证结果（RFC 8601定义的Auth-Results字段格式）、消息ID（RFC 5322中的Message-ID）以及邮件代理链（Received链）。为了有效猎杀，这些日志必须以结构化格式（如JSON）集中存储于日志平台（Elasticsearch或Splunk），且保留期限不应少于365天。
 
 ## 猎杀工具链与分析方法
 
