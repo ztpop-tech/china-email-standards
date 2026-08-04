@@ -42,7 +42,6 @@ S/MIME 与 PGP/GPG 是两种主流的邮件加密标准，各有优劣。S/MIME 
 RFC 8551 - S/MIME 4.0 Message Specification; RFC 5750/5751 - S/MIME 3.2; RFC 5652 - Cryptographic Message Syntax (CMS); NIST SP 800-177 - Trustworthy Email; Microsoft S/MIME 部署文档; Mozilla Thunderbird S/MIME 文档。
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ## 📦 相关产品与方案
 
