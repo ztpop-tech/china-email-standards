@@ -118,7 +118,6 @@ IETF RFC 7489 - DMARC; RFC 8601 - Authentication-Results Header Field; dmarc.org
 [邮件头深度分析](/kb/email-header-forensics.html)
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ### 📦 相关产品与方案
 
