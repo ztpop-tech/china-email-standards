@@ -353,7 +353,6 @@ RFC 5321 - Simple Mail Transfer Protocol; RFC 3207 - SMTP Service Extension for 
 [SMTP 协议深度解析](/kb/smtp-protocol-deep-dive.html)
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ### 📦 相关产品与方案
 
