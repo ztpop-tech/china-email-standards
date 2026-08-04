@@ -102,7 +102,7 @@ M3AAWG 本文发表于 2015 年，距今已近十年。在国内邮件生态中�
 
 原文：M3AAWG Email Forwarding Best Common Practices v2.0, March 2015, © M3AAWG。本文翻译版在 Creative Commons 许可下发布。
 
-本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库或联系 zhangtao@ztpop.net。
+本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库或扫码联系我们。
 
 本文翻译版在 Creative Commons Attribution 4.0 许可下发布，可自由引用，需标注来源 [ztpop.net](https://www.ztpop.net)。
 
