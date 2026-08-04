@@ -40,6 +40,7 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [DMARC Record Checker (EN)](https://www.ztpop.net/tools/dmarc-checker-en.html): Query _dmarc TXT records, parse all tags, policy strength rating none/quarantine/reject (RFC 7489).
 - [MTA-STS Record Checker (EN)](https://www.ztpop.net/tools/mta-sts-checker-en.html): Check _mta-sts discovery record and HTTPS policy file, testing/enforce modes (RFC 8461).
 - [TLS-RPT Record Checker (EN)](https://www.ztpop.net/tools/tls-rpt-checker-en.html): Query _smtp._tls records, parse v=TLSRPTv1 and rua= report address (RFC 8460).
+- [Email Toolbox (EN)](https://www.ztpop.net/tools/mail-tools-en.html): Header parsing, DNSBL lookup, SMTP error codes, SPF/DKIM/DMARC checks, Base64/QP, CIDR and email syntax validation (RFC 5321/5322).
 ## 核心页面
 - [首页](https://www.ztpop.net/): 昆仑邮件系统官网：国产信创邮件系统、邮件安全网关与邮件技术知识库总入口
 - [国产邮件系统](https://www.ztpop.net/depth-understand.html): 昆仑邮件系统产品深度解析：架构、信创适配与选型指南
@@ -97,7 +98,8 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [新一代开源邮件基础设施盘点：KumoMTA、Stalwart 与 mail-auth（2026）](https://www.ztpop.net/kb/open-source-mail-infrastructure-2026.html): 盘点 2026 年 Rust 化新一代开源邮件栈：KumoMTA（高性能外发 MTA）、Stalwart（一体化邮件+协作服务器，内置 SPF/DKIM/DKIM2/DMARC/ARC）、mail-auth（DKIM/SPF/DMARC Rust 库），含定位对照与选型建议。: 基于 IETF 草案 draft-clayton-dkim2-spec 深度解读 DKIM2 双头部体系（Message-Instance/DKIM2-Signature）、监管链（chain of custody）算法、Recipe 修改代数、重放防护标志与 DSN 退信安全。: DKIM2 是 IETF 正在积极推进的新一代邮件认证协议。本文深入解读 DKIM2 的核心原理、对邮件认证失败/DKIM重放/背散射...
 - [Stalwart 邮件服务器部署实操指南：从安装到生产级配置（2026）](https://www.ztpop.net/kb/stalwart-mail-server-deployment-guide.html): Stalwart v0.16.x 生产部署全流程：二进制脚本安装（Linux/macOS/FreeBSD）、Docker 部署、Bootstrap 引导配置、DNS 记录、内置认证体系（DMARC/DKIM2/DMARCbis/ARC）、存储后端选型、Postfix+Dovecot 迁移对照与信创环境注意事项。
 - [Apache James 3.9.0 新特性解读：Java 21 迁移与 Postgres 高性能实现（2026）](https://www.ztpop.net/kb/apache-james-390-release-notes.html): Apache James 3.9.0 深度解读：Java 11→21 迁移、javax→jakarta、JAMES-2586 高性能 Postgres 实现、IMAP PARTIAL（RFC 9394）、SMTP Require TLS、JMAP SearchSnippets、Crowdsec 集成、SSE-C S3 加密与升级注意事项。
-- [开源与国产邮件系统选型对照表（2026）：Postfix/Stalwart/James/信创商业方案决策矩阵](https://www.ztpop.net/kb/open-source-mail-server-comparison-2026.html): 2026 年开源与国产商业邮件系统选型对照：Postfix+Dovecot（传统栈）、Stalwart v0.16.x（Rust 一体化内置 DKIM2/DMARCbis）、Apache James 3.9.0（Java/Jakarta Mailet）对比信创国产商业方案（Coremail/U-Mail），覆盖协议、认证、信创适配、运维、TCO 与选型决策树。
+- [开源与国产邮件系统选型对照表（2026）：Postfix/Stalwart/James/信创商业方案决策矩阵](https://www.ztpop.net/kb/open-source-mail-server-comparison-2026.html)
+- [邮件安全网关选型对比矩阵（2026）：CACTER vs 网际思安 vs U-Mail 深度解析](https://www.ztpop.net/kb/mail-gateway-comparison-matrix-2026.html): 2026年邮件安全网关选型对比：CACTER（AI原生）、网际思安（信创适配最广）、U-Mail（零误判99.5%拦截）深度对照，覆盖部署形态、信创矩阵、价格区间、招标趋势。: 2026 年开源与国产商业邮件系统选型对照：Postfix+Dovecot（传统栈）、Stalwart v0.16.x（Rust 一体化内置 DKIM2/DMARCbis）、Apache James 3.9.0（Java/Jakarta Mailet）对比信创国产商业方案（Coremail/U-Mail），覆盖协议、认证、信创适配、运维、TCO 与选型决策树。
 - [邮件信任始于认证——M3AAWG 经典白皮书中文版](https://www.ztpop.net/kb/m3aawg-trust-email-authentication.html): 译自 M3AAWG 经典白皮书《Trust in Email Begins with Authentication》(Updated ...
 - [BIMI 证书类型详解：自声明、公共标识证书与验证标识证书](https://www.ztpop.net/kb/bimi-certificate-types.html): BIMI Group 官方博客翻译：详解 BIMI 的三种证书类型——自声明、公共标识证书（CMC）与验证标识证书（VMC），帮助品牌...
 - [RFC 8463 DKIM 的 ed25519 签名：更短密钥、更强抗量子前景](https://www.ztpop.net/kb/rfc8463-dkim-ed25519.html): RFC 8463 为 DKIM 增加 Ed25519 签名算法，作为 RSA 的补充。本文介绍其优势、与 RFC 8301 的关系、双...
@@ -806,6 +808,7 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [Postfix 队列监控与管理：qshape/mailq/postsuper 详解](https://www.ztpop.net/kb/postfix-queue-monitoring.html): Postfix 队列管理完整指南：qshape 分析邮件积压、mailq 查看队列内容、postsuper 删除/重新排队邮件，覆盖队...
 - [邮件合规 eDiscovery 电子证据发现：法律流程、取证格式与保留策略](https://www.ztpop.net/kb/email-ediscovery-legal-hold.html): 邮件系统中的 eDiscovery 电子证据发现完整指南：法律发现请求处理流程、PST/EML/MBOX 取证格式的技术对比与转换、l...
 - [邮件归档法规合规深度指南：GB/T 37002、等保2.0与金融/证券/党政邮件留存技术实现](https://www.ztpop.net/kb/email-archiving-compliance-guide.html): 邮件归档法规合规深度指南：GB/T 37002（信息安全技术 电子邮件系统安全技术要求）、等保2.0三级邮件条款、金融/证券/党政行业...
+- [邮件归档市场格局与采购决策指南（2026版）](https://www.ztpop.net/kb/email-archiving-market-guide-2026.html): 邮件归档市场格局、厂商格局、2026年真实招投标数据、信创绑定趋势与五步采购决策框架。
 - [邮件投递可观测性实践 — Prometheus + postfix-exporter 实现队列、连接与递送延迟全链路监控](https://www.ztpop.net/kb/email-delivery-observability.html): 邮件投递可观测性是保障企业邮件基础设施健康运行的基石。本文基于 Prometheus 生态与 postfix-exporter（pos...
 - [邮件安全态势感知与异常检测 — 日志分析、行为建模与安全编排自动化](https://www.ztpop.net/kb/email-security-analytics.html): 邮件安全分析工程实践：SMTP 会话日志标准化、收/发信行为基线建模、僵尸邮件账号检测、内部邮箱沦陷检测、洞见式警报设计（替代阈值式）...
 - [网络安全法与数据安全法框架下企业邮件系统合规要点](https://www.ztpop.net/kb/cyberspace-mail-law-compliance.html): 系统梳理《网络安全法》《数据安全法》《个人信息保护法》对企业邮件系统的合规要求，从安全等级保护、数据分类分级、个人信息处理、跨境传输等...
@@ -1458,65 +1461,124 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [为什么 Yahoo 要求发送 IP 具备有效的正向与反向 DNS（PTR）记录？ · ztpop 邮件技术知识库]: https://www.ztpop.net/kb/yahoo-faq-06.html
 - [Yahoo 建议用 OPT-IN / 双重确认来建邮件列表吗？为什么？ · ztpop 邮件技术知识库]: https://www.ztpop.net/kb/yahoo-faq-07.html
 - [什么是 Yahoo 的投诉反馈环（CFL）？为什么批量发送人需要它？ · ztpop 邮件技术知识库]: https://www.ztpop.net/kb/yahoo-faq-08.html
-- [标准与工具 · ztpop 标准与工具]: https://www.ztpop.net/standards/
-- [NIST SP 800-177 Rev.1《可信邮件》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/nist-sp800-177.html
-- [NIST SP 800-45 Rev.2《电子邮件安全指南》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/nist-sp800-45.html
-- [FSF《Email Self-Defense》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/email-self-defense.html
-- [IETF RFC 邮件核心标准解读索引 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-email-series.html
-- [SPF 记录检查器 · ztpop 标准与工具]: https://www.ztpop.net/standards/tools/spf-checker.html
-- [DKIM 选择器检查器 · ztpop 标准与工具]: https://www.ztpop.net/standards/tools/dkim-checker.html
-- [DMARC 记录生成器 · ztpop 标准与工具]: https://www.ztpop.net/standards/tools/dmarc-generator.html
-- [邮件头分析器 · ztpop 标准与工具]: https://www.ztpop.net/standards/tools/header-analyzer.html
-
-- [RFC 5321《简单邮件传输协议（SMTP）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5321.html
-- [RFC 5322《互联网邮件格式》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5322.html
-- [RFC 7208《SPF 发送方策略框架》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7208.html
-- [RFC 6376《DKIM 域名密钥识别邮件签名》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6376.html
-- [RFC 7489《DMARC 基于域的消息认证报告与一致性》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7489.html
-- [RFC 6409《邮件提交（MSA）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6409.html
-- [RFC 8461《MTA-STS 邮件传输严格安全》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8461.html
-- [RFC 8460《TLS-RPT 邮件 TLS 报告》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8460.html
-- [RFC 8314《邮件提交与访问的 TLS 使用》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8314.html
-- [RFC 8617《ARC 认证接收链》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8617.html
-- [NIST SP 800-63B-4《数字身份指南：认证与认证器管理》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/nist-sp800-63b-4.html
-- [CISA《增强邮件与 Web 安全》洞察报告全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/cisa-insights-email-web.html
 - [CISA《面向医疗组织的 DMARC》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/cisa-dmarc-hdo.html
-- [RFC 3501《IMAP4rev1 互联网消息访问协议》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3501.html
-- [RFC 1939《POP3 邮局协议第 3 版》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-1939.html
-- [RFC 2045《MIME 第一部分：邮件信体格式》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2045.html
-- [RFC 2046《MIME 第二部分：媒体类型》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2046.html
-- [RFC 2047《MIME 第三部分：信头非 ASCII 文本扩展》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2047.html
-- [RFC 8551《S/MIME v4 证书处理》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8551.html
-- [RFC 7672《DANE for SMTP 传输层安全》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7672.html
-- [RFC 5802《SCRAM 加盐质询响应认证机制》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5802.html
-- [RFC 4422《SASL 简单认证与安全层框架》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4422.html
-- [RFC 4616《SASL PLAIN 明文认证机制》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4616.html
-- [RFC 6186《用 DNS SRV 记录定位邮件服务》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6186.html
-- [RFC 6531《SMTP 国际化邮件扩展（SMTPUTF8）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6531.html
-- [RFC 8620《JMAP JSON 元应用协议》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8620.html
-- [RFC 8621《JMAP for Mail（邮件扩展）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8621.html
-- [RFC 2231《MIME 参数值与编码字扩展》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2231.html
-- [RFC 2049《MIME 第四部分：注册程序》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2049.html
-- [CISA/NSA/FBI/MS-ISAC《反钓鱼指南：阻断攻击链》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/cisa-phishing-guidance.html
+- [CISA《面向医疗组织的 DMARC 实施指南》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/cisa-dmarc-hdo-zh.html
+- [CISA《增强邮件与 Web 安全》洞察报告全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/cisa-insights-email-web.html
+- [CISA Insights《增强邮件与 Web 安全》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/cisa-insights-email-web-zh.html
+- [CISA/NSA/FBI/MS-ISAC《反钓鱼指南：在第一阶段阻断攻击链》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/cisa-phishing-guidance.html
+- [CISA/NSA/FBI/MS-ISAC《反钓鱼指南：在第一阶段阻断攻击链》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/cisa-phishing-guidance-zh.html
+- [FSF《Email Self-Defense（邮件自卫）》v5.0 简体中文全文教程 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/email-self-defense.html
 - [FBI IC3《商业邮件欺诈（BEC）：550 亿美元骗局》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/fbi-bec-2024.html
-- [RFC 7208《SPF》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7208-zh.html
-- [RFC 5322《Internet 报文格式》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5322-zh.html
-- [RFC 6376《DKIM》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6376-zh.html
-- [RFC 5321《SMTP》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5321-zh.html
-- [RFC 3501《IMAP4rev1》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3501-zh.html
-- [RFC 8461《MTA-STS》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8461-zh.html
-- [RFC 4616《PLAIN SASL》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4616-zh.html
-- [RFC 8617《ARC》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8617-zh.html
+- [FBI IC3《商业邮件诈骗：550 亿美元骗局》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/fbi-bec-2024-zh.html
+- [NIST SP 800-177 Rev.1《可信邮件（Trustworthy Email）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/nist-sp800-177.html
+- [NIST SP 800-45 Rev.2《电子邮件安全指南》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/nist-sp800-45.html
+- [NIST SP 800-63B-4《数字身份指南：认证与认证器管理》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/nist-sp800-63b-4.html
+- [RFC 1034《域名系统（DNS）：概念与机制》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-1034.html
+- [RFC 1035《域名系统（DNS）：实现与规范》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-1035.html
+- [RFC 1939《POP3 邮局协议第 3 版》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-1939.html
 - [RFC 1939《POP3》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-1939-zh.html
-- [RFC 6409《邮件提交》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6409-zh.html
-- [RFC 8460《TLS 报告》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8460-zh.html
-- [RFC 7489《DMARC》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7489-zh.html
-- [RFC 5802《SCRAM SASL》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5802-zh.html
-- [RFC 6531《国际化 SMTP》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6531-zh.html
-- [RFC 8620《JMAP》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8620-zh.html
-- [RFC 8551《S/MIME v4 证书》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8551-zh.html
-- [RFC 8314《邮件 TLS》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8314-zh.html
-- [RFC 7672《SMTP TLS》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7672-zh.html
-- [RFC 6186《邮件 SRV》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6186-zh.html
+- [RFC 2045《MIME 第一部分：邮件信体格式》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2045.html
+- [RFC 2045《MIME 第一部分》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2045-zh.html
+- [RFC 2046《MIME 第二部分：媒体类型》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2046.html
+- [RFC 2046《MIME 第二部分》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2046-zh.html
+- [RFC 2047《MIME 第三部分：信头非 ASCII 文本扩展》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2047.html
+- [RFC 2047《MIME 第三部分》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2047-zh.html
+- [RFC 2049《MIME 第五部分：一致性标准与示例》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2049.html
+- [RFC 2049《MIME 第五部分》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2049-zh.html
+- [RFC 2142《通用服务与角色邮箱名约定》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2142.html
+- [RFC 2142《角色邮箱名约定》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2142-zh.html
+- [RFC 2231《MIME 参数值与编码字扩展》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2231.html
+- [RFC 2231《MIME 参数扩展》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2231-zh.html
+- [RFC 2369《邮件列表命令信头（List-* 系列）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2369.html
+- [RFC 2369《邮件列表命令信头》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2369-zh.html
+- [RFC 2919《List-Id 邮件列表标识字段》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2919.html
+- [RFC 2919《List-Id》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2919-zh.html
+- [RFC 3461《SMTP 投递状态通知扩展（DSN）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3461.html
+- [RFC 3461《DSN 的 SMTP 服务扩展》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3461-zh.html
+- [RFC 3463《增强型邮件系统状态码》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3463.html
+- [RFC 3463《增强型邮件系统状态码》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3463-zh.html
+- [RFC 3464《投递状态通知（DSN）报文格式》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3464.html
+- [RFC 3464《投递状态通知（DSN）报文格式》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3464-zh.html
+- [RFC 3501《IMAP4rev1 互联网消息访问协议》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3501.html
+- [RFC 3501《IMAP4rev1》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3501-zh.html
+- [RFC 4033《DNS 安全扩展（DNSSEC）入门与要求》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4033.html
+- [RFC 4034《DNSSEC 资源记录（RRSIG/DNSKEY/DS/NSEC）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4034.html
+- [RFC 4035《DNSSEC 的协议修改》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4035.html
+- [RFC 4409《邮件提交规范（Message Submission）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4409.html
+- [RFC 4422《SASL 简单认证与安全层框架》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4422.html
 - [RFC 4422《SASL》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4422-zh.html
-
+- [RFC 4616《SASL PLAIN 明文认证机制》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4616.html
+- [RFC 4616《PLAIN SASL》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4616-zh.html
+- [RFC 4954《SMTP 认证服务扩展（AUTH）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4954.html
+- [RFC 5068《邮件提交运营：接入与问责要求》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5068.html
+- [RFC 5068《邮件提交运营要求》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5068-zh.html
+- [RFC 5321《简单邮件传输协议（SMTP）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5321.html
+- [RFC 5321《SMTP》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5321-zh.html
+- [RFC 5322《互联网邮件格式》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5322.html
+- [RFC 5322《Internet 报文格式》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5322-zh.html
+- [RFC 5802《SCRAM 加盐质询响应认证机制》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5802.html
+- [RFC 5802《SCRAM SASL》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5802-zh.html
+- [RFC 5965《ARF 邮件反馈报告可扩展格式》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5965.html
+- [RFC 5965《可扩展的邮件反馈报告格式（ARF）》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5965-zh.html
+- [RFC 6186《用 DNS SRV 记录定位邮件服务》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6186.html
+- [RFC 6186《邮件 SRV》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6186-zh.html
+- [RFC 6376《域名密钥识别邮件（DKIM）签名》中文解读 · ztpop 邮件标准库 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6376.html
+- [RFC 6376《DKIM》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6376-zh.html
+- [RFC 6377《DKIM 与邮件列表》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6377.html
+- [RFC 6377《DKIM 与邮件列表》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6377-zh.html
+- [RFC 6409《邮件提交（MSA）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6409.html
+- [RFC 6409《邮件提交》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6409-zh.html
+- [RFC 6522《Multipart/Report 报告媒体类型》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6522.html
+- [RFC 6522《Multipart/Report》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6522-zh.html
+- [RFC 6530《国际化电子邮件总体框架》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6530.html
+- [RFC 6530《国际化电子邮件：综述与框架》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6530-zh.html
+- [RFC 6531《SMTP 国际化邮件扩展（SMTPUTF8）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6531.html
+- [RFC 6531《国际化 SMTP》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6531-zh.html
+- [RFC 6532《国际化电子邮件信头》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6532.html
+- [RFC 6591《基于 ARF 的认证失败报告》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6591.html
+- [RFC 6591《基于 ARF 的认证失败报告》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6591-zh.html
+- [RFC 6647《邮件灰名单适用性说明》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6647.html
+- [RFC 6647《邮件灰名单（Greylisting）应用》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6647-zh.html
+- [RFC 6650《ARF 反馈报告的创建与使用》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6650.html
+- [RFC 6650《邮件反馈报告（ARF）的应用》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6650-zh.html
+- [RFC 6698《基于 DNS 的命名实体认证（DANE）：TLSA 记录》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6698.html
+- [RFC 6698《基于 DNS 的命名实体认证（DANE）：TLSA 记录》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6698-zh.html
+- [RFC 7208《发送方策略框架（SPF）》中文解读 · ztpop 邮件标准库 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7208.html
+- [RFC 7208《SPF》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7208-zh.html
+- [RFC 7489《基于域的消息认证、报告与一致性（DMARC）》中文解读 · ztpop 邮件标准库 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7489.html
+- [RFC 7489《DMARC》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7489-zh.html
+- [RFC 7505《Null MX：声明域名不接收邮件》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7505.html
+- [RFC 7505《Null MX》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7505-zh.html
+- [RFC 7601《Authentication-Results 认证结果信头》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7601.html
+- [RFC 7601《Authentication-Results 信头》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7601-zh.html
+- [RFC 7672《DANE for SMTP 传输层安全》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7672.html
+- [RFC 7672《SMTP TLS》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7672-zh.html
+- [RFC 7817《机会型安全：始终提供某种保护》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7817.html
+- [RFC 7858《DNS over TLS（DoT）规范》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7858.html
+- [RFC 7858《DNS over TLS（DoT）规范》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7858-zh.html
+- [RFC 7960《DMARC 与间接邮件流的互操作问题》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7960.html
+- [RFC 7960《基于域的邮件认证互操作建议》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7960-zh.html
+- [RFC 8058《一键退订（List-Unsubscribe-Post）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8058.html
+- [RFC 8058《一键退订》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8058-zh.html
+- [RFC 8098《MDN 邮件处置通知（已读回执）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8098.html
+- [RFC 8098《邮件处置通知（MDN）》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8098-zh.html
+- [RFC 8301《DKIM 密码算法与密钥使用更新》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8301.html
+- [RFC 8314《邮件提交与访问的 TLS 使用》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8314.html
+- [RFC 8314《邮件 TLS》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8314-zh.html
+- [RFC 8460《SMTP TLS 报告（TLS-RPT）》中文解读 · ztpop 邮件标准库 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8460.html
+- [RFC 8460《TLS 报告》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8460-zh.html
+- [RFC 8461《SMTP MTA 严格传输安全（MTA-STS）》中文解读 · ztpop 邮件标准库 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8461.html
+- [RFC 8461《MTA-STS》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8461-zh.html
+- [RFC 8484《DNS over HTTPS（DoH）规范》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8484.html
+- [RFC 8484《DNS over HTTPS（DoH）规范》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8484-zh.html
+- [RFC 8551《S/MIME v4 证书处理》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8551.html
+- [RFC 8551《S/MIME v4 证书》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8551-zh.html
+- [RFC 8616《国际化邮件的认证处理》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8616.html
+- [RFC 8616《国际化邮件认证》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8616-zh.html
+- [RFC 8617《已认证接收链（ARC）协议》中文解读 · ztpop 邮件标准库 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8617.html
+- [RFC 8617《ARC》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8617-zh.html
+- [RFC 8620《JMAP JSON 元应用协议》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8620.html
+- [RFC 8620《JMAP》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8620-zh.html
+- [RFC 8621《JMAP for Mail（邮件扩展）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8621.html
+- [RFC 8621《JMAP Mail》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8621-zh.html
+- [IETF 邮件核心 RFC 全文汇编 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-email-series.html
