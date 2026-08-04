@@ -76,7 +76,7 @@ license: CC-BY 4.0
 
 **参考来源：** M3AAWG Best Practices for Sending Mandated Emails to Large Audiences, 2020, © M3AAWG
 
-本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库或联系 zhangtao@ztpop.net。
+本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库或扫码联系我们。
 
 本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 [ztpop.net](https://www.ztpop.net)。
 
