@@ -61,7 +61,6 @@ sender_dependent_rate_limit = hash:/etc/postfix/sender_rate_limits
 [1] RFC 5321 §4.5.3, SMTP Minimum Retry; [2] RFC 3463, Enhanced Mail System Status Codes; [3] Postfix Documentation - ANVIL\_README; [4] Postfix Documentation - POSTSCREEN\_README; [5] Google Workspace - Email Sender Guidelines; [6] GB/T 30282-2013, 信息安全技术 反垃圾邮件产品技术要求和测试评价方法。
 
 了解更多邮件技术实践，请访问知识库或联系
-[zhangtao@ztpop.net](mailto:zhangtao@ztpop.net)
 
 ## 📦 相关产品与方案
 
