@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 1073 篇文章。
+共 1074 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Apache James 390 Release Notes](https://ztpop.net/kb/apache-james-390-release-notes.html) → `kb/architecture/apache-james-390-release-notes.md`
@@ -213,6 +213,7 @@
 - [Exchange Online Hybrid Mailflow Config](https://ztpop.net/kb/exchange-online-hybrid-mailflow-config.html) → `kb/exchange/exchange-online-hybrid-mailflow-config.md`
 - [Exchange Online Mailflow Rules Connectors](https://ztpop.net/kb/exchange-online-mailflow-rules-connectors.html) → `kb/exchange/exchange-online-mailflow-rules-connectors.md`
 - [Exchange Online Migration Strategy](https://ztpop.net/kb/exchange-online-migration-strategy.html) → `kb/exchange/exchange-online-migration-strategy.md`
+- [Exchange Owa Xss Cve 2026 42897](https://ztpop.net/kb/exchange-owa-xss-cve-2026-42897.html) → `kb/exchange/exchange-owa-xss-cve-2026-42897.md`
 - [Exchange Permission Migration](https://ztpop.net/kb/exchange-permission-migration.html) → `kb/exchange/exchange-permission-migration.md`
 - [Exchange Replacement Domestic](https://ztpop.net/kb/exchange-replacement-domestic.html) → `kb/exchange/exchange-replacement-domestic.md`
 - [Exchange Replacement Semiconductor Case Study](https://ztpop.net/kb/exchange-replacement-semiconductor-case-study.html) → `kb/exchange/exchange-replacement-semiconductor-case-study.md`
