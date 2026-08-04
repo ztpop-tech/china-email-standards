@@ -148,7 +148,7 @@ Get-Mailbox -ResultSize Unlimited | Get-MailboxStatistics | `
 
 ## 5. 共享邮箱配额策略
 
-共享邮箱（Shared Mailbox）在 Exchange 中具有特殊性：它拥有独立的邮箱存储空间，但需要授权用户才能访问。配额策略不同于常规用户邮箱：
+共享邮箱（Shared Mailbox）在 Exchange 中具有特殊性：它拥有独立的邮箱存储空间，但需要授权用户才能访问。配额策略不同于常规用户
 
 4. 共享邮箱配额特殊考量
 
