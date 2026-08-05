@@ -29,7 +29,7 @@ BIMI（Brand Indicators for Message Identification，品牌消息标识符）是
 _dmarc.example.com. IN TXT "v=DMARC1; p=reject; sp=reject; rua=mailto:dmarc@example.com; pct=100"
 ```
 
-详细配置指导可参考 KB 文章 [DMARC 策略部署与监控指南](/kb/dmarc-policy-guide.html)。
+详细配置指导可参考 KB 文章 [DMARC 策略部署与监控指南](/kb/dmarc-policy-enforcement-escalation.html)。
 
 ### 步骤二：制作 SVG Tiny PS 格式的官方 Logo
 
