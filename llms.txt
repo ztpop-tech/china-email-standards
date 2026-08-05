@@ -5,6 +5,7 @@
 ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑邮件系统」与邮件安全网关，面向政企信创替代与邮件安全合规场景。站点含 1327 篇深度技术文章、666 篇 FAQ 与持续更新的行业威胁情报。
 
 ## 邮件技术在线工具箱
+- [AI 智能体邮件网关（产品入口）](https://www.ztpop.net/mailgate.html): 基于 Rspamd 开源规则引擎与多模态大模型的分层邮件安全网关，破解图片钓鱼、社会工程学与 AI 批量生成攻击三大规则盲区；攻防演练闭环让防御持续进化。开源基座 Apache 2.0，本地优先、数据不出企业边界。
 - [邮件技术在线工具箱导航](https://www.ztpop.net/tools/index.html): 面向邮件系统管理员与运维工程师的免费在线工具集。所有工具均在浏览器端运行，不采集、不存储任何查询数据。技术依据全部追溯 IETF RFC 标准（RFC 7208 / 6376 / 7489 / 8461 / 8460 / 9608 等）。
 - [邮件技术在线工具集（集合页）](https://www.ztpop.net/tools/collection.html): 工具集合说明页，单一 URL 集中描述全部工具、使用场景与 RFC 依据，便于文档、论文、教程引用。
 - [邮件 DNS 一键诊断](https://www.ztpop.net/tools/dns-check.html): 输入域名，一次性检测 SPF、DKIM、DMARC、MX、PTR、BIMI、MTA-STS、TLS-RPT、DNSSEC、DANE 十项邮件相关 DNS 记录，逐项给出通过/警告/失败状态与 RFC 依据（DoH 实时查询，阿里云）。
