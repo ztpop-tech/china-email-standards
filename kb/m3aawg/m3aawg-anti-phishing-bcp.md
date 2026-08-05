@@ -160,11 +160,11 @@ M3AAWG 与 APWG 的这份指南虽有普适性，但国内反钓鱼实践在以�
 ### 相关主题
 
 * [APWG 2025 Q4 钓鱼趋势](/kb/apwg-phishing-trends-2025q4.html)：全年 380 万起，BEC 转账环比 +136%
-* [DMARC 详解](/kb/dmarc-all-about.html)：从策略配置到报告解读
-* [SPF 深度解析](/kb/spf-deep-dive.html)：语法、限制与排错
-* [DKIM 全指南](/kb/dkim-all-about.html)：签名机制与密钥轮换
+* [DMARC 详解](/kb/dmarc-policy-gradual.html)：从策略配置到报告解读
+* [SPF 深度解析](/kb/spf-mechanism-detail.html)：语法、限制与排错
+* [DKIM 全指南](/kb/dkim-signature-process.html)：签名机制与密钥轮换
 * [BEC 商业邮件诈骗防御](/kb/bec-defense.html)：从技术到流程的体系化方案
-* [邮件安全网关部署指南](/kb/mailgate.html)：多层过滤架构详解
+* [邮件安全网关部署指南](/kb/mail-gateway-deploy.html)：多层过滤架构详解
 
 ---
 
