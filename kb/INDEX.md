@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 1092 篇文章。
+共 1095 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Apache James 390 Release Notes](https://ztpop.net/kb/apache-james-390-release-notes.html) → `kb/architecture/apache-james-390-release-notes.md`
@@ -365,6 +365,7 @@
 - [Bgp Rpki Mail Security](https://ztpop.net/kb/bgp-rpki-mail-security.html) → `kb/other/bgp-rpki-mail-security.md`
 - [Binder Dns Svcb Rfc9460](https://ztpop.net/kb/binder-dns-svcb-rfc9460.html) → `kb/other/binder-dns-svcb-rfc9460.md`
 - [Business Email Spoofing Detection](https://ztpop.net/kb/business-email-spoofing-detection.html) → `kb/other/business-email-spoofing-detection.md`
+- [Cacter Saas Cloud Gateway 2026](https://ztpop.net/kb/cacter-saas-cloud-gateway-2026.html) → `kb/other/cacter-saas-cloud-gateway-2026.md`
 - [Callback Phishing Defense](https://ztpop.net/kb/callback-phishing-defense.html) → `kb/other/callback-phishing-defense.md`
 - [Certificate Transparency Lookalike Domain Monitoring](https://ztpop.net/kb/certificate-transparency-lookalike-domain-monitoring.html) → `kb/other/certificate-transparency-lookalike-domain-monitoring.md`
 - [Checkpoint Brand Phishing Q2 2026](https://ztpop.net/kb/checkpoint-brand-phishing-q2-2026.html) → `kb/other/checkpoint-brand-phishing-q2-2026.md`
@@ -858,6 +859,7 @@
 - [M365 Faq 06](https://ztpop.net/kb/m365-faq-06.html) → `kb/references/m365-faq-06.md`
 - [M365 Faq 07](https://ztpop.net/kb/m365-faq-07.html) → `kb/references/m365-faq-07.md`
 - [M365 Faq 08](https://ztpop.net/kb/m365-faq-08.html) → `kb/references/m365-faq-08.md`
+- [Mail Xss Protection Guide](https://ztpop.net/kb/mail-xss-protection-guide.html) → `kb/references/mail-xss-protection-guide.md`
 - [Mailops Faq 01](https://ztpop.net/kb/mailops-faq-01.html) → `kb/references/mailops-faq-01.md`
 - [Mailops Faq 02](https://ztpop.net/kb/mailops-faq-02.html) → `kb/references/mailops-faq-02.md`
 - [Mailops Faq 03](https://ztpop.net/kb/mailops-faq-03.html) → `kb/references/mailops-faq-03.md`
@@ -925,6 +927,7 @@
 - [Yahoo Faq 07](https://ztpop.net/kb/yahoo-faq-07.html) → `kb/references/yahoo-faq-07.md`
 - [Yahoo Faq 08](https://ztpop.net/kb/yahoo-faq-08.html) → `kb/references/yahoo-faq-08.md`
 - [Adversarial Examples Ml Spam Filter](https://ztpop.net/kb/adversarial-examples-ml-spam-filter.html) → `kb/security/adversarial-examples-ml-spam-filter.md`
+- [Ai Email Agent Gateway Architecture](https://ztpop.net/kb/ai-email-agent-gateway-architecture.html) → `kb/security/ai-email-agent-gateway-architecture.md`
 - [Ai Email Assistant Data Privacy Boundary](https://ztpop.net/kb/ai-email-assistant-data-privacy-boundary.html) → `kb/security/ai-email-assistant-data-privacy-boundary.md`
 - [Ai Generated Phishing Detection Signals](https://ztpop.net/kb/ai-generated-phishing-detection-signals.html) → `kb/security/ai-generated-phishing-detection-signals.md`
 - [Ai Generated Phishing Email 2026](https://ztpop.net/kb/ai-generated-phishing-email-2026.html) → `kb/security/ai-generated-phishing-email-2026.md`
