@@ -21,13 +21,13 @@ license: CC-BY 4.0
 * [SPF / DKIM / DMARC 配置检查清单](/kb/spf-dkim-dmarc-checklist.html)
 
   三大邮件认证协议的逐项配置指南——这是外贸邮件送达的基础，缺一不可
-* [DKIM 密钥轮换与管理](/kb/dkim-rotation-key-management.html)
+* [DKIM 密钥轮换与管理](/kb/dkim-key-rotation-management.html)
 
   DKIM 密钥的安全轮换策略，防止密钥泄露导致域名信誉永久损失
 * [邮件 DNS 配置完全指南](/kb/dns-email-config.html)
 
   MX / SPF / DKIM / DMARC / PTR / BIMI——域名端所有邮件相关记录的正确配置
-* [DMARC 邮件认证策略部署指南](/kb/dmarc-email-authentication.html)
+* [DMARC 邮件认证策略部署指南](/kb/dmarc-policy-gradual.html)
 
   从 p=none 到 p=reject 的分阶段部署——保护你的域名不被冒用
 * [Greylisting 灰名单机制详解](/kb/greylisting-guide.html)
@@ -39,7 +39,7 @@ license: CC-BY 4.0
 * [反垃圾邮件分层防御体系](/kb/anti-spam-layered-defense.html)
 
   协议层→信誉层→内容层的多层过滤架构，M3AAWG 最佳实践落地
-* [BEC 商业邮件诈骗防护](/kb/bec-business-email-compromise.html)
+* [BEC 商业邮件诈骗防护](/kb/bec-defense.html)
 
   攻击链分析、检测规则与响应流程——外贸最常遭遇的安全威胁
 * [邮件威胁情报框架](/kb/email-threat-intelligence-framework.html)
@@ -54,13 +54,13 @@ license: CC-BY 4.0
 
 ## 退信诊断
 
-* [SMTP 错误码完整参考](/kb/smtp-error-codes-reference.html)
+* [SMTP 错误码完整参考](/kb/smtp-error-codes-master-guide.html)
 
   4xx 临时拒收与 5xx 永久退信的完整对照表，快速定位问题
-* [DNSBL/RBL 黑名单配置指南](/kb/dnsbl-rbl-configuration-guide.html)
+* [DNSBL/RBL 黑名单配置指南](/kb/dnsbl-realtime-blacklist.html)
 
   IP 进了 Spamhaus/SpamCop 黑名单？查询、申诉与预防的全流程
-* [IP预热发送指南](/kb/ip-warmup-guide.html)
+* [IP预热发送指南](/kb/ip-warmup-complete-guide.html)
 
   新 IP 冷启动时的渐进式发送策略——避免被 Gmail/Outlook 直接拦截
 
