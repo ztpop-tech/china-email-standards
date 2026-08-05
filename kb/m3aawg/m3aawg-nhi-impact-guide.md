@@ -92,7 +92,7 @@ M3AAWG 发现某些邮件内容特征与NHI触发率存在强相关性：
 
 M3AAWG 强调发信人声誉（Sender Reputation）是应对NHI的基石：
 
-* 正确配置 [SPF/DKIM/DMARC](/dns-email-config.html) 有助于接收方准确识别邮件来源，减少因认证失败触发的额外安全扫描
+* 正确配置 [SPF/DKIM/DMARC](/kb/dkim-spf-dmarc-config-template.html) 有助于接收方准确识别邮件来源，减少因认证失败触发的额外安全扫描
 * 使用 DMARC 的 p=quarantine 或 p=reject 策略减少未认证邮件的投递尝试，降低邮件服务器的安全扫描负载
 * 维护干净的发送IP声誉，避免被列入RBL导致的额外内容检查
 * 与接收方建立白名单关系（feedback loop），可帮助接收方在安全策略中将你的流量标记为低风险，从而减少自动化扫描深度
