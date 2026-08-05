@@ -61,7 +61,7 @@ service lmtp {
 }
 ```
 
-LMTP 在投递时可触发 Sieve 过滤（见 [Sieve 过滤语言](/sieve-filter-rfc5228.html)），实现「落库前分拣」。相较 LDA 进程，LMTP 支持并发投递与配额检查，更适配大规模邮件服务器。
+LMTP 在投递时可触发 Sieve 过滤（见 [Sieve 过滤语言](/kb/sieve-filter-rfc5228.html)），实现「落库前分拣」。相较 LDA 进程，LMTP 支持并发投递与配额检查，更适配大规模邮件服务器。
 
 ## 可靠性要点
 
