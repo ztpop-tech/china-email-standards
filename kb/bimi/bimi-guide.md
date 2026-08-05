@@ -142,7 +142,7 @@ BIMI 对 Logo 文件的格式要求极为苛刻——这不是一个「差不多
 | 颜色模式 | 仅支持纯色填充（solid color）， **禁止** 渐变（ / ） |
 | 透明度 | **禁止** `opacity` 属性、 `rgba()` 颜色、 `fill-opacity` |
 | 背景形状 | 可选 Rounded Rectangle（ ）或 Circle 裁剪作为底色 |
-| 脚本 | **禁止** 任何 |
+| 脚本 | **禁止** 任何 `参考：datatracker.ietf.org` |
 
 ---
 
