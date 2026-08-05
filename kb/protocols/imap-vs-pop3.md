@@ -43,7 +43,7 @@ RFC 3501 - Internet Message Access Protocol v4rev1; RFC 1939 - Post Office Proto
 
 ## 相关文章
 
-[邮件账户接管检测与防御](/kb/email-ato-defense.html)
+[邮件账户接管检测与防御](/kb/account-takeover-ato-email.html)
 [SMTP协议深度解析](/kb/smtp-protocol-deep-dive.html)
 
 了解更多邮件技术实践，请访问知识库或联系
