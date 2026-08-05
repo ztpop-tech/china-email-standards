@@ -27,13 +27,13 @@ license: CC-BY 4.0
 * [邮件 DNS 配置完全指南](/kb/dns-email-config.html)
 
   MX / SPF / DKIM / DMARC / PTR 记录配置，域名端的正确设置直接影响邮件送达率
-* [Dovecot IMAP 服务器部署指南](/kb/dovecot-imap-server-guide.html)
+* [Dovecot IMAP 服务器部署指南](/kb/dovecot-imap-advanced-config.html)
 
   开源 IMAP/POP3 服务器的安装、认证与性能调优，中小企业自建方案的核心组件
 
 ## 第二步：技术选型
 
-* [主流邮件服务器对比分析](/kb/mail-server-comparison.html)
+* [主流邮件服务器对比分析](/kb/postfix-vs-exchange-architecture.html)
 
   Postfix、Exim、Sendmail、Microsoft Exchange 的功能、性能与适用场景横向对比
 * [零信任邮件安全架构](/kb/email-security-zero-trust.html)
@@ -57,7 +57,7 @@ license: CC-BY 4.0
 * [信创 OS & 数据库兼容矩阵](/kb/xinchuang-os-database-compatibility-matrix.html)
 
   鲲鹏/飞腾/海光/兆芯 + 麒麟/统信UOS + 达梦/人大金仓的邮件系统适配全景
-* [邮件归档与合规审计](/kb/email-archiving-compliance.html)
+* [邮件归档与合规审计](/kb/email-archiving-legal-compliance.html)
 
   法规要求的邮件保存期限、不可篡改存储方案与快速检索的技术实现
 
