@@ -82,7 +82,7 @@ _dmarc.example.com.  TXT  "v=DMARC1; p=reject; sp=reject; rua=mailto:dmarc-rua@e
 
 * `p=reject`：声明该域名的所有邮件认证失败应被拒收——即使冒用者通过了SPF或DKIM验证
 * `sp=reject`：子域名同样适用reject策略，防止子域名被滥用
-* `rua=mailto:...`：接收聚合报告，用于监控是否有第三方尝试使用该停放域名发送邮件[1](/dmarc-aggregate-reporting.html)
+* `rua=mailto:...`：接收聚合报告，用于监控是否有第三方尝试使用该停放域名发送邮件[1](/kb/dmarc-aggregate-reporting.html)
 * `pct=100`：对所有流量执行策略
 
 国内域名持有者应注意：rua邮箱应设置为能够接收大量自动化报告的企业邮箱地址，且应配置独立的邮件过滤规则防止聚合报告被误判为垃圾邮件。对于拥有大量停放域名的组织，建议使用专用报告聚合平台 [2]。此外，发信人应定期检查 DMARC 聚合报告中的发送源 IP——这是发现第三方滥用停放域名的最直接手段。
