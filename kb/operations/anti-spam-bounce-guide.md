@@ -24,13 +24,13 @@ license: CC-BY 4.0
 * [PTR 反向 DNS 解析配置](/kb/ptr-reverse-dns.html)
 
   **第二步排查**——很多收件方要求发件 IP 有 PTR 记录，RFC 1912 强制要求
-* [DNSBL/RBL 黑名单配置与申诉](/kb/dnsbl-rbl-configuration-guide.html)
+* [DNSBL/RBL 黑名单配置与申诉](/kb/dnsbl-realtime-blacklist.html)
 
   **第三步排查**——查你的 IP 是否被列入 Spamhaus、SpamCop 等主流黑名单
-* [SMTP 错误码完整参考](/kb/smtp-error-codes-reference.html)
+* [SMTP 错误码完整参考](/kb/smtp-error-codes-master-guide.html)
 
   4xx/5xx 错误代码速查表——拿到退信代码后在这里找原因
-* [IP 预热发送指南](/kb/ip-warmup-guide.html)
+* [IP 预热发送指南](/kb/ip-warmup-complete-guide.html)
 
   新 IP 冷启动策略——Gmail/Outlook/Yahoo 对新 IP 的默认策略是"先怀疑"
 
@@ -42,7 +42,7 @@ license: CC-BY 4.0
 * [贝叶斯垃圾邮件过滤原理](/kb/bayesian-spam-filter.html)
 
   概率模型的数学原理与训练机制——理解你的反垃圾引擎是怎么工作的
-* [SPF 验证失败的分析与修复](/kb/spf-fail-analysis.html)
+* [SPF 验证失败的分析与修复](/kb/spf-troubleshooting.html)
 
   发件方 SPF 配置错误导致来信被误判为垃圾，如何排查和反馈
 * [ClamAV 反病毒邮件网关部署](/kb/clamav-antivirus-email-gateway.html)
@@ -60,7 +60,7 @@ license: CC-BY 4.0
 * [FAQ 问答中心（109 问）](/bulletin/faq.html)
 
   "退信代码 550 5.7.1 怎么解决？" → 109 个常见问题的直接答案
-* [DMARC 邮件认证策略部署](/kb/dmarc-email-authentication.html)
+* [DMARC 邮件认证策略部署](/kb/dmarc-policy-gradual.html)
 
   从监控到强制——DMARC 报告解读与策略调优的完整流程
 * [TLS-RPT 邮件加密报告](/kb/tls-rpt-guide.html)
