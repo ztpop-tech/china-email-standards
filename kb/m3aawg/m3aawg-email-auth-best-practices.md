@@ -115,7 +115,7 @@ M3AAWG 指出以下在实践中经常出现的错误：
 * [DMARC p=reject 部署策略](/kb/dmarc-p-reject-deployment-strategy.html)：生产环境拒绝未认证邮件
 * [M3AAWG Gmail/Yahoo 批量发件新规](/kb/m3aawg-gmail-yahoo-bulk-requirements.html)：2024「无认证不进入」时代
 * [DMARC 完全指南](/kb/dmarc-guide.html)：从监控到拒绝的完整路径
-* [SPF 记录配置完全指南](/kb/spf-records-guide.html)：从基础到高级
+* [SPF 记录配置完全指南](/kb/email-spf-record-howto.html)：从基础到高级
 
 ---
 
