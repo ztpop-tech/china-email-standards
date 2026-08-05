@@ -48,8 +48,8 @@ RFC 5321 - SMTP; RFC 5322 - Internet Message Format; RFC 8601 - Message Header F
 [钓鱼邮件检测与防御](/kb/phishing-defense.html)
 [BEC商业邮件诈骗剖析](/kb/bec-defense.html)
 [邮件恶意软件投递分析](/kb/email-malware-analysis.html)
-[邮件账户接管检测与防御](/kb/email-ato-defense.html)
-[邮件安全态势感知与威胁情报](/kb/email-threat-intel.html)
+[邮件账户接管检测与防御](/kb/account-takeover-ato-email.html)
+[邮件安全态势感知与威胁情报](/kb/email-threat-intelligence-framework.html)
 
 了解更多邮件技术实践，请访问知识库或联系
 
