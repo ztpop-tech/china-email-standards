@@ -112,7 +112,7 @@ dig -x 203.0.113.10 +short
 dig TXT example.com +short | grep "spf1"
 ```
 
-详细的 SPF 配置原理与排错请参考 [SPF 配置指南](/kb/spf-guide.html)，复合认证机制的整体设计请参考 [邮件认证生态体系分析](/kb/email-authentication-ecosystem.html)。
+详细的 SPF 配置原理与排错请参考 [SPF 配置指南](/kb/spf-guide.html)，复合认证机制的整体设计请参考 [邮件认证生态体系分析](/kb/email-authentication-alignment.html)。
 
 ## 四、MTA 部署（Postfix）
 
@@ -228,7 +228,7 @@ openssl s_client -connect mail.example.com:993 -tls1_2 | grep "Verify return cod
 # 期望输出: Verify return code: 0 (ok)
 ```
 
-如需要 MTA-STS 强制对端服务器也使用 TLS 传输，可参考 [MTA-STS 配置指南](/kb/mta-sts-tls-enforcement-guide.html)。关于邮件传输加密的全面方案对比请参考 [邮件传输加密技术指南](/kb/tls-email-encryption.html)。
+如需要 MTA-STS 强制对端服务器也使用 TLS 传输，可参考 [MTA-STS 配置指南](/kb/mta-sts-policy-deployment.html)。关于邮件传输加密的全面方案对比请参考 [邮件传输加密技术指南](/kb/tls-email-encryption.html)。
 
 ## 七、SPF / DKIM / DMARC 认证配置
 
