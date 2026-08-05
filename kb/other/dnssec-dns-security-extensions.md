@@ -335,7 +335,7 @@ RFC 4033 - DNS Security Introduction and Requirements; RFC 4034 - Resource Recor
 
 [DANE for SMTP：基于DNSSEC的邮件传输安全](/kb/dane-smtp.html)
 [MTA-STS：基于HTTPS的邮件传输安全](/kb/mta-sts-guide.html)
-[SPF / DKIM / DMARC：邮件认证三件套](/kb/spf-dkim-dmarc.html)
+[SPF / DKIM / DMARC：邮件认证三件套](/kb/dkim-spf-dmarc-config-template.html)
 [S/MIME：端到端邮件加密与签名](/kb/smime-guide.html)
 
 ### 📦 相关产品与方案
