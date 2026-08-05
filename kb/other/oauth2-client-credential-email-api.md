@@ -22,7 +22,7 @@ SMTP 基本认证（用户名+密码明文或 Base64）长期是凭证泄露、�
 
 ①在租户后台登记应用并授予 Mail.Send 或 SMTP.Send 作用域；②将代码中的密码改为令牌请求+缓存刷新；③保留失败告警与令牌过期监控。注意 XOAUTH2 要求 SMTP 连接启用 STARTTLS/TLS，令牌有效期通常为 1 小时需自动续期。
 
-参考：Microsoft Learn《Disable Basic authentication in Exchange Online》、Google Workspace《Using OAuth 2.0 to access Google APIs》、RFC 7628《A Set of Simple Authentication and Security Layer (SASL) Mechanisms for OAuth》。
+参考：Microsoft Learn《Disable Basic authentication in Exchange Online》、Google Workspace《Using OAuth 2.0 to access Google APIs》、RFC 7628《SMTP Authentication Extension for OAuth 2.0》。
 
 ---
 
