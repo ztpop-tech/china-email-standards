@@ -71,7 +71,7 @@ NIST SP 800-177 Rev.1 - Trustworthy Email (2020); NIST SP 800-45 Version 2 - Gui
 ## 相关文章
 
 [邮件系统合规管理全景](/kb/email-compliance.html)
-[信创邮件系统部署指南](/kb/xinchuang-mail-deployment.html)
+[信创邮件系统部署指南](/kb/xinchuang-email-architecture-design.html)
 [TLS邮件传输加密详解](/kb/tls-email-encryption.html)
 
 了解更多邮件技术实践，请访问知识库或联系
