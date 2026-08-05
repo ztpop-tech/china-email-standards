@@ -15,6 +15,8 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [SPF 深度诊断工具](https://www.ztpop.net/tools/spf-deep-diagnose.html): 输入域名或粘贴 SPF 记录，逐机制解析（ip4/ip6/include/mx/a/ptr/exists/redirect/all），DNS 查询次数精确统计（RFC 7208 §4.6.4 上限 10 次）、void lookup 检测、ptr 误用识别、宏展开与 permerror 预警。
 - [邮箱地址语法验证器](https://www.ztpop.net/tools/email-syntax-validator.html): 基于 RFC 5321/5322/6531 逐字符校验邮箱地址语法，支持 SMTPUTF8 国际化邮箱、引号局部、IP 字面量域名，定位违规位置并给出修复建议。
 
+- [邮件安全 AI 检测（工具）](https://www.ztpop.net/ai-mail-detect.html): 粘贴邮件原文，AI 静态启发式分析识别图片钓鱼、伪造发件人、社会工程学攻击信号，输出综合风险评分。零隐私上传，浏览器内完成初步分析。
+
 ## 邮件技术知识库
 
 - [AiTM 钓鱼平台如何绕过 MFA 实现 Microsoft 365 邮箱接管？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/abnormal-aitm-account-takeover-2026.html): AiTM 中间人钓鱼平台以被盗邮箱投递、嵌套附件藏链、合法 SaaS 跳转与 cloaking 规避扫描，后端与微软登录服务保持实时会话中继 MFA，窃取的是已通过 MFA 的活会话，改密码无法使其失效。
