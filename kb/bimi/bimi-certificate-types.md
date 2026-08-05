@@ -56,7 +56,7 @@ VMC 和 CMC 之间的区别直接影响品牌 Logo 在收件箱中的展示方�
 
 * [BIMI Logo 更新完整指南：品牌换标后如何保持邮件身份认证](/kb/bimi-logo-update-guide.html)
 * [BIMI lps 标签详解：同一域名显示不同品牌 Logo](/kb/bimi-lps-tag-guide.html)
-* [邮件身份认证生态体系全景解读](/kb/email-authentication-ecosystem.html)
+* [邮件身份认证生态体系全景解读](/kb/email-authentication-alignment.html)
 * [邮件 DNS 一键诊断](/tools/dns-check.html)（含 BIMI 记录检查）
 
 本文涉及的关键技术领域：邮件认证、BIMI、DMARC
