@@ -180,8 +180,8 @@ smtp_tls_loglevel = 1
 
 [TLS 1.3 与 MTA-STS 对邮件传输安全的影响](/kb/tls-1-3-mta-sts-impact.html)
 [DKIM 签名原理与实践](/kb/dkim-guide.html)
-[邮件传输加密全指南：TLS、STARTTLS 与 DANE](/kb/transport-encryption-guide.html)
-[邮件安全基线配置指南](/kb/email-security-baseline.html)
+[邮件传输加密全指南：TLS、STARTTLS 与 DANE](/kb/smtp-dane-mta-sts-tls-rpt-comparison.html)
+[邮件安全基线配置指南](/kb/email-security-hardening-checklist.html)
 
 ### 📦 相关产品与方案
 
