@@ -165,6 +165,8 @@ Mailpit 默认使用 SQLite 持久化（数据目录可挂载卷）；MailHog �
 
 mail-tester.com 是面向投递质量检测的在线服务（发送邮件到随机地址后评分）；Mailpit/MailHog 是本地开发调试工具，二者用途不同。邮件投递质量检测可参考 ztpop.net 的[邮件 DNS 一键诊断](/tools/dns-check.html)。
 
+参考：[datatracker.ietf.org](https://datatracker.ietf.org/doc/html/rfc5322)
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/mailpit-mailhog-dev-mail-testing.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
