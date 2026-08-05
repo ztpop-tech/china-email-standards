@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 1086 篇文章。
+共 1092 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Apache James 390 Release Notes](https://ztpop.net/kb/apache-james-390-release-notes.html) → `kb/architecture/apache-james-390-release-notes.md`
@@ -352,6 +352,7 @@
 - [Arc Sealing Configuration](https://ztpop.net/kb/arc-sealing-configuration.html) → `kb/other/arc-sealing-configuration.md`
 - [Arf Abuse Report Format Rfc5965](https://ztpop.net/kb/arf-abuse-report-format-rfc5965.html) → `kb/other/arf-abuse-report-format-rfc5965.md`
 - [Arf Abuse Report](https://ztpop.net/kb/arf-abuse-report.html) → `kb/other/arf-abuse-report.md`
+- [Ato Response Session Revocation Token Invalidation](https://ztpop.net/kb/ato-response-session-revocation-token-invalidation.html) → `kb/other/ato-response-session-revocation-token-invalidation.md`
 - [Authentication Results Header Parse](https://ztpop.net/kb/authentication-results-header-parse.html) → `kb/other/authentication-results-header-parse.md`
 - [Authentication Results Header](https://ztpop.net/kb/authentication-results-header.html) → `kb/other/authentication-results-header.md`
 - [Autoreply Vacation Rfc3834](https://ztpop.net/kb/autoreply-vacation-rfc3834.html) → `kb/other/autoreply-vacation-rfc3834.md`
@@ -454,6 +455,7 @@
 - [Email Impersonation Ceo Deepfake](https://ztpop.net/kb/email-impersonation-ceo-deepfake.html) → `kb/other/email-impersonation-ceo-deepfake.md`
 - [Email Incident Response Runbook](https://ztpop.net/kb/email-incident-response-runbook.html) → `kb/other/email-incident-response-runbook.md`
 - [Email Incident Response](https://ztpop.net/kb/email-incident-response.html) → `kb/other/email-incident-response.md`
+- [Email Incident Timeline Reconstruction Headers Logs](https://ztpop.net/kb/email-incident-timeline-reconstruction-headers-logs.html) → `kb/other/email-incident-timeline-reconstruction-headers-logs.md`
 - [Email Latency Analysis](https://ztpop.net/kb/email-latency-analysis.html) → `kb/other/email-latency-analysis.md`
 - [Email List Manager Enterprise](https://ztpop.net/kb/email-list-manager-enterprise.html) → `kb/other/email-list-manager-enterprise.md`
 - [Email Mail From Vs From](https://ztpop.net/kb/email-mail-from-vs-from.html) → `kb/other/email-mail-from-vs-from.md`
@@ -552,10 +554,12 @@
 - [Mail Server Ip Reputation Remediation](https://ztpop.net/kb/mail-server-ip-reputation-remediation.html) → `kb/other/mail-server-ip-reputation-remediation.md`
 - [Mail Server Warmup](https://ztpop.net/kb/mail-server-warmup.html) → `kb/other/mail-server-warmup.md`
 - [Mailbox Data Exfiltration Defense](https://ztpop.net/kb/mailbox-data-exfiltration-defense.html) → `kb/other/mailbox-data-exfiltration-defense.md`
+- [Mailbox Rule Forwarding Backdoor Hunt](https://ztpop.net/kb/mailbox-rule-forwarding-backdoor-hunt.html) → `kb/other/mailbox-rule-forwarding-backdoor-hunt.md`
 - [Mailing List Hygiene Invalid Address Removal](https://ztpop.net/kb/mailing-list-hygiene-invalid-address-removal.html) → `kb/other/mailing-list-hygiene-invalid-address-removal.md`
 - [Mailing List Listid Rfc2919](https://ztpop.net/kb/mailing-list-listid-rfc2919.html) → `kb/other/mailing-list-listid-rfc2919.md`
 - [Mailpit Mailhog Dev Mail Testing](https://ztpop.net/kb/mailpit-mailhog-dev-mail-testing.html) → `kb/other/mailpit-mailhog-dev-mail-testing.md`
 - [Mandiant Email Apt Activity 2026](https://ztpop.net/kb/mandiant-email-apt-activity-2026.html) → `kb/other/mandiant-email-apt-activity-2026.md`
+- [Message Id Envid Cross System Tracing](https://ztpop.net/kb/message-id-envid-cross-system-tracing.html) → `kb/other/message-id-envid-cross-system-tracing.md`
 - [Microsoft 2026 Q1 Threat Landscape](https://ztpop.net/kb/microsoft-2026-q1-threat-landscape.html) → `kb/other/microsoft-2026-q1-threat-landscape.md`
 - [Microsoft 365 Advanced Anti Phishing](https://ztpop.net/kb/microsoft-365-advanced-anti-phishing.html) → `kb/other/microsoft-365-advanced-anti-phishing.md`
 - [Microsoft Defender Anti Phishing](https://ztpop.net/kb/microsoft-defender-anti-phishing.html) → `kb/other/microsoft-defender-anti-phishing.md`
@@ -937,6 +941,7 @@
 - [Bec Ceo Fraud Defense](https://ztpop.net/kb/bec-ceo-fraud-defense.html) → `kb/security/bec-ceo-fraud-defense.md`
 - [Bec Defense Advanced](https://ztpop.net/kb/bec-defense-advanced.html) → `kb/security/bec-defense-advanced.md`
 - [Bec Defense](https://ztpop.net/kb/bec-defense.html) → `kb/security/bec-defense.md`
+- [Bec Fund Transfer Fraud First Hours Response](https://ztpop.net/kb/bec-fund-transfer-fraud-first-hours-response.html) → `kb/security/bec-fund-transfer-fraud-first-hours-response.md`
 - [Bec Threat Evolution 2026](https://ztpop.net/kb/bec-threat-evolution-2026.html) → `kb/security/bec-threat-evolution-2026.md`
 - [Cisa Bec Incident Response Containment](https://ztpop.net/kb/cisa-bec-incident-response-containment.html) → `kb/security/cisa-bec-incident-response-containment.md`
 - [Cisa Phishing Guidance Attack Cycle](https://ztpop.net/kb/cisa-phishing-guidance-attack-cycle.html) → `kb/security/cisa-phishing-guidance-attack-cycle.md`
@@ -980,6 +985,7 @@
 - [Mfa Fatigue Attack Defense](https://ztpop.net/kb/mfa-fatigue-attack-defense.html) → `kb/security/mfa-fatigue-attack-defense.md`
 - [Mitre Attack Email Techniques Detection Coverage](https://ztpop.net/kb/mitre-attack-email-techniques-detection-coverage.html) → `kb/security/mitre-attack-email-techniques-detection-coverage.md`
 - [Mitre Attack T1566 Email Mapping](https://ztpop.net/kb/mitre-attack-t1566-email-mapping.html) → `kb/security/mitre-attack-t1566-email-mapping.md`
+- [Oauth App Grant Abuse Forensic Review](https://ztpop.net/kb/oauth-app-grant-abuse-forensic-review.html) → `kb/security/oauth-app-grant-abuse-forensic-review.md`
 - [Oauth Consent Phishing Defense](https://ztpop.net/kb/oauth-consent-phishing-defense.html) → `kb/security/oauth-consent-phishing-defense.md`
 - [Pgp Gpg Email Encryption Deploy](https://ztpop.net/kb/pgp-gpg-email-encryption-deploy.html) → `kb/security/pgp-gpg-email-encryption-deploy.md`
 - [Pgp Gpg Guide](https://ztpop.net/kb/pgp-gpg-guide.html) → `kb/security/pgp-gpg-guide.md`
