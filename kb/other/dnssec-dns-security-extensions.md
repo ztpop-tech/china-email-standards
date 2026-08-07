@@ -338,8 +338,6 @@ RFC 4033 - DNS Security Introduction and Requirements; RFC 4034 - Resource Recor
 [SPF / DKIM / DMARC：邮件认证三件套](/kb/dkim-spf-dmarc-config-template.html)
 [S/MIME：端到端邮件加密与签名](/kb/smime-guide.html)
 
-### 📦 相关产品与方案
-
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/dnssec-dns-security-extensions.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
