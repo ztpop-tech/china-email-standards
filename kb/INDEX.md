@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 1105 篇文章。
+共 1106 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Apache James 390 Release Notes](https://ztpop.net/kb/apache-james-390-release-notes.html) → `kb/architecture/apache-james-390-release-notes.md`
@@ -957,6 +957,7 @@
 - [Bec Threat Evolution 2026](https://ztpop.net/kb/bec-threat-evolution-2026.html) → `kb/security/bec-threat-evolution-2026.md`
 - [Cisa Bec Incident Response Containment](https://ztpop.net/kb/cisa-bec-incident-response-containment.html) → `kb/security/cisa-bec-incident-response-containment.md`
 - [Cisa Phishing Guidance Attack Cycle](https://ztpop.net/kb/cisa-phishing-guidance-attack-cycle.html) → `kb/security/cisa-phishing-guidance-attack-cycle.md`
+- [Clickfix Email Attack Detection Guide](https://ztpop.net/kb/clickfix-email-attack-detection-guide.html) → `kb/security/clickfix-email-attack-detection-guide.md`
 - [Deepfake Voice Video Bec Attack Chain](https://ztpop.net/kb/deepfake-voice-video-bec-attack-chain.html) → `kb/security/deepfake-voice-video-bec-attack-chain.md`
 - [Dlp Email Inspection](https://ztpop.net/kb/dlp-email-inspection.html) → `kb/security/dlp-email-inspection.md`
 - [Dnsbl Blacklist Guide](https://ztpop.net/kb/dnsbl-blacklist-guide.html) → `kb/security/dnsbl-blacklist-guide.md`
