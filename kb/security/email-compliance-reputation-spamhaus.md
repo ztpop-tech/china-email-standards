@@ -92,12 +92,6 @@ license: CC-BY 4.0
 * 避免使用购买的邮件列表——这几乎总是会触发 Spam Trap
 * 控制垃圾投诉率在 0.1% 以下（Google 建议低于 0.3%）
 
-### 📦 相关产品与方案
-
-SPF、DKIM、DMARC 邮件认证的完整部署需要邮件系统的原生支持。昆仑邮件系统内置全协议支持，开箱即用。
-
-部署遇到困难？致电 [021-69753778](tel:021-69753778) 获取技术支持，或通过 预约专家远程协助（扫码联系，见页脚）。
-
 ### 参考来源
 
 1. [Spamhaus — Email compliance & reputation: The inbox remembers (2026-03-05)](https://www.spamhaus.org/resource-hub/ip-reputation/email-compliance-and-reputation-the-inbox-remembers/)
