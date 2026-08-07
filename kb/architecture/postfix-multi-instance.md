@@ -128,12 +128,6 @@ Postfix multi-instance 架构为邮件运维提供了从单实例扩展到多租
 [运维与架构分类](/kb/category/ops-architecture.html)
 或致电 021-69753778 获取技术支持。
 
-### 📦 相关产品与方案
-
-昆仑邮件系统基于 Postfix 核心架构开发，支持多实例部署形态，满足多租户、高可用和混合云场景需求。如您的企业需要搭建邮件基础设施或从商业邮件系统迁移，请联系我们获取方案咨询。
-
-电话：[021-69753778](tel:021-69753778) |
-
 ### 相关文章
 
 * [Postfix 架构深度解析 — 从 master.cf 到队列管理器的设计哲学](/kb/postfix-architecture-deep-dive.html)
