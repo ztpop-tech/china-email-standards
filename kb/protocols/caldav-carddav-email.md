@@ -145,8 +145,6 @@ CalDAV 支持两个关键的企业协作功能：会议邀请（iTIP/iMIP）和�
 
 了解更多邮件技术实践，请访问知识库或联系
 
-## 📦 相关产品与方案
-
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/caldav-carddav-email.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
