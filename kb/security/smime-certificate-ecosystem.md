@@ -271,8 +271,6 @@ echo "=== 验证完成 ==="#
 **参考来源**
 RFC 8551 — S/MIME 4.0 Message Specification; RFC 5280 — Internet X.509 Public Key Infrastructure Certificate and CRL Profile; RFC 6960 — X.509 Internet PKI Online Certificate Status Protocol (OCSP); RFC 5751 — S/MIME 3.2 Message Specification; RFC 9580 — OpenPGP; CA/Browser Forum S/MIME Baseline Requirements v1.0.0 (2023); NIST SP 800-57 Part 1 Revision 5 — Recommendation for Key Management; RFC 8032 — Edwards-Curve Digital Signature Algorithm (EdDSA); RFC 9162 — Certificate Transparency Version 2.0; NIST SP 800-186 — Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters。
 
-## 📦 相关产品与方案
-
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/smime-certificate-ecosystem.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
