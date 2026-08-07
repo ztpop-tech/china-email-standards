@@ -126,15 +126,6 @@ IETF RFC 7208 SPF；IETF RFC 6376 DKIM；IETF RFC 7489 DMARC；RFC 8616国际化
 
 了解更多邮件技术实践，请访问知识库或联系
 
-### 📦 相关产品与方案
-
-SPF/DKIM/DMARC完整部署需要邮件系统的原生支持。内置全协议支持，开箱即用。
-
-部署遇到困难？致电
-[021-69753778](tel:021-69753778)
-获取技术支持，或通过
-预约专家远程协助
-
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/spf-dkim-dmarc-checklist.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
