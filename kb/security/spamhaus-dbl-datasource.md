@@ -112,12 +112,6 @@ Spamhaus DBL 作为 RFC 5782 规范在域名级黑名单领域的最佳实现，
 [反垃圾与威胁防御分类](/kb/category/antispam-defense.html)
 或致电 021-69753778 获取技术支持。
 
-### 📦 相关产品与方案
-
-昆仑邮件系统内置 Rspamd 反垃圾引擎与 Spamhaus DNSBL/DBL 集成支持，开箱即用。如您的企业需要部署邮件安全网关实现基于信誉的入站过滤，请联系我们获取方案咨询。
-
-电话：[021-69753778](tel:021-69753778) |
-
 ### 相关文章
 
 * [DNSBL 黑名单运行机制与邮件反垃圾实战 — 从 RFC 5782 到 Spamhaus ZEN 深度解析](/kb/dnsbl-blacklist-guide.html)
