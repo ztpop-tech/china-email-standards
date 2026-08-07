@@ -112,12 +112,6 @@ NIST SP 800-177 Rev.1 提供了当今最为完整的邮件安全实施框架。�
 [合规与标准分类](/kb/category/compliance-standards.html)
 或致电 021-69753778 获取技术支持。
 
-### 📦 相关产品与方案
-
-昆仑邮件系统的安全设计对标 NIST SP 800-177 Rev.1 的核心安全控制要求，内置 SPF/DKIM/DMARC/BIMI 全协议认证支持与 DANE/MTA-STS/TLS-RPT 传输安全策略。邮件安全网关可提供 DMARC 强制隔离与反钓鱼分析。请联系我们获取 NIST 合规对标评估服务。
-
-电话：[021-69753778](tel:021-69753778) |
-
 ### 相关文章
 
 * [NIST SP 800-45 邮件安全指南 — 从 V2 到 V3 的演进与组织级邮件安全框架](/kb/nist-sp800-45-email-security.html)
