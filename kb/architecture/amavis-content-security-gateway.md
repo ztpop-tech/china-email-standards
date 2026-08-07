@@ -777,8 +777,6 @@ M3AAWG Anti-Abuse Operations Best Practices — https://www.m3aawg.org。
 [邮件恶意软件投递分析](/kb/email-malware-analysis.html)
 [邮件 DLP 数据防泄漏策略](/kb/email-dlp-strategy.html)
 
-### 📦 相关产品与方案
-
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/amavis-content-security-gateway.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
