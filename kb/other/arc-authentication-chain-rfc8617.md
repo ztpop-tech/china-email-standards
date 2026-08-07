@@ -306,8 +306,6 @@ IETF RFC 8617 - Authenticated Received Chain (ARC) Protocol（§1.1, §1.2, §4.
 [SPF 记录配置详解](/kb/spf-guide.html)
 [邮件认证报告机制](/kb/email-auth-reporting.html)
 
-### 📦 相关产品与方案
-
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/arc-authentication-chain-rfc8617.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
