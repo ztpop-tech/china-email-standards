@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 1106 篇文章。
+共 1126 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Apache James 390 Release Notes](https://ztpop.net/kb/apache-james-390-release-notes.html) → `kb/architecture/apache-james-390-release-notes.md`
@@ -409,6 +409,10 @@
 - [Dnssec Email Protection](https://ztpop.net/kb/dnssec-email-protection.html) → `kb/other/dnssec-email-protection.md`
 - [Domain Age Reputation Phishing](https://ztpop.net/kb/domain-age-reputation-phishing.html) → `kb/other/domain-age-reputation-phishing.md`
 - [Domestic Mail Security Audit](https://ztpop.net/kb/domestic-mail-security-audit.html) → `kb/other/domestic-mail-security-audit.md`
+- [Dsl Email Data Classification](https://ztpop.net/kb/dsl-email-data-classification.html) → `kb/other/dsl-email-data-classification.md`
+- [Dsl Email Data Lifecycle](https://ztpop.net/kb/dsl-email-data-lifecycle.html) → `kb/other/dsl-email-data-lifecycle.md`
+- [Dsl Email Data Security Obligations](https://ztpop.net/kb/dsl-email-data-security-obligations.html) → `kb/other/dsl-email-data-security-obligations.md`
+- [Dsl Email Important Data Export](https://ztpop.net/kb/dsl-email-important-data-export.html) → `kb/other/dsl-email-important-data-export.md`
 - [Dsl Gbt43697 Email Data Grading](https://ztpop.net/kb/dsl-gbt43697-email-data-grading.html) → `kb/other/dsl-gbt43697-email-data-grading.md`
 - [Dsl Important Data Determination Email System](https://ztpop.net/kb/dsl-important-data-determination-email-system.html) → `kb/other/dsl-important-data-determination-email-system.md`
 - [E2Ee Email Content Inspection Conflict](https://ztpop.net/kb/e2ee-email-content-inspection-conflict.html) → `kb/other/e2ee-email-content-inspection-conflict.md`
@@ -535,6 +539,9 @@
 - [Gbt39477 2026 Email Security](https://ztpop.net/kb/gbt39477-2026-email-security.html) → `kb/other/gbt39477-2026-email-security.md`
 - [Gift Card Scam Email](https://ztpop.net/kb/gift-card-scam-email.html) → `kb/other/gift-card-scam-email.md`
 - [Gmail Deliverability Engineering](https://ztpop.net/kb/gmail-deliverability-engineering.html) → `kb/other/gmail-deliverability-engineering.md`
+- [Gmt Email Crypto Assessment](https://ztpop.net/kb/gmt-email-crypto-assessment.html) → `kb/other/gmt-email-crypto-assessment.md`
+- [Gmt Email Domestic Crypto](https://ztpop.net/kb/gmt-email-domestic-crypto.html) → `kb/other/gmt-email-domestic-crypto.md`
+- [Gmt Email Trust System](https://ztpop.net/kb/gmt-email-trust-system.html) → `kb/other/gmt-email-trust-system.md`
 - [Google Cloud Threat Horizons 2026](https://ztpop.net/kb/google-cloud-threat-horizons-2026.html) → `kb/other/google-cloud-threat-horizons-2026.md`
 - [Google Email Sender Guidelines 2024](https://ztpop.net/kb/google-email-sender-guidelines-2024.html) → `kb/other/google-email-sender-guidelines-2024.md`
 - [Google Workspace Advanced Protection](https://ztpop.net/kb/google-workspace-advanced-protection.html) → `kb/other/google-workspace-advanced-protection.md`
@@ -604,6 +611,10 @@
 - [Phishing Simulation Training](https://ztpop.net/kb/phishing-simulation-training.html) → `kb/other/phishing-simulation-training.md`
 - [Phishing Url Analysis Indicators](https://ztpop.net/kb/phishing-url-analysis-indicators.html) → `kb/other/phishing-url-analysis-indicators.md`
 - [Pipel Personal Information Protection Law Email](https://ztpop.net/kb/pipel-personal-information-protection-law-email.html) → `kb/other/pipel-personal-information-protection-law-email.md`
+- [Pipi Email Consent Minimization](https://ztpop.net/kb/pipi-email-consent-minimization.html) → `kb/other/pipi-email-consent-minimization.md`
+- [Pipi Email Cross Border Transfer](https://ztpop.net/kb/pipi-email-cross-border-transfer.html) → `kb/other/pipi-email-cross-border-transfer.md`
+- [Pipi Email Personal Info Identification](https://ztpop.net/kb/pipi-email-personal-info-identification.html) → `kb/other/pipi-email-personal-info-identification.md`
+- [Pipi Email Subject Rights Archive](https://ztpop.net/kb/pipi-email-subject-rights-archive.html) → `kb/other/pipi-email-subject-rights-archive.md`
 - [Pipl Saas Mailbox Entrusted Processing Boundary](https://ztpop.net/kb/pipl-saas-mailbox-entrusted-processing-boundary.html) → `kb/other/pipl-saas-mailbox-entrusted-processing-boundary.md`
 - [Postmaster Tools Reputation Signals](https://ztpop.net/kb/postmaster-tools-reputation-signals.html) → `kb/other/postmaster-tools-reputation-signals.md`
 - [Proofpoint Email Fraud Defense 2026](https://ztpop.net/kb/proofpoint-email-fraud-defense-2026.html) → `kb/other/proofpoint-email-fraud-defense-2026.md`
@@ -1091,6 +1102,15 @@
 - [Tls Rpt Guide](https://ztpop.net/kb/tls-rpt-guide.html) → `kb/tls/tls-rpt-guide.md`
 - [Tls Rpt Report Parsing](https://ztpop.net/kb/tls-rpt-report-parsing.html) → `kb/tls/tls-rpt-report-parsing.md`
 - [Tls Rpt Smtp Reporting](https://ztpop.net/kb/tls-rpt-smtp-reporting.html) → `kb/tls/tls-rpt-smtp-reporting.md`
+- [Dengbao Email Assessment Continuous](https://ztpop.net/kb/dengbao-email-assessment-continuous.html) → `kb/xinchuang/dengbao-email-assessment-continuous.md`
+- [Dengbao Email Assessment Evidence](https://ztpop.net/kb/dengbao-email-assessment-evidence.html) → `kb/xinchuang/dengbao-email-assessment-evidence.md`
+- [Dengbao Email Assessment Failed Items](https://ztpop.net/kb/dengbao-email-assessment-failed-items.html) → `kb/xinchuang/dengbao-email-assessment-failed-items.md`
+- [Dengbao Email Assessment Prep](https://ztpop.net/kb/dengbao-email-assessment-prep.html) → `kb/xinchuang/dengbao-email-assessment-prep.md`
+- [Dengbao Email Computing Environment](https://ztpop.net/kb/dengbao-email-computing-environment.html) → `kb/xinchuang/dengbao-email-computing-environment.md`
+- [Dengbao Email Mgmt Center Ops](https://ztpop.net/kb/dengbao-email-mgmt-center-ops.html) → `kb/xinchuang/dengbao-email-mgmt-center-ops.md`
+- [Dengbao Email Secure Comm Network](https://ztpop.net/kb/dengbao-email-secure-comm-network.html) → `kb/xinchuang/dengbao-email-secure-comm-network.md`
+- [Dengbao Email System Scope Definition](https://ztpop.net/kb/dengbao-email-system-scope-definition.html) → `kb/xinchuang/dengbao-email-system-scope-definition.md`
+- [Gmt Email Xinchuang Migration](https://ztpop.net/kb/gmt-email-xinchuang-migration.html) → `kb/xinchuang/gmt-email-xinchuang-migration.md`
 - [Gov Xinchuang Email Procurement](https://ztpop.net/kb/gov-xinchuang-email-procurement.html) → `kb/xinchuang/gov-xinchuang-email-procurement.md`
 - [Guomi Email Cryptography](https://ztpop.net/kb/guomi-email-cryptography.html) → `kb/xinchuang/guomi-email-cryptography.md`
 - [Sm2 Sm3 Sm4 Email Standards Mapping](https://ztpop.net/kb/sm2-sm3-sm4-email-standards-mapping.html) → `kb/xinchuang/sm2-sm3-sm4-email-standards-mapping.md`
