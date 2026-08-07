@@ -109,12 +109,6 @@ Cloudflare DMARC Management GA 的发布标志着邮件认证管理从专业咨�
 [邮件协议与认证分类](/kb/category/protocol-auth.html)
 或致电 021-69753778 获取技术支持。
 
-### 📦 相关产品与方案
-
-昆仑邮件系统内置全协议邮件认证支持（SPF/DKIM/DMARC/BIMI），开箱即用。如您的企业需要从 Exchange/Domino 迁移至国产信创邮件系统，或需要部署邮件安全网关实现 DMARC 强制隔离，请联系我们获取方案咨询。
-
-电话：[021-69753778](tel:021-69753778) |
-
 ### 相关文章
 
 * [DMARC 邮件认证策略框架深度解析 — RFC 7489：从 p=none 到 p=reject 的分阶段部署](/kb/dmarc-guide.html)
