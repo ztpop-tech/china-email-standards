@@ -500,8 +500,6 @@ IETF RFC 7208 — Sender Policy Framework (SPF) Version 1 (2014)。
 [AI/ML在邮件安全中的应用](/kb/ai-ml-email-security.html)
 [反垃圾邮件技术全景](/kb/anti-spam-technologies.html)
 
-### 📦 相关产品与方案
-
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/anti-spam-filter-engine.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
