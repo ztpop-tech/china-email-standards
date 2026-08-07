@@ -582,8 +582,6 @@ GM/T 0024-2014《SSL VPN 技术规范》则更进一步，规定了基于国密�
 * SM9 IBE 为邮件端到端加密提供了一条"零证书"路径，但密钥托管问题是其工程化的主要挑战，目前更适用于内部可控的封闭邮件体系。
 * 国密部署应分段推进：先实现 MTA-to-MTA 传输层国密（SMTP TLS），再考虑客户端接入层的国密 TLS，最后评估 SM9/SM2 S/MIME 的端到端加密方案。
 
-### 📦 相关产品与方案
-
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/guomi-email-cryptography.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
