@@ -344,6 +344,8 @@ postqueue -p | grep -c "^[A-F0-9]"   # 超过 100 条需人工介入
 
 如涉及从 Exchange 或旧系统的**[邮件迁移](/kb/category/migration-ecosystem.html)**，请参考 [邮件迁移技术指南](/email-migration.html)；如正在评估 **Exchange 替代**方案，请参考 [Exchange 替代全流程指南](/exchange-replacement.html)；如需邮件安全网关方案，请查看 [邮件安全网关](/mailgate.html)。
 
+参考：https://www.postfix.org/documentation.html
+
 ---
 
 *本文章由 [ztpop.net 知识库](https://ztpop.net/kb/email-system-setup.html) 镜像发布。采用 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，可自由引用，仅需标注来源。*
