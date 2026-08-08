@@ -40,6 +40,20 @@ List-Unsubscribe: <https://example.com/u?token=xyz>
 * 发送 IP 必须有 PTR 且正反向 DNS 匹配；同类型邮件固定 From 与 IP，慢速提量。
 * 传输须用 TLS（2023-12 起强制）。
 
+## 官方要求更新历史（Sender requirement updates）
+
+Google 官方在《Email sender guidelines》中维护一张「发件要求更新」时间线表，逐条标注要求的生效日期，是判断合规基线版本的最权威依据（页面持续更新，检索时以官方最新版为准）：
+
+| 要求 | 官方标注生效时间 |
+| --- | --- |
+| TLS 连接传输（所有发件方） | 2023-12（Dec. 2023） |
+| SPF/DKIM/DMARC 认证（所有发件方） | 2024-02 起强制 |
+| 批量发件方（≥5,000 封/日）：DMARC 策略至少 p=none、正反 DNS 匹配、一键退订、0.30% 投诉率红线 | 2024-02 起强制 |
+
+2026 年官方页面仍沿用上述框架：认证、TLS、投诉率、一键退订四项为全部发件方基线，批量发件方额外承担 DMARC 策略与正反 DNS 匹配要求。官方并未宣布提高 5,000 封/日的批量发件方认定阈值，也未新增需一次性完成的认证协议（如 DKIM2/DMARCbis 仍在 IETF 标准化进程中，尚未列入 Gmail 强制清单）。发信运营应每季度核对一次官方页面，防止把「厂商营销解读」误当官方要求。
+
+注意区分两份文档：向 `@gmail.com` 个人账户发信遵循《Email sender guidelines》；使用 Google Workspace 自建域大批量发信则遵循《Google Workspace 垃圾邮件与滥用政策》（AUP 组成部分），两者适用对象不同。
+
 ## 对信创邮件与政企的启示
 
 政企用信创邮件系统向客户/会员群发通知时，应将上述要求写入发信规范：独立子域、DMARC p=quarantine/reject、RFC 8058 退订、Postmaster 监控投诉率。未达标会直接损害对外沟通效果。
