@@ -1,36 +1,32 @@
 ---
-title: "OAuth 同意钓鱼（Consent Phishing）如何防御？"
+title: "攻击者用「授权一个第三方 App」来窃取邮件，不用密码也能持续访问，怎么防？"
 source: "https://ztpop.net/kb/oauth-consent-phishing-defense.html"
 license: CC-BY 4.0
 ---
 
-# OAuth 同意钓鱼（Consent Phishing）如何防御？
+# 攻击者用「授权一个第三方 App」来窃取邮件，不用密码也能持续访问，怎么防？
 
 1
-OAuth 同意钓鱼（Consent Phishing）如何防御？
+攻击者用「授权一个第三方 App」来窃取邮件，不用密码也能持续访问，怎么防？
 ▼
 
-**同意钓鱼的原理**
+**非法同意授权攻击的本质**
 
-与传统钓鱼不同，同意钓鱼不需要窃取密码：攻击者先注册一个恶意 OAuth 应用（如仿冒「邮件备份工具」），再发邮件诱导受害者点击授权链接。一旦受害者同意，攻击者即获得该应用对邮箱、通讯录甚至发送权限的持久访问令牌，且后续访问不触发密码重置。
+Microsoft 将此类称为 illicit consent grant attack（非法同意授权攻击），其本质是滥用 OAuth 应用程序同意框架，且预设调用信息的实体是自动化程序而非人类。攻击者在 Microsoft Entra ID 中注册一个应用，请求访问联系人、邮件或文档的权限，再通过钓鱼或向可信网站注入恶意代码，诱使最终用户授予该应用同意；一旦授予，恶意应用便获得**账户级访问（account-level access）**，且无需组织内的账户。
 
-真实攻击手法：链接指向真实的微软/谷歌授权页（非伪造登录页），受害者因「官方域名的登录页」而放松警惕；授予的 scope 往往远超所需（如 `Mail.ReadWrite`、`Contacts.Read`），攻击者可长期静默读取与转发邮件。
+**为什么重置密码、上 MFA 都拦不住**
 
-**检测指标**
+Microsoft 明确：常规处置（例如重置密码或要求多因素认证 MFA）对此类攻击无效，因为这些应用是**组织外部的（external to the organization）**。攻击者拿到的是应用自身的持久令牌，而不是某次登录凭据，因此改密码、加 MFA 都不会让已授予的应用失效。
 
-* **发布者可疑**：应用未通过发布者验证，或注册地为高风险地区。
-* **权限过大**：一次性申请 `Mail.Read`/`Mail.Send`/`offline_access` 等敏感 scope。
-* **行为异常**：授权后应用立即批量读取邮件、调用 Graph API 拉取通讯录。
-* **间接登录**：无对应密码登录事件却出现应用访问令牌使用记录。
+**检测：在审计日志里找同意活动**
 
-**防御与治理**
+Microsoft 指出需在 Microsoft Purview Audit（Standard 或 Premium）中搜索可疑的「Consent to application（同意授予应用）」活动，这些即是入侵指标（IOC）。重点看：活动详情中 **IsAdminConsent 为 True**——意味着可能有人以全局管理员身份授予了广泛数据访问；用 PowerShell 导出权限清单后，关注 ConsentType 为 AllPrincipals（允许访问租户内所有人内容）、Permission 含 Read/Write/All、以及拼写错误/极平淡/黑客风格的可疑 ClientDisplayName。
 
-* **同意策略**：禁用普通用户自行授权，改为管理员同意工作流（admin consent workflow），所有第三方应用须经安全评审。
-* **应用治理**：启用 OAuth 应用发现与风险评分，对高权限/未验证应用自动拦截或撤销。
-* **条件访问**：对来自新应用、新设备的敏感 API 调用加多因子与风险策略。
-* **监测**：审计 Entra ID / Google Workspace 的应用授权与 Graph 调用日志。
+**修复与预防**
 
-参考：Microsoft 365 Defender《Consent phishing》专题、CISA 应用授权风险通告、MITRE ATT&CK T1528（Steal Application Access Token）。
+修复（How to stop and remediate）：在 Microsoft Entra 管理中心撤销（用户 > 应用 > Remove），或用 PowerShell 的 Remove-MgOauth2PermissionGrant 撤销 OAuth 权限授予、Remove-MgServicePrincipalAppRoleAssignment 撤销服务应用角色分配；撤销受影响账户的登录；用 Microsoft Defender for Cloud Apps 的 OAuth app policies 审批或禁止权限请求。预防层面：配置管理员同意策略、限制用户自助同意（user consent）、对高权限范围要求管理员审批，从源头压缩攻击面。
+
+参考：https://learn.microsoft.com/en-us/defender-office-365/detect-and-remediate-illicit-consent-grants
 
 ---
 
