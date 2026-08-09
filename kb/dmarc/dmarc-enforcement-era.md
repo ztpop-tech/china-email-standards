@@ -38,7 +38,7 @@ Cloudflare 博文明确指出：过去两年间，邮件认证的监管态势发
 
 具体而言，Google 和 Yahoo 自 2024 年 2 月起对每日发送量超过 5,000 封的批量发件人实施邮件认证强制要求，包括：必须配置 SPF 或 DKIM、必须设置 DMARC 策略（至少 p=none）、必须启用单点取消订阅（One-Click Unsubscribe）等。Microsoft 随后跟进，对 Exchange Online Protection 的入站流量加强 DMARC 验证。
 
-在 RFC 层面，2025 年 IETF 发布 RFC 9989/9990/9991 三件套取代了运行十年的 RFC 7489，Tree Walk 子域策略继承算法被正式弃用，Organizational Domain 概念被引入用于 relaxed alignment 判定——这些新标准进一步收紧了邮件认证的可操作性。
+在 RFC 层面，2026 年 5 月 IETF 发布 RFC 9989/9990/9991 三件套（Standards Track）取代了运行十年的 RFC 7489，正式引入 DNS Tree Walk 策略发现机制与 np/psd/t 新标签，并移除 pct/rf/ri 标签——这些新标准进一步收紧了邮件认证的可操作性。
 
 **四、DMARC 管理的核心难点**
 
@@ -99,11 +99,11 @@ Cloudflare DMARC Management 的开箱路线：
 3. 审查记录分析面板和修复建议。
 4. 在充分了解所有合法发送源的前提下，按自身节奏向 p=quarantine（可疑邮件进垃圾箱）或 p=reject（未认证邮件直接拒绝）推进。
 
-DMARC 分阶段部署的核心原则：在 p=none 阶段收集足够的数据（建议至少 7-14 天的聚合报告），从 rua 报告中识别所有认证对齐的合法发送源，将这些源纳入 SPF include: 和/或 DKIM 签名体系，确认无遗漏后过渡到 p=quarantine（设置 pct=10% 逐步放大），最终到达 p=reject（RFC 9989 §10.3）。
+DMARC 分阶段部署的核心原则：在 p=none 阶段收集足够的数据（建议至少 7-14 天的聚合报告），从 rua 报告中识别所有认证对齐的合法发送源，将这些源纳入 SPF include: 和/或 DKIM 签名体系，确认无遗漏后过渡到 p=quarantine（设置 pct=10% 逐步放大），最终到达 p=reject（RFC 9989 部署建议，通用邮件域参考 Section 7.4 评估 p=reject 适用性）。
 
 **七、总结：邮件认证已进入强制执行时代**
 
-Cloudflare DMARC Management GA 的发布标志着邮件认证管理从专业咨询服务的领域走向了自助化、免费化和实时化。结合 Google / Yahoo / Microsoft 的强制执行政策（2024-2026）和 IETF RFC 9989/9990/9991 的新标准（2025），邮件认证已从"可选最佳实践"升级为"刚性发件资格"。域名所有者应抓住当前窗口期——在收件箱变成一个更不友好的地方之前——完成邮件认证的全面部署和审计。
+Cloudflare DMARC Management GA 的发布标志着邮件认证管理从专业咨询服务的领域走向了自助化、免费化和实时化。结合 Google / Yahoo / Microsoft 的强制执行政策（2024-2026）和 IETF RFC 9989/9990/9991 的新标准（2026-05），邮件认证已从"可选最佳实践"升级为"刚性发件资格"。域名所有者应抓住当前窗口期——在收件箱变成一个更不友好的地方之前——完成邮件认证的全面部署和审计。
 
 了解更多邮件系统认证技术实践，请访问
 [邮件协议与认证分类](/kb/category/protocol-auth.html)
@@ -112,7 +112,7 @@ Cloudflare DMARC Management GA 的发布标志着邮件认证管理从专业咨�
 ### 相关文章
 
 * [DMARC 邮件认证策略框架深度解析 — RFC 7489：从 p=none 到 p=reject 的分阶段部署](/kb/dmarc-guide.html)
-* [DMARC 标准演进 — RFC 7489 → RFC 9989/9990/9991：Tree Walk 算法弃用与聚合报告格式重构](/kb/dmarc-standards-evolution.html)
+* [DMARC 标准演进 — RFC 9989/9990/9991（2026-05）正式发布：DNS Tree Walk 与标签体系重构](/kb/dmarc-standards-evolution.html)
 * [SPF / DKIM / DMARC 三合一完整部署检查清单](/kb/spf-dkim-dmarc-checklist.html)
 * [SPF 发件人策略框架深度解析 — RFC 7208：从 SPF Classic 到 DMARC 基石](/kb/spf-guide.html)
 * [DMARC 聚合报告深度解读 — RFC 7489 §7：XML 结构、auth\_results 解析与异常排查](/kb/dmarc-aggregate-reporting.html)
