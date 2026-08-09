@@ -6,7 +6,7 @@ license: CC-BY 4.0
 
 # 新一代开源邮件基础设施盘点：KumoMTA、Stalwart 与 mail-auth（2026）
 
-开源邮件服务器领域在 2020 年代后半段出现了显著的技术代际变化。传统栈以 Postfix（RFC 5321 传输代理）、Dovecot（IMAP/POP3 投递）、OpenDKIM/OpenDMARC（认证）、Rspamd（过滤）多组件拼装为主；新一代项目则普遍采用 Rust 编写，追求单一二进制、内置认证与过滤、以及对 JMAP（RFC 8620/8621）等现代协议的原生支持。本文盘点的三个项目分别代表外发性能、一体化服务器、认证库三个细分方向，均以官方 GitHub 仓库数据为准（截至 2026-07-31）。
+开源邮件服务器领域在 2020 年代后半段出现了显著的技术代际变化。传统栈以 Postfix（RFC 5321 传输代理）、Dovecot（IMAP/POP3 投递）、OpenDKIM/OpenDMARC（认证）、Rspamd（过滤）多组件拼装为主；新一代项目则普遍采用 Rust 编写，追求单一二进制、内置认证与过滤、以及对 JMAP（RFC 8620/8621）等现代协议的原生支持。本文盘点的三个项目分别代表外发性能、一体化服务器、认证库三个细分方向，均以官方 GitHub 仓库数据为准（截至 2026-08-09）。
 
 **一、KumoMTA：为高容量外发而生的开源 MTA**
 
@@ -18,7 +18,9 @@ KumoMTA（GitHub: KumoCorp/kumomta，Rust，Apache-2.0）是首个从零构建�
 
 **二、Stalwart：一体化邮件与协作服务器**
 
-Stalwart（GitHub: stalwartlabs/stalwart，Rust，AGPL-3.0，13.9k+ stars）是当前增长最快的开源邮件服务器之一，宣称「Secure, scalable mail & collaboration server with comprehensive protocol support」——单一二进制同时提供 SMTP（RFC 5321）、IMAP4rev2/rev1（RFC 9051/3501）、POP3（RFC 1939）、JMAP（RFC 8620/8621）、CalDAV（RFC 4791）、CardDAV（RFC 6352）与 WebDAV（RFC 4918）服务。最新版本 v0.16.15（2026-07-27）。
+Stalwart（GitHub: stalwartlabs/stalwart，Rust，AGPL-3.0，14k+ stars）是当前增长最快的开源邮件服务器之一，宣称「Secure, scalable mail & collaboration server with comprehensive protocol support」——单一二进制同时提供 SMTP（RFC 5321）、IMAP4rev2/rev1（RFC 9051/3501）、POP3（RFC 1939）、JMAP（RFC 8620/8621）、CalDAV（RFC 4791）、CardDAV（RFC 6352）与 WebDAV（RFC 4918）服务。最新版本 v0.16.16（2026-08-02）。
+
+2026 年 8 月 7 日起，Stalwart 官方将项目正式重新定位为「Mail & Collaboration Server」（邮件与协作服务器），将日历（CalDAV）、通讯录（CardDAV）与共享文件（WebDAV）与邮件服务并列为主打能力，官方主页口号升级为「All-in-one mail & collaboration server —— One server for your email, calendars, contacts and shared files, with spam and phishing protection built in」。这一重新定位反映了开源邮件服务器向协作平台演进的趋势：邮件不再被当作孤立系统，而是与日程、通讯录、文件共享统一承载。对自建与信创替代场景，这意味着单组件可覆盖更多协作需求，选型时可纳入评估。
 
 对邮件认证体系的完整内置是其突出优势：SMTP 服务内建 DMARC（RFC 7489）、DKIM v1（RFC 6376）、DKIM2（draft-ietf-dkim-dkim2-spec，即上文所述新一代签名协议）与 ARC（RFC 8617）认证，支持 DANE（RFC 6698）、MTA-STS（RFC 8461）与 TLS-RPT（RFC 8460）传输安全，并具备自动化 DKIM 密钥轮换。值得注意：Stalwart 在 v0.16.x 系列已率先支持 DKIM2 与 DMARCbis（RFC 9989/9990/9991）——这是 2026 年邮件认证体系升级的风向标，对希望提前验证 DKIM2 兼容性的组织极具参考价值。
 
@@ -34,12 +36,12 @@ mail-auth（GitHub: stalwartlabs/mail-auth，Rust，Apache-2.0/MIT 双许可，v
 
 **四、三者关系与选型对照**
 
-新一代开源邮件基础设施定位对照（2026-07）
+新一代开源邮件基础设施定位对照（2026-08）
 
 | 项目 | 语言/许可 | 定位 | 内置认证 | 典型场景 |
 | --- | --- | --- | --- | --- |
 | KumoMTA | Rust / Apache-2.0 | 高性能外发 MTA（对标 PowerMTA） | DKIM/DMARC 对齐、TLS | 营销/事务邮件规模化外发 |
-| Stalwart | Rust / AGPL-3.0 | 一体化邮件+协作服务器 | SPF/DKIM/DKIM2/DMARC/ARC/DANE/MTA-STS | 自托管、信创替代、全协议整合 |
+| Stalwart | Rust / AGPL-3.0 | 一体化邮件+协作服务器（2026-08-07 官方重新定位） | SPF/DKIM/DKIM2/DMARC/ARC/DANE/MTA-STS | 自托管、信创替代、全协议整合 |
 | mail-auth | Rust / Apache-2.0+MIT | DKIM/SPF/DMARC 协议库 | （库，供宿主调用） | Rust 邮件系统开发 |
 | Postfix + Dovecot（传统栈） | C / IBM 公共许可等 | 通用 MTA + 存储访问 | 需外接 OpenDKIM/OpenDMARC | 通用自建、已存量大部署 |
 
