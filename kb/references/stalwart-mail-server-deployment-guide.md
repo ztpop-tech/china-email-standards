@@ -183,7 +183,7 @@ Stalwart Web UI → Domains → 选择域名 → DKIM Keys，可生成 RSA 2048 
 Stalwart v0.16.x 已支持 DMARCbis 全部三个 RFC[[4]](#ref-4)：
 
 * **RFC 9989**：DMARCbis 核心规范（取代 RFC 7489），新增 `np=`（不存在子域策略）、`psd=`（公共后缀域标志）、`t=`（测试模式，降低一级执行策略）标签，移除 pct/rf/ri，引入 DNS Tree Walk 策略发现
-* **RFC 9990**：DMARCbis 聚合报告格式，XML namespace 更新为 dmarc-2.0，policy_published 回显 np 等标签配置
+* **RFC 9990**：DMARCbis 聚合报告格式，XML namespace 更新为 dmarc-2.0，policy\_published 回显 np 等标签配置
 * **RFC 9991**：DMARCbis 失败报告（基于 ARF 格式，Updates RFC 6591），强化隐私保护——失败报告不得包含邮件正文，仅可含部分头部字段
 
 配置入口：Web UI → Domains → DMARC Policy。建议从 `p=none` 开始（仅监控），至少运行 2–4 周后再逐步升级到 `p=quarantine` 最终到 `p=reject`，步骤详见《[部署 DMARCbis 的最小配置步骤与迁移路线](/kb/faq/dmarcbis-faq-10.html)》。
