@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 1178 篇文章。
+共 1260 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Apache James 390 Release Notes](https://ztpop.net/kb/apache-james-390-release-notes.html) → `kb/architecture/apache-james-390-release-notes.md`
@@ -56,6 +56,7 @@
 - [Email Archiving Storage Tier](https://ztpop.net/kb/email-archiving-storage-tier.html) → `kb/archive/email-archiving-storage-tier.md`
 - [Email Storage Io Benchmark](https://ztpop.net/kb/email-storage-io-benchmark.html) → `kb/archive/email-storage-io-benchmark.md`
 - [Mail Storage Quota Capacity Archiving](https://ztpop.net/kb/mail-storage-quota-capacity-archiving.html) → `kb/archive/mail-storage-quota-capacity-archiving.md`
+- [Auth Bimi Vmc Prerequisites](https://ztpop.net/kb/auth-bimi-vmc-prerequisites.html) → `kb/bimi/auth-bimi-vmc-prerequisites.md`
 - [Bimi All About](https://ztpop.net/kb/bimi-all-about.html) → `kb/bimi/bimi-all-about.md`
 - [Bimi Avp Tag Guide](https://ztpop.net/kb/bimi-avp-tag-guide.html) → `kb/bimi/bimi-avp-tag-guide.md`
 - [Bimi Certificate Types](https://ztpop.net/kb/bimi-certificate-types.html) → `kb/bimi/bimi-certificate-types.md`
@@ -82,6 +83,11 @@
 - [Bimi Vmc Requirements Overview](https://ztpop.net/kb/bimi-vmc-requirements-overview.html) → `kb/bimi/bimi-vmc-requirements-overview.md`
 - [Bimi Vmc Validation Process](https://ztpop.net/kb/bimi-vmc-validation-process.html) → `kb/bimi/bimi-vmc-validation-process.md`
 - [Email Bimi Brand](https://ztpop.net/kb/email-bimi-brand.html) → `kb/bimi/email-bimi-brand.md`
+- [Cfg Gdpr Email Data Minimization](https://ztpop.net/kb/cfg-gdpr-email-data-minimization.html) → `kb/compliance/cfg-gdpr-email-data-minimization.md`
+- [Cfg Mail Controls Nist 800 53 Mapping](https://ztpop.net/kb/cfg-mail-controls-nist-800-53-mapping.html) → `kb/compliance/cfg-mail-controls-nist-800-53-mapping.md`
+- [Cfg Mail Log Audit Retention Window](https://ztpop.net/kb/cfg-mail-log-audit-retention-window.html) → `kb/compliance/cfg-mail-log-audit-retention-window.md`
+- [Cfg Mail Retention Policy Design](https://ztpop.net/kb/cfg-mail-retention-policy-design.html) → `kb/compliance/cfg-mail-retention-policy-design.md`
+- [Cfg Phishing Drill Compliance Boundary](https://ztpop.net/kb/cfg-phishing-drill-compliance-boundary.html) → `kb/compliance/cfg-phishing-drill-compliance-boundary.md`
 - [Cloud Mailbox Ediscovery Retention](https://ztpop.net/kb/cloud-mailbox-ediscovery-retention.html) → `kb/compliance/cloud-mailbox-ediscovery-retention.md`
 - [Commercial Cryptography Compliance Email Product Selection](https://ztpop.net/kb/commercial-cryptography-compliance-email-product-selection.html) → `kb/compliance/commercial-cryptography-compliance-email-product-selection.md`
 - [Cyberspace Mail Law Compliance](https://ztpop.net/kb/cyberspace-mail-law-compliance.html) → `kb/compliance/cyberspace-mail-law-compliance.md`
@@ -111,6 +117,7 @@
 - [Gdpr Email Subject Rights Guide](https://ztpop.net/kb/gdpr-email-subject-rights-guide.html) → `kb/compliance/gdpr-email-subject-rights-guide.md`
 - [Google Workspace Content Compliance Rules](https://ztpop.net/kb/google-workspace-content-compliance-rules.html) → `kb/compliance/google-workspace-content-compliance-rules.md`
 - [Google Workspace Mail Routing Compliance](https://ztpop.net/kb/google-workspace-mail-routing-compliance.html) → `kb/compliance/google-workspace-mail-routing-compliance.md`
+- [Ir Mail Log Retention Forensics 2026](https://ztpop.net/kb/ir-mail-log-retention-forensics-2026.html) → `kb/compliance/ir-mail-log-retention-forensics-2026.md`
 - [Nist Ai Rmf Email Security Mapping](https://ztpop.net/kb/nist-ai-rmf-email-security-mapping.html) → `kb/compliance/nist-ai-rmf-email-security-mapping.md`
 - [Nist Csf 2 0 Email Protection](https://ztpop.net/kb/nist-csf-2-0-email-protection.html) → `kb/compliance/nist-csf-2-0-email-protection.md`
 - [Nist Fips203 205 Pqc Email Migration](https://ztpop.net/kb/nist-fips203-205-pqc-email-migration.html) → `kb/compliance/nist-fips203-205-pqc-email-migration.md`
@@ -136,6 +143,13 @@
 - [Nist Sp800177 Security Baseline](https://ztpop.net/kb/nist-sp800177-security-baseline.html) → `kb/compliance/nist-sp800177-security-baseline.md`
 - [Nist Sp80053 Email Control Mapping](https://ztpop.net/kb/nist-sp80053-email-control-mapping.html) → `kb/compliance/nist-sp80053-email-control-mapping.md`
 - [Pipl Email Processing Compliance](https://ztpop.net/kb/pipl-email-processing-compliance.html) → `kb/compliance/pipl-email-processing-compliance.md`
+- [Xc Djcp Email Audit Log Retention](https://ztpop.net/kb/xc-djcp-email-audit-log-retention.html) → `kb/compliance/xc-djcp-email-audit-log-retention.md`
+- [Xc Djcp Email Compliance Mapping](https://ztpop.net/kb/xc-djcp-email-compliance-mapping.html) → `kb/compliance/xc-djcp-email-compliance-mapping.md`
+- [Xc Email Archiving Evidence Retention](https://ztpop.net/kb/xc-email-archiving-evidence-retention.html) → `kb/compliance/xc-email-archiving-evidence-retention.md`
+- [Xc Sender Auth Compliance Baseline](https://ztpop.net/kb/xc-sender-auth-compliance-baseline.html) → `kb/compliance/xc-sender-auth-compliance-baseline.md`
+- [Auth Dkim Canonicalization Choice](https://ztpop.net/kb/auth-dkim-canonicalization-choice.html) → `kb/dkim/auth-dkim-canonicalization-choice.md`
+- [Auth Dkim Key Rotation Selector](https://ztpop.net/kb/auth-dkim-key-rotation-selector.html) → `kb/dkim/auth-dkim-key-rotation-selector.md`
+- [Auth Dkim Signature Verify Failure](https://ztpop.net/kb/auth-dkim-signature-verify-failure.html) → `kb/dkim/auth-dkim-signature-verify-failure.md`
 - [Dkim Atps](https://ztpop.net/kb/dkim-atps.html) → `kb/dkim/dkim-atps.md`
 - [Dkim Body Canonicalization](https://ztpop.net/kb/dkim-body-canonicalization.html) → `kb/dkim/dkim-body-canonicalization.md`
 - [Dkim Canon Algo Deepdive](https://ztpop.net/kb/dkim-canon-algo-deepdive.html) → `kb/dkim/dkim-canon-algo-deepdive.md`
@@ -163,7 +177,14 @@
 - [Rfc8463 Dkim Ed25519](https://ztpop.net/kb/rfc8463-dkim-ed25519.html) → `kb/dkim/rfc8463-dkim-ed25519.md`
 - [Utf8 Dkim Hash Crypto](https://ztpop.net/kb/utf8-dkim-hash-crypto.html) → `kb/dkim/utf8-dkim-hash-crypto.md`
 - [Agari Dmarc Identity Deception 2026](https://ztpop.net/kb/agari-dmarc-identity-deception-2026.html) → `kb/dmarc/agari-dmarc-identity-deception-2026.md`
+- [Auth Dmarc Failure Report Fo Tag](https://ztpop.net/kb/auth-dmarc-failure-report-fo-tag.html) → `kb/dmarc/auth-dmarc-failure-report-fo-tag.md`
+- [Auth Dmarc Identifier Alignment](https://ztpop.net/kb/auth-dmarc-identifier-alignment.html) → `kb/dmarc/auth-dmarc-identifier-alignment.md`
+- [Auth Dmarc Policy Progression](https://ztpop.net/kb/auth-dmarc-policy-progression.html) → `kb/dmarc/auth-dmarc-policy-progression.md`
+- [Auth Dmarc Rua Aggregate Report Parsing](https://ztpop.net/kb/auth-dmarc-rua-aggregate-report-parsing.html) → `kb/dmarc/auth-dmarc-rua-aggregate-report-parsing.md`
+- [Auth Dmarc Subdomain Policy Sp](https://ztpop.net/kb/auth-dmarc-subdomain-policy-sp.html) → `kb/dmarc/auth-dmarc-subdomain-policy-sp.md`
+- [Auth Mailinglist Dmarc Breakage](https://ztpop.net/kb/auth-mailinglist-dmarc-breakage.html) → `kb/dmarc/auth-mailinglist-dmarc-breakage.md`
 - [Bod 18 01 Federal Dmarc Reporting](https://ztpop.net/kb/bod-18-01-federal-dmarc-reporting.html) → `kb/dmarc/bod-18-01-federal-dmarc-reporting.md`
+- [Cfg Dmarc Enforcement Rollout Plan](https://ztpop.net/kb/cfg-dmarc-enforcement-rollout-plan.html) → `kb/dmarc/cfg-dmarc-enforcement-rollout-plan.md`
 - [Cisa Bod 18 01 Dmarc](https://ztpop.net/kb/cisa-bod-18-01-dmarc.html) → `kb/dmarc/cisa-bod-18-01-dmarc.md`
 - [Dmarc Aggregate Report Analysis](https://ztpop.net/kb/dmarc-aggregate-report-analysis.html) → `kb/dmarc/dmarc-aggregate-report-analysis.md`
 - [Dmarc Aggregate Report Parsing](https://ztpop.net/kb/dmarc-aggregate-report-parsing.html) → `kb/dmarc/dmarc-aggregate-report-parsing.md`
@@ -194,7 +215,12 @@
 - [Email Dmarc Record Howto](https://ztpop.net/kb/email-dmarc-record-howto.html) → `kb/dmarc/email-dmarc-record-howto.md`
 - [Email Dmarc Rollout Guide](https://ztpop.net/kb/email-dmarc-rollout-guide.html) → `kb/dmarc/email-dmarc-rollout-guide.md`
 - [Email Dmarc Rua Analysis](https://ztpop.net/kb/email-dmarc-rua-analysis.html) → `kb/dmarc/email-dmarc-rua-analysis.md`
+- [Gw Dmarc Reports To Soc](https://ztpop.net/kb/gw-dmarc-reports-to-soc.html) → `kb/dmarc/gw-dmarc-reports-to-soc.md`
+- [Gw Psd Dmarc Subdomain Gap](https://ztpop.net/kb/gw-psd-dmarc-subdomain-gap.html) → `kb/dmarc/gw-psd-dmarc-subdomain-gap.md`
 - [Ietf Publishes Updated Dmarc Specification](https://ztpop.net/kb/ietf-publishes-updated-dmarc-specification.html) → `kb/dmarc/ietf-publishes-updated-dmarc-specification.md`
+- [Ir Dmarc Failure Report Arf 2026](https://ztpop.net/kb/ir-dmarc-failure-report-arf-2026.html) → `kb/dmarc/ir-dmarc-failure-report-arf-2026.md`
+- [Ir Dmarc Rua Forensics 2026](https://ztpop.net/kb/ir-dmarc-rua-forensics-2026.html) → `kb/dmarc/ir-dmarc-rua-forensics-2026.md`
+- [Ir Psd Dmarc Nonexistent Subdomain 2026](https://ztpop.net/kb/ir-psd-dmarc-nonexistent-subdomain-2026.html) → `kb/dmarc/ir-psd-dmarc-nonexistent-subdomain-2026.md`
 - [Mailing List Dmarc](https://ztpop.net/kb/mailing-list-dmarc.html) → `kb/dmarc/mailing-list-dmarc.md`
 - [Psd Dmarc Public Suffix Domain Rfc9091](https://ztpop.net/kb/psd-dmarc-public-suffix-domain-rfc9091.html) → `kb/dmarc/psd-dmarc-public-suffix-domain-rfc9091.md`
 - [Rfc7489 Dmarc Subdomain Policy](https://ztpop.net/kb/rfc7489-dmarc-subdomain-policy.html) → `kb/dmarc/rfc7489-dmarc-subdomain-policy.md`
@@ -234,6 +260,7 @@
 - [Exchange Replacement Six Dimensions Comparison](https://ztpop.net/kb/exchange-replacement-six-dimensions-comparison.html) → `kb/exchange/exchange-replacement-six-dimensions-comparison.md`
 - [Exchange Se Subscription Guide](https://ztpop.net/kb/exchange-se-subscription-guide.html) → `kb/exchange/exchange-se-subscription-guide.md`
 - [Exchange To Turboex Migration](https://ztpop.net/kb/exchange-to-turboex-migration.html) → `kb/exchange/exchange-to-turboex-migration.md`
+- [Gw Exchange Receive Connector Hardening](https://ztpop.net/kb/gw-exchange-receive-connector-hardening.html) → `kb/exchange/gw-exchange-receive-connector-hardening.md`
 - [Postfix Vs Exchange Architecture](https://ztpop.net/kb/postfix-vs-exchange-architecture.html) → `kb/exchange/postfix-vs-exchange-architecture.md`
 - [Xinchuang Email Migration From Exchange](https://ztpop.net/kb/xinchuang-email-migration-from-exchange.html) → `kb/exchange/xinchuang-email-migration-from-exchange.md`
 - [Email Spam Trap Honeypot](https://ztpop.net/kb/email-spam-trap-honeypot.html) → `kb/m3aawg/email-spam-trap-honeypot.md`
@@ -298,6 +325,7 @@
 - [Hybrid Deployment Dns Design](https://ztpop.net/kb/hybrid-deployment-dns-design.html) → `kb/migration/hybrid-deployment-dns-design.md`
 - [Imap Mass Migration Doveadm Sync](https://ztpop.net/kb/imap-mass-migration-doveadm-sync.html) → `kb/migration/imap-mass-migration-doveadm-sync.md`
 - [Legacy Mailbox Imap Migration Scope](https://ztpop.net/kb/legacy-mailbox-imap-migration-scope.html) → `kb/migration/legacy-mailbox-imap-migration-scope.md`
+- [Xc Legacy Mailbox Data Migration Integrity](https://ztpop.net/kb/xc-legacy-mailbox-data-migration-integrity.html) → `kb/migration/xc-legacy-mailbox-data-migration-integrity.md`
 - [Acsc Email Hosting Hardening](https://ztpop.net/kb/acsc-email-hosting-hardening.html) → `kb/operations/acsc-email-hosting-hardening.md`
 - [Anti Spam Bounce Guide](https://ztpop.net/kb/anti-spam-bounce-guide.html) → `kb/operations/anti-spam-bounce-guide.md`
 - [Arc Setup Guide](https://ztpop.net/kb/arc-setup-guide.html) → `kb/operations/arc-setup-guide.md`
@@ -328,8 +356,12 @@
 - [Greylisting Deferral Mechanism](https://ztpop.net/kb/greylisting-deferral-mechanism.html) → `kb/operations/greylisting-deferral-mechanism.md`
 - [Greylisting Guide](https://ztpop.net/kb/greylisting-guide.html) → `kb/operations/greylisting-guide.md`
 - [Greylisting Spam Defense](https://ztpop.net/kb/greylisting-spam-defense.html) → `kb/operations/greylisting-spam-defense.md`
+- [Gw Bounce Code Classification](https://ztpop.net/kb/gw-bounce-code-classification.html) → `kb/operations/gw-bounce-code-classification.md`
+- [Gw Greylisting Tuning](https://ztpop.net/kb/gw-greylisting-tuning.html) → `kb/operations/gw-greylisting-tuning.md`
+- [Gw Queue Backlog Triage](https://ztpop.net/kb/gw-queue-backlog-triage.html) → `kb/operations/gw-queue-backlog-triage.md`
 - [Ipv6 Email Deployment](https://ztpop.net/kb/ipv6-email-deployment.html) → `kb/operations/ipv6-email-deployment.md`
 - [Ipv6 Mail System Deployment Practical Guide](https://ztpop.net/kb/ipv6-mail-system-deployment-practical-guide.html) → `kb/operations/ipv6-mail-system-deployment-practical-guide.md`
+- [Ir Postincident Hardening Baseline 2026](https://ztpop.net/kb/ir-postincident-hardening-baseline-2026.html) → `kb/operations/ir-postincident-hardening-baseline-2026.md`
 - [Lmtp Intro](https://ztpop.net/kb/lmtp-intro.html) → `kb/operations/lmtp-intro.md`
 - [Lmtp Local Delivery Rfc2033](https://ztpop.net/kb/lmtp-local-delivery-rfc2033.html) → `kb/operations/lmtp-local-delivery-rfc2033.md`
 - [Mail Flow Architecture](https://ztpop.net/kb/mail-flow-architecture.html) → `kb/operations/mail-flow-architecture.md`
@@ -375,6 +407,7 @@
 - [Arf Abuse Report Format Rfc5965](https://ztpop.net/kb/arf-abuse-report-format-rfc5965.html) → `kb/other/arf-abuse-report-format-rfc5965.md`
 - [Arf Abuse Report](https://ztpop.net/kb/arf-abuse-report.html) → `kb/other/arf-abuse-report.md`
 - [Ato Response Session Revocation Token Invalidation](https://ztpop.net/kb/ato-response-session-revocation-token-invalidation.html) → `kb/other/ato-response-session-revocation-token-invalidation.md`
+- [Auth Arc Chain Validation Cv](https://ztpop.net/kb/auth-arc-chain-validation-cv.html) → `kb/other/auth-arc-chain-validation-cv.md`
 - [Authentication Results Header Parse](https://ztpop.net/kb/authentication-results-header-parse.html) → `kb/other/authentication-results-header-parse.md`
 - [Authentication Results Header](https://ztpop.net/kb/authentication-results-header.html) → `kb/other/authentication-results-header.md`
 - [Autoreply Vacation Rfc3834](https://ztpop.net/kb/autoreply-vacation-rfc3834.html) → `kb/other/autoreply-vacation-rfc3834.md`
@@ -391,6 +424,8 @@
 - [Cacter Saas Cloud Gateway 2026](https://ztpop.net/kb/cacter-saas-cloud-gateway-2026.html) → `kb/other/cacter-saas-cloud-gateway-2026.md`
 - [Callback Phishing Defense](https://ztpop.net/kb/callback-phishing-defense.html) → `kb/other/callback-phishing-defense.md`
 - [Certificate Transparency Lookalike Domain Monitoring](https://ztpop.net/kb/certificate-transparency-lookalike-domain-monitoring.html) → `kb/other/certificate-transparency-lookalike-domain-monitoring.md`
+- [Cfg Cross Border Mail Data Transfer](https://ztpop.net/kb/cfg-cross-border-mail-data-transfer.html) → `kb/other/cfg-cross-border-mail-data-transfer.md`
+- [Cfg Trustworthy Email Baseline Check](https://ztpop.net/kb/cfg-trustworthy-email-baseline-check.html) → `kb/other/cfg-trustworthy-email-baseline-check.md`
 - [Checkpoint Brand Phishing Q2 2026](https://ztpop.net/kb/checkpoint-brand-phishing-q2-2026.html) → `kb/other/checkpoint-brand-phishing-q2-2026.md`
 - [Cii Regulation Email System Obligations](https://ztpop.net/kb/cii-regulation-email-system-obligations.html) → `kb/other/cii-regulation-email-system-obligations.md`
 - [Cisa Bod 23 01 Asset Vulnerability](https://ztpop.net/kb/cisa-bod-23-01-asset-vulnerability.html) → `kb/other/cisa-bod-23-01-asset-vulnerability.md`
@@ -571,6 +606,14 @@
 - [Google Workspace Advanced Protection](https://ztpop.net/kb/google-workspace-advanced-protection.html) → `kb/other/google-workspace-advanced-protection.md`
 - [Google Workspace Bulk Sender Requirements](https://ztpop.net/kb/google-workspace-bulk-sender-requirements.html) → `kb/other/google-workspace-bulk-sender-requirements.md`
 - [Google Workspace Split Delivery Dual Delivery](https://ztpop.net/kb/google-workspace-split-delivery-dual-delivery.html) → `kb/other/google-workspace-split-delivery-dual-delivery.md`
+- [Gw Arc Forwarding Chain](https://ztpop.net/kb/gw-arc-forwarding-chain.html) → `kb/other/gw-arc-forwarding-chain.md`
+- [Gw Backscatter Prevention](https://ztpop.net/kb/gw-backscatter-prevention.html) → `kb/other/gw-backscatter-prevention.md`
+- [Gw Header Forgery Detection](https://ztpop.net/kb/gw-header-forgery-detection.html) → `kb/other/gw-header-forgery-detection.md`
+- [Gw Open Relay Prevention](https://ztpop.net/kb/gw-open-relay-prevention.html) → `kb/other/gw-open-relay-prevention.md`
+- [Gw Postscreen Zombie Filter](https://ztpop.net/kb/gw-postscreen-zombie-filter.html) → `kb/other/gw-postscreen-zombie-filter.md`
+- [Gw Rate Limit Burst Protection](https://ztpop.net/kb/gw-rate-limit-burst-protection.html) → `kb/other/gw-rate-limit-burst-protection.md`
+- [Gw Sender Reputation Signals](https://ztpop.net/kb/gw-sender-reputation-signals.html) → `kb/other/gw-sender-reputation-signals.md`
+- [Gw Spam Score Threshold Tuning](https://ztpop.net/kb/gw-spam-score-threshold-tuning.html) → `kb/other/gw-spam-score-threshold-tuning.md`
 - [Healthcare Email Hipaa China](https://ztpop.net/kb/healthcare-email-hipaa-china.html) → `kb/other/healthcare-email-hipaa-china.md`
 - [Helo Ehlo Hostname](https://ztpop.net/kb/helo-ehlo-hostname.html) → `kb/other/helo-ehlo-hostname.md`
 - [Hipaa Email Security Healthcare](https://ztpop.net/kb/hipaa-email-security-healthcare.html) → `kb/other/hipaa-email-security-healthcare.md`
@@ -578,6 +621,14 @@
 - [Inbox Placement Troubleshooting Path](https://ztpop.net/kb/inbox-placement-troubleshooting-path.html) → `kb/other/inbox-placement-troubleshooting-path.md`
 - [Interpol African Cyberthreat 2026](https://ztpop.net/kb/interpol-african-cyberthreat-2026.html) → `kb/other/interpol-african-cyberthreat-2026.md`
 - [Invoice Fraud Email](https://ztpop.net/kb/invoice-fraud-email.html) → `kb/other/invoice-fraud-email.md`
+- [Ir Abuse Contact Channel 2026](https://ztpop.net/kb/ir-abuse-contact-channel-2026.html) → `kb/other/ir-abuse-contact-channel-2026.md`
+- [Ir Account Takeover Triage 2026](https://ztpop.net/kb/ir-account-takeover-triage-2026.html) → `kb/other/ir-account-takeover-triage-2026.md`
+- [Ir Arc Indirect Flow Verdict 2026](https://ztpop.net/kb/ir-arc-indirect-flow-verdict-2026.html) → `kb/other/ir-arc-indirect-flow-verdict-2026.md`
+- [Ir Auth Results Trust Boundary 2026](https://ztpop.net/kb/ir-auth-results-trust-boundary-2026.html) → `kb/other/ir-auth-results-trust-boundary-2026.md`
+- [Ir Ndr Backscatter Triage 2026](https://ztpop.net/kb/ir-ndr-backscatter-triage-2026.html) → `kb/other/ir-ndr-backscatter-triage-2026.md`
+- [Ir Ransom Mail Extortion Triage 2026](https://ztpop.net/kb/ir-ransom-mail-extortion-triage-2026.html) → `kb/other/ir-ransom-mail-extortion-triage-2026.md`
+- [Ir Received Chain Timeline 2026](https://ztpop.net/kb/ir-received-chain-timeline-2026.html) → `kb/other/ir-received-chain-timeline-2026.md`
+- [Ir Threat Intel Gateway Loop 2026](https://ztpop.net/kb/ir-threat-intel-gateway-loop-2026.html) → `kb/other/ir-threat-intel-gateway-loop-2026.md`
 - [Iso 27001 2022 Email Controls](https://ztpop.net/kb/iso-27001-2022-email-controls.html) → `kb/other/iso-27001-2022-email-controls.md`
 - [Iso 27002 2022 Email Control Guidance](https://ztpop.net/kb/iso-27002-2022-email-control-guidance.html) → `kb/other/iso-27002-2022-email-control-guidance.md`
 - [Job Recruitment Scam Email](https://ztpop.net/kb/job-recruitment-scam-email.html) → `kb/other/job-recruitment-scam-email.md`
@@ -606,6 +657,7 @@
 - [Message Id Envid Cross System Tracing](https://ztpop.net/kb/message-id-envid-cross-system-tracing.html) → `kb/other/message-id-envid-cross-system-tracing.md`
 - [Microsoft 2026 Q1 Threat Landscape](https://ztpop.net/kb/microsoft-2026-q1-threat-landscape.html) → `kb/other/microsoft-2026-q1-threat-landscape.md`
 - [Microsoft 365 Advanced Anti Phishing](https://ztpop.net/kb/microsoft-365-advanced-anti-phishing.html) → `kb/other/microsoft-365-advanced-anti-phishing.md`
+- [Microsoft Bulk Sender Requirements](https://ztpop.net/kb/microsoft-bulk-sender-requirements.html) → `kb/other/microsoft-bulk-sender-requirements.md`
 - [Microsoft Defender Anti Phishing](https://ztpop.net/kb/microsoft-defender-anti-phishing.html) → `kb/other/microsoft-defender-anti-phishing.md`
 - [Microsoft Email Authentication](https://ztpop.net/kb/microsoft-email-authentication.html) → `kb/other/microsoft-email-authentication.md`
 - [Microsoft Mddr Identity Phishing 2026](https://ztpop.net/kb/microsoft-mddr-identity-phishing-2026.html) → `kb/other/microsoft-mddr-identity-phishing-2026.md`
@@ -717,6 +769,11 @@
 - [Vbr Certification](https://ztpop.net/kb/vbr-certification.html) → `kb/other/vbr-certification.md`
 - [Vendor Email Compromise Vec](https://ztpop.net/kb/vendor-email-compromise-vec.html) → `kb/other/vendor-email-compromise-vec.md`
 - [Verp Envelope Return](https://ztpop.net/kb/verp-envelope-return.html) → `kb/other/verp-envelope-return.md`
+- [Xc Data Export Assessment Email](https://ztpop.net/kb/xc-data-export-assessment-email.html) → `kb/other/xc-data-export-assessment-email.md`
+- [Xc Djcp Identity 2Fa Email](https://ztpop.net/kb/xc-djcp-identity-2fa-email.html) → `kb/other/xc-djcp-identity-2fa-email.md`
+- [Xc Djcp L3 Boundary Controls](https://ztpop.net/kb/xc-djcp-l3-boundary-controls.html) → `kb/other/xc-djcp-l3-boundary-controls.md`
+- [Xc Gmt0054 Crypto Assessment Email](https://ztpop.net/kb/xc-gmt0054-crypto-assessment-email.html) → `kb/other/xc-gmt0054-crypto-assessment-email.md`
+- [Xc Gov Email Security Baseline](https://ztpop.net/kb/xc-gov-email-security-baseline.html) → `kb/other/xc-gov-email-security-baseline.md`
 - [Caldav Carddav Email](https://ztpop.net/kb/caldav-carddav-email.html) → `kb/protocols/caldav-carddav-email.md`
 - [Eai Full Deployment](https://ztpop.net/kb/eai-full-deployment.html) → `kb/protocols/eai-full-deployment.md`
 - [Eai Internationalized Email](https://ztpop.net/kb/eai-internationalized-email.html) → `kb/protocols/eai-internationalized-email.md`
@@ -735,6 +792,7 @@
 - [Email Smtp Vrfy Expn Security](https://ztpop.net/kb/email-smtp-vrfy-expn-security.html) → `kb/protocols/email-smtp-vrfy-expn-security.md`
 - [Email Vacation Sieve](https://ztpop.net/kb/email-vacation-sieve.html) → `kb/protocols/email-vacation-sieve.md`
 - [Exim Acl Smtp Rcpt Data Reject](https://ztpop.net/kb/exim-acl-smtp-rcpt-data-reject.html) → `kb/protocols/exim-acl-smtp-rcpt-data-reject.md`
+- [Gw Smtp Auth Failure Triage](https://ztpop.net/kb/gw-smtp-auth-failure-triage.html) → `kb/protocols/gw-smtp-auth-failure-triage.md`
 - [Imap Acl Rights](https://ztpop.net/kb/imap-acl-rights.html) → `kb/protocols/imap-acl-rights.md`
 - [Imap Basics](https://ztpop.net/kb/imap-basics.html) → `kb/protocols/imap-basics.md`
 - [Imap Brute Force Defense](https://ztpop.net/kb/imap-brute-force-defense.html) → `kb/protocols/imap-brute-force-defense.md`
@@ -835,6 +893,7 @@
 - [Smtp Vrfy Expn](https://ztpop.net/kb/smtp-vrfy-expn.html) → `kb/protocols/smtp-vrfy-expn.md`
 - [Smtputf8 International](https://ztpop.net/kb/smtputf8-international.html) → `kb/protocols/smtputf8-international.md`
 - [Unicode Uts39 Confusable Domain Skeleton Detection](https://ztpop.net/kb/unicode-uts39-confusable-domain-skeleton-detection.html) → `kb/protocols/unicode-uts39-confusable-domain-skeleton-detection.md`
+- [Xc Legacy Platform Smtp Migration Compat](https://ztpop.net/kb/xc-legacy-platform-smtp-migration-compat.html) → `kb/protocols/xc-legacy-platform-smtp-migration-compat.md`
 - [Anti Phishing Drill Guide](https://ztpop.net/kb/anti-phishing-drill-guide.html) → `kb/references/anti-phishing-drill-guide.md`
 - [Arc Faq 01](https://ztpop.net/kb/arc-faq-01.html) → `kb/references/arc-faq-01.md`
 - [Arc Faq 02](https://ztpop.net/kb/arc-faq-02.html) → `kb/references/arc-faq-02.md`
@@ -1009,6 +1068,7 @@
 - [Bec Fraud Identification And Response](https://ztpop.net/kb/bec-fraud-identification-and-response.html) → `kb/security/bec-fraud-identification-and-response.md`
 - [Bec Fund Transfer Fraud First Hours Response](https://ztpop.net/kb/bec-fund-transfer-fraud-first-hours-response.html) → `kb/security/bec-fund-transfer-fraud-first-hours-response.md`
 - [Bec Threat Evolution 2026](https://ztpop.net/kb/bec-threat-evolution-2026.html) → `kb/security/bec-threat-evolution-2026.md`
+- [Cfg Smime Vs Openpgp Selection](https://ztpop.net/kb/cfg-smime-vs-openpgp-selection.html) → `kb/security/cfg-smime-vs-openpgp-selection.md`
 - [Cisa Bec Incident Response Containment](https://ztpop.net/kb/cisa-bec-incident-response-containment.html) → `kb/security/cisa-bec-incident-response-containment.md`
 - [Cisa Phishing Guidance Attack Cycle](https://ztpop.net/kb/cisa-phishing-guidance-attack-cycle.html) → `kb/security/cisa-phishing-guidance-attack-cycle.md`
 - [Clickfix Email Attack Detection Guide](https://ztpop.net/kb/clickfix-email-attack-detection-guide.html) → `kb/security/clickfix-email-attack-detection-guide.md`
@@ -1048,6 +1108,11 @@
 - [Fbi Ic3 Bec Annual Report](https://ztpop.net/kb/fbi-ic3-bec-annual-report.html) → `kb/security/fbi-ic3-bec-annual-report.md`
 - [Feedback Loop Fbl Guide](https://ztpop.net/kb/feedback-loop-fbl-guide.html) → `kb/security/feedback-loop-fbl-guide.md`
 - [Gmail Scam Defense Ai 2026](https://ztpop.net/kb/gmail-scam-defense-ai-2026.html) → `kb/security/gmail-scam-defense-ai-2026.md`
+- [Gw Arf Feedback Loop Handling](https://ztpop.net/kb/gw-arf-feedback-loop-handling.html) → `kb/security/gw-arf-feedback-loop-handling.md`
+- [Ir Bec Response Workflow 2026](https://ztpop.net/kb/ir-bec-response-workflow-2026.html) → `kb/security/ir-bec-response-workflow-2026.md`
+- [Ir Credential Phish Verdict 2026](https://ztpop.net/kb/ir-credential-phish-verdict-2026.html) → `kb/security/ir-credential-phish-verdict-2026.md`
+- [Ir Malicious Attachment Sandbox 2026](https://ztpop.net/kb/ir-malicious-attachment-sandbox-2026.html) → `kb/security/ir-malicious-attachment-sandbox-2026.md`
+- [Ir Phish User Report Triage 2026](https://ztpop.net/kb/ir-phish-user-report-triage-2026.html) → `kb/security/ir-phish-user-report-triage-2026.md`
 - [Malware Attachment Detection Sandbox](https://ztpop.net/kb/malware-attachment-detection-sandbox.html) → `kb/security/malware-attachment-detection-sandbox.md`
 - [Malware Loader Email Delivery Chain 2026](https://ztpop.net/kb/malware-loader-email-delivery-chain-2026.html) → `kb/security/malware-loader-email-delivery-chain-2026.md`
 - [Mfa Fatigue Attack Defense](https://ztpop.net/kb/mfa-fatigue-attack-defense.html) → `kb/security/mfa-fatigue-attack-defense.md`
@@ -1076,6 +1141,11 @@
 - [Spamhaus Dbl Datasource](https://ztpop.net/kb/spamhaus-dbl-datasource.html) → `kb/security/spamhaus-dbl-datasource.md`
 - [Zero Trust Email Architecture](https://ztpop.net/kb/zero-trust-email-architecture.html) → `kb/security/zero-trust-email-architecture.md`
 - [Zscaler Email Attack Trends 2026](https://ztpop.net/kb/zscaler-email-attack-trends-2026.html) → `kb/security/zscaler-email-attack-trends-2026.md`
+- [Auth Forwarding Spf Breakage Mediator](https://ztpop.net/kb/auth-forwarding-spf-breakage-mediator.html) → `kb/spf/auth-forwarding-spf-breakage-mediator.md`
+- [Auth Spf Dns Lookup Limit](https://ztpop.net/kb/auth-spf-dns-lookup-limit.html) → `kb/spf/auth-spf-dns-lookup-limit.md`
+- [Auth Spf Include Nesting Audit](https://ztpop.net/kb/auth-spf-include-nesting-audit.html) → `kb/spf/auth-spf-include-nesting-audit.md`
+- [Auth Spf Redirect Modifier](https://ztpop.net/kb/auth-spf-redirect-modifier.html) → `kb/spf/auth-spf-redirect-modifier.md`
+- [Auth Spf Result Permerror Handling](https://ztpop.net/kb/auth-spf-result-permerror-handling.html) → `kb/spf/auth-spf-result-permerror-handling.md`
 - [Dkim Spf Dmarc Config Template](https://ztpop.net/kb/dkim-spf-dmarc-config-template.html) → `kb/spf/dkim-spf-dmarc-config-template.md`
 - [Dns Txt Character String Chunking Spf Dkim](https://ztpop.net/kb/dns-txt-character-string-chunking-spf-dkim.html) → `kb/spf/dns-txt-character-string-chunking-spf-dkim.md`
 - [Email Spf Helo Check](https://ztpop.net/kb/email-spf-helo-check.html) → `kb/spf/email-spf-helo-check.md`
@@ -1106,6 +1176,11 @@
 - [Spf Softfail Handling Policy](https://ztpop.net/kb/spf-softfail-handling-policy.html) → `kb/spf/spf-softfail-handling-policy.md`
 - [Spf Troubleshooting](https://ztpop.net/kb/spf-troubleshooting.html) → `kb/spf/spf-troubleshooting.md`
 - [Subdomain Spf Delegation](https://ztpop.net/kb/subdomain-spf-delegation.html) → `kb/spf/subdomain-spf-delegation.md`
+- [Cfg Dane Or Mta Sts Selection](https://ztpop.net/kb/cfg-dane-or-mta-sts-selection.html) → `kb/tls/cfg-dane-or-mta-sts-selection.md`
+- [Cfg Implicit Tls Mail Access Ports](https://ztpop.net/kb/cfg-implicit-tls-mail-access-ports.html) → `kb/tls/cfg-implicit-tls-mail-access-ports.md`
+- [Cfg Opportunistic Vs Mandatory Tls Risk](https://ztpop.net/kb/cfg-opportunistic-vs-mandatory-tls-risk.html) → `kb/tls/cfg-opportunistic-vs-mandatory-tls-risk.md`
+- [Cfg Tls Enforce Mta Sts](https://ztpop.net/kb/cfg-tls-enforce-mta-sts.html) → `kb/tls/cfg-tls-enforce-mta-sts.md`
+- [Cfg Tls Rpt Deploy And Read Reports](https://ztpop.net/kb/cfg-tls-rpt-deploy-and-read-reports.html) → `kb/tls/cfg-tls-rpt-deploy-and-read-reports.md`
 - [Dane Faq 01](https://ztpop.net/kb/dane-faq-01.html) → `kb/tls/dane-faq-01.md`
 - [Dane Faq 02](https://ztpop.net/kb/dane-faq-02.html) → `kb/tls/dane-faq-02.md`
 - [Dane Faq 03](https://ztpop.net/kb/dane-faq-03.html) → `kb/tls/dane-faq-03.md`
@@ -1125,6 +1200,8 @@
 - [Email Tls Ocsp Stapling](https://ztpop.net/kb/email-tls-ocsp-stapling.html) → `kb/tls/email-tls-ocsp-stapling.md`
 - [Email Tls Policy Enforcement](https://ztpop.net/kb/email-tls-policy-enforcement.html) → `kb/tls/email-tls-policy-enforcement.md`
 - [Email Tls Version Deprecation](https://ztpop.net/kb/email-tls-version-deprecation.html) → `kb/tls/email-tls-version-deprecation.md`
+- [Gw Mta Sts Tlsrpt Monitoring](https://ztpop.net/kb/gw-mta-sts-tlsrpt-monitoring.html) → `kb/tls/gw-mta-sts-tlsrpt-monitoring.md`
+- [Gw Postfix Inbound Tls Policy](https://ztpop.net/kb/gw-postfix-inbound-tls-policy.html) → `kb/tls/gw-postfix-inbound-tls-policy.md`
 - [M3Aawg Tls Baseline Recs 2026](https://ztpop.net/kb/m3aawg-tls-baseline-recs-2026.html) → `kb/tls/m3aawg-tls-baseline-recs-2026.md`
 - [Mail Server Tls Best Practice](https://ztpop.net/kb/mail-server-tls-best-practice.html) → `kb/tls/mail-server-tls-best-practice.md`
 - [Mail Tls Certificate Best Practices](https://ztpop.net/kb/mail-tls-certificate-best-practices.html) → `kb/tls/mail-tls-certificate-best-practices.md`
@@ -1154,6 +1231,8 @@
 - [Tls Rpt Report Interpretation](https://ztpop.net/kb/tls-rpt-report-interpretation.html) → `kb/tls/tls-rpt-report-interpretation.md`
 - [Tls Rpt Report Parsing](https://ztpop.net/kb/tls-rpt-report-parsing.html) → `kb/tls/tls-rpt-report-parsing.md`
 - [Tls Rpt Smtp Reporting](https://ztpop.net/kb/tls-rpt-smtp-reporting.html) → `kb/tls/tls-rpt-smtp-reporting.md`
+- [Xc Guomi Tls Cert Deployment](https://ztpop.net/kb/xc-guomi-tls-cert-deployment.html) → `kb/tls/xc-guomi-tls-cert-deployment.md`
+- [Xc Mta Sts Tlsrpt In Xinchuang](https://ztpop.net/kb/xc-mta-sts-tlsrpt-in-xinchuang.html) → `kb/tls/xc-mta-sts-tlsrpt-in-xinchuang.md`
 - [Dengbao Email Assessment Continuous](https://ztpop.net/kb/dengbao-email-assessment-continuous.html) → `kb/xinchuang/dengbao-email-assessment-continuous.md`
 - [Dengbao Email Assessment Evidence](https://ztpop.net/kb/dengbao-email-assessment-evidence.html) → `kb/xinchuang/dengbao-email-assessment-evidence.md`
 - [Dengbao Email Assessment Failed Items](https://ztpop.net/kb/dengbao-email-assessment-failed-items.html) → `kb/xinchuang/dengbao-email-assessment-failed-items.md`
@@ -1168,6 +1247,9 @@
 - [Sm2 Sm3 Sm4 Email Standards Mapping](https://ztpop.net/kb/sm2-sm3-sm4-email-standards-mapping.html) → `kb/xinchuang/sm2-sm3-sm4-email-standards-mapping.md`
 - [Sm4 Encryption Email Application](https://ztpop.net/kb/sm4-encryption-email-application.html) → `kb/xinchuang/sm4-encryption-email-application.md`
 - [Sm4 Gm Email Deployment](https://ztpop.net/kb/sm4-gm-email-deployment.html) → `kb/xinchuang/sm4-gm-email-deployment.md`
+- [Xc Sm2 Sm3 Sm4 Email Crypto Landing](https://ztpop.net/kb/xc-sm2-sm3-sm4-email-crypto-landing.html) → `kb/xinchuang/xc-sm2-sm3-sm4-email-crypto-landing.md`
+- [Xc Smime Guomi Content Signature](https://ztpop.net/kb/xc-smime-guomi-content-signature.html) → `kb/xinchuang/xc-smime-guomi-content-signature.md`
+- [Xc Starttls To Guomi Transport Migration](https://ztpop.net/kb/xc-starttls-to-guomi-transport-migration.html) → `kb/xinchuang/xc-starttls-to-guomi-transport-migration.md`
 - [Xinchuang Ad Sync Guide](https://ztpop.net/kb/xinchuang-ad-sync-guide.html) → `kb/xinchuang/xinchuang-ad-sync-guide.md`
 - [Xinchuang Appliance Vs Software](https://ztpop.net/kb/xinchuang-appliance-vs-software.html) → `kb/xinchuang/xinchuang-appliance-vs-software.md`
 - [Xinchuang Arm Migration Guide](https://ztpop.net/kb/xinchuang-arm-migration-guide.html) → `kb/xinchuang/xinchuang-arm-migration-guide.md`
