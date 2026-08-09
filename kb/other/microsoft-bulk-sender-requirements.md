@@ -1,10 +1,10 @@
 ---
-title: "Microsoft 批量发件人要求（2025-05-05 生效）：Outlook.com 5,000 封/日阈值与 SPF/DKIM/DMARC 强制"
+title: "Microsoft 批量发件人要求（2025-05-05 生效）：Outlook.com 5,000 封/日阈值与 SPF/DKIM/DMARC 强制 · ztpop 邮件技术知识库"
 source: "https://ztpop.net/kb/microsoft-bulk-sender-requirements.html"
 license: CC-BY 4.0
 ---
 
-# Microsoft 批量发件人要求（2025-05-05 生效）：Outlook.com 5,000 封/日阈值与 SPF/DKIM/DMARC 强制
+# Microsoft 批量发件人要求（2025-05-05 生效）：Outlook.com 5,000 封/日阈值与 SPF/DKIM/DMARC 强制 · ztpop 邮件技术知识库
 
 ## 一、背景：第三家强制方
 
@@ -36,9 +36,9 @@ license: CC-BY 4.0
 
 微软要求 DMARC 记录至少为 `p=none`，且 SPF 或 DKIM 认证域与 RFC5322.From 域对齐（relaxed 或 strict 均可）。这意味着：
 
-- 仅通过 SPF 认证时，MAIL FROM 域须与 From 域对齐。
-- 仅通过 DKIM 认证时，d= 域须与 From 域对齐。
-- SPF+DKIM 双认证（且至少一个对齐）为最稳妥方案——官方「preferably both」。
+* 仅通过 SPF 认证时，MAIL FROM 域须与 From 域对齐。
+* 仅通过 DKIM 认证时，d= 域须与 From 域对齐。
+* SPF+DKIM 双认证（且至少一个对齐）为最稳妥方案——官方「preferably both」。
 
 官方 FAQ 特别提醒：**转发/邮件列表会破坏 DMARC 对齐**（SPF 在转发后通常失败），推荐使用 ARC（RFC 8617）保留原始认证结果，防止合法转发邮件被误判。
 
@@ -68,25 +68,15 @@ license: CC-BY 4.0
 
 ## 七、对中国发件方与信创系统的启示
 
-- 面向海外 Outlook.com 收件人的系统，应将微软要求纳入发信合规基线——Google/Yahoo/Microsoft 三家认证要求基本一致，一套 SPF/DKIM/DMARC 配置即可同时满足。
-- 重点检查 DMARC 对齐：国内「网关代发」场景（From 为自有域、实际经第三方网关发送）必须确保网关配置了与 From 域对齐的 DKIM 签名。
-- 550 5.7.515 是微软专属拒收码，收到该错误应优先检查 SPF/DKIM/DMARC 记录。
-- 对海外订阅邮件须实现 RFC 8058 一键退订。
+* 面向海外 Outlook.com 收件人的系统，应将微软要求纳入发信合规基线——Google/Yahoo/Microsoft 三家认证要求基本一致，一套 SPF/DKIM/DMARC 配置即可同时满足。
+* 重点检查 DMARC 对齐：国内「网关代发」场景（From 为自有域、实际经第三方网关发送）必须确保网关配置了与 From 域对齐的 DKIM 签名。
+* 550 5.7.515 是微软专属拒收码，收到该错误应优先检查 SPF/DKIM/DMARC 记录。
+* 对海外订阅邮件须实现 RFC 8058 一键退订。
 
 ## 八、官方信息来源
 
-- 微软官方公告（2025-04-02，Microsoft Defender for Office 365 Blog）：《Strengthening Email Ecosystem: Outlook's New Requirements for High-Volume Senders》（含 2025-04-29 更新说明）。
-- Outlook.com Postmaster 官方站点：sendersupport.olc.protection.outlook.com/pm/，Announcements 页确认 2025-05-05 执行日期。
-
-## 参考文献
-
-1. Microsoft Defender for Office 365 Blog，Strengthening Email Ecosystem: Outlook's New Requirements for High-Volume Senders，2025-04-02（含 2025-04-29 更新）。https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlook's-new-requirements-for-high-volume-senders/4399730
-2. Outlook.com Postmaster — Announcements。https://sendersupport.olc.protection.outlook.com/pm/
-3. RFC 7208 — Sender Policy Framework (SPF) for Authorizing Use of Domains in Email，IETF，2014-04。
-4. RFC 6376 — DomainKeys Identified Mail (DKIM) Signatures，IETF，2011-09。
-5. RFC 9989 — Domain-Based Message Authentication, Reporting, and Conformance (DMARC)，IETF，2026-05。
-6. RFC 8058 — Signing One-Click Subscription Links，IETF，2017-01。
-7. RFC 8617 — The Authenticated Received Chain (ARC) Protocol，IETF，2019-07。
+* 微软官方公告（2025-04-02，Microsoft Defender for Office 365 Blog）：《Strengthening Email Ecosystem: Outlook's New Requirements for High-Volume Senders》（含 2025-04-29 更新说明）。
+* Outlook.com Postmaster 官方站点：sendersupport.olc.protection.outlook.com/pm/，Announcements 页确认 2025-05-05 执行日期。
 
 ---
 
