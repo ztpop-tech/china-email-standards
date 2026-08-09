@@ -1,12 +1,12 @@
 ---
-title: "DMARC 标准演进 — RFC 9989/9990/9991（2026-05）正式发布：DNS Tree Walk 与标签体系重构"
+title: "DMARC 标准演进 — RFC 9989/9990/9991（2026-05）正式发布：DNS Tree Walk 与标签体系重构 · ztpop 邮件技术知识库"
 source: "https://ztpop.net/kb/dmarc-standards-evolution.html"
 license: CC-BY 4.0
 ---
 
-# DMARC 标准演进 — RFC 9989/9990/9991（2026-05）正式发布：DNS Tree Walk 与标签体系重构
+# DMARC 标准演进 — RFC 9989/9990/9991（2026-05）正式发布：DNS Tree Walk 与标签体系重构 · ztpop 邮件技术知识库
 
-> 勘误说明（2026-08-09）：本文早期版本基于草案传闻误述「RFC 9989 于 2025-03 发布、Tree Walk 被弃用」。经与 RFC Editor 官方文本核对（rfc-editor.org/rfc/rfc9989），RFC 9989/9990/9991 均于 **2026 年 5 月**以 **Internet Standards Track** 状态发布，RFC 9989 的 **DNS Tree Walk 是新增的核心策略发现机制**（非被弃用）。本文已按官方文本全面修正。
+**勘误说明（2026-08-09）：**本文早期版本基于草案传闻误述「RFC 9989 于 2025-03 发布、Tree Walk 被弃用」。经与 RFC Editor 官方文本核对（rfc-editor.org/rfc/rfc9989），RFC 9989/9990/9991 均于 **2026 年 5 月**以 **Internet Standards Track** 状态发布，RFC 9989 的 **DNS Tree Walk 是新增的核心策略发现机制**（非被弃用）。本文已按官方文本全面修正。
 
 ## 一、概述：DMARC 正式成为互联网标准
 
@@ -16,9 +16,9 @@ RFC 9989 废弃（Obsoletes）了服役 11 年的 **RFC 7489**（2015-03，Infor
 
 三份文档的官方信息：
 
-- RFC 9989 — DMARC 基础规范（T. Herr 编辑，Valimail；J. Levine 编辑，Standcore；2026-05；ISSN 2070-1721）
-- RFC 9990 — DMARC Aggregate Reporting（聚合报告；2026-05；Obsoletes 7489）
-- RFC 9991 — DMARC Failure Reporting（失败报告；2026-05；Obsoletes 7489，Updates 6591）
+* RFC 9989 — DMARC 基础规范（T. Herr 编辑，Valimail；J. Levine 编辑，Standcore；2026-05；ISSN 2070-1721）
+* RFC 9990 — DMARC Aggregate Reporting（聚合报告；2026-05；Obsoletes 7489）
+* RFC 9991 — DMARC Failure Reporting（失败报告；2026-05；Obsoletes 7489，Updates 6591）
 
 ## 二、三大架构性变更
 
@@ -50,8 +50,8 @@ v=DMARC1; p=reject; sp=quarantine; np=none; rua=mailto:dmarc@example.com
 
 RFC 7489 单一文档中的报告章节被拆分为两份独立规范：
 
-- **RFC 9990（聚合报告）**：XML namespace 更新为 `urn:ietf:params:xml:ns:dmarc-2.0`；policy_published 回显 fo/adkim/aspf 等标签配置；多报告 URI 时报告应发送到每个列出的 URI（RFC 9989 Section 4.6）。
-- **RFC 9991（失败报告）**：基于 ARF（RFC 6591）格式，更新 RFC 6591 并废弃 RFC 7489 相应章节；强化隐私保护——失败报告不得包含原始邮件正文，仅可包含部分头部字段，Subject 中的个人数据应脱敏。
+* **RFC 9990（聚合报告）**：XML namespace 更新为 `urn:ietf:params:xml:ns:dmarc-2.0`；policy\_published 回显 fo/adkim/aspf 等标签配置；多报告 URI 时报告应发送到每个列出的 URI（RFC 9989 Section 4.6）。
+* **RFC 9991（失败报告）**：基于 ARF（RFC 6591）格式，更新 RFC 6591 并废弃 RFC 7489 相应章节；强化隐私保护——失败报告不得包含原始邮件正文，仅可包含部分头部字段，Subject 中的个人数据应脱敏。
 
 ## 三、标签体系变化
 
@@ -75,20 +75,20 @@ psd 标签服务于 DNS Tree Walk：PSO（公共后缀运营商）在 PSD 上发
 
 ## 四、术语与行为更新
 
-- **Organizational Domain 重新定义**：从「在域名注册商处注册的域」改为「域名命名空间层次结构中处于顶部且具有相同管理权限的域」，判定不再依赖 PSL，由 DNS Tree Walk 完成。
-- **Report Consumer**：原 Report Receiver 更名，强调「消费并分析报告」的角色。
-- **Domain Owner Assessment Policy**（新增术语）：域名所有者在 DMARC Policy Record 中表达的关于验证失败消息的处理偏好（p/sp/np 三标签值）。
-- **Enforcement / Monitoring Mode**（新增术语）：组织域 p 不为 none 时为强制执行状态；p=none 且接收聚合报告时为监控模式。
-- **多报告 URI**：报告应发送到每个列出的 URI（SHOULD），替代 RFC 7489 的「至少两个」约束，支持同时向多个服务商发送报告。
+* **Organizational Domain 重新定义**：从「在域名注册商处注册的域」改为「域名命名空间层次结构中处于顶部且具有相同管理权限的域」，判定不再依赖 PSL，由 DNS Tree Walk 完成。
+* **Report Consumer**：原 Report Receiver 更名，强调「消费并分析报告」的角色。
+* **Domain Owner Assessment Policy**（新增术语）：域名所有者在 DMARC Policy Record 中表达的关于验证失败消息的处理偏好（p/sp/np 三标签值）。
+* **Enforcement / Monitoring Mode**（新增术语）：组织域 p 不为 none 时为强制执行状态；p=none 且接收聚合报告时为监控模式。
+* **多报告 URI**：报告应发送到每个列出的 URI（SHOULD），替代 RFC 7489 的「至少两个」约束，支持同时向多个服务商发送报告。
 
 ## 五、关键互操作性建议（Section 7.4）
 
-> **重要：** RFC 9989 Section 7.4 明确指出——拥有普通用户发送日常邮件的域 **不应部署 p=reject 策略**（SHOULD NOT），接收方也不得仅凭 p=reject 策略拒绝邮件，而应将其作为综合决策的输入。
+**重要：**RFC 9989 Section 7.4 明确指出——拥有普通用户发送日常邮件的域 **不应部署 p=reject 策略**（SHOULD NOT），接收方也不得仅凭 p=reject 策略拒绝邮件，而应将其作为综合决策的输入。
 
-- 发布 p=reject 且仅依赖 SPF 的域名所有者，必须同时应用有效的 DKIM 签名（SPF 在转发/邮件列表等间接邮件流中几乎必然失败）。
-- 用户参与互联网邮件列表的域发布 p=reject 将导致严重互操作性问题。
-- 接收方在无其他信息来源时，应将 p=reject 视为 p=quarantine 处理。
-- 过渡期兼容：若接收方使用 RFC 7489 实现（依赖 PSL）而域名所有者预期 DNS Tree Walk，可能得出不同组织域；可通过 strict alignment 与在组织域发布明确记录完全避免（C.3）。
+* 发布 p=reject 且仅依赖 SPF 的域名所有者，必须同时应用有效的 DKIM 签名（SPF 在转发/邮件列表等间接邮件流中几乎必然失败）。
+* 用户参与互联网邮件列表的域发布 p=reject 将导致严重互操作性问题。
+* 接收方在无其他信息来源时，应将 p=reject 视为 p=quarantine 处理。
+* 过渡期兼容：若接收方使用 RFC 7489 实现（依赖 PSL）而域名所有者预期 DNS Tree Walk，可能得出不同组织域；可通过 strict alignment 与在组织域发布明确记录完全避免（C.3）。
 
 ## 六、推荐部署路线
 
@@ -110,23 +110,14 @@ RFC 9989 附录 C.9 逐项列出了 RFC 7489 自 2015 年以来的 15 个勘误�
 
 ## 八、对中国邮件系统的影响
 
-- **国内主流邮件系统仍基于 RFC 7489 实现**，尚未完全适配 DNS Tree Walk；过渡期内可能继续依赖 PSL 判定组织域。
-- 使用新增标签（np/psd/t）的域名所有者可先行部署——接收方对不认识的标签按 RFC 7489 规则忽略，无兼容风险。
-- 已移除标签（pct/rf/ri）失去效用，**新部署不应再使用**；存量记录中的 pct 由接收方按 Appendix A.6 语义处理。
-- 等保/关基合规单位应修订安全基线：确认 p=reject 适用性（Section 7.4），验证 DNS 基础设施对深层子域 TXT 查询的支持，关注供应商 RFC 9989 适配时间表。
+* **国内主流邮件系统仍基于 RFC 7489 实现**，尚未完全适配 DNS Tree Walk；过渡期内可能继续依赖 PSL 判定组织域。
+* 使用新增标签（np/psd/t）的域名所有者可先行部署——接收方对不认识的标签按 RFC 7489 规则忽略，无兼容风险。
+* 已移除标签（pct/rf/ri）失去效用，**新部署不应再使用**；存量记录中的 pct 由接收方按 Appendix A.6 语义处理。
+* 等保/关基合规单位应修订安全基线：确认 p=reject 适用性（Section 7.4），验证 DNS 基础设施对深层子域 TXT 查询的支持，关注供应商 RFC 9989 适配时间表。
 
 ## 九、总结
 
 RFC 9989/9990/9991 标志着 DMARC 从「社区实践描述」（Informational）正式升级为 IETF 互联网标准（Standards Track）。核心变化可概括为：**一套发现机制（DNS Tree Walk）、两个新语义标签（np/psd）、一个测试标签（t）、三标签移除（pct/rf/ri）、报告体系拆分（9990/9991）**。对已部署 DMARC 的域名，DNS 记录通常无需紧急修改；对新建部署，应直接按 RFC 9989 语义配置。
-
-## 参考文献
-
-1. RFC 9989 — Domain-Based Message Authentication, Reporting, and Conformance (DMARC)，IETF，2026-05，Standards Track，Obsoletes 7489, 9091。Section 4.10（DNS Tree Walk）、Section 4.7（标签格式）、Section 7.4（互操作性）、Appendix A.6（pct 移除）、Appendix C（变更对照）。https://www.rfc-editor.org/rfc/rfc9989
-2. RFC 9990 — DMARC Aggregate Reporting，IETF，2026-05，Standards Track，Obsoletes 7489。https://www.rfc-editor.org/rfc/rfc9990
-3. RFC 9991 — DMARC Failure Reporting，IETF，2026-05，Standards Track，Obsoletes 7489，Updates 6591。https://www.rfc-editor.org/rfc/rfc9991
-4. RFC 7489 — Domain-Based Message Authentication, Reporting, and Conformance (DMARC)，IETF，2015-03，Informational（已废弃）。https://www.rfc-editor.org/rfc/rfc7489
-5. RFC 9091 — DMARC Extension for Public Suffix Domains，IETF，2021-07，Experimental（已废弃）。https://www.rfc-editor.org/rfc/rfc9091
-6. RFC 8020 — NXDOMAIN：There Really Is Nothing Underneath，IETF，2016-10（np 标签的 NXDOMAIN 定义依据）。https://www.rfc-editor.org/rfc/rfc8020
 
 ---
 
