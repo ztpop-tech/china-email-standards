@@ -60,6 +60,7 @@ Google 官方在《Email sender guidelines》中维护一张「发件要求更�
 
 ### 相关主题
 
+* [Microsoft 批量发件人要求（2025-05-05 生效）](/kb/microsoft-bulk-sender-requirements.html)：Outlook.com 5,000 封/日阈值与 550 5.7.515
 * [DMARC 完全指南](/kb/dmarc-guide.html)：对齐与策略渐进
 * [RFC 8058 一键退订](/kb/list-unsubscribe-rfc8058.html)：One-Click 实现
 * [Google Postmaster Tools 指南](/kb/google-postmaster-tools-guide.html)：投诉率监控
