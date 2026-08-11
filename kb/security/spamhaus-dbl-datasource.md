@@ -115,6 +115,7 @@ Spamhaus DBL 作为 RFC 5782 规范在域名级黑名单领域的最佳实现，
 ### 相关文章
 
 * [DNSBL 黑名单运行机制与邮件反垃圾实战 — 从 RFC 5782 到 Spamhaus ZEN 深度解析](/kb/dnsbl-blacklist-guide.html)
+* [Spamhaus 僵尸网络威胁报告 2026 上半年：C&C 总量 -30%，Sliver 登顶，.cn 域名滥用 +771%](/kb/spamhaus-botnet-threat-report-2026h1.html)
 * [反垃圾邮件过滤引擎架构深度解析 — 从 Milter 到 Rspamd 的自学习系统](/kb/anti-spam-filter-engine.html)
 * [Rspamd 架构与评分引擎深入解读 — 符号规则、贝叶斯分类与动态阈值](/kb/rspamd-architecture-scoring-engine.html)
 * [邮件反垃圾分层防御体系设计 — 从连接层到内容层的纵深防护](/kb/anti-spam-layered-defense.html)

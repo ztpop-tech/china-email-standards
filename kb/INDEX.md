@@ -1174,6 +1174,7 @@
 - [Smime Guide](https://ztpop.net/kb/smime-guide.html) → `kb/security/smime-guide.md`
 - [Smime Sign Encrypt Order Compatibility](https://ztpop.net/kb/smime-sign-encrypt-order-compatibility.html) → `kb/security/smime-sign-encrypt-order-compatibility.md`
 - [Soar Ai Decision Email Incident Response](https://ztpop.net/kb/soar-ai-decision-email-incident-response.html) → `kb/security/soar-ai-decision-email-incident-response.md`
+- [Spamhaus Botnet Threat Report 2026H1](https://ztpop.net/kb/spamhaus-botnet-threat-report-2026h1.html) → `kb/security/spamhaus-botnet-threat-report-2026h1.md`
 - [Spamhaus Dbl Datasource](https://ztpop.net/kb/spamhaus-dbl-datasource.html) → `kb/security/spamhaus-dbl-datasource.md`
 - [Vnd Cisa Social Engineering Bec](https://ztpop.net/kb/vnd-cisa-social-engineering-bec.html) → `kb/security/vnd-cisa-social-engineering-bec.md`
 - [Zero Trust Email Architecture](https://ztpop.net/kb/zero-trust-email-architecture.html) → `kb/security/zero-trust-email-architecture.md`
