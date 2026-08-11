@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 1298 篇文章。
+共 1296 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Apache James 390 Release Notes](https://ztpop.net/kb/apache-james-390-release-notes.html) → `kb/architecture/apache-james-390-release-notes.md`
@@ -427,7 +427,6 @@
 - [Binder Dns Svcb Rfc9460](https://ztpop.net/kb/binder-dns-svcb-rfc9460.html) → `kb/other/binder-dns-svcb-rfc9460.md`
 - [Business Email Compromise Response](https://ztpop.net/kb/business-email-compromise-response.html) → `kb/other/business-email-compromise-response.md`
 - [Business Email Spoofing Detection](https://ztpop.net/kb/business-email-spoofing-detection.html) → `kb/other/business-email-spoofing-detection.md`
-- [Cacter Saas Cloud Gateway 2026](https://ztpop.net/kb/cacter-saas-cloud-gateway-2026.html) → `kb/other/cacter-saas-cloud-gateway-2026.md`
 - [Callback Phishing Defense](https://ztpop.net/kb/callback-phishing-defense.html) → `kb/other/callback-phishing-defense.md`
 - [Certificate Transparency Lookalike Domain Monitoring](https://ztpop.net/kb/certificate-transparency-lookalike-domain-monitoring.html) → `kb/other/certificate-transparency-lookalike-domain-monitoring.md`
 - [Cfg Cross Border Mail Data Transfer](https://ztpop.net/kb/cfg-cross-border-mail-data-transfer.html) → `kb/other/cfg-cross-border-mail-data-transfer.md`
@@ -657,7 +656,6 @@
 - [M365 Outbound Spam Restricted User Unblock](https://ztpop.net/kb/m365-outbound-spam-restricted-user-unblock.html) → `kb/other/m365-outbound-spam-restricted-user-unblock.md`
 - [Mail Forwarding Loop Detection](https://ztpop.net/kb/mail-forwarding-loop-detection.html) → `kb/other/mail-forwarding-loop-detection.md`
 - [Mail Gateway Blocklist Tuning](https://ztpop.net/kb/mail-gateway-blocklist-tuning.html) → `kb/other/mail-gateway-blocklist-tuning.md`
-- [Mail Gateway Comparison Matrix 2026](https://ztpop.net/kb/mail-gateway-comparison-matrix-2026.html) → `kb/other/mail-gateway-comparison-matrix-2026.md`
 - [Mail Server Auto Patching](https://ztpop.net/kb/mail-server-auto-patching.html) → `kb/other/mail-server-auto-patching.md`
 - [Mail Server Ip Reputation Remediation](https://ztpop.net/kb/mail-server-ip-reputation-remediation.html) → `kb/other/mail-server-ip-reputation-remediation.md`
 - [Mail Server Warmup](https://ztpop.net/kb/mail-server-warmup.html) → `kb/other/mail-server-warmup.md`
@@ -1174,7 +1172,6 @@
 - [Smime Guide](https://ztpop.net/kb/smime-guide.html) → `kb/security/smime-guide.md`
 - [Smime Sign Encrypt Order Compatibility](https://ztpop.net/kb/smime-sign-encrypt-order-compatibility.html) → `kb/security/smime-sign-encrypt-order-compatibility.md`
 - [Soar Ai Decision Email Incident Response](https://ztpop.net/kb/soar-ai-decision-email-incident-response.html) → `kb/security/soar-ai-decision-email-incident-response.md`
-- [Spamhaus Botnet Threat Report 2026H1](https://ztpop.net/kb/spamhaus-botnet-threat-report-2026h1.html) → `kb/security/spamhaus-botnet-threat-report-2026h1.md`
 - [Spamhaus Dbl Datasource](https://ztpop.net/kb/spamhaus-dbl-datasource.html) → `kb/security/spamhaus-dbl-datasource.md`
 - [Vnd Cisa Social Engineering Bec](https://ztpop.net/kb/vnd-cisa-social-engineering-bec.html) → `kb/security/vnd-cisa-social-engineering-bec.md`
 - [Zero Trust Email Architecture](https://ztpop.net/kb/zero-trust-email-architecture.html) → `kb/security/zero-trust-email-architecture.md`
