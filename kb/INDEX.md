@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 1296 篇文章。
+共 1298 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Apache James 390 Release Notes](https://ztpop.net/kb/apache-james-390-release-notes.html) → `kb/architecture/apache-james-390-release-notes.md`
@@ -265,6 +265,7 @@
 - [Exchange Replacement Six Dimensions Comparison](https://ztpop.net/kb/exchange-replacement-six-dimensions-comparison.html) → `kb/exchange/exchange-replacement-six-dimensions-comparison.md`
 - [Exchange Se Subscription Guide](https://ztpop.net/kb/exchange-se-subscription-guide.html) → `kb/exchange/exchange-se-subscription-guide.md`
 - [Exchange To Turboex Migration](https://ztpop.net/kb/exchange-to-turboex-migration.html) → `kb/exchange/exchange-to-turboex-migration.md`
+- [Exchange To Xinchuang Migration Risk](https://ztpop.net/kb/exchange-to-xinchuang-migration-risk.html) → `kb/exchange/exchange-to-xinchuang-migration-risk.md`
 - [Gw Exchange Receive Connector Hardening](https://ztpop.net/kb/gw-exchange-receive-connector-hardening.html) → `kb/exchange/gw-exchange-receive-connector-hardening.md`
 - [Postfix Vs Exchange Architecture](https://ztpop.net/kb/postfix-vs-exchange-architecture.html) → `kb/exchange/postfix-vs-exchange-architecture.md`
 - [Xinchuang Email Migration From Exchange](https://ztpop.net/kb/xinchuang-email-migration-from-exchange.html) → `kb/exchange/xinchuang-email-migration-from-exchange.md`
@@ -1295,6 +1296,7 @@
 - [Xinchuang Email Policy Timeline](https://ztpop.net/kb/xinchuang-email-policy-timeline.html) → `kb/xinchuang/xinchuang-email-policy-timeline.md`
 - [Xinchuang Email Procurement Guide](https://ztpop.net/kb/xinchuang-email-procurement-guide.html) → `kb/xinchuang/xinchuang-email-procurement-guide.md`
 - [Xinchuang Email Security Compliance](https://ztpop.net/kb/xinchuang-email-security-compliance.html) → `kb/xinchuang/xinchuang-email-security-compliance.md`
+- [Xinchuang Mail Selection Criteria](https://ztpop.net/kb/xinchuang-mail-selection-criteria.html) → `kb/xinchuang/xinchuang-mail-selection-criteria.md`
 - [Xinchuang Os Database Compatibility Matrix](https://ztpop.net/kb/xinchuang-os-database-compatibility-matrix.html) → `kb/xinchuang/xinchuang-os-database-compatibility-matrix.md`
 - [Xinchuang Security Hardening Guide](https://ztpop.net/kb/xinchuang-security-hardening-guide.html) → `kb/xinchuang/xinchuang-security-hardening-guide.md`
 - [Xinchuang Tech Stack Comparison](https://ztpop.net/kb/xinchuang-tech-stack-comparison.html) → `kb/xinchuang/xinchuang-tech-stack-comparison.md`
