@@ -2,10 +2,9 @@
 
 > ztpop.net 是专注国产信创邮件系统与邮件安全的技术知识库，覆盖电子邮件认证(DMARC/SPF/DKIM/BIMI)、BEC 与钓鱼防护、反垃圾、邮件安全网关、邮件迁移与运维合规。本文件为 AI 系统提供站点导览与核心内容索引。
 
-ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑邮件系统」与邮件安全网关，面向政企信创替代与邮件安全合规场景。站点含 1327 篇深度技术文章、666 篇 FAQ 与持续更新的行业威胁情报。
+ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑邮件系统」与邮件安全网关，面向政企信创替代与邮件安全合规场景。站点含 1533 篇深度技术文章、875 篇 FAQ 与持续更新的行业威胁情报。
 
 ## 邮件技术在线工具箱
-- [AI 智能体邮件网关（产品入口）](https://www.ztpop.net/ai-mailgate.html): 基于 Rspamd 开源规则引擎与多模态大模型的分层邮件安全网关，破解图片钓鱼、社会工程学与 AI 批量生成攻击三大规则盲区；攻防演练闭环让防御持续进化。开源基座 Apache 2.0，本地优先、数据不出企业边界。
 - [邮件技术在线工具箱导航](https://www.ztpop.net/tools/index.html): 面向邮件系统管理员与运维工程师的免费在线工具集。所有工具均在浏览器端运行，不采集、不存储任何查询数据。技术依据全部追溯 IETF RFC 标准（RFC 7208 / 6376 / 7489 / 8461 / 8460 / 9608 等）。
 - [邮件技术在线工具集（集合页）](https://www.ztpop.net/tools/collection.html): 工具集合说明页，单一 URL 集中描述全部工具、使用场景与 RFC 依据，便于文档、论文、教程引用。
 - [邮件 DNS 一键诊断](https://www.ztpop.net/tools/dns-check.html): 输入域名，一次性检测 SPF、DKIM、DMARC、MX、PTR、BIMI、MTA-STS、TLS-RPT、DNSSEC、DANE 十项邮件相关 DNS 记录，逐项给出通过/警告/失败状态与 RFC 依据（DoH 实时查询，阿里云）。
@@ -15,22 +14,38 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [SPF 深度诊断工具](https://www.ztpop.net/tools/spf-deep-diagnose.html): 输入域名或粘贴 SPF 记录，逐机制解析（ip4/ip6/include/mx/a/ptr/exists/redirect/all），DNS 查询次数精确统计（RFC 7208 §4.6.4 上限 10 次）、void lookup 检测、ptr 误用识别、宏展开与 permerror 预警。
 - [邮箱地址语法验证器](https://www.ztpop.net/tools/email-syntax-validator.html): 基于 RFC 5321/5322/6531 逐字符校验邮箱地址语法，支持 SMTPUTF8 国际化邮箱、引号局部、IP 字面量域名，定位违规位置并给出修复建议。
 
-- [邮件安全 AI 检测（工具）](https://www.ztpop.net/ai-mail-detect.html): 粘贴邮件原文，AI 静态启发式分析识别图片钓鱼、伪造发件人、社会工程学攻击信号，输出综合风险评分。零隐私上传，浏览器内完成初步分析。
-
 ## 邮件技术知识库
 
 - [AiTM 钓鱼平台如何绕过 MFA 实现 Microsoft 365 邮箱接管？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/abnormal-aitm-account-takeover-2026.html): AiTM 中间人钓鱼平台以被盗邮箱投递、嵌套附件藏链、合法 SaaS 跳转与 cloaking 规避扫描，后端与微软登录服务保持实时会话中继 MFA，窃取的是已通过 MFA 的活会话，改密码无法使其失效。
+- [邮件服务商之间的「滥用反馈环（FBL）」是怎么运作的？收到的投诉怎么处理？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/abuse-feedback-loop-handling.html): 依据 RFC 6650 第 1、4、5 节与 RFC 5965，说明 ARF 是邮件运营商间互报滥用与认证失败的格式、FBL 属于受邀请的滥用报告（接收 ISP 在用户标记垃圾后回传）、角色分 Feedback Provider 与 Consumer，以及消费方应聚合投诉降权/清理列表、并与 DMARC 失败报告联动形成闭环。
 - [邮件账号接管（ATO）是怎么发生的，如何检测与遏制？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/account-takeover-ato-email.html): 凭据泄露或会话劫持使攻击者可登录邮箱，ATO 防御靠风险登录检测、MFA 与异常行为监控。
 - [澳大利亚 ACSC 邮件系统加固指南：Essential Eight 视角下的邮件防护基线 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/acsc-email-hosting-hardening.html): 澳大利亚网络安全中心（ACSC）以 Essential Eight 为框架给出邮件加固基线：禁用遗留认证并强制 MFA、强制域名认证、阻断外部转发、链接/附件防护、日志与邮箱规则狩猎。
 - [机器学习反垃圾模型面临的对抗样本问题是什么？NIST 如何分类这些攻击？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/adversarial-examples-ml-spam-filter.html): NIST AI 100-2 E2025（2025 年 3 月发布）给出对抗性机器学习的分类法与术语，按 ML 方法类型、攻击生命周期阶段以及攻击者目标、能力与知识组织；规避、投毒、隐私与滥用是其关键词，直接对应反垃圾模型的现实风险。
 - [Agari（Fortra）的身份欺骗防御与 DMARC Protection 如何运作？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/agari-dmarc-identity-deception-2026.html): Agari 是 DMARC 标准共同创立者，其防御思路与识别攻击签名相反——对正常邮件与发件人行为及身份信任关系建模，据上下文识别异常，并以 DMARC Protection 自动化认证、第三方发件人管理与入站 DMARC 可见性补齐盲区。
+- [AI 自动回复和自动摘要功能会被怎样滥用？该如何治理？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-auto-reply-abuse.html): 自动回复把「无人值守的对外输出」交给了模型，攻击者可用探测邮件套取组织内部信息，或用自动化对话推进欺诈。本文拆解四类滥用方式，给出输出侧约束、频率控制与审计要求。
+- [AI 让伪造变得廉价后，付款与账号变更该怎么核验？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-bec-payment-verification.html): 当邮件、语音、视频都可被伪造，核验只能依赖流程与带外通道。本文给出账号变更与大额付款的核验流程设计、必须写死的熔断条件、以及让流程在真实压力下不被绕过的组织措施。
+- [视频会议里「本人出镜」要求紧急付款，怎么判断是不是深伪？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-deepfake-video-meeting-fraud.html): 合成视频使「看到本人」同样不再等于身份确认。本文给出视频会议场景的结构性研判方法：不依赖画质细节，而依赖会议入口来源、交互可控性与带外核验，并给出组织侧应当固化的会议纪律。
+- [深伪语音电话配合邮件实施 BEC，收到后该怎么研判和处置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-deepfake-voice-bec.html): 合成语音使「听到本人声音」不再等于身份确认。本文给出语音+邮件组合式商务邮件欺诈的攻击结构拆解、当场可用的带外核验话术与判定条件、以及事后取证要保留哪些证据。
+- [邮件里的 AI 检测模型会被对抗样本绕过吗？防守方怎么加固？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-detector-adversarial-evasion.html): 判分模型是可被探测和逼近的攻击目标。本文说明邮件场景下对抗性规避的实际形态、为什么单一模型必然可被绕过，以及用多信号冗余、判定可解释与漂移监控构建可持续防线的方法。
+- [AI 智能体邮件网关架构解析：Rspamd 基座 + LLM 多模态分层防御 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-email-agent-gateway-architecture.html): 基于 Rspamd（Apache 2.0）规则引擎与多模态大语言模型的分层防御架构：图片钓鱼 OCR 识别、社会工程学语义分析、攻防演练闭环。2026 邮件安全参考实现。
 - [部署 AI 邮件助手时，数据隐私与合规的边界应该怎么划？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-email-assistant-data-privacy-boundary.html): 邮件是个人数据密度最高的企业系统之一。Microsoft 在 Microsoft 365 Copilot 官方文档中承诺提示词、响应与经 Microsoft Graph 访问的数据不用于训练基础模型，并沿用既有权限模型与数据驻留承诺；这些正是评估任何 AI 邮件助手的标准提问清单。
+- [SPF、DKIM、DMARC 能挡住 AI 生成的钓鱼邮件吗？边界在哪？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-email-authentication-limits.html): 发件人鉴别是必要地基，但它验证的是域名而非意图。本文划清三项协议能挡与不能挡的边界，说明近似域名、失陷账号、间接流三类绕过场景，并给出在鉴别之上应补的控制。
+- [企业邮件网关引入 AI 判分，怎么设计才不会大面积误杀？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-gateway-scoring-integration.html): 判分能力上线的最大风险不是漏判而是误判导致业务中断。本文给出分阶段灰度接入方法：只观察不动作、加标不拦截、分段阈值处置，以及必须先建好的申诉与回滚机制。
 - [AI 生成的钓鱼邮件有哪些可检测特征？传统的「语法错误」判据还成立吗？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-generated-phishing-detection-signals.html): FBI IC3 于 2024 年 12 月 3 日发布 PSA241203 指出，犯罪分子用生成式 AI 修正原本可作为诈骗警示信号的人为错误；因此「拼写语法错误」不再是可靠判据，检测重心须转向发信基础设施、身份认证与行为异常。
 - [AI 生成的钓鱼邮件有什么特征，该如何防御？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-generated-phishing-email-2026.html): FBI IC3 2025 记录逾 2.2 万起 AI 相关投诉、损失超 8.93 亿美元；INTERPOL 指 AI 参与非洲 55% 的网络犯罪，Europol IOCTA 2026 观察到越狱大模型与自主化欺诈流程，语言破绽已不再是可靠检测特征。
+- [人机协同的邮件威胁研判流程该怎么设计？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-human-in-the-loop-triage.html): 把 AI 放进研判流程的正确位置是「压缩信息、排序队列」，而不是「代替判断」。本文给出职责边界划分、分析员界面必须呈现的证据字段、防止自动化偏见的机制与效果度量方式。
+- [疑似 AI 钓鱼或深伪冒充事件，应急响应该怎么做？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-incident-response-deepfake.html): 给出从接报到复盘的完整处置顺序：先止损再取证的判断原则、邮件与语音视频证据的正确保全方式、失陷账号的处置动作清单、影响面扩散排查方法与复盘产出要求。
+- [大语言模型写的钓鱼邮件还能靠「语病和错别字」识别吗？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-llm-phishing-detection.html): 语言质量作为钓鱼判据已经失效。本文说明为什么要把研判基线从「文本表面特征」迁移到「身份鉴别结果 + 关系图谱 + 请求语义」三层，并给出可直接执行的判定顺序、需要采集的信号字段与常见误判处置。
+- [AI 让钓鱼规模化后，为什么必须上「抗钓鱼」的多因素认证？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-mfa-phishing-resistant.html): 短信验证码与一次性口令挡不住实时中继钓鱼。本文说明验证码类因素为什么会被完整转发、NIST SP 800-63B 对认证强度与验证者抗冒充的相关要求，以及迁移路径与过渡期的补偿控制。
+- [邮件场景里的 AI 相关威胁，怎么映射到 MITRE ATLAS？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-mitre-atlas-mapping-email.html): ATLAS 提供了针对 AI 系统的对手战术与技术知识库。本文说明如何把邮件系统中的 AI 组件按 ATLAS 的思路拆成可映射的攻击面，如何用它驱动检测覆盖度自查，以及映射时常见的三个误用。
 - [AI与机器学习在邮件安全中的应用 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-ml-email-security.html): 从训练数据工程到对抗性鲁棒性探讨基于人工智能（AI）与机器学习（ML）的邮件安全技术全景。囊括NIST AI 100-1 (AI RMF)、ENISA AI安全报告、IETF RFC 7960的模型与标准。
 - [AI/ML在邮件安全中的实际应用场景 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-ml-email-security-practice.html): 探讨AI/ML技术在邮件安全中的落地实践，涵盖基于贝叶斯和深度学习的内容分类、图神经网络检测社交关系异常、对抗性攻击防御等，引用NIST AI 100-1框架。
 - [如何识别“AI 生成的钓鱼邮件”？2026 年有哪些判别信号？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-phishing-detection-2026.html): AI 钓鱼语法流畅无错别字,看字失效;判别=紧迫感/换渠道/索要验证码/hover 不符+校验 SPF/DKIM/DMARC 对齐失败+独立渠道确认。
+- [传统钓鱼识别培训在 AI 时代还有用吗？内容该怎么改？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-phishing-training-obsolete.html): 以「识别可疑文本特征」为核心的培训已经过时，且会带来虚假安全感。本文说明培训应从「识别能力」转向「流程反射与上报习惯」，给出内容改写方向、演练设计要点与不应使用的度量方式。
 - [AI 驱动的垃圾邮件检测：从贝叶斯到深度学习的演进 — ztpop 知识库](https://www.ztpop.net/kb/ai-powered-email-security.html): AI 反垃圾邮件技术概述：朴素贝叶斯、CNN/RNN 文本分类、BERT 语义理解和大模型用于误报抑制的工程实践与精度对比。
+- [邮件正文里藏的提示注入，会让 AI 邮件助手做出什么危险动作？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-prompt-injection-email-assistant.html): 当邮件助手把不可信的邮件正文当作指令读取时，攻击者只要发一封邮件就能间接控制它。本文说明间接提示注入在邮件场景的具体危害路径、为什么无法靠提示词加固根治，以及应当施加的架构级隔离与权限约束。
+- [怎么用 NIST AI RMF 治理邮件系统里的 AI 组件？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-rmf-govern-email-security.html): 把 AI RMF 的 GOVERN / MAP / MEASURE / MANAGE 四个功能落到邮件场景：谁负责、有哪些 AI 资产与风险、用什么指标衡量、发现问题怎么处置，并给出可直接使用的资产台账与指标字段。
+- [邮件系统引入第三方 AI 模型，供应链风险要评估哪些点？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ai-vendor-model-supply-chain-email.html): 邮件是组织最敏感的数据集合之一，把它接给外部模型服务需要明确的数据边界与退出能力。本文给出数据流、合同条款、技术隔离、可观测性与退出机制五个维度的评估清单与判定条件。
 - [什么是“中间人钓鱼（AiTM）”？它如何窃取会话、该如何阻断？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/aitm-phishing-session-hijack.html): AiTM 中间人钓鱼用反向代理实时中继凭据+OTP,窃得已认证会话 Cookie 绕过传统 MFA;阻断=通行密钥/FIDO2 防钓鱼 MFA+条件访问+会话吊销。
 - [Amavis 邮件内容安全网关深度解析 — 病毒扫描、内容过滤与策略引擎 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/amavis-content-security-gateway.html): Amavis 全链路解析：MTA 集成（Postfix SMTP/milter/pipe）、ClamAV/Sophos 多引擎病毒扫描、SpamAssassin 联动、DKIM 签名/验证、策略查表（policy_bank）、bypass 机制、content_filter 性能调优与安全加固。
 - [企业反钓鱼演练应如何组织与实施？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/anti-phishing-drill-guide.html): 企业反钓鱼演练应分级设计场景、发送模拟钓鱼、度量点击率并开展针对性培训，形成闭环改进机制。
@@ -42,6 +57,7 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [邮件反垃圾技术全景分析 — Bayesian 统计过滤、DNSBL 实时黑名单、Greylisting 与深度学习演进 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/anti-spam-technologies.html): 反垃圾技术全景：Bayesian 贝叶斯分类（Graham/Robinson 变体）、DNSBL/RBL 实时黑名单协议、Greylisting 灰名单三重元组、SpamAssassin 规则引擎架构、SPF/DKIM/DMARC 认证链路反馈、LightGBM/神经网络多模态分类、BEC/鱼叉攻击检测挑战。
 - [Apache James 3.9.0 新特性解读：Java 21 迁移与 Postgres 高性能实现（2026） · ztpop 邮件技术知识库](https://www.ztpop.net/kb/apache-james-390-release-notes.html): Apache James 3.9.0 深度解读：Java 11→21 迁移、javax→jakarta、JAMES-2586 高性能 Postgres 实现、IMAP PARTIAL（RFC 9394）、SMTP Require TLS、JMAP SearchSnippets、Crowdsec 集成、SSE-C S3 加密、安全修复（JMX 认证/BouncyCastle）与升级注意事项。
 - [Apple 邮件隐私保护（MPP）：打开追踪为何失效与发件方应对 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/apple-mail-privacy-protection.html): 解读 Apple Mail Privacy Protection（2021）。说明其通过代理预加载远程内容、隐藏真实 IP 与打开时间，导致打开率/像素追踪失效，以及发件方的应对策略。
+- [定向攻击是怎么用邮件做初始投递的？有没有标准化的分类和缓解清单？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/apt-email-delivery-techniques-attack.html): 依据 MITRE ATT&CK 技术页 T1566 Phishing，说明邮件作为初始访问手段的标准化分类（四个子技术）、规避手法（冒充、邮件隐藏规则、发件人欺骗、线程劫持）、带编号的官方缓解措施 M1049/M1047/M1031/M1021/M1054/M1017，以及检测策略 DET0070 的关联思路。
 - [APWG 2026 年第一季钓鱼活动趋势报告：钓鱼网站数量、品牌仿冒目标与 TLS 证书诈欺数据分析 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/apwg-2026-q1-phishing-report.html): 基于 APWG 2026 Q1 钓鱼活动趋势报告，分析 97 万起钓鱼攻击、品牌仿冒目标行业排名、TLS 证书诈欺数据及攻击行业分布。
 - [APWG 2026 Q1 钓鱼攻击技术分析 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/apwg-2026-q1-phishing-techniques.html): 基于 APWG 2026 年第一季度报告，深入分析 AI 生成钓鱼邮件特征、Deepfake 语音钓鱼（Vishing）以及 BEC 商业邮件欺诈的最新变种手法。
 - [钓鱼攻击中最常被冒用的品牌与行业有哪些（APWG 2026）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/apwg-brand-impersonation-2026.html): APWG 2026 Q1 报告显示当季 766 个独立品牌遭钓鱼冒用，电信行业占攻击 33%、SaaS/Webmail 与社交媒体紧随；BEC 诈骗偏好 NameSilo/NameCheap 等注册商与 Gmail 免费邮箱。
@@ -52,6 +68,7 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [APWG 2025 年第四季度与全年钓鱼趋势报告解读：全年 380 万起，BEC 电线转账环比 +136% · ztpop 邮件技术知识库](https://www.ztpop.net/kb/apwg-phishing-trends-2025q4.html): 译介 APWG《2025 年第四季度钓鱼活动趋势报告》（年度回顾）：季度钓鱼攻击 853,244 起（-4%），全年 380 万起（较 2024 的 376 万略增）；电线转账 BEC 环比 +136%；电信行业受攻击占比从 5.9% 飙至 18.7%；短信钓鱼持续 +30~40%，二维码钓鱼 -9%。
 - [APWG 2026 年第一季度钓鱼趋势报告揭示了哪些关键变化？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/apwg-phishing-trends-2026q1.html): APWG《钓鱼活动趋势报告（2026 Q1）》显示全球钓鱼攻击达 971,181 起，环比增 13.8%；电信行业跃升为最受攻击目标（占 33%），品牌冒用与社交媒体诈骗显著上升。
 - [ARC 邮件认证链协议深度解析 — RFC 8617：转发与邮件列表的认证可追溯性 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/arc-authentication-chain-rfc8617.html): 基于 RFC 8617，完整解析 ARC 协议的设计动机、AAR/AMS/AS 三头部结构、cv/chain 状态机、邮件列表与转发场景的认证链串行语义、与 SPF/DKIM/DMARC 的协同机制。
+- [邮件经邮件列表转发后 DMARC 校验失败，ARC 链式认证怎么救回来？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/arc-chain-authentication.html): 依据 RFC 8617 解释 ARC（Authenticated Received Chain）：AAR/AMS/AS 三组头部、链式序号 i=、ARC-Seal 如何把原始认证结果随信传递，让转发后的 DMARC 失败可被挽回。
 - [什么是 ARC（Authenticated Received Chain）？它解决什么邮件认证问题？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/arc-faq-01.html): ARC（RFC 8617）在邮件经列表/转发等中介时跨跳保留认证结果，解决合法修改导致 DMARC 误判失败的问题。
 - [ARC 由哪三个邮件头字段组成？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/arc-faq-02.html): ARC 每实例含三字段：AAR（复制认证结果）、AMS（类 DKIM 签名）、AS（对链加封），共同证明链完整且早跳已认证。
 - [ARC-Authentication-Results（AAR）字段起什么作用？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/arc-faq-03.html): ARC-Authentication-Results（AAR）把每跳的 SPF/DKIM/DMARC 结论快照随信传递，便于末跳在 DMARC 失败时回看早跳认证。
@@ -66,6 +83,22 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [ARF（滥用反馈报告格式）是什么？如何生成与解析 abuse 报告？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/arf-abuse-report.html): ARF（RFC 5965）以 multipart/report 标准化 abuse 反馈，含 Source-IP 与原始信头，支撑 ISP 与发送方间投诉反馈循环（FBL）保护信誉。
 - [ARF（滥用报告格式，RFC 5965）和反馈环（FBL）是怎么运作的？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/arf-abuse-report-format-rfc5965.html): ARF 定义了投诉/滥用报告的机器可读格式，配合 FBL 让接收方把用户标记垃圾的邮件反馈给发件域，用于声誉修复。
 - [邮箱账号被接管后，为什么只改密码不够？会话与令牌该怎样彻底吊销？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ato-response-session-revocation-token-invalidation.html): 账号接管处置中改密码只切断了口令这一条路径，OAuth 访问令牌与刷新令牌、已建立的 IMAP 长连接、应用专用凭据仍可独立于口令继续访问邮箱；本文按 RFC 6749、RFC 7009 与 NIST SP 800-61 Rev. 3 给出完整的会话与令牌吊销顺序及验证方法。
+- [ARC 的三个头字段各起什么作用？cv= 的取值怎么判断转发链是否可信？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-arc-chain-validation-cv.html): ARC 通过在每一跳留下可验证的认证结论来修复转发导致的 DMARC 失败。本文依据 RFC 8617 第 4.1.1 至 4.1.3 节的三个头字段定义、第 4.2.1 节的实例标签规则与第 4.4 节的链验证状态，说明 ARC Set 的构成、i= 编号规则与 cv= 三种取值的判定含义。
+- [部署 BIMI 需要满足哪些前置条件？为什么 DMARC 策略必须先收敛到位？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-bimi-vmc-prerequisites.html): BIMI 建立在 DMARC 强制策略之上，认证不达标则一切配置都不会生效。本文依据 IETF Datatracker 上的 BIMI 规范文档，说明对组织域与 From 域同时要求 quarantine 或 reject、pct 不得低于 100 的前置条件，以及 BIMI 记录、指示物与验证材料的关系与部署顺序。
+- [DKIM 的 simple 与 relaxed 规范化怎么选？为什么邮件一被改动签名就失效？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-dkim-canonicalization-choice.html): 规范化算法决定了 DKIM 签名对邮件微小改动的容忍度。本文依据 RFC 6376 第 3.4 节及其四个子节，说明头部与正文各自的 simple 与 relaxed 算法差异、c 标签的写法，以及为什么中转环节的空白与折行处理会导致签名失效，并给出选型建议。
+- [DKIM 密钥怎么轮换才不会造成验签失败？选择器该如何规划？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-dkim-key-rotation-selector.html): DKIM 密钥轮换的安全做法是新密钥配新选择器，而非原地替换。本文依据 RFC 6376 第 3.1 节的选择器语义、第 3.6.1 节的密钥记录文本表示与第 5.2 节的密钥选择操作建议，给出双选择器并行的轮换步骤、旧密钥保留时长的判断依据与常见故障处置。
+- [DKIM 验签失败怎么系统性定位？该从签名头的哪些标签查起？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-dkim-signature-verify-failure.html): DKIM 验签失败的成因分散在密钥、算法、覆盖范围与内容改动四个层面。本文依据 RFC 6376 第 3.5 节的 DKIM-Signature 标签定义、第 3.3 节的签名与验证算法、第 3.6.1 节的密钥记录表示，给出按标签逐项排查的定位流程与对应处置。
+- [DMARC 失败报告（RUF）和 fo 标签怎么配？为什么常常一份都收不到？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-dmarc-failure-report-fo-tag.html): 失败报告能提供单封邮件级别的失败细节，但受隐私约束普遍发送率极低。本文依据 RFC 7489 第 7.3 节的失败报告定义、第 6.3 节的 ruf 与 fo 标签语义，说明 fo 各取值的触发条件、与 rua 的分工，以及收不到报告的常见原因与替代排障路径。
+- [DMARC 的「标识符对齐」到底在比什么？adkim 与 aspf 的严格与宽松差在哪？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-dmarc-identifier-alignment.html): DMARC 不直接看 SPF 或 DKIM 是否通过，而是要求通过的标识符与 RFC5322.From 域对齐。本文依据 RFC 7489 第 3.1、3.1.1、3.1.2、6.3 节说明 DKIM 对齐比 d= 与 From 域、SPF 对齐比 MAIL FROM 域与 From 域，以及 adkim/aspf 取 r 与 s 时的判定差异与配置取舍。
+- [DMARC 从 p=none 收敛到 p=reject，中间怎么走才不会误杀正常邮件？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-dmarc-policy-progression.html): DMARC 策略收敛是渐进过程而非一次性开关。本文依据 RFC 7489 第 6.3 节的 p、pct、rua 标签定义与第 6.6.3 节策略发现规则，给出 none 观察、quarantine 灰度、reject 收口的分阶段判定条件与回滚触发线，并说明 pct 的正确用法与常见误用。
+- [DMARC 聚合报告（RUA）该怎么读？XML 里哪些字段最能说明问题？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-dmarc-rua-aggregate-report-parsing.html): 聚合报告是 DMARC 运维唯一的可靠数据来源。本文依据 RFC 7489 第 7.2 节对聚合报告的定义与附录 C 的 XML Schema，说明报告的结构层次、policy_evaluated 与 auth_results 的区别、按源 IP 归类分析的方法，以及从报告中区分「自家漏配」与「外部冒用」的判定逻辑。
+- [DMARC 的 sp 标签怎么用？子域没有单独记录时会套用哪条策略？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-dmarc-subdomain-policy-sp.html): 子域策略是 DMARC 部署中最容易被忽略的一环。本文依据 RFC 7489 第 6.3 节的 sp 标签定义与第 6.6.3 节的策略发现流程，说明子域记录的查找顺序、sp 缺省时继承 p 的规则，以及如何用 sp 保护大量不发信的子域而不影响业务子域。
+- [邮件被转发后 SPF 就失败，这是配置问题还是协议固有限制？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-forwarding-spf-breakage-mediator.html): 转发导致 SPF 失败是协议设计的固有结果，而非配置错误。本文依据 RFC 7208 第 10.3 节对中介的讨论与附录 D 的中介交互说明，解释 SPF 基于最后一跳发送 IP 的评估方式为何在转发场景必然失败，并给出发送方、中介方、接收方三侧的应对措施。
+- [邮件列表为什么会让 DMARC 失败？发送方、列表方、接收方各能做什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-mailinglist-dmarc-breakage.html): 邮件列表同时破坏 SPF 对齐与 DKIM 签名，是间接邮件流中最典型的互操作难题。本文依据 RFC 7960 第 2.2、2.3、3.2.3 节对转发与消息修改的分析，以及第 4.1.1.2、4.1.3.2、4.1.3.3 节的缓解措施，说明成因链条与三方各自的可行动作。
+- [SPF 的 10 次 DNS 查询上限具体怎么算？超了会发生什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-spf-dns-lookup-limit.html): SPF 查询上限是最常见的 permerror 根因。本文依据 RFC 7208 第 4.6.4 节说明哪些机制计入 10 次上限、超限必须返回 permerror 的强制要求、void lookup 默认限制为 2 次，以及 mx 与 ptr 各自的额外限制与自查、优化方法。
+- [SPF 里嵌套了一堆 include，怎么审计才能既不超限又不漏授权？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-spf-include-nesting-audit.html): 第三方服务不断累加会让 SPF 记录的嵌套深度失控。本文依据 RFC 7208 第 5.2 节的 include 递归语义与第 4.6.4 节的查询上限，给出逐层展开的审计方法、授权最小化原则、扁平化的风险控制，以及周期化复核机制的建立方式。
+- [SPF 的 redirect 修饰符和 include 有什么本质区别？什么时候该用哪个？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-spf-redirect-modifier.html): redirect 与 include 都会引入其他域的 SPF 记录，但语义与结果处理完全不同。本文依据 RFC 7208 第 6.1 节的 redirect 定义与第 5.2 节的 include 定义，说明二者在结果传递、all 机制交互、优先级与查询计数上的差别，并给出选型判据。
+- [SPF 的七种结果分别代表什么？temperror 和 permerror 该怎么处理？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/auth-spf-result-permerror-handling.html): SPF 结果不是简单的通过与不通过，而是七种语义各异的判定。本文依据 RFC 7208 第 2.6 节及其各子节，逐一说明 none、neutral、pass、fail、softfail、temperror、permerror 的含义与接收方应有的处置差异，并给出两类错误结果的排查路径。
 - [邮件头里的 Authentication-Results 字段（RFC 8601）中 spf=、dkim=、dmarc= 各结果词代表什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/authentication-results-header.html): Authentication-Results 由执行认证的接收服务器写入，记录 spf/dkim/dmarc 结果；结果词含 pass/fail/softfail/neutral/none/temperror/permerror，仅代表该服务器视角，DMARC处置看 dmarc=。
 - [Authentication-Results 信头如何解读与判定？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/authentication-results-header-parse.html): Authentication-Results 信头由接收方网关填写，以 authserv-id 为权威源，逐项给出 SPF/DKIM/DMARC 的方法与结果，是判定邮件真实性的关键依据。
 - [Autocrypt 是什么，和普通 PGP / S/MIME 端到端加密有何不同？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/autocrypt-end-to-end-encryption.html): Autocrypt 在邮件客户端层自动协商与轮换加密公钥，降低端到端加密的使用门槛，兼容现有 OpenPGP。
@@ -80,6 +113,7 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [商业邮件入侵（BEC / CEO 诈骗）是如何得手的，怎么防？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/bec-ceo-fraud-defense.html): BEC 通过伪造高管身份或劫持邮箱，诱导财务转账或泄露机密；防御靠流程带外二次确认、域名监控与外发管控。
 - [BEC商业邮件诈骗深度剖析 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/bec-defense.html): 深度解析商业邮件诈骗（BEC）的攻击链路、技术检测手段与流程管控体系。基于FBI IC3 2024年度报告数据、NIST SP 800-177 §6标准及IETF RFC 8617（ARC）技术框架。
 - [BEC 商业邮件欺诈高级防御 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/bec-defense-advanced.html): 基于 FBI IC3 报告和 M3AAWG 最佳实践，详解 2025-2026 年 BEC 最新手法（Deepfake 攻击、供应商发票欺诈、工资重定向），以及技术+流程+培训的三层防御体系。
+- [商业邮件欺诈（BEC）到底怎么识别？发生后第一时间该做什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/bec-fraud-identification-and-response.html): 依据 FBI IC3 官方 BEC 专题页与 2024 年 9 月 11 日公告，说明商业邮件欺诈的官方定义、四条识别自查要点、事发后联系汇出行索取免责函与提交投诉的处置顺序，以及 2013—2023 年累计事件量与损失规模。
 - [发现 BEC 变更账号诈骗已经把款汇出，最初几小时应当按什么顺序处置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/bec-fund-transfer-fraud-first-hours-response.html): BEC 资金诈骗事件的处置存在明显的时间窗口效应，止付请求、报案、邮箱失陷排查、证据固定与内部通知需要并行推进而非串行等待；本文按 CISA、FBI IC3、NIST SP 800-61 Rev. 3 的公开指引给出可执行的处置顺序与常见误区。
 - [商业邮件诈骗（BEC）在 2026 年出现了哪些演进？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/bec-threat-evolution-2026.html): FBI IC3 2025 年报记录 BEC 24,768 起、损失 30.47 亿美元；APWG/Fortra 数据显示 Q4 2025 电汇 BEC 数量环比暴增 136%，单笔均值 50,297 美元，由自动化团伙 Scripted Sparrow 驱动。
 - [邮件服务器BGP路由劫持防护与RPKI部署 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/bgp-rpki-mail-security.html): BGP 路由劫持对邮件传输路径的影响、RPKI/ROA 验证机制、MANRS 路由安全实践以及多线 BGP 冗余设计。涵盖 RFC 4271、RFC 6483、RFC 8210 标准引用。
@@ -100,6 +134,7 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [BIMI 品牌邮件标识深度解析 — DMARC 前置条件、BIMI TXT/PSD 记录与 VMC 证书全链路 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/bimi-guide.html): BIMI 协议全链路：DMARC p=quarantine/reject 前置条件、BIMI SVG Logo Profile（PSD）规范、VMC 验证标记证书获取流程、BIMI TXT 记录（v/l/a 标签）、常见邮箱客户端支持矩阵与部署 checklist。
 - [BIMI 品牌标识实施指南：四步部署完整流程（翻译） — ztpop.net 邮件技术知识库](https://www.ztpop.net/kb/bimi-implementation-guide.html): BIMI Group 官方实施指南中文翻译版，从DMARC对齐、SVG Logo制作到VMC证书申请和DNS发布的完整四步部署流程。
 - [BIMI（IETF 草案 draft-brand-indicators-for-message-identification）是什么？品牌徽标如何随已认证邮件显示？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/bimi-logo.html): BIMI（IETF 草案 draft-brand-indicators-for-message-identification）让 DMARC 严格的发件方在客户端展示品牌徽标，需先通过 DMARC 对齐，DNS 发布 SVG logo，可选 VMC 商标证书。
+- [BIMI 怎么让认证通过的邮件在收件箱显示品牌 Logo？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/bimi-logo-certification.html): 依据 BIMI Group 官方规范解释 BIMI：BIMI TXT 记录、SVG  logo 要求、VMC 验证标志证书、以及与 DMARC 强制策略的绑定关系。
 - [品牌焕新后如何更新 BIMI Logo - 完整操作指南 | ztpop.net 知识库](https://www.ztpop.net/kb/bimi-logo-update-guide.html): 品牌刷新后 BIMI Logo 更新完整指南。从准备合规 SVG、申请新 VMC/CMC 证书到更新 DNS 记录的全流程操作指引，含证书申请文档要求、Gmail 测试验证等关键环节。
 - [BIMI lps 标签解析：如何为一个域名使用多个不同 Logo - BIMI | ztpop.net 知识库](https://www.ztpop.net/kb/bimi-lps-tag-guide.html): BIMI lps（Local-part as Selector）标签允许品牌为一个域名下的不同发件地址（如 marketing@、support@、billing@）分别显示不同 Logo，无需修改邮件基础设施。本文详解 lps 标签原理、DNS 配置与最佳实践。
 - [BIMI Mark Verifying Authority (MVA) 参与指南 — 扩展方案与 FAQ（翻译） — ztpop.net 邮件技术知识库](https://www.ztpop.net/kb/bimi-mva-faqs.html): BIMI Group（AuthIndicators 工作组）发布 Mark Verifying Authority (MVA) 扩展参与方案，详解 VMC 与 CMC 区别、CA 成为 MVA 的八步流程、证书透明度日志发布要求及 CCADB 注册流程。本文基于 bimigroup.org 官方 FAQ（V1.0, 2025年7月）翻译。
@@ -109,6 +144,7 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [BIMI VMC 验证流程详解 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/bimi-vmc-validation-process.html): 详细介绍 BIMI VMC 的三阶段验证流程：商标验证（注册证明/所有者验证）、域验证（DKIM/DMARC检查/所有权确认）和组织验证（企业文件/法人授权）。
 - [SVCB/HTTPS DNS记录与邮件发现 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/binder-dns-svcb-rfc9460.html): 深入解析SVCB和HTTPS DNS资源记录（RFC 9460）在邮件领域的应用，涵盖通过BINDER/SVCB记录实现邮件服务发现（SMPT Discover）、替代MX记录的现代架构、AliasMode与ServiceMode的差异及部署策略。
 - [美国联邦 DMARC 政策（BOD 18-01）规定了哪些强制动作与报送地址？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/bod-18-01-federal-dmarc-reporting.html): DHS/CISA 具有约束力的运营指令 BOD 18-01「Enhance Email and Web Security」于 2017 年 10 月 16 日发布，强制联邦机构在 90 天内启用 STARTTLS 与 p=none 的 SPF/DMARC，120 天内禁用 SSLv2/SSLv3 与 3DES/RC4，一年内对所有二级域设为 p=reject。
+- [已经按伪造的邮件指令把款打出去了，最初几个小时应该做什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/business-email-compromise-response.html): 商务邮件诈骗的处置有一个硬时间窗，资金侧动作的优先级高于技术侧排查。本文给出资金止付与报案、技术侧判定是账号接管还是外部仿冒、证据保全、内部与对外通报的并行处置顺序，以及事后必须补上的带外核验与账号变更双人复核等控制点。
 - [商业邮件冒充（BEC）如何检测？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/business-email-spoofing-detection.html): BEC 通过伪造发件身份或劫持真实账号诱导转账与数据泄露，需结合 DMARC、异常发件分析与体外验证来检测。
 - [邮件系统 CalDAV/CardDAV 集成 — 日历与通讯录同步 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/caldav-carddav-email.html): CalDAV/CardDAV 日历与通讯录同步协议集成指南：RFC 4791 CalDAV 日历、RFC 6352 CardDAV 通讯录、RFC 6764 DNS SRV 服务发现、Radicale 开源服务器部署、Thunderbird/Outlook/iOS 客户端配置、LDAP 认证桥接与 昆仑邮件系统 的全套协作工具整合方案。
 - [什么是“回调钓鱼（Callback Phishing）”？为何难防、如何处置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/callback-phishing-defense.html): 回调钓鱼不含链接/附件,只留电话诱你回拨,再由人工坐席骗凭据/装远控,绕过网关;处置=不用信中电话+官方渠道核实+DMARC 降冒名。
@@ -121,6 +157,20 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [传输与端到端加密 - ztpop.net 邮件技术知识库](https://www.ztpop.net/kb/category/transport-encryption.html): 邮件传输加密技术完全指南：TLS/STARTTLS、MTA-STS、DANE TLSA、TLS-RPT、S/MIME 端到端加密、证书管理与部署。
 - [信创与国产化 - ztpop.net 邮件技术知识库](https://www.ztpop.net/kb/category/xinchuang-domestic.html): 信创邮件系统与国产化替代指南：国密算法（SM2/SM3/SM4）邮件应用、国产操作系统与数据库适配、信创合规清单。
 - [如何利用证书透明度日志提前发现仿冒本单位的域名？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/certificate-transparency-lookalike-domain-monitoring.html): 证书透明度由 RFC 6962 提出、RFC 9162 给出 2.0 版本，公开可审计的日志会记录几乎所有公开签发的证书；监控日志中出现的相似域名，可在钓鱼站点上线前获得预警并前置到邮件网关处置。
+- [邮件数据跨境传输要满足什么条件？部署海外邮件节点前要判断什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cfg-cross-border-mail-data-transfer.html): 依据 GDPR 第五章关于向第三国传输个人数据的规定，梳理充分性决定、适当保障措施与特定情形减损三个层级的判定顺序，并说明邮件场景下节点选址、备份存放与运维访问三类容易被忽略的跨境传输情形。
+- [DANE 和 MTA-STS 应该选哪个？两个能同时部署吗？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cfg-dane-or-mta-sts-selection.html): 依据 RFC 7672 与 RFC 8461，对比 DANE 与 MTA-STS 在信任根、前置依赖与失败模式上的差异，给出按 DNSSEC 现状与运维能力选型的判定逻辑，并说明双栈共存的注意事项。
+- [DMARC 从 p=none 推到 p=reject 该按什么节奏？有没有可参照的强制时间表？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cfg-dmarc-enforcement-rollout-plan.html): 参照 CISA BOD 18-01 对邮件安全的强制要求与阶段时限，并结合 NIST SP 800-177 Rev.1 的建议，给出 DMARC 策略从 none 到 reject 的分阶段推进方法、每阶段的退出判定条件与常见阻塞点的处理顺序。
+- [GDPR 下邮件系统要做哪些数据最小化配置？加密算不算合规义务？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cfg-gdpr-email-data-minimization.html): 依据 GDPR 第 5 条原则与第 32 条处理安全要求，说明邮件系统在字段采集、日志内容、归档范围上的数据最小化配置要点，并厘清加密在该框架下的定位——它是应予考虑的措施而非绝对强制项。
+- [邮件收发端口为什么建议用隐式 TLS？465/993/995 与 STARTTLS 端口该怎么选？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cfg-implicit-tls-mail-access-ports.html): 依据 RFC 8314，说明隐式 TLS 与 STARTTLS 在提交与访问协议上的差异、submissions/imaps/pop3s 端口的定位，以及淘汰明文访问的迁移顺序与灰度判定要点。
+- [邮件系统的安全措施怎么映射到 NIST SP 800-53 的控制项？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cfg-mail-controls-nist-800-53-mapping.html): 依据 NIST SP 800-53 Rev.5 的控制族划分，说明邮件系统常见安全措施与访问控制、审计问责、系统与通信保护、系统与信息完整性等控制族的对应关系，并给出映射表的构建方法与常见误区。
+- [邮件日志的审计留存周期怎么定？哪些日志必须留、留多久？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cfg-mail-log-audit-retention-window.html): 依据 NIST SP 800-92 日志管理指南与 SP 800-53 Rev.5 审计控制族，说明邮件日志的分类、留存周期的确定依据、存储容量估算方法，以及日志完整性保护与轮转配置的要点。
+- [邮件留存策略该怎么设计？保存期限凭什么定？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cfg-mail-retention-policy-design.html): 依据 NIST SP 800-45 Version 2 与 GDPR 存储限制原则，说明邮件留存策略应覆盖的要素、保存期限的三类确定依据，以及分级留存、到期处置与法务保留冻结的配置要点。
+- [机会型 TLS 和强制 TLS 有什么区别？只开 STARTTLS 到底防不防中间人？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cfg-opportunistic-vs-mandatory-tls-risk.html): 依据 RFC 3207 安全考虑章节与 RFC 7435 的机会型安全模型，说明 STARTTLS 可被剥离降级的原理，厘清机会型 TLS 只防被动窃听、不防主动攻击的边界，并给出升级到强制 TLS 的两条可选路径与判定逻辑。
+- [内部钓鱼演练的合规边界在哪里？开始前必须准备什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cfg-phishing-drill-compliance-boundary.html): 依据 NIST SP 800-115 关于安全测试规划与社会工程测试的要求，说明钓鱼演练前的授权与交战规则文档、演练范围与目标设定、数据采集的最小化原则，以及结果处理中应避免的做法。
+- [邮件端到端加密选 S/MIME 还是 OpenPGP？两者的信任模型差在哪里？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cfg-smime-vs-openpgp-selection.html): 依据 RFC 8551、RFC 3156 与 RFC 4880，对比 S/MIME 与 OpenPGP 在信任模型、消息封装格式与密钥分发上的差异，给出组织内与跨组织两类场景下的选型判定逻辑及部署前必须回答的问题。
+- [MTA-STS 的 enforce 模式该怎么部署？从 testing 切到 enforce 的判定条件是什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cfg-tls-enforce-mta-sts.html): 依据 RFC 8461，说明 MTA-STS 的 _mta-sts TXT 记录、mta-sts.txt 策略文件字段（version/mode/mx/max_age）、testing 与 enforce 两种模式的行为差异，以及从 testing 灰度切换到 enforce 的可操作判定条件与回滚方式。
+- [TLS-RPT 要怎么配置？收到的 JSON 报告里哪些字段能定位问题？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cfg-tls-rpt-deploy-and-read-reports.html): 依据 RFC 8460，讲解 _smtp._tls TXT 记录与 rua 上报地址的配置方法，并逐字段解读聚合报告 JSON 中 policies、summary 与 failure-details 的含义，给出常见失败类型的排查方向。
+- [怎么用一份基线清单核对邮件系统的安全配置是否达标？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cfg-trustworthy-email-baseline-check.html): 依据 NIST SP 800-177 Rev.1《Trustworthy Email》的建议范围，整理一份覆盖域名认证、传输加密、访问链路、日志与内容层保护的邮件安全基线核对清单，并说明各项的判定标准与核查顺序。
 - [慈善与灾难募捐诈骗邮件有哪些识别要点？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/charity-disaster-donation-scam-email.html): FTC 指出募捐诈骗常用与真实慈善机构相似的名称、大量煽情却无具体用途说明的话术，并催促你立即捐款；凡要求以现金、礼品卡或电汇方式捐款的一律是骗局。
 - [Check Point 2026 年二季度品牌钓鱼报告有哪些关键结论？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/checkpoint-brand-phishing-q2-2026.html): Check Point 2026 Q2 品牌钓鱼报告：微软以 23% 稳居被冒充首位，前五品牌合计超半数，ChatGPT 首次进入前十，技术业为最受冒充行业。
 - [邮件系统被纳入关键信息基础设施后，运营者要额外承担哪些义务？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cii-regulation-email-system-obligations.html): 关键信息基础设施安全保护条例规定了认定机制与运营者义务，包括专门安全管理机构、人员安全背景审查、三同步、年度检测评估、事件报告与采购安全审查。本文推导这些义务在邮件系统上的具体落地方式。
@@ -137,9 +187,26 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [Cisco Secure Email Threat Defense 的判定体系与实测表现如何？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cisco-email-threat-defense-verdicts-2026.html): Cisco 官方文档定义 BEC、诈骗、钓鱼、恶意四类判定并支持追溯判定；官方博客披露其在 2026 年 5 月 SE Labs 评测中取得 AAA 与 94% 总准确率。
 - [Cisco Talos 2026 年 Q2 事件响应趋势显示哪些邮件攻击变化？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cisco-talos-q2-2026-threat-report.html): Talos IR Q2 2026：钓鱼出现在逾半数参与事件（上季约三分之一），认证滥用升至 65%（上季 35%）；QR 码 PDF 钓鱼借 SharePoint/M365 传播，ARToken PhaaS 提供 80+ API 端点，勒索软件占逾 20%。
 - [ClamAV 邮件网关反病毒引擎部署与调优 — 昆仑邮件系统知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/clamav-antivirus-email-gateway.html): ClamAV开源反病毒引擎在邮件网关中的部署、配置和性能调优。涵盖ClamAV架构、病毒库更新、与Amavis/Postfix集成、性能基准测试。基于NIST SP 800-83反恶意软件指南。
+- [钓鱼邮件 ClickFix 攻击链检测与防御指南 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/clickfix-email-attack-detection-guide.html): 钓鱼邮件 ClickFix 攻击链详解：话术特征、命令链结构、正则检测规则、企业防御策略与响应流程。基于 Microsoft/CyberProof/Halcon 2026 威胁情报。
+- [邮件先过第三方网关再进 Exchange Online，为什么 IP 信誉和 SPF 都失效了？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-enhanced-filtering-skiplist.html): 解释前置网关成为最后一跳后 EOP 只能看到网关 IP 导致连接筛选与 SPF 判定失真的原理，说明增强筛选（跳过列表）的配置方式、验证方法与常见配置错误。
+- [Exchange Online 反钓鱼策略的「用户模拟」和「域模拟」保护该怎么配才有效？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-eop-antiphish-impersonation.html): 说明反钓鱼策略中受保护用户与受保护域的名额取舍原则、邮箱智能的作用、处置动作分级与例外设置，以及为什么应当以预设安全策略作为基线再做差异化。
+- [Microsoft 365 邮件安全策略误报太多，调优应该从哪一步开始？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-eop-policy-tuning.html): 给出误报调优的正确顺序：先用邮件头与追溯定位是哪一层判定命中，再通过管理员提交建立反馈闭环，然后调整策略优先级与作用域，并说明为什么宽泛允许列表是错误解法。
+- [欺骗智能洞察里的允许与阻止条目，应该怎样运维才不会越积越乱？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-eop-spoof-intelligence.html): 说明欺骗智能洞察中「发送基础结构 + 发件域」条目对的判读方法、允许条目为何只能是临时措施、租户允许阻止列表的时效管理与定期复核清单。
+- [EOP 判定「未经身份验证的发件人」依据什么？复合身份验证该怎么读？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-eop-spoof-protection.html): 解读 EOP 复合身份验证（compauth）如何在 SPF/DKIM/DMARC 之上综合发件人信誉给出结论，区分显式与隐式判定，并说明首次联系提示、外部发件人标识与内部冒充的处置顺序。
+- [怎样从 EOP 邮件头判断一封邮件被判为垃圾邮件的真正原因？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-exo-header-forensics.html): 给出邮件头取证的固定判读顺序：先读 Authentication-Results 的认证与复合验证结论，再看反垃圾报告头中的判定类别与来源 IP，最后结合垃圾评分与批量投诉级别定位根因。
+- [Exchange Online 传输规则的优先级和「停止处理更多规则」该怎么用？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-exo-mailflow-rules.html): 说明邮件流规则的顺序评估机制、常用动作分类、「停止处理更多规则」跳过后续安全规则的隐患，以及测试模式、审计与变更管理的落地做法。
+- [云邮件「没收到」，租户间邮件流排查应该按什么顺序查？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-exo-message-trace.html): 给出邮件追溯的标准排查顺序：先确认邮件是否进入本租户，再读状态语义区分隔离、过滤与投递失败，并说明查无记录时的责任划分与跨租户协同所需的关键信息。
+- [云邮件网关与本地网关混合部署时，连接器和邮件路由该怎么设计？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-hybrid-connector-mailflow.html): 说明入站与出站连接器的方向语义、集中式传输与直投的取舍、TLS 强制与证书校验要求、MX 指向与邮件环路的排查思路，以及内部中继的收敛原则。
+- [Exchange Online 为什么必须为自定义域启用 DKIM？两条 selector CNAME 有什么用？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-m365-dkim-selector.html): 解释未启用自定义域 DKIM 时签名域与 From 域不对齐导致 DMARC 只剩单腿支撑的风险，说明双 selector 用于密钥轮转的机制，以及转发场景下 DKIM 相对 SPF 的存活优势与验证方法。
+- [租户级 DMARC 从 p=none 推进到 p=reject，怎样分阶段才不误伤合法邮件？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-m365-dmarc-tenant.html): 给出 DMARC 四阶段推进法：先补齐 SPF/DKIM 对齐、p=none 收集聚合报告建立发送源清单、用 pct 灰度进入 quarantine、最后 reject，并说明子域 sp 与常见误伤源的处置。
+- [Microsoft 365 租户配置 SPF 时，如何避免 10 次 DNS 查询上限导致 permerror？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-m365-spf-tenant.html): Exchange Online 出站的 SPF 配置要点：单域单条 TXT、include 展开计入 10 次查询预算、用 ip4/ip6 压缩深层 include，以及 permerror 如何连带拖垮 DMARC 判定与逐层核对方法。
 - [云邮箱账号被接管后应按什么顺序处置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-mailbox-ato-detection-response.html): 微软官方文档列出账号被接管的典型症状与处置顺序：优先禁用账号或重置密码、撤销会话令牌、审查 MFA 注册设备、检查转发地址与收件箱规则，最后从受限实体页面解除发信封锁。
 - [云邮箱的审计日志如何用于邮件取证调查？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-mailbox-audit-log-forensics.html): 微软官方文档说明 MailItemsAccessed 邮箱审计动作覆盖 POP、IMAP、MAPI、EWS、ActiveSync 与 REST 全部协议，并区分 sync 与 bind 两种访问类型，可用于界定数据泄露范围。
 - [云邮箱的合规保留与数据导出应如何规划？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-mailbox-ediscovery-retention.html): Google 官方文档说明 Vault 的保留规则分默认与自定义两类、保留（hold）优先于保留规则；微软官方文档区分 eDiscovery 标准版与高级版，审阅集与预测编码为高级版独有。
+- [OAuth 应用同意钓鱼怎么防？用户同意策略应该收紧到什么程度？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-oauth-app-consent-abuse.html): 剖析同意钓鱼绕过密码与多因素认证的攻击路径与令牌持久化风险，给出用户同意策略的收紧档位、管理员同意工作流的配套设计，以及高风险应用的检测与吊销处置。
+- [云邮件归档合规：在线存档、保留策略与诉讼保留三者怎么分工？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-purview-archive-compliance.html): 厘清在线存档解决容量与检索、保留策略决定留存时长与到期处置、诉讼保留实现冻结防删改的职责边界，说明保留优先于删除的裁决原则，并纠正把归档当备份的常见误区。
+- [云邮件安全沙箱（安全附件）的动态投递会带来哪些运维副作用？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-sandbox-safe-attachments.html): 说明附件沙箱引爆的检测定位、动态投递「正文先到附件后补」造成的用户困惑与工单成因、各处置动作的取舍、投递延迟预算，以及沙箱与已知特征扫描的互补关系。
+- [安全链接的 URL 重写会影响什么？点击时保护该如何取舍？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloud-sandbox-safe-links.html): 解释点击时保护相对发送时扫描的必要性、URL 重写对用户识别域名与内部系统的影响、例外清单的正确粒度，以及邮件之外通道的覆盖与用户教育的调整方向。
 - [云端邮件与本地部署：延迟、带宽与合规对比 — ztpop 知识库](https://www.ztpop.net/kb/cloud-vs-on-prem-email-comparison.html): 云端vs本地邮件部署对比：SMTP 延迟实测、带宽成本测算、GDPR/等保合规要求、混合架构折中方案的工程分析。
 - [Cloudflare 2026 威胁形势报告揭示了哪些邮件安全发现？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloudflare-email-security-2026.html): Cloudflare 2026 威胁报告：约 46% 受分析邮件未通过 DMARC 验证，PhaaS 机器人利用邮件服务器未重新验证发件人的“中继盲区”直投高信任品牌仿冒；令牌窃取使 MFA 失效，63% 登录凭据来自既往泄露。
 - [Cloudflare Email Service 提供哪两大核心能力？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloudflare-faq-01.html): Cloudflare Email Service 两大能力：Email Sending（出向事务邮件）与 Email Routing（入向路由）。
@@ -152,6 +219,7 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [Cloudflare Email Service 在投递能力（deliverability）上有什么保障？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cloudflare-faq-08.html): Cloudflare Email Service 提供自动 IP 信誉管理与投递优化，并用 Analytics 监控指标告警。
 - [钓鱼模拟演练应该用哪些指标衡量效果？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cofense-phishing-simulation-metrics-2026.html): 钓鱼模拟不应只看点击率，Cofense PhishMe 的员工参与度指数以上报率、易感率、熟练度评分、用户级指标与韧性排名综合衡量，把员工从风险点转化为可量化的检测能力。
 - [邮件系统做密码合规改造，密码算法与密码产品的合规性该怎么核验？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/commercial-cryptography-compliance-email-product-selection.html): 密码法确立了商用密码制度与商用密码应用安全性评估要求，GB/T 39786-2021 给出了信息系统密码应用的基本要求。本文说明邮件系统在密码改造中如何核验算法合规性、产品合规性与使用正确性，以及密评常见的失分环节。
+- [发现某同事邮箱被入侵（自动转发、可疑收件箱规则、已发垃圾邮件），按什么顺序处置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/compromised-account-incident-response.html): 依据 Microsoft《responding to a compromised email account》文档，按顺序说明被入侵邮箱的识别症状、立即遏制（禁用账户或重置密码 + Revoke-MgUserSignInSession 撤销会话）、修复 Step 3-6（MFA 设备、应用同意、管理员角色、邮件转发）以及日志调查与收尾解禁步骤。
 - [容器化邮件系统部署方案与性能评估 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/containerized-mail-deployment.html): 探讨基于Kubernetes和Docker的邮件系统容器化部署实践，包括状态化组件的有状态工作负载设计、性能优化和与裸机部署的对比评估，参考CNCF最佳实践。
 - [容器化邮件服务器（Docker/K8s）如何部署？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/containerized-mail-server-deployment.html): 容器化邮件服务器应最小化镜像并以非 root 运行，用 Secret 管理密钥，PV 持久化队列与邮箱，并以 NetworkPolicy 与资源配额隔离。
 - [Palo Alto Cortex 高级邮件安全模块如何做检测与调查？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cortex-xdr-email-security-module-2026.html): Palo Alto 官方文档说明 Cortex Advanced Email Security 监控进出与草稿邮件、生成邮件安全 issue，并以因果链视图串联发件人、附件、链接与收件人。
@@ -173,13 +241,22 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [DANE for SMTP：基于DNSSEC的邮件传输安全 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dane-smtp.html): 深入解析 DANE for SMTP（RFC 7672）技术：基于 DNSSEC 的 TLSA 记录实现邮件传输层的证书验证，消除对公共 CA 的依赖。涵盖 DANE 工作原理、DNSSEC 前置条件、TLSA 记录类型（0-3）详解、与 MTA-STS 的互补关系以及 Postfix DANE 配置实操。
 - [DANE for SMTP 如何部署？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dane-smtp-deployment.html): DANE for SMTP（RFC 7672）借助 DNSSEC 与 TLSA 记录把服务器证书绑定到域名，提供强于单纯 STARTTLS 的降级防护。
 - [DANE TLSA for SMTP 完全部署指南：RFC 7671/7672、记录生成与Postfix集成 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dane-tlsa-smtp-deployment.html): DANE TLSA for SMTP 完全部署指南：基于RFC 7671/7672和RFC 6698，详述DNSSEC签名的TLSA记录生成（hash-slinger/openssl/swaks）、TLSA四种Usage模式选择、Postfix smtp_tls_security_level=dane配置、出站/入站双端验证、EECDH密码套件配合、缓存预热策略及常见故障（TLSA未签名、证书链不匹配、DNSSEC验证失败）排查。
+- [DANE/TLSA 怎么给 SMTP 加密加一层「证书钉选」？为什么比纯 STARTTLS 更抗降级？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dane-tlsa-smtp-security.html): 依据 RFC 7672 第 1、2、2.2.3、3.1 节，说明机会型 DANE TLS 在目标域发布经 DNSSEC 验证的可用 TLSA 记录时启用抗降级加密、TLSA 记录位于 _25._tcp.MX主机名、证书用法含 DANE-TA(2) 与 DANE-EE(3)、以及其抗降级源于 DNSSEC 保护，并对比 MTA-STS 的异同。
 - [DANE for Outbound 出站部署 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dane-upstream-outbound.html): 系统阐述DANE（DNS-Based Authentication of Named Entities）在SMTP出站场景的部署方法，涵盖RFC 7672的TLSA记录生成与验证、DNSSEC集成、PKI替代架构设计及与MTA-STS的互操作比较。
 - [深度伪造语音与视频如何与商业邮件欺诈（BEC）组合成完整攻击链？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/deepfake-voice-video-bec-attack-chain.html): FBI IC3 PSA241203 记录了犯罪分子用 AI 生成音频克隆亲属或公众人物声音、用 AI 生成视频与所谓公司高管进行实时视频通话；这些能力与邮件线程劫持结合，可绕过「打电话核实」这一传统 BEC 防线。
 - [Microsoft Defender for Office 365 反钓鱼策略有哪些必调设置项？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/defender-o365-antiphish-policy-settings.html): 微软官方文档列出反钓鱼策略的可调项：欺骗智能、未认证发件人标识、遵从 DMARC 记录策略、用户与域仿冒防护、邮箱智能仿冒防护、受信任发件人清单，以及 1 至 4 级钓鱼判定阈值。
 - [Microsoft Defender for Office 365 的反钓鱼保护包含哪些能力？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/defender-office365-antiphishing-policy.html): 微软官方文档说明：云邮箱基础层提供欺骗智能、隐式邮件身份验证与租户允许/阻止列表；Defender for Office 365 追加冒充防护、邮箱智能与可调钓鱼阈值。
 - [Deferred（延迟）与 Bounced（退信）有什么区别？何时邮件被最终退回？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/deferred-vs-bounced.html): Deferred=临时失败(4xx)留队重试，Bounced=永久失败(5xx)生成退信；建议重试数天后再弃为退信，间隔指数退避，避免过早丢信或过晚占队列。
+- [等保测评通过后就万事大吉了吗？邮件系统怎么保持持续合规？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dengbao-email-assessment-continuous.html): 等级保护是持续过程而非一次性认证。测评通过后，邮件系统在架构变更、策略调整、人员变动、威胁演进中极易出现合规回潮。本文说明测评后的持续合规机制：年度复测、变更回改边界图、策略与升级记录常态化、应急演练，以及把合规嵌入日常运维而非运动式突击。
+- [测评机构怎么给邮件系统取证？文档、配置、日志、访谈分别查什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dengbao-email-assessment-evidence.html): 等级保护测评通过访谈、文档审查、配置检查、工具测试等多种方法取证。邮件系统因为协议多、组件分散，取证点比一般系统更细。本文按测评方法拆解邮件系统的取证要点：文档看什么、配置查什么、日志要能回答什么、工具测试会打哪些点。
+- [邮件系统等级测评里，哪些不符合项出现频率最高？怎么整改？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dengbao-email-assessment-failed-items.html): 基于邮件系统在等保测评中的常见经验，安全区域边界的垃圾邮件防范、安全通信网络的内部明文、安全计算环境的双因素绕过、安全管理中心的角色分离与日志集中，是出现频率最高、且性质明确的不符合项。本文汇总高频不符合项清单，并给出可落地的整改建议与顺序。
+- [邮件系统去测评之前，自己应该先做哪些准备？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dengbao-email-assessment-prep.html): 等级保护测评不是「坐等测评机构上门」，被测单位在测评准备阶段就要提交定级报告、备案证明、安全建设方案、资产清单等材料，并完成差距分析与预整改。邮件系统因组件多、链路长，准备工作的质量直接决定测评周期与通过率。本文给出邮件系统测评前的自查与材料准备清单。
+- [等保 2.0 安全计算环境的控制点，在邮件系统上怎么逐条落地？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dengbao-email-computing-environment.html): 安全计算环境是等保 2.0 技术要求中控制点最密集的层面，也是邮件系统失分最集中的地方。本文逐条拆解身份鉴别、访问控制、安全审计、入侵防范、数据完整性与保密性、数据备份恢复、剩余信息保护与个人信息保护在邮件系统上的具体落地方式，并指出每一条的取证要点。
+- [等保 2.0 的安全管理中心和安全运维管理，对邮件系统意味着什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dengbao-email-mgmt-center-ops.html): 安全管理中心是等保 2.0 相对于 1.0 的重要变化，要求对分散的安全机制进行集中管控。本文说明系统管理、审计管理、安全管理、集中管控四个控制点在邮件系统上的落地方式，以及安全运维管理中与邮件强相关的变更管理、恶意代码防范管理、备份恢复管理与应急预案管理的具体要求。
+- [等保 2.0 的安全通信网络与安全区域边界，落到邮件系统上具体要做哪些事？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dengbao-email-secure-comm-network.html): 等保 2.0 在安全区域边界里明确列出「恶意代码和垃圾邮件防范」控制点，是少数直接点名邮件的地方。本文把安全通信网络与安全区域边界两个层面的控制点逐条映射到邮件系统的真实组件：网络架构分区、通信传输的完整性与保密性、边界访问控制、入侵防范与垃圾邮件检测，并给出对应的协议实现与常见不符合项。
+- [等保 2.0 里邮件系统怎么定级？定级对象的边界到底划到哪一层？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dengbao-email-system-scope-definition.html): 邮件系统在等级保护中最容易出问题的不是技术措施，而是定级对象边界划错——把邮件当成办公系统的一个模块，或反过来把网关、反垃圾、归档拆成互不相干的几个对象。本文按 GB/T 22240-2020 的定级方法，说明邮件系统作为定级对象应满足的基本特征、受侵害客体与侵害程度的判断口径，以及边界划分中最常见的四类错误。
 - [等保 2.0 邮件系统安全测评深度解析 — GB/T 22239-2019 邮件相关控制项与综合防护 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dengbao2-email-compliance.html): 基于 GB/T 22239-2019 信息安全技术网络安全等级保护基本要求，完整解析邮件系统在等保 2.0 中的安全通用要求、云计算安全扩展要求，邮件系统的定级指南、测评指标、安全计算环境与通信网络安全防护。
-- [显示名冒充（用高管名字发信但地址是真域名）怎么防？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/display-name-spoofing-defense.html): 显示名仿冒不改发件地址、专骗肉眼；防御靠内部域名强制显示、外部邮件标识与用户警觉。
+- [显示名欺骗（对方只改个「张总」名字就能冒充）应该怎么防？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/display-name-spoofing-defense.html): 依据 NIST SP 800-177r1 第 3.1.3、3.1.6 节与 Microsoft 反钓鱼策略文档，说明 SMTP 允许任意设置 From 与显示名导致显示名欺骗、第一道防线是 SPF/DKIM/DMARC 域认证、以及 Microsoft 的 User Impersonation Protection 与 Mailbox intelligence、异常字符安全提示如何检测「同名不同址」的冒充。
 - [DKIM 的 ADSP 与 ATPS（RFC 5617）是什么？为何 ADSP 已被废弃？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dkim-atps.html): ADSP（RFC 5617 已废弃）曾声明作者域全签名假设，因误伤被 DMARC 取代；ATPS 解决第三方签名授权也未普及。新部署直接用 DMARC。
 - [DKIM 的 simple 与 relaxed 规范化（canonicalization，RFC 6376）有何区别？为何常用 relaxed？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dkim-body-canonicalization.html): DKIM 规范化（RFC 6376）决定参与哈希的字节：simple 极敏感、relaxed 宽容（小写化/压缩空白/去空行）；二者常都用 relaxed 以抗误失效。
 - [DKIM规范化算法与签名验证 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dkim-canon-algo-deepdive.html): 深入剖析DKIM的规范化（Canonicalization）算法与签名验证全流程，涵盖RFC 6376 §3.4定义的simple和relaxed两种规范化模式及其对头部和正文的影响，签名验证的逐步骤技术细节，以及不同MTA实现间的兼容性分析。
@@ -191,6 +268,7 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [DKIM 密钥应如何轮换？密钥长度有什么要求？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dkim-key-rotation.html): RFC 8301 要求 DKIM 至少 2048 位 RSA（弃用 SHA-1）；轮换时用新 selector 并行发布公钥、逐步切换、确认无流量后再撤旧钥。
 - [DKIM 密钥轮转与安全管理指南 — ztpop.net 邮件技术知识库](https://www.ztpop.net/kb/dkim-key-rotation-management.html): DKIM 密钥生成、多选择器管理、轮转自动化、泄露应急响应。
 - [DKIM 密钥轮转完整指南 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dkim-key-rotation-management-complete.html): 基于 RFC 8301 和 M3AAWG 最佳实践的 DKIM 密钥轮转指南：多密钥并行策略、90 天轮转周期、自动化方案（OpenDKIM + DNS API）、Ed25519 兼容性。
+- [DKIM 密钥应该怎么轮转？旧密钥要不要撤销、密钥长度用多少？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dkim-key-rotation-practice.html): 依据 RFC 6376 第 3.1、3.6.1、3.6.2.1 节与 RFC 8301 第 3.1、3.2 节，说明 DKIM 密钥轮转应通过新增选择器完成、旧密钥以 p= 置空表示撤销、rsa-sha1 已被禁止使用、RSA 密钥长度的必须与应当下限，以及 DNS TXT 记录 256 字节限制对 2048 位密钥发布的影响。
 - [迁移 DKIM selector 时如何保证邮件不断签、不丢失对齐？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dkim-selector-migration.html): 迁移 DKIM selector 时新旧公钥在 DNS 并行保留、渐进切换并监控 DMARC 报告，确认无流量后再撤旧钥，避免验证失败。
 - [DKIM 签名是如何生成的？一次签名的完整流程（RFC 6376）是怎样的？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dkim-signature-process.html): DKIM 签名（RFC 6376）：发布选择器公钥于 DNS，对 body+header 哈希后用私钥签名生成 DKIM-Signature 头；接收方取公钥重算比对验证。
 - [DKIM 签名被重放（replay）盗用信誉，该怎么发现和缓解？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dkim-signature-replay-attack-detection.html): RFC 6376 §8.6 描述了签名重放攻击：攻击者借一个会签名的 MTA 取得有效签名后，将同一封邮件重发给大量收件人以套用签名域的信誉；规范明确 x= 标签不是反重放手段，缓解需靠签名范围、发信管控与流量观测。
@@ -203,8 +281,10 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [如何分析 DMARC 聚合报告（RUA）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-aggregate-report-analysis.html): DMARC 聚合报告（RUA）分析需解析 XML、按源 IP 与域名对齐统计通过率，识别未授权发送源并校准策略。
 - [DMARC Aggregate Report 人工解析与监控完全指南：rua XML结构、parsedmarc与dmarcian · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-aggregate-report-parsing.html): DMARC聚合报告(RUA/XML)的人工解析与自动化监控完全指南：XML Schema详解（report_metadata、policy_published、policy_evaluated、auth_results）、parsedmarc+Elasticsearch+Grafana部署、无dmarcian时的纯手动解析方法、pct部署策略、子域覆盖分析与故障排查。
 - [DMARC 聚合报告深度解读 — RFC 7489 §7：XML 结构、auth_results 解析与异常排查 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-aggregate-reporting.html): RFC 7489 §7 DMARC 聚合报告(rua) XML 结构深度解析：org_name、policy_evaluated（dkim/spf/pct）、auth_results（spf/dkim 逐项认证结果）、记录对齐与统计字段，附 dmarcian、parsedmarc 工具链使用与常见异常（pct 分阶段部署、子域策略覆盖）排查。
+- [DMARC 的标识符对齐（Identifier Alignment）中 relaxed 与 strict 有什么区别？如何配置 adkim/aspf？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-alignment-relaxed-strict-config.html): 解释 DMARC 标识符对齐的 relaxed 与 strict 两种模式差异，以及通过 DNS 记录标签 adkim/aspf 配置的方法（翻译自 RFC 7489）。
 - [DMARC 强制执行时代：Cloudflare 免费 DMARC 管理全面上线解读 — SPF/DKIM/BIMI 完整配置审计 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-enforcement-era.html): 2026 年 6 月，Cloudflare 正式推出 DMARC Management GA 版本，提供全免费的 DMARC 报告分析、SPF 10 次查询限制审计与 BIMI 配置检查。在 Google、Yahoo、Microsoft 陆续实施 DMARC 强制执行的背景下，本文深度解读邮件认证四层协议（SPF/DKIM/DMARC/BIMI）的配置现状、SPF RFC 7208 的 10 次 DNS 查询硬限制审计工具以及从 p=none 到 p=reject 的分阶段部署路线。译文/解读自 Cloudflare 官方博客。
 - [DMARC失败报告自动化处理 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-failure-report-automation.html): 基于RFC 7489和RFC 8601详解DMARC失败报告(Failure Report/RUF)和汇总报告(RUA)的自动化处理方案，涵盖报告解析、可视化展示和策略优化建议。
+- [DMARC 聚合报告里一堆 fail，怎么分清哪些是真伪造、哪些是自己配错？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-failure-triage.html): DMARC 报告中的 fail 绝大多数不是攻击，而是自家未纳管的合法发送源与转发路径造成的。本文说明 DMARC 判定的核心是标识对齐而非单纯通过，给出三类典型 fail 的指纹特征、分诊顺序、策略收紧的推进节奏，以及聚合报告本身的解读陷阱。
 - [什么是 DMARC？它如何对抗钓鱼邮件？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-faq-01.html): DMARC 是什么、它如何通过 SPF/DKIM 认证与策略处置来对抗钓鱼邮件的中文解读（翻译自 DMARC.org 官方 FAQ）。
 - [DMARC 是如何工作的（通俗版）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-faq-02.html): 用通俗语言解释 DMARC 如何借助 SPF/DKIM 对齐与策略处置来工作（翻译自 DMARC.org 官方 FAQ）。
 - [DMARC 记录里的 "quarantine" 策略是什么意思？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-faq-03.html): 解释 DMARC 策略 quarantined（隔离）的真实含义与接收方处置自由度（翻译自 DMARC.org 官方 FAQ）。
@@ -216,13 +296,14 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [DMARC 失败报告（forensic / RUF）与 RUA 有什么区别？什么时候该用？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-forensic-report.html): RUF/forensic 报告在 DMARC 失败时立即回传含邮件样本，便于定位攻击但涉及隐私与带宽，生产环境通常只开 RUA、关 RUF。
 - [DMARC Forensic Report 深度解读 · RFC 9991 与邮件认证失败报告 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-forensic-report-rfc9991.html): 全面解读 RFC 9991 DMARC Forensic (failure) Report 格式与应用，包括 AFRF 格式、DNS 发布流程、隐私保护策略及实际运维部署建议。
 - [DMARC 邮件认证策略框架深度解析 — RFC 7489：从 p=none 到 p=reject 的分阶段部署 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-guide.html): RFC 7489 完整解析：DMARC 记录语法（v/p/sp/rua/ruf/pct/fo/aspf/adkim/rf/ri）、SPF Alignment（aspf=s/r）与 DKIM Alignment（adkim=s/r）的 Identifier Alignment 机制、聚合报告 XML 格式解析、Forensic 失败报告、SPF/DKIM/DMARC 三件套全链路验证流程。
+- [邮件列表（邮件组/转发）为什么会破坏 DMARC，有哪些缓解办法？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-mailing-list-breakage-mitigation.html): 说明邮件列表转发导致 DMARC 失败的机理，并从发送方、列表服务端、接收方三角度给出缓解措施（翻译自 RFC 7489 §10.5）。
 - [DMARC p=reject 部署策略 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-p-reject-deployment-strategy.html): DMARC p=reject 完整部署策略：从 p=none 到 p=reject 的三步渐进方案、过程监控指标、常见误杀原因与白名单处理逻辑、与 DMARC 报告 (RFC 7489) 的联动闭环。
 - [DMARC 策略怎么从 none 一步步升级到 reject（强制拦截伪造）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-policy-enforcement-escalation.html): DMARC 策略演进 none→quarantine→reject 需先确保合法邮件全认证通过、监控报告无异常，再逐步收紧。
 - [DMARC策略渐进式部署：从p=none到p=reject · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-policy-gradual.html): 系统阐述DMARC策略从p=none到p=quarantine再到p=reject的渐进式部署方法论，涵盖RFC 7489的策略配置、RUA/RUF报告分析、域对齐（Alignment）评估及全流程风险管理。
 - [DMARC p=reject 失败排查指南：Authentication-Results 头部分析、DNS 查询与 SPF/DKIM 校准](https://www.ztpop.net/kb/dmarc-reject-troubleshooting.html): DMARC p=reject 失败排查完整指南：如何通过 Authentication-Results 头部分析定位 DMARC 拒绝原因、查询 DMARC DNS 历史数据、解析 rua 聚合报告定位 SPF/DKIM 对齐问题。覆盖 Gmail/Outlook/163 等常见接收方场景。
 - [收到 DMARC 聚合（RUA）与失败（RUF）报告后该如何处理（RFC 7489）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-report-handling.html): DMARC 报告（RFC 7489）：RUA 聚合 XML 统计各IP认证结果、RUF 失败样本含原始信头；解析后补齐合法源对齐、收紧未授权源，先 none 再逐步 reject。
 - [DMARC 聚合报告（RUA）是什么？如何解读 RUA 报告里的 XML 数据？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-rua-report.html): DMARC 聚合报告（RUA）由接收方按 RFC 7489 定期发回 XML，汇总邮件的 SPF/DKIM/DMARC 结果；先 p=none 收报告确认无误再收紧策略。
-- [DMARC 标准演进 — RFC 7489 → RFC 9989/9990/9991：Tree Walk 算法弃用与聚合报告格式重构 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-standards-evolution.html): DMARC 标准体系自 RFC 7489 (2015) 到 RFC 9989/9990/9991 (2025) 的完整演进路径。RFC 7489 已被置为 Historic，新三件套将基础规范、聚合报告和失败报告分离为独立 RFC。Tree Walk 算法正式弃用，Identifier Alignment 规则精化，报告格式精简。含迁移对比表与实践路线。
+- [DMARC 标准演进 — RFC 9989/9990/9991（2026-05）正式发布：DNS Tree Walk 与标签体系重构 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarc-standards-evolution.html): DMARC 标准体系自 RFC 7489 (2015, Informational) 到 RFC 9989/9990/9991 (2026-05, Standards Track) 的完整演进路径。RFC 9989 废弃 RFC 7489 与 RFC 9091，引入 DNS Tree Walk 策略发现、np/psd/t 新标签，移除 pct/rf/ri 标签，RFC 9990/9991 将聚合报告与失败报告独立为规范。含变更对照表与部署路线。
 - [DMARCbis 变更总结：DMARC 协议升级为 IETF 标准轨道 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarcbis-changes-summary.html): IETF DMARC 工作组提交了 DMARC 协议更新草案。本文全面总结 DMARCbis 的核心变更：从信息性 RFC 升级为 IETF 标准轨道、PSL 被 DNS Tree Walk 和 PSD 取代、多个标签废弃、新标签引入，以及子域处理、互操作性的改进。
 - [DMARCbis 落地实践：DMARC 记录配置示例与 RFC 9989 新标签使用指南 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarcbis-config-examples.html): RFC 9989（DMARCbis）替代 RFC 7489 后，DMARC 记录配置发生了哪些变化？本文给出可直接复制使用的 DNS 记录配置示例：p/sp/np 三级策略、新增 t= 测试模式标签、psd= 公共后缀标签、rua/ruf 报告目标、以及从 RFC 7489 记录的迁移对照。
 - [DMARCbis 协议更新：RFC 9989 替代 RFC 7489 完整解读 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dmarcbis-rfc9989-overview.html): RFC 9989 标志着 DMARC 协议从 Informational RFC 正式升级为 Standards Track，替代服役 11 年的 RFC 7489 和 RFC 9091。本文全面解读 DNS Tree Walk、新增/移除标签、术语更新及对中国邮件系统的影响。
@@ -234,6 +315,7 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [DNS SRV 邮件服务发现 — RFC 6186：Autoconfig 与客户端自动配置 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dns-srv-email-discovery.html): DNS SRV 邮件服务发现 — RFC 6186：Autoconfig 与客户端自动配置 - 知识库 · ztpop 邮件技术知识库
 - [SPF 或 DKIM 的 TXT 记录太长发布失败，应该怎么正确切分？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dns-txt-character-string-chunking-spf-dkim.html): DNS 的 character-string 由一个长度字节加相应数量的字符构成，单段长度因此受限；较长的 SPF 或 DKIM 策略必须切成多个字符串放在同一条 TXT 记录内，由查询方拼接，而不是拆成多条记录。
 - [DNS 黑名单机制与应对策略 — DNSBL/RBL/URIBL 原理、查询方法与自建方案 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dnsbl-blacklist-guide.html): DNSBL (RFC 5782) 黑名单机制深度解析：Spamhaus SBL/XBL/PBL/DBL、Barracuda BRBL、SpamCop 的查询与解封流程、URIBL 邮件正文链接检测原理、rbldnsd 自建 DNSBL 完整方案。
+- [DNSBL 黑名单是怎么通过一次 DNS 查询判定的？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dnsbl-query-principle.html): 依据 RFC 5782 解释 DNSxL（DNS 黑名单/白名单）的查询原理：反转 IP 查询、127.0.0.0/8 保留段返回值的含义，以及它作为实时拦截信号的特点。
 - [DNSBL 实时黑名单是什么？邮件系统如何查询与处置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dnsbl-realtime-blacklist.html): DNSBL（RFC 5782）以 DNS 查询实时判黑，邮件系统在 SMTP 阶段查连接 IP，命中可拒收或打标记；建议多列表组合并留申诉。
 - [DNSBL / 实时黑名单（如 Spamhaus）是怎么判定的，误列后如何申诉解封？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dnsbl-realtime-blocklist-spamhaus.html): DNS 实时黑名单（DNSBL）的查询机制、主流列表（SpamHaus/Zen、SpamCop）误列原因与申诉解封流程。
 - [MX 记录如何决定入站邮件路由？优先级数值怎么算？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dnsmail-faq-01.html): MX 记录指定收件域的邮件服务器，优先级数值越小越优先，值必须是主机名而非 IP。
@@ -256,6 +338,10 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [Dovecot 索引文件损坏时应如何诊断与修复？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dovecot-index-corruption-repair.html): Dovecot 索引由 dovecot.index、dovecot.index.log、dovecot.index.cache 与 dovecot.list.index 组成，事务日志是唯一必须存在的文件；缺失时会自动重建，无法自愈时用 doveadm force-resync 修复，sdbox/mdbox 还会校验存储文件。
 - [基于 Dovecot dsync 复制的邮件高可用与灾备该如何设计？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dovecot-replication-ha-dr-design.html): Dovecot dsync 支持主主复制，基于索引文件异步同步，容忍高延迟且可从误删中恢复；但仅支持服务器成对部署、不支持 director、共享文件夹复制存在已知缺陷且官方无修复计划。
 - [《数据安全法》下企业邮件数据如何分类分级与保护？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dsl-data-security-law-email-compliance.html): 《数据安全法》要求企业按数据重要程度与危害程度对邮件数据分类分级，落实全流程安全管理制度、风险监测与重要数据保护责任。
+- [数据安全法要求的数据分类分级，邮件系统怎么落地？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dsl-email-data-classification.html): 数据安全法确立数据分类分级保护制度，要求各地区、各部门确定本地区本部门的重要数据具体目录，对列入目录的数据采取重点保护措施。邮件系统是组织数据的高度密集载体，但绝大多数单位从未对邮件数据做过分类分级。本文说明分类分级在邮件场景的含义、重要数据的判定口径，以及如何在邮件系统上把抽象的制度变成可执行的标签与策略。
+- [邮件数据的全生命周期安全怎么管？采集、存储、使用、提供、销毁各阶段要点 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dsl-email-data-lifecycle.html): 数据安全法强调全流程、全生命周期的数据安全。邮件数据从一封邮件被接收开始，经历存储、检索、转发、归档、调证、销毁等多个阶段，每个阶段都有对应的风险与管控要点。本文按邮件数据的生命周期阶段，逐段说明在采集最小化、存储加密、使用受控、提供合规、销毁彻底等方面的具体做法。
+- [数据安全法给数据处理者设了哪些义务？邮件系统运维怎么对应？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dsl-email-data-security-obligations.html): 数据安全法对数据处理者规定了一系列义务：建立健全全流程数据安全管理制度、组织开展数据安全教育培训、采取技术措施保障安全、开展风险监测与事件处置、定期进行风险评估等。邮件系统作为组织数据流转与沉淀的核心枢纽，是这些义务最集中的落点之一。本文把法条义务逐条映射到邮件系统运维的具体动作。
+- [邮件数据出境为什么同时受数据安全法和个保法约束？怎么区分处理？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dsl-email-important-data-export.html): 数据安全法对重要数据的出境设有专门要求，与个保法关于个人信息出境的规则形成叠加。邮件系统因分布式与跨域特性，极易在无意中把重要数据或批量个人信息送出境外。本文说明两类出境规则的边界、它们的交叉点，以及邮件系统如何在设计与运维上同时满足两套要求。
 - [《数据安全法》与 GB/T 43697-2024 要求邮件数据如何做分类分级？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dsl-gbt43697-email-data-grading.html): 《数据安全法》第二十一条确立数据分类分级保护制度，第二十七条要求在网络安全等级保护制度基础上履行数据安全保护义务；GB/T 43697-2024《数据安全技术 数据分类分级规则》为落地提供国家标准依据。
 - [邮件系统里的数据会不会构成重要数据？该怎么判定和处理？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/dsl-important-data-determination-email-system.html): 数据安全法建立了数据分类分级保护制度与重要数据目录机制。本文分析邮件系统中哪些数据形态可能落入重要数据范畴、判定应当遵循的思路，以及被判定为重要数据后需要落实的处理者义务与技术控制。
 - [端到端加密邮件与内容审计、反病毒之间的矛盾如何处理？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/e2ee-email-content-inspection-conflict.html): 端到端加密使网关无法查看正文，与反病毒、DLP、归档取证形成结构性冲突；NIST SP 800-177r1 与 SP 800-45v2 建议将检查点移至端点、按数据分级选择性加密，而非引入解密中间人。
@@ -267,6 +353,7 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [amavisd-new 在邮件内容过滤里扮演什么角色？它如何串联杀毒与反垃圾？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-amavis-content-filter.html): amavisd-new 是内容过滤中枢，以 SMTP 代理串联 SpamAssassin(反垃圾)与 ClamAV(杀毒)，按 policy banks 区分入出/内部策略，支持隔离/标记/拒；企业网关常用。
 - [邮件API服务架构：RESTful接口、速率限制与服务治理 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-api-service-architecture.html): 邮件系统对外开放API服务的技术架构设计，涵盖RESTful API设计规范、OAuth 2.0认证、速率限制策略（令牌桶/漏桶）、API网关设计及JMAP（RFC 8620）协议对比，面向开发者提供邮件集成的最佳实践。
 - [企业邮件归档与合规留存（如金融监管、等保）有哪些要点？邮件系统如何落地？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-archive-compliance.html): 邮件归档合规要点：Journaling 全量抄送、WORM 防篡改、eDiscovery 检索、保留期与合法冻结；区别于备份，是金融/等保合规与本地数据不出墙刚需。
+- [邮件归档合规留存要满足哪些要点，才不会在审计时掉链子？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-archive-compliance-retention.html): 依据 NIST SP 800-177 邮件安全与 Microsoft Purview 留存文档，归纳邮件归档合规留存的核心要点：不可篡改留存、法定留存期、检索与法务封存、与内容安全的衔接。
 - [邮件归档技术详解：合规、存储与检索 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-archiving.html): 全面解析邮件归档技术体系，涵盖归档与备份的核心区别、GDPR/SOX/等保2.0等法规对邮件留存的要求、WORM/JBOD/云归档等存储策略、eDiscovery电子发现与全文检索技术、邮件生命周期管理策略以及开源归档方案实践。
 - [邮件归档架构与合规设计 — Journaling vs Mailbox 归档、单实例存储、全文索引与法规留存 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-archiving-architecture.html): 邮件归档系统的架构设计完全指南。归档 vs 备份的本质区别与目标分化、Journaling（SMTP 捕获）与 Mailbox-level 归档两种技术路线的架构对比、单实例存储（SIS）去重与压缩策略、Lucene/Solr 全文索引架构、SOX 7 年 / 等保 2.0 的法规留存要求与 GDPR 删除权的张力。
 - [邮件归档法规合规深度指南：GB/T 37002、等保2.0与金融/证券/党政邮件留存技术实现 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-archiving-compliance-guide.html): 邮件归档法规合规深度指南：GB/T 37002（信息安全技术 电子邮件系统安全技术要求）、等保2.0三级邮件条款、金融/证券/党政行业邮件归档要求的技术映射。涵盖单副本存储（Maildir硬链接/dedup）、存储压缩策略、索引引擎选择（Elasticsearch/Sphinx/Solr）、30天/180天/永久分层策略的合规基线与成本模型，以及满足SEC Rule 17a-4和《证券法》电子证据要求的WORM存储实现（S3 Object Lock/Linux chattr+dm-crypt）。
@@ -292,12 +379,14 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [邮件客户端从基本认证迁移到 OAuth 2.0 该怎么规划？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-basic-auth-to-oauth2-migration.html): 基本认证把长期口令交给每个客户端，无法承载多因素与细粒度授权；RFC 6749 定义 OAuth 2.0 框架、RFC 7628 定义承载 OAuth 的 SASL 机制，配合 RFC 8314 的强制 TLS 要求可完成 IMAP/SMTP 认证迁移。
 - [BIMI（品牌标识邮件标识，IETF BIMI 草案）如何让收件箱显示“品牌 Logo”？它依赖什么前提？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-bimi-brand.html): BIMI 让通过 DMARC 强验证的邮件显示品牌 Logo，强依赖 DMARC p=quarantine/reject 对齐 + BIMI DNS 记录(SVG)，部分需 VMC 商标证书；非独立安全措施。
 - [IP 被列入 RBL/黑名单后如何“申请除名（delist）”？除名前必须先做什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-blacklist-delisting.html): IP 进 RBL 后除名前必须先止血(封开放中继/盗号/被黑根因)，再到 RBL 页面申诉并证明已修复；除名后信誉靠预热渐进恢复，监控上榜从源头预防。
+- [邮件炸弹和目录收集攻击是什么？邮件服务器该怎样抵御？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-bomb-directory-harvest-defense.html): 依据 RFC 2505 第 2.4、2.9、2.10、2.11 节，说明目录收集攻击利用 VRFY/EXPN 探测有效地址（应关闭对外 EXPN、限制 VRFY），邮件炸弹属 DoS（无限制转发/验证会打开攻击面），以及用速率/大小限制、快速拒绝验证失败、关闭 VRFY/EXPN 等服务器侧防御，并指出需与现代网关的信誉与过滤联动。
 - [退信分析系统架构与实践 - ztpop.net 邮件技术知识库](https://www.ztpop.net/kb/email-bounce-analysis-system.html): 深入剖析邮件退信分类体系、SMTP 错误代码、DSN 格式解析以及自动诊断链的设计与实现，帮助运维团队构建高效的退信分析系统。
 - [“商业邮件诈骗(BEC)”怎么防？技术与管理手段如何配合？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-business-email-compromise-defense.html): BEC 防法是认证+流程+意识三层: 强 DMARC 抑域冒用、外部/相似域标注、转账前电话核实与双人审批、员工培训;难靠单一技术,需技术与管理的配合。
 - [邮件系统灰度发布与回滚方案：从DNS TTL到rsync恢复](https://www.ztpop.net/kb/email-canary-rollback.html): 邮件系统灰度发布与回滚方案：多MX优先级graded rollout策略、DNS TTL逐步降低方法、smtp_generic_maps测试流量分流、rsync回滚流程与全量恢复操作。
 - [邮件系统容量规划：从用户增长模型到硬件资源预算 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-capacity-planning.html): 邮件系统容量规划的系统化方法论，包含用户增长预测模型、存储IOPS计算、邮件流量带宽估算、数据库连接池规划及扩容触发指标，为邮件基础设施扩容提供数据驱动的决策框架。
 - [邮件传输能否“证书锁定（Certificate Pinning）”防中间人？和 Web 的 HPKP 有何异同？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-certificate-pinning-smtp.html): 证书锁定只信任固定公钥防 CA 被破的中间人；邮件侧用 DANE(TLSA,有DNSSEC背书)实现等效锁定，比 Web 已弃用的 HPKP 更可靠；前提是 DNSSEC 到位。
 - [ClamAV 如何为邮件“扫描病毒/恶意附件”？它与邮件系统怎么集成？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-clamav-integration.html): ClamAV 开源反病毒引擎用 CVD 特征库扫病毒附件，clamd 守护提供扫描服务；邮件经 milter 或 amavis 集成，扫到恶意附件删/隔离/标记；freshclam 定时更新库。
+- [邮件客户端怎么「只填账号密码」就自动配好收发？SRV 自动发现的原理是什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-client-autoconfig-rfc6186.html): 依据 RFC 6186 第 3、3.1、3.2、3.3 节与 Microsoft Autodiscover 文档，说明用 _submission._tcp(587)、_imaps._tcp(993)、_imap._tcp(143)、_pop3s._tcp(995)、_pop3._tcp(110) 等 SRV 记录让 MUA 自动配置收发，并补充 Exchange 的 SCP 与 autodiscover.xml 查找机制。
 - [邮件集群架构设计：MX 分流、MTA 多节点与 LDAP 复制 — ztpop 知识库](https://www.ztpop.net/kb/email-cluster-architecture.html): 邮件集群高可用设计：MX 记录优先级分流、MTA 多节点横向扩展、LDAP 多主复制与同步、NFS/GFS2 共享存储方案。
 - [邮件 IP/域信誉建立与预热完整策略 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-cold-warm-complete-strategy.html): 基于 Google/Microsoft/M3AAWG 最佳实践，详解邮件 IP 和域的信誉建立策略：30 天标准预热模型、分箱策略（按邮箱服务商分段预热）、关键监测指标及常见失误。
 - [企业邮件合规与法规要求全景 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-compliance.html): 企业邮件系统合规要求全景指南。涵盖中国等保2.0（GB/T 22239-2019）邮件系统安全要求、GDPR 数据保护义务、SOX 法案邮件留存、HIPAA 医疗隐私、网络安全法与数据安全法、邮件审计日志标准、跨境数据传输合规以及完整的合规检查清单。
@@ -345,6 +434,7 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [邮件系统高可用架构设计 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-ha-architecture.html): 邮件系统高可用架构设计完整指南。涵盖 MX 优先级与故障转移机制、Active-Active 与 Active-Passive 模式对比、LVS/HAProxy 负载均衡配置、数据库主从复制、DRBD/GlusterFS 存储冗余、异地容灾设计以及单点故障（SPOF）系统化分析方法。
 - [邮件系统高可用架构演进 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-ha-evolution.html): 邮件系统高可用架构演进：DAG 架构、仲裁与见证服务器、自动故障转移、数据库级与服务器级 HA、异地冗余（Stretched DAG、滞后副本）、Managed Availability 健康监控。
 - [邮件头分析与取证完整指南 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-header-analysis-full-guide.html): 基于 RFC 5321/5322 的邮件头分析与取证指南，详解 Received 链路径分析、SPF/DKIM/DMARC 认证结果解读、ARC 链验证及邮件头伪造特征识别。
+- [邮件头溯源到底该怎么读？哪些字段是标准规定可信的？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-header-forensic-tracing.html): 依据 RFC 5321 第 4.4、4.1.1.4、3.7.2 节，RFC 5322 第 3.6、3.6.4、3.6.6、3.6.7 节与 RFC 8601 第 2.2、2.5、2.7、5 节，说明邮件头溯源中 Received 的写入规则与顺序约束、Message-ID 与会话串联字段的用法、Authentication-Results 的读法，以及边界上必须剥离伪造认证头的规范要求。
 - [邮件头深度分析：追踪、取证与安全审计 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-header-forensics.html): 邮件头取证分析完整指南。详解 Received 头链追踪技术、Authentication-Results 头解读（SPF/DKIM/DMARC）、Message-ID 与 In-Reply-To 关联分析、X-Headers 自定义头应用、邮件伪造检测方法以及真实钓鱼邮件头分析案例。
 - [什么是“邮件头注入（Email Header Injection）”？Web 表单发信场景如何被利用、如何防护？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-header-injection.html): 邮件头注入是 Web 应用未过滤 CRLF 致攻击者在用户输入里插入额外头（Bcc 等）滥用邮件系统；防护需 CRLF 过滤、用成熟邮件库、网关异常告警，属 CWE-93 应用层漏洞。
 - [如何防御邮件信头注入攻击？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-header-injection-defense.html): 邮件信头注入利用未过滤的换行符插入伪造信头，防御核心是拒绝 CRLF、校验地址并借助可信库构造邮件。
@@ -412,9 +502,9 @@ ztpop.net（上海辰童科技有限公司）提供国产邮件系统「昆仑�
 - [CIS 邮件安全基准包含哪些关键控制项？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-security-benchmark-cis.html): CIS 邮件安全基准围绕身份鉴别、传输加密、反钓鱼认证（SPF/DKIM/DMARC）、审计与配置加固，提供可审计的落地清单。
 - [邮件系统安全加固检查清单应包含哪些项？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-security-hardening-checklist.html): 邮件系统安全加固应从网络边界、认证加密、反钓鱼与监控审计四层面逐项核查，形成可复检的加固清单。
 - [邮件安全事件应急响应流程手册 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-security-incident-response.html): 覆盖邮件系统安全事件的分级分类、响应流程（含检测→分析→遏制→清除→恢复→复盘六阶段）和技术工具链，参考NIST SP 800-61与RFC 2350标准编制。
+- [邮件安全事件响应预案怎么写才真正用得上？哪些决定必须在事发前就做完？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-security-incident-response-plan.html): 多数邮件应急预案在真正出事时用不上，原因不是写得不够长，而是把需要当场决策的事留到了当场。本文按 NIST SP 800-61 Rev. 3 与 CISA 响应手册的思路，给出邮件场景的事件分类、预授权边界、分级判据、取证优先原则与演练方法，让预案从文档变成可执行的动作序列。
 - [Email Security Policy as Code 实践：SPF/DKIM/DMARC/MTA-STS 策略代码化 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-security-policy-as-code.html): Email Security Policy as Code 实践深度指南——将SPF/DKIM/DMARC/MTA-STS策略定义为代码（Terraform/DNS作为数据源）、CI/CD管道中的邮件安全策略测试与自动化验证。
-- [邮件安全威胁全景分析 — 钓鱼攻击、BEC 商业诈骗、勒索软件与 APT 邮件攻击向量 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-security-threats.html
-https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护体系构建指南：从 CVE-2026-42897 到纵深防御（OWASP 输出编码、CSP/Cookie 加固、WAF 过滤、检测响应、GB/T 37002-2026 合规衔接）): 邮件安全威胁全景：鱼叉/克隆/语音/短信钓鱼攻击链、BEC 商业邮件诈骗（CEO Fraud/Payroll Diversion）、勒索软件邮件分发、恶意附件（Office 宏/PDF/ISO）、URL 重定向与信誉检查、M3AAWG 反滥用最佳实践、防御纵深模型（网关→沙盒→EDR）。
+- [邮件安全威胁全景分析 — 钓鱼攻击、BEC 商业诈骗、勒索软件与 APT 邮件攻击向量 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-security-threats.html): 邮件安全威胁全景：鱼叉/克隆/语音/短信钓鱼攻击链、BEC 商业邮件诈骗（CEO Fraud/Payroll Diversion）、勒索软件邮件分发、恶意附件（Office 宏/PDF/ISO）、URL 重定向与信誉检查、M3AAWG 反滥用最佳实践、防御纵深模型（网关→沙盒→EDR）。
 - [零信任架构在邮件安全中的应用：NIST SP 800-207 邮件领域映射 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-security-zero-trust.html): 将 NIST SP 800-207 零信任核心原则映射到邮件安全领域，涵盖身份验证增强(SPF/DKIM/DMARC作为身份信号)、微隔离、持续信任评估和邮件流最小权限设计。
 - [邮件安全事件如何与 SIEM 集成实现集中检测？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-siem-integration-detection.html): 将 MTA/网关日志、认证结果、DLP 命中等以 Syslog/CEF/JSON 汇聚到 SIEM，通过关联规则实现伪造与异常外发等集中检测。
 - [Sieve 邮件过滤语言（RFC 5228）是什么？为什么服务端过滤比客户端规则更可靠？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/email-sieve-filter.html): Sieve(RFC5228) 是服务端运行的邮件过滤脚本语言，自动分类/转发/标记，不依赖客户端在线且跨端一致、标准可移植；企业可让用户自助设规则。
@@ -488,6 +578,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [Exchange混合部署架构与邮件流排错：On-Prem ↔ Exchange Online ↔ 第三方全链路解析 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-hybrid-mailflow-architecture.html): Exchange混合部署架构与邮件流排错：On-Prem ↔ Exchange Online ↔ 第三方全链路解析 - 知识库 · ztpop 邮件技术知识库
 - [Exchange 混合部署邮件流调试 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-hybrid-mailflow-troubleshooting.html): Exchange 混合部署（云端/本地/国产系统共存）场景下的邮件流故障排查指南。涵盖延迟入站（delayed fan-out）、非信任域邮件流、连接器配置差异、Troubleshooting 命令实战。
 - [Exchange 邮件流（Mail Flow）由哪些角色组成？内外投递如何路由？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-mail-flow.html): Exchange 邮件流由 Mailbox 角色（前端/枢纽/邮箱传输）与可选边缘传输组成；入站走 MX→前端→Hub→邮箱，出站经发送连接器；接收/发送连接器是路由与权限总闸。
+- [Exchange 邮箱迁移有哪几种官方方式？各自适用多大规模？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-mailbox-migration-methods.html): 翻译整理 Microsoft 官方迁移文档：一次性全量迁移、分批迁移与混合部署迁移的版本与邮箱数量适用条件（含 2000 与 150 两个阈值）、混合下线等反向迁移的用户预配要求，以及 PST 导入服务与用户自助导入两条补充路径。
 - [Exchange 邮箱配额策略设计 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-mailbox-quota-strategy.html): Exchange 邮箱配额策略的完整设计指南：mailbox quota / archive quota / custom quota overrides、DB 级 vs 用户级策略、超标自动处理（禁止收发 vs 只收不发）、共享邮箱配额、配额监控与告警。
 - [Exchange 迁移规划框架：评估、选型与实施方法论 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-migration-planning-framework.html): 从 Exchange 向替代邮件系统迁移的完整规划框架，含技术评估矩阵、业务连续性考量、数据迁移策略分类、回滚方案设计。系统化的邮件系统迁移决策树与风险评估模型。
 - [跨国Exchange部署向国产系统迁移 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-multinational-migration.html): 跨国Exchange多地域部署迁移到国产邮件系统的架构设计方案。涵盖多站点合并MX路由、站点粘性策略迁移、跨地域目录同步延迟分析与补偿策略。
@@ -497,6 +588,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [Exchange 混合部署的邮件流有哪几种路由方式？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-online-hybrid-mailflow-config.html): 微软官方文档说明混合部署的入站路由取决于 MX 记录指向（Microsoft 365 或本地），出站路由由混合配置向导中的集中式邮件传输开关决定，向导本身不配置入站 MX。
 - [Exchange Online 的邮件流规则与连接器该如何配置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-online-mailflow-rules-connectors.html): 微软官方文档说明 Exchange Online 邮件流规则由条件、例外、动作与属性四部分构成，优先级 0 最高；连接器仅在本地服务器、伙伴组织限制或设备中继等场景才需要手工建立。
 - [邮件系统迁移策略：IMAP 迁移、混合共存与分阶段切流 — ztpop 知识库](https://www.ztpop.net/kb/exchange-online-migration-strategy.html): 邮件系统迁移方案：IMAP 批量迁移、SMTP 共存路由、DNS MX 切换策略、用户分批迁移与快速回退机制。
+- [Exchange Online / Microsoft 365 里的 SCL 与 BCL 分数分别是什么，如何据此处理邮件？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-online-scl-bcl-score-handling.html): 解释 Microsoft 365 中 SCL 与 BCL 分数含义、相关反垃圾邮件标头及如何据此用邮件流规则处理邮件（翻译自 Microsoft Learn）。
 - [Exchange OWA 存储型 XSS 零日 CVE-2026-42897：\u201cToast 攻击\u201d应急防护指南 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-owa-xss-cve-2026-42897.html): CVE-2026-42897 Exchange Server OWA 存储型 XSS 零日漏洞深度解析：Toast 半点击攻击链、受影响版本、EOMT 临时缓解、官方补丁与纵深防御加固清单，含 GB/T 37002-2026 合规关联。
 - [Exchange 权限管理向国产邮件系统迁移 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-permission-migration.html): Exchange RBAC 角色（Organization Management / Recipient Management / Server Management / Viewer）向国产邮件系统的权限映射、安全组同步方案与 ACL 权限矩阵转换方法论。
 - [替代Exchange：国产邮件功能对标分析 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-replacement-domestic.html): 从核心传输协议（SMTP/POP3/IMAP）、协作功能（日历/联系人/任务）、管理能力、安全合规以及AD/LDAP集成等维度，系统对标国产邮件系统与微软Exchange的功能差距与领先特性。
@@ -504,6 +596,8 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [Exchange 替代六大维度对比：国产邮件系统技术评估框架 | ztpop.net 知识库](https://www.ztpop.net/kb/exchange-replacement-six-dimensions-comparison.html): Exchange替代六大维度对比：从核心架构、信创适配、安全体系、运维管理、存储性能到AI智能能力，构建 Exchange EOL 时代的国产邮件系统选型评估框架。
 - [Exchange Server SE 订阅版技术详解：升级路径、许可与功能变化 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-se-subscription-guide.html): Exchange Server Subscription Edition (SE) RTM代码与Exchange 2019 CU15等效，支持2016/2019原地升级。新许可模型为年度订阅制，不再提供永久授权。本文涵盖SE的系统要求、升级路径与许可变化。
 - [Exchange邮件系统数据迁移完整指南：用户、邮件、地址簿与日程无损迁移 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-to-turboex-migration.html): 从Exchange邮件系统迁移到国产平台需完整迁移用户数据、邮件数据、通讯录、会议日程。本文结合Microsoft Exchange迁移规范与国产邮件平台的实操经验，提供三步迁移法：AD域集成→邮件全量迁移→完整性校验，覆盖增量同步、PST归档迁移与割接策略。
+- [历史邮件从 Exchange 迁移到国产系统：数据风险与保障 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exchange-to-xinchuang-migration-risk.html): Exchange 邮件迁移到国产信创系统的核心风险是邮件与元数据丢失、文件夹结构错位、 attachments 损坏。本文给出迁移前统计、分批灰度、回滚预案与完整性校验四步保障法。
+- [Exim 的 ACL 里 acl_smtp_rcpt 与 acl_smtp_data 分别在何时触发，如何拒绝？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exim-acl-smtp-rcpt-data-reject.html): 说明 Exim ACL 中 acl_smtp_rcpt 与 acl_smtp_data 的触发时机差异及拒绝写法（翻译自 Exim 官方文档）。
 - [Exim 邮件服务器的安全要点（ACL、TLS、防中继、宏风险）有哪些？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exim-config-security.html): Exim 安全要点：acl_smtp_* 控中继、TLS 强制、谨慎宏与 ${run} 防注入、版本最新(历史多CVE)；变更后 exim -bV 校验，ratelimit 限流。
 - [Exim 崩溃（crash）了，应该如何排查与上报？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exim-faq-01.html): Exim 崩溃的排查与上报：先升级到最新版，用 -d/-M/-bh/-bt 调试并保留可复现邮件，严重问题查 paniclog。
 - [为什么 Exim 不在 SMTP 阶段就拒收收件人不存在的邮件？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exim-faq-02.html): Exim 不在 SMTP 拒绝不存在收件人的原因：由 acl_smtp_rcpt 定义的 RCPT 检查控制，可用 -bh 模拟并加收件人校验。
@@ -513,6 +607,8 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [Exim 拒绝中继并提示“failed to find host name from IP address”，明明 ACL 里写了该 IP，为什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exim-faq-06.html): Exim 拒绝中继 failed to find host name from IP：主机列表第一项依赖反向解析，应把显式 IP 放前或拆成两段 ACL。
 - [如何配置 Exim 仅在 SMTP 会话已加密（TLS）时才通告 SMTP 认证？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exim-faq-07.html): Exim 仅在 TLS 时通告 SMTP 认证：auth_advertise_hosts = ${if eq{$tls_cipher}{}{}{*}}，避免明文暴露认证。
 - [如何在 Exim 中显式拒收一组指定域名（并给出自定义错误）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exim-faq-08.html): Exim 显式拒收域名：定义 domainlist reject_domains，在 ACL deny 并附自定义报错，命令行提交另加 redirect 路由器。
+- [Exim 的队列运行（queue runner）相关命令怎么用（exim -q / -M / -qf 等）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exim-queue-runner-commands.html): 汇总 Exim 队列运行相关命令（-q / -qf / -M / -bp 等）的用法与冻结邮件处理（翻译自 Exim 官方文档）。
+- [如何调试 Exim 的 router / transport 匹配（用 -bt / -d）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/exim-router-transport-debug-bt.html): 介绍用 exim -bt 与 -d 调试 router/transport 匹配、定位邮件投递路径的方法（翻译自 Exim 官方文档）。
 - [地址与收件方 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/faq/address-and-recipient.html): 地址与收件方
 - [客户端发信被拒，提示发件人地址与 SMTP 认证账号不匹配（'sender rejected' / AUP#Out-15 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/faq/address-and-recipient-01.html): 客户端发信被拒，提示发件人地址与 SMTP 认证账号不匹配（'sender rejected' / AUP#Out-1500），怎么修？
 - [发信退信'454 Transient reject by behaviour spam'或'554 Reject by  - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/faq/address-and-recipient-02.html): 发信退信'454 Transient reject by behaviour spam'或'554 Reject by behaviour spam'，发信频率
@@ -780,6 +876,10 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [Gmail 对邮件格式与基础设施（From、PTR、显示名）有什么要求？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gmail-faq-07.html): Gmail 对邮件格式（From 唯一、Message-ID）与基础设施（PTR 一致、显示名）的要求（翻译自 Google 官方文档）。
 - [不满足 Gmail 发件人指南会有什么后果？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gmail-faq-08.html): 不满足 Gmail 发件人指南的后果：标记垃圾、5.7.26 拒绝、限流、共享 IP 信誉连带等（翻译自 Google 官方文档）。
 - [Google 官方披露的 Gmail 反诈骗与滥用治理成效如何？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gmail-scam-defense-ai-2026.html): Google 官方 2026 年 5 月披露：Gmail 拦截超过 99.9% 的垃圾、钓鱼与恶意邮件，每天阻断近 150 亿封无用邮件，并通过全球信号交换共享威胁数据。
+- [商用密码应用安全性评估（密评）和邮件系统有什么关系？邮件系统为什么必须过密评？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gmt-email-crypto-assessment.html): 商用密码应用安全性评估（简称密评）是对采用商用密码技术、产品和服务集成建设的网络与信息系统密码应用的合规性、正确性和有效性进行的评估。关键信息基础设施、网络安全等级保护第三级及以上系统、国家政务信息系统等，均须开展密评。邮件系统因承载大量敏感通信，常落在上述范围内。本文说明密评的适用边界、评估的四类对象，以及邮件系统如何通过。
+- [国密算法 SM2/SM3/SM4 在邮件系统里分别用在哪？怎么替换原有的 RSA/SHA/AES？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gmt-email-domestic-crypto.html): 国家认可的密码算法体系中，SM2 用于非对称加密与数字签名，SM3 用于杂凑（哈希），SM4 用于对称加密，三者共同构成替代 RSA/SHA/AES 等国密化改造的基础。邮件系统在身份鉴别、传输加密、邮件签名与加密、日志完整性等场景都可落国密。本文说明三种算法在邮件协议栈中的具体落点及替换要点。
+- [信创邮件系统要用哪些合规的密码产品与证书体系？密钥和签名验签怎么管？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gmt-email-trust-system.html): 国密化不是只换算法，还需要配套的合规密码产品与信任体系：证书认证系统（CA）、密钥管理系统（KMS）、签名验签服务器、时间戳服务等，均需符合 GM/T 系列标准并通过检测认证。邮件系统作为依赖方，要在证书信任链、密钥全生命周期管理、时间戳与不可否认性上满足要求。本文说明信创邮件系统的密码产品与信任体系合规要点。
+- [邮件系统做信创替代（国产化迁移）时，合规上最容易踩哪些坑？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gmt-email-xinchuang-migration.html): 信创替代要求将邮件系统从原有技术栈迁移到信创技术栈，过程中不仅要保证业务连续，还要满足数据安全、密码合规、互联互通等多重要求。迁移期往往是最脆弱的窗口：双栈并行时边界模糊、数据在旧新系统间流转、旧系统的密码与留存策略未必延续。本文梳理信创迁移各阶段的合规风险点与应对。
 - [Google Cloud Threat Horizons 报告揭示了哪些初始访问与凭据威胁趋势？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/google-cloud-threat-horizons-2026.html): Google Cloud Threat Horizons H1-2026 报告显示，2025 下半年第三方软件漏洞（44.5%）首次超过弱凭据（27.2%）成为云环境首要初始访问途径，漏洞披露到大规模利用的窗口从数周缩短到数天。
 - [Google 批量发件方指南（2024）：SPF/DKIM/DMARC 强制与 0.30% 投诉红线 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/google-email-sender-guidelines-2024.html): 译自 Google《Email sender guidelines》（2024）。解读日发 ≥5,000 封的强制要求：SPF+DKIM+DMARC 对齐、TLS、投诉率 <0.30%、RFC 8058 一键退订，作为发往 Gmail 的合规基线。
 - [什么是 SPF（发件方策略框架）？它如何防止我的邮件被当成垃圾邮件？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/google-faq-01.html): 解释 SPF 是什么、如何通过 DNS TXT 记录声明授权发信服务器以防止邮件被标垃圾（翻译自 Google Workspace 官方帮助）。
@@ -793,13 +893,36 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [Google Postmaster Tools 指南：监控发往 Gmail 的域名与 IP 声誉 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/google-postmaster-tools-guide.html): 解读 Google Postmaster Tools 的核心功能：域名/IP 声誉评分、 spam 投诉率、DMARC 合规度、投递错误率、安全舆情。作为发往 Gmail 的声誉可观测性入口。
 - [Google Workspace 高级防护项目如何启用与配置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/google-workspace-advanced-protection.html): Google 高级防护计划强制安全密钥多因素与增强邮件扫描，并在 Workspace 侧强化 DMARC 以抵御钓鱼与 OAuth 滥用。
 - [向 Gmail 个人账户发信必须满足哪些发件人认证要求？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/google-workspace-bulk-sender-requirements.html): Google 官方发件人指南要求所有发件人使用 TLS、配置 SPF 或 DKIM、并具备匹配的正反向 DNS；日发 5000 封以上的批量发件人还须 SPF+DKIM+DMARC 齐备、一键退订与垃圾率低于 0.10%。
+- [Google Workspace 内容合规（Content compliance）规则怎么设，能做什么动作？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/google-workspace-content-compliance-rules.html): 讲解 Google Workspace 内容合规规则的适用范围、表达式类型、可执行动作与多规则冲突优先级（翻译自 Google Workspace 官方帮助）。
 - [Google Workspace 域名邮箱如何配置 SPF/DKIM/DMARC？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/google-workspace-email-auth-setup.html): Google Workspace 配置=DNS 加 include:_spf.google.com 的 SPF+Admin 生成 DKIM 密钥发 CNAME+_dmarc TXT 从 none 递进到 reject,配合报表核验。
+- [Google Workspace 入站网关（Inbound Gateway）如何配置才能正确处理 SPF？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/google-workspace-inbound-gateway-spf-handling.html): 说明 Google Workspace 入站网关如何声明可信中继、使 SPF 针对真实来源校验（翻译自 Google Workspace 官方帮助）。
 - [Google Workspace 的邮件路由与内容合规规则怎么设计？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/google-workspace-mail-routing-compliance.html): Google 官方文档区分 Default routing 与 Routing 两级路由设置，并说明 Content compliance 规则的四类表达式（简单、高级、元数据、预定义内容匹配）与拒收、隔离、修改三类动作。
+- [Google Workspace 的“拆分递送（Split delivery）”与“双重递送（Dual delivery）”有何区别，怎么配？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/google-workspace-split-delivery-dual-delivery.html): 对比 Google Workspace 拆分递送与双重递送的差异、配置步骤与 SPF 注意事项（翻译自 Google Workspace 官方帮助）。
 - [政府采购与信创邮件系统实施路径 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gov-xinchuang-email-procurement.html): 从政府采购法规和信创技术路线两个维度，分析党政机关和事业单位邮件系统的采购合规要求、信创适配方案和实施路径，涵盖产品选型、软件硬件适配、迁移策略和验收测评等关键环节。
 - [灰名单（greylisting）是什么？为什么能拦垃圾邮件？如何配置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/greylisting-basics.html): 灰名单（RFC 6647）对陌生三元组先临时拒收、要求重试，借合法 MTA 会重试而多数垃圾不重试来过滤；需配白名单避免误伤。
+- [灰名单（Greylisting）为什么能让大部分垃圾邮件自己消失？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/greylisting-defence.html): 依据 RFC 6647 解释灰名单原理：对陌生（IP,发件人,收件人）三元组首次临时拒收 4xx、要求合法 MTA 重试，及其对批量群发与误杀的权衡。
+- [灰名单（greylisting）为什么能让大部分垃圾邮件自动退散？原理和坑是什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/greylisting-deferral-mechanism.html): 依据 RFC 6647 第 1、2、3 节，说明灰名单是对未知发件返回 SMTP 4xx 临时失败并邀请重试的机制、原理是合规 MTA 按 RFC 5321 重试而垃圾软件常不重试、用（发送IP、信封发件人、信封收件人）三元组识别重试，并指出投递延迟、非重试客户端丢信、记录老化与可预测模式等坑，建议与 SPF/DKIM/DMARC、DNSBL 联动并白名单。
 - [邮件系统灰名单 Greylisting 原理与部署 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/greylisting-guide.html): 邮件灰名单（Greylisting）技术原理与生产部署全指南：三元组匹配机制、SMTP 451 临时拒收、RFC 6647 适用性声明、Postfix postgrey 部署步骤、SQLgrey MySQL 后端方案、自动白名单策略及延迟交付等常见问题排查。
 - [灰名单（greylisting）防垃圾的原理是什么，有哪些副作用？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/greylisting-spam-defense.html): 灰名单对陌生发件人首次连接临时拒收（4xx），要求其稍后重发；多数垃圾僵尸不重试，合法 MTA 会按队列重试从而通过。
 - [国密密码学在邮件系统中的应用 — SM2/SM3/SM4/TLCP 算法体系与工程实践 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/guomi-email-cryptography.html): 完整解析国密算法在邮件系统中的工程实践：SM2 椭圆曲线签名/加密、SM3 哈希、SM4 分组密码、TLCP（GB/T 38636）TLS 国密传输、SM9 IBE 邮件加密、RFC 8998 国密 TLS 1.3 密码套件，含 Tongsuo/BabaSSL 编译部署与 Postfix/Dovecot 集成。
+- [邮件转发导致 DMARC 失败，ARC 能解决吗？怎么部署？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-arc-forwarding-chain.html): 依据 RFC 7960 对间接邮件流的分析与 RFC 8617 的 ARC 协议定义，说明转发场景下 SPF 与 DKIM 失效的原因、ARC 三组头字段的作用，以及接收侧信任 ARC 链的判定条件与部署顺序。
+- [ARF 投诉反馈环（FBL）怎么接？收到投诉后该做什么处置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-arf-feedback-loop-handling.html): 依据 RFC 5965 定义的反馈报告格式与 M3AAWG 公开文档，说明 ARF 报文的结构与可提取字段、投诉率的判定基线，以及自动退订、来源定位与信誉修复的处置流程。
+- [反向散射退信（Backscatter）怎么产生？如何在网关侧治理？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-backscatter-prevention.html): 依据 Postfix BACKSCATTER_README 与 RFC 3834、RFC 5321，解释先收后退造成的无辜退信问题，给出会话内拒绝无效收件人、限制自动回复与收敛退信内容的可操作配置。
+- [退信怎么分类？硬退和软退如何按状态码判定？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-bounce-code-classification.html): 依据 RFC 3463 增强状态码与 RFC 3464 投递状态通知格式，给出退信的机器可判定分类方法、软退转硬退的重试与抑制策略，以及从 DSN 报文中提取判定字段的具体位置。
+- [DMARC 报告怎么接入 SOC？告警规则应该怎么设计？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-dmarc-reports-to-soc.html): 依据 RFC 7489 第 7 节的聚合与失败报告机制以及 RFC 8460 的 TLS 报告，给出报告采集、解析入库、基线建立与告警规则的落地方法，并说明失败报告的隐私处置要求。
+- [Exchange 接收连接器怎么加固？匿名与认证连接器如何分离？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-exchange-receive-connector-hardening.html): 依据 Microsoft Exchange 接收连接器文档与 RFC 6409、RFC 4954，说明按用途拆分连接器的原则、远程 IP 范围与权限组的配置边界，以及内部中继连接器最常见的开放中继风险点与验证方法。
+- [灰名单（Greylisting）延迟多久合适？会不会导致丢信？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-greylisting-tuning.html): 依据 RFC 6647，说明灰名单的三元组判定原理、初始延迟与白名单有效期的取值权衡，并给出对时效性邮件（验证码、告警）的豁免策略与退出灰名单的判定条件。
+- [邮件头伪造怎么识别？From 显示名和信封发件人不一致算不算问题？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-header-forgery-detection.html): 依据 RFC 5322 头字段定义、RFC 8601 认证结果头与 RFC 7489 的对齐要求，梳理信封发件人与头部 From 的关系、显示名欺骗与同形字的判定逻辑，并给出网关侧可落地的检测规则。
+- [MTA-STS 上线后靠什么观测？TLS 报告里该看哪些字段？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-mta-sts-tlsrpt-monitoring.html): 依据 RFC 8461 的策略模式与 RFC 8460 的 TLS 报告格式，给出 testing 到 enforce 的推进判据、报告中失败类型的含义与定位方法，以及策略回滚受 max_age 缓存约束的处置要点。
+- [怎么确认网关没有成为开放中继？中继滥用如何防护？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-open-relay-prevention.html): 依据 RFC 5321 对中继的要求与 Postfix SMTPD_ACCESS_README，说明 relay_domains 与 mynetworks 的作用边界、限制条件的书写顺序，并给出自检验证方法与被滥用后的排查步骤。
+- [邮件网关入站 TLS 策略怎么配才既安全又不丢信？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-postfix-inbound-tls-policy.html): 依据 RFC 3207 与 Postfix TLS_README，说明入站 SMTP 为什么不能强制 TLS、smtpd_tls_security_level 各档位的语义差异，并给出协议版本与加密套件收敛、日志观测的可操作配置。
+- [postscreen 前置过滤怎么配？哪些测试可以安全启用？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-postscreen-zombie-filter.html): 依据 Postfix POSTSCREEN_README，说明前置过滤在连接层拦截僵尸网络的原理，区分连接前测试与连接后深度测试的风险差异，并给出白名单、缓存与分阶段上线的可操作步骤。
+- [未使用的子域被冒用怎么办？PSD DMARC 解决什么问题？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-psd-dmarc-subdomain-gap.html): 依据 RFC 9091 对公共后缀域 DMARC 扩展的定义，说明组织域策略无法覆盖的场景、sp 标签与 psd 标签的差异，并给出未用子域与停用域名的防冒用配置清单。
+- [邮件队列突然堆积怎么排查？该按什么顺序定位？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-queue-backlog-triage.html): 依据 Postfix QSHAPE_README 与 postqueue(1)，给出按队列类型、按域、按发件人三步定位堆积根因的方法，区分对端限流、DNS 故障、自循环与队列风暴四类典型形态及其处置。
+- [邮件网关的速率限制怎么设？如何防住突发爆发流量？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-rate-limit-burst-protection.html): 依据 Postfix anvil(8) 与 postconf(5)，区分连接数、连接速率、消息速率、收件人速率四类限额的作用面，给出基线取值方法、白名单例外与被限流后的判定与回退流程。
+- [怎么判定一个发件人可疑？发件人信誉看哪些信号？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-sender-reputation-signals.html): 依据 Exchange 发件人信誉机制与 RFC 5321、RFC 7208，梳理连接级、协议级、身份级、行为级四类信誉信号的采集与加权方法，并给出信誉降级后的处置分级与申诉恢复路径。
+- [SMTP AUTH 认证失败（535）该怎么定位和处置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-smtp-auth-failure-triage.html): 依据 RFC 4954 与 Postfix SASL_README，拆解 535/534/538 等认证响应码的语义差异，给出机制协商、TLS 前置、后端 SASL 链路的分层排查顺序与暴力破解的判定阈值。
+- [反垃圾评分阈值该怎么调？分数线怎么定才不误杀？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/gw-spam-score-threshold-tuning.html): 说明评分式反垃圾引擎的阈值与动作分层设计，依据 Microsoft Exchange 反垃圾文档与 NIST SP 800-177 Rev.1，给出以误报率为约束的调优方法、灰区隔离策略与规则权重变更的验证流程。
 - [如何阅读邮件头中的 Received 链（Received chain）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/header-faq-01.html): 邮件头中多个 Received 头自上而下回溯传输路径，最底部最接近真实发送源，是甄别伪造跳转的核心证据。
 - [Received 头里的 from / by / with / for / id / date 各代表什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/header-faq-02.html): Received 头的 from 指来源连接（含真实 IP）、by 指本跳接收服务器、with 指协议、for 指信封收件人、id/date 为本地标识与时间戳。
 - [如何识别伪造的发件人显示名（From 显示名欺骗 / Display Name Spoofing）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/header-faq-03.html): 显示名欺骗靠伪装 From 的人名而非域名；识别须展开看真实地址、精确比对域名，并以 DKIM/DMARC 对域名的认证结果为准。
@@ -830,23 +953,42 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [IMAP 的 METADATA / ANNOTATE（RFC 5464/5257）能存“邮件/文件夹的自定义元数据”吗？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/imap-metadata-annotate.html): IMAP METADATA(RFC5464) 在服务器/邮箱/邮件上存键值注解(颜色/备注/共享注释)供多端同步，分私有/共享两类，共享需 ACL；高级客户端可做服务端笔记同步。
 - [IMAP 的 NAMESPACE 扩展（RFC 2342）解决什么？它如何支持“共享/公共文件夹”？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/imap-namespace-rfc2342.html): IMAP NAMESPACE(RFC2342) 让服务器自报个人/共享/公共三类命名空间及分隔符，使客户端跨系统正确呈现共享与公共文件夹，是集团邮箱委托访问的呈现基础。
 - [IMAP vs POP3 vs JMAP 邮件访问协议选型决策树 — 同步延迟、带宽占用与离线支持的权衡 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/imap-pop3-jmap-election.html): 从 RFC 3501 (IMAP4rev1)、RFC 9051 (IMAP4rev2)、RFC 1939 (POP3) 与 RFC 8620/8621 (JMAP) 四份核心标准出发，构建邮件访问协议的选型决策树。涵盖协议性能基准（同步延迟、带宽占用、离线支持）、部署模式（混合协议共存）、以及从 IMAP/POP3 到 JMAP 的迁移路径。
+- [现在还应该给用户开 POP3 吗？IMAP 与 POP3 到底怎么选？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/imap-pop3-protocol-selection.html): 依据 RFC 1939 第 3、8 节、RFC 9051 第 2.1 节与 NIST SP 800-177 Rev.1 的 Security Recommendation 7-1、7-3，对比 IMAP 与 POP3：端口与连接模型、POP3 缺少多文件夹与连接内新邮件轮询能力、把 POP3 当仓库导致邮件无节制累积与大投递区处理低效的后果、配额与保留策略建议，以及两者都必须走 TLS 的要求。
 - [IMAP 的 SASL-IR（RFC 4959）是什么？它如何让认证“一步完成”？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/imap-sasl-ir-rfc4959.html): SASL-IR(RFC4959) 让 IMAP 把认证初始响应随 AUTHENTICATE 一起发，一步完成省一轮 RTT；须先 STARTTLS 再发含凭证响应以防明文泄露，现代客户端普遍支持。
 - [IMAP 的 SEARCH 与 SORT 扩展如何高效检索邮件？服务端搜索相比客户端拉全量有何优势？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/imap-search-sort.html): IMAP SEARCH 在服务端按条件筛选返回 UID，SORT(RFC5256) 服务端排序；海量邮箱省带宽时延，优于客户端全量拉取；需 UTF-8 支持中文搜索。
 - [IMAP 的 UNSELECT（RFC 3691）是什么？它和普通关闭邮箱有何不同？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/imap-unselect-rfc3691.html): IMAP UNSELECT(RFC3691) 让客户端脱离当前邮箱但不 EXPUNGE(不删\Deleted信)，是 CLOSE 的安全替代；适合标记删除后切换文件夹防误删，需服务器支持。
 - [IMAP vs POP3 协议对比与选型指南 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/imap-vs-pop3.html): 深入对比 IMAP 与 POP3 两大邮件检索协议的设计哲学、功能差异与适用场景，帮助邮件管理员和终端用户做出正确的协议选择。涵盖 RFC 3501 与 RFC 1939 标准解读、IMAP 双向同步机制、POP3 离线优势、混合部署方案及完整决策树。
 - [邮件进入垃圾箱时，系统性的排查路径应该是怎样的？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/inbox-placement-troubleshooting-path.html): 排查前先分清被拒绝与被分类：前者有 SMTP 应答与 DSN 可查，后者无任何退信。随后按传输与身份基础设施、信誉、列表与许可、内容与格式、发送流隔离五层依次收敛，每次只改一个变量并留观察期。
-- [邮件技术知识库 — 1073 篇深度技术文章 | ztpop.net](https://www.ztpop.net/kb/index.html): ztpop.net 邮件技术知识库 — 1073 篇深度技术文章，涵盖 Exchange 替代、邮件迁移、邮件服务器搭建、SPF/DKIM/DMARC 认证、反垃圾防御、传输加密、信创国产化、合规标准等 8 大技术领域。
+- [邮件技术知识库 — 1298 篇深度技术文章 | ztpop.net](https://www.ztpop.net/kb/index.html): ztpop.net 邮件技术知识库 — 1298 篇深度技术文章，涵盖 Exchange 替代、邮件迁移、邮件服务器搭建、SPF/DKIM/DMARC 认证、反垃圾防御、传输加密、信创国产化、合规标准等 8 大技术领域。
 - [海外邮件投递与中继策略 — 昆仑邮件系统知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/international-email-relay.html): 海外邮件投递策略：中国IP信誉挑战、智能中继方案、多链路故障切换、Gmail/Yahoo/Outlook投递优化。基于RFC 5321和M3AAWG发送方最佳实践。
 - [INTERPOL 2026 年网络威胁评估报告揭示了哪些邮件相关趋势？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/interpol-african-cyberthreat-2026.html): INTERPOL《非洲网络威胁评估报告 2026》指出 AI 已参与非洲 55% 的已报告网络犯罪，损失自 2024 年的 1.92 亿美元翻倍至 4.84 亿美元，BEC 借 AI 生成高度可信邮件并跨洲瞄准欧美受害者。
 - [发票欺诈邮件（假发票、改收款账号）是如何得手的？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/invoice-fraud-email.html): FBI IC3 把发票欺诈归入商业邮件入侵：截至 2022 年 12 月全球累计 277,918 起、暴露损失 508.7 亿美元，到 2023 年 12 月升至 305,033 起、554.9 亿美元，核心手法是入侵真实邮箱后篡改收款账户。
 - [IP 预热完整指南 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ip-warmup-complete-guide.html): 从新 IP 零信誉到高到达率的 IP 预热全流程操作指南，包含分步时间表、核心指标监控与常见失误规避。
 - [IPv6 邮件系统部署 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ipv6-email-deployment.html): IPv6 邮件系统部署 - 知识库 · ztpop 邮件技术知识库
 - [IPv6 邮件系统部署实践指南：MX 记录、双栈 MTA 与运营商兼容策略 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ipv6-mail-system-deployment-practical-guide.html): IPv6 邮件系统部署实践指南：MX 记录、双栈 MTA 与运营商兼容策略 - 知识库 · ztpop 邮件技术知识库
+- [组织应该开哪些安全与滥用举报通道？地址怎么命名才规范？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-abuse-contact-channel-2026.html): 依据 RFC 2142 对通用服务邮箱名的规定与 RFC 9116 定义的 security.txt 机制，说明 abuse 与 security 举报通道的规范命名、职责划分、运营要求，以及内部钓鱼举报入口的设计要点。
+- [内部账号被盗告警怎么研判？哪些信号能确认账号已失陷？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-account-takeover-triage-2026.html): 说明邮件账号失陷告警的分级研判方法：登录侧信号（不可能旅行、异常客户端、认证方式降级）、邮箱侧持久化痕迹（转发规则、授权应用、委托权限），并结合 NIST SP 800-63B 关于速率限制的要求解释暴力破解与撞库的区分。
+- [邮件经过转发或邮件列表后认证失败，怎么研判是正常间接投递还是伪造？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-arc-indirect-flow-verdict-2026.html): 说明间接邮件流导致认证失败的成因与研判方法：依据 RFC 7960 对 DMARC 与间接邮件流互操作问题的分析，以及 RFC 8617 定义的 ARC 链机制，给出区分正常转发与伪造的判定要点。
+- [Authentication-Results 头能直接采信吗？信任边界该怎么划？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-auth-results-trust-boundary-2026.html): 依据 RFC 7601 第 5 节关于移除既有头字段的强制要求，说明为什么外来的 Authentication-Results 头必须被剥离，如何界定信任边界，以及研判时应采信哪一条认证结果。
+- [收到疑似商业邮件诈骗（BEC）报告后，应该按什么流程响应？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-bec-response-workflow-2026.html): 依据 NIST SP 800-61 Rev.2 的事件响应生命周期，说明 BEC 报告进入后的检测与分析、遏制、根除与恢复、事后总结四阶段具体动作，含证据保全顺序、资金链路止付判定与升级条件。
+- [怎样判定一封邮件是凭据钓鱼？有哪些可操作的判定依据？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-credential-phish-verdict-2026.html): 从技术判据而非主观印象出发，说明凭据钓鱼邮件的研判要点：落地页与真实认证域的比对、认证结果头的解读、以及 NIST SP 800-63B 中抗验证者冒充认证方式为何能从根本上使此类攻击失效。
+- [DMARC 失败报告（ruf）与聚合报告有什么区别？取证时该怎么用？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-dmarc-failure-report-arf-2026.html): 对比 DMARC 失败报告与聚合报告的差异，依据 RFC 6591 的认证失败报告格式与 RFC 5965 的 ARF 基础格式，说明失败报告的字段构成、隐私约束及其在单封邮件取证中的定位。
+- [DMARC 聚合报告（rua）怎么读？如何用它定位认证失败的真实来源？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-dmarc-rua-forensics-2026.html): 说明 DMARC 聚合报告的作用与解析方法：依据 RFC 7489 第 7.2 节的聚合报告机制与第 6.3 节 rua 标签定义，讲解如何区分「合法来源未配置」与「他人仿冒」，以及推进策略收紧的判定门槛。
+- [邮件日志要留多久、留哪些字段才够用于事件取证？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-mail-log-retention-forensics-2026.html): 依据 NIST SP 800-92 的日志管理指南与 NIST SP 800-86 的取证要求，说明邮件系统日志的采集范围、必备字段、留存周期设定依据，以及日志缺失如何直接导致事件无法定性。
+- [可疑附件应该怎么分析？沙箱研判要注意哪些陷阱？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-malicious-attachment-sandbox-2026.html): 依据 NIST SP 800-83 Rev.1 的恶意软件事件处理指南，说明可疑邮件附件的安全分析流程：隔离环境要求、静态与动态分析的先后、沙箱规避行为的识别，以及分析结论如何转化为处置动作。
+- [大量退信涌入是被仿冒了吗？反向散射怎么研判？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-ndr-backscatter-triage-2026.html): 说明退信风暴的成因与研判方法：依据 RFC 3464 定义的投递状态通知格式，讲解如何从 DSN 中提取原始邮件信息以判断是否遭仿冒，并区分反向散射、自身失陷外发与列表配置问题三种情形。
+- [员工举报的可疑邮件怎么批量分诊？如何在有限人力下排优先级？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-phish-user-report-triage-2026.html): 给出用户举报邮件的分诊方法：以自动化预判加人工复核的分层结构，按影响面与确定性排定处置优先级，并说明举报数据如何回流为检测规则与培训素材，依据 NIST SP 800-61 Rev.2 的事件分析与优先级排定原则。
+- [邮件安全事件处置完成后，应该按什么清单做加固复核？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-postincident-hardening-baseline-2026.html): 给出邮件安全事件收尾阶段的加固核查清单：依据 NIST SP 800-177 Rev.1 的可信邮件建议覆盖发送方认证、传输安全与内容安全三层，并结合 NIST SP 800-61 Rev.2 的事后活动要求说明复盘的产出物。
+- [攻击者用不存在的子域发信怎么办？DMARC 的 np 标签解决什么问题？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-psd-dmarc-nonexistent-subdomain-2026.html): 依据 RFC 9091 第 3.2 节对 DMARC 记录格式的扩展，说明 np 标签的定义、与 p 和 sp 标签的优先关系，以及它在防范不存在子域被仿冒场景中的研判与配置要点。
+- [收到勒索或敲诈邮件如何研判处置？哪些属于纯恐吓、哪些是真实失陷？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-ransom-mail-extortion-triage-2026.html): 给出勒索与敲诈类邮件的分类研判方法：区分批量恐吓、定向敲诈与真实失陷通知的判据，说明证据核实步骤，并依据 NIST SP 800-83 Rev.1 与 NIST SP 800-61 Rev.2 给出对应处置路径。
+- [事件响应中如何用 Received 头链重建邮件传输时间线？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-received-chain-timeline-2026.html): 结合 RFC 5321 第 4.4 节的追踪信息规范与 NIST SP 800-86 的取证流程要求，说明如何从 Received 链逆序重建投递时间线、确定可信边界、以及在证据链上区分可采信与不可采信的跳数。
+- [威胁情报怎么和邮件网关联动？如何避免情报变成噪声？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ir-threat-intel-gateway-loop-2026.html): 依据 NIST SP 800-150 的网络威胁信息共享指南，说明邮件场景下情报的采集、质量评估、落地为检测规则与反馈闭环的完整流程，以及指标时效性与误报控制的处理方法。
 - [ISO/IEC 27001:2022 中与邮件安全相关的控制项该如何落地？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/iso-27001-2022-email-controls.html): ISO/IEC 27001:2022 是信息安全管理体系（ISMS）要求标准，2022 年 10 月发布第 3 版；其附录 A 控制清单中的信息传递、密码学使用、恶意代码防护、日志与监视、数据防泄漏等控制项，可映射为邮件安全的体系化落地要求。
 - [ISO/IEC 27002:2022 为邮件安全提供了哪些控制实施指南？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/iso-27002-2022-email-control-guidance.html): ISO/IEC 27002:2022（第 3 版，2022-02 发布，2022-03 更正版，152 页）给出信息安全控制的最佳实践与实施指南，覆盖访问控制、密码学、人力资源安全与事件响应等邮件相关领域。
 - [JMAP 邮件访问协议深度解析 — RFC 8620/8621：IMAP 的下一代替代方案 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/jmap-protocol-rfc8620.html): 完整解析 JMAP（JSON邮件访问协议）RFC 8620/8621，涵盖协议架构设计、核心数据类型、API 调用机制、状态同步与推送、与 IMAP 的性能对比及迁移路径。
 - [招聘与求职骗局邮件如何识别？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/job-recruitment-scam-email.html): FTC 指出求职骗局以居家办公、转运包裹、保姆看护、神秘顾客等名义投放，核心套路是先寄假支票让你存入再退回差额，或收取入职费、培训费、认证费，正规雇主绝不会向求职者收费。
 - [LDAP 与邮件系统集成 — RFC 4510-4519：Postfix LDAP 表查询、Dovecot 认证与多域架构 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ldap-email-integration.html): LDAP v3 (RFC 4510-4519) 与 Postfix/Dovecot 的邮件系统集成深度解析：Postfix LDAP 虚拟别名与虚拟域表查询、Dovecot LDAP 用户认证(passdb)与用户信息(userdb)配置、多域多租户架构的 LDAP DIT 设计、OpenLDAP/389 DS 基础部署与复制。
+- [用 IMAP 迁移旧邮件系统，能迁走什么、迁不走什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/legacy-mailbox-imap-migration-scope.html): 说明以 IMAP 作为通道迁移旧邮件系统的能力边界：只迁邮件项目、不迁联系人日历任务，目标端邮箱须预先创建，迁移后新邮件不再同步；并用 RFC 9051 的邮箱层级、UID、消息标志等章节解释协议层面的原因与验收核对项。
 - [邮件列表（mailing list）是什么？RFC 2369 定义了哪些 List 头字段？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/list-faq-01.html): 邮件列表由列表管理器群发；RFC 2369 定义 List-Id/Post/Subscribe/Unsubscribe 等头供客户端识别与操作，转发需注意 SPF/DKIM 对齐。
 - [List-Unsubscribe 头与“一键退订”是什么？RFC 8058 做了什么改进？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/list-faq-02.html): List-Unsubscribe 给出退订方式；RFC 8058 用 HTTPS POST 实现客户端“一键退订”按钮，已是主流服务商对批量发信的送达前置要求。
 - [为什么必须有可用的退订机制？它与送达率和合规有什么关系？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/list-faq-03.html): 有效退订降低投诉率、保护发件信誉，且是 CAN-SPAM/GDPR 等合规的硬性要求；退订应易见、快速生效并留痕。
@@ -855,6 +997,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [什么是反馈循环（FBL）与投诉报告（ARF）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/list-faq-06.html): FBL 让服务商把用户举报回传给你；ARF（RFC 5965）定义报告格式，据此清理投诉地址、降低投诉率以免被降权。
 - [什么是双重确认订阅（double opt-in）？为什么推荐？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/list-faq-07.html): 双重确认订阅要求用户点击确认链接才生效，能验证邮箱真实归属、避免向未授权地址发信，提升列表质量与送达率。
 - [邮件列表转发时如何兼顾 DMARC？SRS 与重签名的作用是什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/list-faq-08.html): 列表转发会破坏 SPF/DKIM 对齐；用 SRS 重写信封、列表域重签 DKIM，可在保留列表功能的同时让 DMARC 通过对齐。
+- [邮件里的「一键退订」背后是什么协议？List-Unsubscribe-Post 怎么工作？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/list-unsubscribe-one-click-rfc8058.html): 依据 RFC 8058 第 3 节，说明一键退订机制由 List-Unsubscribe 头（须含一个 HTTPS URI）与 List-Unsubscribe-Post 头共同声明，用户点击后客户端向该 HTTPS URI 发送带 List-Unsubscribe=One-Click 的 POST 请求完成退订，并说明其合规与信誉收益。
 - [邮件里的“一键退订”为什么需要 List-Unsubscribe-Post（RFC 8058）？它解决了什么坑？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/list-unsubscribe-post.html): List-Unsubscribe-Post(RFC8058) 用 One-Click POST 确认实现可靠一键退订，解决误触与滥用；Yahoo/Google 2024 新规要求大发件人必须支持，影响送达率。
 - [邮件一键退订 List-Unsubscribe 机制深度解析 — RFC 8058 / RFC 2369：Gmail/Yahoo 2024 批量发件人要求 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/list-unsubscribe-rfc8058.html): RFC 2369 与 RFC 8058 完整解析：List-Unsubscribe 邮件头、mailto 与 HTTPS 两种退订方式、List-Unsubscribe-Post 一键退订机制、Gmail/Yahoo 2024 批量发件人要求的技术实现与配置模板。
 - [大语言模型在邮件安全运营（SOC）中的应用边界在哪里？哪些环节不能交给 LLM？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/llm-email-security-operations-boundary.html): 依据 NIST AI RMF 1.0（AI 100-1，2023-01-26）的可信特征与 OWASP Top 10 for LLM Applications 2025 的 LLM06 过度代理条目，LLM 适合承担邮件告警的摘要、归类与检索增强，但涉及阻断、放行、账号处置等高影响决策须保留人工审批与下游授权校验。
@@ -862,6 +1005,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [LMTP 本地邮件投递协议深度解析 — RFC 2033：从 SMTP 到本地交付的轻量 MTA · ztpop 邮件技术知识库](https://www.ztpop.net/kb/lmtp-local-delivery-rfc2033.html): RFC 2033 LMTP 完整解析：为何 SMTP 不适合最终投递、逐收件人响应语义、与 SMTP 的关键差异，以及 Postfix 经 LMTP 投递至 Dovecot 的生产部署配置。
 - [仿冒域名（Lookalike Domain）如何检测与拦截？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/lookalike-domain-detection.html): 仿冒域名通过字符替换、同形异义字与 TLD 替换冒充品牌，需同形解码、编辑距离与证书透明日志来检测。
 - [什么是“仿冒域名 / 打字 squatting（Typosquatting）”？如何防御？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/lookalike-domain-typosquatting-defense.html): 仿冒域名/打字 squatting=注册极似官方域发钓鱼;防御=DMARC p=reject+SPF/DKIM 全覆盖+防御性注册监控+核对域名而非显示名。
+- [Microsoft 365 的“增强过滤（Enhanced Filtering for Connectors）”与跳列（skip listing）有何用？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m365-enhanced-filtering-connectors-skiplisting.html): 说明 Microsoft 365 增强过滤与跳列如何还原真实发送方来源、规避网关导致的安全评估失真（翻译自 Microsoft Learn）。
 - [Exchange Online Protection（EOP）是什么？它在邮件流中处于什么位置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m365-faq-01.html): EOP 是 Microsoft 365 的内置邮件防护层，位于连接筛选、反垃圾、反恶意软件、传输规则之前端，Defender for Office 365 在其上叠加高级防护。
 - [如何在 Microsoft 365 中为发件域配置 SPF 以覆盖 Exchange Online 出站？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m365-faq-02.html): 为发件域 SPF 加入 include:spf.protection.outlook.com 以授权 Exchange Online 出站；多发送源合并时注意 DNS 查询跳数不超过 10。
 - [如何在 Microsoft 365 中为发件域启用 DKIM 签名？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m365-faq-03.html): 为自定义域启用 DKIM 需在 DNS 发布两条 selector CNAME 指向微软托管密钥；DKIM 与 SPF/DMARC 共同构成认证链。
@@ -870,6 +1014,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [安全附件（Safe Attachments）与安全链接（Safe Links）如何工作？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m365-faq-06.html): 安全附件用云端沙箱在投递前检测恶意文件，安全链接在点击时实时检查 URL；二者由 Defender for Office 365 策略按组启用。
 - [如何用 Microsoft 365 防止内部伪造与 BEC？外部发件人标识与租户隔离怎么配？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m365-faq-07.html): 外部发件人标识帮助用户识别冒充；正确配置 SPF/DKIM/DMARC + 模拟保护 + 邮箱智能可多层防范 BEC。
 - [如何排查 Microsoft 365 邮件被拒收或进了垃圾箱？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m365-faq-08.html): 用邮件追溯看最终状态、隔离区放行误报、读取 Authentication-Results 与 X-Forefront 头判定拦截原因，对症下药调整认证或白名单。
+- [Microsoft 365 中用户被列入“受限实体（Restricted users）”无法发信，如何解除？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m365-outbound-spam-restricted-user-unblock.html): 说明 Microsoft 365 用户被列入受限实体的成因、现象与通过 Defender 门户或 PowerShell 解除的方法（翻译自 Microsoft Learn）。
 - [M3AAWG 滥用受理台（Abuse Desk）最佳实践：邮件投诉的快速闭环 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m3aawg-abuse-desk-bcp.html): 译自 M3AAWG 滥用受理台最佳实践。梳理邮件服务商如何建立高效的 abuse@ 受理流程、处理垃圾/钓鱼/病毒投诉、对接反馈回路，作为邮件运营 SLA 参考。
 - [M3AAWG 地址验证最佳实践：减少退信与列表污染的运营基线 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m3aawg-address-validation-bcp.html): 译自 M3AAWG 地址验证（Address Validation）最佳实践。梳理发信前如何校验邮箱格式、MX 存在、可接受性，减少硬退信、保护 IP 声誉，作为列表卫生的权威参考。
 - [M3AAWG AI 模型生命周期安全最佳通用实践 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m3aawg-ai-lifecycle-security-bcp.html): M3AAWG AI Model Lifecycle Security Best Common Practices（2025年5月）中文译本。涵盖训练数据完整性校验（SHA256/Signature/PKI）、模型训练与测试安全、部署加固、静态数据加密、日志审计和数据保留策略，供信息技术安全从业者参考。
@@ -882,6 +1027,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [M3AAWG 冷邮件（Cold Email）立场声明（翻译） — ztpop.net 邮件技术知识库](https://www.ztpop.net/kb/m3aawg-cold-email-position.html): M3AAWG 2025年11月冷邮件立场声明中文翻译版，明确Cold Email的合规边界与操作建议。
 - [M3AAWG 发件人投诉处理最佳实践 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m3aawg-complaint-handling.html): 基于 M3AAWG 2017 年 12 月发布的投诉处理建议，系统阐述 Feedback Loop 注册、投诉监控、预防策略、ESP 角色分工及国内场景补充，帮助发件人维护良好投递声誉。
 - [M3AAWG 账号泄露处理最佳实践 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m3aawg-compromised-user-id-bp.html): 翻译自 M3AAWG Compromised User ID Best Practices v1.0.1，系统介绍了账号泄露的识别、应急响应、账户恢复、预防措施及长期安全策略，并补充了国内等保2.0相关要求。
+- [M3AAWG 推荐的“确认选择性订阅（Confirmed Opt-in）”是什么，为何优于单订阅？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m3aawg-confirmed-opt-in-subscription.html): 解读 M3AAWG 发送方最佳实践中的三个订阅同意层级，重点说明确认订阅（双重订阅）优于单订阅的原因（翻译自 M3AAWG 官方文档）。
 - [M3AAWG DKIM 密钥轮换最佳实践——为什么每 6 个月必须换一次 DKIM 密钥](https://www.ztpop.net/kb/m3aawg-dkim-key-rotation-bcp.html): M3AAWG DKIM 密钥轮换最佳实践完整解读：DKIM 密钥每 6 个月轮换一次的理由、轮换流程、第三方发送场景的三种配置方式及国内 DNS/ESP 场景补充。
 - [M3AAWG DNS 滥用防治、补救与缓解实践：面向注册商与注册局 - DNS 安全 | ztpop.net 知识库](https://www.ztpop.net/kb/m3aawg-dns-abuse-prevention.html): M3AAWG 于 2024 年 1 月发布的权威指南，面向域名注册商（Registrar）和注册局（Registry），提供 DNS 滥用的预防、缓解和补救最佳实践。涵盖恶意软件、僵尸网络、钓鱼、域名欺诈等威胁类型及 ICANN 合规框架。
 - [M3AAWG 域名声誉管理最佳实践：维护发信域可信度 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m3aawg-domain-reputation-bcp.html): 译自 M3AAWG 域名声誉管理最佳实践。梳理发信域如何通过认证、列表卫生、投诉率控制与监控来积累声誉，避免进垃圾箱，作为投递率工程参考。
@@ -916,6 +1062,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [M3AAWG 发送域名最佳常见实践——子域 vs 表亲域：邮件发送域名的正确选择方法](https://www.ztpop.net/kb/m3aawg-sending-domains-bcp.html): M3AAWG-130 发送域名最佳常见实践完整解读：子域与表亲域的选择策略、邮件分段声誉管理、SPF/DKIM/DMARC 认证配置、DNS 设置方式（直接/CNAME/NS 委派）以及国内 ESP 场景适配指南。
 - [邮件发送命中 Spam Trap 怎么办？M3AAWG 应对指南（翻译） — ztpop.net 邮件技术知识库](https://www.ztpop.net/kb/m3aawg-spam-trap-guide.html): M3AAWG Spam Trap 应对指南中文翻译版，包含Spam Trap类型识别、检测方法和邮件列表清洗最佳实践。
 - [M3AAWG 蜜罐地址（Spamtrap）建设与运营最佳实践——完整翻译 v1.2.0 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m3aawg-spamtrap-bcp.html): M3AAWG Best Current Practices For Building and Operating a Spamtrap v1.2.0（2016年8月）完整中文翻译。覆盖蜜罐地址的定义、类型、目标（过滤/DNSBL/载荷分析/钓鱼识别/数据泄露检测）、实施考量、安全保密、信息共享规则与常见陷阱。附国内 DNSBL 运营现状与隐私保护合规分析。
+- [M3AAWG 对“垃圾陷阱（spamtrap）/休眠地址”的处理给出什么建议？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m3aawg-spamtrap-dormant-address-handling.html): 梳理 M3AAWG 对垃圾陷阱（回收型/纯净型）的界定、12 个月闲置阈值与列表卫生（sunsetting）缓解建议（翻译自 M3AAWG 官方文档）。
 - [M3AAWG TLS 邮件基线推荐 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m3aawg-tls-baseline-recs-2026.html): M3AAWG（Messaging, Malware and Mobile Anti-Abuse Working Group）推荐三项邮件服务提供商可快速实施的 TLS 基线措施：提供商之间的机会型 TLS、内部网络流量加密、用户凭据加密保护，并建议记录 TLS 版本与加密套件数据。
 - [M3AAWG 流量分析导论：加密之外的邮件元数据威胁 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m3aawg-traffic-analysis-intro.html): M3AAWG 发布的流量分析（Traffic Analysis）导论，揭示 TLS 加密下仍暴露的邮件头元数据威胁、通信模式分析和防范措施。国内首发翻译。
 - [邮件信任始于认证——M3AAWG 经典白皮书中文版 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m3aawg-trust-email-authentication.html): 译自 M3AAWG 经典白皮书《Trust in Email Begins with Authentication》(Updated February 2015, Dave Crocker & Terry Zink)。系统阐述邮件认证三步骤（标识→认证→声誉评估），深入解析 SPF、DKIM、DMARC 三大协议的技术原理、部署要点及交互机制，是学习邮件认证的必读文献。
@@ -926,9 +1073,11 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [M3AAWG WHOIS/RDAP 数据使用建议 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/m3aawg-whois-data-usage.html): 基于 M3AAWG 2016 年 7 月发布的 WHOIS 数据使用政策建议，系统阐述 WHOIS/RDAP 在反滥用运营中的实践方法，包括注册商投诉、数据准确性验证、隐私保护合规及 RDAP 过渡策略，并附国内 CNNIC 查询与工信部域名实名制补充。
 - [邮件流架构设计最佳实践 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mail-flow-architecture.html): 邮件流架构设计最佳实践。涵盖五种部署模式（简单 MTA、边缘网关、混合云、多森林、分域），入站/出站邮件流路径，连接器配置，智能主机选择，MX 路由策略与备份 MX 设计。
 - [如何对邮件流（mail flow）做可观测性监控，及时发现投递异常与丢信？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mail-flow-monitoring-observability.html): 邮件系统运维侧的可观测性实践：投递延迟、队列积压、退信率、DMARC 告警与端到端探测的监控方法。
-- [CACTER SaaS 云网关深度评测（2026）：零运维接入与AI检测实战 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/cacter-saas-cloud-gateway-2026.html): 云端 MX 接管模式解析，NERVE2.0 AI 检测架构，15分钟接入配置，与软件/硬件网关功能对比，含 ¥1,200/年定价与选型决策树。
-- [邮件安全网关选型对比矩阵（2026）：CACTER vs 网际思安 vs U-Mail 深度解析 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mail-gateway-comparison-matrix-2026.html): 2026 年邮件安全网关选型对比：CACTER（AI 原生，21,000+客户）、网际思安（信创适配最广，23人垂直厂商）、U-Mail（零误判99.5%拦截）深度对照，覆盖部署形态、信创矩阵、价格区间、招标趋势与决策树，供企业 IT 决策者与采购负责人参考。
+- [邮件别名与自动转发为什么会成环？系统靠什么发现并切断循环？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mail-forwarding-loop-detection.html): 依据 RFC 5321 第 3.9、3.9.1、4.4、4.5.4、4.5.5 与 6.3 节，说明别名与列表展开如何形成转发环、以统计 Received 头数量（阈值通常至少 100 条）作为标准环路检测手段的原理、阈值取值的权衡，以及空反向路径规则如何防止退信互相回退。
+- [网关的黑白名单越加越多，怎么调优才能既拦得住又不误杀？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mail-gateway-blocklist-tuning.html): 网关名单失控的根源是把语义完全不同的四类名单混为一谈。本文按 RFC 5782 与 RFC 5321 区分连接级阻断、内容评分、投递白名单与认证豁免的适用边界，说明为什么白名单是最危险的一类、为什么应当在会话内拒绝而不是先收后退，并给出误判处理与变更管理机制。
 - [邮件安全网关（Mail Gateway）如何部署？它处在邮件流的什么位置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mail-gateway-deploy.html): 邮件安全网关串接在互联网与内部邮件系统之间，入站做反垃圾/病毒/钓鱼/DLP 再转内、出站做加密审计；可透明桥接/SMTP中继/云网关三种形态，MX 指向网关。
+- [邮件日志取证的基本功是什么？一条时间线怎么才能拼得起来、站得住？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mail-log-forensics-basics.html): 邮件取证的难点不在工具而在方法：时钟不齐时间线就是错的，关联键选错跨主机就断链，日志轮转会让关键时段凭空消失。本文按 RFC 3227、NIST SP 800-86 与 SP 800-92 给出取证的原则顺序、时间基准处理、四类关联键的适用边界与常见失败模式。
+- [邮件在队列里卡了几个小时才发出，属于故障吗？重试与放弃有没有标准？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mail-queue-delay-retry-strategy.html): 依据 RFC 5321 第 4.5.4、4.5.4.1 与 5.1 节，说明邮件排队重试属协议常态、重试间隔应至少 30 分钟、放弃时间通常需至少 4 至 5 天、重试参数必须可配置、第一小时两次连接后退避的经验节奏，以及对 MAIL 命令 5yz 响应不得缓存等队列排查要点。
 - [邮件服务器自动化补丁管理方案 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mail-server-auto-patching.html): 详解邮件服务器在零停机前提下的自动化补丁管理策略，包含补丁分级策略、蓝绿部署架构、回退机制与合规审计，参考NIST SP 800-40与ISO 27002标准。
 - [邮件服务器磁盘 I/O 性能优化 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mail-server-disk-io-performance.html): Maildir vs Mbox 存储格式选择、SSD vs HDD 分层策略、目录哈希深度优化、IOPS 基准测试方法与 Postfix 队列 I/O 调优参数。
 - [邮件服务器 IP 被 DNSBL 列入后，规范的信誉修复流程是什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mail-server-ip-reputation-remediation.html): RFC 6471 要求 DNSBL 公开列名与除名标准、提供非公开的直连除名通道、2 天内宜响应且 7 天内必须响应，并禁止对负面列表收取除名费；被列方应先消除列名原因，再按公开标准提交请求。
@@ -936,7 +1085,9 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [邮件服务器发信信誉建设指南 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mail-server-warmup.html): 邮件服务器IP预热与信誉建设的系统方法：M3AAWG最佳实践、渐进式增量发送策略、Google Postmaster Tools监控。
 - [邮件系统的存储容量规划与配额、归档策略应如何落地？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mail-storage-quota-capacity-archiving.html): 容量规划需同时覆盖邮件正文、索引与缓存、队列三部分；Dovecot 用 quota_rule 系列定义分邮箱配额，quota_warning 做分级预警，quota_grace 留超额缓冲，配合缓存自动老化与 mdbox purge 控制增量。
 - [邮件 TLS 证书配置最佳实践：STARTTLS 证书管理、证书链优化与自动续期](https://www.ztpop.net/kb/mail-tls-certificate-best-practices.html): 邮件系统 TLS 证书部署最佳实践：X.509 证书选择标准、多域名证书与通配符证书场景、STARTTLS 证书链配置（中间证书/根证书）、Let's Encrypt 自动化续期、Postfix/Dovecot 证书热加载、证书过期监控。
+- [邮件系统 XSS 防护体系构建指南：从 CVE-2026-42897 到纵深防御 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mail-xss-protection-guide.html): 邮件系统 XSS 攻击面分析与防护体系构建：OWASP 输出编码规则、CSP 与 Cookie 加固、WAF/邮件网关过滤、检测响应闭环，衔接 GB/T 37002-2026 合规要求，结合 CVE-2026-42897 实战教训。
 - [如何防御邮箱数据外泄（内部威胁）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mailbox-data-exfiltration-defense.html): 邮箱数据外泄（内部威胁）指员工或特权账号通过自动转发、批量下载、API 导出把敏感邮件带走；需以行为检测、DLP、最小权限与审计组合防御。
+- [邮箱满了服务器应该回哪个码？配额该怎么设计与告警？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mailbox-quota-over-limit-handling.html): 依据 RFC 5321 第 4.2.1、4.2.3 节，RFC 3463 的 X.2.2 与 X.3.1，RFC 9208 第 4.1、4.3.1、5 节以及 RFC 1939 第 8 节，说明邮箱超配额应作为持续性瞬态失败返回 4xx 而非永久拒收、452 与 552 的区别、IMAP QUOTA 的四类资源与三条命令、OVERQUOTA 响应码的使用时机，以及配额告警与保留策略建议。
 - [怎样系统排查邮箱里被植入的隐蔽转发规则与访问后门？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mailbox-rule-forwarding-backdoor-hunt.html): 邮箱失陷后的持久化手段主要落在服务器侧规则、客户端侧规则、账户级转发、邮箱委托与外部凭据五个层面；本文按 RFC 5228 的过滤语义与主流平台官方文档，给出逐层排查清单、检测信号与清理后的复发监控方法。
 - [邮箱账户安全配置最佳实践有哪些？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mailbox-security-config-best-practice.html): 邮箱账户安全配置最佳实践包括强制多因素认证、最小权限、登录审计与异常告警，显著降低账号被盗风险。
 - [邮件列表（mailing list）为什么会破坏 DMARC？列表服务该如何兼容？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mailing-list-dmarc.html): 邮件列表改写 envelope-from 与加页脚会破坏原 DKIM 并使 SPF 不对齐，导致 strict-DMARC 投稿被拒；列表需 From 改写+重签，收件方识别 List-Id 放宽。
@@ -959,6 +1110,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [什么是“MFA 疲劳攻击（推送轰炸）”？如何防护？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mfa-fatigue-attack-defense.html): MFA 疲劳攻击=窃得密码后狂推批准请求逼用户误点;防护=限制推送/号码匹配/禁 SMS,根因是换防钓鱼 MFA(通行密钥/FIDO2)。
 - [Microsoft 2026 Q1 邮件威胁态势报告 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/microsoft-2026-q1-threat-landscape.html): 基于 Microsoft 365 遥测数据，分析 2026 Q1 邮件安全趋势：AI 生成钓鱼邮件占比 41%、BEC Deepfake 结合攻击占 67%、新型认证绕过攻击技术以及 Microsoft 安全产品升级。
 - [Microsoft 365 高级反钓鱼策略如何配置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/microsoft-365-advanced-anti-phishing.html): 在 Defender for Office 365 中启用用户/域名冒充保护、欺骗智能与 DMARC 强制，并配置安全附件与安全链接增强防护。
+- [Microsoft 批量发件人要求（2025-05-05 生效）：Outlook.com 5,000 封/日阈值与 SPF/DKIM/DMARC 强制 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/microsoft-bulk-sender-requirements.html): 微软对日发送量超过 5,000 封至 Outlook.com/Hotmail.com/Live.com 域名的批量发件人实施强制认证要求（2025-05-05 生效）：SPF 必须通过、DKIM 必须通过、DMARC 至少 p=none 且对齐。违规先入垃圾箱，后以 550 5.7.515 拒收。
 - [Microsoft Defender for Office 365 反钓鱼：冒充保护与欺骗智能 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/microsoft-defender-anti-phishing.html): 译自 Microsoft Learn Defender for Office 365 反钓鱼文档。解读冒充用户/域名的防护、欺骗智能、邮箱情报、安全收件箱与攻击模拟演练，作为邮件安全网关的能力对标。
 - [Microsoft 365 邮件身份验证机制解析：SPF/DKIM/DMARC 与复合验证（compauth） · ztpop 邮件技术知识库](https://www.ztpop.net/kb/microsoft-email-authentication.html): 译自 Microsoft Learn 邮件认证文档。解析 Exchange Online Protection 如何验证入站邮件：SPF/DKIM/DMARC 三大基石、ARC 补强转发场景，以及 Microsoft 特有的隐式验证（compauth）与复合认证头。
 - [Microsoft 365（Exchange Online）是如何自动过滤垃圾邮件的？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/microsoft-faq-01.html): Microsoft 365 / Exchange Online Protection 如何自动过滤垃圾邮件及五类判定（翻译自 Microsoft Learn 官方文档）。
@@ -986,6 +1138,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [MTA 邮件队列（Queue）是什么？如何管理与排查积压？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mta-queue-management.html): MTA 队列暂存未投递邮件（active/deferred/bounce/hold）；积压通常源于下游拒收/网络/DNS/限流，需从日志定位而非盲目清队；用 mailq/postsuper 精细管理。
 - [MTA 的邮件队列与重试策略（RFC 5321 §4.5.4）是如何工作的？如何调优？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mta-queue-retry.html): MTA 把暂态失败邮件入队按RFC5321§4.5.4 重试（短间隔起步、指数退避、4-5天上限后发DSN退信）；调优需平衡重试频率与对端负载并监控队列深度。
 - [MTA 速率限制如何配置以防御滥用与轰炸？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mta-rate-limiting-abuse-defense.html): MTA 速率限制按客户端 IP/账号/域名设定并发与单位时间发信上限，抑制垃圾轰炸、字典攻击与账号滥用。
+- [MTA-STS 是什么？怎么部署才能强制对端用 TLS 加密投递我的邮件？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mta-sts-deployment.html): 依据 RFC 8461 第 1、3.1、3.2、4.1、9.3 节，说明 MTA-STS 不改变 MX 查找而是叠加 TLS 强制承诺、由 _mta-sts TXT 与 https://mta-sts.域/.well-known/mta-sts.txt 策略文件组成、依赖 Web PKI 而非 DNSSEC、mode 取 enforce/testing/none、以及第 4.1 节的 MX 主机校验流程。
 - [MTA-STS 策略回退场景深度分析 — RFC 8461 政策发现失败、HTTPS 获取超时与降级处理的全栈防御 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mta-sts-fallback-scenarios.html): MTA-STS（RFC 8461）为邮件传输提供了基于 Web PKI 的 TLS 强制策略框架。但在实际部署中，多种异常场景会导致发件 MTA 无法正常获取或验证接收域的策略。本文深入分析政策发现 DNS 故障、HTTPS 策略文件获取超时、证书验证失败与 max_age 过期四种核心回退场景的处理逻辑，以及与 DANE TLSA（RFC 7672）的优先级交织关系。
 - [MTA-STS 强制邮件传输加密策略深度解析 — RFC 8461：基于 HTTPS 的 TLS 策略分发与执行 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mta-sts-guide.html): RFC 8461 完整解析：MTA-STS DNS TXT 记录（id/mode）、HTTPS 策略 JSON 文件、Testing vs Enforce 模式分阶段部署、缓存刷新（max_age: 86400–604800 取舍）、与 DANE TLSA 的信任模型对比（DNSSEC vs Web PKI）、TLS-RPT（RFC 8460）配套报告。
 - [MTA-STS 多域名策略编排：Wildcard MX 兼容性与 TLS-RPT 联动 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mta-sts-multi-domain-deployment.html): RFC 8461 MTA-STS 在多域名企业环境中的深度部署：策略编排、wildcard MX 兼容场景、TLS-RPT (RFC 8460) 报告聚合与告警联动、多域共享策略缓存模型。
@@ -1002,6 +1155,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [邮件系统里的 MUA、MTA、MSA 各是什么角色，怎么区分？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mua-mta-msa-roles.html): MUA 是用户客户端，MSA 是提交代理（负责认证与规范化），MTA 是传输代理（负责路由投递），三者构成邮件流转链路。
 - [跨国企业邮件系统组网架构 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/multi-national-email-architecture.html): 跨国企业邮件系统多域组网架构设计：主域+子域部署、地域分布式 SMTP relay、邮件流跨国路由优化、GDPR 合规邮件路由限制、多域 Autodiscover 配置。
 - [邮件系统国际化部署：多语言 MIME 处理、IDN 域名与中日韩文编码实践 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/multilingual-mime-idn-cjk-email-guide.html): 深入邮件系统国际化部署的技术细节，涵盖多语言 MIME 编码原理（RFC 2047/2231/6532）、IDN 国际化域名（RFC 5890-5893）配置、EAI SMTPUTF8 降级策略、以及中日韩文邮件编码的历史演进与最佳实践。
+- [MX 优先级数字越小越优先吗？一个域完全不收邮件该怎么声明？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mx-preference-and-null-mx.html): 依据 RFC 5321 第 5.1 节与 RFC 7505 第 3、4.1、4.2 节，说明 MX 查找顺序、隐式 MX 规则、前置值越小越优先与同值必须随机化、MX 目标不得解析为 CNAME、中继排除自身及更高数字层级的防环机制，以及 Null MX 的记录写法与 556/5.1.10、550/5.7.27 配套状态码。
 - [MX 记录与邮件路由（RFC 5321 §5.1）如何工作？主 MX 不可达时如何回退？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mx-record-fallback.html): 邮件路由按 DNS MX 优先级（数值小优先）选主机，主 MX 不可达时按序回退到备用 MX 暂收；所有 MX 应归属同一组织，否则可能误投。
 - [MX 记录优先级与故障转移如何设计？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/mx-record-priority-failover.html): MX 优先级数值越小越优先，发送方先连最低值；设置多台跨地域 MX 并按梯度配置优先级即可实现故障转移，需配合合理 TTL 与容量规划。
 - [英国 NCSC 邮件安全指南精译：DMARC p=reject、停外部转发、阻断遗留认证 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ncsc-uk-email-security-guidance.html): 英国国家网络安全中心（NCSC）的邮件安全核心立场：DMARC 强制 p=reject、暂停向外部域自动转发、阻断遗留认证并强制 MFA、反欺骗标识、TLS 与网关监控。
@@ -1031,11 +1185,11 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [邮件系统安全基线检查清单（NIST SP 800-177版） · ztpop 邮件技术知识库](https://www.ztpop.net/kb/nist-sp800177-security-baseline.html): 基于 NIST SP 800-177 Rev.1《Trustworthy Email》的邮件系统安全基线检查清单，覆盖 TLS 配置、邮件认证、日志审计、访问控制、备份恢复与渗透测试六个安全域。
 - [NIST SP 800-53 邮件系统安全控制映射指南：从 AU/Access Control 到 SI/SC 系列全系控制落地](https://www.ztpop.net/kb/nist-sp80053-email-control-mapping.html): 将 NIST SP 800-53 Rev.5 安全控制目录映射到邮件系统实施：AU（审计与问责）系列邮件审计配置、AC（访问控制）系列 IMAP/SMTP 访问策略、SC（系统和通信保护）系列 TLS/加密控制、SI（系统和信息完整性）系列反恶意邮件控制。
 - [怎样排查被滥用的 OAuth 授权应用，并判断哪些邮件数据可能已被读取？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/oauth-app-grant-abuse-forensic-review.html): OAuth 授权应用一旦获得邮件读取范围，其访问不依赖用户口令且不受口令重置影响；本文依据 RFC 6749、RFC 6819、RFC 9700 与 RFC 7009，说明授权滥用的排查路径、范围（scope）解读方法、吊销动作与影响面判定依据。
-- [OAuth 同意钓鱼（Consent Phishing）如何防御？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/oauth-consent-phishing-defense.html): OAuth 同意钓鱼诱使受害者向恶意应用授权邮件与联系人权限而无需密码，需应用治理与同意策略来阻断。
+- [攻击者用「授权一个第三方 App」来窃取邮件，不用密码也能持续访问，怎么防？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/oauth-consent-phishing-defense.html): 依据 Microsoft《detect and remediate illicit consent grants》文档，说明 OAuth 非法同意授权攻击滥用应用同意框架获取账户级持久访问、为何重置密码与 MFA 无效、如何用 Purview 审计的 Consent to application 与 IsAdminConsent 等 IOC 检测，以及用 Remove-MgOauth2PermissionGrant 等撤销并限制用户自助同意来预防。
 - [邮件 API 发送为什么推荐使用 OAuth 2.0 客户端凭据（Client Credentials）而非 SMTP 基本认证？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/oauth2-client-credential-email-api.html): 解释为何 Microsoft 365 / Google Workspace 等主流邮件服务淘汰 SMTP 基本认证，转向 OAuth 2.0 客户端凭据或 XOAUTH2，以及迁移路径。
 - [SMTP/IMAP 的 OAuth 2.0 认证（RFC 7628，XOAUTH2）如何替代明文密码？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/oauth2-smtp-imap-auth.html): RFC7628 让 SMTP/IMAP 用 OAuth 令牌(XOAUTH2)代替密码认证，令牌短时效可吊销支持MFA，降低密码泄露风险；现代邮箱接入推荐。
 - [OAuth 2.0 邮件认证深度解析 — RFC 7628：XOAUTH2 与 SMTP/IMAP OAUTHBEARER · ztpop 邮件技术知识库](https://www.ztpop.net/kb/oauth2-xoauth2-email-rfc7628.html): RFC 7628 SASL OAUTHBEARER 与 XOAUTH2 完整解析：为何取代明文密码、Bearer 令牌格式、与 SMTP AUTH / IMAP 的集成，以及令牌生命周期与零信任安全要点。
-- [如何检测与防止开放中继（Open Relay）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/open-relay-detection-prevention.html): 开放中继会放任任意外部发信被中转，检测靠外部 SMTP 探测，防护靠强制认证、限制中继网段与收紧配置。
+- [开放中继（open relay）是什么？怎么检测自己的邮件服务器有没有被当成垃圾跳板？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/open-relay-detection-prevention.html): 依据 RFC 2505 第 2.1、2.4、2.9、2.10、2.11 节，说明开放中继是未授权把主机当邮件跳板（MUST 拒绝）、中继授权应仅限信任网络或备用 MX、用中继拒绝日志与 MAIL From/local-part 验证检测、以及默认拒绝中继、关闭对外 VRFY/EXPN、监控 DNSBL 信誉等加固手段。
 - [新一代开源邮件基础设施盘点：KumoMTA、Stalwart 与 mail-auth（2026） - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/open-source-mail-infrastructure-2026.html): 盘点 2026 年新一代开源邮件基础设施三件套：Rust 编写的高性能外发 MTA KumoMTA（对标 Momentum/PowerMTA）、一体化邮件与协作服务器 Stalwart（IMAP/JMAP/SMTP/CalDAV，内置 DMARC/DKIM2/SPF/ARC）、Rust 邮件认证库 mail-auth。含定位对比、选型建议与 RFC 依据。
 - [开源与国产邮件系统选型对照表（2026）：Postfix/Stalwart/James/信创商业方案决策矩阵 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/open-source-mail-server-comparison-2026.html): 2026 年开源与国产商业邮件系统选型对照表：Postfix+Dovecot（传统多组件栈）、Stalwart v0.16.x（Rust 一体化，内置 DKIM2/DMARCbis）、Apache James 3.9.0（Java/Jakarta，Mailet 可编程流水线）对比信创国产商业方案（Coremail/U-Mail/网际思安），覆盖协议支持、安全认证、信创适配、运维复杂度、TCO 估算。
 - [OpenDKIM 是什么？它如何为邮件做 DKIM 签名与验证？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/opendkim-faq-01.html): OpenDKIM 是开源 DKIM 实现，作为 milter 挂接 MTA，对出站邮件签名、入站邮件验证，符合 RFC 6376。
@@ -1056,14 +1210,22 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [PCI DSS v4.0.1 对通过邮件传输持卡人数据有什么要求？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/pci-dss-v4-email-pan-transmission.html): PCI DSS 要求 4.2.2 禁止通过邮件等终端用户消息技术发送未受保护的主账号（PAN），无论内网还是公网；要求 4.2.1 规定公开网络传输须用强加密。
 - [如何使用 PGP/GPG 部署邮件端到端加密？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/pgp-gpg-email-encryption-deploy.html): 使用 GnuPG 生成 OpenPGP 密钥对，经公钥服务器或 WKD 分发，在 Thunderbird/Outlook 等客户端实现邮件签名与端到端加密。
 - [PGP/GPG 邮件加密完全指南 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/pgp-gpg-guide.html): 基于 RFC 4880 和 RFC 3156 的 PGP/GPG 邮件加密完整指南。深入讲解非对称加密原理、GnuPG 密钥生成与最佳实践、PGP/MIME 格式规范、Web of Trust 信任网络模型、Enigmail/Thunderbird 客户端配置以及密钥签名派对等社区实践。
+- [想跟踪钓鱼攻击的技术演进，有哪些权威统计口径可用？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/phishing-attack-trend-metrics-apwg.html): 介绍 APWG Phishing Activity Trends Report 的官方数据来源与统计方法，并整理其 2025 年第一季度摘要中的四项信号：攻击总量、二维码投递、支付与金融行业占比、电汇型 BEC 环比增幅，以及如何映射为本地可观测指标。
+- [防钓鱼邮件为什么不能只靠「培训员工识别」？分层防御该怎么建？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/phishing-defence-four-layers-ncsc.html): 翻译整理英国 NCSC 官方指南《Phishing attacks: defending your organisation》：为何单靠用户识别不可行、四层缓解模型的划分、DMARC 在第一层的定位、钓鱼演练的法律与信任风险，以及一个 1800 封恶意邮件被逐层收敛到 1 例的真实案例。
 - [钓鱼邮件检测与防御体系 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/phishing-defense.html): 从URL伪装技术到AI驱动的多模态检测，系统解析钓鱼邮件的攻击手法与纵深防御架构。涵盖SPF/DKIM/DMARC的反钓鱼角色、NIST SP 800-177 §5标准、ENISA威胁态势报告及APWG全球数据。
 - [钓鱼工具包（Phishing Kit）如何分析与防御？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/phishing-kit-analysis-defense.html): 钓鱼工具包是包含伪造登录页、凭据收割脚本与跳转逻辑的现成攻击包，可通过文件命名特征、外泄端点和品牌仿冒域名检测并阻断。
 - [钓鱼工具包（Phishing Kit）与 PhaaS 平台是如何运作的？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/phishing-kit-phaas-analysis-2026.html): 以 Europol 查处的 LabHost 为例，钓鱼即服务平台按月订阅（均价约 249 美元）提供钓鱼工具包、页面托管、170 余套仿冒站点模板与可实时窃取双因素验证码的管理面板 LabRat。
+- [一封钓鱼邮件已经投进了收件箱，隔离、召回、通告该按什么顺序做？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/phishing-mail-quarantine-playbook.html): 钓鱼邮件已投递后的处置最怕两件事：先删后查导致证据消失，以及只处理了报告的那一封而漏掉同批次其余邮件。本文给出取证优先的处置顺序、用不变量确定影响面的检索方法、按用户交互状态分档的处置策略，以及通告写法与反馈闭环。
+- [都说要上 MFA，但短信验证码、普通推送也能被钓鱼绕过，到底哪种 MFA 真抗钓鱼？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/phishing-resistant-mfa-deployment.html): 依据 CISA《Implementing Phishing-Resistant MFA》事实说明的表 1 与 FIDO/WebAuthn 段，说明并非所有 MFA 等价、按抗钓鱼能力由强到弱为 FIDO/WebAuthn 与 PKI-based、带 number matching 的推送/OTP、纯推送、SMS/语音，解释 WebAuthn 由 W3C 发布且内置于主流平台、以及向抗钓鱼 MFA 迁移的建议。
 - [什么是“防钓鱼 MFA / 通行密钥（Passkeys）”？为何能根除钓鱼？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/phishing-resistant-mfa-passkeys.html): 防钓鱼 MFA/通行密钥用 FIDO2 源绑定密码学,中继假站拿不到合法签名,根除 AiTM 与疲劳轰炸;优先高权账户强制+保留恢复路径。
 - [什么是“钓鱼模拟演练”？如何科学开展、避免反效果？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/phishing-simulation-training.html): 钓鱼模拟=授权发仿真邮件测点击/上报率并即时微培,看趋势而非惩罚,上报率升比点击率降更说明改善,须透明合规防抵触。
 - [钓鱼邮件中的 URL 有哪些关键分析指标？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/phishing-url-analysis-indicators.html): 钓鱼 URL 关键指标包括同形异义字与打字错误、品牌冒用子域、可疑 TLD、重定向链、URL 编码混淆、HTTP 协议与证书异象，并应结合情报验证。
 - [钓鱼攻击防护与邮件认证技术频道 - 昆仑邮件系统知识库](https://www.ztpop.net/kb/phishing/index.html): 从 SPF/DKIM/DMARC 邮件认证到 AI 驱动的钓鱼检测，从邮件头取证到 BIMI 品牌标识—构建全方位反钓鱼防线。覆盖 NIST SP 800-177、RFC 8617 ARC 认证链等权威标准。
 - [《个人信息保护法》对邮件系统有哪些合规要求？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/pipel-personal-information-protection-law-email.html): 《个人信息保护法》要求邮件系统在处理邮箱地址、通信内容等个人信息时遵循告知同意、最小必要、加密保护、影响评估与跨境合规等要求。
+- [告知同意和「最小必要」原则在邮件系统上怎么落地？哪些动作不需要同意？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/pipi-email-consent-minimization.html): 个保法确立了告知—同意这一处理个人信息的核心合法性基础，同时规定了最小必要、公开透明、目的限制等原则。邮件系统的现实矛盾在于：它既承载业务必需的大量通信，又天然沉淀个人信息，且很多处理动作（如员工邮箱的管理）并不能简单套用「取得个人同意」。本文拆解告知同意在邮件场景的适用边界、最小必要如何量化、以及哪些情形可依赖其他合法性基础。
+- [邮件系统的数据出境怎么算「个人信息出境」？哪些情形触发个保法的出境规则？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/pipi-email-cross-border-transfer.html): 个保法设专章规范个人信息跨境提供的规则，要求具备特定条件（如通过安全评估、个人信息保护认证或订立标准合同）方可向境外提供个人信息。邮件系统因其分布式与跨域特性，极易在无意中触发出境规则：海外节点中继、云端邮箱、境外合作方抄送、全球通讯录同步都可能构成出境。本文说明如何判定邮件场景中的出境行为，以及不同出境路径对应的合规条件。
+- [邮件系统里到底哪些才算「个人信息」？正文、附件、通讯录、日志分别怎么算？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/pipi-email-personal-info-identification.html): 个保法把「个人信息」定义为以电子或者其他方式记录的与已识别或者可识别的自然人有关的各种信息，并据此衍生出敏感个人信息的更高保护要求。邮件系统是个人信息的高度密集载体，但很多单位在合规时只盯住正文，漏掉了附件、通讯录、往来记录与日志。本文按个保法的定义口径，逐类说明邮件系统中哪些数据落入个人信息乃至敏感个人信息范畴，以及这种归类如何直接决定后续的处理规则。
+- [个人信息主体查阅、复制、可携带、删除的权利，邮件系统该怎么响应？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/pipi-email-subject-rights-archive.html): 个保法赋予了个人一系列权利：查阅复制、可携带、更正补充、删除、解释说明自动化决策等，并要求处理者在合理期限内响应。邮件系统作为个人信息的密集载体，常面临两类矛盾：一是员工要求导出或删除工作邮箱数据，二是个人要求删除含有自己信息的往来邮件。本文从权利类型出发，说明邮件系统在设计上如何支持这些权利的落地与时限响应。
 - [邮件场景下如何满足《个人信息保护法》的合规要求？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/pipl-email-processing-compliance.html): 《个人信息保护法》第十三条规定处理个人信息的合法性基础，第五十一条列举六项保障措施，第五十五条列明五类须事前开展个人信息保护影响评估的情形，第五十七条规定泄露后的通知义务。
 - [用第三方 SaaS 邮箱，谁是个人信息处理者？受托处理的边界和合同要点是什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/pipl-saas-mailbox-entrusted-processing-boundary.html): 个人信息保护法区分了处理者与受托处理方，并对委托处理设定了合同、监督、不得超范围处理与返还删除等要求。本文分析企业采用第三方邮箱服务时的角色界定，以及必须在合同与技术上落实的控制项。
 - [POP3 的 APOP 与 SASL 认证（RFC 1939/5034）如何实现“不明文传密码”？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/pop3-apop-sasl.html): POP3 APOP 用 MD5 挑战响应避免明文密码(已弱)，SASL+STARTTLS 为现代推荐；必须 STLS 后再认证，禁用无 TLS 明文 USER/PASS。
@@ -1086,14 +1248,19 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [如何把 Postfix 配置成某远程站点的备份 MX（backup MX）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/postfix-faq-07.html): Postfix 备份 MX 配置：relay_domains + permit_mx_backup + relay_recipient_maps 防止开放中继。
 - [怎样限制用户只能发站内邮件、不能把邮件中继到外站？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/postfix-faq-08.html): 限制 Postfix 用户只能发站内：smtpd_relay_restrictions 组合 permit_mynetworks、permit_sasl_authenticated 与 reject_unauth_destination。
 - [Postfix 邮件服务器有哪些关键安全加固项（防开放中继、TLS、访问控制）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/postfix-hardening-config.html): Postfix 加固要点：mynetworks/relay 严格防开放中继、smtpd/smtp_tls_security_level 控加密、restrictions+RBL+postscreen 做访问控制；改完 postconf -n 复核。
+- [Postfix 的 header_checks 与 body_checks 支持哪些动作（action）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/postfix-header-checks-body-checks-actions.html): 列举 Postfix header_checks 与 body_checks 支持的拦截/改写/重定向等动作及使用注意（翻译自 Postfix 官方文档）。
 - [Postfix Log 分析与报警体系搭建 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/postfix-log-analysis-alerting.html): Postfix 日志结构全解析：pflogsumm/logwatch/fail2ban/ELK 集成方案、关键日志模式识别（delay/reject/bounce/connection）与报警阈值设计。
+- [Postfix 日志该怎么读？排障时最常用的字段与判断路径有哪些？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/postfix-log-analysis-cheatsheet.html): Postfix 日志的阅读门槛在于一封邮件对应多行、分散在不同组件中，必须先按队列 ID 聚合才能还原全过程。本文梳理各组件日志行的语义、status 三态与 delays 四段的拆解方法、常见排障路径，以及跨主机关联与取证时的注意事项，全部依据 Postfix 官方文档。
 - [Postfix 多实例部署架构 — multi-instance 原理、配置与生产实践 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/postfix-multi-instance.html): Postfix 从 2.6 版本开始支持 multi-instance 架构（multi-instance 支持），允许在同一主机上运行多个独立的 Postfix 实例。本文详解 master.cf 命名空间隔离、instance 生命周期管理、multi_instance_wrapper 包装器协议、资源隔离策略以及典型多租户生产场景。
 - [Postfix 性能调优：master.cf 进程模型与队列 I/O 优化 — ztpop 知识库](https://www.ztpop.net/kb/postfix-performance-tuning.html): Postfix 性能深度调优：master.cf 各服务进程 maxproc 配置、队列目录哈希参数、smtpd 速率限制和 I/O 调度策略优化。
 - [Postfix 邮件队列积压时，如何按官方方法逐级定位瓶颈？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/postfix-queue-backlog-triage-runbook.html): Postfix 分 maildrop、incoming、active、deferred、hold 五个队列，各自积压对应不同瓶颈；用 qshape 看域与年龄分布定位问题目标，用 postqueue/postsuper 处置，并遵循官方「先修根因、勿盲目提高重试频率」的原则。
 - [Postfix 队列积压时如何安全排查与清理，而不误删正常邮件？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/postfix-queue-management.html): Postfix 队列（active/deferred/maildrop）管理命令与积压排障：postqueue、mailq、hold 队列与选择性清理。
 - [Postfix 队列监控与管理：qshape/mailq/postsuper 详解 — ztpop 知识库](https://www.ztpop.net/kb/postfix-queue-monitoring.html): Postfix 队列管理完整指南：qshape 分析邮件积压、mailq 查看队列内容、postsuper 删除/重新排队邮件，覆盖队列 I/O 优化。
+- [Postfix 的各类 restriction 列表（如 smtpd_*_restrictions）按什么顺序求值？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/postfix-restriction-lists-evaluation-order.html): 讲解 Postfix 各 smtpd_*_restrictions 列表的会话阶段触发顺序与配置要点（翻译自 Postfix 官方文档）。
+- [Postfix 如何用 per-destination TLS 策略映射（tls_policy_maps）控制按目标域的 TLS？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/postfix-smtp-tls-policy-maps-per-destination.html): 讲解 Postfix 用 tls_policy_maps 按目标域设置 TLS 策略等级（may/encrypt/secure/dane/verify）的方法（翻译自 Postfix 官方文档）。
 - [Postfix smtpd 全链路限制配置 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/postfix-smtpd-restrictions-guide.html): Postfix SMTP Server (smtpd) 从 HELO/EHLO 到 DATA/EOD 的五大限制阶段详解：规则顺序编排、性能影响分析、安全边界界定、常见配置陷阱与典型场景模板。
 - [Postfix 如何配置 TLS 加密（ opportunistic vs enforced）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/postfix-tls-config.html): Postfix 用 tls_security_level=may 做机会加密（支持就加密）、=encrypt 强制加密；需配证书、禁用弱协议，并考虑 MTA-STS/DANE 防 STRIPTLS。
+- [Postfix 的 virtual_alias_maps 与 canonical_maps 有什么不同，分别何时用？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/postfix-virtual-alias-vs-canonical-maps.html): 对比 Postfix virtual_alias_maps 与 canonical_maps 的作用阶段、改写范围与适用场景（翻译自 Postfix 官方文档）。
 - [MTA 架构对比：模块化设计与一体式邮件平台 — ztpop 知识库](https://www.ztpop.net/kb/postfix-vs-exchange-architecture.html): MTA 架构设计对比：Postfix 模块化进程模型、Exchange 单一服务架构、组件解耦与故障隔离、性能扩展路径分析。
 - [发件人信誉由哪些信号构成，官方 Postmaster 工具能看到什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/postmaster-tools-reputation-signals.html): 发件人信誉同时挂载在 IP 与域名两个标识上，由投诉率、认证通过率、加密比例、退信与拒绝、发送量波动、垃圾陷阱命中等信号构成；Google Postmaster Tools、Microsoft SNDS/JMRP 与 Yahoo 发件人页面是各自官方的观测入口。
 - [邮件系统监控与告警体系：Prometheus + Grafana 指标模型与 blackbox_exporter SMTP 探测 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/prometheus-grafana-email-monitoring-alert-system.html): 基于 Prometheus + Grafana 构建邮件系统全栈监控体系，涵盖核心指标模型（队列深度/延迟百分位/认证失败率/退信率）、blackbox_exporter SMTP 协议探测方法、自定义 alert 规则设计与 SLO 仪表盘构建实践。
@@ -1107,9 +1274,11 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [抗量子加密邮件：NIST 后量子密码标准与混合密钥交换 — ztpop 知识库](https://www.ztpop.net/kb/quantum-safe-email-cryptography.html): 抗量子加密在邮件系统的应用：NIST PQC 标准化（CRYSTALS-Kyber/Dilithium）、混合 TLS 密钥交换和 S/MIME 过渡路径分析。
 - [Quarantine 邮件管理：隔离区存储策略、自助释放与审核工作流 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/quarantine-mail-management.html): 邮件隔离区（Quarantine）的完整管理方案，涵盖隔离区存储架构与保留策略、用户自助释放机制设计、管理员审核工作流配置、SpamAssassin 与 Rspamd 隔离实现对比分析、以及误报处理的最佳实践。
 - [什么是“二维码钓鱼（Quishing）”？为何 2026 年猛增、如何防御？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/quishing-qr-code-phishing-defense.html): Quishing 用二维码替代恶意链接,绕过 URL 扫描:手机扫码才落地恶意站;防御=网关 OCR 提取 QR 解码 URL 沙箱比对+员工不扫码登录敏感系统+防钓鱼 MFA。
+- [邮件是勒索软件的主要入口之一，投递面到底能收敛到什么程度？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/ransomware-email-vector-mitigation.html): 邮件侧无法解决勒索软件问题，但可以显著收窄投递面。本文按 CISA StopRansomware 的分层视角，给出附件策略应按内容类型而非扩展名黑名单设计的理由、宏与活动内容的平台侧处置、链接检测的收益与代价，以及为什么快速检索能力本身就是一项缓解措施。
 - [RBL/DNSBL 信誉过滤如何调优与避坑？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/rbl-dnsbl-reputation-tuning.html): DNSBL 通过反向查询发送 IP 是否在黑名单区判定信誉，应作为评分因子而非唯一硬拒依据，并谨慎选单、设置阈值与白名单以避免误杀。
 - [如何识别伪造的 Received 头（邮件溯源造假）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/received-forgery.html): Received 头由经手服务器自写，发送方难伪造“对方”写的头，但可在信中预塞伪造 Received 误导；识别靠核对最顶真实跳、下方跳主机/时间/时区是否矛盾、信封与信头是否一致。
 - [邮件 Received 头链（Received header chain）是什么？如何用它做邮件溯源与取证？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/received-header-chain.html): Received 头链（RFC 5321 §4.4）逐跳记录邮件路径，自上而下回溯可溯源取证；重点看 with/TLS 与 from/by 主机名，并交叉 DKIM/SPF 防伪造。
+- [Received 头链应该怎么逐跳解析？哪一跳的信息可以采信？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/received-header-chain-parsing.html): 依据 RFC 5321 第 4.4 节与 RFC 5322 第 3.6.7 节，说明 Received 头必须前置且不得篡改因而应自上而下逆序阅读、FROM 子句中 EHLO 名与 TCP 层地址字面量的可信度差异、FOR 与 ID 子句的规范约束、时区偏移写法，以及 Return-Path 与 Received 的区别。
 - [如何用 Received 链做“高级邮件取证”？怎样还原完整传输路径并识别篡改？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/received-highlevel-forensics.html): 高级 Received 取证：从下往上逐跳还原路由、算时延迟、比对信封与信头 Received 识别伪造（时间倒流/时区矛盾/不可达IP）、结合 Authentication-Results 与 DKIM 佐证真实性。
 - [邮件头里的 Received 时间戳与时区（RFC 5321 §4.4）如何解读？为何能还原传输路径？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/received-timezone.html): Received 头末尾的“时间+时区偏移”标明该跳发生地时区，跨时区多跳可凭偏移反推路径与延迟；头倒序（最上为最后一跳），时间异常暗示伪造或时钟不同步。
 - [REQUIRETLS 如何强制实施？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/requiretls-policy-enforcement.html): REQUIRETLS（RFC 8689）让发件方要求整条投递链都必须使用 TLS，任何一跳无法加密则退信，杜绝明文暴露敏感邮件。
@@ -1208,6 +1377,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [8BITMIME 扩展（RFC 6152）是什么？它与 SMTPUTF8 有何区别？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-8bitmime.html): 8BITMIME（RFC 6152）允许 8 位文本正文直接传输、无需编码，但信封仍 ASCII；SMTPUTF8 才允许非 ASCII 地址，二者层次不同。
 - [SMTP 的 8BITMIME 扩展（RFC 6152）解决了什么？为什么“8 位内容”需要它？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-8bitmime-extension.html): 8BITMIME(RFC6152) 让 SMTP 原样传输 8 位内容(如 UTF-8 正文)，免 Base64/QP 编码降体积保可读；仍是行文本非任意二进制，需与 SMTPUTF8/BINARYMIME 区分。
 - [SMTP AUTH（RFC 4954）是什么？发件认证（SASL）如何在邮件提交中防止冒用？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-auth.html): SMTP AUTH（RFC 4954）用 SASL 在邮件提交时验证用户身份，关闭开放中继、防滥发冒用；应在 TLS 上进行，与 SPF/DKIM/DMARC 域认证互补。
+- [怎样发现 SMTP 认证被绕过或发信凭据被滥用？有哪些必须监控的信号？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-auth-bypass-detection.html): SMTP 侧的认证问题极少来自算法被攻破，绝大多数是配置面留下的口子与凭据本身被盗用。本文按 RFC 4954、RFC 6409、RFC 8314 与 RFC 7601 梳理入站三条路径的语义差异，给出配置面自查项与凭据滥用的检测信号，并说明为什么 OAuth 通道必须单独监控。
 - [SMTP 认证机制（CRAM-MD5/OAUTH）应如何选择？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-auth-cram-md5-oauth.html): SMTP 提交认证中 CRAM-MD5 仅做挑战应答但不抗现代离线破解，OAuth 2.0 基于令牌更安全；新系统应优先 OAuth 并强制 TLS。
 - [SMTP 认证失败日志诊断 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-auth-failure-diagnosis.html): 535 Authentication Failed / 530 TLS Required / 454 Temporary Authentication Failure 三种错误模式的日志字段解读、根因分析与排查步骤。涵盖 RFC 4954、RFC 3207、RFC 4616 标准。
 - [SMTP AUTH 认证机制详解 — RFC 4954：PLAIN、LOGIN、CRAM-MD5 与 OAuth2 的完整实现路径 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-auth-guide.html): RFC 4954 SMTP AUTH 认证扩展深度解析：PLAIN (RFC 4616)、LOGIN、CRAM-MD5、OAuth2 (RFC 6749) 四种机制的密码学对比、Postfix Cyrus SASL 与 Dovecot SASL 配置模板、NTLM 桥接方案、认证失败及中继拒绝的故障排查流程。
@@ -1223,6 +1393,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [SMTP CHUNKING 扩展（RFC 3030）是什么？它为何能发超大邮件且避免“先传后拒”？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-chunking-ext.html): CHUNKING（RFC 3030）用 BDAT 分块替代 DATA 发送正文，降低大邮件内存压力、传输更可控，并可与 PRDR 配合逐收件人响应；须双方声明，旧系统回退 DATA。
 - [SMTP 的 CHUNKING（RFC 3030，BDAT）如何“分块传输”大邮件？与 PIPELINING 有何关系？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-chunking-extension.html): CHUNKING(RFC3030, BDAT 分块) 让大邮件边收边处理不必先落地，常与 BINARYMIME 同用支持二进制；是内存/流式优化，与 PIPELINING 的 RTT 优化正交可叠加。
 - [SMTP DANE vs MTA-STS vs TLS-RPT 三选一对比决策 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-dane-mta-sts-tls-rpt-comparison.html): RFC 7671 DANE TLSA、RFC 8461 MTA-STS 与 RFC 8460 TLS-RPT 的七维横向对比：DNSSEC依赖、安全强度、配置复杂度、失败处理与推荐部署组合。
+- [SMTP DANE 是怎么用 DNSSEC 给收件服务器证书「钉死」来防劫持的？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-dane-tls-authentication.html): 依据 RFC 7672 解释 SMTP 的 DANE/TLSA：借 DNSSEC 校验 MX 对应的 TLSA 记录、把对端证书与域名绑定，抵御主动攻击与证书替换，对比传统信任 CA 体系的差异。
 - [SMTP 邮件投递延迟排查与调优 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-delay-troubleshooting.html): 详解邮件投递延迟的定位与排除：发件方/收件方延迟分类、Postfix 延迟指标分析、greylisting/速率限制处理、DNS 缓存和并发连接调优。
 - [投递状态通知（DSN，RFC 3461/3464）是什么？如何读懂失败/延迟/成功回执？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-dsn.html): DSN（RFC 3461/3464）是结构化投递回执，含 success/failure/delayed 三类动作与 RFC 3463 状态码，据此读懂失败/延迟/成功；配合 VERP 可归因到具体收件人。
 - [SMTP 投递状态通知（DSN）全面解读 · RFC 3461 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-dsn-rfc3461.html): 深度解读 RFC 3461 SMTP DSN 扩展：NOTIFY 参数、RET 参数、ENVID/ORCPT 机制，以及在邮件系统中的实践配置与排错指南。
@@ -1245,6 +1416,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [SMTP 协议深度解析 — RFC 5321：从 HELO/EHLO 到 QUIT 的全链路传输与扩展框架 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-protocol-deep-dive.html): RFC 5321 完整解析：SMTP 会话模型（HELO→MAIL FROM→RCPT TO→DATA）、信封 vs 信头（RFC 5322）、ESMTP 扩展机制、SMTP 响应码体系、PIPELINING/8BITMIME/CHUNKING/SIZE/STARTTLS 扩展、消息队列与重试策略、SMTPUTF8 (RFC 6531)。
 - [SMTP 速率限制（Rate Limiting）是什么？如何防止被当作垃圾源？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-rate-limiting.html): SMTP 速率限制对连接数/每连接消息数/每域出信量设上限，平滑投递避免被接收方限流或拉黑；出入双方向都需要，是稳定送达与不被封的基础。
 - [SMTP 中继（relay）与邮件网关（gateway）有什么区别，该怎么选？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-relay-vs-gateway.html): 区分 SMTP 中继与邮件安全网关的职责边界、典型部署形态与选型建议。
+- [退信里的 4xx 和 5xx 到底差在哪？常见回复代码分别代表什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-reply-codes-4xx-5xx-guide.html): 依据 RFC 5321 第 4.2.1、4.2.3 节与 RFC 3463 第 2、3 节，解释 SMTP 回复码首位数字的语义、4yz 与 5yz 的判定经验法则、421/450/451/452/550/552/554 等常见代码的规范文本，以及增强状态码 class.subject.detail 结构与 X.1.1、X.2.2、X.3.1、X.4.4、X.7.1 等细分码的官方释义。
 - [REQUIRETLS（RFC 8689）是什么？它如何强制端到端邮件加密、防止降级？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-requiretls.html): REQUIRETLS（RFC 8689）让发件方强制全链路必须 TLS、禁止明文回落与降级，保护敏感邮件机密性；任一跳无 TLS 则投递失败而非降级。
 - [SMTP 重试退避（Backoff，RFC 5321 §4.5.4.1）如何工作？为何要指数退避？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-retry-backoff.html): 遇临时失败 MTА 留队按递增(指数)退避重试（30分→1时→2时…），避免对暂时不可用方雪崩重试，建议持续数天再放弃转退信，平衡不丢信与不占队列。
 - [SMTP SIZE 扩展（RFC 1870）是什么？它如何避免发送超大邮件被拒收？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/smtp-size.html): SIZE 扩展（RFC 1870）让服务器声明最大消息字节数、客户端用 MAIL FROM SIZE= 预申报，超限在传前即拒，节省带宽避免大邮件被拒收。
@@ -1275,8 +1447,9 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [SpamAssassin 历史上有过哪些重要安全漏洞（CVE）？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spamassassin-faq-06.html): SpamAssassin 曾有多个 .cf 规则 RCE 漏洞（CVE-2020-1946、1931/1930、2019-12420、2018-11805），应及时升级。
 - [为什么要保持 SpamAssassin 规则集（ruleset）更新？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spamassassin-faq-07.html): SpamAssassin 自 2020-03-01 停用 SHA-1 规则集，3.4.2 之前版本无法继续接收规则更新，须升级。
 - [SpamAssassin 的评分框架与插件机制有什么优点？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spamassassin-faq-08.html): SpamAssassin 评分框架+插件整合多测试，规则纯文本易扩展，站点级与用户级策略可分别施加。
-- [Spamhaus DBL 域名黑名单数据源深度解读 — RFC 5782 DNSBL 架构与 dbl.spamhaus.org 查询实践 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spamhaus-dbl-dat
-- [Spamhaus 僵尸网络威胁报告 2026 上半年：C&C 总量 -30%，Sliver 登顶，.cn 域名滥用 +771% · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spamhaus-botnet-threat-report-2026h1.html): Spamhaus 2026-07-10 官方报告解读：botnet C&C 服务器 -30% 至 14,952 台，Sliver 超过 Cobalt Strike 登顶（+58%），.cn 域名 C&C 滥用 +771%，印度注册商 PDR 被滥用 +901%，俄罗斯 REGRU -90%；含 Top 20 恶意软件家族/TLD/注册商/托管网络/地理分布完整数据。asource.html): Spamhaus DBL（Domain Blocklist）是全球邮件反垃圾体系中最重要的域名级黑名单数据源之一。本文从 RFC 5782 DNS 黑名单协议标准出发，深度解析 DBL 的数据来源、DNS 查询机制、127.0.1.x 返回码分类体系，以及在 MTA 和邮件安全网关中的实际部署方法。
+- [SpamAssassin 的 required_score 与 rewrite_header 如何配置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spamassassin-required-score-rewrite-header.html): 说明 SpamAssassin 的 required_score 阈值与 rewrite_header 标头改写配置方法（翻译自 Apache SpamAssassin 官方文档）。
+- [SpamAssassin 的 sa-update 更新规则后，我自己的本地规则（local.cf）会被覆盖吗？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spamassassin-sa-update-local-cf-rules.html): 澄清 SpamAssassin sa-update 只更新官方通道、local.cf 等本地规则不会被覆盖，并说明 --updatedir 使用陷阱（翻译自 SpamAssassin Wiki）。
+- [Spamhaus DBL 域名黑名单数据源深度解读 — RFC 5782 DNSBL 架构与 dbl.spamhaus.org 查询实践 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spamhaus-dbl-datasource.html): Spamhaus DBL（Domain Blocklist）是全球邮件反垃圾体系中最重要的域名级黑名单数据源之一。本文从 RFC 5782 DNS 黑名单协议标准出发，深度解析 DBL 的数据来源、DNS 查询机制、127.0.1.x 返回码分类体系，以及在 MTA 和邮件安全网关中的实际部署方法。
 - [SPF / DKIM / DMARC 三合一完整部署检查清单 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spf-dkim-dmarc-checklist.html): SPF、DKIM、DMARC三协议协同工作，形成邮件认证的完整防御体系。本文详细阐述三者的递进式协同关系，提供从配置语法到验证工具的全流程检查清单，系统梳理常见配置错误并给出从p=none到p=reject的分阶段实施时间表。
 - [SPF 的 DNS 查询上限（10 次）是什么意思？include 嵌套过深会怎样？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spf-dns-lookup-limit.html): RFC 7208 限定 SPF 评估 DNS 查询不超 10 次，include 嵌套过深会触发 PermError 使 SPF 失效，应扁平化并预校验查询数。
 - [什么是 SPF（发件方策略框架）？它解决什么问题？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spf-faq-01.html): SPF（RFC 7208）是邮件认证机制，发件域在 DNS 声明授权发信 IP，接收方据此防伪造。
@@ -1293,6 +1466,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [SPF 宏机制详解 — RFC 7208 §7：macro 展开、变量替换与 DNS 查询优化 - 知识库 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spf-macros-guide.html): RFC 7208 §7 完整解析：SPF 宏机制（macro expansion）的 11 个宏字母、四大转换器（digit truncation / reverse / URL-escape / delimiter）、%{ir}.%{v}.spf 实战模式及 DNS 查询爆炸的规避策略。
 - [SPF 的判定机制（all/include/a/mx/ptr/ip4/ip6/exists，RFC 7208）分别是什么意思？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spf-mechanism-detail.html): SPF（RFC 7208）用 v=spf1 后跟机制（all/include/a/mx/ptr/ip4/ip6/exists）从左到右求值，首个匹配决定 +pass/-fail/~softfail；include 受 10 次 DNS 查询上限。
 - [SPF PermError 完全诊断手册：10次DNS查询限制、CNAME解析失败、redirect循环 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spf-permerror-diagnostic.html): SPF PermError 完全诊断手册：基于RFC 7208 §4.6定义的PermError触发条件，覆盖10次DNS查询限制突破、SPF记录中CNAME/NXD解析失败、redirect机制循环检测、include深度递归、语法引号不匹配、双SPF记录、DMARC alignment因PermError降级的连锁反应，以及SPF flatten自动化工具选择（spftool/spf-tools/python-spf）和dnspython实时诊断脚本。
+- [SPF 校验结果里的 neutral / permerror / temperror 各是什么意思？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spf-result-codes-neutral-permerror-temperror.html): 解释 SPF 校验的 neutral、permerror、temperror 等结果码含义及对接收方处理的建议（翻译自 RFC 7208）。
 - [SPF 软失败（~all）应如何处理与策略选择？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spf-softfail-handling-policy.html): SPF 软失败 ~all 表示「未列明即嫌疑」但非明确拒绝；接收方应标记或置于垃圾而非硬拒，并与 DMARC 对齐以平衡安全性与误杀风险。
 - [SPF验证失败诊断指南 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/spf-troubleshooting.html): SPF验证失败的5类常见原因及修复方法：DNS查询超限、多条记录、MAIL FROM不一致、include缺失、语法错误。基于RFC 7208。
 - [SRS (Sender Rewriting Scheme) 地址重写实践：SRS0/SRS1与SPF/DMARC对齐](https://www.ztpop.net/kb/srs-rewriting-guide.html): SRS (Sender Rewriting Scheme) 地址重写实践：SRS0/SRS1 签名验证机制、SPF 转发对齐关系、DMARC 对齐冲突分析、Postfix postsrsd 部署配置与排错指南。
@@ -1305,7 +1479,9 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [威胁情报源如何集成到邮件防御体系？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/threat-intel-feed-integration.html): 威胁情报源（IP/域名/URL/指纹/勒索软件哈希）经 TAXII/STIX 或 API 接入网关与 SIEM，实现自动封禁与关联分析。
 - [TLS 1.3 对 MTA-STS 的影响 · SMTP 传输加密演进 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/tls-1-3-mta-sts-impact.html): 分析 TLS 1.3 协议特性对 MTA-STS 部署的影响，包括握手延迟优化、密码套件变更、证书验证要求，以及与 DANE TLSA 的互操作考量。
 - [邮件传输加密深度解析 — STARTTLS、DANE TLSA 与 MTA-STS 三位一体防护体系 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/tls-email-encryption.html): 邮件 TLS 加密全链路：STARTTLS 机会加密机制、DANE TLSA（RFC 7672）基于 DNSSEC 的证书绑定、MTA-STS（RFC 8461）基于 HTTPS 的策略分发、TLS 1.3 vs TLS 1.2 密码套件取舍、证书类型对比（DV/OV/EV）、MTA 通信中 TLS 互操作性问题与降级攻击防御。
+- [对方说邮件发不进来、报 TLS 错误，入站 TLS 该怎么一步步排查？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/tls-inbound-mail-troubleshoot.html): 入站邮件的 TLS 故障排查最怕搞错层次：MTA 间的 STARTTLS、用户提交、客户端访问是三条不同的路径，故障表现与处置完全不同。本文给出分层定位方法、从 DNS 到证书的六步排查顺序、高频根因清单，以及如何用 TLS 报告把被动救火变成主动发现。
 - [TLS-RPT 邮件传输安全报告 — RFC 8460：JSON 报告结构与 MTA-STS 策略联动 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/tls-rpt-guide.html): RFC 8460 TLS-RPT 邮件传输安全报告机制深度解析：JSON 报告字段结构（policy、failure-details、result-type）、与 MTA-STS (RFC 8461) 的策略联动、常见 TLS 故障类型（certificate-expired、certificate-host-mismatch、starttls-not-supported）的诊断与修复。
+- [怎么看懂 TLS-RPT（SMTP TLS 报告）回传的失败数据？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/tls-rpt-report-interpretation.html): 依据 RFC 8460 解读 TLS-RPT 聚合报告：_smtp._tls TXT 记录、JSON 报告结构、成功/失败结果字段，以及它如何发现中间人降级攻击。
 - [TLS-RPT 报告解读与自动化分析 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/tls-rpt-report-parsing.html): 系统讲解TLS-RPT（RFC 8460）报告的获取、解析与自动化分析，涵盖报告格式（JSON Schema）、SMTP TLS连通性问题的识别、聚合数据的统计分析策略及基于开源工具的自动化管道搭建。
 - [TLS-RPT SMTP 传输加密报告深度解析 — RFC 8460：JSON 失败类型全量分析与自动化处理管道 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/tls-rpt-smtp-reporting.html): TLS-RPT RFC 8460 深度覆盖：JSON 报告字段逐层拆解（start-date/end-date/session-count/mx-host-pattern/failure-details）、七大 result-type 故障类型与根因分析、Prometheus+Grafana 监控管道搭建、TLS 报告自动化处理工具链。中文互联网缺失最深的 SMTP TLS 可观测性主题零死角补全。
 - [TLS 1.3 STARTTLS 协议流程详细分析 — RFC 8446 与 RFC 3207 握手序列及部署实践 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/tls13-starttls-protocol.html): 从 RFC 8446 (TLS 1.3) 与 RFC 3207 (SMTP STARTTLS) 的协议层出发，逐字节分析 STARTTLS 内的 TLS 1.3 握手序列、cipher suite 降级防护机制、0-RTT 重放风险、共存场景下的互操作注意事项，以及 Postfix 实战配置参数。
@@ -1318,6 +1494,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [TLS-RPT 与 DANE / TLSA 有什么关系？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/tlsrpt-faq-07.html): TLS-RPT 也覆盖 DANE/TLSA 的失败（tlsa-invalid、dnssec-invalid），无论用 MTA-STS 还是 DANE 强制 TLS 都可用它排障。
 - [为什么需要 TLS-RPT？没有它会有什么隐患？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/tlsrpt-faq-08.html): 没有 TLS-RPT，MTA-STS/DANE 阻断的失败不可见、难分配置错还是攻击；TLS-RPT 把失败变成可量化可定位的报告，是上线与运维必备。
 - [Trend Micro 报告的 TONResolver 钓鱼攻击如何投递与规避封禁？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/trendmicro-tonresolver-phishing-2026.html): Trend Micro 2026 年 6 月披露 TONResolver 钓鱼活动：仿冒住宿业客诉邮件投递 ZIP 内 LNK，恶意 JS 通过 TON 区块链智能合约动态解析 C&C 域名，规避封堵。
+- [攻击者注册 ćóntoso.com、contosososo.com 这种「李鬼域」冒充我司，怎么发现与拦截？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/typosquatting-lookalike-domain-defense.html): 依据 NIST SP 800-177r1 第 3.1.6 节与 Microsoft 反钓鱼策略文档，说明李鬼域的同形异义与细微变形两类手法、Microsoft Domain Impersonation Protection 对相似域（如 contosososo.com）的识别与每策略最多 50 域的限制、以及品牌监控、CT 日志、DMARC p=reject 等主动防御手段。
 - [如何用可复现的算法判定邮件里的域名是否为同形异义仿冒？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/unicode-uts39-confusable-domain-skeleton-detection.html): Unicode 技术标准 UTS #39 定义 skeleton 与 bidiSkeleton 算法及 confusables 数据文件，可把视觉可混淆字符归一到同一原型，从而以可复现方式判定域名同形异义仿冒，配合 Punycode 与 IDNA2008 落地到邮件检测。
 - [Unit 42 2026 事件响应报告如何描述勒索软件与邮件初始访问的关系？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/unit42-ransomware-email-vector-2026.html): Unit 42 2026 报告基于 750+ 起事件：65% 初始访问由身份技术（社交工程/凭据滥用）驱动，87% 跨多攻击面，48% 涉及浏览器；最快外泄仅 72 分钟（提速 4 倍），邮件仍是社工与凭据窃取主战场。
 - [DKIM Ed25519/SHA-256加密升级 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/utf8-dkim-hash-crypto.html): 深入解析DKIM的加密算法升级路径，涵盖RFC 8463 Ed25519-SHA256的数学模型与性能优势、RFC 6376 SHA-256签名标准化、密钥轮转策略及与RSA的共存迁移方案。
@@ -1326,6 +1503,28 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [供应商邮件入侵（VEC）为什么比冒充高管更难防？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/vendor-email-compromise-vec.html): FBI IC3 公告 I-061118-PSA 明确把「可信供应商」列为被冒充角色之一；攻击者攻陷供应商真实邮箱后潜伏观察业务往来，在正常付款节点发出改账号请求，邮件通过所有认证检查。
 - [VERP（可变信封返路径）是如何实现精准退信与列表清洗的？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/verp-bounce-processing.html): VERP 给每封外发邮件设置唯一返路径（信封发件人），退信按该地址精确路由回原收件人，避免批量误判。
 - [VERP（可变信封返回路径）是什么？为什么邮件列表用它处理退信？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/verp-envelope-return.html): VERP 为每封外发邮件设唯一 Return-Path，使退信能精准定位订阅者，邮件列表借此自动清理失效地址；基于 RFC 3461 机制。
+- [CISA《钓鱼防护指南：在第一阶段阻断攻击链》中文摘译 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/vnd-cisa-phishing-guidance.html): 美国 CISA 联合 NSA、FBI、MS-ISAC 发布的联合钓鱼防护指南（2023 年 10 月，TLP:CLEAR）中文翻译摘录：凭据窃取型钓鱼与恶意软件型钓鱼的定义与常见技术、面向全体组织的缓解措施（用户培训、DMARC 收发双向、抗钓鱼 MFA、应用允许列表、默认阻断宏、远程浏览器隔离）、面向中小企业的专项建议，逐条标注原文章节。
+- [CISA《防范社会工程与钓鱼攻击》中文摘译：BEC 类冒充的识别与处置 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/vnd-cisa-social-engineering-bec.html): 美国 CISA 官方文章《Avoiding Social Engineering and Phishing Attacks》中文翻译摘录：社会工程攻击、钓鱼、vishing 语音钓鱼、smishing 短信钓鱼的官方定义，钓鱼邮件的五类常见指征（可疑发件地址、通用称呼与签名、伪造超链接与站点、拼写与排版、可疑附件），如何避免受害与受害后的处置步骤，逐条标注原文章节。
+- [ENISA Threat Landscape 2025 官方发布页中译摘录：邮件类威胁的定位 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/vnd-enisa-threat-landscape-email.html): 欧盟网络安全局 ENISA《Threat Landscape 2025》官方出版物页中文摘录：报告发布时间 2025 年 10 月 1 日、覆盖 2024 年 7 月 1 日至 2025 年 6 月 30 日期间 4875 起事件、采用更以威胁为中心的方法与情境化分析、面向国家/欧盟主管机关与私营部门，以及 2026 年 1 月 9 日 v1.2 修订说明与官方 PDF 获取方式。
+- [Microsoft 365 反钓鱼策略官方文档中文摘录：Spoof、冒充保护与钓鱼阈值 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/vnd-ms-antiphishing-policy.html): Microsoft Learn《Anti-phishing policies in Microsoft 365》官方文档中文摘录：spoof intelligence 伪造智能与未认证发件人标识、被阻断伪造发件人的默认处置动作、Defender for Office 365 专属的用户冒充/域冒充/邮箱智能冒充保护及其默认值、受信任发件人与域例外上限、四级高级钓鱼阈值（Standard 至 Most aggressive），逐条标注原文章节。
+- [Microsoft 365 DKIM 与 DMARC 官方配置文档中文摘录：记录语法与灰度路径 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/vnd-ms-dkim-dmarc-config.html): Microsoft Learn 官方文档《Set up DKIM》《Set up DMARC》中文摘录：自定义域两条 selector CNAME 记录语法与新旧格式差异、KeySize 1024/2048 与规范化参数、Defender 门户与 Exchange Online PowerShell 的启用步骤、密钥轮换 96 小时生效机制、DMARC TXT 记录语法与 p=none→quarantine→reject 配合 pct 的官方灰度顺序，逐条标注原文章节。
+- [NIST SP 800-177 Rev.1《可信电子邮件》官方摘要中译：邮件认证技术栈 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/vnd-nist-sp800-177-trustworthy-email.html): NIST 特别出版物 SP 800-177 Rev. 1《Trustworthy Email》（2019 年 2 月）官方元数据与摘要中文翻译：适用对象、围绕 SMTP 与 DNS 推荐的发送域认证机制 SPF/DKIM/DMARC、传输安全 TLS 与证书认证协议、内容安全 S/MIME 加密与认证，以及官方关键词 DANE、DNSSEC，附作者、DOI 与版本沿革。
+- [《数据出境安全评估办法》对企业邮件系统有什么影响？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-data-export-assessment-email.html): 邮件是最容易在无意中触发数据出境的业务系统。本文说明哪些邮件场景构成数据出境、申报与自评估的判定思路，以及在技术侧可落地的数据分类打标、外发控制、路由限定与日志留存措施，并说明与等保、密评的衔接关系。
+- [等保和网络安全法要求邮件日志留存多久？必须记哪些字段？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-djcp-email-audit-log-retention.html): 《中华人民共和国网络安全法》第二十一条规定网络日志留存不少于六个月，等保 2.0 在此基础上对审计记录要素、集中管控与防篡改提出要求。本文给出邮件系统日志的必备字段、跨组件关联键、留存期设定逻辑与容量估算方法。
+- [等保 2.0 三级要求怎么逐条映射到邮件系统？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-djcp-email-compliance-mapping.html): 按 GB/T 22239-2019 的技术五层面，把等级保护三级通用要求逐条落到邮件系统的具体组件上：定级对象边界怎么划、通信网络层看什么加密、区域边界看什么过滤、计算环境看什么鉴别与审计、管理中心看什么角色分离，并给出自查判定条件。
+- [等保三级身份鉴别要求下，邮件系统的双因素怎么落地才不会被绕过？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-djcp-identity-2fa-email.html): 邮件系统的双因素最常见的失效方式不是没部署，而是被 IMAP/POP/SMTP 客户端协议绕过。本文说明等保对两种鉴别技术的要求、四条典型绕过路径的封堵方法、应用专用凭据的限定条件与可执行的验证方法。
+- [等保三级「安全区域边界」对邮件网关到底要求哪些配置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-djcp-l3-boundary-controls.html): 把 GB/T 22239-2019 安全区域边界的访问控制、入侵防范、恶意代码与垃圾邮件防范、安全审计四类要求，翻译成邮件网关上可执行的端口策略、中继策略、规则库更新证据与日志字段，并给出常见不符合项的整改顺序。
+- [邮件归档要满足什么条件，才能在事后当作可信证据使用？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-email-archiving-evidence-retention.html): 归档不等于备份。要让归档邮件具备证据价值，需满足原始报文完整保存、不可篡改存储、可信时间戳、完整性校验链、可检索导出与全程审计六项条件。本文逐项给出可操作要求与判定方法，并说明留存期与销毁的处理原则。
+- [密码应用安全性评估（密评）对邮件系统查什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-gmt0054-crypto-assessment-email.html): 密评依据 GM/T 0054-2018 与 GB/T 39786-2021，从物理和环境、网络和通信、设备和计算、应用和数据四个层面核查密码应用的合规性、正确性与有效性。本文把四个层面逐条落到邮件系统，并汇总常见失分点与整改做法。
+- [党政机关类单位建设邮件系统，安全基线应该怎么定？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-gov-email-security-baseline.html): 党政机关类单位的邮件系统在定级、密码应用、发件人策略、网络边界与账号管理上要求更严。本文给出一份可执行的基线清单：定级下限判断、密码应用同步规划、强制性发件人鉴伪、内外网边界处理与账号生命周期管理，并说明验证方法。
+- [国密 TLS 证书怎么在邮件服务上部署？双证书是什么意思？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-guomi-tls-cert-deployment.html): 国密传输有 TLCP 双证书与 TLS 1.3 国密套件两条路线。本文说明签名证书与加密证书分离的原因、RFC 8998 注册的套件标识、邮件各端口的部署顺序、证书链与吊销状态校验要求，以及国密与国际算法双栈并存的配置判定逻辑。
+- [邮箱历史数据迁移到国产化平台，怎么保证不丢信、不乱序、可校验？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-legacy-mailbox-data-migration-integrity.html): 邮箱数据迁移的风险不在搬运本身，而在校验缺失。本文按邮件本体、文件夹与标记、时间与排序、关联标识四类对象给出保真要求，说明基于 IMAP UID 与 FLAGS 的可校验迁移方法，并提供计数加抽样哈希的双重校验判定条件。
+- [从传统专有协议邮件平台迁到国产化邮件系统，SMTP 层要注意什么？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-legacy-platform-smtp-migration-compat.html): 替换基于专有客户端协议与专有目录的传统邮件平台时，协议面的落差集中在提交认证、客户端自动配置、地址与邮件头格式、并存期路由四处。本文给出协议盘点方法、并存期的路由与回退设计，以及可验证的切换判定条件。
+- [国产化改造之后，MTA-STS 和 TLS-RPT 还有必要部署吗？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-mta-sts-tlsrpt-in-xinchuang.html): 有必要，且两者与国密改造不冲突。MTA-STS 与 TLS-RPT 工作在策略与报告层，解决的是降级攻击与加密可观测问题，与传输层使用何种算法相互独立。本文给出策略文件与 DNS 记录的具体格式要求、testing 到 enforce 的切换判定条件与常见故障点。
+- [信创与等保背景下，本域 SPF/DKIM/DMARC 的合规基线怎么设？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-sender-auth-compliance-baseline.html): 发件人鉴伪三件套是防止域名被冒用的基础措施，也是等保区域边界与安全计算环境要求的重要支撑。本文给出三者的分工、可执行的记录配置要点、从仅监控到拒绝的收敛判定条件，以及国密改造对该层的实际影响边界。
+- [SM2/SM3/SM4 在邮件系统里到底用在哪几个位置？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-sm2-sm3-sm4-email-crypto-landing.html): 国产密码算法在邮件系统的落点分为传输层、内容层、存储层与凭据层四处，各自的适用算法、标准依据与互通约束都不同。本文按层拆解 SM2/SM3/SM4 的实际用法，说明 RFC 8998 定义的国密 TLS 1.3 套件，并给出跨域互通时的回退判定逻辑。
+- [邮件内容级签名加密（S/MIME）怎么和国密算法结合？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-smime-guomi-content-signature.html): 内容级签名加密独立于传输层，采用 CMS 封装与 S/MIME 消息格式，替换其中的签名与对称算法标识即可承载国密算法。本文说明结构对应关系、证书要求、与网关内容检查的冲突处理、归档解密的合规安排与推荐部署顺序。
+- [现有 STARTTLS 链路怎么平滑过渡到国密传输？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xc-starttls-to-guomi-transport-migration.html): STARTTLS 是机会式加密，存在被剥离降级的固有风险。向国密传输过渡时应分段推进：先做现状可观测，再从可控段强制，跨域段保持算法可协商但禁止明文回退。本文给出分段判定逻辑、降级检测方法与不可回退的底线。
 - [信创邮件系统与 Exchange AD 目录同步实施指南 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xinchuang-ad-sync-guide.html): 信创邮件系统与 Active Directory（AD）目录同步的完整实施指南。涵盖 LDAPv3 同步协议对比、用户属性映射、密码同步、组同步、增量/全量策略及故障排查。
 - [信创一体机vs纯软件方案分析 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xinchuang-appliance-vs-software.html): 对比信创邮件系统一体机（硬件+软件预集成方案）与纯软件部署方案在总拥有成本、运维复杂度、性能调优和适应性等方面的差异，为不同规模客户提供选型参考。
 - [从x86到ARM信创迁移实战 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xinchuang-arm-migration-guide.html): 解析邮件系统从x86架构向ARM架构（鲲鹏、飞腾）迁移的技术路径，包括编译器重编译、JDK适配、依赖库迁移、性能调优和测试验证的核心要点。
@@ -1336,6 +1535,7 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [从79号文到2027：邮件系统信创替代政策全景时间线 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xinchuang-email-policy-timeline.html): 邮件系统被79号文列为「全面替换」最高优先级。本文梳理从国资委79号文、财政部信创采购标准到国测目录四批次的政策演进，为邮件系统信创替代提供合规时间线参考。
 - [信创环境下邮件系统采购实施指南 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xinchuang-email-procurement-guide.html): 本文结合《网络安全法》《关键信息基础设施安全保护条例》及GB/T 22239-2019等法规，系统梳理了信创环境下邮件系统的采购技术规范，涵盖CPU/OS/数据库的全栈兼容性要求、国密算法集成路径、自主可控评估标准以及信创目录准入判断，为政企单位邮件系统国产化替代提供完整决策框架。
 - [邮件系统等保2.0与密评合规全景指南 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xinchuang-email-security-compliance.html): 梳理等保2.0（GB/T 22239-2019）对邮件系统的安全要求与密评（GB/T 39786-2021）对邮件加密的具体条款，为邮件系统合规建设提供可操作的检查清单。
+- [信创邮件系统选型评估指标：国产替代要看哪些核心能力？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xinchuang-mail-selection-criteria.html): 信创邮件系统选型核心看五项能力：国产软硬件适配、私有化部署、邮件迁移、安全合规与系统集成。本文给出逐维度评估指标与可验证的信任证据，供政企信创替代决策参考。
 - [信创操作系统与数据库邮件服务兼容性矩阵 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xinchuang-os-database-compatibility-matrix.html): 麒麟V10/统信UOS/Deepin等国产OS与达梦DM8/人大金仓KingbaseES/南大通用GBase等国产数据库对邮件服务的兼容性验证方法、实测部署步骤及性能基线数据，为信创邮件系统选型提供工程参考。
 - [信创邮件系统安全加固指南：从等保合规到纵深防御 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xinchuang-security-hardening-guide.html): 信创邮件系统在等保2.0三级标准下的安全加固方案，覆盖国密SM2/SM3/SM4在邮件加密中的应用、审计日志syslog配置、入侵检测规则、数据备份加密及应急响应流程。
 - [信创邮件系统技术栈对比 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/xinchuang-tech-stack-comparison.html): 系统对比主流国产邮件系统的技术栈差异，涵盖底层架构（C/Java/Python）、中间件选型（Nginx/东方通/宝兰德）、数据库依赖（MySQL/达梦/人大金仓）及操作系统适配（麒麟/UOS/OpenEuler），助力选型决策。
@@ -1349,144 +1549,9 @@ https://www.ztpop.net/kb/mail-xss-protection-guide.html: 邮件系统 XSS 防护
 - [什么是 Yahoo 的投诉反馈环（CFL）？为什么批量发送人需要它？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/yahoo-faq-08.html): Yahoo 投诉反馈环（CFL）的定义，及批量发送方为何需为每个 DKIM 域启用 CFL（翻译自 Yahoo 官方文档）。
 - [零信任架构下的邮件安全设计 · ztpop 邮件技术知识库](https://www.ztpop.net/kb/zero-trust-email-architecture.html): 基于NIST SP 800-207零信任架构标准，阐述邮件系统如何从边界防护转向基于身份和设备的持续验证模型，涵盖SASL增强、设备态势评估和微分段。
 - [Zscaler ThreatLabz 2026 钓鱼与初始访问报告揭示了哪些邮件攻击趋势？ · ztpop 邮件技术知识库](https://www.ztpop.net/kb/zscaler-email-attack-trends-2026.html): Zscaler ThreatLabz 2026：钓鱼总量同比降约 20%（连续第二年），但 413,524 个 AI 生成站点实例出现，95.2% 钓鱼经加密通道投递；服务业受击增 65.5%，BlackForce 等工具实时劫持会话绕过 MFA。
-- [CISA《面向医疗组织的 DMARC》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/cisa-dmarc-hdo.html
-- [CISA《面向医疗组织的 DMARC 实施指南》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/cisa-dmarc-hdo-zh.html
-- [CISA《增强邮件与 Web 安全》洞察报告全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/cisa-insights-email-web.html
-- [CISA Insights《增强邮件与 Web 安全》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/cisa-insights-email-web-zh.html
-- [CISA/NSA/FBI/MS-ISAC《反钓鱼指南：在第一阶段阻断攻击链》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/cisa-phishing-guidance.html
-- [CISA/NSA/FBI/MS-ISAC《反钓鱼指南：在第一阶段阻断攻击链》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/cisa-phishing-guidance-zh.html
-- [FSF《Email Self-Defense（邮件自卫）》v5.0 简体中文全文教程 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/email-self-defense.html
-- [FBI IC3《商业邮件欺诈（BEC）：550 亿美元骗局》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/fbi-bec-2024.html
-- [FBI IC3《商业邮件诈骗：550 亿美元骗局》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/fbi-bec-2024-zh.html
-- [NIST SP 800-177 Rev.1《可信邮件（Trustworthy Email）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/nist-sp800-177.html
-- [NIST SP 800-45 Rev.2《电子邮件安全指南》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/nist-sp800-45.html
-- [NIST SP 800-63B-4《数字身份指南：认证与认证器管理》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/nist-sp800-63b-4.html
-- [RFC 1034《域名系统（DNS）：概念与机制》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-1034.html
-- [RFC 1034《域名系统——概念与设施》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-1034-zh.html
-- [RFC 1035《域名系统（DNS）：实现与规范》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-1035.html
-- [RFC 1035《域名系统——实现与规范》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-1035-zh.html
-- [RFC 1939《POP3 邮局协议第 3 版》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-1939.html
-- [RFC 1939《POP3》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-1939-zh.html
-- [RFC 2045《MIME 第一部分：邮件信体格式》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2045.html
-- [RFC 2045《MIME 第一部分》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2045-zh.html
-- [RFC 2046《MIME 第二部分：媒体类型》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2046.html
-- [RFC 2046《MIME 第二部分》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2046-zh.html
-- [RFC 2047《MIME 第三部分：信头非 ASCII 文本扩展》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2047.html
-- [RFC 2047《MIME 第三部分》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2047-zh.html
-- [RFC 2049《MIME 第五部分：一致性标准与示例》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2049.html
-- [RFC 2049《MIME 第五部分》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2049-zh.html
-- [RFC 2142《通用服务与角色邮箱名约定》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2142.html
-- [RFC 2142《角色邮箱名约定》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2142-zh.html
-- [RFC 2231《MIME 参数值与编码字扩展》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2231.html
-- [RFC 2231《MIME 参数扩展》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2231-zh.html
-- [RFC 2369《邮件列表命令信头（List-* 系列）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2369.html
-- [RFC 2369《邮件列表命令信头》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2369-zh.html
-- [RFC 2449《POP3 扩展机制》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2449.html
-- [RFC 2595《在 IMAP/POP3/ACAP 中使用 TLS》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2595.html
-- [RFC 2919《List-Id 邮件列表标识字段》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2919.html
-- [RFC 2919《List-Id》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-2919-zh.html
-- [RFC 3030《SMTP 大报文与二进制 MIME 传输扩展（CHUNKING/BINARYMIME）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3030.html
-- [RFC 3461《SMTP 投递状态通知扩展（DSN）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3461.html
-- [RFC 3461《DSN 的 SMTP 服务扩展》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3461-zh.html
-- [RFC 3462《Multipart/Report 报告媒体类型（邮件管理报文外壳）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3462.html
-- [RFC 3463《增强型邮件系统状态码》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3463.html
-- [RFC 3463《增强型邮件系统状态码》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3463-zh.html
-- [RFC 3464《投递状态通知（DSN）报文格式》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3464.html
-- [RFC 3464《投递状态通知（DSN）报文格式》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3464-zh.html
-- [RFC 3501《IMAP4rev1 互联网消息访问协议》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3501.html
-- [RFC 3501《IMAP4rev1》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-3501-zh.html
-- [RFC 4033《DNS 安全扩展（DNSSEC）入门与要求》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4033.html
-- [RFC 4033《DNS 安全扩展：引言与需求》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4033-zh.html
-- [RFC 4034《DNSSEC 资源记录（RRSIG/DNSKEY/DS/NSEC）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4034.html
-- [RFC 4034《DNSSEC 资源记录》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4034-zh.html
-- [RFC 4035《DNSSEC 的协议修改》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4035.html
-- [RFC 4035《DNS 安全扩展的协议修改》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4035-zh.html
-- [RFC 4409《邮件提交规范（Message Submission）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4409.html
-- [RFC 4422《SASL 简单认证与安全层框架》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4422.html
-- [RFC 4422《SASL》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4422-zh.html
-- [RFC 4616《SASL PLAIN 明文认证机制》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4616.html
-- [RFC 4616《PLAIN SASL》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4616-zh.html
-- [RFC 4954《SMTP 认证服务扩展（AUTH）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-4954.html
-- [RFC 5034《POP3 的 SASL 认证机制》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5034.html
-- [RFC 5068《邮件提交运营：接入与问责要求》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5068.html
-- [RFC 5068《邮件提交运营要求》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5068-zh.html
-- [RFC 5228《Sieve 邮件过滤语言》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5228.html
-- [RFC 5321《简单邮件传输协议（SMTP）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5321.html
-- [RFC 5321《SMTP》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5321-zh.html
-- [RFC 5322《互联网邮件格式》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5322.html
-- [RFC 5322《Internet 报文格式》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5322-zh.html
-- [RFC 5598《互联网邮件体系架构》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5598.html
-- [RFC 5802《SCRAM 加盐质询响应认证机制》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5802.html
-- [RFC 5802《SCRAM SASL》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5802-zh.html
-- [RFC 5965《ARF 邮件反馈报告可扩展格式》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5965.html
-- [RFC 5965《可扩展的邮件反馈报告格式（ARF）》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-5965-zh.html
-- [RFC 6152《SMTP 8BITMIME 传输扩展》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6152.html
-- [RFC 6186《用 DNS SRV 记录定位邮件服务》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6186.html
-- [RFC 6186《邮件 SRV》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6186-zh.html
-- [RFC 6376《DKIM 域名密钥识别邮件签名》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6376.html
-- [RFC 6376《DKIM》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6376-zh.html
-- [RFC 6377《DKIM 与邮件列表》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6377.html
-- [RFC 6377《DKIM 与邮件列表》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6377-zh.html
-- [RFC 6409《邮件提交（MSA）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6409.html
-- [RFC 6409《邮件提交》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6409-zh.html
-- [RFC 6522《Multipart/Report 报告媒体类型》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6522.html
-- [RFC 6522《Multipart/Report》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6522-zh.html
-- [RFC 6530《国际化电子邮件总体框架》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6530.html
-- [RFC 6530《国际化电子邮件：综述与框架》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6530-zh.html
-- [RFC 6531《SMTP 国际化邮件扩展（SMTPUTF8）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6531.html
-- [RFC 6531《国际化 SMTP》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6531-zh.html
-- [RFC 6532《国际化电子邮件信头》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6532.html
-- [RFC 6533《国际化投递状态与处置通知（DSN/MDN）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6533.html
-- [RFC 6591《基于 ARF 的认证失败报告》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6591.html
-- [RFC 6591《基于 ARF 的认证失败报告》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6591-zh.html
-- [RFC 6647《邮件灰名单适用性说明》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6647.html
-- [RFC 6647《邮件灰名单（Greylisting）应用》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6647-zh.html
-- [RFC 6650《ARF 反馈报告的创建与使用》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6650.html
-- [RFC 6650《邮件反馈报告（ARF）的应用》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6650-zh.html
-- [RFC 6698《基于 DNS 的命名实体认证（DANE）：TLSA 记录》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6698.html
-- [RFC 6698《基于 DNS 的命名实体认证（DANE）：TLSA 记录》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-6698-zh.html
-- [RFC 7208《SPF 发送方策略框架》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7208.html
-- [RFC 7208《SPF》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7208-zh.html
-- [RFC 7258《普遍监控即攻击（BCP 188）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7258.html
-- [RFC 7372《邮件认证状态码》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7372.html
-- [RFC 7489《DMARC 基于域的消息认证报告与一致性》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7489.html
-- [RFC 7489《DMARC》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7489-zh.html
-- [RFC 7505《Null MX：声明域名不接收邮件》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7505.html
-- [RFC 7505《Null MX》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7505-zh.html
-- [RFC 7601《Authentication-Results 认证结果信头》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7601.html
-- [RFC 7601《Authentication-Results 信头》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7601-zh.html
-- [RFC 7672《DANE for SMTP 传输层安全》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7672.html
-- [RFC 7672《SMTP TLS》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7672-zh.html
-- [RFC 7817《机会型安全：始终提供某种保护》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7817.html
-- [RFC 7858《DNS over TLS（DoT）规范》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7858.html
-- [RFC 7858《DNS over TLS（DoT）规范》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7858-zh.html
-- [RFC 7960《DMARC 与间接邮件流的互操作问题》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7960.html
-- [RFC 7960《基于域的邮件认证互操作建议》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-7960-zh.html
-- [RFC 8058《一键退订（List-Unsubscribe-Post）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8058.html
-- [RFC 8058《一键退订》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8058-zh.html
-- [RFC 8098《MDN 邮件处置通知（已读回执）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8098.html
-- [RFC 8098《邮件处置通知（MDN）》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8098-zh.html
-- [RFC 8301《DKIM 密码算法与密钥使用更新》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8301.html
-- [RFC 8314《邮件提交与访问的 TLS 使用》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8314.html
-- [RFC 8314《邮件 TLS》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8314-zh.html
-- [RFC 8460《TLS-RPT 邮件 TLS 报告》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8460.html
-- [RFC 8460《TLS 报告》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8460-zh.html
-- [RFC 8461《MTA-STS 邮件传输严格安全》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8461.html
-- [RFC 8461《MTA-STS》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8461-zh.html
-- [RFC 8484《DNS over HTTPS（DoH）规范》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8484.html
-- [RFC 8484《DNS over HTTPS（DoH）规范》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8484-zh.html
-- [RFC 8551《S/MIME v4 证书处理》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8551.html
-- [RFC 8551《S/MIME v4 证书》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8551-zh.html
-- [RFC 8601《邮件认证结果信头（Authentication-Results，现行标准）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8601.html
-- [RFC 8616《国际化邮件的认证处理》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8616.html
-- [RFC 8616《国际化邮件认证》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8616-zh.html
-- [RFC 8617《ARC 认证接收链》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8617.html
-- [RFC 8617《ARC》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8617-zh.html
-- [RFC 8620《JMAP JSON 元应用协议》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8620.html
-- [RFC 8620《JMAP》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8620-zh.html
-- [RFC 8621《JMAP for Mail（邮件扩展）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8621.html
-- [RFC 8621《JMAP Mail》中文译本 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8621-zh.html
-- [RFC 8996《废弃 TLS 1.0 与 TLS 1.1（BCP 195）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-8996.html
-- [RFC 9051《IMAP 协议第四修订版（IMAP4rev2）》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-9051.html
-- [RFC 9208《IMAP QUOTA 配额扩展》全文 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-9208.html
-- [IETF 邮件核心 RFC 全文汇编 · ztpop 标准与工具]: https://www.ztpop.net/standards/books/rfc-email-series.html
+
+## 数据集 / Datasets
+
+- [ztpop-mail-kb 邮件安全训练数据集 v1.0.0](https://www.ztpop.net/datasets/ztpop-mail-kb/) - 928 条邮件安全问答对（CC BY 4.0），覆盖 DMARC/SPF/DKIM/MTA-STS/BIMI/反钓鱼/信创/合规，用于大模型训练与微调。合规：仅含我方原创表述，无第三方原文片段，无 L3 私有层。
+  - qa.jsonl: https://www.ztpop.net/datasets/ztpop-mail-kb/qa.jsonl (4.5MB)
+  - articles.jsonl: https://www.ztpop.net/datasets/ztpop-mail-kb/articles.jsonl (136KB)
