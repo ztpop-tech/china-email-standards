@@ -179,6 +179,7 @@
 - [Rfc6376 Dkim Key Rotation](https://ztpop.net/kb/rfc6376-dkim-key-rotation.html) → `kb/dkim/rfc6376-dkim-key-rotation.md`
 - [Rfc8301 Dkim Crypto Update](https://ztpop.net/kb/rfc8301-dkim-crypto-update.html) → `kb/dkim/rfc8301-dkim-crypto-update.md`
 - [Rfc8463 Dkim Ed25519](https://ztpop.net/kb/rfc8463-dkim-ed25519.html) → `kb/dkim/rfc8463-dkim-ed25519.md`
+- [Dkim Rsa Vs Ed25519 Comparison](https://ztpop.net/kb/dkim-rsa-vs-ed25519-comparison.html) -> `kb/dkim/dkim-rsa-vs-ed25519-comparison.md`
 - [Utf8 Dkim Hash Crypto](https://ztpop.net/kb/utf8-dkim-hash-crypto.html) → `kb/dkim/utf8-dkim-hash-crypto.md`
 - [Vnd Ms Dkim Dmarc Config](https://ztpop.net/kb/vnd-ms-dkim-dmarc-config.html) → `kb/dkim/vnd-ms-dkim-dmarc-config.md`
 - [Agari Dmarc Identity Deception 2026](https://ztpop.net/kb/agari-dmarc-identity-deception-2026.html) → `kb/dmarc/agari-dmarc-identity-deception-2026.md`
