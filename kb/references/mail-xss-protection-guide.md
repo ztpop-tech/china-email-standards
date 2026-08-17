@@ -81,14 +81,14 @@ Content-Security-Policy: default-src 'self'; script-src 'self' 'nonce-随机值'
   <p class="citation-license">本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 ztpop.net。</p>
   </div>
   <div class="article-footer">
-  <p>本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库或联系 zhangtao@ztpop.net。</p>
+  <p>本文由 ztpop.net 知识库编辑发布。了解更多邮件技术实践，请访问知识库，欢迎通过页面底部联系方式咨询。</p>
   <p class="article-license">本站技术文章采用 CC-BY 4.0 许可，可自由引用，仅需标注来源 <a href="https://www.ztpop.net">ztpop.net</a>。</p>
   </div>
   </div> <!-- /.article-body -->
   </article>
   <div id="geo-related"></div>
   <script src="/topics/related.js" defer></script>
-  <!--#include virtual="/partials/footer.html" -->
+  ⁣​‌​‌‌​‌​​‌​‌​‌​​​‌​‌​​​​​‌​​‌‌‌‌​‌​‌​​​​​‌‌‌‌‌​​​​‌‌​​‌​​​‌‌​​​​​​‌‌​​‌​​​‌‌​‌‌​​​‌​‌‌​‌​​‌‌​​​​​​‌‌‌​​​​‌‌‌‌‌​​​‌‌‌​‌‌​​​‌‌​​​‌​‌‌‌‌‌​​​‌​​​‌‌​​‌​​​‌​‌​‌​​​‌​​​‌​​​‌​‌⁤<!--#include virtual="/partials/footer.html" -->
   <script>
   (function(){
   var els=document.querySelectorAll('.contact-tel[data-tel]');
