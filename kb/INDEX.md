@@ -1,6 +1,6 @@
 # ztpop.net 知识库镜像
 
-共 1302 篇文章。
+共 1304 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Apache James 390 Release Notes](https://ztpop.net/kb/apache-james-390-release-notes.html) → `kb/architecture/apache-james-390-release-notes.md`
@@ -1077,6 +1077,7 @@
 - [Ai Gateway Scoring Integration](https://ztpop.net/kb/ai-gateway-scoring-integration.html) → `kb/security/ai-gateway-scoring-integration.md`
 - [Ai Generated Phishing Detection Signals](https://ztpop.net/kb/ai-generated-phishing-detection-signals.html) → `kb/security/ai-generated-phishing-detection-signals.md`
 - [Ai Generated Phishing Email 2026](https://ztpop.net/kb/ai-generated-phishing-email-2026.html) → `kb/security/ai-generated-phishing-email-2026.md`
+- [Ai Generated Phishing Vs Agentic Email Defense 2026](https://ztpop.net/kb/ai-generated-phishing-vs-agentic-email-defense-2026.html) → `kb/security/ai-generated-phishing-vs-agentic-email-defense-2026.md`
 - [Ai Human In The Loop Triage](https://ztpop.net/kb/ai-human-in-the-loop-triage.html) → `kb/security/ai-human-in-the-loop-triage.md`
 - [Ai Incident Response Deepfake](https://ztpop.net/kb/ai-incident-response-deepfake.html) → `kb/security/ai-incident-response-deepfake.md`
 - [Ai Llm Phishing Detection](https://ztpop.net/kb/ai-llm-phishing-detection.html) → `kb/security/ai-llm-phishing-detection.md`
@@ -1146,6 +1147,7 @@
 - [Fbi Ic3 Bec Annual Report](https://ztpop.net/kb/fbi-ic3-bec-annual-report.html) → `kb/security/fbi-ic3-bec-annual-report.md`
 - [Feedback Loop Fbl Guide](https://ztpop.net/kb/feedback-loop-fbl-guide.html) → `kb/security/feedback-loop-fbl-guide.md`
 - [Gmail Scam Defense Ai 2026](https://ztpop.net/kb/gmail-scam-defense-ai-2026.html) → `kb/security/gmail-scam-defense-ai-2026.md`
+- [Gophish Ai Phishing Detection Platform](https://ztpop.net/kb/gophish-ai-phishing-detection-platform.html) → `kb/security/gophish-ai-phishing-detection-platform.md`
 - [Gw Arf Feedback Loop Handling](https://ztpop.net/kb/gw-arf-feedback-loop-handling.html) → `kb/security/gw-arf-feedback-loop-handling.md`
 - [Ir Bec Response Workflow 2026](https://ztpop.net/kb/ir-bec-response-workflow-2026.html) → `kb/security/ir-bec-response-workflow-2026.md`
 - [Ir Credential Phish Verdict 2026](https://ztpop.net/kb/ir-credential-phish-verdict-2026.html) → `kb/security/ir-credential-phish-verdict-2026.md`
