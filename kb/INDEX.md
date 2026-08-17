@@ -1,6 +1,6 @@
-﻿# ztpop.net 知识库镜像
+# ztpop.net 知识库镜像
 
-共 1298 篇文章。
+共 1302 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Apache James 390 Release Notes](https://ztpop.net/kb/apache-james-390-release-notes.html) → `kb/architecture/apache-james-390-release-notes.md`
@@ -26,6 +26,7 @@
 - [Foreign Trade Email](https://ztpop.net/kb/foreign-trade-email.html) → `kb/architecture/foreign-trade-email.md`
 - [Mx Record Priority Failover](https://ztpop.net/kb/mx-record-priority-failover.html) → `kb/architecture/mx-record-priority-failover.md`
 - [Postfix 3 10 New Features](https://ztpop.net/kb/postfix-3-10-new-features.html) → `kb/architecture/postfix-3-10-new-features.md`
+- [Postfix 310 Openssl35 Post Quantum](https://ztpop.net/kb/postfix-310-openssl35-post-quantum.html) → `kb/architecture/postfix-310-openssl35-post-quantum.md`
 - [Postfix Access Relay Transport](https://ztpop.net/kb/postfix-access-relay-transport.html) → `kb/architecture/postfix-access-relay-transport.md`
 - [Postfix Architecture Deep Dive](https://ztpop.net/kb/postfix-architecture-deep-dive.html) → `kb/architecture/postfix-architecture-deep-dive.md`
 - [Postfix Content Filter Architecture](https://ztpop.net/kb/postfix-content-filter-architecture.html) → `kb/architecture/postfix-content-filter-architecture.md`
@@ -49,8 +50,8 @@
 - [Postfix Restriction Lists Evaluation Order](https://ztpop.net/kb/postfix-restriction-lists-evaluation-order.html) → `kb/architecture/postfix-restriction-lists-evaluation-order.md`
 - [Postfix Smtpd Restrictions Guide](https://ztpop.net/kb/postfix-smtpd-restrictions-guide.html) → `kb/architecture/postfix-smtpd-restrictions-guide.md`
 - [Postfix Virtual Alias Vs Canonical Maps](https://ztpop.net/kb/postfix-virtual-alias-vs-canonical-maps.html) → `kb/architecture/postfix-virtual-alias-vs-canonical-maps.md`
+- [Rspamd 3140 New Features](https://ztpop.net/kb/rspamd-3140-new-features.html) → `kb/architecture/rspamd-3140-new-features.md`
 - [Rspamd Architecture Scoring Engine](https://ztpop.net/kb/rspamd-architecture-scoring-engine.html) → `kb/architecture/rspamd-architecture-scoring-engine.md`
-- [Rspamd 3.14.0 New Features](https://ztpop.net/kb/rspamd-3140-new-features.html) -> `kb/security/rspamd-3140-new-features.md`
 - [Rspamd Console And Metrics](https://ztpop.net/kb/rspamd-console-and-metrics.html) → `kb/architecture/rspamd-console-and-metrics.md`
 - [Rspamd Spamassassin Score Tuning](https://ztpop.net/kb/rspamd-spamassassin-score-tuning.html) → `kb/architecture/rspamd-spamassassin-score-tuning.md`
 - [Sme Email Guide](https://ztpop.net/kb/sme-email-guide.html) → `kb/architecture/sme-email-guide.md`
@@ -166,6 +167,7 @@
 - [Dkim Key Rotation Management](https://ztpop.net/kb/dkim-key-rotation-management.html) → `kb/dkim/dkim-key-rotation-management.md`
 - [Dkim Key Rotation Practice](https://ztpop.net/kb/dkim-key-rotation-practice.html) → `kb/dkim/dkim-key-rotation-practice.md`
 - [Dkim Key Rotation](https://ztpop.net/kb/dkim-key-rotation.html) → `kb/dkim/dkim-key-rotation.md`
+- [Dkim Rsa Vs Ed25519 Comparison](https://ztpop.net/kb/dkim-rsa-vs-ed25519-comparison.html) → `kb/dkim/dkim-rsa-vs-ed25519-comparison.md`
 - [Dkim Selector Migration](https://ztpop.net/kb/dkim-selector-migration.html) → `kb/dkim/dkim-selector-migration.md`
 - [Dkim Signature Process](https://ztpop.net/kb/dkim-signature-process.html) → `kb/dkim/dkim-signature-process.md`
 - [Dkim Signature Replay Attack Detection](https://ztpop.net/kb/dkim-signature-replay-attack-detection.html) → `kb/dkim/dkim-signature-replay-attack-detection.md`
@@ -179,7 +181,6 @@
 - [Rfc6376 Dkim Key Rotation](https://ztpop.net/kb/rfc6376-dkim-key-rotation.html) → `kb/dkim/rfc6376-dkim-key-rotation.md`
 - [Rfc8301 Dkim Crypto Update](https://ztpop.net/kb/rfc8301-dkim-crypto-update.html) → `kb/dkim/rfc8301-dkim-crypto-update.md`
 - [Rfc8463 Dkim Ed25519](https://ztpop.net/kb/rfc8463-dkim-ed25519.html) → `kb/dkim/rfc8463-dkim-ed25519.md`
-- [Dkim Rsa Vs Ed25519 Comparison](https://ztpop.net/kb/dkim-rsa-vs-ed25519-comparison.html) -> `kb/dkim/dkim-rsa-vs-ed25519-comparison.md`
 - [Utf8 Dkim Hash Crypto](https://ztpop.net/kb/utf8-dkim-hash-crypto.html) → `kb/dkim/utf8-dkim-hash-crypto.md`
 - [Vnd Ms Dkim Dmarc Config](https://ztpop.net/kb/vnd-ms-dkim-dmarc-config.html) → `kb/dkim/vnd-ms-dkim-dmarc-config.md`
 - [Agari Dmarc Identity Deception 2026](https://ztpop.net/kb/agari-dmarc-identity-deception-2026.html) → `kb/dmarc/agari-dmarc-identity-deception-2026.md`
@@ -731,7 +732,6 @@
 - [Received Highlevel Forensics](https://ztpop.net/kb/received-highlevel-forensics.html) → `kb/other/received-highlevel-forensics.md`
 - [Received Timezone](https://ztpop.net/kb/received-timezone.html) → `kb/other/received-timezone.md`
 - [Requiretls Policy Enforcement](https://ztpop.net/kb/requiretls-policy-enforcement.html) → `kb/other/requiretls-policy-enforcement.md`
-- [Postfix 310 Openssl35 Post Quantum](https://ztpop.net/kb/postfix-310-openssl35-post-quantum.html) -> `kb/postfix-310-openssl35-post-quantum.md`
 - [Rfc2045 Mime Content Transfer Encoding](https://ztpop.net/kb/rfc2045-mime-content-transfer-encoding.html) → `kb/other/rfc2045-mime-content-transfer-encoding.md`
 - [Rfc2047 Encoded Word Header Rules](https://ztpop.net/kb/rfc2047-encoded-word-header-rules.html) → `kb/other/rfc2047-encoded-word-header-rules.md`
 - [Rfc2142 Role Mailboxes Abuse Postmaster](https://ztpop.net/kb/rfc2142-role-mailboxes-abuse-postmaster.html) → `kb/other/rfc2142-role-mailboxes-abuse-postmaster.md`
@@ -1106,9 +1106,6 @@
 - [Cfg Smime Vs Openpgp Selection](https://ztpop.net/kb/cfg-smime-vs-openpgp-selection.html) → `kb/security/cfg-smime-vs-openpgp-selection.md`
 - [Cisa Bec Incident Response Containment](https://ztpop.net/kb/cisa-bec-incident-response-containment.html) → `kb/security/cisa-bec-incident-response-containment.md`
 - [Cisa Phishing Guidance Attack Cycle](https://ztpop.net/kb/cisa-phishing-guidance-attack-cycle.html) → `kb/security/cisa-phishing-guidance-attack-cycle.md`
-- [LLM-generated SVG Malware Detection](https://ztpop.net/kb/llm-svg-malware-detection.html)
- -> `kb/security/llm-svg-malware-detection.md`
-
 - [Clickfix Email Attack Detection Guide](https://ztpop.net/kb/clickfix-email-attack-detection-guide.html) → `kb/security/clickfix-email-attack-detection-guide.md`
 - [Cloud Oauth App Consent Abuse](https://ztpop.net/kb/cloud-oauth-app-consent-abuse.html) → `kb/security/cloud-oauth-app-consent-abuse.md`
 - [Cloud Sandbox Safe Attachments](https://ztpop.net/kb/cloud-sandbox-safe-attachments.html) → `kb/security/cloud-sandbox-safe-attachments.md`
@@ -1154,6 +1151,7 @@
 - [Ir Credential Phish Verdict 2026](https://ztpop.net/kb/ir-credential-phish-verdict-2026.html) → `kb/security/ir-credential-phish-verdict-2026.md`
 - [Ir Malicious Attachment Sandbox 2026](https://ztpop.net/kb/ir-malicious-attachment-sandbox-2026.html) → `kb/security/ir-malicious-attachment-sandbox-2026.md`
 - [Ir Phish User Report Triage 2026](https://ztpop.net/kb/ir-phish-user-report-triage-2026.html) → `kb/security/ir-phish-user-report-triage-2026.md`
+- [Llm Svg Malware Detection](https://ztpop.net/kb/llm-svg-malware-detection.html) → `kb/security/llm-svg-malware-detection.md`
 - [Malware Attachment Detection Sandbox](https://ztpop.net/kb/malware-attachment-detection-sandbox.html) → `kb/security/malware-attachment-detection-sandbox.md`
 - [Malware Loader Email Delivery Chain 2026](https://ztpop.net/kb/malware-loader-email-delivery-chain-2026.html) → `kb/security/malware-loader-email-delivery-chain-2026.md`
 - [Mfa Fatigue Attack Defense](https://ztpop.net/kb/mfa-fatigue-attack-defense.html) → `kb/security/mfa-fatigue-attack-defense.md`
