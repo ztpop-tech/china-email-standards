@@ -1,4 +1,4 @@
-# ztpop.net 知识库镜像
+﻿# ztpop.net 知识库镜像
 
 共 1298 篇文章。
 
@@ -1106,6 +1106,9 @@
 - [Cfg Smime Vs Openpgp Selection](https://ztpop.net/kb/cfg-smime-vs-openpgp-selection.html) → `kb/security/cfg-smime-vs-openpgp-selection.md`
 - [Cisa Bec Incident Response Containment](https://ztpop.net/kb/cisa-bec-incident-response-containment.html) → `kb/security/cisa-bec-incident-response-containment.md`
 - [Cisa Phishing Guidance Attack Cycle](https://ztpop.net/kb/cisa-phishing-guidance-attack-cycle.html) → `kb/security/cisa-phishing-guidance-attack-cycle.md`
+- [LLM-generated SVG Malware Detection](https://ztpop.net/kb/llm-svg-malware-detection.html)
+ -> `kb/security/llm-svg-malware-detection.md`
+
 - [Clickfix Email Attack Detection Guide](https://ztpop.net/kb/clickfix-email-attack-detection-guide.html) → `kb/security/clickfix-email-attack-detection-guide.md`
 - [Cloud Oauth App Consent Abuse](https://ztpop.net/kb/cloud-oauth-app-consent-abuse.html) → `kb/security/cloud-oauth-app-consent-abuse.md`
 - [Cloud Sandbox Safe Attachments](https://ztpop.net/kb/cloud-sandbox-safe-attachments.html) → `kb/security/cloud-sandbox-safe-attachments.md`
