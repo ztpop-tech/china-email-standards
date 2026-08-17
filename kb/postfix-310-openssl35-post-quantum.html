@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Postfix 3.10 与 OpenSSL 3.5 后量子加密：ML-KEM 邮件传输防护实践 · ztpop 邮件技术知识库</title>
+<meta name="description" content="Postfix 3.10 支持 OpenSSL 3.5 的 ML-KEM 后量子密钥交换（X25519MLKEM768 混合协商），结合 TLSRPT（RFC 8460）与 SMTP Require TLS（RFC 8689），抵御 Harvest-now-decrypt-later 威胁。含部署配置与兼容性指南。">
+<link rel="canonical" href="https://www.ztpop.net/kb/postfix-310-openssl35-post-quantum">
+<link rel="stylesheet" href="/css/main.css?v=24">
+<link rel="stylesheet" href="/css/kb-article.css">
+<meta property="og:site_name" content="ztpop.net 邮件技术知识库">
+<meta property="og:title" content="Postfix 3.10 与 OpenSSL 3.5 后量子加密：ML-KEM 邮件传输防护实践">
+<meta property="og:description" content="Postfix 3.10 支持 OpenSSL 3.5 的 ML-KEM 后量子密钥交换（X25519MLKEM768 混合协商），结合 TLSRPT（RFC 8460）与 SMTP Require TLS（RFC 8689），抵御 Harvest-now-decrypt-later 威胁。含部署配置与兼容性指南。">
+<meta property="og:url" content="https://www.ztpop.net/kb/postfix-310-openssl35-post-quantum">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-08-17">
+<meta property="article:section" content="邮件传输安全">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Postfix 3.10 与 OpenSSL 3.5 后量子加密：ML-KEM 邮件传输防护实践","description":"Postfix 3.10 支持 OpenSSL 3.5 的 ML-KEM 后量子密钥交换（X25519MLKEM768 混合协商），结合 TLSRPT（RFC 8460）与 SMTP Require TLS（RFC 8689），抵御 Harvest-now-decrypt-later 威胁。含部署配置与兼容性指南。","datePublished":"2026-08-17","author":{"@type":"Organization","name":"ztpop.net 知识库","url":"https://www.ztpop.net/"},"publisher":{"@type":"Organization","name":"ztpop.net 知识库","url":"https://www.ztpop.net/"},"about":{"@type":"Thing","name":"Postfix 后量子加密","description":"Postfix 3.10 与 OpenSSL 3.5 ML-KEM 后量子密钥交换"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://www.ztpop.net/"},{"@type":"ListItem","position":2,"name":"知识库","item":"https://www.ztpop.net/kb/"},{"@type":"ListItem","position":3,"name":"邮件传输安全","item":"https://www.ztpop.net/kb/transport-security/"},{"@type":"ListItem","position":4,"name":"Postfix 3.10 与 OpenSSL 3.5 后量子加密","item":"https://www.ztpop.net/kb/postfix-310-openssl35-post-quantum"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Postfix 3.10 与 OpenSSL 3.5 后量子加密：ML-KEM 邮件传输防护实践","description":"Postfix 3.10 支持 OpenSSL 3.5 的 ML-KEM 后量子密钥交换（X25519MLKEM768 混合协商），结合 TLSRPT（RFC 8460）与 SMTP Require TLS（RFC 8689），抵御 Harvest-now-decrypt-later 威胁。含部署配置与兼容性指南。","datePublished":"2026-08-17","publisher":{"@type":"Organization","name":"ztpop.net 知识库","url":"https://www.ztpop.net/"}}</script>
+</head>
+<body>
+<header><ul class="nav-list">
+    <li class="nav-li"><a href="/">首页</a></li>
+    <li class="nav-li"><a href="#">产品和服务</a>
+        <ul class="sub-nav-list">
+            <li class="sub-nav-li"><a href="/depth-understand.html">国产邮件系统</a></li>
+            <li class="sub-nav-li"><a href="/xinchuang_mail.html">信创邮件系统</a></li>
+            <li class="sub-nav-li"><a href="/mailgate.html">邮件安全网关</a></li>
+        </ul>
+    </li>
+    <li class="nav-li"><a href="/solution.html">解决方案</a></li>
+    <li class="nav-li"><a href="/support.html">支持</a></li>
+    <li class="nav-li"><a href="/kb/">知识库</a></li>
+    <li class="nav-li"><a href="/bulletin/faq.html">FAQ问答</a></li>
+    <li class="nav-li"><a href="/bulletin/industryInfo.html">行业资讯</a></li>
+</ul></header>
+<nav class="breadcrumb" aria-label="Breadcrumb">
+<ol>
+<li><a href="/">首页</a></li>
+<li><a href="/kb/">知识库</a></li>
+<li><a href="/kb/transport-security/">邮件传输安全</a></li>
+<li><span aria-current="page">Postfix 3.10 与 OpenSSL 3.5 后量子加密</span></li>
+</ol>
+</nav>
+<article>
+<div class="article-body">
+<div class="article-header">
+<h1>Postfix 3.10 与 OpenSSL 3.5 后量子加密：ML-KEM 邮件传输防护实践</h1>
+<p class="meta">基于 Postfix 3.10 官方发布说明 / OpenSSL 3.5 NEWS / RFC 8460 / RFC 8689</p>
+</div>
+<div class="article-meta"><time datetime="2026-08-17">发布于 2026-08-17</time></div>
+<h2>1. 背景：Harvest-now-decrypt-later 威胁与邮件传输</h2>
+<p>「先收割、后解密」（Harvest-now-decrypt-later，HNDL）是后量子时代最主要的邮件安全威胁模型：攻击者现在记录加密的 SMTP 会话流量，待未来量子计算机成熟后离线破解。对邮件系统而言，这意味着今天通过 STARTTLS 协商的传统密钥交换（如 X25519、ECDHE-RSA）保护的邮件内容，可能在数年后被批量解密。</p>
+<p>传统邮件传输链路的两个弱点放大了该风险：其一，SMTP 的 STARTTLS 本质上是机会主义加密，大量流量仍在无加密或弱加密状态下传输；其二，即便使用了 TLS，密钥交换算法仍是经典密码学（依赖大整数分解或椭圆曲线离散对数），无法抵御 Shor 算法。应对 HNDL 的核心手段是<strong>混合密钥交换（hybrid key exchange）</strong>：将经典 ECDH 与后量子 KEM 结合，即使量子计算破解了其中一种，另一种仍能保证会话密钥安全。</p>
+
+<h2>2. 技术原理：ML-KEM 与 X25519MLKEM768 混合协商</h2>
+<p>ML-KEM（Module-Lattice Key Encapsulation Mechanism）是 NIST 于 2024-08-13 正式标准化的后量子密钥封装机制（FIPS 203），基于格密码（Module-LWE）问题，提供 IND-CCA2 安全。其参数集 ML-KEM-768 提供 256 位经典/后量子混合安全强度，与 AES-256 相当。</p>
+<p>在 TLS 1.3 中，IETF 定义了混合密钥交换组 <code>X25519MLKEM768</code>（draft-kwiatkowski-tls-ecdhe-mlkem），将 X25519（经典 ECDH）与 ML-KEM-768 封装并行执行，两者输出经组合函数派生会话密钥。由于 TLS 1.3 支持组协商，不支持后量子组的对端可以回退到纯 X25519，兼容性良好。</p>
+<p>OpenSSL 3.5.0（2025-04-08 发布）将 <code>X25519MLKEM768</code> 设为默认 TLS keyshare 之一（与 X25519 并列），并把混合 PQC KEM 组加入默认支持的组列表并优先协商。这是主流 TLS 库首次将后量子密钥交换默认启用——此前 OpenSSL 3.2-3.4 仅提供实验性/非默认支持。</p>
+
+<h2>3. Postfix 3.10 的落地</h2>
+<p>Postfix 3.10（2025-02 发布）通过与 OpenSSL 3.5 的集成，将 ML-KEM 后量子密钥交换带入邮件传输层：</p>
+<ul>
+<li><strong>tls_eecdh_auto_curves</strong>：控制 TLS 椭圆曲线组列表（包含 X25519MLKEM768 等混合组）；为空时使用 OpenSSL 默认配置。</li>
+<li><strong>tls_ffdhe_auto_groups</strong>：控制 TLS 有限域 DH 组列表；为空时使用 OpenSSL 默认配置。</li>
+<li><strong>TLSRPT（SMTP TLS Reporting，RFC 8460）</strong>：Postfix 3.10 新增对 TLSRPT 的支持，可通过 DNS 发布 <code>_smtp._tls</code> 策略，接收对方域名每日发送的 TLS 连接成功/失败汇总报告，用于发现降级攻击或配置错误。</li>
+<li><strong>RFC 8689（SMTP Require TLS Option）</strong>：支持 <code>TLS-Required: no</code> 消息头，允许对不敏感邮件在无法强制 TLS 时仍请求投递（如 TLSRPT 摘要报告本身），提升投递灵活性与兼容性。</li>
+<li><strong>smtpd_hide_client_session</strong>：新增隐私设置，可隐藏 Received 头中客户端会话详细信息（适用于 MUA 提交服务）。</li>
+</ul>
+<p>需要说明的是：Postfix 3.10 的「支持后量子加密」本质是<strong>前向兼容</strong>——在编译时链接 OpenSSL 3.5+，即可自动获得默认启用的 X25519MLKEM768 协商能力，管理员通过上述两个参数可显式控制或观察组选择。若系统链接的是 OpenSSL 3.4 或更早，则不会协商后量子组。</p>
+
+<h2>4. 部署配置</h2>
+
+<h3>4.1 前置条件</h3>
+<pre><code># 1. 安装 OpenSSL 3.5+（编译 Postfix 时链接）
+# Debian/Ubuntu
+apt install openssl libssl-dev
+# 验证版本
+openssl version   # 应显示 OpenSSL 3.5.x
+
+# 2. 编译或安装 Postfix 3.10+（发行版包通常已链接系统 OpenSSL）
+# 源码编译时确认 TLS 支持
+make -f Makefile.init makefiles "CCARGS=-DUSE_TLS -I/usr/include/openssl"
+make
+make install
+</code></pre>
+
+<h3>4.2 main.cf 配置示例</h3>
+<pre><code># /etc/postfix/main.cf
+# 启用 TLS（出站与入站）
+smtp_tls_security_level = may
+smtpd_tls_security_level = may
+
+# 显式指定椭圆曲线组（含混合后量子组 X25519MLKEM768）
+# 留空则使用 OpenSSL 默认组列表（3.5+ 默认含并优先 PQC 组）
+tls_eecdh_auto_curves = X25519MLKEM768, X25519, prime256v1
+
+# 有限域 DH 组（可选，显式控制）
+tls_ffdhe_auto_groups =
+
+# TLSRPT 相关（接收/发送报告在协议层自动处理）
+# 出站 TLS 强制级别：加密失败时按 RFC 8689 处理
+smtp_tls_mandatory_protocols = !SSLv2, !SSLv3, !TLSv1, !TLSv1.1
+smtp_tls_mandatory_ciphers = high
+
+# 隐私：隐藏 Received 头中客户端会话详情（MUA 提交服务）
+smtpd_hide_client_session = yes
+</code></pre>
+
+<h3>4.3 验证协商结果</h3>
+<pre><code># 查看日志中 TLS 握手协商的曲线组
+grep -i "TLS" /var/log/mail.log | grep -i "curve\|kex\|group"
+
+# 使用 openssl s_client 测试对端是否支持后量子组
+openssl s_client -connect smtp.example.com:25 -starttls smtp \
+  -groups X25519MLKEM768 -servername smtp.example.com \
+  -brief 2>&1 | grep -i "group\|cipher"
+</code></pre>
+
+<h2>5. TLSRPT（RFC 8460）与 RFC 8689 衔接</h2>
+<p>TLSRPT（RFC 8460，SMTP TLS Reporting）通过 DNS <code>_smtp._tls</code> TXT 记录声明报告接收地址，发送方将 TLS 连接成功/失败统计以每日摘要形式回报，帮助域名所有者发现：STARTTLS 被降级、证书验证失败、策略（MTA-STS/DANE）冲突等。RFC 8689（SMTP Require TLS Option）则允许发件方在消息级声明 <code>TLS-Required</code> 头，强制或豁免 TLS 要求。两者与后量子协商形成互补：后量子保护「会话密钥不被未来破解」，TLSRPT 保护「连接不被降级到明文或弱加密」，RFC 8689 提供细粒度豁免。</p>
+
+<h2>6. 兼容性注意事项</h2>
+<ul>
+<li><strong>对端支持度</strong>：X25519MLKEM768 需对端（接收方 MTA 或网关）的 TLS 栈也支持该组。TLS 1.3 组协商保证不支持的对端自动回退 X25519，不会导致连接失败，但后量子保护仅在双方都支持时生效。</li>
+<li><strong>OpenSSL 版本门槛</strong>：只有链接 OpenSSL 3.5+ 的 Postfix 才具备默认后量子协商；3.2-3.4 需显式配置且非默认。</li>
+<li><strong>性能开销</strong>：ML-KEM-768 封装/解封计算量大于 X25519 但远小于 RSA 密钥交换；握手耗时增加通常在亚毫秒级，对邮件吞吐影响可忽略。</li>
+<li><strong>日志与监控</strong>：建议升级后核查邮件日志确认实际协商组；若大量连接回退 X25519，说明对端尚未升级，可通过 TLSRPT 观察趋势。</li>
+</ul>
+
+<h2>7. 升级路径建议</h2>
+<ol>
+<li>升级 OpenSSL 至 3.5+ 并重新编译/安装 Postfix 3.10+。</li>
+<li>先以默认配置运行观察 1-2 周，核查日志中协商组分布。</li>
+<li>确认无异常后，可显式固定 <code>tls_eecdh_auto_curves</code> 优先 X25519MLKEM768。</li>
+<li>配置 TLSRPT DNS 记录并订阅报告，持续监控 TLS 失败与降级。</li>
+<li>结合 MTA-STS（RFC 8461）或 DANE（RFC 7672）策略发布，形成「后量子 + 强制加密 + 报告」三层防护。</li>
+</ol>
+
+<div class="kb-related">
+<h3>相关主题</h3>
+<ul>
+<li><a href="/kb/rfc8689-smtp-require-tls.html">RFC 8689：SMTP Require TLS Option（REQUIRETLS）</a></li>
+<li><a href="/kb/tlsrpt-smtp-tls-reporting.html">TLSRPT（RFC 8460）：SMTP TLS 报告机制</a></li>
+<li><a href="/kb/mta-sts-rfc8461.html">MTA-STS（RFC 8461）：邮件传输强制安全策略</a></li>
+<li><a href="/kb/dane-rfc7672.html">DANE（RFC 7672）：基于 DNS 的邮件 TLS 认证</a></li>
+<li><a href="/kb/postfix-tls-configuration.html">Postfix TLS 配置完全指南</a></li>
+</ul>
+</div>
+
+<div class="citation-block">
+<h3>权威参考来源</h3>
+<ol>
+<li><a href="https://www.postfix.org/announcements/postfix-3.10.0.html">Postfix 3.10.0 官方发布说明（postfix.org）</a></li>
+<li><a href="https://raw.githubusercontent.com/openssl/openssl/openssl-3.5/NEWS.md">OpenSSL 3.5 NEWS（openssl.org / GitHub）</a></li>
+<li><a href="https://www.rfc-editor.org/rfc/rfc8460">RFC 8460：SMTP TLS Reporting（TLSRPT，IETF Standards Track）</a></li>
+<li><a href="https://www.rfc-editor.org/rfc/rfc8689">RFC 8689：SMTP Require TLS Option（IETF Standards Track）</a></li>
+<li><a href="https://csrc.nist.gov/pubs/fips/203/final">NIST FIPS 203：Module-Lattice-Based Key-Encapsulation Mechanism（ML-KEM）</a></li>
+<li><a href="https://datatracker.ietf.org/doc/draft-kwiatkowski-tls-ecdhe-mlkem/">IETF draft-kwiatkowski-tls-ecdhe-mlkem：混合 ECDHE-ML-KEM 密钥交换组</a></li>
+<li><a href="https://www.rfc-editor.org/rfc/rfc8461">RFC 8461：SMTP MTA Strict Transport Security (MTA-STS)</a></li>
+<li><a href="https://www.rfc-editor.org/rfc/rfc7672">RFC 7672：SMTP Security via Opportunistic DANE TLS</a></li>
+</ol>
+</div>
+
+</div>
+</article>
+<!--#include virtual="/partials/footer.html" -->
+</body>
+</html>
