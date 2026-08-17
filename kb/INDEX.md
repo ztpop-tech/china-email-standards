@@ -50,6 +50,7 @@
 - [Postfix Smtpd Restrictions Guide](https://ztpop.net/kb/postfix-smtpd-restrictions-guide.html) → `kb/architecture/postfix-smtpd-restrictions-guide.md`
 - [Postfix Virtual Alias Vs Canonical Maps](https://ztpop.net/kb/postfix-virtual-alias-vs-canonical-maps.html) → `kb/architecture/postfix-virtual-alias-vs-canonical-maps.md`
 - [Rspamd Architecture Scoring Engine](https://ztpop.net/kb/rspamd-architecture-scoring-engine.html) → `kb/architecture/rspamd-architecture-scoring-engine.md`
+- [Rspamd 3.14.0 New Features](https://ztpop.net/kb/rspamd-3140-new-features.html) -> `kb/security/rspamd-3140-new-features.md`
 - [Rspamd Console And Metrics](https://ztpop.net/kb/rspamd-console-and-metrics.html) → `kb/architecture/rspamd-console-and-metrics.md`
 - [Rspamd Spamassassin Score Tuning](https://ztpop.net/kb/rspamd-spamassassin-score-tuning.html) → `kb/architecture/rspamd-spamassassin-score-tuning.md`
 - [Sme Email Guide](https://ztpop.net/kb/sme-email-guide.html) → `kb/architecture/sme-email-guide.md`
