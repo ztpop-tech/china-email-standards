@@ -58,7 +58,7 @@ RFC 8998（2021 年 3 月发布，Informational）定义了将国密算法应用
 
 在信创邮件系统中部署 SM4 加密时，应注意：
 
-* 确保邮件客户端（如 Foxmail 信创版、\u56fd\u4ea7\u90ae\u4ef6\u7cfb\u7edf 信创客户端）支持 SM2/SM4 的 S/MIME 实现。
+* 确保邮件客户端（如 邮件客户端 信创版、\u56fd\u4ea7\u90ae\u4ef6\u7cfb\u7edf 信创客户端）支持 SM2/SM4 的 S/MIME 实现。
 * SM4 在 SMTP 传输层和邮件内容加密层的应用需要分别配置，不可混为一谈。
 * 与外部互联网邮件系统通信时，国密套件可能需要降级到 TLS 1.2 AES 或 STARTTLS——建议配置策略协商优先级。
 * 参考 [信创邮件密码标准](/kb/xinchuang-email-crypto-standards.html)和 [国密邮件密码学](/kb/guomi-email-cryptography.html)的详细部署文档。
