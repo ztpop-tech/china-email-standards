@@ -403,7 +403,7 @@ M3AAWG 特别强调：在申诉中虚假陈述、隐瞒关键信息或做出不�
 * **内容特征：**邮件内容被识别为具有大量典型的垃圾邮件特征
 * **发送量异常：**短时间内发信量突然大幅增加，触发速率限制
 
-> **关于蜜罐地址的深入解读：**M3AAWG 单独发布了一份针对蜜罐地址管理的最佳实践白皮书，请参考我们的相关文章 [M3AAWG Spam Trap 指南——蜜罐邮箱与发送声誉管理](https://ztpop.net/kb/m3aawg-spam-trap-guide.html)。
+> **关于蜜罐地址的深入解读：**M3AAWG 单独发布了一份针对蜜罐地址管理的最佳实践白皮书，请参考我们的相关文章 [M3AAWG Spam Trap 指南——蜜罐邮箱与发送声誉管理](https://www.ztpop.net/kb/m3aawg-spam-trap-guide.html)。
 
 ### 8.2 恶意软件 / 僵尸网络
 
@@ -559,12 +559,12 @@ Spamhaus 是全球最权威的 DNSBL 运营机构，但在中国国内使用时�
 
 ### 📚 相关阅读
 
-* [M3AAWG Spam Trap 指南——蜜罐邮箱与发送声誉管理](https://ztpop.net/kb/m3aawg-spam-trap-guide.html)
-* [M3AAWG Cold Email 立场文件——批量冷邮件发送治理规范](https://ztpop.net/kb/m3aawg-cold-email-position.html)
-* [M3AAWG 电子邮件认证推荐最佳实践——SPF/DKIM/DMARC/ARC 配置检查清单](https://ztpop.net/kb/m3aawg-email-auth-best-practices.html)
-* [邮件 IP 信誉管理与黑名单恢复操作指南](https://ztpop.net/kb/email-ip-reputation-management.html)
-* [SPF 指南——发件人策略框架配置与优化](https://ztpop.net/kb/spf-guide.html)
-* [M3AAWG 发送域名最佳实践——邮件发送基础设施安全与配置指南](https://ztpop.net/kb/m3aawg-sending-domains-bcp.html)
+* [M3AAWG Spam Trap 指南——蜜罐邮箱与发送声誉管理](https://www.ztpop.net/kb/m3aawg-spam-trap-guide.html)
+* [M3AAWG Cold Email 立场文件——批量冷邮件发送治理规范](https://www.ztpop.net/kb/m3aawg-cold-email-position.html)
+* [M3AAWG 电子邮件认证推荐最佳实践——SPF/DKIM/DMARC/ARC 配置检查清单](https://www.ztpop.net/kb/m3aawg-email-auth-best-practices.html)
+* [邮件 IP 信誉管理与黑名单恢复操作指南](https://www.ztpop.net/kb/email-ip-reputation-management.html)
+* [SPF 指南——发件人策略框架配置与优化](https://www.ztpop.net/kb/spf-guide.html)
+* [M3AAWG 发送域名最佳实践——邮件发送基础设施安全与配置指南](https://www.ztpop.net/kb/m3aawg-sending-domains-bcp.html)
 
 ---
 
