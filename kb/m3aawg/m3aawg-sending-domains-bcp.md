@@ -489,8 +489,8 @@ dig TXT _dmarc.marketing.example.com +short
 
 在中国邮件市场，发送域名的选择策略在 M3AAWG 通用原则之外，还需要考虑以下生态特点：
 
-* **主流收件方**：QQ 邮箱（tencent.com）、163/126 邮箱（163.com）、阿里邮箱（aliyun.com/alibaba.com）、新浪邮箱（sina.com）等，均已部署 SPF/DKIM/DMARC 检查
-* **国内 ESP**：SendCloud、MailData、Submail、网易企业邮等常作为国内发件方的 ESP 选择
+* **主流收件方**：QQ 邮箱（tencent.com）、163/126 邮箱（163.com）、国内主流企业邮箱（aliyun.com/alibaba.com）、国内主流邮箱（sina.com）等，均已部署 SPF/DKIM/DMARC 检查
+* **国内 ESP**：SendCloud、MailData、Submail、国内主流企业邮箱等常作为国内发件方的 ESP 选择
 * **特殊要求**：QQ 邮箱对发件域有独立的信誉系统，QQ 域名信誉（Domain Reputation）通过其管理后台可见
 
 ### 10.2 国内 DNS 服务商 CNAME 支持
@@ -544,7 +544,7 @@ marketing.example.com.  IN  MX  10 mx.sendcloud.org.
 
 * **QQ 邮箱**：QQ 邮箱对 SPF 的 `~all` 和 `-all` 均有严格要求。建议使用 `-all`（硬拒绝）以获取最高信任度。
 * **163 邮箱**：163 邮箱的 DMARC 策略执行比较严格，建议在 `p=quarantine` 阶段充分验证后再升级到 `p=reject`。
-* **阿里邮箱**：阿里邮箱支持 DMARC 对齐（strict 和 relaxed 模式），但对 DKIM 的有效性验证较为严格，需确保 DKIM 公钥与签名完全匹配。
+* **国内主流企业邮箱**：国内主流企业邮箱支持 DMARC 对齐（strict 和 relaxed 模式），但对 DKIM 的有效性验证较为严格，需确保 DKIM 公钥与签名完全匹配。
 
 ### 10.5 国内备案与域名合规要求
 
