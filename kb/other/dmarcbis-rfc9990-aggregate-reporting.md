@@ -275,7 +275,7 @@ RFC 9990 新增的 `discovery_method` 元素是 RFC 9989 DNS Tree Walk 的重要
 * **OpenDMARC**：开源项目，支持 DMARC 验证和聚合报告生成
 * **parsedmarc**：Python 工具库，解析 DMARC 聚合报告并支持多种后端输出（Elasticsearch、S3 等）
 * **dmarc-report-converter**：将 XML 报告转换为可读格式
-* **商业服务**：Dmarcian、Valimail、Agari（如今的 HelpSystems）等提供全托管报告分析平台
+* **商业服务**：Dmarcian、V国内主流企业邮箱、Agari（如今的 HelpSystems）等提供全托管报告分析平台
 
 ## 6. 安全与隐私考量
 
