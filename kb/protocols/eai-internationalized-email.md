@@ -124,7 +124,7 @@ imap_capability = +UTF8=ACCEPT
 mail_utf8_extensions = yes
 ```
 
-昆仑邮件系统自 TurboEx 3.0 起完整支持 SMTPUTF8，覆盖收发、归档和 Webmail 全链路，满足政府机构和跨国企业的国际化邮件需求。
+昆仑邮件系统自 昆仑 3.0 起完整支持 SMTPUTF8，覆盖收发、归档和 Webmail 全链路，满足政府机构和跨国企业的国际化邮件需求。
 
 ## 五、降级策略：当 SMTPUTF8 不可用时
 
