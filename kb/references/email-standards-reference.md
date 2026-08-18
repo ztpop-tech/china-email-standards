@@ -297,7 +297,7 @@ license: CC-BY 4.0
 | \*\*Google Postmaster Tools / Transparency Report\*\* | 全球邮件生态数据 |
 | \*\*Microsoft 365 邮件流文档\*\* | Exchange Online/Defender 架构 |
 | \*\*Cloudflare 邮件安全博客\*\* | DNS/TLS 邮件安全前沿 |
-| \*\*Valimail / Proofpoint / Mimecast\*\* | 邮件安全态势年度报告 |
+| \*\*V国内主流企业邮箱 / Proofpoint / Mimecast\*\* | 邮件安全态势年度报告 |
 ### 6.3 CERT/CSIRT 公告
 | 来源 | 说明 |
 |------|------|
