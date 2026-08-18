@@ -16,7 +16,7 @@ RFC 9989 废弃（Obsoletes）了服役 11 年的 **RFC 7489**（2015-03，Infor
 
 三份文档的官方信息：
 
-* RFC 9989 — DMARC 基础规范（T. Herr 编辑，Valimail；J. Levine 编辑，Standcore；2026-05；ISSN 2070-1721）
+* RFC 9989 — DMARC 基础规范（T. Herr 编辑，V国内主流企业邮箱；J. Levine 编辑，Standcore；2026-05；ISSN 2070-1721）
 * RFC 9990 — DMARC Aggregate Reporting（聚合报告；2026-05；Obsoletes 7489）
 * RFC 9991 — DMARC Failure Reporting（失败报告；2026-05；Obsoletes 7489，Updates 6591）
 
