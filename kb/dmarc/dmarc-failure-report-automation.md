@@ -12,7 +12,7 @@ DMARC（Domain-based Message Authentication, Reporting & Conformance）定义了
 
 ## RUA汇总报告的自动化处理管道
 
-RUA报告处理的目标是将每日收到的海量XML文件转化为可视化的认证失败归因分析。一个完整的自动化管道包含以下步骤。第一步：配置MTA的sieve规则，将所有发送至DMARC报告接收地址（例如dmarc-reports@dmarc.ztpop.net）的邮件自动分类并存储到特定邮箱文件夹。第二步：提取邮件附件中的XML.gz文件，使用开源的RUA解析器（如dmarcian的parsedmarc或Valimail的dmarc-parse）将XML解压并解析为结构化JSON。第三步：将解析后的数据写入时序数据库（如InfluxDB或ClickHouse），按照报告中的Domain→Source IP→DKIM Domain→SPF Domain四个维度建立时间序列。第四步：基于Grafana构建可视化仪表盘，以气泡图展示各子域的认证失败率、以地理分布图展示失败投递的来源IP分布。第五步：配置自动化告警——当某个SPF/DKIM对齐的失败率突然上升超过基线200%时，自动生成Jira Ticket并通知相关子域的责任人。RFC 7489 Section 8.1和8.2中对RUA和RUF的具体格式和处理要求做出了明确规定。
+RUA报告处理的目标是将每日收到的海量XML文件转化为可视化的认证失败归因分析。一个完整的自动化管道包含以下步骤。第一步：配置MTA的sieve规则，将所有发送至DMARC报告接收地址（例如dmarc-reports@dmarc.ztpop.net）的邮件自动分类并存储到特定邮箱文件夹。第二步：提取邮件附件中的XML.gz文件，使用开源的RUA解析器（如dmarcian的parsedmarc或V国内主流企业邮箱的dmarc-parse）将XML解压并解析为结构化JSON。第三步：将解析后的数据写入时序数据库（如InfluxDB或ClickHouse），按照报告中的Domain→Source IP→DKIM Domain→SPF Domain四个维度建立时间序列。第四步：基于Grafana构建可视化仪表盘，以气泡图展示各子域的认证失败率、以地理分布图展示失败投递的来源IP分布。第五步：配置自动化告警——当某个SPF/DKIM对齐的失败率突然上升超过基线200%时，自动生成Jira Ticket并通知相关子域的责任人。RFC 7489 Section 8.1和8.2中对RUA和RUF的具体格式和处理要求做出了明确规定。
 
 ## RUF失败报告的隐私处理
 
