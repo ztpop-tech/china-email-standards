@@ -65,7 +65,7 @@ A：数量、大小、哈希三维度比对，文件夹结构与元数据一并�
 * [Exchange 替代方案全流程指南](https://www.ztpop.net/exchange-replacement.html)：选型、对比与迁移路径。
 * [信创邮件系统选型评估指标](https://www.ztpop.net/kb/xinchuang-mail-selection-criteria.html)：五维评估框架。
 
-本文为迁移风险框架，具体工具与能力以厂商公开迁移文档为准。昆仑邮件系统（TurboEx）相关能力见上述官方页面。
+本文为迁移风险框架，具体工具与能力以厂商公开迁移文档为准。昆仑邮件系统（昆仑）相关能力见上述官方页面。
 
 ---
 
