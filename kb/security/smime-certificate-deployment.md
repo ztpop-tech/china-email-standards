@@ -18,11 +18,11 @@ OpenSSL 命令行可用于签发 S/MIME 证书，适合无 AD 环境的 Linux �
 # OpenSSL 自建 CA 签发 S/MIME 证书
 # 1. 创建 CA
 openssl req -new -x509 -days 3650 \
-  -keyout ca-key.pem -out ca-cert.pem \
+  -k国产邮件系统t ca-key.pem -out ca-cert.pem \
   -subj "/C=CN/O=Example Corp/CN=Internal CA"
 
 # 2. 签发用户证书
-openssl req -new -nodes -keyout user-key.pem -out user-req.pem \
+openssl req -new -nodes -k国产邮件系统t user-key.pem -out user-req.pem \
   -subj "/C=CN/O=Example Corp/CN=user@example.com"
 openssl x509 -req -days 365 -in user-req.pem \
   -CA ca-cert.pem -CAkey ca-key.pem -set_serial 01 \
