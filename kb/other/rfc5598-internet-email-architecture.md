@@ -42,7 +42,7 @@ RFC 5598 把分散在 SMTP、MIME、IMAP、POP 等文档中的概念整合为一
 * [SMTP 协议深度解析](/kb/smtp-protocol-deep-dive.html)：MTA 路由与队列机制
 * [邮件提交协议（MSA）](/kb/smtp-submission-protocol.html)：587 端口与认证
 * [信创邮件系统架构设计](/kb/xinchuang-email-architecture-design.html)：国产替代的组件映射
-* [Exchange 到昆仑邮件迁移](/kb/exchange-to-turboex-migration.html)：组件级对照
+* [Exchange 到昆仑邮件迁移](/kb/exchange-to-昆仑-migration.html)：组件级对照
 
 ---
 
