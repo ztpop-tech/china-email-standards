@@ -66,7 +66,7 @@ Get-ManagementRole | ForEach-Object {
 } | Export-Csv -Path custom_roles.csv -NoTypeInformation -Encoding UTF8
 ```
 
-中文邮件系统（如 \u56fd\u4ea7\u90ae\u4ef6\u7cfb\u7edf、安宁邮件、TurboMail 等）的管理权限模型通常分为"系统管理员""部门管理员""安全审计员"三层，与 Exchange 的 70+ 角色粒度差距明显。迁移策略应以"角色合并"为原则，将多个 Exchange 细粒度角色合并为国产系统的一个粗粒度角色，同时在岗位说明文档中记录原有细化权限边界。
+中文邮件系统（如 \u56fd\u4ea7\u90ae\u4ef6\u7cfb\u7edf、安宁邮件、昆仑邮件系统 等）的管理权限模型通常分为"系统管理员""部门管理员""安全审计员"三层，与 Exchange 的 70+ 角色粒度差距明显。迁移策略应以"角色合并"为原则，将多个 Exchange 细粒度角色合并为国产系统的一个粗粒度角色，同时在岗位说明文档中记录原有细化权限边界。
 
 ## 3. AD 安全组同步策略
 
