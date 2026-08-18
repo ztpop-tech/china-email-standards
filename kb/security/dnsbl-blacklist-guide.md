@@ -37,7 +37,7 @@ DNSBL 的查询不依赖任何新协议——它直接复用了标准 DNS A 记�
 | 127.0.0.4-7 | XBL（Exploits Block List） | 被利用的服务器——开放的 HTTP/SOCKS 代理、被感染的僵尸网络节点 |
 | 127.0.0.10-11 | PBL（Policy Block List） | 不应直接发送邮件的 IP 范围——如动态 IP 池、家庭宽带、移动网络 |
 
-昆仑邮件系统内置的 TurboGate 反垃圾引擎对每个入站连接同时查询 8 个 DNSBL 区域，DNS 查询总耗时控制在 120ms 以内（通过本地 DNS 缓存和并发查询）。多个 DNSBL 的查询结果通过加权评分模型综合判定：SBL 命中 +4 分，XBL 命中 +3 分，PBL 命中 +1 分，总分超过阈值（默认 4 分）则拒绝连接。
+昆仑邮件系统内置的 昆仑网关 反垃圾引擎对每个入站连接同时查询 8 个 DNSBL 区域，DNS 查询总耗时控制在 120ms 以内（通过本地 DNS 缓存和并发查询）。多个 DNSBL 的查询结果通过加权评分模型综合判定：SBL 命中 +4 分，XBL 命中 +3 分，PBL 命中 +1 分，总分超过阈值（默认 4 分）则拒绝连接。
 
 ## 2. 主流 DNSBL 体系对比
 
@@ -215,7 +215,7 @@ smtpd_recipient_restrictions =
     reject_unauth_destination
 ```
 
-这种编排确保只有 Spamhaus ZEN（误报率 < 0.01%）执行直接拒绝，SpamCop 和 Barracuda 仅通过 SpamAssassin 加权评分（分别加 2.0 和 1.5 分），在得分超过总体阈值（如 5.0 分）时才触发动作。昆仑邮件系统的 TurboGate 网关在生产环境中采用此三层层级体系，上线 18 个月以来 DNSBL 相关误报事件为 0。
+这种编排确保只有 Spamhaus ZEN（误报率 < 0.01%）执行直接拒绝，SpamCop 和 Barracuda 仅通过 SpamAssassin 加权评分（分别加 2.0 和 1.5 分），在得分超过总体阈值（如 5.0 分）时才触发动作。昆仑邮件系统的 昆仑网关 网关在生产环境中采用此三层层级体系，上线 18 个月以来 DNSBL 相关误报事件为 0。
 
 ### 参考文献
 
