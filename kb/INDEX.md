@@ -1,13 +1,12 @@
 # ztpop.net 知识库镜像
 
-共 1088 篇文章。
+共 1085 篇文章。
 
 - [Amavis Content Security Gateway](https://ztpop.net/kb/amavis-content-security-gateway.html) → `kb/architecture/amavis-content-security-gateway.md`
 - [Apache James 390 Release Notes](https://ztpop.net/kb/apache-james-390-release-notes.html) → `kb/architecture/apache-james-390-release-notes.md`
 - [Backup Mx Email Continuity](https://ztpop.net/kb/backup-mx-email-continuity.html) → `kb/architecture/backup-mx-email-continuity.md`
 - [Clamav Antivirus Email Gateway](https://ztpop.net/kb/clamav-antivirus-email-gateway.html) → `kb/architecture/clamav-antivirus-email-gateway.md`
 - [Cloud Vs On Prem Email Comparison](https://ztpop.net/kb/cloud-vs-on-prem-email-comparison.html) → `kb/architecture/cloud-vs-on-prem-email-comparison.md`
-- [Domestic Mail System Landscape](https://ztpop.net/kb/domestic-mail-system-landscape.html) → `kb/architecture/domestic-mail-system-landscape.md`
 - [Dovecot Imap Advanced Config](https://ztpop.net/kb/dovecot-imap-advanced-config.html) → `kb/architecture/dovecot-imap-advanced-config.md`
 - [Dovecot Imap Server Architecture](https://ztpop.net/kb/dovecot-imap-server-architecture.html) → `kb/architecture/dovecot-imap-server-architecture.md`
 - [Dovecot Index Corruption Repair](https://ztpop.net/kb/dovecot-index-corruption-repair.html) → `kb/architecture/dovecot-index-corruption-repair.md`
@@ -380,7 +379,6 @@
 - [Bdat Chunking](https://ztpop.net/kb/bdat-chunking.html) → `kb/other/bdat-chunking.md`
 - [Bgp Rpki Mail Security](https://ztpop.net/kb/bgp-rpki-mail-security.html) → `kb/other/bgp-rpki-mail-security.md`
 - [Binder Dns Svcb Rfc9460](https://ztpop.net/kb/binder-dns-svcb-rfc9460.html) → `kb/other/binder-dns-svcb-rfc9460.md`
-- [Cacter Saas Cloud Gateway 2026](https://ztpop.net/kb/cacter-saas-cloud-gateway-2026.html) → `kb/other/cacter-saas-cloud-gateway-2026.md`
 - [Cfg Cross Border Mail Data Transfer](https://ztpop.net/kb/cfg-cross-border-mail-data-transfer.html) → `kb/other/cfg-cross-border-mail-data-transfer.md`
 - [Cfg Trustworthy Email Baseline Check](https://ztpop.net/kb/cfg-trustworthy-email-baseline-check.html) → `kb/other/cfg-trustworthy-email-baseline-check.md`
 - [Cii Regulation Email System Obligations](https://ztpop.net/kb/cii-regulation-email-system-obligations.html) → `kb/other/cii-regulation-email-system-obligations.md`
@@ -925,7 +923,6 @@
 - [Dnsbl Query Principle](https://ztpop.net/kb/dnsbl-query-principle.html) → `kb/security/dnsbl-query-principle.md`
 - [Dnsbl Realtime Blacklist](https://ztpop.net/kb/dnsbl-realtime-blacklist.html) → `kb/security/dnsbl-realtime-blacklist.md`
 - [Dnsbl Realtime Blocklist Spamhaus](https://ztpop.net/kb/dnsbl-realtime-blocklist-spamhaus.html) → `kb/security/dnsbl-realtime-blocklist-spamhaus.md`
-- [Domestic Email Anti Spam Tech](https://ztpop.net/kb/domestic-email-anti-spam-tech.html) → `kb/security/domestic-email-anti-spam-tech.md`
 - [Email Blacklist Delisting](https://ztpop.net/kb/email-blacklist-delisting.html) → `kb/security/email-blacklist-delisting.md`
 - [Email Compliance Reputation Spamhaus](https://ztpop.net/kb/email-compliance-reputation-spamhaus.html) → `kb/security/email-compliance-reputation-spamhaus.md`
 - [Email Dlp Policy Examples](https://ztpop.net/kb/email-dlp-policy-examples.html) → `kb/security/email-dlp-policy-examples.md`
