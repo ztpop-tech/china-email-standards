@@ -67,7 +67,7 @@ office365.com               smtp:[mx*.mail.protection.outlook.com]:25:5:25:rate_
 
 # QQ 邮箱 — 中等
 qq.com                      smtp:[mx1.qq.com]:25:8:30
-foxmail.com                 smtp:[mx1.qq.com]:25:8:30
+邮件客户端.com                 smtp:[mx1.qq.com]:25:8:30
 
 # 163/126 邮箱
 163.com                     smtp:[163mx01.mxmail.netease.com]:25:6:20
