@@ -8,7 +8,7 @@ license: CC-BY 4.0
 
 ## 1. parsedmarc 是什么
 
-parsedmarc 是 domainaware 维护的 Python 模块与命令行工具，用于解析 DMARC 报告。配合 Elasticsearch 与 Kibana（或 Splunk）使用时，它是 Agari Brand Protection、Dmarcian、OnDMARC、ProofPoint Email Fraud Defense、Valimail 等商业 DMARC 报告处理服务的自托管开源替代方案。项目由单一开发者维护，支持通过 GitHub Sponsors 赞助。
+parsedmarc 是 domainaware 维护的 Python 模块与命令行工具，用于解析 DMARC 报告。配合 Elasticsearch 与 Kibana（或 Splunk）使用时，它是 Agari Brand Protection、Dmarcian、OnDMARC、ProofPoint Email Fraud Defense、V国内主流企业邮箱 等商业 DMARC 报告处理服务的自托管开源替代方案。项目由单一开发者维护，支持通过 GitHub Sponsors 赞助。
 
 parsedmarc 覆盖的输入类型包括：
 
