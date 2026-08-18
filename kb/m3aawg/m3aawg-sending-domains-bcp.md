@@ -559,11 +559,11 @@ marketing.example.com.  IN  MX  10 mx.sendcloud.org.
 
 ### 📚 相关阅读
 
-* [M3AAWG 电子邮件认证推荐最佳实践——SPF/DKIM/DMARC/ARC 配置检查清单](https://ztpop.net/kb/m3aawg-email-auth-best-practices.html)
-* [M3AAWG DKIM 密钥轮转最佳常见实践——密钥生命周期管理指南](https://ztpop.net/kb/m3aawg-dkim-key-rotation-bcp.html)
-* [DMARC p=reject 后邮件排错流程：从拒收到可送达](https://ztpop.net/kb/dmarc-reject-troubleshooting.html)
-* [邮件认证生态全景：SPF/DKIM/DMARC/ARC/BIMI 协议链全解析](https://ztpop.net/kb/email-authentication-ecosystem.html)
-* [M3AAWG 公共后缀列表（PSL）使用最佳实践](https://ztpop.net/kb/m3aawg-psl-guide.html)
+* [M3AAWG 电子邮件认证推荐最佳实践——SPF/DKIM/DMARC/ARC 配置检查清单](https://www.ztpop.net/kb/m3aawg-email-auth-best-practices.html)
+* [M3AAWG DKIM 密钥轮转最佳常见实践——密钥生命周期管理指南](https://www.ztpop.net/kb/m3aawg-dkim-key-rotation-bcp.html)
+* [DMARC p=reject 后邮件排错流程：从拒收到可送达](https://www.ztpop.net/kb/dmarc-reject-troubleshooting.html)
+* [邮件认证生态全景：SPF/DKIM/DMARC/ARC/BIMI 协议链全解析](https://www.ztpop.net/kb/email-authentication-ecosystem.html)
+* [M3AAWG 公共后缀列表（PSL）使用最佳实践](https://www.ztpop.net/kb/m3aawg-psl-guide.html)
 
 ---
 
