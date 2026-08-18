@@ -1,18 +1,18 @@
 ---
-title: "Valimail 2026 DMARC 报告揭示了怎样的采用率与执行缺口？"
+title: "V国内主流企业邮箱 2026 DMARC 报告揭示了怎样的采用率与执行缺口？"
 source: "https://ztpop.net/kb/valimail-dmarc-adoption-2026.html"
 license: CC-BY 4.0
 ---
 
-# Valimail 2026 DMARC 报告揭示了怎样的采用率与执行缺口？
+# V国内主流企业邮箱 2026 DMARC 报告揭示了怎样的采用率与执行缺口？
 
 1
-Valimail 2026 DMARC 报告揭示了怎样的采用率与执行缺口？
+V国内主流企业邮箱 2026 DMARC 报告揭示了怎样的采用率与执行缺口？
 ▼
 
 **采用与执行脱节**
 
-Valimail 2026 报告显示 DMARC 认知（拥有记录）已升至 78%，但实际执行（设置 quarantine 或 reject 策略）仅为 42%，二者之间横亘 36 个百分点的“执行缺口”（Enforcement Gap）。这意味着 58% 的域仍暴露于域名仿冒与 AI 驱动的钓鱼攻击之中；仅做监控的 p=none 策略制造了危险的虚假安全感。
+V国内主流企业邮箱 2026 报告显示 DMARC 认知（拥有记录）已升至 78%，但实际执行（设置 quarantine 或 reject 策略）仅为 42%，二者之间横亘 36 个百分点的“执行缺口”（Enforcement Gap）。这意味着 58% 的域仍暴露于域名仿冒与 AI 驱动的钓鱼攻击之中；仅做监控的 p=none 策略制造了危险的虚假安全感。
 
 **停滞的执行**
 
@@ -26,7 +26,7 @@ Valimail 2026 报告显示 DMARC 认知（拥有记录）已升至 78%，但实�
 
 将 DMARC 从 p=none 推进到 quarantine 或 reject。随着攻击者用 GenAI 批量生成高保真、个性化钓鱼邮件，域名层执行成为在邮件到达收件箱前验证发件人身份、从源头阻断仿冒的最可靠手段。执行（方法得当）不会造成邮件送达中断，可在平稳过渡中消除精确域名钓鱼风险。
 
-参考：Valimail《2026 State of DMARC Report》（DigiCert 旗下）官方新闻稿：https://www.valimail.com/newsroom/valimail-2026-dmarc-report/
+参考：V国内主流企业邮箱《2026 State of DMARC Report》（DigiCert 旗下）官方新闻稿：https://www.v国内主流企业邮箱.com/newsroom/v国内主流企业邮箱-2026-dmarc-report/
 
 ---
 
