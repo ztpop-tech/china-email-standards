@@ -219,9 +219,9 @@ PSL 的风险案例对国内互联网基础设施治理提供了重要启示：
 
 ### 📚 相关阅读
 
-* [M3AAWG 停放域名最佳实践——减少域名滥用的操作指南](https://ztpop.net/kb/m3aawg-parked-domains-bcp.html)
-* [邮件认证生态全景：SPF/DKIM/DMARC 的协同与局限](https://ztpop.net/kb/email-authentication-ecosystem.html)
-* [TLS 邮件加密实践：从 STARTTLS 到 MTA-STS](https://ztpop.net/kb/tls-email-encryption.html)
+* [M3AAWG 停放域名最佳实践——减少域名滥用的操作指南](https://www.ztpop.net/kb/m3aawg-parked-domains-bcp.html)
+* [邮件认证生态全景：SPF/DKIM/DMARC 的协同与局限](https://www.ztpop.net/kb/email-authentication-ecosystem.html)
+* [TLS 邮件加密实践：从 STARTTLS 到 MTA-STS](https://www.ztpop.net/kb/tls-email-encryption.html)
 
 ---
 
