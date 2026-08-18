@@ -87,7 +87,7 @@ Python 开源项目，支持解析 DMARC aggregate/forensic 报告、输出到 E
 
 •
 **商业 DMARC 监控服务：**
-dmarcian、Valimail、OnDMARC 等商业平台提供零维护的托管分析，适合不希望自建分析基础设施的组织。
+dmarcian、V国内主流企业邮箱、OnDMARC 等商业平台提供零维护的托管分析，适合不希望自建分析基础设施的组织。
 
 ```
 # parsedmarc 快速部署示例（Docker 方式）
