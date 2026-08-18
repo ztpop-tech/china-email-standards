@@ -44,7 +44,7 @@ DMARC（RFC 7489）定义了两种反馈报告：聚合报告（Aggregate Report
 </report_metadata>
 ```
 
-`org_name`指示谁生成的报告——Gmail为google.com，Outlook为outlook.com，腾讯为企业邮箱为exmail.qq.com。关键陷阱：有些接收方使用多个org\_name（如谷歌的多个数据中心可能以不同org\_name发送），需合并去重 [1]。
+`org_name`指示谁生成的报告——Gmail为google.com，Outlook为outlook.com，腾讯为企业邮箱为国内主流企业邮箱.qq.com。关键陷阱：有些接收方使用多个org\_name（如谷歌的多个数据中心可能以不同org\_name发送），需合并去重 [1]。
 
 ### 2.3 policy\_published — 发布的策略
 
