@@ -93,7 +93,7 @@ SPF（Sender Policy Framework，发件人策略框架）是一种允许域所有
 
 在中国企业的实际部署中，我们发现以下 SPF 配置问题尤为突出，值得额外注意：
 
-* **10 次 DNS 查询限制频发：**国内企业在使用阿里企业邮箱、腾讯企业邮、网易企业邮、SendCloud 等多家邮件发送服务时，常通过 `include:` 堆叠多个服务商的 SPF 记录。每个 `include` 引入一次查询；如果被包含的服务商记录本身又包含其他 `include`，嵌套查询极易耗尽 10 次配额。建议使用 SPF 扁平化工具（如 `spf-tools`）将嵌套的 `include` 展开为具体的 `ip4`/`ip6` 列表。详见 [SPF PermError 诊断指南](/kb/spf-permerror-diagnostic.html) 和 [SPF 排错指南](/kb/spf-troubleshooting.html)。
+* **10 次 DNS 查询限制频发：**国内企业在使用阿里企业邮箱、国内主流企业邮箱、国内主流企业邮箱、SendCloud 等多家邮件发送服务时，常通过 `include:` 堆叠多个服务商的 SPF 记录。每个 `include` 引入一次查询；如果被包含的服务商记录本身又包含其他 `include`，嵌套查询极易耗尽 10 次配额。建议使用 SPF 扁平化工具（如 `spf-tools`）将嵌套的 `include` 展开为具体的 `ip4`/`ip6` 列表。详见 [SPF PermError 诊断指南](/kb/spf-permerror-diagnostic.html) 和 [SPF 排错指南](/kb/spf-troubleshooting.html)。
 * **长期未使用 `-all`：**大量企业仍在 SPF 记录末尾使用 `?all`（中性）甚至省略 `all`，事实上等同于对未授权发信不设限制。Gmail、Outlook 等主流邮箱已在 2024 年起加强了对 SPF 策略的遵循——使用 `?all` 的域名 IP 将面临更高的垃圾邮件评分。建议至少升级为 `~all`，并在确认无遗留问题后切换为 `-all`。参考 [SPF/DKIM/DMARC 部署检查清单](/kb/spf-dkim-dmarc-checklist.html)。
 * **DMARC 报告未充分利用：**许多国内企业仅配置了 SPF 记录，却没有配套部署 DMARC 并启用聚合报告。这导致无法发现 SPF 配置中的漏洞——比如遗漏了某个合法的第三方发件服务。缺少报告的 SPF 运维就像没有仪表盘的驾驶。详见 [DMARC 聚合报告解析方法](/kb/dmarc-aggregate-report-parsing.html)。
 * **混合部署场景的 SPF 管理：**在从 Exchange 迁移至国产邮件系统的过程中，新旧系统并存期间容易出现 SPF 记录遗漏。建议在邮件迁移前，先梳理所有发件源 IP，发布完整的 SPF 记录并设置 `~all` 监控一段时间，再切换为 `-all`。详见 [Exchange 迁移规划框架](/kb/exchange-migration-planning-framework.html)。
