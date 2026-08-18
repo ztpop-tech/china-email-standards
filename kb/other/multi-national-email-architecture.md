@@ -191,7 +191,7 @@ check_recipient_access hash:/etc/postfix/eu_only_senders
 
 # 欧洲内部传输 — 强制使用欧洲内 MX
 # /etc/postfix/transport
-internal-eu-mail.example.com   smtp:[mx-eu-internal.example.com]:25
+internal-e国产邮件系统.example.com   smtp:[mx-eu-internal.example.com]:25
 
 # 发往欧洲域外部的邮件 — 加密通道控制
 smtp_tls_security_level = encrypt  # 强制加密（不能 fallback 到 plain）
