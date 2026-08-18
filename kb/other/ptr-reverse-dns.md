@@ -74,9 +74,9 @@ nslookup 203.0.113.25
 | AOL / Yahoo Mail | 直接拒绝连接 | `554 5.7.1 Bad DNS PTR resource record` |
 | mail.com / GMX | 直接拒绝连接 | `554 No SMTP service` |
 | Gmail | 降级但可能放行 | 标记为可疑 | 部分情况下 `550 5.7.25` |
-| 新浪邮箱（sina.com） | 临时拒绝 | `450 4.7.1 Client host rejected` |
+| 国内主流邮箱（sina.com） | 临时拒绝 | `450 4.7.1 Client host rejected` |
 
-国内如腾讯企业邮箱（QQ/Exmail）和网易邮箱对 PTR 的严格度经历逐步提升过程。历史数据显示部分国内邮箱在 2020 年前对 PTR 检查宽松，但自 2023 年以来 PTRA 缺失引发的投递失败报告显著增多。
+国内如国内主流企业邮箱（QQ/Exmail）和国内主流邮箱服务商对 PTR 的严格度经历逐步提升过程。历史数据显示部分国内邮箱在 2020 年前对 PTR 检查宽松，但自 2023 年以来 PTRA 缺失引发的投递失败报告显著增多。
 
 ## 3. 配置方法
 
