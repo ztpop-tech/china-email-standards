@@ -24,7 +24,7 @@ DKIM 记录字段解析：v=DKIM1（版本）、k=rsa（密钥算法，rsa 或 e
 **四、DMARC 记录：策略与报告**
 DMARC（Domain-based Message Authentication, Reporting, and Conformance, RFC 7489）将 SPF 和 DKIM 的验证结果与域名的对齐（Alignment）检查结合，并允许域名所有者发布策略指定对未通过验证的邮件的处理方式。一条典型的 DMARC 记录：\_dmarc.example.com. IN TXT "v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@example.com; ruf=mailto:forensic@example.com; pct=100; fo=1"。DMARC 关键参数：p= 策略（none=仅报告、quarantine=隔离到垃圾箱、reject=拒绝）；rua= 聚合报告（Aggregate Report）接收地址；ruf= 取证报告（Forensic/Failure Report）接收地址；pct= 策略应用百分比（用于逐步推出，如从 10% 开始）；sp= 子域名策略（未指定时继承 p 值）；adkim= 和 aspf= 定义对齐模式（r=宽松 relaxed、s=严格 strict）。
 
-DMARC 部署建议采用「逐步收紧」策略：Phase 1 — p=none，收集 1-2 周的 DMARC 聚合报告，了解所有以该域名名义发送邮件的合法来源；Phase 2 — p=quarantine，将未通过验证的邮件标记为垃圾邮件，观察是否有误报；Phase 3 — p=reject，拒绝未通过验证的邮件。每一步都应持续监控 DMARC 报告（使用 dmarcian、Postmark DMARC Digests、Valimail 等 DMARC 报告分析工具）确认无误报后再收紧策略。DMARC 聚合报告的 XML 格式虽然机器可读但对人类不友好，建议部署自动化的报告解析和可视化工具。
+DMARC 部署建议采用「逐步收紧」策略：Phase 1 — p=none，收集 1-2 周的 DMARC 聚合报告，了解所有以该域名名义发送邮件的合法来源；Phase 2 — p=quarantine，将未通过验证的邮件标记为垃圾邮件，观察是否有误报；Phase 3 — p=reject，拒绝未通过验证的邮件。每一步都应持续监控 DMARC 报告（使用 dmarcian、Postmark DMARC Digests、V国内主流企业邮箱 等 DMARC 报告分析工具）确认无误报后再收紧策略。DMARC 聚合报告的 XML 格式虽然机器可读但对人类不友好，建议部署自动化的报告解析和可视化工具。
 
 **五、PTR 反向解析与信誉**
 PTR（Pointer）记录是 DNS 的反向查询机制——将 IP 地址映射回主机名。许多接收方邮件服务器会执行 PTR 反向解析检查：当收到来自 IP 地址 192.0.2.25 的 SMTP 连接时，接收方查询 25.2.0.192.in-addr.arpa 的 PTR 记录，获取主机名 mail.example.com，然后正向查询 mail.example.com 的 A 记录是否解析回 192.0.2.25。如果正向和反向解析一致（Forward-Confirmed Reverse DNS, FCrDNS），则该 IP 的信誉度更高；如果不一致或缺失反向解析，可能被标记为可疑来源，增加被拒收或标记为垃圾邮件的风险。
