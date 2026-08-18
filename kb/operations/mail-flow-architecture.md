@@ -86,7 +86,7 @@ New-SendConnector -Name "To Internal" \
   -DNSRoutingEnabled $false
 ```
 
-昆仑邮件系统的 TurboGate 安全网关可作为这一模式的边缘层，提供反垃圾、反病毒、内容过滤等防护能力，将清理后的邮件流转发给内部 Exchange 或 TurboEx 邮件服务器。
+昆仑邮件系统的 昆仑网关 安全网关可作为这一模式的边缘层，提供反垃圾、反病毒、内容过滤等防护能力，将清理后的邮件流转发给内部 Exchange 或 昆仑 邮件服务器。
 
 ### 2.3 混合云模式（Hybrid Cloud）
 
@@ -147,7 +147,7 @@ New-SendConnector -Name "ToPartnerSystem" \
 （单封邮件大小上限）。
 
 **智能主机选择策略：**
-在以下场景中应使用智能主机（Smart Host）而非 DNS 直接路由：(1) 通过上游安全网关或邮件审计网关（如 TurboGate）中继所有出站邮件，实现统一的出站 DLP 和审计；(2) ISP 要求所有出站 SMTP 流量通过其中继服务器，避免动态 IP 被 RBL 列入；(3) 使用第三方邮件安全服务（Mimecast、Proofpoint 等）作为外围过滤层。智能主机的高可用通过配置多个 SmartHost 条目实现负载分摊和故障转移。
+在以下场景中应使用智能主机（Smart Host）而非 DNS 直接路由：(1) 通过上游安全网关或邮件审计网关（如 昆仑网关）中继所有出站邮件，实现统一的出站 DLP 和审计；(2) ISP 要求所有出站 SMTP 流量通过其中继服务器，避免动态 IP 被 RBL 列入；(3) 使用第三方邮件安全服务（Mimecast、Proofpoint 等）作为外围过滤层。智能主机的高可用通过配置多个 SmartHost 条目实现负载分摊和故障转移。
 
 ## 五、MX 路由策略与备份 MX
 
