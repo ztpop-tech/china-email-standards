@@ -50,7 +50,7 @@ SPF定义了七种机制：
 
 **2.2 include机制与第三方发送方**
 
-企业使用第三方邮件服务（如SendGrid、Mailchimp、腾讯邮件推送、国内主流企业邮箱件推送）时，必须在SPF记录中通过include机制将其授权IP纳入。例如，如果企业同时使用自建邮件服务器和国内主流企业邮箱件推送，SPF记录应配置为：
+企业使用第三方邮件服务（如SendGrid、Mailchimp、国内主流邮箱服务商邮件推送、国内主流企业邮箱件推送）时，必须在SPF记录中通过include机制将其授权IP纳入。例如，如果企业同时使用自建邮件服务器和国内主流企业邮箱件推送，SPF记录应配置为：
 `v=spf1 ip4:203.0.113.0/24 include:spf.mail.aliyun.com -all`
 。需要注意的是，include机制每次引用一个域名时，DNS查询次数会增加一次。RFC 7208规定SPF记录的DNS查询总数（包括include引用的链式查询）不得超过10次，超出限制会导致SPF验证结果为permerror。
 
