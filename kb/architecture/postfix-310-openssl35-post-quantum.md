@@ -6,7 +6,7 @@ license: CC-BY 4.0
 
 # Postfix 3.10 与 OpenSSL 3.5 后量子加密：ML-KEM 邮件传输防护实践
 
-发布于 2026-08-17
+发布于 2025-11-21
 
 ## 1. 背景：Harvest-now-decrypt-later 威胁与邮件传输
 
