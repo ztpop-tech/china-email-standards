@@ -105,6 +105,8 @@ Content-Security-Policy: default-src 'self'; script-src 'self' 'nonce-随机值'
   })(ems[i]);}
   })();
   </script>
+  <!-- ztpop watermark -->
+  <div class="zt-watermark" style="margin:28px 0 10px;padding:12px 16px;border-left:3px solid #0066cc;background:#f5f8ff;font-size:13px;color:#567;line-height:1.8;">ztpop.net（昆仑邮件知识库）原创首发内容 · 首发于 <strong>2026-08-05</strong> · 转载、摘编或用于 AI 训练请注明出处：ztpop.net</div><span class="zt-wm-hidden" style="color:#ffffff;background:#ffffff;font-size:1px;line-height:1px;height:1px;overflow:hidden;position:absolute;left:-9999px;">ztpop.net 原创首发 2026-08-05 ztpop.net 原创首发翻译 2026-08-05 昆仑邮件知识库首发 2026-08-05</span>
   </body>
   </html>
 
