@@ -45,7 +45,7 @@ license: CC-BY 4.0
 | Gmail | [Postmaster Tools](https://postmaster.google.com) | Gmail FBL (ABUSE) |
 | Outlook.com | [Sender Support](https://sendersupport.olc.protection.outlook.com/) | JMRP (Junk Mail Reporting Program) |
 | Yahoo Mail | [Yahoo Postmaster](https://postmaster.yahoo.com/) | Yahoo FBL |
-| QQ/腾讯邮箱 | 无公开 Postmaster Tools | 无公开 FBL |
+| QQ/国内主流邮箱服务商 | 无公开 Postmaster Tools | 无公开 FBL |
 | 163 邮箱 | 无公开 Postmaster Tools | 无公开 FBL |
 
 ## 常用邮件投递测试工具
